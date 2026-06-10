@@ -1,0 +1,54 @@
+---
+source: "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)"
+title: "In the Family Court		No: [Case number]"
+order_number: order_184_declarations_as_to_adoptions_effected_overseas
+volume: 2
+parent_document: "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)"
+parent_slug: sfo_vol2
+section_index: 64
+source_filename: Order 18.4 - Declarations as to Adoptions Effected Overseas.docx
+source_page: "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/"
+url: "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip"
+scrape_date: 2026-06-10
+licence: Open Government Licence v3.0
+content_type: standard_order
+jurisdiction: England and Wales
+---
+# In the Family Court		No: [Case number]
+
+In the Family Court		No: [Case number]
+
+sitting at [Court name]
+
+Before [name of judge] in [private] / [public] on [date].
+
+The parties:	The applicant is [name] represented by [name] [of counsel]
+
+The 1st respondent is [name], the [relationship to child], represented by [name] [of counsel]
+
+The 2nd respondent is [name], the [relationship to child], represented by [name] [of counsel]
+
+The 3rd [[and] / [to] [insert (number so that each child is identified as a separate respondent)] respondent[s] [is] / [are] the child[ren] (by their children’s guardian [name]) represented by [name] [of counsel]
+
+Recitals
+
+The judge read the following witness statement[s] [insert] and heard oral evidence from [name(s)].
+
+The court considers that the jurisdiction requirements set out in Family Law Act 1986, section 57(3) have been satisfied.
+
+The court [has] / [has not] considered it necessary to direct that the papers in the case should be sent to the Attorney-General to allow him to intervene and make representations in the proceedings pursuant to Family Law Act 1986, section 59.
+
+The applicant’s status as an adopted child of [insert full name and identifying details of the other person such as date of birth and address] depends on whether [he] / [she] was adopted by [insert name of the other person] by either (a) a Convention adoption or an overseas adoption within the meaning of Adoption and Children Act 2002 or (b) an adoption recognised by the law of England and Wales and effected under the law of any country outside the British Islands.
+
+IT IS DECLARED THAT:
+
+The applicant [is] / [is not], for the purposes of section 39 of the Adoption Act 1976 or section 67 of the Adoption and Children Act 2002, the adopted child of [insert name of the other person].
+
+Costs
+
+The costs of this application are [specify].
+
+Dated [date]
+
+Order
+Family Law Act 1986, section 57
