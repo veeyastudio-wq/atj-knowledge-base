@@ -1,0 +1,237 @@
+2026-06-10 11:47:40,409 INFO ============================================================
+2026-06-10 11:47:40,409 INFO HMCTS Court Forms Scraper — starting
+2026-06-10 11:47:40,409 INFO pdfplumber: available
+2026-06-10 11:47:40,409 INFO pypdf:      available
+2026-06-10 11:47:40,409 INFO Forms to scrape: 19
+2026-06-10 11:47:40,409 INFO ============================================================
+2026-06-10 11:47:40,409 INFO 
+[D8]  slug: form-d8-application-for-a-divorce-dissolution-or-to-apply-fo
+2026-06-10 11:47:40,558 INFO   ✓ landing page fetched (84,973 chars)
+2026-06-10 11:47:40,590 INFO   title: Apply for a divorce or to dissolve a civil partnership: Form D8
+2026-06-10 11:47:40,590 INFO   pdf:   s.publishing.service.gov.uk/media/6790fd78e2b9324a911e26a1/D8_0125.pdf
+2026-06-10 11:47:42,897 INFO   ✓ PDF downloaded (847 KB)
+2026-06-10 11:47:43,965 INFO   text: 23,318 chars extracted
+2026-06-10 11:47:43,965 INFO   fields: 178 AcroForm fields
+2026-06-10 11:47:43,965 INFO   → saved: D8.md (32,417 chars)
+2026-06-10 11:47:45,971 INFO 
+[D10]  slug: respond-to-a-divorce-dissolution-or-judicial-separation-appl
+2026-06-10 11:47:46,036 INFO   ✓ landing page fetched (72,822 chars)
+2026-06-10 11:47:46,062 INFO   title: Respond to a divorce, dissolution or judicial separation application: 
+2026-06-10 11:47:46,062 INFO   pdf:   .publishing.service.gov.uk/media/66472b63b7249a4c6e9d36e2/D10_0524.pdf
+2026-06-10 11:47:48,135 INFO   ✓ PDF downloaded (219 KB)
+2026-06-10 11:47:48,421 WARNING Ignoring wrong pointing object 120 0 (offset 0)
+2026-06-10 11:47:48,422 WARNING Ignoring wrong pointing object 1016 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1018 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1020 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1022 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1024 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1026 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1028 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1030 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1032 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1034 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1036 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1038 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1040 0 (offset 0)
+2026-06-10 11:47:48,423 WARNING Ignoring wrong pointing object 1042 0 (offset 0)
+2026-06-10 11:47:48,429 INFO   text: 8,409 chars extracted
+2026-06-10 11:47:48,429 INFO   fields: 39 AcroForm fields
+2026-06-10 11:47:48,430 INFO   → saved: D10.md (9,835 chars)
+2026-06-10 11:47:50,434 INFO 
+[D84]  slug: form-d84-apply-for-a-conditional-order-or-judicial-separatio
+2026-06-10 11:47:50,500 INFO   ✓ landing page fetched (80,420 chars)
+2026-06-10 11:47:50,540 INFO   title: Apply for a conditional order or judicial separation order: Form D84
+2026-06-10 11:47:50,540 INFO   pdf:   .publishing.service.gov.uk/media/65f972ebaa9b760011fbda3d/D84_0324.pdf
+2026-06-10 11:47:52,610 INFO   ✓ PDF downloaded (216 KB)
+2026-06-10 11:47:52,833 WARNING Ignoring wrong pointing object 1143 0 (offset 0)
+2026-06-10 11:47:52,836 INFO   text: 7,025 chars extracted
+2026-06-10 11:47:52,836 INFO   fields: 14 AcroForm fields
+2026-06-10 11:47:52,836 INFO   → saved: D84.md (8,260 chars)
+2026-06-10 11:47:54,842 INFO 
+[D36]  slug: form-d36-apply-to-make-a-conditional-order-final
+2026-06-10 11:47:54,911 INFO   ✓ landing page fetched (80,220 chars)
+2026-06-10 11:47:54,940 INFO   title: Apply to make a conditional order final: Form D36
+2026-06-10 11:47:54,940 INFO   pdf:   ishing.service.gov.uk/media/66ea8888c069f68b7681bcde/D36_0724_save.pdf
+2026-06-10 11:47:57,090 INFO   ✓ PDF downloaded (530 KB)
+2026-06-10 11:47:57,274 INFO   text: 3,231 chars extracted
+2026-06-10 11:47:57,274 INFO   fields: 36 AcroForm fields
+2026-06-10 11:47:57,275 INFO   → saved: D36.md (4,601 chars)
+2026-06-10 11:47:59,280 INFO 
+[D11]  slug: form-d11-application-notice
+2026-06-10 11:47:59,384 INFO   ✓ landing page fetched (80,576 chars)
+2026-06-10 11:47:59,408 INFO   title: Apply for an interim order as part of divorce, dissolution or separati
+2026-06-10 11:47:59,408 INFO   pdf:   ishing.service.gov.uk/media/6a10618f9819be865f421c9c/D11_0626_save.pdf
+2026-06-10 11:48:01,543 INFO   ✓ PDF downloaded (170 KB)
+2026-06-10 11:48:01,934 INFO   text: 9,755 chars extracted
+2026-06-10 11:48:01,934 INFO   fields: 67 AcroForm fields
+2026-06-10 11:48:01,935 INFO   → saved: D11.md (11,788 chars)
+2026-06-10 11:48:03,940 INFO 
+[Form_A]  slug: give-notice-of-your-intention-to-proceed-with-an-application
+2026-06-10 11:48:04,004 INFO   ✓ landing page fetched (79,753 chars)
+2026-06-10 11:48:04,022 INFO   title: Give notice of your intention to proceed with an application for a fin
+2026-06-10 11:48:04,022 INFO   pdf:   ing.service.gov.uk/media/6a03425f4fb0713aa63ea814/Form_A_0526_save.pdf
+2026-06-10 11:48:06,145 INFO   ✓ PDF downloaded (444 KB)
+2026-06-10 11:48:07,321 INFO   text: 38,407 chars extracted
+2026-06-10 11:48:07,321 INFO   fields: 170 AcroForm fields
+2026-06-10 11:48:07,321 INFO   → saved: Form_A.md (45,190 chars)
+2026-06-10 11:48:09,327 INFO 
+[Form_E1]  slug: give-a-financial-statement-divorce-form-e1
+2026-06-10 11:48:09,396 INFO   ✓ landing page fetched (78,081 chars)
+2026-06-10 11:48:09,424 INFO   title: Financial statement for a financial remedy in the family court or High
+2026-06-10 11:48:09,424 INFO   pdf:   lishing.service.gov.uk/media/661910c5679e9c8d921dfe4a/Form_E1_0424.pdf
+2026-06-10 11:48:11,591 INFO   ✓ PDF downloaded (610 KB)
+2026-06-10 11:48:12,315 WARNING Ignoring wrong pointing object 9 0 (offset 0)
+2026-06-10 11:48:12,330 WARNING Ignoring wrong pointing object 11 0 (offset 0)
+2026-06-10 11:48:12,330 WARNING Ignoring wrong pointing object 167 0 (offset 0)
+2026-06-10 11:48:12,336 WARNING Ignoring wrong pointing object 2551 0 (offset 0)
+2026-06-10 11:48:12,344 INFO   text: 18,689 chars extracted
+2026-06-10 11:48:12,344 INFO   fields: 43 AcroForm fields
+2026-06-10 11:48:12,345 INFO   → saved: Form_E1.md (23,451 chars)
+2026-06-10 11:48:14,347 INFO 
+[Form_H]  slug: estimate-of-costs-for-a-financial-remedy-hearing-form-h
+2026-06-10 11:48:14,416 INFO   ✓ landing page fetched (75,500 chars)
+2026-06-10 11:48:14,444 INFO   title: Estimate of costs for a financial remedy hearing: Form H
+2026-06-10 11:48:14,444 INFO   pdf:   ublishing.service.gov.uk/media/5f229f7cd3bf7f1b0fa79fd9/form-h-eng.pdf
+2026-06-10 11:48:16,512 INFO   ✓ PDF downloaded (168 KB)
+2026-06-10 11:48:16,766 INFO   text: 4,561 chars extracted
+2026-06-10 11:48:16,766 INFO   fields: 78 AcroForm fields
+2026-06-10 11:48:16,768 INFO   → saved: Form_H.md (7,027 chars)
+2026-06-10 11:48:18,773 INFO 
+[Form_H1]  slug: give-a-statement-of-costs-for-a-financial-remedy-divorce-for
+2026-06-10 11:48:18,850 INFO   ✓ landing page fetched (75,178 chars)
+2026-06-10 11:48:18,873 INFO   title: Statement of costs (financial remedy): Form H1
+2026-06-10 11:48:18,873 INFO   pdf:   lishing.service.gov.uk/media/6470766a4a892b000c746bda/Form_H1_0820.pdf
+2026-06-10 11:48:21,117 INFO   ✓ PDF downloaded (977 KB)
+2026-06-10 11:48:21,442 INFO   text: 5,572 chars extracted
+2026-06-10 11:48:21,442 INFO   fields: 116 AcroForm fields
+2026-06-10 11:48:21,443 INFO   → saved: Form_H1.md (15,860 chars)
+2026-06-10 11:48:23,448 INFO 
+[C100]  slug: form-c100-application-under-the-children-act-1989-for-a-chil
+2026-06-10 11:48:23,533 INFO   ✓ landing page fetched (91,349 chars)
+2026-06-10 11:48:23,557 INFO   title: Apply for a court order to make arrangements for a child or resolve a 
+2026-06-10 11:48:23,557 INFO   pdf:   shing.service.gov.uk/media/6a10610c5e28c5cac81cf08e/C100_0626_save.pdf
+2026-06-10 11:48:25,862 INFO   ✓ PDF downloaded (1,185 KB)
+2026-06-10 11:48:28,059 INFO   text: 68,891 chars extracted
+2026-06-10 11:48:28,059 INFO   fields: 437 AcroForm fields
+2026-06-10 11:48:28,060 INFO   → saved: C100.md (78,831 chars)
+2026-06-10 11:48:30,065 INFO 
+[C1]  slug: form-c1-application-for-an-order
+2026-06-10 11:48:30,108 INFO   ✓ landing page fetched (74,993 chars)
+2026-06-10 11:48:30,137 INFO   title: Apply for certain orders under the Children Act 1989: Form C1
+2026-06-10 11:48:30,137 INFO   pdf:   lishing.service.gov.uk/media/6a1039239819be865f421c89/C1_0626_save.pdf
+2026-06-10 11:48:32,348 INFO   ✓ PDF downloaded (841 KB)
+2026-06-10 11:48:32,681 INFO   text: 10,328 chars extracted
+2026-06-10 11:48:32,681 INFO   fields: 38 AcroForm fields
+2026-06-10 11:48:32,682 INFO   → saved: C1.md (12,055 chars)
+2026-06-10 11:48:34,687 INFO 
+[C1A]  slug: form-c1a-allegations-of-harm-and-domestic-violence-supplemen
+2026-06-10 11:48:34,830 INFO   ✓ landing page fetched (77,573 chars)
+2026-06-10 11:48:34,858 INFO   title: Form C1A: Provide supplemental information when making or responding t
+2026-06-10 11:48:34,858 INFO   pdf:   ishing.service.gov.uk/media/6a103d9029bb11891b1cf070/C1A_0626_save.pdf
+2026-06-10 11:48:37,090 INFO   ✓ PDF downloaded (918 KB)
+2026-06-10 11:48:37,667 INFO   text: 15,278 chars extracted
+2026-06-10 11:48:37,667 INFO   fields: 173 AcroForm fields
+2026-06-10 11:48:37,667 INFO   → saved: C1A.md (21,807 chars)
+2026-06-10 11:48:39,669 INFO 
+[C2]  slug: form-c2-application-for-permission-to-start-proceedings-for-
+2026-06-10 11:48:39,784 INFO   ✓ landing page fetched (77,460 chars)
+2026-06-10 11:48:39,811 INFO   title: Make an application in existing court proceedings relating to children
+2026-06-10 11:48:39,812 INFO   pdf:   lishing.service.gov.uk/media/6a291f39db0592d809052b7e/C2_0626_save.pdf
+2026-06-10 11:48:42,039 INFO   ✓ PDF downloaded (895 KB)
+2026-06-10 11:48:42,506 INFO   text: 9,862 chars extracted
+2026-06-10 11:48:42,506 INFO   fields: 166 AcroForm fields
+2026-06-10 11:48:42,506 INFO   → saved: C2.md (16,408 chars)
+2026-06-10 11:48:44,511 INFO 
+[C7]  slug: form-c7-acknowledgment
+2026-06-10 11:48:44,598 INFO   ✓ landing page fetched (76,684 chars)
+2026-06-10 11:48:44,624 INFO   title: Respond to a court application about a child: Form C7
+2026-06-10 11:48:44,624 INFO   pdf:   s.publishing.service.gov.uk/media/65240d422548ca0014ddefc2/C7_1023.pdf
+2026-06-10 11:48:46,694 INFO   ✓ PDF downloaded (109 KB)
+2026-06-10 11:48:46,945 INFO   text: 5,986 chars extracted
+2026-06-10 11:48:46,945 INFO   fields: 47 AcroForm fields
+2026-06-10 11:48:46,945 INFO   → saved: C7.md (8,202 chars)
+2026-06-10 11:48:48,951 INFO 
+[C8]  slug: form-c8-confidential-contact-details-family-procedure-rules-
+2026-06-10 11:48:49,039 INFO   ✓ landing page fetched (77,015 chars)
+2026-06-10 11:48:49,089 INFO   title: Apply to keep your contact details confidential: Form C8
+2026-06-10 11:48:49,089 INFO   pdf:   lishing.service.gov.uk/media/6a103f2229bb11891b1cf073/C8_0626_save.pdf
+2026-06-10 11:48:51,136 INFO   ✓ PDF downloaded (107 KB)
+2026-06-10 11:48:51,362 INFO   text: 2,674 chars extracted
+2026-06-10 11:48:51,362 INFO   fields: 18 AcroForm fields
+2026-06-10 11:48:51,363 INFO   → saved: C8.md (3,787 chars)
+2026-06-10 11:48:53,368 INFO 
+[FM1]  slug: give-information-for-a-family-mediation-assessment-form-fm1
+2026-06-10 11:48:53,431 INFO   ✓ landing page fetched (76,925 chars)
+2026-06-10 11:48:53,460 INFO   title: Confirm if you have attended a Mediation Information and Assessment Me
+2026-06-10 11:48:53,460 INFO   pdf:   .publishing.service.gov.uk/media/6628df55db4b9f0448a7e58e/FM1_0424.pdf
+2026-06-10 11:48:55,721 INFO   ✓ PDF downloaded (491 KB)
+2026-06-10 11:48:56,515 WARNING Ignoring wrong pointing object 9 0 (offset 0)
+2026-06-10 11:48:56,515 WARNING Ignoring wrong pointing object 11 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2303 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2305 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2307 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2309 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2311 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2313 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2315 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2317 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2319 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2321 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2323 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2325 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2327 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2329 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2331 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2333 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2335 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2337 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2339 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2341 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2343 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2345 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2347 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2349 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2351 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2353 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2355 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2357 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2359 0 (offset 0)
+2026-06-10 11:48:56,520 WARNING Ignoring wrong pointing object 2361 0 (offset 0)
+2026-06-10 11:48:56,521 WARNING Ignoring wrong pointing object 2363 0 (offset 0)
+2026-06-10 11:48:56,531 INFO   text: 31,203 chars extracted
+2026-06-10 11:48:56,531 INFO   fields: 66 AcroForm fields
+2026-06-10 11:48:56,531 INFO   → saved: FM1.md (33,759 chars)
+2026-06-10 11:48:58,538 INFO 
+[FP2]  slug: form-fp2-application-notice-part-18-of-the-family-procedure-
+2026-06-10 11:48:58,619 INFO   ✓ landing page fetched (73,913 chars)
+2026-06-10 11:48:58,687 INFO   title: Make an application to court within family proceedings: Form FP2
+2026-06-10 11:48:58,687 INFO   pdf:   ng.service.gov.uk/media/652418beaea2d00013219a4d/FP2_web_1114_save.pdf
+2026-06-10 11:49:00,819 INFO   ✓ PDF downloaded (329 KB)
+2026-06-10 11:49:01,014 INFO   text: 5,401 chars extracted
+2026-06-10 11:49:01,014 INFO   fields: 66 AcroForm fields
+2026-06-10 11:49:01,014 INFO   → saved: FP2.md (9,083 chars)
+2026-06-10 11:49:03,019 INFO 
+[FP6]  slug: form-fp6-certificate-of-service
+2026-06-10 11:49:03,119 INFO   ✓ landing page fetched (78,040 chars)
+2026-06-10 11:49:03,146 INFO   title: Certificate of service in family cases: Form FP6
+2026-06-10 11:49:03,147 INFO   pdf:   .publishing.service.gov.uk/media/69e2000a2570f65c2716d96b/FP6_0426.pdf
+2026-06-10 11:49:05,554 INFO   ✓ PDF downloaded (604 KB)
+2026-06-10 11:49:05,839 INFO   text: 4,849 chars extracted
+2026-06-10 11:49:05,839 INFO   fields: 48 AcroForm fields
+2026-06-10 11:49:05,840 INFO   → saved: FP6.md (6,989 chars)
+2026-06-10 11:49:07,845 INFO 
+[D89]  slug: form-d89-request-personal-service-of-papers-by-a-court-baili
+2026-06-10 11:49:07,926 INFO   ✓ landing page fetched (76,509 chars)
+2026-06-10 11:49:07,953 INFO   title: Request a court bailiff to deliver papers: Form D89
+2026-06-10 11:49:07,954 INFO   pdf:   .publishing.service.gov.uk/media/678646f6f029f40e50881757/D89_0125.pdf
+2026-06-10 11:49:10,010 INFO   ✓ PDF downloaded (155 KB)
+2026-06-10 11:49:10,288 INFO   text: 4,963 chars extracted
+2026-06-10 11:49:10,288 INFO   fields: 77 AcroForm fields
+2026-06-10 11:49:10,289 INFO   → saved: D89.md (7,098 chars)
+2026-06-10 11:49:12,294 INFO 
+============================================================
+2026-06-10 11:49:12,294 INFO Complete. 19/19 forms saved, 0 failed.
+2026-06-10 11:49:12,294 INFO Note: Form_E and Form_G are excluded — these have been replaced
+2026-06-10 11:49:12,294 INFO       by the MyHMCTS online service and are no longer available
+2026-06-10 11:49:12,294 INFO       as downloadable PDFs on GOV.UK.
+2026-06-10 11:49:12,294 INFO ============================================================
