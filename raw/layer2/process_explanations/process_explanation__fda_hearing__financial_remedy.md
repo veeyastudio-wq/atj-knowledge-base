@@ -80,3 +80,4 @@ In some cases, if both parties confirm they are ready (via Form G) and agree, th
 - process_explanation__financial_remedy_track_overview__financial_remedy
 - process_explanation__fdr_hearing__financial_remedy
 - process_explanation__financial_remedy_final_hearing__financial_remedy
+- document_explanation__form_a__financial_remedy
