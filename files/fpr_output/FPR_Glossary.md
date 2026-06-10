@@ -1,0 +1,29 @@
+---
+source: The Family Procedure Rules 2010 (SI 2010/2955)
+part: GLOSSARY
+title: Glossary
+url: https://www.legislation.gov.uk/uksi/2010/2955/part/GLOSSARY
+version: Latest available (Revised)
+scraped: 2026-06-10
+licence: Open Government Licence v3.0
+---
+
+# Glossary
+
+This glossary is a guide to the meaning of certain legal expressions as used in the Family Procedure Rules 2010, but it does not give the expressions any meaning in the rules which they do not otherwise have in the law.
+
+| Expression | Meaning |
+|---|---|
+| Affidavit | A written, sworn, statement of evidence. |
+| Cross-examination | Questioning of a witness by a party other than the party who called the witness. |
+| Evidence in chief | The evidence given by a witness for the party who called him. |
+| Injunction | A court order prohibiting a person from doing something or requiring a person to do something. |
+| Official copy | A copy of an official document, supplied and marked as such by the office which issued the original. |
+| Pre-action protocol | Statements of best practice about pre-action conduct which have been approved by the President of the Family Division and which are annexed to a Practice Direction. |
+| Privilege | The right of a party to refuse to disclose a document or produce a document or to refuse to answer questions on the ground of some special interest recognised by law. |
+| Seal | A seal is a mark which the court puts on document to indicate that the document has been issued by the court. |
+| Service | Steps required by rules of court to bring documents used in court proceedings to a person's attention. |
+| Set aside | Cancelling a judgment or order or a step taken by a party in the proceedings. |
+| Stay | A stay imposes a halt on proceedings, apart from the taking of any steps allowed by the rules or the terms of the stay. Proceedings can be continued if a stay is lifted. |
+| Strike out | Striking out means the court ordering written material to be deleted so that it may no longer be relied upon. |
+| Without prejudice | Negotiations with a view to settlement are usually conducted “without prejudice” which means that the circumstances in which the content of those negotiations may be revealed to the court are very restricted. |
