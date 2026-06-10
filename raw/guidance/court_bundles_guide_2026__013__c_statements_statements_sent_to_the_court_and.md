@@ -1,0 +1,20 @@
+---
+source: "Guide for Litigants in Person: Preparing Court Bundles (March 2026)"
+section: C Statements Statements sent to the court and
+parent_document: "Guide for Litigants in Person: Preparing Court Bundles (March 2026)"
+parent_slug: court_bundles_guide_2026
+section_index: 13
+url: "https://www.judiciary.uk/wp-content/uploads/2026/03/020326-Preparing-Court-Bundles-for-Family-Proceedings-Guide-for-Litigants-in-Person.pdf"
+scrape_date: 2026-06-10
+licence: Open Government Licence v3.0
+content_type: guidance
+jurisdiction: England and Wales
+---
+# C Statements Statements sent to the court and
+
+other parties by one of the parties.
+• A statement will usually
+include a “statement of truth”
+which means the person
+signing it is confirming the
+contents are true.

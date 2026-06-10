@@ -1,0 +1,462 @@
+2026-06-10 12:11:49,712 [INFO] === Category 3 scraper starting ===
+2026-06-10 12:11:49,712 [INFO] Fetching HTML: https://www.gov.uk/divorce
+2026-06-10 12:11:51,879 [INFO]   Saved: govuk_divorce__contents.md
+2026-06-10 12:11:51,880 [INFO]   Saved: govuk_divorce__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:11:51,880 [INFO] govuk_divorce: 2 section files saved
+2026-06-10 12:11:51,880 [INFO] Fetching HTML: https://www.gov.uk/money-property-when-relationship-ends
+2026-06-10 12:11:53,986 [INFO]   Saved: govuk_financial_remedy__contents.md
+2026-06-10 12:11:53,986 [INFO]   Saved: govuk_financial_remedy__making_an_agreement_legally_binding.md
+2026-06-10 12:11:53,986 [INFO]   Saved: govuk_financial_remedy__get_help_agreeing.md
+2026-06-10 12:11:53,986 [INFO]   Saved: govuk_financial_remedy__get_the_court_to_decide.md
+2026-06-10 12:11:53,987 [INFO]   Saved: govuk_financial_remedy__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:11:53,987 [INFO] govuk_financial_remedy: 5 section files saved
+2026-06-10 12:11:53,987 [INFO] Fetching HTML: https://www.gov.uk/looking-after-children-divorce
+2026-06-10 12:11:56,090 [INFO]   Saved: govuk_child_arrangements__contents.md
+2026-06-10 12:11:56,090 [INFO]   Saved: govuk_child_arrangements__get_help_agreeing_without_going_to_court.md
+2026-06-10 12:11:56,090 [INFO]   Saved: govuk_child_arrangements__if_you_cannot_agree_on_everything.md
+2026-06-10 12:11:56,091 [INFO]   Saved: govuk_child_arrangements__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:11:56,091 [INFO] govuk_child_arrangements: 4 section files saved
+2026-06-10 12:11:56,091 [INFO] Fetching HTML: https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer
+2026-06-10 12:11:58,447 [INFO]   Saved: advicenow_financial_order__breadcrumb.md
+2026-06-10 12:11:58,447 [INFO]   Saved: advicenow_financial_order__getting_started.md
+2026-06-10 12:11:58,447 [INFO]   Saved: advicenow_financial_order__what_is_a_financial_order.md
+2026-06-10 12:11:58,447 [INFO]   Saved: advicenow_financial_order__key_things_to_know_about_financial_orders.md
+2026-06-10 12:11:58,448 [INFO]   Saved: advicenow_financial_order__getting_help_to_pay_for_legal_advice_legal_aid.md
+2026-06-10 12:11:58,448 [INFO]   Saved: advicenow_financial_order__getting_some_legal_advice_early_on_to_find_out_where_you_stand.md
+2026-06-10 12:11:58,448 [INFO]   Saved: advicenow_financial_order__what_the_court_takes_into_account_when_it_makes_a_financial_order.md
+2026-06-10 12:11:58,448 [INFO]   Saved: advicenow_financial_order__the_kinds_of_financial_orders_the_court_can_make.md
+2026-06-10 12:11:58,449 [INFO]   Saved: advicenow_financial_order__sorting_things_out_by_negotiation_and_agreement.md
+2026-06-10 12:11:58,449 [INFO]   Saved: advicenow_financial_order__consent_orders.md
+2026-06-10 12:11:58,449 [INFO]   Saved: advicenow_financial_order__welfare_benefits.md
+2026-06-10 12:11:58,449 [INFO]   Saved: advicenow_financial_order__the_process.md
+2026-06-10 12:11:58,449 [INFO]   Saved: advicenow_financial_order__going_to_court_the_basics.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__applying_for_a_financial_order.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__what_happens_next.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__how_to_fill_in_your_form_e_financial_statement.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__checklist_things_to_do_before_the_first_appointment.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__the_first_appointment.md
+2026-06-10 12:11:58,450 [INFO]   Saved: advicenow_financial_order__if_you_couldnt_agree_at_the_first_appointment.md
+2026-06-10 12:11:58,451 [INFO]   Saved: advicenow_financial_order__the_financial_dispute_resolution_appointment.md
+2026-06-10 12:11:58,451 [INFO]   Saved: advicenow_financial_order__the_final_hearing.md
+2026-06-10 12:11:58,451 [INFO]   Saved: advicenow_financial_order__top_tips_if_you_are_going_to_court_over_finances_on_divorce.md
+2026-06-10 12:11:58,452 [INFO]   Saved: advicenow_financial_order__more_help_and_advice.md
+2026-06-10 12:11:58,452 [INFO]   Saved: advicenow_financial_order__what_does_it_mean.md
+2026-06-10 12:11:58,452 [INFO]   Saved: advicenow_financial_order__about_this_guide.md
+2026-06-10 12:11:58,452 [INFO]   Saved: advicenow_financial_order__buy_our_guides.md
+2026-06-10 12:11:58,452 [INFO] advicenow_financial_order: 26 section files saved
+2026-06-10 12:11:58,452 [INFO] Fetching HTML: https://www.advicenow.org.uk/guides/how-get-divorce-without-lawyer
+2026-06-10 12:11:58,549 [ERROR] Failed to fetch https://www.advicenow.org.uk/guides/how-get-divorce-without-lawyer: 404 Client Error: Not Found for url: https://www.advicenow.org.uk/guides/how-get-divorce-without-lawyer
+2026-06-10 12:11:58,549 [INFO] advicenow_divorce: 0 section files saved
+2026-06-10 12:11:58,549 [INFO] Downloading PDF: https://www.judiciary.gov.uk/wp-content/uploads/2026/03/guide-for-litigants-in-person-preparing-court-bundles.pdf
+2026-06-10 12:11:59,172 [WARNING] Could not fetch https://www.judiciary.gov.uk/wp-content/uploads/2026/03/guide-for-litigants-in-person-preparing-court-bundles.pdf: 404 Client Error: Not Found for url: https://www.judiciary.uk/wp-content/uploads/2026/03/guide-for-litigants-in-person-preparing-court-bundles.pdf
+2026-06-10 12:11:59,175 [INFO] Primary URL failed — searching fallback page: https://www.judiciary.gov.uk/publications/family-court-practice-directions/
+2026-06-10 12:11:59,784 [ERROR] Fallback page also failed: 404 Client Error: Not Found for url: https://www.judiciary.uk/prevention-of-future-death-reports/family-court-practice-directions/
+2026-06-10 12:11:59,784 [ERROR] Skipping court_bundles_guide_2026 — could not retrieve PDF from any source
+2026-06-10 12:11:59,786 [INFO] court_bundles_guide_2026: 0 section files saved
+2026-06-10 12:11:59,786 [INFO] Downloading PDF: https://www.judiciary.gov.uk/wp-content/uploads/2026/01/financial-remedies-guide-2026.pdf
+2026-06-10 12:12:00,331 [WARNING] Could not fetch https://www.judiciary.gov.uk/wp-content/uploads/2026/01/financial-remedies-guide-2026.pdf: 404 Client Error: Not Found for url: https://www.judiciary.uk/wp-content/uploads/2026/01/financial-remedies-guide-2026.pdf
+2026-06-10 12:12:00,334 [INFO] Primary URL failed — searching fallback page: https://www.judiciary.gov.uk/publications/financial-remedies-court/
+2026-06-10 12:12:00,878 [ERROR] Fallback page also failed: 404 Client Error: Not Found for url: https://www.judiciary.uk/prevention-of-future-death-reports/financial-remedies-court/
+2026-06-10 12:12:00,878 [ERROR] Skipping financial_remedies_guide_2026 — could not retrieve PDF from any source
+2026-06-10 12:12:00,880 [INFO] financial_remedies_guide_2026: 0 section files saved
+2026-06-10 12:12:00,880 [INFO] === Done. 37 files saved to raw/guidance/ ===
+2026-06-10 12:16:52,068 [INFO] === Category 3 scraper starting ===
+2026-06-10 12:16:52,068 [INFO] Fetching HTML: https://www.gov.uk/divorce
+2026-06-10 12:16:54,267 [INFO]   Saved: govuk_divorce__contents.md
+2026-06-10 12:16:54,267 [INFO]   Saved: govuk_divorce__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:16:54,267 [INFO] govuk_divorce: 2 section files saved
+2026-06-10 12:16:54,267 [INFO] Fetching HTML: https://www.gov.uk/money-property-when-relationship-ends
+2026-06-10 12:16:56,394 [INFO]   Saved: govuk_financial_remedy__contents.md
+2026-06-10 12:16:56,394 [INFO]   Saved: govuk_financial_remedy__making_an_agreement_legally_binding.md
+2026-06-10 12:16:56,394 [INFO]   Saved: govuk_financial_remedy__get_help_agreeing.md
+2026-06-10 12:16:56,394 [INFO]   Saved: govuk_financial_remedy__get_the_court_to_decide.md
+2026-06-10 12:16:56,395 [INFO]   Saved: govuk_financial_remedy__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:16:56,395 [INFO] govuk_financial_remedy: 5 section files saved
+2026-06-10 12:16:56,395 [INFO] Fetching HTML: https://www.gov.uk/looking-after-children-divorce
+2026-06-10 12:16:58,510 [INFO]   Saved: govuk_child_arrangements__contents.md
+2026-06-10 12:16:58,510 [INFO]   Saved: govuk_child_arrangements__get_help_agreeing_without_going_to_court.md
+2026-06-10 12:16:58,511 [INFO]   Saved: govuk_child_arrangements__if_you_cannot_agree_on_everything.md
+2026-06-10 12:16:58,511 [INFO]   Saved: govuk_child_arrangements__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:16:58,511 [INFO] govuk_child_arrangements: 4 section files saved
+2026-06-10 12:16:58,511 [INFO] Fetching HTML: https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer
+2026-06-10 12:17:00,687 [INFO]   Saved: advicenow_financial_order__breadcrumb.md
+2026-06-10 12:17:00,688 [INFO]   Saved: advicenow_financial_order__getting_started.md
+2026-06-10 12:17:00,688 [INFO]   Saved: advicenow_financial_order__what_is_a_financial_order.md
+2026-06-10 12:17:00,688 [INFO]   Saved: advicenow_financial_order__key_things_to_know_about_financial_orders.md
+2026-06-10 12:17:00,688 [INFO]   Saved: advicenow_financial_order__getting_help_to_pay_for_legal_advice_legal_aid.md
+2026-06-10 12:17:00,688 [INFO]   Saved: advicenow_financial_order__getting_some_legal_advice_early_on_to_find_out_where_you_stand.md
+2026-06-10 12:17:00,689 [INFO]   Saved: advicenow_financial_order__what_the_court_takes_into_account_when_it_makes_a_financial_order.md
+2026-06-10 12:17:00,689 [INFO]   Saved: advicenow_financial_order__the_kinds_of_financial_orders_the_court_can_make.md
+2026-06-10 12:17:00,689 [INFO]   Saved: advicenow_financial_order__sorting_things_out_by_negotiation_and_agreement.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__consent_orders.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__welfare_benefits.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__the_process.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__going_to_court_the_basics.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__applying_for_a_financial_order.md
+2026-06-10 12:17:00,690 [INFO]   Saved: advicenow_financial_order__what_happens_next.md
+2026-06-10 12:17:00,691 [INFO]   Saved: advicenow_financial_order__how_to_fill_in_your_form_e_financial_statement.md
+2026-06-10 12:17:00,691 [INFO]   Saved: advicenow_financial_order__checklist_things_to_do_before_the_first_appointment.md
+2026-06-10 12:17:00,691 [INFO]   Saved: advicenow_financial_order__the_first_appointment.md
+2026-06-10 12:17:00,691 [INFO]   Saved: advicenow_financial_order__if_you_couldnt_agree_at_the_first_appointment.md
+2026-06-10 12:17:00,691 [INFO]   Saved: advicenow_financial_order__the_financial_dispute_resolution_appointment.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__the_final_hearing.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__top_tips_if_you_are_going_to_court_over_finances_on_divorce.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__more_help_and_advice.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__what_does_it_mean.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__about_this_guide.md
+2026-06-10 12:17:00,692 [INFO]   Saved: advicenow_financial_order__buy_our_guides.md
+2026-06-10 12:17:00,692 [INFO] advicenow_financial_order: 26 section files saved
+2026-06-10 12:17:00,692 [INFO] Fetching HTML: https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer
+2026-06-10 12:17:02,801 [INFO]   Saved: advicenow_divorce__breadcrumb.md
+2026-06-10 12:17:02,801 [INFO]   Saved: advicenow_divorce__getting_started.md
+2026-06-10 12:17:02,801 [INFO]   Saved: advicenow_divorce__getting_legal_help.md
+2026-06-10 12:17:02,802 [INFO]   Saved: advicenow_divorce__how_divorce_works.md
+2026-06-10 12:17:02,802 [INFO]   Saved: advicenow_divorce__the_process.md
+2026-06-10 12:17:02,802 [INFO]   Saved: advicenow_divorce__things_you_need_to_know.md
+2026-06-10 12:17:02,802 [INFO]   Saved: advicenow_divorce__the_basics_courts_forms_fees_cost_and_more.md
+2026-06-10 12:17:02,802 [INFO]   Saved: advicenow_divorce__top_tips.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__starting_proceedings_the_application.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__the_application_continued.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__the_next_steps_after_the_court_has_received_the_application.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__what_to_do_if_your_ex_does_not_respond_to_the_application.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__applying_for_a_conditional_order.md
+2026-06-10 12:17:02,803 [INFO]   Saved: advicenow_divorce__applying_for_a_final_divorce_or_dissolution_order.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__the_effect_of_a_final_divorce_or_dissolution_order.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__what_happens_if_you_remarry_or_register_a_new_civil_partnership.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__how_to_end_your_marriage_or_civil_partnership_if_your_ex_is_missing_or_presumed_.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__what_does_it_mean_how_to_get_a_divorce.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__more_help_and_advice_on_how_to_get_a_divorce.md
+2026-06-10 12:17:02,804 [INFO]   Saved: advicenow_divorce__about_this_guide.md
+2026-06-10 12:17:02,805 [INFO]   Saved: advicenow_divorce__buy_our_guides.md
+2026-06-10 12:17:02,805 [INFO] advicenow_divorce: 21 section files saved
+2026-06-10 12:17:02,805 [INFO] Downloading PDF: https://www.judiciary.uk/wp-content/uploads/2026/03/020326-Preparing-Court-Bundles-for-Family-Proceedings-Guide-for-Litigants-in-Person.pdf
+2026-06-10 12:17:06,595 [INFO]   Saved: court_bundles_guide_2026__1_introduction.md
+2026-06-10 12:17:06,595 [INFO]   Saved: court_bundles_guide_2026__1_introduction.md
+2026-06-10 12:17:06,595 [INFO]   Saved: court_bundles_guide_2026__5_how_a_court_bundle_should_be_organised.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__10_what_happens_if_documents_are_late_or_missing.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__12_support_and_further_help.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__3_when_a_court_bundle_must_be_prepared_and_who_prepares_it.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__4_what_documents_to_include_in_a_court_bundle.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__key_terms.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__contents_page_bundle_content_arranged_in.md
+2026-06-10 12:17:06,596 [INFO]   Saved: court_bundles_guide_2026__a_preliminary_documents.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__acts_of_parliament_and_extracts.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__authorities_are_legal_materials_that.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__they_are_used_to_support_a_legal.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__c_statements_statements_sent_to_the_court_and.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__cafcass_cafcass_cymru_or_a_local.md
+2026-06-10 12:17:06,597 [INFO]   Saved: court_bundles_guide_2026__5_how_a_court_bundle_should_be_organised.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__example.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__7_bundle_format_size_and_limits.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__8_agreeing_the_bundle_with_the_other_party.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__9_sending_the_bundle_to_the_court_and_deadlines.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__timetable_for_preparing_the_court_bundle.md
+2026-06-10 12:17:06,598 [INFO]   Saved: court_bundles_guide_2026__seven_working_days_before_the_parties_should_agree_what_documents.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__five_working_days_before_the_bundle_except_any_preliminary.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__if_the_hearing_is_before_a_high_court_judge.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__you_have_a_hearing_on_a_wednesday.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__10_what_happens_if_documents_are_late_or_missing.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__11_urgent_hearings.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__12_support_and_further_help.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__important.md
+2026-06-10 12:17:06,599 [INFO]   Saved: court_bundles_guide_2026__case_summary.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__hearing_date_15_july_2026.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__date_prepared_16_june_2026.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__respondent_john_doe.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__summary_of_the_case.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__issues_for_the_court_to_decide.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__date_prepared_16_june_2026.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__chronology.md
+2026-06-10 12:17:06,600 [INFO]   Saved: court_bundles_guide_2026__date_event.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__15_july_further_hearing_listed.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__bundle_index.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__prepared_by_sarah_smith.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__chronology_p4.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__hearing_template_where_hearing_is_2_hours_or_more_if_required_p10.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__orders_sealed_or_approved_orders_listed_in_date_order_3.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__page.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__expert_reports_10.md
+2026-06-10 12:17:06,601 [INFO]   Saved: court_bundles_guide_2026__section_f_open_offers.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__page.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__bundle_index.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__prepared_by_sarah_smith.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__chronology_annex_d_a004.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__b002.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__c001.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__c002.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__d001.md
+2026-06-10 12:17:06,602 [INFO]   Saved: court_bundles_guide_2026__e001.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__bundle_index.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__prepared_by_sarah_smith.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__chronology_annex_d_a004.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__b002.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__c001.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__c002.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__d001.md
+2026-06-10 12:17:06,603 [INFO]   Saved: court_bundles_guide_2026__e001.md
+2026-06-10 12:17:06,603 [INFO] court_bundles_guide_2026: 64 section files saved
+2026-06-10 12:17:06,603 [INFO] Downloading PDF: https://www.judiciary.uk/wp-content/uploads/2026/03/FRC-Guide-Final-Clean.pdf
+2026-06-10 12:17:10,730 [INFO]   Saved: financial_remedies_guide_2026__the_financial_remedies.md
+2026-06-10 12:17:10,731 [INFO]   Saved: financial_remedies_guide_2026__hhj_hess.md
+2026-06-10 12:17:10,731 [INFO]   Saved: financial_remedies_guide_2026__published_march_2026.md
+2026-06-10 12:17:10,731 [INFO]   Saved: financial_remedies_guide_2026__contents.md
+2026-06-10 12:17:10,731 [INFO]   Saved: financial_remedies_guide_2026__march_2026.md
+2026-06-10 12:17:10,731 [INFO]   Saved: financial_remedies_guide_2026__3_this_guide_is_intended_to_provide_essential_practice_guidance_for_legal.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__jurisdiction_of_the_financial_remedies_court.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__court.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__operation_of_the_financial_remedies_court.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__non_court_dispute_resolution.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__other_guidance_documents.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__duty_to_negotiate.md
+2026-06-10 12:17:10,732 [INFO]   Saved: financial_remedies_guide_2026__circuit_judge_and_district_judge_level.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__high_court_judge_level.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__judge_level_to_high_court_judge_level.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__transfer_from_the_frc_to_the_family_division_of.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__freezing_injunctions.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__hemain_injunctions.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__without_notice_ex_parte_hearings.md
+2026-06-10 12:17:10,733 [INFO]   Saved: financial_remedies_guide_2026__circuit_judge_and_district_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__high_court_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__appointment_based_on_the_accelerated_procedure_annexed_to_this_guide_as.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__the_requests_for_further_information_and_documents_should_be.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__the_parties_must_collaborate_before_the_hearing_to_produce_these_key.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__circuit_judge_and_district_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__high_court_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__at_high_court_judge_level_circuit_judge_level_and_district_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__circuit_judge_and_district_judge_level.md
+2026-06-10 12:17:10,734 [INFO]   Saved: financial_remedies_guide_2026__70_every_case_must_be_the_subject_of_a_ptr_before_the_allocated_judge_held.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__at_high_court_judge_level_circuit_judge_level_and_district_judge_level.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__72_for_those_cases_without_a_ptr_the_timetable_should_be_considered_and.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__the_parties_must_collaborate_before_the_hearing_to_produce_these_key.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__final_hearing.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__section_25_statements_and_other_witness.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__bundles.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__position_statements.md
+2026-06-10 12:17:10,735 [INFO]   Saved: financial_remedies_guide_2026__orders.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__november_2017_the_standard_order_templates_should_be_used_adapted_as.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__wellbeing.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__fast_track.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__guidance_published_by_the_president_of_the_family_division.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__judge_level_and_transfer_of_cases_jurisdiction_of_the_family_court_may.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__the_pre_application_protocol_in.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__guidance_published_by_the_family_justice_council.md
+2026-06-10 12:17:10,736 [INFO]   Saved: financial_remedies_guide_2026__family_justice_council_sorting_out.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__guidance_on_pensions_on_divorce.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__the_report_of_the_pensions_advisory.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__group_2024.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__useful_how_to_guides_for_people_who_do_not_have_a_lawyer.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__advicenow_how_to_get_legal_aid_for_a.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__advicenow_help_with_court_fees_in_a.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__advicenow_family_mediation.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__useful_animations.md
+2026-06-10 12:17:10,737 [INFO]   Saved: financial_remedies_guide_2026__pensions_on_divorce.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__guidance_on_how_to_complete_template_es2.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__accelerated_first_appointment_procedure_in_financial_remedy.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__5_this_procedure_will_only_be_available_where.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__sitting_at.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__the_parties_are_as_follows.md
+2026-06-10 12:17:10,738 [INFO]   Saved: financial_remedies_guide_2026__6_the_parties_have_agreed_that.md
+2026-06-10 12:17:10,739 [INFO]   Saved: financial_remedies_guide_2026__it_is_ordered_by_consent_that.md
+2026-06-10 12:17:10,739 [INFO] financial_remedies_guide_2026: 62 section files saved
+2026-06-10 12:17:10,739 [INFO] === Done. 184 files saved to raw/guidance/ ===
+2026-06-10 12:18:48,159 [INFO] === Category 3 scraper starting ===
+2026-06-10 12:18:48,159 [INFO] Fetching HTML: https://www.gov.uk/divorce
+2026-06-10 12:18:50,419 [INFO]   Saved: govuk_divorce__000__contents.md
+2026-06-10 12:18:50,419 [INFO]   Saved: govuk_divorce__001__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:18:50,419 [INFO] govuk_divorce: 2 section files saved
+2026-06-10 12:18:50,420 [INFO] Fetching HTML: https://www.gov.uk/money-property-when-relationship-ends
+2026-06-10 12:18:52,535 [INFO]   Saved: govuk_financial_remedy__000__contents.md
+2026-06-10 12:18:52,535 [INFO]   Saved: govuk_financial_remedy__001__making_an_agreement_legally_binding.md
+2026-06-10 12:18:52,535 [INFO]   Saved: govuk_financial_remedy__002__get_help_agreeing.md
+2026-06-10 12:18:52,535 [INFO]   Saved: govuk_financial_remedy__003__get_the_court_to_decide.md
+2026-06-10 12:18:52,536 [INFO]   Saved: govuk_financial_remedy__004__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:18:52,536 [INFO] govuk_financial_remedy: 5 section files saved
+2026-06-10 12:18:52,536 [INFO] Fetching HTML: https://www.gov.uk/looking-after-children-divorce
+2026-06-10 12:18:54,650 [INFO]   Saved: govuk_child_arrangements__000__contents.md
+2026-06-10 12:18:54,650 [INFO]   Saved: govuk_child_arrangements__001__get_help_agreeing_without_going_to_court.md
+2026-06-10 12:18:54,650 [INFO]   Saved: govuk_child_arrangements__002__if_you_cannot_agree_on_everything.md
+2026-06-10 12:18:54,651 [INFO]   Saved: govuk_child_arrangements__003__this_page_is_part_of_get_a_divorce_step_by_step.md
+2026-06-10 12:18:54,651 [INFO] govuk_child_arrangements: 4 section files saved
+2026-06-10 12:18:54,651 [INFO] Fetching HTML: https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer
+2026-06-10 12:18:56,892 [INFO]   Saved: advicenow_financial_order__000__breadcrumb.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__001__getting_started.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__002__what_is_a_financial_order.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__003__key_things_to_know_about_financial_orders.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__004__getting_help_to_pay_for_legal_advice_legal_aid.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__005__getting_some_legal_advice_early_on_to_find_out_where_you_stand.md
+2026-06-10 12:18:56,893 [INFO]   Saved: advicenow_financial_order__006__what_the_court_takes_into_account_when_it_makes_a_financial_order.md
+2026-06-10 12:18:56,894 [INFO]   Saved: advicenow_financial_order__007__the_kinds_of_financial_orders_the_court_can_make.md
+2026-06-10 12:18:56,894 [INFO]   Saved: advicenow_financial_order__008__sorting_things_out_by_negotiation_and_agreement.md
+2026-06-10 12:18:56,894 [INFO]   Saved: advicenow_financial_order__009__consent_orders.md
+2026-06-10 12:18:56,894 [INFO]   Saved: advicenow_financial_order__010__welfare_benefits.md
+2026-06-10 12:18:56,894 [INFO]   Saved: advicenow_financial_order__011__the_process.md
+2026-06-10 12:18:56,895 [INFO]   Saved: advicenow_financial_order__012__going_to_court_the_basics.md
+2026-06-10 12:18:56,895 [INFO]   Saved: advicenow_financial_order__013__applying_for_a_financial_order.md
+2026-06-10 12:18:56,895 [INFO]   Saved: advicenow_financial_order__014__what_happens_next.md
+2026-06-10 12:18:56,895 [INFO]   Saved: advicenow_financial_order__015__how_to_fill_in_your_form_e_financial_statement.md
+2026-06-10 12:18:56,895 [INFO]   Saved: advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment.md
+2026-06-10 12:18:56,896 [INFO]   Saved: advicenow_financial_order__017__the_first_appointment.md
+2026-06-10 12:18:56,896 [INFO]   Saved: advicenow_financial_order__018__if_you_couldnt_agree_at_the_first_appointment.md
+2026-06-10 12:18:56,896 [INFO]   Saved: advicenow_financial_order__019__the_financial_dispute_resolution_appointment.md
+2026-06-10 12:18:56,896 [INFO]   Saved: advicenow_financial_order__020__the_final_hearing.md
+2026-06-10 12:18:56,896 [INFO]   Saved: advicenow_financial_order__021__top_tips_if_you_are_going_to_court_over_finances_on_divorce.md
+2026-06-10 12:18:56,897 [INFO]   Saved: advicenow_financial_order__022__more_help_and_advice.md
+2026-06-10 12:18:56,897 [INFO]   Saved: advicenow_financial_order__023__what_does_it_mean.md
+2026-06-10 12:18:56,897 [INFO]   Saved: advicenow_financial_order__024__about_this_guide.md
+2026-06-10 12:18:56,897 [INFO]   Saved: advicenow_financial_order__025__buy_our_guides.md
+2026-06-10 12:18:56,897 [INFO] advicenow_financial_order: 26 section files saved
+2026-06-10 12:18:56,897 [INFO] Fetching HTML: https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer
+2026-06-10 12:18:59,010 [INFO]   Saved: advicenow_divorce__000__breadcrumb.md
+2026-06-10 12:18:59,011 [INFO]   Saved: advicenow_divorce__001__getting_started.md
+2026-06-10 12:18:59,011 [INFO]   Saved: advicenow_divorce__002__getting_legal_help.md
+2026-06-10 12:18:59,011 [INFO]   Saved: advicenow_divorce__003__how_divorce_works.md
+2026-06-10 12:18:59,011 [INFO]   Saved: advicenow_divorce__004__the_process.md
+2026-06-10 12:18:59,011 [INFO]   Saved: advicenow_divorce__005__things_you_need_to_know.md
+2026-06-10 12:18:59,012 [INFO]   Saved: advicenow_divorce__006__the_basics_courts_forms_fees_cost_and_more.md
+2026-06-10 12:18:59,012 [INFO]   Saved: advicenow_divorce__007__top_tips.md
+2026-06-10 12:18:59,012 [INFO]   Saved: advicenow_divorce__008__starting_proceedings_the_application.md
+2026-06-10 12:18:59,013 [INFO]   Saved: advicenow_divorce__009__the_application_continued.md
+2026-06-10 12:18:59,013 [INFO]   Saved: advicenow_divorce__010__the_next_steps_after_the_court_has_received_the_application.md
+2026-06-10 12:18:59,013 [INFO]   Saved: advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application.md
+2026-06-10 12:18:59,013 [INFO]   Saved: advicenow_divorce__012__applying_for_a_conditional_order.md
+2026-06-10 12:18:59,013 [INFO]   Saved: advicenow_divorce__013__applying_for_a_final_divorce_or_dissolution_order.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__014__the_effect_of_a_final_divorce_or_dissolution_order.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__015__what_happens_if_you_remarry_or_register_a_new_civil_partnership.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__016__how_to_end_your_marriage_or_civil_partnership_if_your_ex_is_missing_or_presumed_.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__017__what_does_it_mean_how_to_get_a_divorce.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__018__more_help_and_advice_on_how_to_get_a_divorce.md
+2026-06-10 12:18:59,014 [INFO]   Saved: advicenow_divorce__019__about_this_guide.md
+2026-06-10 12:18:59,015 [INFO]   Saved: advicenow_divorce__020__buy_our_guides.md
+2026-06-10 12:18:59,015 [INFO] advicenow_divorce: 21 section files saved
+2026-06-10 12:18:59,015 [INFO] Downloading PDF: https://www.judiciary.uk/wp-content/uploads/2026/03/020326-Preparing-Court-Bundles-for-Family-Proceedings-Guide-for-Litigants-in-Person.pdf
+2026-06-10 12:19:02,907 [INFO]   Saved: court_bundles_guide_2026__000__1_introduction.md
+2026-06-10 12:19:02,907 [INFO]   Saved: court_bundles_guide_2026__001__1_introduction.md
+2026-06-10 12:19:02,907 [INFO]   Saved: court_bundles_guide_2026__002__5_how_a_court_bundle_should_be_organised.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__003__10_what_happens_if_documents_are_late_or_missing.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__004__12_support_and_further_help.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__005__3_when_a_court_bundle_must_be_prepared_and_who_prepares_it.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__006__4_what_documents_to_include_in_a_court_bundle.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__007__key_terms.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__008__contents_page_bundle_content_arranged_in.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__009__a_preliminary_documents.md
+2026-06-10 12:19:02,908 [INFO]   Saved: court_bundles_guide_2026__010__acts_of_parliament_and_extracts.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__011__authorities_are_legal_materials_that.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__012__they_are_used_to_support_a_legal.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__013__c_statements_statements_sent_to_the_court_and.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__014__cafcass_cafcass_cymru_or_a_local.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__015__5_how_a_court_bundle_should_be_organised.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__016__example.md
+2026-06-10 12:19:02,909 [INFO]   Saved: court_bundles_guide_2026__017__7_bundle_format_size_and_limits.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__018__8_agreeing_the_bundle_with_the_other_party.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__019__9_sending_the_bundle_to_the_court_and_deadlines.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__020__timetable_for_preparing_the_court_bundle.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__021__seven_working_days_before_the_parties_should_agree_what_documents.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__022__five_working_days_before_the_bundle_except_any_preliminary.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__023__if_the_hearing_is_before_a_high_court_judge.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__024__you_have_a_hearing_on_a_wednesday.md
+2026-06-10 12:19:02,910 [INFO]   Saved: court_bundles_guide_2026__025__10_what_happens_if_documents_are_late_or_missing.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__026__11_urgent_hearings.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__027__12_support_and_further_help.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__028__important.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__029__case_summary.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__030__hearing_date_15_july_2026.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__031__date_prepared_16_june_2026.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__032__respondent_john_doe.md
+2026-06-10 12:19:02,911 [INFO]   Saved: court_bundles_guide_2026__033__summary_of_the_case.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__034__issues_for_the_court_to_decide.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__035__date_prepared_16_june_2026.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__036__chronology.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__037__date_event.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__038__15_july_further_hearing_listed.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__039__bundle_index.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__040__prepared_by_sarah_smith.md
+2026-06-10 12:19:02,912 [INFO]   Saved: court_bundles_guide_2026__041__chronology_p4.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__042__hearing_template_where_hearing_is_2_hours_or_more_if_required_p10.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__043__orders_sealed_or_approved_orders_listed_in_date_order_3.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__044__page.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__045__expert_reports_10.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__046__section_f_open_offers.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__047__page.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__048__bundle_index.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__049__prepared_by_sarah_smith.md
+2026-06-10 12:19:02,913 [INFO]   Saved: court_bundles_guide_2026__050__chronology_annex_d_a004.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__051__b002.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__052__c001.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__053__c002.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__054__d001.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__055__e001.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__056__bundle_index.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__057__prepared_by_sarah_smith.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__058__chronology_annex_d_a004.md
+2026-06-10 12:19:02,914 [INFO]   Saved: court_bundles_guide_2026__059__b002.md
+2026-06-10 12:19:02,915 [INFO]   Saved: court_bundles_guide_2026__060__c001.md
+2026-06-10 12:19:02,915 [INFO]   Saved: court_bundles_guide_2026__061__c002.md
+2026-06-10 12:19:02,915 [INFO]   Saved: court_bundles_guide_2026__062__d001.md
+2026-06-10 12:19:02,915 [INFO]   Saved: court_bundles_guide_2026__063__e001.md
+2026-06-10 12:19:02,915 [INFO] court_bundles_guide_2026: 64 section files saved
+2026-06-10 12:19:02,915 [INFO] Downloading PDF: https://www.judiciary.uk/wp-content/uploads/2026/03/FRC-Guide-Final-Clean.pdf
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__000__the_financial_remedies.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__001__hhj_hess.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__002__published_march_2026.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__003__contents.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__004__march_2026.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__005__3_this_guide_is_intended_to_provide_essential_practice_guidance_for_legal.md
+2026-06-10 12:19:06,990 [INFO]   Saved: financial_remedies_guide_2026__006__jurisdiction_of_the_financial_remedies_court.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__007__court.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__008__operation_of_the_financial_remedies_court.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__009__non_court_dispute_resolution.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__010__other_guidance_documents.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__011__duty_to_negotiate.md
+2026-06-10 12:19:06,991 [INFO]   Saved: financial_remedies_guide_2026__012__circuit_judge_and_district_judge_level.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__013__high_court_judge_level.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__014__judge_level_to_high_court_judge_level.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__015__transfer_from_the_frc_to_the_family_division_of.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__016__freezing_injunctions.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__017__hemain_injunctions.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__018__without_notice_ex_parte_hearings.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__019__circuit_judge_and_district_judge_level.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__020__high_court_judge_level.md
+2026-06-10 12:19:06,992 [INFO]   Saved: financial_remedies_guide_2026__021__appointment_based_on_the_accelerated_procedure_annexed_to_this_guide_as.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__022__the_requests_for_further_information_and_documents_should_be.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__023__the_parties_must_collaborate_before_the_hearing_to_produce_these_key.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__024__circuit_judge_and_district_judge_level.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__025__high_court_judge_level.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__026__at_high_court_judge_level_circuit_judge_level_and_district_judge_level.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__027__circuit_judge_and_district_judge_level.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__028__70_every_case_must_be_the_subject_of_a_ptr_before_the_allocated_judge_held.md
+2026-06-10 12:19:06,993 [INFO]   Saved: financial_remedies_guide_2026__029__at_high_court_judge_level_circuit_judge_level_and_district_judge_level.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__030__72_for_those_cases_without_a_ptr_the_timetable_should_be_considered_and.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__031__the_parties_must_collaborate_before_the_hearing_to_produce_these_key.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__032__final_hearing.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__033__section_25_statements_and_other_witness.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__034__bundles.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__035__position_statements.md
+2026-06-10 12:19:06,994 [INFO]   Saved: financial_remedies_guide_2026__036__orders.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__037__november_2017_the_standard_order_templates_should_be_used_adapted_as.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__038__wellbeing.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__039__fast_track.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__040__guidance_published_by_the_president_of_the_family_division.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__041__judge_level_and_transfer_of_cases_jurisdiction_of_the_family_court_may.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__042__the_pre_application_protocol_in.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__043__guidance_published_by_the_family_justice_council.md
+2026-06-10 12:19:06,995 [INFO]   Saved: financial_remedies_guide_2026__044__family_justice_council_sorting_out.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__045__guidance_on_pensions_on_divorce.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__046__the_report_of_the_pensions_advisory.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__047__group_2024.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__048__useful_how_to_guides_for_people_who_do_not_have_a_lawyer.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__049__advicenow_how_to_get_legal_aid_for_a.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__050__advicenow_help_with_court_fees_in_a.md
+2026-06-10 12:19:06,996 [INFO]   Saved: financial_remedies_guide_2026__051__advicenow_family_mediation.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__052__useful_animations.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__053__pensions_on_divorce.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__054__guidance_on_how_to_complete_template_es2.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__055__accelerated_first_appointment_procedure_in_financial_remedy.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__056__5_this_procedure_will_only_be_available_where.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are.md
+2026-06-10 12:19:06,997 [INFO]   Saved: financial_remedies_guide_2026__058__sitting_at.md
+2026-06-10 12:19:06,998 [INFO]   Saved: financial_remedies_guide_2026__059__the_parties_are_as_follows.md
+2026-06-10 12:19:06,998 [INFO]   Saved: financial_remedies_guide_2026__060__6_the_parties_have_agreed_that.md
+2026-06-10 12:19:06,998 [INFO]   Saved: financial_remedies_guide_2026__061__it_is_ordered_by_consent_that.md
+2026-06-10 12:19:06,998 [INFO] financial_remedies_guide_2026: 62 section files saved
+2026-06-10 12:19:06,998 [INFO] === Done. 184 files saved to raw/guidance/ ===

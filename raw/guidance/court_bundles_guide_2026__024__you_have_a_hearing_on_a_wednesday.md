@@ -1,0 +1,24 @@
+---
+source: "Guide for Litigants in Person: Preparing Court Bundles (March 2026)"
+section: You have a hearing on a Wednesday
+parent_document: "Guide for Litigants in Person: Preparing Court Bundles (March 2026)"
+parent_slug: court_bundles_guide_2026
+section_index: 24
+url: "https://www.judiciary.uk/wp-content/uploads/2026/03/020326-Preparing-Court-Bundles-for-Family-Proceedings-Guide-for-Litigants-in-Person.pdf"
+scrape_date: 2026-06-10
+licence: Open Government Licence v3.0
+content_type: guidance
+jurisdiction: England and Wales
+---
+# You have a hearing on a Wednesday
+
+• By the previous Monday (nine days before the hearing) – you should agree with the
+other party what documents will go in the bundle (only if it is safe and appropriate to
+communicate with them)
+• By the previous Wednesday (a week before the hearing), you should have sent the
+main bundle to the court and to the other party.
+• By 11am on Tuesday – you should have prepared all preliminary documents (such
+as a case summary or chronology). You should agree the contents of these
+documents with the other party (or parties if there is more than one), where it is safe
+and appropriate to do so. You must then send these documents to the other party
+and the court.
