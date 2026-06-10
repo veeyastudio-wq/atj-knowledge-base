@@ -29,7 +29,7 @@ from bs4 import BeautifulSoup
 # ── Configuration ──────────────────────────────────────────────────────────────
 
 BASE_URL = "https://www.legislation.gov.uk/uksi/2010/2955"
-OUTPUT_DIR = "./fpr_output"
+OUTPUT_DIR = "../raw/legislation/fpr_2010"
 DELAY_SECONDS = 2  # polite delay between requests
 
 # All Parts of the FPR 2010 as they appear in the revised version.

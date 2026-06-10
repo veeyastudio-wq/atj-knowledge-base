@@ -26,7 +26,7 @@ from bs4 import BeautifulSoup
 # ── Configuration ──────────────────────────────────────────────────────────────
 
 INDEX_URL = "https://www.justice.gov.uk/courts/procedure-rules/family/rules_pd_menu"
-OUTPUT_DIR = "./pd_output"
+OUTPUT_DIR = "../raw/practice_directions"
 DELAY_SECONDS = 2
 
 HEADERS = {
