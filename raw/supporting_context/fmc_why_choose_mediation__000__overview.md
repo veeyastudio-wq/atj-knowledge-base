@@ -1,0 +1,32 @@
+---
+source: "Why choose family mediation: Family Mediation Council"
+section: Overview
+parent_document: "Why choose family mediation: Family Mediation Council"
+parent_slug: fmc_why_choose_mediation
+section_index: 0
+organisation: fmc
+url: "https://www.familymediationcouncil.org.uk/family-mediation/choose-family-mediation/"
+scrape_date: 2026-06-10
+licence: © Family Mediation Council
+content_type: supporting_context
+jurisdiction: England and Wales
+---
+# Overview
+
+A family mediator can help you make plans for the future and to decide together what will work best for you without having to go to court and ask someone else to decide.
+
+Your local FMC Registered Mediator will help you make agreements about things that are important for you and your family when your circumstances change, for example after divorce or separation.
+
+Mediation:
+
+- Is less stressful and far quicker than going to court, and cheaper than getting legal representation
+- Helps you make arrangements over parenting, property and money
+- Lets you keep more control of your family’s future, and helps you put your child’s interests first
+- Helps you all move on quickly to the next stage of your lives
+- Is a process which works, with agreement reached in over 70% of cases.
+
+When you separate, it can be hard to talk to your ex-partner at all, let alone in a way that enables to you reach an agreement about what is best for your family.
+
+If you are a parent, it is far better for your children for you and your ex-partner, to work together to try to agree the way forward – but this can be hard to do on your own. Family mediation provides you with a safe and supported structure to sort out the best arrangements for your children, taking into account what is going to be important for them, as they grow up. It also provides you with the space and time necessary to think about what is most important for your children, and for the whole family.
+
+Whether you are a parent or not, mediation can help you reach agreement about how to divide what there is, where you will live, and how your future finances will work.

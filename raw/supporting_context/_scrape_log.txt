@@ -1,0 +1,67 @@
+2026-06-10 13:43:46,227 [INFO] === Category 6 scraper starting ===
+2026-06-10 13:43:46,227 [INFO] Output: raw/supporting_context/
+2026-06-10 13:43:46,227 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings
+2026-06-10 13:43:48,404 [INFO]   Saved: cafcass_private_law_overview__000__my_family_is_involved_in_private_law_proceedings.md
+2026-06-10 13:43:48,405 [INFO]   Saved: cafcass_private_law_overview__001__feedback_from_a_parent_in_a_private_law_case.md
+2026-06-10 13:43:48,405 [INFO] cafcass_private_law_overview: 2 section files saved
+2026-06-10 13:43:48,405 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/court-process-and-what-expect-private-law
+2026-06-10 13:43:50,492 [INFO]   Saved: cafcass_court_process__000__the_court_process_and_what_to_expect_private_law.md
+2026-06-10 13:43:50,492 [INFO]   Saved: cafcass_court_process__001__feedback_from_a_parent_we_have_worked_with.md
+2026-06-10 13:43:50,493 [INFO] cafcass_court_process: 2 section files saved
+2026-06-10 13:43:50,493 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/court-process-and-what-expect/what-happens-private-law-proceedings
+2026-06-10 13:43:52,593 [INFO]   Saved: cafcass_what_happens_private_law__000__what_happens_in_private_law_proceedings.md
+2026-06-10 13:43:52,593 [INFO]   Saved: cafcass_what_happens_private_law__001__what_family_courts_expect_from_you.md
+2026-06-10 13:43:52,593 [INFO] cafcass_what_happens_private_law: 2 section files saved
+2026-06-10 13:43:52,593 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/court-process-and-what-expect/family-court-adviser-gives-safeguarding-advice-court-safeguarding-letter
+2026-06-10 13:43:54,681 [INFO]   Saved: cafcass_safeguarding_letter__000__a_family_court_adviser_gives_safeguarding_advice_to_court_the_safeguarding_lette.md
+2026-06-10 13:43:54,681 [INFO] cafcass_safeguarding_letter: 1 section files saved
+2026-06-10 13:43:54,681 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/applications-child-arrangements-order/court-process-and-what-expect/court-asks-fca-write-report-if-your-case-goes-beyond-first-hearing-section-7-reports
+2026-06-10 13:43:56,767 [INFO]   Saved: cafcass_section7_reports__000__the_court_asks_an_fca_to_write_a_report_if_your_case_goes_beyond_first_hearing_s.md
+2026-06-10 13:43:56,768 [INFO]   Saved: cafcass_section7_reports__001__if_you_are_not_happy_with_the_section_7_report.md
+2026-06-10 13:43:56,768 [INFO]   Saved: cafcass_section7_reports__002__the_final_court_decision.md
+2026-06-10 13:43:56,768 [INFO]   Saved: cafcass_section7_reports__003__help_and_support.md
+2026-06-10 13:43:56,768 [INFO] cafcass_section7_reports: 4 section files saved
+2026-06-10 13:43:56,768 [INFO] Fetching: https://www.cafcass.gov.uk/parent-carer-or-family-member/information-and-resources-parents
+2026-06-10 13:43:58,866 [INFO]   Saved: cafcass_resources_parents__000__information_and_resources_for_parents.md
+2026-06-10 13:43:58,866 [INFO] cafcass_resources_parents: 1 section files saved
+2026-06-10 13:43:58,866 [INFO] Fetching: https://www.familymediationcouncil.org.uk/family-mediation/
+2026-06-10 13:44:01,786 [INFO]   Saved: fmc_what_is_mediation__000__overview.md
+2026-06-10 13:44:01,787 [INFO] fmc_what_is_mediation: 1 section files saved
+2026-06-10 13:44:01,787 [INFO] Fetching: https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/
+2026-06-10 13:44:04,273 [INFO]   Saved: fmc_miam__000__overview.md
+2026-06-10 13:44:04,274 [INFO]   Saved: fmc_miam__001__how_much_does_it_cost.md
+2026-06-10 13:44:04,274 [INFO]   Saved: fmc_miam__002__what_happens_after_the_first_meeting_or_miam.md
+2026-06-10 13:44:04,274 [INFO]   Saved: fmc_miam__003__do_i_have_to_go_to_a_miam.md
+2026-06-10 13:44:04,275 [INFO]   Saved: fmc_miam__004__who_can_sign_court_forms_to_say_i_have_been_to_a_miam.md
+2026-06-10 13:44:04,275 [INFO] fmc_miam: 5 section files saved
+2026-06-10 13:44:04,275 [INFO] Fetching: https://www.familymediationcouncil.org.uk/family-mediation/choose-family-mediation/
+2026-06-10 13:44:06,599 [INFO]   Saved: fmc_why_choose_mediation__000__overview.md
+2026-06-10 13:44:06,600 [INFO]   Saved: fmc_why_choose_mediation__001__when_should_i_try_family_mediation.md
+2026-06-10 13:44:06,600 [INFO] fmc_why_choose_mediation: 2 section files saved
+2026-06-10 13:44:06,600 [INFO] Fetching: https://www.gov.uk/legal-aid
+2026-06-10 13:44:08,774 [INFO]   Saved: govuk_legal_aid_overview__000__what_you_can_get_legal_aid_for.md
+2026-06-10 13:44:08,774 [INFO]   Saved: govuk_legal_aid_overview__001__what_you_cannot_get_legal_aid_for.md
+2026-06-10 13:44:08,774 [INFO]   Saved: govuk_legal_aid_overview__002__if_youre_not_sure_if_youre_eligible.md
+2026-06-10 13:44:08,775 [INFO] govuk_legal_aid_overview: 3 section files saved
+2026-06-10 13:44:08,775 [INFO] Fetching: https://www.gov.uk/legal-aid/what-youll-get
+2026-06-10 13:44:10,873 [INFO]   Saved: govuk_legal_aid_what_youll_get__000__what_you_can_get_legal_aid_for.md
+2026-06-10 13:44:10,873 [INFO]   Saved: govuk_legal_aid_what_youll_get__001__what_you_cannot_get_legal_aid_for.md
+2026-06-10 13:44:10,874 [INFO]   Saved: govuk_legal_aid_what_youll_get__002__if_youre_not_sure_if_youre_eligible.md
+2026-06-10 13:44:10,874 [INFO] govuk_legal_aid_what_youll_get: 3 section files saved
+2026-06-10 13:44:10,874 [INFO] Fetching: https://www.gov.uk/guidance/civil-legal-aid-means-testing
+2026-06-10 13:44:12,976 [INFO]   Saved: govuk_legal_aid_means_testing__000__civil_legal_aid_means_testing.md
+2026-06-10 13:44:12,976 [INFO]   Saved: govuk_legal_aid_means_testing__001__overview.md
+2026-06-10 13:44:12,976 [INFO]   Saved: govuk_legal_aid_means_testing__002__lord_chancellors_guidance_to_determining_financial_eligibility_for_controlled_wo.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__003__lord_chancellors_guidance_to_determining_financial_eligibility_for_certificated_.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__004__assets.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__005__evidence.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__006__passporting.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__007__eligibility_limits.md
+2026-06-10 13:44:12,977 [INFO]   Saved: govuk_legal_aid_means_testing__008__checking_financial_eligibility_step_by_step_guidance.md
+2026-06-10 13:44:12,978 [INFO]   Saved: govuk_legal_aid_means_testing__009__check_if_your_client_qualifies_for_legal_aid.md
+2026-06-10 13:44:12,978 [INFO]   Saved: govuk_legal_aid_means_testing__010__laa_civil_legal_aid_eligibility_keycard.md
+2026-06-10 13:44:12,978 [INFO]   Saved: govuk_legal_aid_means_testing__011__lord_chancellors_guidance_section_4_27_june_2025.md
+2026-06-10 13:44:12,978 [INFO]   Saved: govuk_legal_aid_means_testing__012__means_assessment_guidance_april_2026.md
+2026-06-10 13:44:12,979 [INFO]   Saved: govuk_legal_aid_means_testing__013__updates_to_this_page.md
+2026-06-10 13:44:12,979 [INFO] govuk_legal_aid_means_testing: 14 section files saved
+2026-06-10 13:44:12,979 [INFO] === Done. 40 files saved to raw/supporting_context/ ===

@@ -1,0 +1,24 @@
+---
+source: "Why choose family mediation: Family Mediation Council"
+section: "When should I try family mediation?"
+parent_document: "Why choose family mediation: Family Mediation Council"
+parent_slug: fmc_why_choose_mediation
+section_index: 1
+organisation: fmc
+url: "https://www.familymediationcouncil.org.uk/family-mediation/choose-family-mediation/"
+scrape_date: 2026-06-10
+licence: © Family Mediation Council
+content_type: supporting_context
+jurisdiction: England and Wales
+---
+# When should I try family mediation?
+
+Contact an FMC registered mediator now if you need help sorting things out. Even if you’ve been separated for a while, or if your case has already gone to court, mediation can still help to resolve things.
+
+You can’t usually take your case to court until you find out if mediation can help you first. If you can’t show that you’ve considered it, the judge may stop or delay proceedings until you have.
+
+Once you’ve found a mediator, the first step is to attend a Mediation Information and Assessment Meeting (MIAM) to find out if the process is right for you. You might be surprised to find it is – we know that where both former partners go and see a mediator for a MIAM, three quarters choose to go on to mediate , despite the fact that many don’t know anything about mediation before the meeting, or think their partner is so unreasonable that mediation will never work.
+
+If you believe that your case is not suitable for the mediation process, you will need to show the judge that you’ve attended a MIAM and that you’ve considered mediation and any other suitable alternatives before going to court, unless specific circumstances mean you are exempt from this requirement.
+
+If you think you need legal advice to help you during mediation, that can be arranged at any time during the process. You might be able to get legal aid to pay for it.

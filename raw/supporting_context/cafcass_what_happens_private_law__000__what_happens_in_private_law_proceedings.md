@@ -1,0 +1,24 @@
+---
+source: "What happens in private law proceedings: Cafcass"
+section: What happens in private law proceedings
+parent_document: "What happens in private law proceedings: Cafcass"
+parent_slug: cafcass_what_happens_private_law
+section_index: 0
+organisation: cafcass
+url: "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/court-process-and-what-expect/what-happens-private-law-proceedings"
+scrape_date: 2026-06-10
+licence: Open Government Licence v3.0
+content_type: supporting_context
+jurisdiction: England and Wales
+---
+# What happens in private law proceedings
+
+The following is intended to provide a very brief overview of the different stages of private law proceedings. The various stages may be extended or prolonged depending on the complexity of an individual case.
+
+After an application is made to the court you will be sent a date for a first hearing often referred to as an FHDRA- First Hearing Dispute Resolution Appointment. At this hearing the court will usually decide whether to involve Cafcass, the Local Authority or in some cases another type of expert to provide information on the child(ren) and the family circumstances.
+
+If your case is not resolved at the First Hearing and the court decides it needs more information, it is likely to be adjourned for a number of weeks/months to allow for a report to be prepared by a Cafcass FCA or other expert depending on the issues in the case.
+
+Once a report has been prepared by an FCA or other professional the case is then listed for a Dispute Resolution Hearing (DRH) where you may be encouraged to try and resolve or at least narrow the issues in dispute, as appropriate.
+
+If matters are not resolved at the DRH then the case will usually be listed for a final hearing where the court will make the final decision on the disputed issues.

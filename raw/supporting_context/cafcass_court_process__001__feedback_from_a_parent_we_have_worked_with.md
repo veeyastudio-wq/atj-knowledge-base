@@ -1,0 +1,16 @@
+---
+source: "The court process and what to expect in private law: Cafcass"
+section: Feedback from a parent we have worked with
+parent_document: "The court process and what to expect in private law: Cafcass"
+parent_slug: cafcass_court_process
+section_index: 1
+organisation: cafcass
+url: "https://www.cafcass.gov.uk/parent-carer-or-family-member/my-family-involved-private-law-proceedings/court-process-and-what-expect-private-law"
+scrape_date: 2026-06-10
+licence: Open Government Licence v3.0
+content_type: supporting_context
+jurisdiction: England and Wales
+---
+# Feedback from a parent we have worked with
+
+“The nicest thing was the letter at the end, that was really special. There is no doubt going forward for my child. It was so personal and friendly. It was lovely and I even shared it with my mum. It was fabulous and really important and you could tell it was personal. I wasn't expecting this”.
