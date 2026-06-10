@@ -1,0 +1,32 @@
+---
+content_type: terminology
+layer: 2
+title: "Costs order"
+track: cross_cutting
+stage: cross_cutting
+source_refs:
+  - FPR_Part_28
+  - PD_28A
+jurisdiction: England and Wales
+last_updated: 2026-06-10
+discovery_gap: false
+---
+
+# Costs order
+
+## What it means
+
+A costs order is a court order requiring one party to pay some or all of the other party's legal costs. In family proceedings, costs orders are less common than in other types of civil litigation — the general starting point is that each party pays their own costs. However, a judge can make a costs order where a party has behaved unreasonably, failed to comply with directions, made false allegations, or refused a reasonable settlement offer without good reason.
+
+## When you will encounter it
+
+Usually at the end of a hearing or at the end of proceedings, if one party applies for costs or the judge raises the matter. You may also encounter it in correspondence — a party may warn the other that they will seek costs if certain conduct continues. A "without prejudice save as to costs" letter is specifically designed to be referred to when costs are being considered.
+
+## Track
+
+Cross-cutting — applies to all tracks.
+
+## Related entries
+
+- legal_principle__proportionality__cross_cutting
+- legal_principle__without_prejudice__cross_cutting

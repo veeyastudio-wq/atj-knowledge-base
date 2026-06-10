@@ -1,0 +1,31 @@
+---
+content_type: terminology
+layer: 2
+title: "Litigant in person"
+track: cross_cutting
+stage: cross_cutting
+source_refs:
+  - financial_remedies_guide_2026__048__useful_how_to_guides_for_people_who_do_not_have_a_lawyer
+jurisdiction: England and Wales
+last_updated: 2026-06-10
+discovery_gap: false
+---
+
+# Litigant in person
+
+## What it means
+
+A litigant in person is someone who represents themselves in court proceedings without a solicitor or barrister acting for them. The term applies to any party in any type of case — applicant or respondent, claimant or defendant. It does not mean the person has no rights in court; a litigant in person has the same procedural rights as a represented party.
+
+## When you will encounter it
+
+In correspondence from the court, in directions, and in any document that refers to how the proceedings are being conducted. Judges and court staff will use it to describe your position in the case.
+
+## Track
+
+Cross-cutting — applies to all tracks.
+
+## Related entries
+
+- terminology__applicant_respondent__cross_cutting
+- terminology__mckenzie_friend__cross_cutting
