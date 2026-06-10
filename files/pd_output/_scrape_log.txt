@@ -1,0 +1,356 @@
+2026-06-10 10:42:43,402 INFO ============================================================
+2026-06-10 10:42:43,402 INFO FPR Practice Directions Scraper — starting
+2026-06-10 10:42:43,402 INFO Output directory: /Users/admin/Library/CloudStorage/GoogleDrive-veeya.studio@gmail.com/My Drive/Claude Workspace/Access to Justice/KB/files/pd_output
+2026-06-10 10:42:43,402 INFO ============================================================
+2026-06-10 10:42:43,402 INFO Fetching index: https://www.justice.gov.uk/courts/procedure-rules/family/rules_pd_menu
+2026-06-10 10:42:43,683 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113823/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_02a
+2026-06-10 10:42:43,683 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113601/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/practice-direction-2c-justices-legal-adviser
+2026-06-10 10:42:43,683 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113607/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_05a
+2026-06-10 10:42:43,684 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201114143/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_06a
+2026-06-10 10:42:43,684 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113608/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_06c
+2026-06-10 10:42:43,684 INFO   SKIP (self-link): Practice Direction 6D – Service on a person where there are 
+2026-06-10 10:42:43,684 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201114117/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_07a
+2026-06-10 10:42:43,684 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113525/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_07b
+2026-06-10 10:42:43,684 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201113613/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_07c
+2026-06-10 10:42:43,685 INFO   SKIP (off-domain): https://webarchive.nationalarchives.gov.uk/ukgwa/20211201114146/https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_09a
+2026-06-10 10:42:43,686 INFO   SKIP (self-link): Practice Direction 14G: The court giving permission to commu
+2026-06-10 10:42:43,689 INFO   SKIP (self-link): Practice Direction 36ZB: Pilot scheme: procedure for using a
+2026-06-10 10:42:43,690 INFO   SKIP (self-link): Practice Direction 41H – Proceeding by electronic means: pro
+2026-06-10 10:42:43,690 INFO Index parsed: 111 active Practice Directions found
+2026-06-10 10:42:43,690 INFO [PD Practice_Directions_Relating_t] Practice Direction – Practice Directions Relating to Family Proceeding
+2026-06-10 10:42:43,781 INFO   ✓ fetched (106,918 chars)
+2026-06-10 10:42:43,811 INFO     → saved: PD_Practice_Directions_Relating_t.md (2,749 chars)
+2026-06-10 10:42:45,816 INFO [PD 2A] Practice Direction 2A – Functions of the Court in the Family Procedure
+2026-06-10 10:42:45,924 INFO   ✓ fetched (126,134 chars)
+2026-06-10 10:42:45,984 INFO     → saved: PD_2A.md (2,032 chars)
+2026-06-10 10:42:47,989 INFO [PD 2B] Practice Direction 2B – References in the Rules to Actions Done by the
+2026-06-10 10:42:48,124 INFO   ✓ fetched (95,838 chars)
+2026-06-10 10:42:48,144 INFO     → saved: PD_2B.md (1,610 chars)
+2026-06-10 10:42:50,149 INFO [PD 2C] Practice Direction 2C – Justices’ legal adviser
+2026-06-10 10:42:50,296 INFO   ✓ fetched (122,970 chars)
+2026-06-10 10:42:50,397 INFO     → saved: PD_2C.md (1,552 chars)
+2026-06-10 10:42:52,402 INFO [PD 2D] Practice direction 2D: Functions of the High Court which may be perfor
+2026-06-10 10:42:52,569 INFO   ✓ fetched (100,627 chars)
+2026-06-10 10:42:52,594 INFO     → saved: PD_2D.md (3,854 chars)
+2026-06-10 10:42:54,595 INFO [PD 3A] Practice Direction 3A – Family Mediation Information and Assessment Me
+2026-06-10 10:42:54,747 INFO   ✓ fetched (136,237 chars)
+2026-06-10 10:42:54,802 INFO     → saved: PD_3A.md (30,427 chars)
+2026-06-10 10:42:56,808 INFO [PD 3AA] Practice Direction 3AA – Vulnerable persons: participation in proceedi
+2026-06-10 10:42:56,895 INFO   ✓ fetched (108,636 chars)
+2026-06-10 10:42:56,925 INFO     → saved: PD_3AA.md (11,973 chars)
+2026-06-10 10:42:58,930 INFO [PD 3AB] Practice Direction 3AB – Prohibition of cross-examination in person in
+2026-06-10 10:42:59,096 INFO   ✓ fetched (139,126 chars)
+2026-06-10 10:42:59,160 INFO     → saved: PD_3AB.md (30,336 chars)
+2026-06-10 10:43:01,165 INFO [PD 4A] Practice Direction 4A – Striking Out a Statement of Case
+2026-06-10 10:43:01,316 INFO   ✓ fetched (104,567 chars)
+2026-06-10 10:43:01,366 INFO     → saved: PD_4A.md (5,964 chars)
+2026-06-10 10:43:03,370 INFO [PD 4B] Practice Direction 4B – Civil Restraint Orders
+2026-06-10 10:43:03,527 INFO   ✓ fetched (112,459 chars)
+2026-06-10 10:43:03,564 INFO     → saved: PD_4B.md (10,906 chars)
+2026-06-10 10:43:05,569 INFO [PD 5A] Practice Direction 5A – Forms
+2026-06-10 10:43:05,734 INFO   ✓ fetched (125,991 chars)
+2026-06-10 10:43:05,824 INFO     → saved: PD_5A.md (3,411 chars)
+2026-06-10 10:43:07,830 INFO [PD 5B] Practice Direction 5B – Communication and filing of documents by e-mai
+2026-06-10 10:43:07,984 INFO   ✓ fetched (108,843 chars)
+2026-06-10 10:43:08,022 INFO     → saved: PD_5B.md (11,095 chars)
+2026-06-10 10:43:10,025 INFO [PD 5C] Practice Direction 5C – Communications with the court
+2026-06-10 10:43:10,136 INFO   ✓ fetched (96,616 chars)
+2026-06-10 10:43:10,157 INFO     → saved: PD_5C.md (2,510 chars)
+2026-06-10 10:43:12,162 INFO [PD 5D] Practice Direction 5D: Procedure for bulk scanning of certain document
+2026-06-10 10:43:12,255 INFO   ✓ fetched (100,500 chars)
+2026-06-10 10:43:12,280 INFO     → saved: PD_5D.md (5,671 chars)
+2026-06-10 10:43:14,285 INFO [PD 6A] Practice Direction 6A – Service Within the Jurisdiction
+2026-06-10 10:43:14,326 INFO   ✓ fetched (135,800 chars)
+2026-06-10 10:43:14,393 INFO     → saved: PD_6A.md (20,817 chars)
+2026-06-10 10:43:16,398 INFO [PD 6B] Practice Direction 6B – Service Out of the Jurisdiction
+2026-06-10 10:43:16,548 INFO   ✓ fetched (113,051 chars)
+2026-06-10 10:43:16,644 INFO     → saved: PD_6B.md (4,063 chars)
+2026-06-10 10:43:18,650 INFO [PD 6C] Practice Direction 6C – Disclosure of Addresses by Government Departme
+2026-06-10 10:43:18,768 INFO   ✓ fetched (98,982 chars)
+2026-06-10 10:43:18,795 INFO     → saved: PD_6C.md (3,106 chars)
+2026-06-10 10:43:20,800 INFO [PD 7A] Practice Direction 7A – Procedure for Applications in Matrimonial and 
+2026-06-10 10:43:20,995 INFO   ✓ fetched (127,123 chars)
+2026-06-10 10:43:21,037 INFO     → saved: PD_7A.md (18,665 chars)
+2026-06-10 10:43:23,042 INFO [PD 7B] Practice Direction 7B – Medical Examinations on Applications for Annul
+2026-06-10 10:43:23,150 INFO   ✓ fetched (98,233 chars)
+2026-06-10 10:43:23,172 INFO     → saved: PD_7B.md (2,486 chars)
+2026-06-10 10:43:25,177 INFO [PD 7C] Practice Direction 7C – Polygamous Marriages
+2026-06-10 10:43:25,277 INFO   ✓ fetched (100,785 chars)
+2026-06-10 10:43:25,307 INFO     → saved: PD_7C.md (3,246 chars)
+2026-06-10 10:43:27,313 INFO [PD 7D] Practice Direction 7D – The Gender Recognition Act 2004
+2026-06-10 10:43:27,439 INFO   ✓ fetched (102,727 chars)
+2026-06-10 10:43:27,470 INFO     → saved: PD_7D.md (4,604 chars)
+2026-06-10 10:43:29,475 INFO [PD 8A] Practice Direction 8A – Where to start certain proceedings
+2026-06-10 10:43:29,596 INFO   ✓ fetched (95,989 chars)
+2026-06-10 10:43:29,618 INFO     → saved: PD_8A.md (1,312 chars)
+2026-06-10 10:43:31,623 INFO [PD 8B] Practice Direction 8B: Application by birth parent for declaration of 
+2026-06-10 10:43:31,786 INFO   ✓ fetched (103,823 chars)
+2026-06-10 10:43:31,816 INFO     → saved: PD_8B.md (6,445 chars)
+2026-06-10 10:43:33,821 INFO [PD 9A] Practice Direction 9A – Application for a Financial Remedy
+2026-06-10 10:43:33,949 INFO   ✓ fetched (147,270 chars)
+2026-06-10 10:43:34,012 INFO     → saved: PD_9A.md (40,242 chars)
+2026-06-10 10:43:36,018 INFO [PD 9B] Practice Direction 9B – Communication of information from financial re
+2026-06-10 10:43:36,110 INFO   ✓ fetched (98,393 chars)
+2026-06-10 10:43:36,140 INFO     → saved: PD_9B.md (1,944 chars)
+2026-06-10 10:43:38,145 INFO [PD 10A] Practice Direction 10A – Part 4 of the Family Law Act 1996
+2026-06-10 10:43:38,238 INFO   ✓ fetched (103,510 chars)
+2026-06-10 10:43:38,269 INFO     → saved: PD_10A.md (4,928 chars)
+2026-06-10 10:43:40,272 INFO [PD 11A] Practice Direction 11A: Notification of certain protection orders to t
+2026-06-10 10:43:40,407 INFO   ✓ fetched (98,322 chars)
+2026-06-10 10:43:40,430 INFO     → saved: PD_11A.md (3,376 chars)
+2026-06-10 10:43:42,435 INFO [PD 12A] Practice Direction 12A – Care, Supervision and Other Part 4 Proceeding
+2026-06-10 10:43:42,612 INFO   ✓ fetched (142,853 chars)
+2026-06-10 10:43:42,704 INFO     → saved: PD_12A.md (24,728 chars)
+2026-06-10 10:43:44,707 INFO [PD 12B] Practice Direction 12B – Child Arrangements Programme
+2026-06-10 10:43:44,891 INFO   ✓ fetched (211,031 chars)
+2026-06-10 10:43:45,003 INFO     → saved: PD_12B.md (81,142 chars)
+2026-06-10 10:43:47,008 INFO [PD 12C] Practice Direction 12C – Service of Application in Certain Proceedings
+2026-06-10 10:43:47,148 INFO   ✓ fetched (113,819 chars)
+2026-06-10 10:43:47,191 INFO     → saved: PD_12C.md (3,287 chars)
+2026-06-10 10:43:49,197 INFO [PD 12D] Practice Direction 12D – Inherent Jurisdiction (Including Wardship) Pr
+2026-06-10 10:43:49,286 INFO   ✓ fetched (114,771 chars)
+2026-06-10 10:43:49,321 INFO     → saved: PD_12D.md (13,723 chars)
+2026-06-10 10:43:51,326 INFO [PD 12E] Practice Direction 12E – Urgent Business
+2026-06-10 10:43:51,430 INFO   ✓ fetched (105,636 chars)
+2026-06-10 10:43:51,457 INFO     → saved: PD_12E.md (6,654 chars)
+2026-06-10 10:43:53,462 INFO [PD 12F] Practice Direction 12F – International Child Abduction
+2026-06-10 10:43:53,613 INFO   ✓ fetched (149,861 chars)
+2026-06-10 10:43:53,678 INFO     → saved: PD_12F.md (35,629 chars)
+2026-06-10 10:43:55,683 INFO [PD 12G] Practice Direction 12G – Communication of Information
+2026-06-10 10:43:55,803 INFO   ✓ fetched (116,189 chars)
+2026-06-10 10:43:55,846 INFO     → saved: PD_12G.md (5,266 chars)
+2026-06-10 10:43:57,851 INFO [PD 12H] Practice Direction 12H – Contribution Orders
+2026-06-10 10:43:57,978 INFO   ✓ fetched (98,033 chars)
+2026-06-10 10:43:58,001 INFO     → saved: PD_12H.md (1,433 chars)
+2026-06-10 10:44:00,008 INFO [PD 12I] Practice Direction 12I – Applications for Reporting Restriction Orders
+2026-06-10 10:44:00,426 INFO   ✓ fetched (101,488 chars)
+2026-06-10 10:44:00,468 INFO     → saved: PD_12I.md (3,239 chars)
+2026-06-10 10:44:02,474 INFO [PD 12J] Practice Direction 12J – Child Arrangements and Contact Order: Domesti
+2026-06-10 10:44:02,582 INFO   ✓ fetched (140,965 chars)
+2026-06-10 10:44:02,649 INFO     → saved: PD_12J.md (37,394 chars)
+2026-06-10 10:44:04,654 INFO [PD 12K] Practice Direction 12K – Children Act 1989: Exclusion Requirement
+2026-06-10 10:44:04,756 INFO   ✓ fetched (98,898 chars)
+2026-06-10 10:44:04,795 INFO     → saved: PD_12K.md (2,159 chars)
+2026-06-10 10:44:06,801 INFO [PD 12L] Practice Direction 12L – Children Act 1989:Risk Assessments under Sect
+2026-06-10 10:44:06,938 INFO   ✓ fetched (99,100 chars)
+2026-06-10 10:44:06,979 INFO     → saved: PD_12L.md (2,332 chars)
+2026-06-10 10:44:08,985 INFO [PD 12M] Practice Direction 12M – Family Assistance Orders: Consultation
+2026-06-10 10:44:09,157 INFO   ✓ fetched (101,093 chars)
+2026-06-10 10:44:09,179 INFO     → saved: PD_12M.md (2,177 chars)
+2026-06-10 10:44:11,184 INFO [PD 12N] Practice Direction 12N – Enforcement of Children Act 1989 Child Arrang
+2026-06-10 10:44:11,309 INFO   ✓ fetched (100,455 chars)
+2026-06-10 10:44:11,340 INFO     → saved: PD_12N.md (2,534 chars)
+2026-06-10 10:44:13,345 INFO [PD 12O] Practice Direction 12O – Child: Arrival by air
+2026-06-10 10:44:13,483 INFO   ✓ fetched (97,788 chars)
+2026-06-10 10:44:13,505 INFO     → saved: PD_12O.md (1,390 chars)
+2026-06-10 10:44:15,511 INFO [PD 12P] Practice Direction 12P – Removal from Jurisdiction: Issue of Passports
+2026-06-10 10:44:15,602 INFO   ✓ fetched (99,840 chars)
+2026-06-10 10:44:15,644 INFO     → saved: PD_12P.md (2,420 chars)
+2026-06-10 10:44:17,649 INFO [PD 12Q] Practice Direction 12Q – Orders under section 91(14) of the Children A
+2026-06-10 10:44:17,743 INFO   ✓ fetched (104,469 chars)
+2026-06-10 10:44:17,767 INFO     → saved: PD_12Q.md (9,609 chars)
+2026-06-10 10:44:19,772 INFO [PD 12R] Practice Direction 12R – the court giving permission to communicate in
+2026-06-10 10:44:19,890 INFO   ✓ fetched (71,433 chars)
+2026-06-10 10:44:19,925 INFO     → saved: PD_12R.md (17,833 chars)
+2026-06-10 10:44:21,930 INFO [PD 14A] Practice Direction 14A – Who Receives a Copy of the Application Form f
+2026-06-10 10:44:22,066 INFO   ✓ fetched (99,501 chars)
+2026-06-10 10:44:22,102 INFO     → saved: PD_14A.md (1,096 chars)
+2026-06-10 10:44:24,104 INFO [PD 14B] Practice Direction 14B – The First Directions Hearing – Adoptions with
+2026-06-10 10:44:24,269 INFO   ✓ fetched (106,001 chars)
+2026-06-10 10:44:24,295 INFO     → saved: PD_14B.md (2,923 chars)
+2026-06-10 10:44:26,300 INFO [PD 14C] Practice Direction 14C – Reports by the Adoption Agency or Local Autho
+2026-06-10 10:44:26,452 INFO   ✓ fetched (137,214 chars)
+2026-06-10 10:44:26,522 INFO     → saved: PD_14C.md (26,482 chars)
+2026-06-10 10:44:28,528 INFO [PD 14D] Practice Direction 14D – Reports by a Registered Medical Practitioner 
+2026-06-10 10:44:28,625 INFO   ✓ fetched (104,618 chars)
+2026-06-10 10:44:28,661 INFO     → saved: PD_14D.md (6,248 chars)
+2026-06-10 10:44:30,666 INFO [PD 14E] Practice Direction 14E – Communication of Information Relating to Proc
+2026-06-10 10:44:30,804 INFO   ✓ fetched (109,587 chars)
+2026-06-10 10:44:30,841 INFO     → saved: PD_14E.md (4,848 chars)
+2026-06-10 10:44:32,846 INFO [PD 14F] Practice Direction 14F – Disclosing Information to an Adopted Adult
+2026-06-10 10:44:32,970 INFO   ✓ fetched (99,487 chars)
+2026-06-10 10:44:32,996 INFO     → saved: PD_14F.md (2,147 chars)
+2026-06-10 10:44:35,003 INFO [PD 15A] Practice Direction 15A – Protected Parties
+2026-06-10 10:44:35,127 INFO   ✓ fetched (104,446 chars)
+2026-06-10 10:44:35,165 INFO     → saved: PD_15A.md (5,860 chars)
+2026-06-10 10:44:37,170 INFO [PD 15B] Practice Direction 15B – Adults Who May be Protected Parties and Child
+2026-06-10 10:44:37,298 INFO   ✓ fetched (109,575 chars)
+2026-06-10 10:44:37,334 INFO     → saved: PD_15B.md (11,890 chars)
+2026-06-10 10:44:39,339 INFO [PD 16A] Practice Direction 16A – Representation of Children
+2026-06-10 10:44:39,452 INFO   ✓ fetched (140,692 chars)
+2026-06-10 10:44:39,531 INFO     → saved: PD_16A.md (27,263 chars)
+2026-06-10 10:44:41,536 INFO [PD 17A] Practice Direction 17A – Statements of Truth
+2026-06-10 10:44:41,633 INFO   ✓ fetched (109,351 chars)
+2026-06-10 10:44:41,667 INFO     → saved: PD_17A.md (11,901 chars)
+2026-06-10 10:44:43,672 INFO [PD 18A] Practice Direction 18A – Other Applications in Proceedings
+2026-06-10 10:44:43,808 INFO   ✓ fetched (118,854 chars)
+2026-06-10 10:44:43,859 INFO     → saved: PD_18A.md (14,665 chars)
+2026-06-10 10:44:45,865 INFO [PD 19A] Practice Direction 19A – Alternative Procedure for Applications
+2026-06-10 10:44:45,986 INFO   ✓ fetched (106,478 chars)
+2026-06-10 10:44:46,035 INFO     → saved: PD_19A.md (6,967 chars)
+2026-06-10 10:44:48,040 INFO [PD 20A] Practice Direction 20A – Interim Remedies
+2026-06-10 10:44:48,206 INFO   ✓ fetched (123,696 chars)
+2026-06-10 10:44:48,252 INFO     → saved: PD_20A.md (14,118 chars)
+2026-06-10 10:44:50,253 INFO [PD 21A] Practice Direction 21A – Disclosure and Inspection
+2026-06-10 10:44:50,366 INFO   ✓ fetched (99,524 chars)
+2026-06-10 10:44:50,390 INFO     → saved: PD_21A.md (2,914 chars)
+2026-06-10 10:44:52,395 INFO [PD 22A] Practice Direction 22A – Written Evidence
+2026-06-10 10:44:52,529 INFO   ✓ fetched (143,405 chars)
+2026-06-10 10:44:52,599 INFO     → saved: PD_22A.md (32,194 chars)
+2026-06-10 10:44:54,605 INFO [PD 24A] Practice Direction 24A – Witnesses and Depositions generally
+2026-06-10 10:44:54,750 INFO   ✓ fetched (114,030 chars)
+2026-06-10 10:44:54,801 INFO     → saved: PD_24A.md (11,194 chars)
+2026-06-10 10:44:56,807 INFO [PD 25A] Practice Direction 25A – Experts and Assessors in Family Proceedings
+2026-06-10 10:44:56,941 INFO   ✓ fetched (100,187 chars)
+2026-06-10 10:44:56,974 INFO     → saved: PD_25A.md (4,150 chars)
+2026-06-10 10:44:58,980 INFO [PD 25B] Practice Direction 25B – The Duties of an Expert, the Expert’s Report 
+2026-06-10 10:44:59,149 INFO   ✓ fetched (142,515 chars)
+2026-06-10 10:44:59,235 INFO     → saved: PD_25B.md (29,157 chars)
+2026-06-10 10:45:01,241 INFO [PD 25C] Practice Direction 25C – Children Proceedings – the Use of Single Join
+2026-06-10 10:45:01,366 INFO   ✓ fetched (129,794 chars)
+2026-06-10 10:45:01,436 INFO     → saved: PD_25C.md (23,589 chars)
+2026-06-10 10:45:03,442 INFO [PD 25D] Practice Direction 25D – Financial Remedy Proceedings and Other Family
+2026-06-10 10:45:03,539 INFO   ✓ fetched (121,644 chars)
+2026-06-10 10:45:03,596 INFO     → saved: PD_25D.md (18,570 chars)
+2026-06-10 10:45:05,602 INFO [PD 25E] Practice Direction 25E – Discussions Between Experts in Family Proceed
+2026-06-10 10:45:05,765 INFO   ✓ fetched (103,572 chars)
+2026-06-10 10:45:05,808 INFO     → saved: PD_25E.md (6,464 chars)
+2026-06-10 10:45:07,813 INFO [PD 25F] Practice Direction 25F – Assessors in Family Proceedings
+2026-06-10 10:45:07,930 INFO   ✓ fetched (97,953 chars)
+2026-06-10 10:45:07,952 INFO     → saved: PD_25F.md (2,160 chars)
+2026-06-10 10:45:09,958 INFO [PD 25G] Practice Direction 25G – Toxicology test evidence
+2026-06-10 10:45:10,103 INFO   ✓ fetched (96,199 chars)
+2026-06-10 10:45:10,126 INFO     → saved: PD_25G.md (2,206 chars)
+2026-06-10 10:45:12,130 INFO [PD 26A] Practice Direction 26A – Change of Solicitor
+2026-06-10 10:45:12,276 INFO   ✓ fetched (102,727 chars)
+2026-06-10 10:45:12,304 INFO     → saved: PD_26A.md (4,911 chars)
+2026-06-10 10:45:14,308 INFO [PD 27A] Practice Direction 27A – Family Proceedings: Court Bundles
+2026-06-10 10:45:14,422 INFO   ✓ fetched (151,534 chars)
+2026-06-10 10:45:14,512 INFO     → saved: PD_27A.md (42,910 chars)
+2026-06-10 10:45:16,516 INFO [PD 27B] Practice Direction 27B – Attendance of Media Representatives or duly a
+2026-06-10 10:45:16,622 INFO   ✓ fetched (124,489 chars)
+2026-06-10 10:45:16,663 INFO     → saved: PD_27B.md (21,934 chars)
+2026-06-10 10:45:18,668 INFO [PD 27C] Practice Direction 27C: Attendance of IDVAs and ISVAs
+2026-06-10 10:45:18,806 INFO   ✓ fetched (97,273 chars)
+2026-06-10 10:45:18,825 INFO     → saved: PD_27C.md (3,011 chars)
+2026-06-10 10:45:20,830 INFO [PD 28A] Practice Direction 28A – Costs
+2026-06-10 10:45:20,944 INFO   ✓ fetched (106,436 chars)
+2026-06-10 10:45:20,976 INFO     → saved: PD_28A.md (8,338 chars)
+2026-06-10 10:45:22,983 INFO [PD 29A] Practice Direction 29A – Human Rights, Joining the Crown
+2026-06-10 10:45:23,115 INFO   ✓ fetched (99,616 chars)
+2026-06-10 10:45:23,139 INFO     → saved: PD_29A.md (3,103 chars)
+2026-06-10 10:45:25,144 INFO [PD 29B] Practice Direction 29B – Human Rights Act 1998
+2026-06-10 10:45:25,331 INFO   ✓ fetched (98,171 chars)
+2026-06-10 10:45:25,364 INFO     → saved: PD_29B.md (1,886 chars)
+2026-06-10 10:45:27,373 INFO [PD 29C] Practice Direction 29C – Transfer of proceedings from the family court
+2026-06-10 10:45:27,477 INFO   ✓ fetched (95,917 chars)
+2026-06-10 10:45:27,494 INFO     → saved: PD_29C.md (1,109 chars)
+2026-06-10 10:45:29,500 INFO [PD 29D] Practice Direction 29D – Court officers making corrections to orders
+2026-06-10 10:45:29,589 INFO   ✓ fetched (97,089 chars)
+2026-06-10 10:45:29,612 INFO     → saved: PD_29D.md (2,918 chars)
+2026-06-10 10:45:31,617 INFO [PD 30A] Practice Direction 30A – Appeals
+2026-06-10 10:45:31,773 INFO   ✓ fetched (205,117 chars)
+2026-06-10 10:45:31,904 INFO     → saved: PD_30A.md (67,169 chars)
+2026-06-10 10:45:33,910 INFO [PD 30B] Practice Direction 30B – Appeals – Transparency
+2026-06-10 10:45:34,042 INFO   ✓ fetched (102,165 chars)
+2026-06-10 10:45:34,067 INFO     → saved: PD_30B.md (6,959 chars)
+2026-06-10 10:45:36,072 INFO [PD 31A] Practice Direction 31A – Registration of Orders under the 1996 Hague C
+2026-06-10 10:45:36,208 INFO   ✓ fetched (102,770 chars)
+2026-06-10 10:45:36,240 INFO     → saved: PD_31A.md (5,125 chars)
+2026-06-10 10:45:38,245 INFO [PD 32A] Practice Direction 32A – Forms Relating to Part 32
+2026-06-10 10:45:38,343 INFO   ✓ fetched (99,148 chars)
+2026-06-10 10:45:38,374 INFO     → saved: PD_32A.md (2,131 chars)
+2026-06-10 10:45:40,379 INFO [PD 33A] Practice Direction 33A – Enforcement of Undertakings
+2026-06-10 10:45:40,474 INFO   ✓ fetched (97,981 chars)
+2026-06-10 10:45:40,494 INFO     → saved: PD_33A.md (2,169 chars)
+2026-06-10 10:45:42,499 INFO [PD 34A] Practice Direction 34A – Reciprocal Enforcement of Maintenance Orders
+2026-06-10 10:45:42,639 INFO   ✓ fetched (147,883 chars)
+2026-06-10 10:45:42,734 INFO     → saved: PD_34A.md (31,563 chars)
+2026-06-10 10:45:44,739 INFO [PD 34B] Practice Direction 34B – Tracing Payers Overseas
+2026-06-10 10:45:44,860 INFO   ✓ fetched (97,748 chars)
+2026-06-10 10:45:44,883 INFO     → saved: PD_34B.md (2,060 chars)
+2026-06-10 10:45:46,888 INFO [PD 34D] Practice Direction 34D – Form Relating to Part 34
+2026-06-10 10:45:46,997 INFO   ✓ fetched (95,978 chars)
+2026-06-10 10:45:47,018 INFO     → saved: PD_34D.md (750 chars)
+2026-06-10 10:45:49,023 INFO [PD 34E] Practice Direction 34E – Reciprocal Enforcement of Maintenance Orders 
+2026-06-10 10:45:49,149 INFO   ✓ fetched (106,155 chars)
+2026-06-10 10:45:49,182 INFO     → saved: PD_34E.md (6,875 chars)
+2026-06-10 10:45:51,184 INFO [PD 36A] Practice Direction 36A – Transitional Arrangements
+2026-06-10 10:45:51,285 INFO   ✓ fetched (115,217 chars)
+2026-06-10 10:45:51,326 INFO     → saved: PD_36A.md (8,549 chars)
+2026-06-10 10:45:53,332 INFO [PD 36D] Practice Direction 36D – Pilot scheme: procedure for using an online s
+2026-06-10 10:45:53,421 INFO   ✓ fetched (102,746 chars)
+2026-06-10 10:45:53,459 INFO     → saved: PD_36D.md (7,446 chars)
+2026-06-10 10:45:55,464 INFO [PD 36E] Practice Direction 36E – Pilot Scheme: Procedure for online filing of 
+2026-06-10 10:45:55,598 INFO   ✓ fetched (104,354 chars)
+2026-06-10 10:45:55,631 INFO     → saved: PD_36E.md (9,716 chars)
+2026-06-10 10:45:57,636 INFO [PD 36G] Practice Direction 36G – Pilot Scheme: Procedure for using an online s
+2026-06-10 10:45:57,850 INFO   ✓ fetched (104,713 chars)
+2026-06-10 10:45:57,884 INFO     → saved: PD_36G.md (9,616 chars)
+2026-06-10 10:45:59,886 INFO [PD 36L] Practice Direction 36L – Pilot Scheme: Procedure for using an online s
+2026-06-10 10:46:00,299 INFO   ✓ fetched (122,054 chars)
+2026-06-10 10:46:00,360 INFO     → saved: PD_36L.md (15,281 chars)
+2026-06-10 10:46:02,365 INFO [PD 36N] Practice Direction 36N – Pilot Scheme: Procedure for online filing and
+2026-06-10 10:46:02,464 INFO   ✓ fetched (112,551 chars)
+2026-06-10 10:46:02,518 INFO     → saved: PD_36N.md (14,795 chars)
+2026-06-10 10:46:04,526 INFO [PD 36V] Practice Direction 36V – Pilot scheme: Family mediation voucher scheme
+2026-06-10 10:46:04,645 INFO   ✓ fetched (98,796 chars)
+2026-06-10 10:46:04,676 INFO     → saved: PD_36V.md (4,194 chars)
+2026-06-10 10:46:06,681 INFO [PD 36Z] Practice Direction 36Z – Pilot Scheme: private law reform: Investigati
+2026-06-10 10:46:06,732 INFO   ✓ fetched (226,068 chars)
+2026-06-10 10:46:06,858 INFO     → saved: PD_36Z.md (98,423 chars)
+2026-06-10 10:46:08,863 INFO [PD 36ZC] Practice Direction 36ZC: Pilot scheme: procedure for using an online s
+2026-06-10 10:46:08,987 INFO   ✓ fetched (115,012 chars)
+2026-06-10 10:46:09,039 INFO     → saved: PD_36ZC.md (17,943 chars)
+2026-06-10 10:46:11,045 INFO [PD 36ZD] Practice Direction 36ZD – pilot scheme: online system for certain priv
+2026-06-10 10:46:11,206 INFO   ✓ fetched (125,367 chars)
+2026-06-10 10:46:11,268 INFO     → saved: PD_36ZD.md (26,256 chars)
+2026-06-10 10:46:13,277 INFO [PD 36ZE] Practice Direction 36ZE – Pilot Provision: Temporary modification of p
+2026-06-10 10:46:13,430 INFO   ✓ fetched (102,703 chars)
+2026-06-10 10:46:13,488 INFO     → saved: PD_36ZE.md (4,143 chars)
+2026-06-10 10:46:15,494 INFO [PD 36ZF] Practice Direction 36ZF – Pilot scheme: Public law outline: Checklists
+2026-06-10 10:46:15,657 INFO   ✓ fetched (102,220 chars)
+2026-06-10 10:46:15,696 INFO     → saved: PD_36ZF.md (5,260 chars)
+2026-06-10 10:46:17,702 INFO [PD 36ZG] Practice Direction 36ZG – Part 3 of the Domestic Abuse Act 2021: Provi
+2026-06-10 10:46:17,842 INFO   ✓ fetched (120,375 chars)
+2026-06-10 10:46:17,908 INFO     → saved: PD_36ZG.md (48,354 chars)
+2026-06-10 10:46:19,913 INFO [PD 36ZH] Practice Direction 36ZH – Pilot scheme: express financial remedy proce
+2026-06-10 10:46:20,086 INFO   ✓ fetched (106,655 chars)
+2026-06-10 10:46:20,133 INFO     → saved: PD_36ZH.md (15,016 chars)
+2026-06-10 10:46:22,141 INFO [PD 36ZI] Practice Direction 36ZI – Pilot scheme: notification to the police whe
+2026-06-10 10:46:22,304 INFO   ✓ fetched (59,266 chars)
+2026-06-10 10:46:22,330 INFO     → saved: PD_36ZI.md (5,657 chars)
+2026-06-10 10:46:24,334 INFO [PD 37A] Practice Direction 37A – Applications and Proceedings in Relation to C
+2026-06-10 10:46:24,431 INFO   ✓ fetched (97,208 chars)
+2026-06-10 10:46:24,466 INFO     → saved: PD_37A.md (2,717 chars)
+2026-06-10 10:46:26,469 INFO [PD 38A] Practice Direction 38A – Recognition and Enforcement of Protection Mea
+2026-06-10 10:46:26,588 INFO   ✓ fetched (105,405 chars)
+2026-06-10 10:46:26,629 INFO     → saved: PD_38A.md (10,410 chars)
+2026-06-10 10:46:28,635 INFO [PD 40A] Practice Direction 40A – Charging order, stop orders, stop notices
+2026-06-10 10:46:28,854 INFO   ✓ fetched (100,829 chars)
+2026-06-10 10:46:28,889 INFO     → saved: PD_40A.md (5,743 chars)
+2026-06-10 10:46:30,894 INFO [PD 41A] Practice Direction 41A – Proceeding by electronic means: certain proce
+2026-06-10 10:46:31,020 INFO   ✓ fetched (134,127 chars)
+2026-06-10 10:46:31,103 INFO     → saved: PD_41A.md (27,519 chars)
+2026-06-10 10:46:33,108 INFO [PD 41B] Practice Direction 41B – Proceeding by electronic means: procedure for
+2026-06-10 10:46:33,252 INFO   ✓ fetched (113,836 chars)
+2026-06-10 10:46:33,290 INFO     → saved: PD_41B.md (13,410 chars)
+2026-06-10 10:46:35,295 INFO [PD 41C] Practice Direction 41C – Proceeding by electronic means: appeals in fa
+2026-06-10 10:46:35,411 INFO   ✓ fetched (117,045 chars)
+2026-06-10 10:46:35,461 INFO     → saved: PD_41C.md (18,382 chars)
+2026-06-10 10:46:37,463 INFO [PD 41D] Practice Direction 41D – Proceeding by electronic means: public law pr
+2026-06-10 10:46:37,556 INFO   ✓ fetched (108,313 chars)
+2026-06-10 10:46:37,604 INFO     → saved: PD_41D.md (11,768 chars)
+2026-06-10 10:46:39,609 INFO [PD 41E] Practice Direction 41E – Procedure for using an online system to compl
+2026-06-10 10:46:39,817 INFO   ✓ fetched (110,022 chars)
+2026-06-10 10:46:39,867 INFO     → saved: PD_41E.md (12,734 chars)
+2026-06-10 10:46:41,871 INFO [PD 41F] Practice Direction 41F: Proceeding by electronic means: placement proc
+2026-06-10 10:46:41,994 INFO   ✓ fetched (103,820 chars)
+2026-06-10 10:46:42,040 INFO     → saved: PD_41F.md (8,260 chars)
+2026-06-10 10:46:44,046 INFO [PD 41G] Practice Direction 41G – Proceeding by electronic means: certain proce
+2026-06-10 10:46:44,189 INFO   ✓ fetched (129,783 chars)
+2026-06-10 10:46:44,276 INFO     → saved: PD_41G.md (28,739 chars)
+2026-06-10 10:46:46,282 INFO ============================================================
+2026-06-10 10:46:46,282 INFO Complete. 111 files saved, 0 failed.
+2026-06-10 10:46:46,283 INFO Files in: /Users/admin/Library/CloudStorage/GoogleDrive-veeya.studio@gmail.com/My Drive/Claude Workspace/Access to Justice/KB/files/pd_output
+2026-06-10 10:46:46,283 INFO ============================================================

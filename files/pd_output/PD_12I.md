@@ -1,0 +1,91 @@
+---
+source: Family Procedure Rules – Practice Directions
+ref: PD 12I
+title: Practice Direction 12I – Applications for Reporting Restriction Orders
+url: https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/pd_part_12i
+status: Active
+scraped: 2026-06-10
+licence: Open Government Licence v3.0
+---
+
+# Practice Direction 12I – Applications for Reporting Restriction Orders
+
+See also Part 12 , Practice Direction 12A , Practice Direction 12B , Practice Direction 12C , Practice Direction 12D , Practice Direction 12E , Practice Direction 12F , Practice Direction 12G , Practice Direction 12H , Practice Direction 12J , Practice Direction 12K , Practice Direction 12L , Practice Direction 12M , Practice Direction 12N , Practice Direction 12O , Practice Direction 12P
+
+
+Contents of this Practice Direction
+
+
+## 1.1
+
+
+This direction applies to any application in the Family Division founded on Convention rights for an order restricting publication of information about children or incapacitated adults.
+
+
+## Applications to be heard in the High Court
+
+
+### 2.1
+
+
+Orders can only be made in the High Court and are normally dealt with by a Judge of the Family Division. If the need for an order arises in existing proceedings in the family court, judges should either transfer the application to the High Court or consult their Family Division Liaison Judge. Where the matter is urgent, it can be heard by the Urgent Applications Judge of the Family Division (out of hours contact number 020 7947 6000).
+
+
+## Service of Application on the National News Media
+
+
+### 3.1
+
+
+Section 12(2) of the Human Rights Act 1998 means that an injunction restricting the exercise of the right to freedom of expression must not be granted where the person against whom the application is made is neither present nor represented unless the court is satisfied –
+
+
+(a) that the applicant has taken all practicable steps to notify the respondent, or
+
+
+(b) that there are compelling reasons why the respondent should not be notified.
+
+
+### 3.2
+
+
+Service of applications for reporting restriction orders on the national media can now be effected via the Press Association’s CopyDirect service, to which national newspapers and broadcasters subscribe as a means of receiving notice of such applications.
+
+
+### 3.3
+
+
+The court will bear in mind that legal advisers to the media –
+
+
+(i) are used to participating in hearings at very short notice where necessary; and
+
+
+(ii) are able to differentiate between information provided for legal purposes and information for editorial use.
+
+
+Service of applications via the CopyDirect service should henceforth be the norm.
+
+
+### 3.4
+
+
+The court retains the power to make without notice orders, but such cases will be exceptional, and an order will always give persons affected liberty to apply to vary or discharge it at short notice.
+
+
+## Further Guidance
+
+
+### 4.1
+
+
+The Practice Note ‘Applications for Reporting Restriction Orders’ dated 18 March 2005 and issued jointly by the Official Solicitor and the Deputy Director of Legal Services, provides valuable guidance and should be followed.
+
+
+### 4.2
+
+
+Issued with the concurrence and approval of the Lord Chancellor.
+
+
+Updated: Monday, 30 January 2017
