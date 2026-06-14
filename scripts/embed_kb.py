@@ -124,6 +124,20 @@ def embed_and_load(chunks: list[dict], client: OpenAI, conn) -> dict:
     return stats
 
 
+# ── Importable wrapper ────────────────────────────────────────────────────────
+
+def embed_chunks(chunks: list[dict], conn) -> None:
+    """Embed a list of chunk dicts and load into an open pgvector connection.
+
+    Importable by update_kb.py. Creates its own OpenAI client from env.
+    """
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY not found in environment.")
+    client = OpenAI(api_key=api_key)
+    embed_and_load(chunks, client, conn)
+
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def main():
