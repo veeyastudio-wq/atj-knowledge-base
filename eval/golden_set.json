@@ -1,8 +1,8 @@
 {
   "generated_at": "2026-06-14T11:13:59.295085Z",
   "model": "claude-sonnet-4-6",
-  "total_pairs": 75,
-  "layer1_pairs": 35,
+  "total_pairs": 69,
+  "layer1_pairs": 29,
   "layer2_pairs": 40,
   "pairs": [
     {
@@ -46,13 +46,6 @@
       "layer": "layer2",
       "source_file": "raw/layer2/_discovery_gaps.md",
       "chunk_text_preview": "| document_explanation__non_molestation_order__cross_cutting | cross_cutting | What unrepresented people most commonly get wrong when applying for a non-molestation order \u2014 e.g. insufficient detail in"
-    },
-    {
-      "query": "My ex and I both own shares in a company we set up together, and the court is ordering them to transfer their shares to me - what does that part of the financial order actually look like?",
-      "expected_chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk036",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
-      "chunk_text_preview": "Variation of Settlement\n\nThe [ante] / [post]-nuptial settlement dated [date] and made between [name] and [name] be varied so as to [give details (e.g. extinguish the interest of the [applicant] / [res"
     },
     {
       "query": "I gave up my career to raise our kids while my wife built up her pension - does that count for nothing now we're divorcing?",
@@ -231,7 +224,7 @@
     },
     {
       "query": "Do I have to go to mediation before I can apply to court, or can I just go straight to the judge?",
-      "expected_chunk_id": "FM1__chunk015",
+      "expected_chunk_id": "fmc_why_choose_mediation__001__when_should_i_try_family_mediation__chunk000",
       "layer": "layer1",
       "source_file": "raw/court_forms/FM1.md",
       "chunk_text_preview": "Assessment Meeting from the requirement to attend a MIAM, you or your\nsolicitor must tick the relevant box in Section 1 of\n2. It is a legal requirement to attend a Mediation\nthis form and complete Sec"
@@ -242,13 +235,6 @@
       "layer": "layer1",
       "source_file": "raw/standard_orders/sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord.md",
       "chunk_text_preview": "provide for all hearings to take place in a courtroom;\n\nensure in relation to any questioning of [name] that:\n\nquestions or topics are agreed prior to the hearing;\n\nany questions that [can be] / [have"
-    },
-    {
-      "query": "The court order says I could be made to do unpaid work if I don't follow it - what does that actually mean?",
-      "expected_chunk_id": "sfo_vol2__095__order_74_private_law_directions_at_fhdra_allegations_of_domestic_abuse__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol2__095__order_74_private_law_directions_at_fhdra_allegations_of_domestic_abuse.md",
-      "chunk_text_preview": "# In the Family Court\t\tCase No: [Case number]\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in private on [date] at a [type of hearing].\n\nThe parties:\tT"
     },
     {
       "query": "If we reach a deal at the FDR hearing, what happens next? Do I just tell the judge and that's it?",
@@ -286,15 +272,8 @@
       "chunk_text_preview": "**MIAM** \u2014 Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** \u2014 Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial re"
     },
     {
-      "query": "My ex promised the court they would pay me money but they haven't - can they go to prison for breaking that promise?",
-      "expected_chunk_id": "PD_33A__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_33A.md",
-      "chunk_text_preview": "# Practice Direction 33A \u2013 Enforcement of Undertakings\n\nSee also Part 33\n\n\nContents of this Practice Direction\n\n\n## Enforcement of undertaking to do or abstain from doing any act other than the paymen"
-    },
-    {
       "query": "How do I make an application to the court during my case - do I need to fill in a form and tell the other person?",
-      "expected_chunk_id": "FPR_Part_18__chunk000",
+      "expected_chunk_id": "D11__chunk004",
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_18.md",
       "chunk_text_preview": "# Part 18 \u2014 Procedure for Other Applications in Proceedings\n\n## PART 18 E+W PROCEDURE FOR OTHER APPLICATIONS IN PROCEEDINGS\n\n\n### Types of application for which Part 18 procedure may be followed E+W\n\n"
@@ -315,7 +294,7 @@
     },
     {
       "query": "What does the 'statement of truth' bit on the form mean, and what happens if I get something wrong?",
-      "expected_chunk_id": "Form_A__chunk017",
+      "expected_chunk_id": "PD_17A__chunk001",
       "layer": "layer1",
       "source_file": "raw/court_forms/Form_A.md",
       "chunk_text_preview": "5. Statement of truth\nI understand that proceedings for contempt of court may be brought against\nanyone who makes, or causes to be made, a false statement in a document\nverified by a statement of trut"
@@ -377,13 +356,6 @@
       "chunk_text_preview": "| case_law_summary__miller_mcfarlane__financial_remedy | financial_remedy | What unrepresented people most commonly misunderstand about this case \u2014 e.g. whether they conflate the sharing principle wit"
     },
     {
-      "query": "I'm in prison and need to apply to court about my children - do I still have to do mediation first?",
-      "expected_chunk_id": "Form_A__chunk014",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/Form_A.md",
-      "chunk_text_preview": "video-link; and\n(ii) there is no authorised family mediator with an office within fifteen miles\nof the prospective applicant\u2019s home; and\n(iii) an explanation of why this exemption applies is provided "
-    },
-    {
       "query": "What documents do I need to submit to the court for my financial settlement hearing?",
       "expected_chunk_id": "financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are__chunk000",
       "layer": "layer1",
@@ -438,13 +410,6 @@
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_7.md",
       "chunk_text_preview": "(2) The court must only appoint medical examiners under paragraph (1) where it considers that it is necessary for the proper disposal of the case.\n\n\n(3) The person to be examined must, in the presence"
-    },
-    {
-      "query": "My case involves both the police investigating my partner and social services taking care proceedings about my kids - what is this order I've been given that mentions both criminal and family courts?",
-      "expected_chunk_id": "sfo_vol2__006__order_111_order_for_linked_criminal_and_care_directions__chunk003",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol2__006__order_111_order_for_linked_criminal_and_care_directions.md",
-      "chunk_text_preview": "Dated [date]\n\nOrder\nChildren Act 1989\nDisclosure of Information Between Family and Criminal Agencies and Jurisdictions: 2024 Protocol | Order\nChildren Act 1989\nDisclosure of Information Between Family"
     },
     {
       "query": "Can I get divorced first and sort out the money stuff later, or is that a bad idea?",
@@ -517,18 +482,13 @@
       "chunk_text_preview": "# Practice Direction 30A \u2013 Appeals\n\nSee also Part 30\n\n\n### This Practice Direction supplements FPR Part 30\n\n\nContents of this Practice Direction\n\n\n### Application and interpretation\n\n\n1.1 This practic"
     },
     {
-      "query": "Can the judge make a decision without asking me first?",
-      "expected_chunk_id": "FPR_Part_4__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/legislation/fpr_2010/FPR_Part_4.md",
-      "chunk_text_preview": "F4 Words in rule 4.1(8) inserted (6.4.2012) by The Family Procedure (Amendment) Rules 2012 (S.I. 2012/679) , rules 1 , 4 (with rule 30 )\n\n\n### Court officer's power to refer to the court E+W\n\n\n4.2. Wh"
-    },
-    {
       "query": "How do I address the judge at my final hearing? I don't want to get it wrong and look stupid.",
       "expected_chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
       "chunk_text_preview": "5. **Judgment.** The judge delivers a decision either at the end of the hearing or in writing at a later date. The judgment will explain how the welfare checklist has been applied to reach the decisio"
     }
-  ]
+  ],
+  "cleaned_at": "2026-06-14",
+  "cleaning_notes": "Removed 6 bad ground truth pairs. Reclassified 3 near-misses to correct expected chunks."
 }

@@ -1,26 +1,22 @@
 ============================================================
 ATJ RETRIEVAL EVALUATION REPORT
-Generated: 2026-06-14T11:28:30.187030Z
+Generated: 2026-06-14T12:05:00.900348Z
 ============================================================
 
 OVERALL RESULT: FAIL ✗
-  Context recall @ 10:  64.0%
+  Context recall @ 10:  73.9%
   Pass threshold:          75%
-  Hits / Total:            48 / 75
+  Hits / Total:            51 / 69
 
 BY LAYER
-  layer1: 51.4% (0.5143 recall)
+  layer1: 72.4% (0.7241 recall)
   layer2: 75.0% (0.75 recall)
 
-MISSED QUERIES (27) — top candidates to inspect:
+MISSED QUERIES (18) — top candidates to inspect:
 
   Query:    I've got my first court hearing coming up - will the judge just make a final decision then or is it more like a starting point?
   Expected: process_explanation__child_arrangements_track_overview__child_arrangements__chunk002
   Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000, process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001...
-
-  Query:    My ex and I both own shares in a company we set up together, and the court is ordering them to transfer their shares to me - what does that part of the financial order actually look like?
-  Expected: sfo_vol1__004__order_21_financial_remedy_order__chunk036
-  Returned: advicenow_divorce__009__the_application_continued__chunk002, advicenow_financial_order__007__the_kinds_of_financial_orders_the_court_can_make__chunk002, advicenow_financial_order__002__what_is_a_financial_order__chunk000...
 
   Query:    What actually happens at the FDR hearing - does the judge make a decision or just give their opinion?
   Expected: process_explanation__financial_remedy_track_overview__financial_remedy__chunk001
@@ -54,33 +50,13 @@ MISSED QUERIES (27) — top candidates to inspect:
   Expected: PD_6D__chunk003
   Returned: advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001, sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_childγçös_whereabouts_e__chunk001, advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002...
 
-  Query:    Do I have to go to mediation before I can apply to court, or can I just go straight to the judge?
-  Expected: FM1__chunk015
-  Returned: advicenow_financial_order__008__sorting_things_out_by_negotiation_and_agreement__chunk001, fmc_why_choose_mediation__001__when_should_i_try_family_mediation__chunk000, govuk_child_arrangements__002__if_you_cannot_agree_on_everything__chunk000...
-
-  Query:    The court order says I could be made to do unpaid work if I don't follow it - what does that actually mean?
-  Expected: sfo_vol2__095__order_74_private_law_directions_at_fhdra_allegations_of_domestic_abuse__chunk000
-  Returned: sfo_vol1__025__order_46_order_issued_by_court_on_receipt_of_general_enforcement_application__chunk001, sfo_vol1__022__order_43_order_for_sale_supplemental_order_re_mechanics_of_sale__chunk003, sfo_vol1__010__order_34_free_standing_legal_services_payment_order__chunk002...
-
   Query:    My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?
   Expected: legal_principle__proportionality__cross_cutting__chunk000
   Returned: process_explanation__financial_remedy_track_overview__financial_remedy__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000...
 
-  Query:    My ex promised the court they would pay me money but they haven't - can they go to prison for breaking that promise?
-  Expected: PD_33A__chunk000
-  Returned: sfo_vol1__010__order_34_free_standing_legal_services_payment_order__chunk002, sfo_vol1__034__order_61_stay_or_adjourn_proceedings_for_arbitration_under_courts_case_managemen__chunk002, sfo_vol1__022__order_43_order_for_sale_supplemental_order_re_mechanics_of_sale__chunk003...
-
-  Query:    How do I make an application to the court during my case - do I need to fill in a form and tell the other person?
-  Expected: FPR_Part_18__chunk000
-  Returned: advicenow_divorce__009__the_application_continued__chunk004, advicenow_financial_order__023__what_does_it_mean__chunk000, D11__chunk004...
-
   Query:    I've been told I need to apply online for a child arrangements order - can I do that through the online system, or do I have to print it out and take it to court?
   Expected: PD_36G__chunk001
   Returned: C100__chunk000, PD_41A__chunk001, advicenow_divorce__008__starting_proceedings_the_application__chunk001...
-
-  Query:    What does the 'statement of truth' bit on the form mean, and what happens if I get something wrong?
-  Expected: Form_A__chunk017
-  Returned: PD_17A__chunk001, C8__chunk001, PD_17A__chunk000...
 
   Query:    How long do I have to serve the application on the other person after it's been issued by the court?
   Expected: FPR_Part_6__chunk002
@@ -90,9 +66,25 @@ MISSED QUERIES (27) — top candidates to inspect:
   Expected: _discovery_gaps__chunk003
   Returned: document_explanation__consent_order__financial_remedy__chunk000, process_explanation__financial_remedy_track_overview__financial_remedy__chunk001, document_explanation__consent_order__financial_remedy__chunk002...
 
-  Query:    I'm in prison and need to apply to court about my children - do I still have to do mediation first?
-  Expected: Form_A__chunk014
-  Returned: C100__chunk001, PD_12B__chunk035, PD_36Z__chunk044...
+  Query:    The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say — can they do that?
+  Expected: legal_principle__proportionality__cross_cutting__chunk000
+  Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, _discovery_gaps__chunk004...
+
+  Query:    My child has been taken abroad without my permission - what kind of court order can force the other parent to come to court and bring them back?
+  Expected: sfo_vol2__040__order_136_abduction_attendance_order__chunk000
+  Returned: PD_12F__chunk010, sfo_vol2__024__order_1321_abduction_wardship_directions_order_on_notice__chunk004, sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk002...
+
+  Query:    The judge gave me a list of things I need to do before the next hearing – do I actually have to do all of them or are some optional?
+  Expected: terminology__directions__cross_cutting__chunk000
+  Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, process_explanation__fhdra_hearing__child_arrangements__chunk001...
+
+  Query:    My ex took our kids abroad and won't bring them back - can the English courts still deal with our case even though the children aren't here right now?
+  Expected: sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk007
+  Returned: sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk005, sfo_vol2__026__order_1323_abduction_γçô_wardship_directions_order_on_notice_γçô_pakistan_protoc__chunk002, sfo_vol2__024__order_1321_abduction_wardship_directions_order_on_notice__chunk004...
+
+  Query:    What does FDR mean? The court has listed something called an FDR hearing and I don't know what it is
+  Expected: process_explanation__financial_remedy_track_overview__financial_remedy__chunk003
+  Returned: process_explanation__fdr_hearing__financial_remedy__chunk000, process_explanation__fdr_hearing__financial_remedy__chunk002, process_explanation__fda_hearing__financial_remedy__chunk000...
 
 NEXT STEPS
   - Review the missed queries above. Are the expected chunks too short
