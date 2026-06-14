@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__000__order_101_non_molestation_order__chunk004",
+  "source_file": "raw/standard_orders/sfo_vol2__000__order_101_non_molestation_order.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 15,
+  "token_count": 442,
+  "text": "Non-Molestation Order - Zonal\n\nThe respondent, [respondent name], must not go to, enter or attempt to enter [the family home] / [property short name] / [any property where [he] / [she] knows or believes the applicant, [applicant name], to be living], and must not go [along the road[s] known as [road(s) name(s)]] / [anywhere within the territory of the map annexed hereto], except that the respondent may [go to the property [without entering it]]  / [go along the road[s] known as [road(s) name(s)]] for the purpose of collecting the relevant child[ren] for, and returning them from, such contact with the children as may be agreed in writing between the applicant and the respondent or in default of agreement ordered by the court.\n\nNon-Molestation Order – Children\n\nThe respondent, [respondent name], must not use or threaten violence against the relevant child[ren], and must not instruct, encourage or in any way suggest that any other person should do so.\n\nThe respondent, [respondent name], must not intimidate, harass or pester the relevant child[ren], and must not instruct, encourage or in any way suggest that any other person should do so.\n\nThe respondent, [respondent name], must not telephone, text, email or otherwise contact or attempt to contact the relevant child[ren] (including via social networking websites or other forms of electronic messaging) [except for such contact as may be agreed in writing between the applicant and the respondent or in default of agreement ordered by the court].\n\nThe respondent, [respondent name], must not [between the hours of 8.30am and 4.00pm] go to, enter or attempt to enter the school premises known as [school name], and must not go [along the road[s] known as [road(s) name(s)]] / [anywhere within the territory of the map annexed hereto], except [by prior written agreement with the applicant] / [by prior written invitation from the school authorities].\n\nDuration of Non-Molestation Order",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_101_non_molestation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 0,
+    "source_filename": "Order 10.1 - Non-Molestation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

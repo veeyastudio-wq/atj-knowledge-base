@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__018__order_414_interim_third_party_debt_order__chunk003",
+  "source_file": "raw/standard_orders/sfo_vol1__018__order_414_interim_third_party_debt_order.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 4,
+  "token_count": 129,
+  "text": "A bank or building society may deduct an amount from any money held for the respondent, for its expenses in complying with this order. This would be in addition to the total amount shown above. If the third party is not a bank or building society and claims to owe the respondent no money or less money than the total shown above, the third party must tell the court and the applicant within 7 days of receiving this order.\nThe final order\nIf a final third party debt order is made at the hearing, it will require the third party to pay direct to the applicant some or all of the money which the third party owes to the respondent.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_414_interim_third_party_debt_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 18,
+    "source_filename": "Order 4.14 - Interim Third Party Debt Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

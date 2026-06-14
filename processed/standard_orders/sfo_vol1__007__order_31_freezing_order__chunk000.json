@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__007__order_31_freezing_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__007__order_31_freezing_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 8,
+  "token_count": 490,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\n[The Matrimonial Causes Act 1973] /\n\n[The Civil Partnership Act 2004] /\n\n[The Matrimonial and Family Proceedings Act 1984 and Schedule 7 to the Civil Partnership Act 2004] /\n\n[The Senior Courts Act 1981] /\n\n[Children Act 1989, Schedule 1]\n\n(Delete as appropriate)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] of [applicant name] and [respondent name]\n\nAfter hearing [name the advocates(s) who appeared]\n\nAfter reading the statements and hearing the witnesses specified in the recitals below\n\nFREEZING ORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN PRIVATE\n\nTO [RESPONDENT NAME] OF [RESPONDENT ADDRESS]\n\nWARNING: IF YOU [RESPONDENT NAME] DISOBEY THIS ORDER YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED OR HAVE YOUR ASSETS SEIZED\n\nANY OTHER PERSON WHO KNOWS OF THIS ORDER AND DOES ANYTHING WHICH HELPS OR PERMITS [RESPONDENT NAME] TO BREACH THE TERMS OF THIS ORDER MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED OR HAVE THEIR ASSETS SEIZED\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nUnless otherwise stated, a reference in this order to ‘the respondent’ means all of the respondents.\n\nThis order is effective against any respondent on whom it is served or who is given notice of it.\n\nDefinitions and interpretation\n\nA respondent who is an individual who is ordered not to do something must not do it themselves or in any other way. They must not do it through others acting on their behalf or on their instructions or with their encouragement.\n\nA respondent which is not an individual which is ordered not to do something must not do it itself or by its directors, officers, partners, employees or agents or in any other way.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_31_freezing_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 7,
+    "source_filename": "Order 3.1 - Freezing Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

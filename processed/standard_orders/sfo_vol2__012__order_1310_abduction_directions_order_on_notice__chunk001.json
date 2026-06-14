@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__012__order_1310_abduction_directions_order_on_notice.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 8,
+  "token_count": 498,
+  "text": "The court considered the issue of the child[ren]’s participation in these proceedings.\n\nIT IS ORDERED THAT:\n\nThe application for an order for the summary return of [child(ren) name(s)] to [insert State] shall be adjourned and relisted for [final consideration] / [further directions] / [insert other as appropriate] before a High Court Judge sitting at [the Royal Courts of Justice, Strand, London WC2A 2LL] / [other venue and address] at [time] on [date] with a time estimate of [time estimate] at risk, [subject to confirmation] / [confirmed with the Clerk of the Rules].\n\nBoth parties shall attend personally the hearing at [time] on [date] together with any legal representatives they may instruct. The court considers that the costs of the attendance of the [applicant] / [respondent] at the hearing, including [his] / [her] accommodation and reasonable travel costs is a necessary and proportionate disbursement upon [his] / [her] legal aid certificate.\n\n(if not already served) The time for the respondent to file and serve [his] / [her] answer and witness statements (limited to 15 sides of A4, double spaced, size 12 font) and, a schedule of the protective measures (including orders that may be subject to registration under article 11 of the 1996 Hague Convention or, where appropriate, undertakings) that they say are required in the event of a return pursuant to paragraph [para number] of the without notice order dated [date] is extended until 4.00pm on [date].\n\nThe applicant shall by 4.00pm on [date] file and serve a witness statement (limited to 15 sides of A4, double spaced, size 12 font) and any other evidence which [he] / [she] wishes to use at the hearing listed above and a schedule of the protective measures (including orders that may be subject to registration under article 11 of the 1996 Hague Convention or, where appropriate, undertakings) that they are willing to offer in the event that the child is returned to [State].\n\nParagraphs [para numbers] of the [Location] / [Passport] Order, together with the port alert, shall continue in force until or unless varied or discharged by order of the court.\n\n(additional orders to be added where appropriate)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1310_abduction_directions_order_on_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 12,
+    "source_filename": "Order 13.10 - Abduction - Directions Order (On Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

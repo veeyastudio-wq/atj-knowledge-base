@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__059__order_171_directions_order_for_hfea_parental_order_application__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__059__order_171_directions_order_for_hfea_parental_order_application.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 492,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\tCase No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in [open court] / [private] on [date]\n\nThe parties:\tThe 1st applicant is [name]\n\nThe 2nd applicant is [name]\n\nThe 1st respondent is [name]\n\n[The 2nd respondent is [name]]\n\n(specify if any party acts by a litigation friend)\n\nRecitals\n\nThe court is satisfied that:\n\nthe notarised written consent provided by the respondent[s] dated [date] executed [number] weeks after the birth of [child(ren) name(s)] is sufficient evidence of [her] / [their] consent for the purposes of section 54(6) and (7) of the Human Fertilisation and Embryology Act 2008 and (subject to any further enquiries the parental order reporter wishes to make) no further evidence need be filed; and\n\nthe respondent[s] [has] / [have] been served with a copy of the application[s] and acknowledgment of service form[s] in accordance with FPR 13.6 and the respondent[s] [has] / [have] signed and returned the acknowledgment of service forms in accordance with FPR 13.7.\n\nUnder s10(1)(b) Children Act 1989 the court has the power to make a child arrangements order even if an application has not been made.\n\nIT IS ORDERED THAT\n\n[Child(ren)’s name(s)] shall live with the applicants until further order.\n\nThe court dispenses with any further need to serve the respondent[s] with these proceedings pursuant to rule 13.9(f)(ii) of the Family Procedure Rules 2010, except that the applicants’ solicitors shall write to the respondents to inform them of the date of the final hearing and that this is intended to be a final hearing at which the court will be invited to make a parental order.\n\nThe parental order reporter [name] is to file and serve their parental order report by [date].\n\nThe application for a parental order is reserved to [name of judge] and be set down for final hearing before [him] / [her] on [date] with a time estimate of one hour, to be heard at [location].\n\nPermission is granted to apply to [name of judge] for any further directions.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_171_directions_order_for_hfea_parental_order_application",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 59,
+    "source_filename": "Order 17.1 - Directions Order for HFEA Parental Order Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

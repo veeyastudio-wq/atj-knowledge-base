@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__004__order_103_police_disclosure_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__004__order_103_police_disclosure_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 5,
+  "token_count": 484,
+  "text": "The reason this request is made is to enable the court to determine applications concerning the child[ren].\n\nThe application for disclosure has been made [on Form C2 dated [date]] / [orally at this hearing].\n\nThis order was made at a hearing [without notice] / [on short informal notice] to [name of police force]. They have the right to apply to vary or discharge this order as set out below.\n\nThe nature of the proceedings concerning the child[ren] is as follows:\n\n[insert]\n\n(set out brief summary of applications, safeguarding issues raised by cafcass and parties’ positions)\n\nThe issues to be determined by the Family Court within these proceedings are as follows:\n\n[insert]\n\n(set out briefly what issues need to be determined within proceedings and why)\n\nThe Family Court [is considering whether] / [has determined that] it is necessary to hold a fact-finding hearing to determine the following issues between the parties which are relevant to the issues in the case:\n\n[insert]\n\n(set out briefly the issues the Court is considering/needs to determine at the fact-finding hearing)\n\nThe child[ren]’s current circumstances are as follows:\n\n[insert]\n\n(brief summary of children’s circumstances/who they live with/what intervention may have occurred/whether having contact/etc)\n\nThe court has reviewed the Family Court file and considers the following information should be disclosed by the police to resolve the issues in these family proceedings:\n\n[insert]\n\n(detail:\n1) types of information required from police for example: pnc records; summary report or investigation reports. if the parties require investigation reports, the order must be specific in terms of the nature and date of allegation. should the court require digital/audio evidence, the parties will need to sign the undertaking attached to the Annex 1 before disclosure can be made. \n2) nature of allegations which are key to these proceedings for example: domestic violence, complaints made between parties/others concerning issues/information concerning children’s involvement with police, assistance given by police to parties in relation to relevant issues; \n3) timeframe for completing intelligence searches for example ‘01 january 2022 to date’)\n\nThe timetable for the Family Court proceedings is as follows:\n\n[insert date and purpose of next hearing, timetable for filing evidence etc]\n\nIT IS ORDERED [BY CONSENT] THAT:\n\n(cases involving litigants in person/court ordered disclosure)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_103_police_disclosure_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 4,
+    "source_filename": "Order 10.3 - Police Disclosure Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

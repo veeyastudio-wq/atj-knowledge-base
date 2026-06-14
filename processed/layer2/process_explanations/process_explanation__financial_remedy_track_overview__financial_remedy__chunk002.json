@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 467,
+  "text": "**Form E is the most demanding stage for unrepresented parties.** The form requires full, frank, and up-to-date disclosure of every aspect of both parties' financial positions. Errors, omissions, or late disclosure can result in adjournments, costs penalties, or — in serious cases — contempt of court proceedings. Preparing the supporting documents — bank statements going back twelve months, pension cash equivalent transfer values (CETVs), mortgage statements, property valuations — takes time and should be started well in advance of the exchange date.\n\n**The FDR judge cannot make a final order.** The FDR is a settlement hearing. What is said and offered there is without prejudice and cannot be referred to at the final hearing. The judge who presides at the FDR is disqualified from presiding at the final hearing.\n\n**Resolve finances before applying for the divorce final order.** Applying for the divorce final order before a financial order is in place removes certain court powers and can affect rights to a former spouse's pension, estate, and other financial entitlements.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong in financial remedy proceedings — e.g. completing Form E incorrectly or incompletely, not knowing what to bring to the FDA, misunderstanding the without-prejudice nature of the FDR, applying for the divorce final order prematurely. -->\n\n## Key terms\n\n**Financial order** — a court order that determines how a couple's finances are divided. Types include property adjustment orders, lump sum orders, pension sharing orders, and periodical payments orders.\n\n**Consent order** — a financial order made by the court to record an agreement reached between the parties. It must be submitted to and approved by a judge to become legally binding.\n\n**Form A** — the form used to notify the court of an intention to apply for a financial order, which starts court proceedings.\n\n**Form E** — the financial statement that each party must complete in full and simultaneously exchange, disclosing all assets, income, liabilities, and pensions.\n\n**MIAM** — Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** — Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial remedy proceedings.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The financial remedy track — an overview of all six stages",
+    "track": "financial_remedy",
+    "stage": "Stage 1 — Pre-proceedings (MIAM)",
+    "source_refs": [
+      "fpr_2010__009",
+      "pd_9a",
+      "govuk__divorce"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

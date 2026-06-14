@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__003__order_103_occupation_order__chunk008",
+  "source_file": "raw/standard_orders/sfo_vol2__003__order_103_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 8,
+  "total_chunks": 19,
+  "token_count": 490,
+  "text": "Paragraph[s] [para number] of this order shall last until [date and time] unless it is set aside or varied before then by an order of the court.\n\nThe respondent has the right to apply to the court at any time, [(Where the order was made without notice) and without waiting until the return date], to set aside or vary this order. [(If appropriate) The respondent must give [[number of hours/days] [written] notice of the application to the [applicant] / [applicant’s solicitors]]. If the respondent intends to rely on any evidence in support of [his] / [her] application to set aside or vary this order, [(Where the order was made without notice) or intends to rely on any evidence to oppose the continuation of the order at the return date], the substance of it must be provided in writing to the [applicant] / [applicant’s solicitors] in advance.\n\n(Where the order was made without or on short notice) [If the respondent intends to oppose the continuation of the order on the return date [he] / [she] must notify the court / [applicant] / [applicant’s solicitors], [in writing or by email] no later than [date and time] that [he] / [she] intends to attend the hearing on the return date and to oppose the continuation of the order. If the respondent does not notify the court then the court may, if appropriate, make an order dispensing with the need for any attendance by the [applicant] / [applicant’s solicitors] on the return date and may, if appropriate, on the return date make an order extending the injunction.]\n\n[A power of arrest is attached to paragraphs [para number] of this order.]\n\nDuration of Occupation Order under Sections 35 and 37 of the Family Law Act / Power of Arrest\n\nParagraph[s] [para number] of this order shall be effective against the respondent [respondent name] once it is personally served on [him] / [her] [and] / [or] once [he] / [she] is made aware of the terms of this order whether by personal service or otherwise.\n\nParagraph[s] [para number] of this order shall last until [date and time (which must not be more than 6 months from the date of this order)] unless it is set aside or varied before then by an order of the court.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_103_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 3,
+    "source_filename": "Order 10.3 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

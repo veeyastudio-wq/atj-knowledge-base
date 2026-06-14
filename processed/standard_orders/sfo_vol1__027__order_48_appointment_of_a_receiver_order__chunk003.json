@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__027__order_48_appointment_of_a_receiver_order__chunk003",
+  "source_file": "raw/standard_orders/sfo_vol1__027__order_48_appointment_of_a_receiver_order.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 5,
+  "token_count": 467,
+  "text": "[insert]\n\nThe directions set out in the schedule attached hereto shall apply to this appointment to assist the nominee in proper discharge of [his] / [her] functions as a receiver.\n\nThe parties served with the receiver’s accounts (as provided in the schedule) may apply for an order permitting the inspection of documents relevant to those accounts and/or serve notice on the receiver specifying the items in the account to which [he] / [she] objects, giving reasons for that objection and requiring the receiver either to notify all parties served with the accounts of [his] / [her] acceptance of the objection and otherwise requiring the receiver to apply for an examination of the contested item.\n\nThe application shall be listed for a further hearing before a [District] / [Circuit] / [High Court] Judge at the Family Court sitting at [court name] on [[date] at [time]] / [the first open day after [date]] with a time estimate of [days/hours].\n\n[Costs in the application.] / [No order as to costs.] / [The [applicant] / [respondent] shall pay [towards] the [respondent’s] / [applicant’s] costs of and relating to this hearing [including the costs reserved by the order[s] made on [date(s)], summarily assessed at £[amount] (inclusive of VAT and disbursements) by [date].] / [The [applicant] / [respondent] shall pay [proportion of] the [respondent’s] / [applicant’s] costs of and relating to this hearing [including the costs reserved by the order[s] made on [date(s)]], to be subject to detailed assessment on the [standard] / [indemnity] basis if not agreed]. / [The costs of this hearing are reserved to the judge at the hearing listed at paragraph [para number] above.]\n\nDated [date]\n\nSCHEDULE SETTING OUT RECEIVER’S POWERS AND OBLIGATIONS UNDER THIS APPOINTMENT\n\nThe receiver will pay to [name] the sums received in consequence of this appointment [after discharge from those monies of the disbursements reasonably incurred [and a reasonable sum on account of [his] / [her] costs incurred] in the discharge of this office].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t        Case No: [Case number]",
+    "order_number": "order_48_appointment_of_a_receiver_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 27,
+    "source_filename": "Order 4.8 - Appointment of a Receiver Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

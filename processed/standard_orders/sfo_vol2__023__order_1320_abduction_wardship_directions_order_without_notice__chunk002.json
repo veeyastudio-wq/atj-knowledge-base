@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 8,
+  "token_count": 434,
+  "text": "A [Collection] / [Location] / [Passport] / [insert other as applicable] Order is an order directed to the Tipstaff authorising them to take steps to [collect the child] / [to locate the respondent and thereafter to seize any passport or other travel documents from them] / [seize any passport or other travel document held by the respondent as applicable].\n\nRecitals\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent is because\n\n[insert reasons (e.g. identifying (i) exceptional urgency; or (ii) why the child’s welfare would have been compromised if the respondent had been alerted in advance; or (iii) that the whereabouts of the child and respondent are unknown)].\n\nThe judge read the following documents:\n\n[insert]\n\n[The judge heard the following oral evidence:\n\n[insert]]\n\nThe court was satisfied and declared on a provisional basis on the basis of the evidence filed that:\n\nThe child[ren] [was] / [were] on [date of removal or retention] and remained on [date of commencement of proceedings] habitually resident in the jurisdiction of England and Wales;\n\nThe child[ren] [was] / [were] wrongfully [removed from England] / [retained outside the jurisdiction of England] on [date]; and\n\nThe courts of England and Wales have primary jurisdiction in matters of parental responsibility over the child[ren] pursuant to [Articles 8 and 10 of BIIR] / [Articles 5 and 7 of the 1996 Hague Child Protection Convention].\n\n(Insert in cases of incoming child abduction and only where there is good reason to believe that the respondent and/or child may have applied for asylum in the uk) The court was informed that the respondent and/or child may have outstanding applications for a protection claim within the meaning of s.82 Nationality, Immigration and Asylum Act 2002 (n.b. where it is established that applications for protection have been made, see the directions in standard order 13.31 – more likely to be relevant in incoming wardship cases)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1320_abduction_wardship_directions_order_without_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 23,
+    "source_filename": "Order 13.20 - Abduction - Wardship Directions Order (Without Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

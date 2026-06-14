@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__welfare_principle__child_arrangements__chunk000",
+  "source_file": "raw/layer2/legal_principles/legal_principle__welfare_principle__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 495,
+  "text": "# The welfare principle — the child's interests come first\n\n## What it is\n\nThe welfare principle is the foundational rule of family law in England and Wales: when a court is making any decision about a child's upbringing, the child's welfare is the court's paramount consideration. Paramount means it takes priority over every other consideration — including the preferences, feelings, or perceived rights of either parent.\n\n## Where it comes from\n\nThe welfare principle is established by section 1(1) of the Children Act 1989. It applies to every decision the family court makes about a child's upbringing, including decisions about with whom the child lives, when the child spends time with each parent, and any other significant question about the child's life. Section 1(3) of the same Act sets out the welfare checklist — the specific factors the court must work through when applying the principle in contested cases.\n\n## What it means in practice\n\nWhen a judge applies the welfare principle, they are working through the welfare checklist — a structured set of factors that the law requires them to consider. Those factors are:\n\n- **The child's ascertainable wishes and feelings**, considered in light of the child's age and level of understanding. An older child's expressed views carry more weight than a younger child's; views are never determinative on their own, but they are always considered.\n- **The child's physical and emotional needs.** This covers day-to-day care, stability, housing, education, and the importance of maintaining meaningful relationships with both parents where it is safe to do so.\n- **The likely effect on the child of any change in circumstances.** The court examines the impact of both the status quo continuing and the proposed arrangements being implemented.\n- **The child's age, sex, background, and any other characteristics the court considers relevant.** This includes cultural background, religious upbringing, and any specific needs arising from the child's individual circumstances.\n- **Any harm the child has suffered or is at risk of suffering.** Harm includes physical harm, emotional harm, and exposure to domestic abuse between adults in the household.\n- **How capable each parent (and any other relevant person) is of meeting the child's needs.** The court assesses each parent's capacity, not their comparative worthiness as a person.\n- **The range of powers available to the court.** The judge considers what type of order — if any — is necessary and proportionate.",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The welfare principle — the child's interests come first",
+    "track": "child_arrangements",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "children_act_1989__001__section_1_welfare",
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

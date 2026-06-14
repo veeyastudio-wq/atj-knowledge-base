@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk011",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 11,
+  "total_chunks": 61,
+  "token_count": 444,
+  "text": "Undertaking to discharge arrears\n\nThe [applicant] / [respondent] shall discharge by [date], be solely responsible for and in any event indemnify the [respondent] / [applicant] against:\n\nthe arrears which have accrued in respect of the [policy] / [endowment policy] / [pension policy] with [company] numbered [policy number];\n\nthe arrears which have accrued in respect of the hire purchase agreement with [company] numbered [agreement number] in respect of the [car make and model] with registration number [reg. number];\n\nthe arrears which have accrued in respect of the loan agreement with [company] numbered [agreement number] in respect of [insert];\n\n[etc].\n\nUndertaking to use best endeavours to secure release from liabilities\n\nThe [applicant] / [respondent] shall use [his] / [her] best endeavours to obtain the consent of each creditor to release the [respondent] / [applicant] from any liability in respect of the following:\n\nthe hire purchase agreement with [company] numbered [agreement number] in respect of the [family car] / [car make and model] with registration number [reg. number];\n\nthe loan agreement with [company] numbered [agreement number] in respect of [insert];\n\n[etc].\n\nUndertaking to mitigate capital gains tax liability\n\nThe [applicant] / [respondent] shall take the following steps to mitigate any liability for capital gains tax or any other tax consequent upon the implementation of paragraph[s] [para number] of this order:\n\n[set out as appropriate];\n\nUndertaking to maintain medical insurance cover\n\nThe [respondent] / [applicant] shall maintain the existing medical insurance cover, including paying promptly any premiums due, with [company] or any successor company for:\n\nthe [applicant] / [respondent] [until [he] / [she] shall remarry] / [for so long as the order for periodical payments at paragraph [para number] below in the [applicant’s] / [respondent’s] favour shall subsist]; [and] / [or]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

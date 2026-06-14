@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 466,
+  "text": "5. **Judgment.** The judge delivers a decision either at the end of the hearing or in writing at a later date. The judgment will explain how the welfare checklist has been applied to reach the decision.\n\n6. **The order.** A child arrangements order is drawn up and sealed by the court. Both parties receive a copy.\n\n**What the judge is deciding.** The judge's task is to apply the welfare principle — the child's welfare is the paramount consideration — by working through the welfare checklist. The judge considers the child's wishes and feelings (in light of their age and understanding), the child's physical and emotional needs, the likely effect of any change in circumstances, any risk of harm, and the capacity of each parent to meet the child's needs. The judge is not deciding which parent has been treated more fairly; the decision is focused entirely on what arrangements best serve the child.\n\n## What to know if you're unrepresented\n\n**Address the judge correctly.** In the family court, judges sitting as circuit judges or recorders are addressed as \"Your Honour.\" District judges are addressed as \"Sir\" or \"Ma'am.\" If uncertain, \"Sir\" or \"Ma'am\" is always acceptable.\n\n**The hearing has a structure — understand it before you arrive.** The applicant presents first; the respondent second. Each party's written statement stands as their primary evidence, and the other party has the opportunity to challenge it through questions. Understanding this sequence means knowing when to speak, when to listen, and what the judge is doing at each stage.\n\n**Cross-examination is focused questioning, not argument.** The purpose of questioning the other party is to test the accuracy of their evidence — to identify where it is incomplete, inconsistent, or contradicted by other evidence the court has. Long speeches, expressions of grievance, or attempts to persuade the judge of your general position during cross-examination are not effective and may be interrupted.\n\n**The CAFCASS recommendation carries significant weight but is not binding.** If a Section 7 report has been prepared, its recommendations will be a central point of reference for the judge. A party who disagrees with the recommendation needs to engage with the welfare checklist specifically — explaining which factors point toward a different conclusion — rather than simply asserting a different preference.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at the final hearing in child arrangements proceedings",
+    "track": "child_arrangements",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "FPR_Part_12",
+      "PD_12B",
+      "children_act_1989__s1",
+      "govuk_child_arrangements__002__if_you_cannot_agree_on_everything"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

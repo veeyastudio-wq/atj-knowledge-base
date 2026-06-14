@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__067__order_193_presumption_of_death_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__067__order_193_presumption_of_death_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 195,
+  "text": "Costs\n\nNo order as to costs.\n\nDated [date]\n\nAnnex A – Prescribed Information for GRO\n\n(the expectation from the general register office is that the order issued from the court will at a minimum include the ‘prescribed information’ – which includes the information listed below. however it is recognised that the court may not have been provided with that information on the application or the judge may not make an order as to that information. this template should accompany any order which is sent to the gro to indicate why the information is missing from the order.)\n\nINFORMATION | AVAILABLE TO COURT | ORDER MADE AS TO INFORMATION\n\nName of court issuing the declaration | HIGH COURT OF JUSTICE FAMILY DIVISION\n\nDate of court declaration\n\nName and surname of person presumed dead\n\nDate of presumed death\n\nPlace of presumed death\n\nSex\n\nMaiden surname (if applicable)\n\nDate and place of birth\n\nOccupation\n\nUsual or last known address\n\nCause of presumed death",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_193_presumption_of_death_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 67,
+    "source_filename": "Order 19.3 - Presumption of Death Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

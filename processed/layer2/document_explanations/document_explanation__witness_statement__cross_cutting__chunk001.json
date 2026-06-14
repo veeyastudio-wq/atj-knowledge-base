@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__witness_statement__cross_cutting__chunk001",
+  "source_file": "raw/layer2/document_explanations/document_explanation__witness_statement__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 454,
+  "text": "**Exhibits.** If the statement refers to documents — photographs, messages, medical records, school reports — those documents are attached as exhibits. Each exhibit is labelled with the witness's initials and a number (for example, \"JB-1\", \"JB-2\"). The statement refers to the exhibit by that label. Exhibits are part of the court bundle.\n\n## What to know if you're unrepresented\n\n**Stick to facts, not argument.** A witness statement contains evidence — things you have seen, heard, or experienced. It is not the place for legal submissions, conclusions about what the law requires, or character assessments of the other party. Factual, specific evidence (dates, what was said or done, the effect on the child) is what the judge needs. Opinions and argument belong, if anywhere, in closing submissions.\n\n**Number every paragraph.** This is a requirement, not a convention. Numbered paragraphs allow the judge and the other party to refer precisely to what is being questioned during cross-examination. An unnumbered statement makes the hearing harder to conduct and may create an adverse impression.\n\n**Label and attach exhibits properly.** Referring to a document in the statement without attaching it as a labelled exhibit means the court does not have the evidence you are referring to. Check that every document mentioned in the statement is attached, labelled, and included in the bundle.\n\n**The statement of truth is a serious obligation.** Every witness statement includes a declaration that the contents are true. This is not a formality. If you include a fact you know to be false, or omit something material, you may face consequences in the proceedings — and in serious cases, contempt of court. Write only what you honestly believe to be accurate.\n\n**Once filed, the other party can cross-examine on every part of it.** Write the statement with the knowledge that every sentence will be read by the other party and their solicitor or barrister, who will look for inconsistencies, omissions, and things they can challenge. The statement should be complete and honest — not just favourable. Gaps in a statement are as likely to be used against you in cross-examination as the things you chose to include.\n\n## Common mistakes",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Witness statement — giving your evidence to the court in writing",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_22",
+      "FPR_Part_17",
+      "court_bundles_guide_2026__008__contents_page_bundle_content_arranged_in"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

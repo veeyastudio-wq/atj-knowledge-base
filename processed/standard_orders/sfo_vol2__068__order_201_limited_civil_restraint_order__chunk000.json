@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__068__order_201_limited_civil_restraint_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__068__order_201_limited_civil_restraint_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 399,
+  "text": "# In the Family Court\t\tCase No: [Case number]\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\nOrder made by [name of judge] in private on [date].\n\nThe parties:\tThe applicant is [name]\n\nThe 1st respondent is [name], the [relationship to child]\n\nThe 2nd respondent is [name], the [relationship to child]\n\nFamily Procedure Rules 2010, Rule 4.8 and Practice Direction 4B\n\n(penal notice: not automatically included. if included, the order must be personally served unless the court dispenses with that requirement: fpr 2010, r 37(4))\n\nPenal notice\n\nIMPORTANT WARNING TO [NAME]\n\nIf you [NAME] of [ADDRESS] disobey [this order] / [paragraph[s] [insert paragraph number(s)] of this order] you may be held to be in contempt of court and may be imprisoned, fined or have your assets seized.\n\nRecitals\n\n[The judge has considered an application by the [applicant] / [respondent]] / [The court has considered, of its own initiative] after hearing [name the advocate(s) who appeared];\n\nAnd has found that [name of person against whom the order is made] has made two or more applications in these proceedings which are totally without merit.\n\nIT IS ORDERED THAT\n\nIt is ordered that [name of person against whom the order is made] be restrained from making any further application in these proceedings without first obtaining the permission of [name of judge] or, if unavailable, [name of judge]\n\nIt is further ordered [specify].\n\nThis order will remain in effect [for the duration of these proceedings] / [until [date]].\n\nIf [name of person against whom the order is made] wishes to apply for permission:\n\nto make an application in these proceedings; OR\n\nto make an application to amend or discharge this order,",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_201_limited_civil_restraint_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 68,
+    "source_filename": "Order 20.1 - Limited Civil Restraint Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

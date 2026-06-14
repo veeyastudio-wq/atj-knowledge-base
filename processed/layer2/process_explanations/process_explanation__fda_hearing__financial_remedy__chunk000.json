@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fda_hearing__financial_remedy__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fda_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 501,
+  "text": "# What is the First Appointment (FDA)?\n\n## What it is\n\nThe First Appointment (FDA) is a short directions hearing — typically 30 to 45 minutes — that takes place after both parties have exchanged their Form E financial statements. It is a procedural hearing, not a substantive one: the judge's role is to identify the issues in dispute, ensure that financial disclosure is adequate, and give directions for what must happen before the case can proceed to the Financial Dispute Resolution hearing (FDR). Neither party argues the merits of their financial case at the FDA.\n\n## When it happens\n\nThe FDA is Stage 4 of the financial remedy track. It takes place after both parties have filed and exchanged Form E (the detailed financial statement required in Stage 3). The court sets the FDA date when Form A is filed; the date is usually around 12 to 16 weeks after the Form A is issued. The FDA comes before the FDR hearing (Stage 5) and before any final hearing (Stage 6).\n\n## What it involves\n\nBefore the FDA, each party must file and serve on the other party a set of standard documents, usually no later than 14 days before the hearing:\n\n- **A chronology** — a concise timeline of the key events of the marriage and the parties' financial history.\n- **A questionnaire** — a list of requests for further documents or information from the other party, arising out of their Form E. Questionnaires must be proportionate; the judge will decide which questions must be answered.\n- **A schedule of issues** — a summary of the matters that remain in dispute between the parties.\n- **Form G** — a form on which each party states whether they are in a position to use the FDA as an FDR (see below).\n\nAt the FDA, the judge considers the Form E statements, the questionnaires, and the schedule of issues. The judge then decides:\n\n- Which of the questionnaire requests must be answered, and by when.\n- Whether any further valuations, reports, or expert evidence are needed (for example, property valuations or pension reports).\n- Whether the case is suitable to be dealt with as an FDR at the next hearing.\n- The timetable toward the FDR or final hearing.\n\nIn some cases, if both parties confirm they are ready (via Form G) and agree, the FDA and FDR can be combined into a single hearing. This is less common where the issues are complex.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Appointment (FDA)?",
+    "track": "financial_remedy",
+    "stage": "Stage 4 — First Appointment (FDA)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

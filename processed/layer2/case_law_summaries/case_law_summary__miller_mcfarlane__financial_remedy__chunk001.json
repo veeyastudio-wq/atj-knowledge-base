@@ -1,0 +1,25 @@
+{
+  "chunk_id": "case_law_summary__miller_mcfarlane__financial_remedy__chunk001",
+  "source_file": "raw/layer2/case_law_summaries/case_law_summary__miller_mcfarlane__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 255,
+  "text": "## What it means if you're unrepresented\n\nThis case matters because it names the framework a judge is using when they weigh up the financial settlement. If you gave up work or reduced your hours to care for children or support the other party's career, the compensation principle is relevant to your case. If the other party is arguing that assets they brought into the marriage or built through their own business should not be shared, the sharing principle — and its limits — is what the court will apply. Understanding the three strands helps you follow what the judge is weighing and frame your own position more clearly.\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people most commonly misunderstand about this case — for example, whether they conflate the sharing principle with a guaranteed 50/50 split, or whether they understand the compensation strand at all. -->\n\n## Related entries\n\n- legal_principle__section_25_factors__financial_remedy\n- case_law_summary__white_v_white__financial_remedy\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "case_law_summary",
+    "layer": 2,
+    "title": "Miller v Miller; McFarlane v McFarlane — needs, compensation, and sharing",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "citation": "Miller v Miller; McFarlane v McFarlane [2006] UKHL 24",
+    "source_refs": [
+      "matrimonial_causes_act_1973__s25",
+      "legal_principle__section_25_factors__financial_remedy",
+      "case_law_summary__white_v_white__financial_remedy"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

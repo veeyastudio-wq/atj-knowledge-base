@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000",
+  "source_file": "raw/layer2/legal_principles/legal_principle__duty_of_full_and_frank_disclosure__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 504,
+  "text": "# The duty of full and frank disclosure — what it means to tell the whole truth about your finances\n\n## What it is\n\nBoth parties in financial remedy proceedings are under a legal duty to provide full, frank, and clear disclosure of their entire financial position. This is not a procedural formality — it is a substantive legal obligation that applies continuously from the start of proceedings until they conclude. Incomplete, inaccurate, or deliberately withheld disclosure is a serious matter with significant legal consequences.\n\n## Where it comes from\n\nThe duty of full and frank disclosure is a well-established principle of financial remedy law, grounded in the requirement under the Family Procedure Rules 2010 that parties provide complete financial information to the court and to each other. The court's ability to exercise its powers under the Matrimonial Causes Act 1973 depends on having an accurate picture of both parties' financial positions. Any order made on the basis of incomplete or misleading disclosure is potentially open to challenge.\n\n## What it means in practice\n\nThe duty covers every aspect of a party's financial position, including:\n\n- All bank and savings accounts, including accounts held abroad or in another person's name\n- All property and real estate interests, wherever located\n- All investments, shareholdings, and business interests — including minority shareholdings and interests in family businesses\n- All pension entitlements, including deferred pensions and pensions held with former employers\n- All income, including income from self-employment, rental income, and irregular income\n- All liabilities and debts\n- All financial resources that are or may become available, including anticipated inheritance, bonus payments, or the proceeds of a pending transaction\n\nThe duty continues beyond Form E. If a party's financial circumstances change materially after Form E is exchanged — a new job, the sale of a property, a significant inheritance, a business transaction — that change must be disclosed to the other party and to the court without waiting to be asked.\n\n**The consequences of non-disclosure are significant.** A judge who discovers during the proceedings that a party has withheld or misrepresented their financial position can draw adverse inferences — treating the undisclosed asset as larger or more valuable than the evidence suggests, or treating the non-disclosing party's case with scepticism across all issues. A consent order that is later found to have been obtained through non-disclosure can be set aside by the court, even years after it was made, potentially requiring the parties to return to court and the financial settlement to be reconsidered from the beginning.",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The duty of full and frank disclosure — what it means to tell the whole truth about your finances",
+    "track": "financial_remedy",
+    "stage": "Stage 3 — Financial disclosure (Form E)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "matrimonial_causes_act_1973__003__section_25"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

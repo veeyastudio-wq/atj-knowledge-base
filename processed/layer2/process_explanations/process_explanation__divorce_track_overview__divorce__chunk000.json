@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__divorce_track_overview__divorce__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__divorce_track_overview__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 457,
+  "text": "# The divorce track — an overview of all five stages\n\n## What it is\n\nThe divorce track is the legal process by which a marriage is formally ended in England and Wales. It follows a fixed sequence of five stages and, at its simplest, requires no court attendance. The divorce track deals only with ending the marriage itself — it does not resolve finances or arrangements for children, which are separate legal processes that typically run at the same time.\n\n## When it happens\n\nThe divorce track begins when one or both spouses decide to end the marriage. It can be started at any time after the first anniversary of the marriage. It runs simultaneously with — but independently of — the financial remedy track and the child arrangements track. Most people going through family separation encounter all three tracks at once, and not recognising that they are three distinct legal processes is one of the most common sources of confusion at the outset of proceedings.\n\n## What it involves\n\nThe divorce track has five stages:\n\n**Stage 1 — Decision and first steps**\nThe applicant (or joint applicants) decides whether to apply alone or jointly, locates the original marriage certificate, considers whether the marriage was formed abroad, and decides whether financial matters and child arrangements need to be addressed in parallel proceedings.\n\n**Stage 2 — Filing the application**\nForm D8 is submitted to the court, either online through the MyHMCTS portal or by post, together with the court fee and the marriage certificate. In a sole application, the respondent receives the application and files a formal acknowledgement using Form D10.\n\n**Stage 3 — The 20-week cooling-off period**\nA mandatory minimum of 20 weeks runs from the date the application is issued. No application for a conditional order can be made before this period ends. This period is the normal time within which financial matters should be negotiated or resolved.\n\n**Stage 4 — Applying for the conditional order**\nOnce 20 weeks have passed and at least one day after the applicant confirms their intention to proceed, the applicant applies for the conditional order using Form D84. The court considers the application on the papers; no hearing is usually required. The conditional order is the court's formal statement that the applicant is entitled to a divorce, but the marriage is not yet ended at this point.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The divorce track — an overview of all five stages",
+    "track": "divorce",
+    "stage": "Stage 1 — Decision and first steps",
+    "source_refs": [
+      "govuk__divorce",
+      "fpr_2010__007",
+      "fpr_2010__009",
+      "pd_9a"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

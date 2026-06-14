@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_final_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 476,
+  "text": "4. **Judgment.** The judge may give judgment at the end of the hearing (an ex tempore judgment) or may reserve judgment to be handed down in writing at a later date.\n\n5. **The order.** Once judgment is given, the terms of the financial order are finalised, either agreed between the parties or settled by the judge. A sealed copy of the order is then issued by the court.\n\n**The judge's decision** is reached by applying the statutory framework for financial remedy — a set of factors the court is required to consider. These factors include the parties' respective financial resources and needs, the length of the marriage, the standard of living enjoyed during the marriage, and the welfare of any children. This framework is addressed in a separate entry.\n\n## What to know if you're unrepresented\n\n**This is the most demanding hearing for an unrepresented party.** Cross-examination, legal submissions, evidence handling, and understanding what the judge is weighing against what are all tasks that a barrister would normally perform. An unrepresented party is expected to conduct each of these stages themselves.\n\n**Cross-examination requires preparation.** Cross-examining the other party effectively means identifying the weakest points in their evidence and probing them with focused questions. Emotional confrontation or long speeches are not effective and may be interrupted by the judge. Questions must relate to facts that are in dispute and relevant to the court's decision.\n\n**Closing submissions require engagement with the law.** The judge expects to be addressed on the statutory factors, the applicable case law, and why the outcome sought is consistent with those. An unrepresented party is not held to the same standard as a barrister, but a submission that ignores the legal framework entirely carries less weight.\n\n**The bundle must be prepared correctly.** The court bundle — the paginated set of documents provided to the judge — must comply with the court's directions. A bundle that is incomplete, incorrectly paginated, or missing required documents creates practical difficulties at the hearing and may attract adverse comment.\n\n**Settlement remains possible up to judgment.** The case can settle at any point before the judge delivers the final judgment, including on the morning of the hearing, during a break, or during the hearing itself. If agreement is reached, the terms must be put to the judge immediately and reduced to a consent order.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at a financial remedy final hearing?",
+    "track": "financial_remedy",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

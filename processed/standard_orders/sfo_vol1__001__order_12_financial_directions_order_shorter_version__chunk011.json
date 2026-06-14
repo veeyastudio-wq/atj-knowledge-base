@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__001__order_12_financial_directions_order_shorter_version__chunk011",
+  "source_file": "raw/standard_orders/sfo_vol1__001__order_12_financial_directions_order_shorter_version.md",
+  "layer": "layer1",
+  "chunk_index": 11,
+  "total_chunks": 20,
+  "token_count": 467,
+  "text": "The letter of instruction shall be sent to the expert by [time and date].\n\nThe costs charged by the expert for preparing the report shall be met by the [applicant] / [respondent] / [parties equally] in the first instance [such costs to be capped at [amount]].\n\n[Any questions shall be put to the expert by no later than 10 days after receipt of the report (in accordance with FPR 2010 r 25.10).]\n\n[The expert shall respond to those questions by [time and date].]\n\n[The costs charged by the expert for answering those questions shall be met by the [applicant] / [respondent] / [parties equally] / [party raising them] in the first instance.]\n\n[Save as is expressly ordered by the court, the expert’s written report shall be admissible without the attendance at court of the expert.]\n\nProperty Values\n\n(see alternative versions in order 1.1)\n\nThe value[s] of the [property] / [properties] listed below, namely [the family home name] / [other property name], shall be agreed if possible. In default of agreement by [time and date], the parties shall jointly instruct [an estate agent] / [a chartered surveyor] / [an appropriate expert] to act as a single joint expert and to provide a [valuation report] / [market appraisal] in respect of [the] / [each] property. [The same expert shall value each of the properties.] / [Separate experts shall value the separate properties.]\n\nThe identity of the expert[s] shall be [expert name[s]] / [chosen in accordance with paragraph [para number] above].\n\nThe letter of instruction [and [insert any other documents]] shall be sent to the expert[s] by [time and date].\n\nThe report[s] shall be sent to the court in electronic format and served on the parties simultaneously by [time and date].\n\nOrder to instruct a single joint expert Pensions on Divorce Expert (PODE)\n\n(see alternative versions in order 1.1)\n\nThe parties shall jointly instruct [name of PODE] / [a suitable PODE, whose name shall be identified] as a single joint expert to provide a report in accordance with the attached letter of instruction, addressing:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_12_financial_directions_order_shorter_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 1,
+    "source_filename": "Order 1.2 - Financial Directions Order (shorter version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

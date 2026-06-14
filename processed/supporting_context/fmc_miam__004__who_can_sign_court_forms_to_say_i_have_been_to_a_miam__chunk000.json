@@ -1,0 +1,22 @@
+{
+  "chunk_id": "fmc_miam__004__who_can_sign_court_forms_to_say_i_have_been_to_a_miam__chunk000",
+  "source_file": "raw/supporting_context/fmc_miam__004__who_can_sign_court_forms_to_say_i_have_been_to_a_miam.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 74,
+  "text": "# Who can sign court forms to say I have been to a MIAM?\n\nOnly mediators accredited by the Family Mediation Council can sign a court form to say you have been to a MIAM. An accredited mediator is known as “FMCA”.\n\nYou can find you nearest FMCA mediator here , by entering your postcode and clicking ‘Qualified to sign court forms’.",
+  "metadata": {
+    "source": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "section": "Who can sign court forms to say I have been to a MIAM?",
+    "parent_document": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "parent_slug": "fmc_miam",
+    "section_index": 4,
+    "organisation": "fmc",
+    "url": "https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/",
+    "scrape_date": "2026-06-10",
+    "licence": "© Family Mediation Council",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

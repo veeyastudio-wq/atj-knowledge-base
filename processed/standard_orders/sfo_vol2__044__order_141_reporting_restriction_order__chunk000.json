@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__044__order_141_reporting_restriction_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__044__order_141_reporting_restriction_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 5,
+  "token_count": 469,
+  "text": "# 1\n\nIn the High Court of Justice\n\nFamily Division\t\tCase No: [Case number]\n\n[The Administration of Justice Act 1960] /\n\n[The Children Act 1989] /\n\n[The Human Rights Act 1998]\n\nThe child[ren]\n\n[Name of child]\t[Girl] / [Boy]\t[dob dd/mm/yy]\n\n[Name of child]\t[Girl] / [Boy]\t[dob dd/mm/yy]\n\nAfter hearing [name the advocate(s) who appeared]\n\nAfter reading the statements and hearing the witnesses specified in the Recitals below\n\nREPORTING RESTRICTION ORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\nIMPORTANT WARNING: ANY PERSON OR BODY WHO KNOWS OF THIS ORDER AND DOES ANYTHING TO BREACH ITS TERMS MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED OR HAVE THEIR ASSETS SEIZED.\n\nIF YOU ARE SERVED WITH THIS ORDER YOU SHOULD READ IT EXTREMELY CAREFULLY AND ARE ADVISED TO CONSULT A SOLICITOR AS SOON AS POSSIBLE.  YOU HAVE THE RIGHT TO ASK THE COURT TO VARY OR DISCHARGE THE ORDER.\n\nThe parties\n\nThe applicant is [applicant name] (‘the local authority’)\n\nThe respondent is [respondent name] (‘the mother’) of [respondent address]\n\nThe second respondent is [second respondent name] (‘the father’) of [second respondent address]\n\n(specify if any adult party acts by a litigation friend)\n\nThe third respondent is [third respondent name] (acting by [his] / [her] guardian [guardian name])\n\nThe fourth respondent is [fourth respondent name] (acting by [his] / [her] guardian [guardian name])\n\n(adapt if any party’s name is to be confidential)\n\nThe lead solicitor employed by the Local Authority is [LA’s solicitor name], whose direct telephone number is [LA’s solicitor phone number] and email address is [LA’s solicitor email address], and to whom all enquiries about the scope and effect of this order should be addressed.\n\nRecitals\n\nOn [date] the court considered an application for a reporting restriction order.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": 1,
+    "order_number": "order_141_reporting_restriction_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 44,
+    "source_filename": "Order 14.1 - Reporting Restriction Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

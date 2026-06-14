@@ -1,0 +1,19 @@
+{
+  "chunk_id": "s11__chunk001",
+  "source_file": "raw/legislation/children_act_1989/s11.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 185,
+  "text": "**(7)** A section 8 order may—\n- **(a)** contain directions about how it is to be carried into effect;\n- **(b)** impose conditions which must be complied with by any person—\n  - **(i)** who is named in the order as a person with whom the child concerned is to live, spend time or otherwise have contact;\n  - **(ii)** who is a parent of the child ...;\n  - **(iii)** who is not a parent of his but who has parental responsibility for him; or\n  - **(iv)** with whom the child is living,\n- and to whom the conditions are expressed to apply;\n- **(c)** be made to have effect for a specified period, or contain provisions which are to have effect for a specified period;\n- **(d)** make such incidental, supplemental or consequential provision as the court thinks fit.",
+  "metadata": {
+    "source": "Children Act 1989 (c. 41)",
+    "act": "Children Act 1989",
+    "section": "11",
+    "title": "Section 11",
+    "url": "https://www.legislation.gov.uk/ukpga/1989/41/section/11",
+    "version": "Latest available (Revised) — valid from 2026-05-11",
+    "scraped": "2026-06-10",
+    "licence": "Open Government Licence v3.0"
+  }
+}

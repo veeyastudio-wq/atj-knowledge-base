@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_track_overview__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 470,
+  "text": "**Stage 3 — Cafcass safeguarding checks**\nOn receipt of the application, CAFCASS conducts safeguarding checks with police and children's services in respect of all parties. Before the first hearing, a CAFCASS officer contacts both parents by telephone. The officer then prepares a safeguarding letter for the court, setting out any identified welfare concerns or safeguarding risks. The safeguarding letter is an initial risk assessment, not a full welfare report.\n\n**Stage 4 — First Hearing Dispute Resolution Appointment (FHDRA)**\nThe FHDRA is usually listed within four to six weeks of the application being issued. A CAFCASS officer attends. The hearing has two primary objectives: to explore whether agreement can be reached on the day or with further dispute resolution support, and — if not — to give directions for how the case will proceed. Many cases settle at or shortly after the FHDRA.\n\n**Stage 5 — Dispute Resolution Appointment (DRA)**\nIf the case has not settled after the FHDRA, a DRA is listed. By this stage, the court may have ordered a full CAFCASS welfare report (a Section 7 report), which will have been filed before the DRA. The DRA is a further opportunity for settlement before the expense and formality of a final hearing. The judge may also give final directions if a final hearing is unavoidable.\n\n**Stage 6 — Final hearing**\nAt the final hearing, both parties give oral evidence and may be cross-examined. Where a Section 7 report has been prepared, the CAFCASS officer who wrote it may also give evidence. The judge applies the welfare principle and the welfare checklist, and makes a child arrangements order that is legally binding on both parties.\n\n## What to know if you're unrepresented\n\n**The welfare principle governs every decision.** The court's paramount consideration is the welfare of the child — not the rights, feelings, or preferences of either parent. The judge will apply the welfare checklist from section 1(3) of the Children Act 1989, which includes factors such as the child's ascertainable wishes and feelings (considered in light of age and understanding), the child's physical and emotional needs, the likely effect of any change in circumstances, and any risk of harm.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The child arrangements track — an overview of all six stages",
+    "track": "child_arrangements",
+    "stage": "Stage 1 — Pre-proceedings",
+    "source_refs": [
+      "fpr_2010__012",
+      "pd_12b",
+      "children_act_1989__001"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

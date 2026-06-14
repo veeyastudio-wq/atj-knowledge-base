@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__007__order_112_order_for_disclosure_by_the_police_of_relevant_criminal_material_into__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__007__order_112_order_for_disclosure_by_the_police_of_relevant_criminal_material_into.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 495,
+  "text": "This order was made at a hearing [without notice] / [on short informal notice] to [name of police force]. They have the right to apply to vary or discharge this order as set out below.\n\nThe timetable for the Family Court proceedings is as follows:\n\n[date of and purpose of next hearing, timetable for filing evidence etc]\n\nIT IS ORDERED [BY CONSENT] THAT:\n\n(where no annex 1 request has been made or a further request needs to be made)\n\nAnnex 1 application\n\nThe local authority shall within 3 business days submit an Annex 1 application to [name of police force] for the following:\n\n[insert summary of information to be included in the Annex 1]\n\n(only to be used where the police have not responded to the annex 1 request and provided disclosure within 20 business days)\n\nFailure to comply with the application for disclosure\n\n[Name of police force] shall disclose to the local authority by [date] the information requested as part of the Application for Disclosure of Police Information (Annex 1).\n\nDigital evidence belonging to the parties\n\n[Name of police force] shall disclose to [the local authority] / [name of party to whom device belongs] by [date] the [detail nature of digital evidence] of [name of party] for the relevant period of [date – date] in an unredacted format, the court being satisfied that this information is necessary evidence required to be before the court.\n\nDigital evidence belonging to third parties\n\n[Name of police force] shall disclose to [the local authority] / [name of party] by [date] the [detail nature of digital evidence] of [name of third party] for the relevant period of [date – date], the court being satisfied that this information is necessary evidence required to be before the court. The Police shall serve [name of third party] with notice of this direction by [date], and there is leave to [name of third party] to make an application to vary this order upon notice to all parties. Should [name of third party] intend to make an application to vary this order, they shall do so by [date].\n\nOngoing disclosure\n\nUpon receipt of written confirmation from the local authority that updating disclosure is required, [name of police force] shall provide updated disclosure including [insert as required] on [list specific dates, not more than once per month up to the listed fact-finding or final hearing].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_112_order_for_disclosure_by_the_police_of_relevant_criminal_material_into_",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 7,
+    "source_filename": "Order 11.2 - Order for Disclosure by the Police of Relevant Criminal Material into Care Proceedings.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

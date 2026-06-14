@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__043__order_139_abduction_directions_order_without_notice__chunk004",
+  "source_file": "raw/standard_orders/sfo_vol2__043__order_139_abduction_directions_order_without_notice.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 5,
+  "token_count": 117,
+  "text": "The applicant is to effect personal service of this order along with a record of this without notice hearing on the respondent.\n\nCosts be reserved.\n\nDated [date]\n\nNotice\n\nYou [applicant solicitor name] may be fined or sent to prison for contempt of court if you break the promise that have been given to the court\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be fined or sent to prison for contempt of court\n\n[on behalf of] [applicant solicitor name]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_139_abduction_directions_order_without_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 43,
+    "source_filename": "Order 13.9 - Abduction - Directions Order (Without Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

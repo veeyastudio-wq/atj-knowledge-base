@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 410,
+  "text": "**Stage 3 — Financial disclosure (Form E)**\nBoth parties must complete Form E — a detailed financial statement covering all assets, income, liabilities, pensions, business interests, and outgoings — and exchange it simultaneously with the other party on the date set by the court. This is the most technically demanding stage for unrepresented parties: the form is long, the supporting documentation requirements are extensive, and incomplete or inaccurate disclosure has consequences throughout the remainder of proceedings.\n\n**Stage 4 — First Appointment (FDA)**\nThe court holds a short directions hearing. The judge's primary role at this stage is to identify the issues in genuine dispute, ensure that disclosure is complete, and set a timetable toward the FDR hearing. The FDA is not a negotiation hearing; neither party is expected to make or respond to settlement offers.\n\n**Stage 5 — Financial Dispute Resolution (FDR)**\nThe FDR is a without-prejudice hearing at which a judge gives an indication — not a binding ruling — of the likely outcome if the case were to proceed to a final hearing. The parties are expected to negotiate on the day, with a view to reaching a settlement. Many financial remedy cases resolve at or shortly after the FDR stage.\n\n**Stage 6 — Final hearing**\nIf the FDR does not result in settlement, the case proceeds to a final hearing before a different judge. Both parties give oral evidence and are subject to cross-examination. The judge makes a binding financial order.\n\n## What to know if you're unrepresented\n\n**Financial remedy is a separate track from the divorce.** The divorce process does not automatically deal with finances. Financial claims against a former spouse remain open until a court order is made — potentially for many years after the marriage ends.\n\n**The MIAM is a legal requirement, not an optional step.** Attending a MIAM (or establishing and evidencing a valid exemption) is a prerequisite to filing Form A. Domestic abuse, urgency, and certain other specified circumstances can provide an exemption.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The financial remedy track — an overview of all six stages",
+    "track": "financial_remedy",
+    "stage": "Stage 1 — Pre-proceedings (MIAM)",
+    "source_refs": [
+      "fpr_2010__009",
+      "pd_9a",
+      "govuk__divorce"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

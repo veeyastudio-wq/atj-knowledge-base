@@ -1,0 +1,36 @@
+{
+  "chunk_id": "D84__chunk002",
+  "source_file": "raw/court_forms/D84.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 432,
+  "text": "10. The divorce/dissolution/(judicial) separation application was made Note 10: If you decide\njointly, but this application is now to proceed as a sole application to proceed with the\nby only application as a sole\napplicant having initially\napplicant 1 made a joint application,\nthe application cannot\napplicant 2\nbe changed back to a\njoint application and can\nand this applicant applies to the judge to make a conditional order only proceed as a sole\nof application at final order\nstage. The other party to the\ndivorce in this case proceedings becomes ‘the\nrespondent’.\ndissolution in this case\nor\nin the case of (judicial) separation, the applicant applies to the\njudge for a\n(judicial) separation order in this case\nYou must also serve (send) the other party with a copy of\nthis application.\nC. Statement in support of divorce/dissolution/\n(judicial) separation application\n11. Have you read the application for divorce/dissolution/(judicial)\nseparation?\nYes\nNo\n12. Do you wish to alter or add to any statement in the application for Note 12: If you are amending\ndivorce/dissolution/(judicial) separation? anything substantial in the\napplication, you may need\nYes. I wish to make the following alterations or additions: to submit an amended\napplication form and pay\na fee.\nEnter the details of the\namendment here and the\ncourt will inform you if this is\nrequired.\nNo\nPage 4\nD84 Application for a conditional order or (judicial) separation order (03.24)\n\n13. Subject to these alterations or additions (if any) is everything stated\nin your divorce/dissolution/(judicial) separation application true?\nYes\nNo\nIf any statement is not within your own knowledge, please\nindicate this and state whether it is true to the best of your\ninformation and belief.\nPage 5\nD84 Application for a conditional order or (judicial) separation order (03.24)",
+  "metadata": {
+    "form_id": "D84",
+    "title": "Apply for a conditional order or judicial separation order: Form D84",
+    "description": "Use this form to apply for a conditional order confirming that the court does not see any reason why you cannot divorce or separate.",
+    "track": "divorce",
+    "landing_url": "https://www.gov.uk/government/publications/form-d84-apply-for-a-conditional-order-or-judicial-separation-order",
+    "pdf_url": "https://assets.publishing.service.gov.uk/media/65f972ebaa9b760011fbda3d/D84_0324.pdf",
+    "version_date": "2024-06-13",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "form_fields": [
+      "Case number",
+      "Name of applicant 2",
+      "Name of respondent",
+      "Name of sole applicant or applicant 1",
+      "Or, in the case of (judicial) separation, the sole applicant applies to the judge for a (judicial) separation order in this case",
+      "Text Field 100",
+      "Text Field 101",
+      "Text Field 76",
+      "Text Field 77",
+      "Text Field 78",
+      "Text Field 79",
+      "Text Field 80",
+      "Text Field 81",
+      "Text Field 99"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__116__order_97_disclosure_order_of_medical_information__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__116__order_97_disclosure_order_of_medical_information.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 449,
+  "text": "# In the High Court of Justice\n\nIn the [High Court of Justice, \t\nFamily Division] / [Family Court]\n\nsitting at [Court name]\t       Case No: [Case number]\n\n[The Children Act 1989] /\n\n[The [name of statute] Act [year]]\n\n(delete or adapt as appropriate)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] / [Family] of [applicant name] / [further respondent name] and [respondent name]\n\nThe child[ren]\n\n[Name of child]\t[Girl] /\t[Boy]\t\t[dob dd/mm/yy]\n\n[Name of child]\t[Girl] /\t[Boy]\t\t[dob dd/mm/yy]\n\nAfter hearing [name the advocate(s) who appeared]\nAfter consideration of the documents lodged by the Parties\n\nORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\nThe parties\n\nThe applicant is [applicant name/Local Authority name] [(the ‘Local Authority’)], represented by [barrister/solicitor name] [instructed by [solicitor name and firm name] whose contact details are [ref, phone number and email]]\n\nThe first respondent is [respondent name], represented by [barrister/solicitor name] [instructed by [solicitor name and firm name] whose contact details are [ref, phone number and email]]\n\nThe second respondent is [respondent name], represented by [barrister/solicitor name] [instructed by [solicitor name and firm name] whose contact details are [ref, phone number and email]]\n\nThe third respondent is the child [child’s name] acting by [his] / [her] guardian [guardian name], represented by [barrister/solicitor name] [instructed by [solicitor name and firm name] whose contact details are [ref, phone number and email]]\n\nRecitals\n\nThis is an order for medical information to be provided to this court by [specify the provider].\n\nThe reason that this request for information is made is [specify].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_97_disclosure_order_of_medical_information",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 116,
+    "source_filename": "Order 9.7 - Disclosure Order of Medical Information.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__non_molestation_order__cross_cutting__chunk002",
+  "source_file": "raw/layer2/document_explanations/document_explanation__non_molestation_order__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 245,
+  "text": "**Non-molestation order** — a protective court order under Part IV of the Family Law Act 1996 that prohibits a respondent from molesting, harassing, pestering, or using or threatening violence against the applicant or a relevant child.\n\n**Molestation** — in family law, a broader concept than physical violence; it includes harassment, pestering, intimidation, and behaviour that interferes with the applicant's peace and comfort, as well as acts of physical violence and threats.\n\n**Without notice application** — an application made without informing the respondent in advance; also called an ex parte application; appropriate only where giving notice would create a risk of harm.\n\n**On notice application** — an application made with prior notice to the respondent, who has the opportunity to attend the hearing and respond before any order is made.\n\n**FL401** — the application form for a non-molestation order or an occupation order under Part IV of the Family Law Act 1996.\n\n## Related entries\n\n- case_law_summary__re_h_n__child_arrangements\n- legal_principle__welfare_principle__child_arrangements\n- process_explanation__fhdra_hearing__child_arrangements",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Non-molestation order — applying for protection from abuse or harassment",
+    "track": "cross_cutting",
+    "stage": "pre_proceedings",
+    "source_refs": [
+      "family_law_act_1996__s42",
+      "family_law_act_1996__s44",
+      "govuk_legal_aid_overview__000__what_you_can_get_legal_aid_for"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

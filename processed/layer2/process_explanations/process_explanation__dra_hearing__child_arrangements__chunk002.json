@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__dra_hearing__child_arrangements__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__dra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 484,
+  "text": "## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the DRA — e.g. not reading the Section 7 report carefully before the hearing, responding to CAFCASS's recommendation by arguing their rights rather than the child's welfare, not preparing a position statement, missing the opportunity for settlement, not understanding how to challenge factual errors in the Section 7 report. -->\n\n## Key terms\n\n**DRA** — Dispute Resolution Appointment; the hearing that follows the FHDRA once directed evidence has been gathered, aimed at settlement or final directions.\n\n**Section 7 report** — a full welfare report prepared by a CAFCASS officer (or local authority) when ordered by the court; covers the child's circumstances, wishes and feelings, each parent's situation, and makes a recommendation about arrangements.\n\n**CAFCASS** — Children and Family Court Advisory and Support Service; the independent public body whose officers advise the family court on the welfare of children in proceedings.\n\n**Welfare checklist** — the list of factors the court must consider when applying the welfare principle, set out in section 1(3) of the Children Act 1989; includes the child's wishes and feelings, their physical and emotional needs, the likely effect of any change in circumstances, and any risk of harm.\n\n**Consent order** — a court order recording the terms of an agreement reached between the parties; legally binding once sealed by the court.\n\n**Cross-examination** — questioning of a witness by the opposing party at a hearing, to test the accuracy and reliability of their evidence; a party who wishes to cross-examine the CAFCASS officer at the final hearing must obtain the court's permission.\n\n**FHDRA** — First Hearing Dispute Resolution Appointment; the first hearing in child arrangements proceedings, which precedes the DRA.\n\n**Interim order** — a temporary court order governing arrangements for the child during the proceedings, until a final order is made.\n\n**Position statement** — a short written document filed before a hearing, setting out a party's current position, the order they are seeking, and the key points they wish to raise.\n\n## Related entries\n\n- process_explanation__child_arrangements_track_overview__child_arrangements\n- process_explanation__fhdra_hearing__child_arrangements",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Dispute Resolution Appointment (DRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 5 — Dispute Resolution Appointment (DRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

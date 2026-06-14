@@ -1,0 +1,23 @@
+{
+  "chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+  "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 493,
+  "text": "# Proportionality — the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, importance, and complexity. It sits within the overriding objective of the Family Procedure Rules 2010 — the foundational rule that governs how courts are required to manage all family proceedings. A court applying proportionality will limit the time, cost, and procedural steps in a case to what is genuinely necessary to resolve the issues fairly.\n\n## Where it comes from\n\nFamily Procedure Rules 2010, Rule 1.1 — the overriding objective. Rule 1.1 requires the court to deal with cases justly, having regard to any welfare issues involved. Dealing with a case justly includes dealing with it in ways that are proportionate to the nature, importance, and complexity of the issues. The duty to further the overriding objective applies to the court in managing proceedings and to the parties in assisting the court.\n\n## What it means in practice\n\nThe court actively manages cases with proportionality in mind. Judges can and do limit the evidence that will be heard, restrict the length of hearings, refuse permission for expert evidence that is unnecessary given what is actually in dispute, and decline to hear arguments they consider disproportionate to the issues. These powers exist precisely because court resources are limited and because the cost of litigation — to both parties and to the court — should not exceed what the dispute warrants.\n\nProportionality applies to both parties. A party with greater resources cannot run an unlimited litigation strategy simply because they can afford to do so. The court's active case management function is partly a counterweight to that kind of imbalance.\n\nThe principle shapes what the court will and will not allow at each hearing. At a procedural hearing such as the FDA or FHDRA, the court's focus is on what is needed to progress the case — not on hearing everything each party wants to say at that stage. Attempts to introduce extensive evidence, raise multiple peripheral issues, or extend the length of an interlocutory hearing beyond what the agenda requires will generally be curtailed.\n\nConduct that is disproportionate — generating excessive correspondence, raising irrelevant issues, refusing reasonable requests, or pursuing satellite disputes — can be reflected in costs orders. Courts have a wide discretion in costs and the conduct of the parties is a relevant factor.\n\n## What it means if you're unrepresented",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "Proportionality — the court's duty to deal with cases justly",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_1",
+      "financial_remedies_guide_2026__008__operation_of_the_financial_remedies_court"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

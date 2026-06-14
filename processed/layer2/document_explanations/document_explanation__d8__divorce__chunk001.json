@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__d8__divorce__chunk001",
+  "source_file": "raw/layer2/document_explanations/document_explanation__d8__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 486,
+  "text": "## What to know if you're unrepresented\n\n**The form is completed online or on paper.** The D8 can be submitted through the MyHMCTS online portal, which is the most common method, or filed on paper by post to the appropriate divorce centre. The online process guides the applicant through each question in sequence.\n\n**Sole versus joint application — what the difference means in practice.** A joint application avoids the need to serve the form on the other party and removes the acknowledgement of service step, which simplifies the process where both parties are in agreement about proceeding. A sole application does not require the other party's consent — the divorce can proceed even if the respondent does not engage with the process (though delays may result).\n\n**Form D8 starts the divorce track only.** Filing Form D8 does not start financial remedy proceedings or create any court process for resolving finances. If financial matters need to be resolved — and they almost always do — a separate Form A application must be made. Similarly, child arrangements proceedings require a separate C100 application. Many people filing a D8 do not yet know that three separate processes may need to run in parallel.\n\n**The 20-week period begins on the issue date.** The court's issue date (when the application is formally processed by the court) is the date from which the 20-week cooling-off period runs, not the date the form is submitted or received.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong about the D8 — e.g. believing that filing the D8 addresses financial matters, not knowing the difference between sole and joint applications, confusion about when the 20-week period starts, losing or not having the marriage certificate, or not knowing a certified copy can be obtained. -->\n\n## Key terms\n\n**Sole application** — a divorce application made by one party (the applicant) without the other party's participation; the respondent is served with the application and must file an acknowledgement.\n\n**Joint application** — a divorce application made by both parties together; removes the need for service and acknowledgement of service.\n\n**No-fault divorce** — the divorce procedure under the Divorce, Dissolution and Separation Act 2020, in force since April 2022, under which neither party is required to make allegations against the other to obtain a divorce.",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form D8 — the divorce application",
+    "track": "divorce",
+    "stage": "Stage 2 — Filing the application",
+    "source_refs": [
+      "D8",
+      "FPR_Part_7",
+      "advicenow_divorce__008__starting_proceedings_the_application",
+      "advicenow_divorce__009__the_application_continued"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

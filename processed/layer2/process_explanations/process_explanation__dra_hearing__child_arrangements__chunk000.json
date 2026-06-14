@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__dra_hearing__child_arrangements__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__dra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 497,
+  "text": "# What is the Dispute Resolution Appointment (DRA)?\n\n## What it is\n\nThe Dispute Resolution Appointment (DRA) is a hearing held after the FHDRA in child arrangements proceedings, once any evidence or reports ordered at the FHDRA have been filed. Its purpose is to review the evidence that has been gathered, explore whether the parties can now reach agreement, and — if agreement is still not possible — give final directions for a contested final hearing. Where a Section 7 welfare report has been ordered, it will be central to this hearing.\n\n## When it happens\n\nThe DRA is Stage 5 of the child arrangements track. It takes place after the FHDRA (Stage 4) and after any directed evidence — typically a CAFCASS Section 7 report, and sometimes witness statements from each party — has been filed with the court. The DRA date is set by the judge at the FHDRA. If the case settles at the DRA, no final hearing (Stage 6) is needed. If it does not, the judge gives directions for a final hearing.\n\n## What it involves\n\n**Before the DRA**, any reports or statements directed at the FHDRA must be filed and served. Where a Section 7 report has been ordered, CAFCASS (or in some cases the local authority) prepares a full welfare report covering the child's circumstances, the child's wishes and feelings, each parent's situation, any welfare concerns, and a recommendation on what arrangements would best serve the child's welfare. Both parties receive the Section 7 report before the DRA.\n\n**At the DRA**, the judge:\n\n- Reviews the Section 7 report (if one has been ordered) and any other evidence that has been filed.\n- Considers whether agreement is now possible in light of the evidence, including CAFCASS's recommendations.\n- May facilitate or encourage settlement discussions between the parties.\n- If agreement is reached, makes a consent order recording the agreed arrangements.\n- If agreement is not reached, gives directions for a final hearing — setting a timetable for the filing of final witness statements, any updating evidence, and listing dates.\n\n**The CAFCASS officer who wrote the Section 7 report** may attend the DRA. Either party may ask the court at the DRA for permission to question the CAFCASS officer about their report at the final hearing; this is called permission to cross-examine the officer.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Dispute Resolution Appointment (DRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 5 — Dispute Resolution Appointment (DRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

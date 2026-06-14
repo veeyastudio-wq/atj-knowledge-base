@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__109__order_88_public_law_recovery_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__109__order_88_public_law_recovery_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 355,
+  "text": "# In the Family Court\t           Case No: [Case number]\n\nIn the Family Court\t           Case No: [Case number]\n\nsitting at [Court name]\n\n(note there should be a separate order for each child)\n\nOrdered by [name of judge] on [date]\n\nThe court is satisfied that [[name of local authority] has parental responsibility for the child by virtue of a [Care Order] / [Emergency Protection Order] made on [date]] / [the child is in police protection and the designated officer is [name of designated officer]].\n\nThe court authorises [name of authorised person] / [a police constable] to remove the child.\n\nWarning\n\nIt is an offence intentionally to obstruct the person from removing the child (Section 50(9) Children Act 1989).\n\nThe court authorises a police constable to enter the premises known as [full address] and search for the child, using reasonable force if necessary.\n\nThe court requires any person who has information about where the child is, or may be, to give that information to a police constable or an officer of the court, if asked to do so.\n\nThe court directs any person who can produce the child when asked to by [name of authorised person] / [a police constable] to do so.\n\nThis order has [not] been made ex parte.\n\nDated [date]\n\nOrder – Recovery of a child\nSection 50 Children Act 1989 | Order – Recovery of a child\nSection 50 Children Act 1989 | Order – Recovery of a child\nSection 50 Children Act 1989\n\nThe full name(s) of the child | Boy or Girl | Date(s) of Birth\n\n[insert] | [insert] | [insert]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t           Case No: [Case number]",
+    "order_number": "order_88_public_law_recovery_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 109,
+    "source_filename": "Order 8.8 - Public Law Recovery Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__005__order_104_police_disclosure_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__005__order_104_police_disclosure_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 5,
+  "token_count": 494,
+  "text": "[insert date and purpose of next hearing, timetable for filing evidence etc]\n\nIT IS ORDERED [BY CONSENT] THAT:\n\n(cases involving litigants in person/court ordered disclosure)\n\nThe [Commissioner of the Metropolitan Police] / [Chief Constable of [name of police force]] shall by 4.00pm on [date] disclose to the court and to the parties relevant information as to the following:\n\nThe issues to be determined by the Family Court\n\nThe issues to be determined at the fact finding hearing\n\nSpecifically:\n\nAs set out pursuant to paragraphs 5-9 above\n\nIn respect of:\n\n[List parties’ details, to include names, date of birth and any known addresses including email addresses (without this information the police will not be in a position to complete intelligence searches and comply with the order.)]\n\n[[Name] whose confidential details are contained in the annex to this order.]\n\n(cases involving legal representatives)\n\nThe solicitor for [name of party], shall within 3 business days, submit an Annex 1 application to the police for the following information:\n\nAs set out pursuant to paragraphs 5-9 above.\n\nThe [C2 application] / [Annex 1 request] / [order made by the court on [date]] shall be served on the police together with this order.\n\nAny material disclosed by the [Commissioner of the Metropolitan Police] / [Chief Constable of [name of police force]] in accordance with this order shall not disclose the personal details contained in any Annex to this order.\n\n[The court] / [Name of party] is responsible for serving a copy of this order (including any Annex) on [specify the relevant officer or disclosure unit] together with a letter providing details for service of all parties.\n\n[The court shall not serve the Annex on the parties to the proceedings.]\n\nThe information when disclosed may only be used for the purposes of these proceedings and must not be disclosed to any third party without permission of the court.\n\n[Name of party requesting this order] must undertake to pay all reasonable expenses of the police in complying with this order and must undertake to do so when this order is served.\n\nThe party requesting this order ([insert name and email address]) shall be deemed to have agreed to pay all reasonable expenses of the police, and the police shall request payment either before or after disclosure as they see fit [subject to the separate local or specific arrangement which is set out below:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_104_police_disclosure_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 5,
+    "source_filename": "Order 10.4 - Police Disclosure Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

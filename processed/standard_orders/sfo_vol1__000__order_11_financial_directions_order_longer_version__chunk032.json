@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk032",
+  "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
+  "layer": "layer1",
+  "chunk_index": 32,
+  "total_chunks": 39,
+  "token_count": 403,
+  "text": "Stay for non-court dispute resolution\n\nThis application is stayed (a) to enable the parties to obtain information and advice about, and consider using, non-court dispute resolution; and (b) where the parties agree, to enable non-court dispute resolution to take place. The parties shall tell the court by [time and date and method] (i) what engagement (if any) there has been with non-court dispute resolution; (ii) whether any of the issues in the proceedings have been resolved; and (iii) in light of the foregoing their respective proposals for the way forward. Upon receipt of this information the court shall give such further directions as to the management of the case as it considers appropriate. If the parties do not tell the court by [time and date and method] as directed, the court will give such further directions as to the management of the case as it considers appropriate.\n\nAdjournment\n\nThis hearing is adjourned until [time and date] on the following terms [set out directions to prevail].\n\nEvidence at the financial dispute resolution appointment (whether court-based or private)\n\nThe parties shall produce an electronic hearing bundle which complies with:\n\nFPR 2010 PD 27A; and\n\nparagraphs 81 and 82 of the Financial Remedies Guide of 13 March 2026.\n\nThe [applicant] / [respondent] shall prepare a bundle containing:\n\nan updated composite case summary using Template ES1;\n\nan updated composite schedule of assets using Template ES2;\n\na composite chronology recording in neutral terms the key dates of the parties’ relationship and of the litigation and where any unagreed events are clearly denoted;\n\nan [agreed] summary of the issues to be determined;\n\n[insert (list other documents to be included – e.g. ‘all applications and orders made in these proceedings’, ‘the parties’ narrative forms e’, ‘the parties’ narrative replies to questionnaire’, ‘the parties’ narrative witness statements’, ‘the expert reports’ etc.)].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_11_financial_directions_order_longer_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 0,
+    "source_filename": "Order 1.1 - Financial Directions Order (longer version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

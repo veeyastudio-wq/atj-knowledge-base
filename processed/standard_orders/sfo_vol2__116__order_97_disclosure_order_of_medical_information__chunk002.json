@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__116__order_97_disclosure_order_of_medical_information__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__116__order_97_disclosure_order_of_medical_information.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 337,
+  "text": "Midwifery record (ante- and post-natal)\n\nHealth Visitor record (individual and family)\n\nSchool Nurse record\n\nGeneral Dental Practice record\n\nCommunity Dental record\n\nNHS computer for immunisations and child health surveillance\n\nParent held child health record (‘Red Book’)\n\nCommunity Paediatric record\n\nPharmacy dispensing record\n\nOther (specify)\n\nSecondary Care (specify Hospital unit – each keeps separate records)\n\nMedical case file (including any separate volumes which should be indexed – e.g. orthopaedic, ENT, ophthalmic, etc)\n\nNursing Records during hospital admission\n\nPharmacy records (inpatient or outpatient)\n\nCasualty attendances (if not be linked to medical record)\n\nImaging (may be X rays, Ultrasound, video, electronic PACS images, colposcopy photographs etc)\n\nMedical illustration (photos, videos etc)\n\nPathology and other investigation results and opinions (including ECG, CTG)\n\nPatient Administration System printout  (all appointments offered)\n\nMental health records, in patient and outpatient (usually kept separately from other case files)\n\nMental health Patient Administration System printout\n\nClinical Workstation printout (may contain appointments, medical notes and letters, lab and test results)\n\nDental Hospital records and Patient Administration System printout\n\nAllied Health Professional  records (Speech and Language Therapy, Physiotherapy, Orthotics, Portage, Occupational Therapy, Dietetics, Orthoptics, Audiology)\n\nOther health professionals and agencies\n\nOptician\n\nEducation or Social Services based therapists\n\nPrivate specialists (medical or non medical)\n\nLooked After child and Adoption medical records\n\nSummary of counselling and psychotherapy records",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_97_disclosure_order_of_medical_information",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 116,
+    "source_filename": "Order 9.7 - Disclosure Order of Medical Information.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

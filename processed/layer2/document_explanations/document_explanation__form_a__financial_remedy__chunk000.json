@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__form_a__financial_remedy__chunk000",
+  "source_file": "raw/layer2/document_explanations/document_explanation__form_a__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 449,
+  "text": "# Form A — applying to the court for a financial order\n\n## What it is\n\nForm A is the form used to start contested financial remedy proceedings in England and Wales. Filing it notifies the court that the applicant intends to seek a financial order and triggers the court's timetable. Without Form A, there are no court proceedings — and without court proceedings, there is no mechanism to obtain a binding financial order through the courts if agreement cannot be reached.\n\n## When it happens\n\nForm A is filed at Stage 2 of the financial remedy track, after the MIAM (Stage 1) has been attended or a valid exemption has been established. It can be filed before, during, or after the divorce application, but it should be filed in time to allow financial proceedings to be resolved before the divorce final order is applied for. Filing Form A signals that mediation or direct negotiation has not produced agreement, and that the matter is moving into contested court proceedings.\n\n## What it involves\n\n**What the form asks for.** Form A asks the applicant to identify the type of financial order they are seeking — for example, a property adjustment order, a lump sum order, a pension sharing order, or periodical payments. It also asks for basic details about both parties and the divorce proceedings.\n\n**What happens after filing.** Once Form A is filed and the court fee is paid, the court issues the case and serves notice on the respondent. The court then sets the date for the First Appointment (FDA) — usually 12 to 16 weeks after the form is issued — and sends the FDA timetable to both parties. The timetable sets out the dates by which each party must file their Form E financial statement and the other documents required before the FDA.\n\n**The respondent's position.** Filing Form A is an act by the applicant alone. The respondent does not need to file a corresponding form; they are automatically brought into the proceedings by the court's service of notice.\n\n## What to know if you're unrepresented\n\n**The form is available online.** Form A can be downloaded from GOV.UK and filed by post, or submitted through the MyHMCTS online portal. No solicitor is required to file it.",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form A — applying to the court for a financial order",
+    "track": "financial_remedy",
+    "stage": "Stage 2 — Filing Form A",
+    "source_refs": [
+      "Form_A",
+      "FPR_Part_9",
+      "PD_9A",
+      "advicenow_financial_order__013__applying_for_a_financial_order"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

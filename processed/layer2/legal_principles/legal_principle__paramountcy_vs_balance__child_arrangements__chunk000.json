@@ -1,0 +1,23 @@
+{
+  "chunk_id": "legal_principle__paramountcy_vs_balance__child_arrangements__chunk000",
+  "source_file": "raw/layer2/legal_principles/legal_principle__paramountcy_vs_balance__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 466,
+  "text": "# Parental rights versus the child's welfare — why the court's focus is not on you\n\n## What it is\n\nThe family court in child arrangements proceedings is not adjudicating between two competing parental rights. Parents in England and Wales do not hold rights against each other or against the court in relation to their children — they hold parental responsibility, which is a set of duties and powers exercised for the benefit of the child. The court's question at every stage is not which parent has the stronger claim, but what outcome best serves the welfare of this child.\n\n## Where it comes from\n\nParental responsibility is defined in section 3 of the Children Act 1989 as the rights, duties, powers, responsibilities, and authority which a parent has in relation to a child — but the legislation and case law consistently interpret these as instruments for meeting the child's needs, not as entitlements parents hold for their own benefit. The welfare principle in section 1(1) of the Children Act 1989 — that the child's welfare is the court's paramount consideration — gives effect to this orientation throughout the proceedings.\n\n## What it means in practice\n\nIn practice, this means that when a judge is assessing what order to make, they are not conducting a comparative assessment of the two parents as people. They are not asking who is the more deserving parent, who has been treated more fairly by the other party, or whose account of events is more credible in a general sense. They are asking a narrower and more specific question: given everything the court knows about this child and these circumstances, what arrangements will best serve this child's welfare?\n\nA parent's perspective — their parenting capacity, their relationship with the child, their proposed arrangements, and any concerns they raise about the other parent — is relevant because and insofar as it bears on that question. Evidence of the other parent's failings is relevant where it points to a risk to the child's welfare; it is less relevant where it amounts to an account of how the parent has been treated in the relationship.\n\nThis does not mean that a parent's experience, distress, or genuine concerns are dismissed. It means that for those concerns to carry weight with the court, they need to be framed around their effect on the child.\n\n## What it means if you're unrepresented",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "Parental rights versus the child's welfare — why the court's focus is not on you",
+    "track": "child_arrangements",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "children_act_1989__001__section_1_welfare",
+      "children_act_1989__003__section_8_orders"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

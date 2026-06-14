@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fda_hearing__financial_remedy__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fda_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 242,
+  "text": "**Form A** — the form filed to start financial remedy court proceedings.\n\n**Form G** — a form on which each party confirms whether they are ready and willing to treat the FDA as an FDR (combined hearing).\n\n**Chronology** — a concise document setting out the key dates in the parties' marriage and financial history, required before the FDA.\n\n**Questionnaire** — a list of requests for further documents or information from the other party, arising out of their Form E; submitted to the court and the other party before the FDA.\n\n**Schedule of issues** — a document summarising the matters that remain in dispute between the parties.\n\n**Directions** — the judge's formal instructions setting out what each party must do and by when before the next hearing.\n\n**FDR** — Financial Dispute Resolution hearing; the settlement-focused hearing that typically follows the FDA.\n\n## Related entries\n\n- process_explanation__financial_remedy_track_overview__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy\n- document_explanation__form_a__financial_remedy",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Appointment (FDA)?",
+    "track": "financial_remedy",
+    "stage": "Stage 4 — First Appointment (FDA)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

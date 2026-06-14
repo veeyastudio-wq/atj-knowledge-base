@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__034__order_61_stay_or_adjourn_proceedings_for_arbitration_under_courts_case_managemen__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__034__order_61_stay_or_adjourn_proceedings_for_arbitration_under_courts_case_managemen.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 428,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\nThe Family Procedure Rules 2010 rules 3.2-3.4\n\nThe Arbitration Act 1996, section 9\n\nThe [Marriage] / [Civil Partnership] / [Relationship] / [Family] of [applicant name] and [respondent name]\n\n(Adapt as necessary)\n\nAfter hearing [name the advocates(s) who appeared]\n\nAfter consideration of the documents lodged by the parties\n\n(In the case of an order made without notice) After reading the statements and hearing the witness(es) specified in the Recitals below\n\nORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nDefinitions\n\nIFLA is the Institute of Family Law Arbitrators.\n\nForm ARB1FS is the arbitration agreement signed by the parties of which a copy has been lodged with the court.\n\nThe arbitration is an arbitration which is to be conducted in accordance with the rules of the IFLA arbitration scheme.\n\nRecitals\n\n(In the case of an order made without notice)\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral evidence from [name].\n\n(In the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [set out].\n\nThe [applicant] / [respondent] has applied to this court for financial remedies.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_61_stay_or_adjourn_proceedings_for_arbitration_under_courts_case_managemen",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 34,
+    "source_filename": "Order 6.1 - Stay or Adjourn Proceedings for Arbitration under Court's Case Management Powers.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

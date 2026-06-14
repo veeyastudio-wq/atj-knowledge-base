@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk033",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 33,
+  "total_chunks": 61,
+  "token_count": 489,
+  "text": "[If the charge is to be redeemed by the payment of a sum of money then the [applicant] / [respondent] will, forthwith on the receipt of the appropriate sum of money, apply to HM Land Registry for the removal of the charge registered against the property.]\n\nProcure release from mortgage and to indemnify\n\nThe [applicant] / [respondent] shall use [his] / [her] best endeavours to procure the release of the [respondent] / [applicant] from any liability under the mortgage [mortgage(s) name(s)] [by [date]] / [on or before completion of the transfer provided for by paragraph [para number] [and ongoing until the mortgage is actually redeemed] / [within [number] days of the date of this order], and shall in any event indemnify the [applicant] / [respondent] against all such liability.\n\nPayment of mortgage and outgoings on property\n\nThe [applicant] / [respondent] shall discharge as and when each payment becomes due, be solely responsible for and in any event indemnify the [respondent] / [applicant] against:\n\nall interest and capital repayments due in respect of the mortgage [mortgage(s) name(s)];\n\nall [reasonable] sums due in respect of service charge, council tax, utilities (including but not limited to gas, electricity, water and telephone accounts), and buildings and contents insurance premiums in respect of [the family home] [and] / [or] [other property name]; and\n\n[etc].\n\nThe payments shall start on [date] and shall end on the first to occur of:\n\n[date];\n\nthe sale of the family home;\n\n[all the surviving children of the family] / [the surviving child of the family] attaining the age of 18 years or ceasing [his] / [her] / [their] full-time [secondary] / [tertiary] education [to first degree level], whichever is the later, save that if  prior to this [all the surviving children of the family] / [the surviving child of the family] [have]/[has] ceased to live permanently with the [applicant] / [respondent], the determining event shall arise upon such cessation;\n\nthe death of the last surviving [of the] child[ren] of the family;\n\nthe death of the [applicant] / [respondent];",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

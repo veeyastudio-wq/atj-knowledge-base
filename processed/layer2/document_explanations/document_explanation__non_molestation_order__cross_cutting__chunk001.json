@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__non_molestation_order__cross_cutting__chunk001",
+  "source_file": "raw/layer2/document_explanations/document_explanation__non_molestation_order__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 506,
+  "text": "## What to know if you're unrepresented\n\n**Legal aid is available.** Victims of domestic abuse applying for a non-molestation order can qualify for legal aid regardless of their financial means, subject to providing evidence of domestic abuse. This is one of the limited areas in family law where legal aid remains broadly accessible. The legal aid evidence requirements can be met in a number of ways — including a letter from a GP, police records, a referral from a MARAC, or other specified evidence. An application for legal aid should be made to a legal aid provider before the FL401 is filed, if time permits.\n\n**Without notice is not automatic.** A without notice application is appropriate only where giving notice would expose the applicant or a child to risk of harm. The court will consider whether without notice was justified, and if the application could have been made on notice without exposing anyone to risk, the court may adjourn to give the respondent an opportunity to respond. Being able to explain specifically why prior notice was not safe is important.\n\n**The supporting statement should be specific.** The statement accompanying the FL401 should describe specific incidents with dates where possible and explain the pattern of behaviour. Vague or general statements — \"he has been abusive throughout the relationship\" — are less likely to satisfy the court than statements that identify what happened, when, and what effect it had. Where there are police reports, hospital records, or other corroborating evidence, referring to them and attaching them as exhibits strengthens the application.\n\n**A non-molestation order is separate from other proceedings.** Obtaining a non-molestation order does not automatically affect any child arrangements or financial proceedings. It does not determine who the children live with or what the financial settlement will be. It will, however, be relevant context in those proceedings and may affect how the court approaches safeguarding and risk considerations.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people most commonly get wrong when applying for a non-molestation order — for example, insufficient detail in supporting statements, misunderstanding the without notice threshold, not being aware of legal aid availability, or not knowing what evidence is needed to satisfy the legal aid evidence requirement. -->\n\n## Key terms\n\n**Non-molestation order** — a protective court order under Part IV of the Family Law Act 1996 that prohibits a respondent from molesting, harassing, pestering, or using or threatening violence against the applicant or a relevant child.",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Non-molestation order — applying for protection from abuse or harassment",
+    "track": "cross_cutting",
+    "stage": "pre_proceedings",
+    "source_refs": [
+      "family_law_act_1996__s42",
+      "family_law_act_1996__s44",
+      "govuk_legal_aid_overview__000__what_you_can_get_legal_aid_for"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

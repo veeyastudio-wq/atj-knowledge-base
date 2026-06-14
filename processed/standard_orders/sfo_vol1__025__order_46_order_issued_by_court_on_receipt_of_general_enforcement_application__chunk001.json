@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__025__order_46_order_issued_by_court_on_receipt_of_general_enforcement_application__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__025__order_46_order_issued_by_court_on_receipt_of_general_enforcement_application.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 247,
+  "text": "If you do not comply with this order you may be held to be in contempt of court and punished by a fine, imprisonment, confiscation of assets or other punishment under the law.\n\nThe applicant has applied to the court to enforce an order made in these proceedings.  The applicant has asked the court to enforce the order by such method as the court may consider appropriate.\n\nYou must comply with this order by completing the form, filing it with the court and serving it on the applicant, and by attending court for questioning.\n\nAt the hearing you will be asked questions about your financial means and questions relevant to the enforcement of the order.  The court may require you to give your answers on oath (ie you may have to swear or affirm that your answers will be true).\n\nAt the hearing the court may make an order that you pay the legal costs incurred by the applicant in making the application and attending the hearing.\n\nIf you comply with the order in full (eg paying to the applicant the outstanding money owed to the applicant as well as the court fee) the applicant may agree that you do not need to attend court, although the applicant may ask for an order that you pay the applicant’s legal costs incurred in having to make the application.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_46_order_issued_by_court_on_receipt_of_general_enforcement_application",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 25,
+    "source_filename": "Order 4.6 - Order Issued by Court on Receipt of General Enforcement Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

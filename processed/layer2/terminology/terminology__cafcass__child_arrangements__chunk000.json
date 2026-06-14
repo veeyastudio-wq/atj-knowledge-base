@@ -1,0 +1,24 @@
+{
+  "chunk_id": "terminology__cafcass__child_arrangements__chunk000",
+  "source_file": "raw/layer2/terminology/terminology__cafcass__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 229,
+  "text": "# Cafcass\n\n## What it means\n\nCafcass stands for Children and Family Court Advisory and Support Service. It is an independent body whose role is to represent the interests of children in family court proceedings. Cafcass officers carry out safeguarding checks before the first hearing and may be asked by the court to prepare a welfare report — a detailed written assessment of the child's circumstances and what arrangements would best serve their welfare.\n\n## When you will encounter it\n\nIn child arrangements proceedings, Cafcass will contact both parties before the FHDRA to carry out initial safeguarding checks. If the court orders a welfare report, a Cafcass officer will interview both parties, the child (depending on age), and potentially other relevant people, before producing a written report with recommendations. The Cafcass officer may also attend hearings and give evidence.\n\n## Track\n\nChild arrangements.\n\n## Related entries\n\n- process_explanation__fhdra_hearing__child_arrangements\n- process_explanation__child_arrangements_final_hearing__child_arrangements\n- legal_principle__welfare_principle__child_arrangements",
+  "metadata": {
+    "content_type": "terminology",
+    "layer": 2,
+    "title": "Cafcass",
+    "track": "child_arrangements",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "cafcass_court_process__000__the_court_process_and_what_to_expect_private_law",
+      "cafcass_what_happens_private_law__000__what_happens_in_private_law_proceedings",
+      "cafcass_section7_reports__000__the_court_asks_an_fca_to_write_a_report_if_your_case_goes_beyond_first_hearing_s"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": false
+  }
+}

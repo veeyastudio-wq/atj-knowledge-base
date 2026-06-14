@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__002__order_102_occupation_order__chunk018",
+  "source_file": "raw/standard_orders/sfo_vol2__002__order_102_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 18,
+  "total_chunks": 19,
+  "token_count": 298,
+  "text": "________________________________________\n\n[respondent name]\n\n(where the court has made an occupation order with a power of arrest a copy of the order must be delivered to the officer in charge of the police station for the applicant’s address, or such other police station as the court may specify, and must be accompanied by a statement showing that the respondent has been served with the order or informed of its terms: see fpr 2010, rule 10.10.)\n\nCommunications with the court\n\nAll communications to the court about this order should be sent to –\n\n[court name]\n\n[court address]\n\nEmail: [court email]\n\nTel:\t[court telephone]\n\nName and address of applicant’s legal representatives\n\nThe applicant’s legal representatives are –\n\n[applicant firm name]\n[applicant firm address]\n\nRef:\t\t[applicant solicitor ref]\n\nDX:\t\t[applicant firm DX address]\n\nEmail:\t\t[applicant firm email]\n\nPhone:\t\t[applicant firm telephone] (office hours)\n\n[applicant firm telephone (out of hours)] (out of office hours)\n\nFax:\t\t[applicant firm fax]\n\nOccupation Order\nFamily Law Act 1996 | Occupation Order\nFamily Law Act 1996 | Occupation Order\nFamily Law Act 1996\n\nThe full name(s) of the child(ren) | Boy or Girl | Date(s) of Birth\n\n[insert] | [insert] | [insert]\n\n[insert] | [insert] | [insert]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 2,
+    "source_filename": "Order 10.2 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

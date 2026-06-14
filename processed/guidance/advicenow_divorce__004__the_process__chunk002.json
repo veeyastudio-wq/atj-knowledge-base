@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__004__the_process__chunk002",
+  "source_file": "raw/guidance/advicenow_divorce__004__the_process.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 5,
+  "token_count": 484,
+  "text": "- Mo finds the marriage certificate to send to the court via the online service.\n- Mo goes to Apply for a divorce and creates an account. She keeps a careful note of her login details! (If she was applying to end a civil partnership she would need to go to End a civil partnership ). She then answers the questions that must be answered to apply for a divorce and gives an email and postal address for Pat. She takes a photo of the marriage certificate and uploads it to the online service. (The photo needs to be in colour with all four corners showing). When it comes to the court fee, she applies online for help with fees too and adds the help with fees code to her application and submits it all online to the court. To apply on paper you need to fill out Form D8 - this is the application for a divorce or dissolution. If you want to ask for help with fees you can do this online or use the EX160 paper form and send it with Form D8 plus two copies to the court address in the form.\n- The court emails Pat to tell him about Mo’s application. Lawyers call this ‘service’. The email has a link in it to Mo’s online application. This email is followed with a ‘notice’ (like a letter from the court) in the post, telling Pat that the application has been made and a link to it has been sent to him by email. The email asks Pat to go to the online service and answer some questions - this is when Pat responds to the divorce. He needs to do this within 14 days. To respond to the divorce application on paper you need to fill out Form D10. This is called the acknowledgement of service form. You need to do this within 14 days of the date you receive it. The court will send this form out to you.\n- Mo gets an email notification from the court to tell her that Pat has responded to her application. She can log on to the online service and see Pat’s answers. If you apply on paper, the court sends you a copy of the acknowledgement of service form in the post.\n- After a 20 week ‘cooling off’ period (starting from the date the court issues the divorce application), Mo applies for a conditional order, via the online service. If you are applying on paper, you need to use Form D84 - application for a conditional order .",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "The process",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 4,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__001__order_102_non_molestation_order_example_short_form__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__001__order_102_non_molestation_order_example_short_form.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 476,
+  "text": "# In the Family Court\tCase No: [Case number]\n\nIn the Family Court\tCase No: [Case number]\n\nsitting at [Court name]\n\nIMPORTANT NOTICE TO THE RESPONDENT, [RESPONDENT NAME] OF [RESPONDENT ADDRESS]\n\nYOU MUST OBEY THIS ORDER. You should read it carefully. If you do not understand anything in this order you should go to a solicitor, Legal Advice Centre or Citizens Advice Bureau. You have a right to apply to the court to change or cancel the order.\n\nWARNING: IF, WITHOUT REASONABLE EXCUSE, YOU DO ANYTHING WHICH YOU ARE FORBIDDEN FROM DOING BY THIS ORDER, YOU WILL BE COMMITTING A CRIMINAL OFFENCE AND LIABLE ON CONVICTION TO A TERM OF IMPRISONMENT NOT EXCEEDING FIVE YEARS OR TO A FINE OR BOTH.\n\nALTERNATIVELY, IF YOU DISOBEY THIS ORDER, YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED, OR HAVE YOUR ASSETS SEIZED.\n\nBefore [name of judge] in private on [date] at a [type of hearing]\n\nThe parties:\tThe applicant [applicant name] [was] / [was not] present at the hearing\n\nThe applicant [was represented by [name] [of counsel] / [, a solicitor]] / [did not have a legal representative]\n\nThe respondent [respondent name] [was] / [was not] present at the hearing\n\nThe respondent [was represented by [name] [of counsel] / [, a solicitor]] / [did not have a legal representative]\n\n[The court explained the terms of the order to the respondent.] / [The court was satisfied that the respondent understood the terms of the order.]\n\nDefinitions\n\nWhere this order says ‘the applicant’ it means [applicant name]\n\nWhere this order says ‘the respondent’ it means [respondent name]\n\nWhere this order says ‘the child/ren’ it means:\n\n[child full name] (a [boy] / [girl]) born on [date]\n\n[child full name] (a [boy] / [girl]) born on [date]\n\n[The “family home” is the property at [full address] [and its surrounding gardens, land and outbuildings]]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_non_molestation_order_example_short_form",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 1,
+    "source_filename": "Order 10.2 - Non-Molestation Order (example short form).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

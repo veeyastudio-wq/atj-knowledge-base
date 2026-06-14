@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__019__order_1317_abduction_enforcement_order_handover_to_applicant__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__019__order_1317_abduction_enforcement_order_handover_to_applicant.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 330,
+  "text": "if you do not speak or understand English adequately, to have an interpreter present in court at public expense in order to assist you at the hearing of any application relating to this order.\n\nThe parties\n\nThe applicant is [applicant name] who [attended] / [did not attend] court today.\n\nThe respondent is [respondent name] who [attended] / [did not attend] court today.\n\n(specify any additional respondents)\n\n(specify if any adult party acts by a litigation friend)\n\nRecitals\n\n[Set out documents read by the judge and/or evidence heard]\n\n[Set out reasons as to why the application was not made on notice to the respondent]\n\nIT IS ORDERED THAT:\n\n[Respondent name] shall forthwith and by no later than [time and date] hand over the child[ren] to [the applicant] / [insert third party].\n\nThe application shall be adjourned and relisted for further directions before a High Court Judge sitting in the Family Division at [the Royal Courts of Justice, The Strand, London, WC2A 2LL] / [insert other venue and address] at [time] on [date] with a time estimate of [time estimate], at risk, [subject to confirmation] / [confirmed with the Clerk of the Rules].\n\nThe respondent shall attend the hearing listed above, with legal representatives if so advised.\n\nThere shall be permission to the respondent to apply to vary or discharge this order on short notice (and if possible 48 hours’ notice) to the applicant’s solicitors [applicant solicitor], [applicant firm name].\n\nCosts are reserved.\n\nDated [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1317_abduction_enforcement_order_handover_to_applicant",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 19,
+    "source_filename": "Order 13.17 - Abduction - Enforcement Order (Handover to Applicant).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

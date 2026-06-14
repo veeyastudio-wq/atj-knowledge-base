@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__010__the_next_steps_after_the_court_has_received_the_application__chunk001",
+  "source_file": "raw/guidance/advicenow_divorce__010__the_next_steps_after_the_court_has_received_the_application.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 111,
+  "text": "### Reasons the respondent can use to dispute a divorce application\n\n- Jurisdictional grounds - for example that neither of you have lived in England or Wales, which means the court doesn’t have the legal power or ‘jurisdiction’ to deal with the divorce.\n- The validity of the marriage - this means that the marriage was never valid in the first place so that, in fact, you cannot be divorced.\n- The marriage, or civil partnership, has already been legally ended.\n\nIf none of these apply in your situation the respondent cannot stop the application.",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "The next steps after the court has received the application",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 10,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

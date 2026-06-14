@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk010",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 10,
+  "total_chunks": 61,
+  "token_count": 480,
+  "text": "Undertaking to discharge liabilities\n\nThe [applicant] / [respondent] shall discharge as and when each payment becomes due, be solely responsible for and in any event indemnify the [respondent] / [applicant] against:\n\nthe premiums in respect of the [policy] / [endowment policy] / [pension policy] with [company] numbered [policy number];\n\nthe [monthly] repayments to [company] in respect of the hire purchase agreement with them numbered [agreement number] in respect of the [family car] / [car make and model] with registration number [reg. number];\n\nthe [monthly] repayments to [company] in respect of the loan agreement with them numbered [agreement number] in respect of [insert];\n\n[etc].\n\nThe payments shall start on [date] and shall end on the first to occur of:\n\n[date];\n\nthe sale of the family home;\n\nthe youngest surviving [of the] child[ren] of the family attaining the age of 18 years or ceasing [his] / [her] / [their] full-time [secondary] / [tertiary] education [to first degree level], or [permanently] ceasing to live with the [applicant] / [respondent], whichever is the later;\n\nthe [respondent’s] / [applicant’s] remarriage;\n\nthe death of either party;\n\nthe retirement of the [applicant] / [respondent];\n\na court order discharging this obligation;\n\n[etc].\n\n[(For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, this shall not be construed as ceasing tertiary education.)]\n\nUndertaking to pay extra-curricular child costs\n\nThe [applicant] / [respondent] shall discharge as and when each payment becomes due, be solely responsible for and in any event indemnify the [respondent] / [applicant] against the following extra-curricular expenses of the child[ren]:\n\n[insert (e.g. non-school extra-curricular activities such as clubs, tuition, music lessons etc.)].\n\nUndertaking to discharge arrears\n\nThe [applicant] / [respondent] shall discharge by [date], be solely responsible for and in any event indemnify the [respondent] / [applicant] against:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

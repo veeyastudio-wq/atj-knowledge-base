@@ -1,0 +1,18 @@
+{
+  "chunk_id": "PD_40A__chunk000",
+  "source_file": "raw/practice_directions/PD_40A.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 468,
+  "text": "# Practice Direction 40A – Charging order, stop orders, stop notices\n\n## This Practice Direction supplements Part 40\n\n\n## SECTION I – CHARGING ORDERS\n\n\n### Applicant and application notice – rules 40.2 and 40.4\n\n\n1.1\n\n\nA creditor may apply for a charging order. The term “creditor” is defined in rule 40.2 to mean “the person to whom payment of a sum of money is due under a judgment or order, or a person who is entitled to enforce such a judgment or order”. A person who is entitled to enforce such a judgment or order would include a court officer who is able to take enforcement proceedings by virtue of rule 32.33.\n\n\n1.2 An application for a charging order must be made by filing an application in Practice Form N379 if the application relates to land, or N380 if the application relates to securities.\n\n\n1.3 The application notice must contain the following information –\n\n\n(1) the name and address of the debtor;\n\n\n(2) details of the judgment or order sought to be enforced;\n\n\n(3) the amount of money remaining due under the judgment or order;\n\n\n(4) if the judgment debt is payable by instalments, the amount of any instalments which have fallen due and remain unpaid;\n\n\n(5) if the judgment creditor knows of the existence of any other creditors of the judgment debtor, their names and (if known) their addresses;\n\n\n(6) identification of the asset or assets which it is intended to charge including, where applicable, the title number under which any land upon which it is sought to impose a charge is registered;\n\n\n(7) details of the debtor’s interest in the asset; and\n\n\n(8) the names and addresses of the persons on whom an interim charging order must be served under rule 40.6.\n\n\n1.4 A creditor may apply in a single application notice for charging orders over more than one asset, but if the court makes interim charging orders over more than one asset, it will draw up a separate order relating to each asset.\n\n\n### High Court and family court jurisdiction\n\n\n2.1 The jurisdiction of the High Court and the family court to make charging orders is set out in section 1(2) of the 1979 Act.\n\n\n### Change of location",
+  "metadata": {
+    "source": "Family Procedure Rules – Practice Directions",
+    "ref": "PD 40A",
+    "title": "Practice Direction 40A – Charging order, stop orders, stop notices",
+    "url": "https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/practice-direction-40a-charging-orders,-stop-orders-and-stop-notices",
+    "status": "Active",
+    "scraped": "2026-06-10",
+    "licence": "Open Government Licence v3.0"
+  }
+}

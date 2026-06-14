@@ -1,0 +1,22 @@
+{
+  "chunk_id": "fmc_miam__000__overview__chunk000",
+  "source_file": "raw/supporting_context/fmc_miam__000__overview.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 301,
+  "text": "# Overview\n\nThe first meeting with a mediator is often called a Mediation Information & Assessment Meeting or MIAM. Whether it’s called a MIAM or a first meeting, it will cover the same things.\n\nThe MIAM will last about an hour, and will give you an opportunity to tell the mediator about your situation, and the issues that need to be decided. The mediator will tell you about the mediation process and other options for reaching agreements.\n\nAt the end of the meeting, the mediator will tell you whether your case is suitable for mediation, and you can decide whether you want to proceed with mediation or explore another option for resolving issues. The mediator can also give you information about other services which provide help and support.\n\nIf you agree, the mediator might also refer you to other organisations who can help you, such as those who can offer counselling, debt advice, or information about how to parent co-operatively after separation, where these are relevant.\n\nIf you have children who are over the age of 10, the mediator will discuss with you their rights to have their views taken into account. This is an important part of the process designed to support the health and well-being of the children as well as to help parents come to good workable decisions. Research shows this part of the process brings real benefits to your children and to parents as they make decisions for the family.\n\nContact an FMC Registered Mediator to arrange an information and assessment meeting – you can find one using the search facility here .",
+  "metadata": {
+    "source": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "section": "Overview",
+    "parent_document": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "parent_slug": "fmc_miam",
+    "section_index": 0,
+    "organisation": "fmc",
+    "url": "https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/",
+    "scrape_date": "2026-06-10",
+    "licence": "© Family Mediation Council",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

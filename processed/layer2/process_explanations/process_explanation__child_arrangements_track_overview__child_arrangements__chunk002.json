@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_track_overview__child_arrangements__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_track_overview__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 481,
+  "text": "**CAFCASS is an independent investigator, not a support service for either party.** CAFCASS officers investigate both parties and report their findings to the court. The safeguarding letter and any Section 7 report they prepare directly influence the judge's decisions. Both parents are contacted by CAFCASS before the first hearing, and both should treat those conversations as part of the formal process.\n\n**The FHDRA is not a final hearing.** The first hearing is primarily about case management and exploring whether settlement is possible. Final orders are rarely made at the FHDRA unless both parties agree in full.\n\n**A Section 7 report takes time.** Where the court orders a full welfare report, preparation typically takes several months. The report sets out the CAFCASS officer's findings on each parent's circumstances, the child's wishes and feelings, any welfare concerns, and a recommendation on arrangements. A Section 7 report is not automatically ordered in every case — the court decides whether one is necessary.\n\n**The MIAM exemption for domestic abuse.** Where there is a history of domestic abuse involving a party or a child, attendance at a joint MIAM is not required. The exemption must be evidenced on the C100 form in the prescribed way. The court will scrutinise the basis for the exemption claimed.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong in child arrangements proceedings — e.g. not understanding the CAFCASS officer's role at the FHDRA, not preparing a position statement before hearings, misunderstanding what a Section 7 report does and does not cover, incorrect completion of C1A. -->\n\n## Key terms\n\n**Child arrangements order** — a court order that sets out with whom a child lives and/or when the child spends time with a parent or other person. It replaces the former concepts of \"residence order\" and \"contact order.\"\n\n**CAFCASS** — Children and Family Court Advisory and Support Service; an independent public body whose officers advise the family court on the welfare of children in proceedings. In Wales, the equivalent body is CAFCASS Cymru.\n\n**Welfare principle** — the rule in section 1(1) of the Children Act 1989 that the child's welfare is the court's paramount consideration in any decision about the child's upbringing.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The child arrangements track — an overview of all six stages",
+    "track": "child_arrangements",
+    "stage": "Stage 1 — Pre-proceedings",
+    "source_refs": [
+      "fpr_2010__012",
+      "pd_12b",
+      "children_act_1989__001"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

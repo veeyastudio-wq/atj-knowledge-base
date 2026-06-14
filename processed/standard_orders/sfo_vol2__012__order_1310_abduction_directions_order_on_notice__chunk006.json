@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk006",
+  "source_file": "raw/standard_orders/sfo_vol2__012__order_1310_abduction_directions_order_on_notice.md",
+  "layer": "layer1",
+  "chunk_index": 6,
+  "total_chunks": 8,
+  "token_count": 500,
+  "text": "The solicitor for the [applicant] / [respondent] shall serve a draft letter of instruction on the other parties by not later than 4.00pm on [date]; the letter of instruction shall be agreed by not later than 4.00pm on [date] and in default of agreement the letter of instruction shall be determined by the court upon application by both parties by email by not later than 4.00pm on [date] setting out the areas of dispute clearly marked on the draft letter of instruction.\n\nThe solicitor for the [applicant] / [respondent] shall send the letter of instruction by not later than 4.00pm on [date] together with any relevant documents.\n\nThe report shall be sent to the parties by the expert by not later than 4.00pm on [date].\n\n(insert paragraph above if video link required) The expert shall be available to attend the hearing on the [morning] / [afternoon] of [date] and shall attend if notified by a party in writing by at least two working days before the date of the final hearing that the officer’s attendance is essential.\n\nThe costs of the expert shall be shared between the parties in the first instance but the issue of whether one party should pay all or a greater contribution of the costs may be considered by the court at the conclusion of the final hearing.\n\n(adapt as appropriate) The [applicant] / [respondent] / [both parties] shall attend at the [office] / [clinic] / [surgery] of the expert at a date and time to be notified to the [applicant] / [respondent] / [both parties] by the expert.\n\nCosts\n\n(adapt as appropriate) [There shall be no order as to costs.] / [There shall be a legal aid detailed assessment of [the applicant’s] / [the respondent’s] / [both parties’] costs.]\n\n(adapt as appropriate) The [applicant] / [respondent] shall pay the costs of the [respondent] / [applicant] [summarily assessed at £[amount] / [to be subject to a detailed assessment if not agreed]. The costs shall be paid by [date] or 14 days from the date of the assessment.\n\n(adapt as appropriate) [Name] for the [applicant] / [respondent] shall pay to the [applicant] / [respondent] wasted costs assessed at £[amount].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1310_abduction_directions_order_on_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 12,
+    "source_filename": "Order 13.10 - Abduction - Directions Order (On Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

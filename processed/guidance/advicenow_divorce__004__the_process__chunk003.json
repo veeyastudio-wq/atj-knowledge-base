@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__004__the_process__chunk003",
+  "source_file": "raw/guidance/advicenow_divorce__004__the_process.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 5,
+  "token_count": 375,
+  "text": "- The District Judge reads the file on the court system. If it is all in order, the court fixes a date for a conditional order to be made. Both Mo and Pat get notifications of this date via the online service. If you are doing a paper application you both get sent details about the date a conditional order will be made, by post.\n- The judge pronounces the making of a conditional order. Mo and Pat don’t need go to the court to hear the judge do this as Pat is not trying to defend the application. It is just a formality.\n- The court sends both Mo and Pat a notification that the conditional order has been made. If you are doing a paper application you both get sent the conditional order in the post.\n- 6 weeks after the date of the conditional order, Mo can apply for a final divorce order via the online service. But if Mo and Pat haven’t agreed their finances by this time, it is better to hold off from applying until that is all sorted out - we explain more about this later. If you are doing a paper application, you need to fill in Form D36 and send it to the court.\n- The court checks that six weeks have passed since the conditional order was made and there is no other reason why a final order cannot be made.\n- The court makes the final divorce order. This order means Mo and Pat are divorced. For information about the effect of a final order, see The effect of a final divorce or dissolution order . The court sends a notification to both Mo and Pat to tell them the order has been made. They can see this order on the online service. They download a copy to keep on their laptop and print off as evidence they are divorced. If you are doing a paper application, the court sends copies of the final order to both of you, by post.",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "The process",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 4,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

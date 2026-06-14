@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk031",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 31,
+  "total_chunks": 61,
+  "token_count": 506,
+  "text": "upon sale of the property, the net proceeds shall be divided in accordance with the beneficial interests declared above.\n\nTransfer with charge back\n\nThe [respondent] / [applicant] shall [on or before [date]] / [within [number] days [(if decree absolute or final divorce/dissolution order already made) of the date of this order] / [of the date of [decree absolute] / [the final [divorce] / [dissolution] order]]] transfer to the [applicant] / [respondent] all [his] / [her] legal and beneficial interest in the [family home] / [other property name] [subject to the mortgage(s) [mortgage name] secured against the property], on condition that as from the date of the said transfer the property shall be charged by way of legal charge as security for the payment to the [respondent] / [applicant] of a lump sum [of £[amount]] / [equal to [percentage]% of the [gross] / [net] proceeds of sale], such charge to be in the form annexed to this Order (“the Charge”).\n\nThis charge shall not become enforceable/exercisable without the permission of the court or the consent of the parties until:\n\n[all the surviving children of the family] / [the surviving child of the family] attain[s] the age of 18 years or cease[s] [his] / [her] / [their] full-time [secondary] / [tertiary] education [to first degree level], whichever is the later, save that if  prior to this [all the surviving children of the family] / [the surviving child of the family] [have] / [has] ceased to live permanently with the [applicant] / [respondent], the determining event shall arise upon such cessation[. (For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, this shall not be construed as ceasing tertiary education)];\n\nthe death of the last surviving [of the] child[ren] of the family;\n\nthe death of the [applicant] / [respondent];\n\nthe [applicant’s] / [respondent’s] remarriage or cohabitation with another person [as spouses] [for a [continuous] period of more than [period]] / [for a period of [number] months in any [number] month period];",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

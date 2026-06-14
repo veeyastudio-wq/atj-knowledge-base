@@ -1,0 +1,25 @@
+{
+  "chunk_id": "case_law_summary__miller_mcfarlane__financial_remedy__chunk000",
+  "source_file": "raw/layer2/case_law_summaries/case_law_summary__miller_mcfarlane__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 448,
+  "text": "# Miller v Miller; McFarlane v McFarlane — needs, compensation, and sharing\n\n## What was decided\n\nThe House of Lords heard two cases together. In Miller, the marriage had lasted less than three years and was childless. Mr Miller had assets of approximately £17 million; Mrs Miller had approximately £100,000. The court awarded Mrs Miller £5 million. In McFarlane, the marriage had lasted 16 years. Both parties had been successful professionals, but Mrs McFarlane had given up her career as a solicitor to raise the couple's three children. The couple's capital was agreed to be divided equally, but Mr McFarlane earned approximately £1 million per year. The court ordered him to pay Mrs McFarlane £250,000 per year in ongoing maintenance, to compensate her for the earning capacity she had lost by leaving work to care for the family.\n\n## What principle it established\n\nThe House of Lords set out three principles that courts use to achieve fairness in financial remedy cases. The first is needs: each party must be able to meet their reasonable financial needs, including housing and income. The second is compensation: where one party has given up earning capacity or career progression during the marriage — typically by taking on childcare or domestic responsibilities — the financial settlement should reflect that loss. The third is sharing: matrimonial assets built up during the marriage belong to both parties equally, unless there is good reason to depart from equal division. These three principles work together, not independently. The weight given to each depends on the specific facts of the case.\n\n## Which track it applies to\n\nFinancial remedy.\n\n## When you are likely to encounter it\n\nMiller/McFarlane is cited alongside White v White in most contested financial remedy cases. You are likely to encounter it at the FDA, when the court sets out what issues are in dispute, at the FDR, and at the final hearing. It is particularly relevant if there is a significant gap between the parties' incomes, if one party gave up work or reduced their career during the marriage, or if the marriage was short and assets were brought in by one party rather than built up together.\n\n## What it means if you're unrepresented",
+  "metadata": {
+    "content_type": "case_law_summary",
+    "layer": 2,
+    "title": "Miller v Miller; McFarlane v McFarlane — needs, compensation, and sharing",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "citation": "Miller v Miller; McFarlane v McFarlane [2006] UKHL 24",
+    "source_refs": [
+      "matrimonial_causes_act_1973__s25",
+      "legal_principle__section_25_factors__financial_remedy",
+      "case_law_summary__white_v_white__financial_remedy"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

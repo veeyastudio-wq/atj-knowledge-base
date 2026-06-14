@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__040__order_136_abduction_attendance_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__040__order_136_abduction_attendance_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 5,
+  "token_count": 462,
+  "text": "The parties\n\nThe applicant is [applicant name] (represented by [applicant firm name])\n\nThe respondent is [respondent name]\n\n(Specify any additional respondents)\n\n(Specify if any adult party acts by a litigation friend)\n\n(Specify if the children or any of them act by a children’s guardian)\n\n[Name of person whom order is effective against] is a person who the court is satisfied can supply information about the whereabouts of the above-named child[ren] to assist in promoting their welfare and enabling issues relating to them to be decided by the courts of England and Wales\n\nUnless otherwise stated, a reference in this order to ‘the respondent’ means all of the respondents.\n\nThis order is effective against [name of person whom order is effective against]. Any person who has notice of this order must not assist [name of person whom order is effective against] not to comply or in breaking the terms of this order. If they do so they may also be in contempt of court.\n\nDefinitions\n\nThe Tipstaff is the enforcement officer of the High Court at the Royal Courts of Justice. They have a deputy and assistants and can authorise police officers to act on their behalf. Any obligation to give information to the Tipstaff or to hand over a document to them includes an obligation to do so to their deputy or assistant or a police officer acting on their behalf.\n\nRecitals\n\nThis order was made at a hearing without notice to the respondent or to [name of person whom order is effective against]. The reason why the order was made without notice to the respondent or [name of person whom order is effective against] was [insert].\n\nThe judge read the following affidavits/witness statements [insert] and heard oral evidence from [name].\n\nUndertakings to the court by the applicant [applicant name]\n\nIf the court later finds that this order has caused loss to [name of person whom order is effective against] and decides that [he] / [she] should be compensated for that loss by the applicant, [he] / [she] will comply with any order the court may make that [he] / [she] do so compensate [name of person whom order is effective against].\n\nUndertakings to the court by the applicant’s solicitor [applicant firm name]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_136_abduction_attendance_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 40,
+    "source_filename": "Order 13.6 - Abduction - Attendance Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

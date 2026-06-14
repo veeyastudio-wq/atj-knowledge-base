@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__102__order_81_public_law_directions_on_issue_and_allocation__chunk003",
+  "source_file": "raw/standard_orders/sfo_vol2__102__order_81_public_law_directions_on_issue_and_allocation.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 6,
+  "token_count": 476,
+  "text": "Dated [date]\n\nANNEX – ADDITIONAL ORDERS\n\nCapacity\n\nIt appearing there may be an issue as whether [name] lacks capacity (within the meaning of the Mental Capacity Act 2005) to conduct the proceedings, [name] shall by 4.00pm on [date] file at court and serve on the parties a report from [name of expert] assessing their cognitive functioning and whether in the expert’s opinion [name] has capacity to conduct proceedings; is competent to give evidence and if so any recommendations for measures required for them to give their best evidence; and has capacity to consent to placement for adoption or the making of a placement order. The cost of the report shall be paid by [the parties equally] / [name].\n\nOn receipt of the expert evidence the parties may lodge a consent order providing for the appointment of a litigation friend for [name].\n\nThe court will otherwise determine [name]’s capacity to conduct the proceedings at the case management hearing if the expert evidence is available by that date.\n\nInterpreter/translation\n\nThe court must arrange for [number] interpreter[s] fluent in [language and dialect] to attend all future hearings. The interpreter must attend 1 hour prior to the listed time.\n\nThe court authorises the use of interpreters by the solicitors for [name] to enable them to take instructions. The cost of the interpreters must be paid by [name].\n\nIf it has not already done so the local authority must by 4.00pm on [date] serve on [name] translations into language[s] they will understand of the documents upon which the local authority relies to support any allegations made and which explain why the local authority seeks the order[s] it has applied for.\n\nJoinder of father without parental responsibility\n\n[Name] is believed to be the father of [name(s)] but is not named on the child[ren]’s birth certificate. Unless by 4.00pm on [date] any party sends to the local authority objection to [name] being joined as party to the proceedings, he shall be joined as party without further order and the local authority must send to him the documents served on the other parties [redacted as to [insert] [but limited to [insert]].\n\n[Name] must so far as practicable comply with the requirements of this order.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\t     Case No: [Case number]",
+    "order_number": "order_81_public_law_directions_on_issue_and_allocation",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 102,
+    "source_filename": "Order 8.1 - Public Law Directions on Issue and Allocation.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

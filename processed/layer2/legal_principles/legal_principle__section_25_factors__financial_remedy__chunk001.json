@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__section_25_factors__financial_remedy__chunk001",
+  "source_file": "raw/layer2/legal_principles/legal_principle__section_25_factors__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 434,
+  "text": "- **Any physical or mental disability of either party.** Disability affecting earning capacity or care needs is a relevant factor.\n\n- **The contributions made by each party**, including contributions to the welfare of the family through home-making and child-rearing. The law treats non-financial contributions — caring for children, supporting a partner's career — as equivalent in principle to financial contributions.\n\n- **The conduct of each party**, but only where it would be inequitable to disregard it. In practice, conduct is rarely a decisive factor. The threshold for conduct to affect the financial outcome is high; courts have consistently held that the breakdown of the marriage itself, and most behaviour associated with it, does not meet the threshold.\n\n- **The value of any benefit either party will lose the chance of acquiring** as a result of the divorce. This most commonly arises in relation to pension entitlements — particularly the loss of a spouse's pension that would have been shared on the other spouse's death.\n\nThe judge applies these factors without a predetermined weighting. The result in each case turns on the specific facts. Needs — particularly housing needs arising from the care of children — often drive the outcome in cases where total assets are modest relative to those needs.\n\n## What it means if you're unrepresented\n\n**There is no automatic 50/50 split.** A common assumption is that the starting point is equal division and that the judge will then adjust from there. That is not an accurate description of how section 25 works. Equal division may be the right outcome in some cases — particularly long marriages where both parties have broadly equivalent needs and the assets are sufficient to meet them — but it is not the default position. The judge starts with the section 25 factors, not with a presumption of equality.\n\n**Needs often outweigh the sharing principle.** Where the total assets are limited and one party — usually the one with primary care of the children — has an acute housing need, that need will typically take priority over a mathematical equal division. A party who enters proceedings insisting on 50/50 without engaging with the other party's needs is likely to have that position tested by the judge.",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The section 25 factors — how a judge divides assets in a financial remedy case",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "matrimonial_causes_act_1973__003__section_25",
+      "fpr_2010__009__part_9_financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

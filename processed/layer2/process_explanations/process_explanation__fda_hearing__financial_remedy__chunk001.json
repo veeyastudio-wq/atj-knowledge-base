@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fda_hearing__financial_remedy__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fda_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 493,
+  "text": "In some cases, if both parties confirm they are ready (via Form G) and agree, the FDA and FDR can be combined into a single hearing. This is less common where the issues are complex.\n\n## What to know if you're unrepresented\n\n**The FDA is not the time to argue the case.** An unrepresented party who arrives expecting to present their financial position and persuade the judge will be caught off guard. The judge's task at the FDA is case management, not adjudication. Arguments about the merits of who should receive what are not heard at this stage.\n\n**The documents filed before the FDA matter.** The chronology, questionnaire, and schedule of issues shape everything that follows. A poorly drafted questionnaire — asking for irrelevant documents or omitting important requests — cannot easily be remedied later. The judge will scrutinise questionnaire requests for proportionality and may disallow requests that are excessive or irrelevant.\n\n**Form G must be completed.** Each party must confirm whether they are in a position to proceed to an FDR at the next hearing. Filing Form G incorrectly or not understanding its purpose can cause confusion at the hearing.\n\n**Disclosure gaps will be addressed here.** If the other party's Form E is incomplete or inadequate, the FDA is the appropriate time to raise this through the questionnaire process — not to make oral complaints at the hearing. Specific, targeted requests for missing documents are more effective than general objections.\n\n**The judge's tone is neutral.** At the FDA the judge is not indicating which party has the stronger case. Questions from the judge about a party's financial position are part of case management, not a signal of the judge's sympathies.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the FDA — e.g. trying to argue the substantive case, filing the pre-hearing documents late or not at all, not understanding what Form G is, drafting questionnaires that are disproportionate or unfocused. -->\n\n## Key terms\n\n**Form E** — the detailed financial statement each party must complete and exchange before the FDA, setting out all assets, income, liabilities, pensions, and outgoings.\n\n**Form A** — the form filed to start financial remedy court proceedings.\n\n**Form G** — a form on which each party confirms whether they are ready and willing to treat the FDA as an FDR (combined hearing).",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Appointment (FDA)?",
+    "track": "financial_remedy",
+    "stage": "Stage 4 — First Appointment (FDA)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

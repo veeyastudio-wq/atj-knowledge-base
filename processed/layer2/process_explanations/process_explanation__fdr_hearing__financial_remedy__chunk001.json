@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fdr_hearing__financial_remedy__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fdr_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 504,
+  "text": "## What to know if you're unrepresented\n\n**The judicial indication is not a decision.** The judge's assessment of a likely outcome at the FDR is an indication only. It carries significant weight — it is what an experienced judge expects to happen if the case goes to a final hearing — but it is not an order. The parties remain free to negotiate around it.\n\n**\"Without prejudice\" protects both parties.** Everything said and every offer made at the FDR is without prejudice. This means neither party can refer to what was said, offered, or indicated at the FDR if the case proceeds to a final hearing. The purpose is to allow both parties to negotiate freely without fear that an offer will be used against them. Understanding this protection before arriving is important — it allows frank discussion.\n\n**The FDR judge cannot hear the final hearing.** If the case does not settle at the FDR, the judge who gave the indication is disqualified from conducting any subsequent final hearing. This is to ensure that the final hearing judge comes to the evidence without knowledge of any without-prejudice offers or discussions.\n\n**Arriving without settlement proposals is not an option.** Each party is required to file open proposals before the FDR. A party who attends without having engaged with settlement — with no proposals and no response to the other party's proposals — will be at a significant disadvantage and may face adverse comment from the judge.\n\n**Negotiation happens in the building, not just in the courtroom.** Much of the FDR takes place in the corridors and waiting rooms of the courthouse. Parties without legal representatives negotiate directly with each other or through submissions back to the judge. Knowing this in advance — and understanding that this negotiation is normal and expected — helps avoid surprise.\n\n**A consent order must be drawn up if agreement is reached.** If the parties settle, the terms must be reduced to a draft consent order before the judge can approve them. An unrepresented party who has not prepared a draft order or does not know how to draft one may need to seek urgent assistance on the day.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the FDR — e.g. misunderstanding the without-prejudice nature of the hearing, not filing open proposals in advance, not understanding what a judicial indication is, not being prepared to negotiate on the day, not knowing how to draft a consent order if settlement is reached. -->",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Financial Dispute Resolution hearing (FDR)?",
+    "track": "financial_remedy",
+    "stage": "Stage 5 — Financial Dispute Resolution (FDR)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

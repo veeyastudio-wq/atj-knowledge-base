@@ -1,0 +1,19 @@
+{
+  "chunk_id": "s42__chunk000",
+  "source_file": "raw/legislation/family_law_act_1996/s42.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 473,
+  "text": "# Section 42\n\n## Part IV Family Homes and Domestic Violence\n\n\n### Non-molestation orders\n\n\n#### 42 Non-molestation orders.\n\n\n**(1)** In this Part a “ non-molestation order ” means an order containing either or both of the following provisions—\n- **(a)** provision prohibiting a person ( “the respondent”) from molesting another person who is associated with the respondent;\n- **(b)** provision prohibiting the respondent from molesting a relevant child.\n\n**(2)** The court may make a non-molestation order—\n- **(a)** if an application for the order has been made (whether in other family proceedings or without any other family proceedings being instituted) by a person who is associated with the respondent; or\n- **(b)** if in any family proceedings to which the respondent is a party the court considers that the order should be made for the benefit of any other party to the proceedings or any relevant child even though no such application has been made.\n\n**(3)** In subsection (2) “family proceedings” includes proceedings in which the court has made an emergency protection order under section 44 of the Children Act 1989 which includes an exclusion requirement (as defined in section 44A(3) of that Act).\n\n**(4)** Where an agreement to marry is terminated, no application under subsection (2)(a) may be made by virtue of section 62(3)(e) by reference to that agreement after the end of the period of three years beginning with the day on which it is terminated.\n\n**(4A)** A court considering whether to make an occupation order shall also consider whether to exercise the power conferred by subsection (2)(b).\n\n**(4B)** In this Part “ the applicant ”, in relation to a non-molestation order, includes (where the context permits) the person for whose benefit such an order would be or is made in exercise of the power conferred by subsection (2)(b).\n\n**(4ZA)** If a civil partnership agreement (as defined by section 73 of the Civil Partnership Act 2004) is terminated, no application under this section may be made by virtue of section 62(3)(eza) by reference to that agreement after the end of the period of three years beginning with the day on which it is terminated.",
+  "metadata": {
+    "source": "Family Law Act 1996 (c. 27)",
+    "act": "Family Law Act 1996",
+    "section": "42",
+    "title": "Section 42",
+    "url": "https://www.legislation.gov.uk/ukpga/1996/27/section/42",
+    "version": "Latest available (Revised) — valid from 2026-03-25",
+    "scraped": "2026-06-10",
+    "licence": "Open Government Licence v3.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__002__order_102_occupation_order__chunk015",
+  "source_file": "raw/standard_orders/sfo_vol2__002__order_102_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 15,
+  "total_chunks": 19,
+  "token_count": 468,
+  "text": "The court has determined that an automatic prohibition on cross examination applies under the Matrimonial and Family Proceedings Act 1984 (MFPA) because:\n\n(Select relevant subparagraphs)\n\n[Section 31R: The vulnerable party is the victim of a specified domestic abuse offence perpetrated by the other party;]\n\n[Section 31S: The vulnerable party is protected by an on-notice protective injunction against the other party;]\n\n[Section 31T: The vulnerable party adduces specified evidence that they are a victim of domestic abuse perpetrated by the other party.]\n\n(or)\n\n[Under Section 31U of the MFPA, it appears to the court that the quality of the party’s evidence on cross-examination is likely to be diminished if the cross-examination is conducted in person, or if the conduct of cross-examination in person would cause significant distress to a party, and it would not be contrary to the interests of justice to make the direction.]\n\nThe [applicant] / [respondent] must notify the court by 4.00pm on:\n\nwhether, in their view, there are suitable alternative means of cross-examination; and\n\nshould the court determine that there are no suitable alternative means of cross-examination, whether they intend to appoint their own qualified legal representative.\n\nThe file is to be referred to Judge [name of judge] on [date (following deadline for filing the response set out above)] to consider whether it is necessary for the court to appoint a qualified legal representative to conduct cross examination on behalf of either party.\n\nIf [name] does intend to appoint their own qualified legal representative for the purpose of cross-examination, they shall provide the name and contact details of that person no later than [date].\n\nAppointment of a qualified legal representative\n\n(insert the following recital into the order)\n\nThe court has considered whether it is necessary in the interests of justice for the witness(es) to be cross-examined by a qualified legal representative(s) and concluded that it is necessary to appoint such a qualified legal representative(s) to conduct the cross-examination.\n\n(within the body of the order)\n\nThe court is to appoint a qualified legal representative on behalf of [name of person prohibited from questioning] for the hearing[s] listed on [date] at [time] at The Family Court sitting at [court name].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 2,
+    "source_filename": "Order 10.2 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

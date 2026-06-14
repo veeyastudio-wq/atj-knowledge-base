@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__098__order_77_private_law_directions_on_enforcement_application__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__098__order_77_private_law_directions_on_enforcement_application.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 473,
+  "text": "[Name] has applied to enforce paragraphs [para numbers] of the order made on [date] requiring [name] [not] to [insert].\n\n[Name] admits the allegations of breach [but says [he] / [she] has a reasonable excuse].\n\nIT IS DECLARED THAT:\n\nThe court in England and Wales has jurisdiction in relation to the child[ren] on the basis that:\n\n(please select the appropriate paragraph from list a. to f. below)\n\n(pre-11pm on 31 december 2020)\n\nthe child[ren] [was] / [were] habitually resident in the jurisdiction of England and Wales at the date the application was lodged with the court.\n\nthe child[ren] [was] / [were] habitually resident in the jurisdiction of England and Wales immediately before they were wrongfully removed or retained, and they have not acquired a new habitual residence in another Member State and satisfied the conditions in Article 10 (a) or (b) of The Brussels IIa Regulation.\n\n(post-11pm on 31 december 2020)\n\nthe child[ren] [is] / [are] habitually resident in the jurisdiction of England and Wales.\n\nthe child[ren] [was] / [were] habitually resident in the jurisdiction of England and Wales immediately before they were wrongfully removed or retained, and they have not acquired a new habitual residence in another Member State and satisfied the conditions in Article 7 (a) or (b) of the 1996 Hague Convention on Jurisdiction, Applicable Law, Recognition, Enforcement and Co-operation in Respect of Parental Responsibility and Measures for the Protection of Children.\n\nthis is a case§ of urgency, and the court is taking necessary measures of protection in respect of the [child[ren] who [is] / [are]] / [property belonging to the child[ren] which is] present in England and Wales.\n\n[insert other basis of jurisdiction]\n\nTHE COURT ORDERS\n\nSafeguarding checks\n\nAs the application to enforce has been made more than three months after the order subject of the application, [Cafcass] / [CAFCASS Cymru] must carry out safeguarding checks and send a safeguarding [letter] / [report] to the court by [date].\n\nDirections hearing/FHDRA",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_77_private_law_directions_on_enforcement_application",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 98,
+    "source_filename": "Order 7.7 - Private Law Directions on Enforcement Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

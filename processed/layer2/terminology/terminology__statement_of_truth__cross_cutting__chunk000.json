@@ -1,0 +1,23 @@
+{
+  "chunk_id": "terminology__statement_of_truth__cross_cutting__chunk000",
+  "source_file": "raw/layer2/terminology/terminology__statement_of_truth__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 187,
+  "text": "# Statement of truth\n\n## What it means\n\nA statement of truth is a declaration signed at the end of certain court documents — witness statements, financial statements, and some applications — confirming that the contents are true to the best of the signatory's knowledge and belief. Signing a statement of truth on a document that contains false information is contempt of court, which is a criminal offence.\n\n## When you will encounter it\n\nOn your witness statement, on Form E (the financial disclosure form), and on certain other documents the court requires you to sign. The wording is prescribed — it must follow the exact form set out in the Family Procedure Rules.\n\n## Track\n\nCross-cutting — applies to all tracks.\n\n## Related entries\n\n- document_explanation__witness_statement__cross_cutting\n- terminology__exhibit__cross_cutting\n- legal_principle__duty_of_full_and_frank_disclosure__financial_remedy",
+  "metadata": {
+    "content_type": "terminology",
+    "layer": 2,
+    "title": "Statement of truth",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_17",
+      "PD_17A"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": false
+  }
+}

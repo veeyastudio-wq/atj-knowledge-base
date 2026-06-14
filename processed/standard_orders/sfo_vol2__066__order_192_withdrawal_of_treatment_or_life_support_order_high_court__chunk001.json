@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__066__order_192_withdrawal_of_treatment_or_life_support_order_high_court__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__066__order_192_withdrawal_of_treatment_or_life_support_order_high_court.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 393,
+  "text": "there is no treatment available which could confer any benefit on [respondent child name] and that accordingly [his] / [her] treatment regime is futile\n\nIt is lawful and in [respondent child name]’s best interests that all life-sustaining treatment in the form of artificial nutrition and hydration to be withdrawn from [him] / [her].\n\nIt is in [respondent child name]’s best interests to receive such treatment and nursing care as may be appropriate to ensure that [he] / [she] retains the greatest dignity until [his] / [her] life ends.\n\nOn [date] the court has made orders that restrict the reporting of information from these proceedings in the terms that are attached. These include provision that prohibit any reporting of this case until the judgment of this court has been handed down in public.\n\nIT IS ORDERED THAT:\n\nThis matter is listed on [date, time and duration before] when the court’s judgment will be handed down.\n\n[Costs (e.g. ‘[name] nhs trust is to pay half of the costs of the respondent, to be subject to detailed assessment if not agreed’)].\n\nDated [date]\n\nCommunications with the court\n\nAll communications to the court about this order should be sent to:\n\n[Insert the address and telephone number of the appropriate Court Office]\n\nIf the order is made at the Royal Courts of Justice, communications should be addressed as follows:\n\nThe Clerk of the Rules, Queen’s Building, Royal Courts of Justice, Strand, London WC2A 2LL quoting the case number. The telephone number is 020 7947 6543.\n\nThe offices are open between 10.00am and 4.30pm Monday to Friday.\n\nName and address of applicant’s legal representatives\n\nThe applicant’s legal representatives are:\n\n[Name, address, reference, fax and telephone numbers (both in and out of office hours) and email]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_192_withdrawal_of_treatment_or_life_support_order_high_court",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 66,
+    "source_filename": "Order 19.2 - Withdrawal of Treatment or Life Support Order (High Court).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

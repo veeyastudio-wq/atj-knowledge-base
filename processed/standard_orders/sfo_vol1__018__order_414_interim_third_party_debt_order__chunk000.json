@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__018__order_414_interim_third_party_debt_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__018__order_414_interim_third_party_debt_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 471,
+  "text": "# 1\n\nIn the Family Court\t   Case No: [Case number]\n\nsitting at [Court name]\n\n[The Matrimonial Causes Act 1973] /\n\n[The Civil Partnership Act 2004] /\n\n[Schedule 1 to the Children Act 1989] /\n\n[The Inheritance (Provision for Family and Dependants) Act 1975] /\n\n[The Matrimonial and Family Proceedings Act 1984 and Schedule 7 to the Civil Partnership Act 2004]\n\n(Delete as appropriate)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] / [Family] of [applicant name] and [respondent name]\n\n(Adapt as necessary)\n\nAfter hearing [name the advocate(s) who appeared]\n\nAfter consideration of the documents lodged by the parties\n\n(In the case of an order made without notice) After reading the statements and hearing the witnesses specified in para [para number] of the Recitals below\n\nINTERIM THIRD PARTY DEBT ORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\n(Delete as appropriate)\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nDefinitions\n\nThe “third party” means [full name] of [full address], which operates an account for the respondent.\n\nRecitals\n\nThis order was made without a hearing in accordance with the Family Procedure Rules, rule 72.4(1).\n\nThe judge read the application notice in Form N349 verified by a statement of truth as required by Civil Procedure Rules, Practice Direction 72.\n\nOn [date and time], [name of judge] considered the application of the applicant, from which it appears that:\n\non [date], [name of judge] made an order under case number [case number] requiring the respondent to pay money to the applicant;\n\nthe amount now owing under that order is £[amount] including interest and costs as follows:\n\nthere is a debt due or accruing due by the third party to the respondent.\n\nIT IS ORDERED THAT:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_414_interim_third_party_debt_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 18,
+    "source_filename": "Order 4.14 - Interim Third Party Debt Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

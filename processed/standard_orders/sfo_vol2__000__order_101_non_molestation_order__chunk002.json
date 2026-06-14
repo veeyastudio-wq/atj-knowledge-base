@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__000__order_101_non_molestation_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__000__order_101_non_molestation_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 15,
+  "token_count": 456,
+  "text": "Name of court: [court name]\n\nCourt type: [court type]\n\nCase type: [case type]\n\nType of hearing: [Preliminary] / [Final] / [insert other hearing with cross-examination]\n\nPre-hearing discussions began at: [time]\n\nStart time of the hearing: [time]\n\nEnd time, including time to agree an order: [time]\n\nTOTAL LENGTH OF THE HEARING (DEDUCT ANY ADJOURNMENT): [hours and minutes]\n\n[Bundle: [number of pages]]\n\nUndertakings given to the court by the applicant [applicant name]\n\n(Where the order was made without or on short notice) [By [time and date] the applicant shall:\n\nissue an application notice [in the form of the draft produced to the court] [claiming the appropriate relief]; and\n\nfile a witness statement [substantially in the terms of the draft witness statement produced to the court] [confirming the substance of what was said to the court by the applicant’s [counsel] / [solicitor].]\n\n(Where the order was made without or on short notice) [By [time and date] the applicant shall [use [his] / [her] best endeavours personally to serve upon the respondent] / [serve upon the respondent, by [insert method of service (for example posting to the respondent’s usual address)], together with this order:\n\na copy of the application;\n\ncopies of the witness statement[s] and exhibits containing the evidence relied upon by the applicant, and any other documents provided to the court on the making of the application; and\n\na note [prepared by [his] / [her] solicitor] recording the substance of the dialogue with the court at the hearing and the reasons given by the court for making the order, which note shall include (but not be limited to) any allegation of fact made orally to the court where such allegation is not contained in the witness statement[s] or draft witness statement[s] read by the judge.]\n\nThe statement of service of this order on the respondent shall be filed at court and shall be in a form which complies with section 9 of the Criminal Justice Act 1967 [and shall include the following signed declaration:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_101_non_molestation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 0,
+    "source_filename": "Order 10.1 - Non-Molestation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

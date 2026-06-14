@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__fhdra_hearing__child_arrangements__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fhdra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 483,
+  "text": "# What is the First Hearing Dispute Resolution Appointment (FHDRA)?\n\n## What it is\n\nThe First Hearing Dispute Resolution Appointment (FHDRA) is the initial court hearing in a private law child arrangements case. Its dual purpose is to explore whether the parties can reach an agreement on the day — with the assistance of a CAFCASS officer and potentially the judge — and, if not, to give directions for how the case will proceed. The FHDRA is not a final hearing. The full merits of each party's case are not argued here.\n\n## When it happens\n\nThe FHDRA is Stage 4 of the child arrangements track. It takes place after the application has been issued (Stage 2) and after CAFCASS has conducted its safeguarding checks and prepared a safeguarding letter (Stage 3). The FHDRA is usually listed within four to six weeks of the application being issued. Before the FHDRA can take place, CAFCASS must have completed its safeguarding enquiries and the safeguarding letter must have been filed with the court.\n\n## What it involves\n\n**Before the FHDRA**, CAFCASS contacts both parties by telephone. CAFCASS checks police records and children's services records for each party and uses the telephone conversations to identify any safeguarding concerns. The findings are set out in the safeguarding letter, which is filed with the court before the hearing. Both parties receive a copy.\n\n**A CAFCASS officer attends the FHDRA** and is available to speak with both parties separately before the hearing begins. This is a normal and expected part of the process — CAFCASS is present to assist the court and, where it is safe and appropriate, to facilitate discussion between the parties.\n\n**At the FHDRA**, the judge considers:\n\n- The CAFCASS safeguarding letter and any identified welfare or safeguarding concerns.\n- Whether the case can be resolved by agreement at this hearing, either with or without the judge's direct involvement.\n- If the case cannot be resolved, what evidence or reports will be needed and what directions must be given.\n\n**If agreement is reached** on the day, the judge may make a consent order setting out the agreed arrangements. This brings the proceedings to an end without the need for any further hearings.\n\n**If the case does not settle**, the judge gives directions. These may include:",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Hearing Dispute Resolution Appointment (FHDRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 4 — First Hearing Dispute Resolution Appointment (FHDRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

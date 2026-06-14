@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__witness_statement__cross_cutting__chunk002",
+  "source_file": "raw/layer2/document_explanations/document_explanation__witness_statement__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 342,
+  "text": "## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong about witness statements — e.g. not numbering paragraphs, including argument and opinion rather than evidence, not attaching or labelling exhibits, misunderstanding the statement of truth, not staying within any page or word limit directed by the court, or including hearsay without identifying the source. -->\n\n## Key terms\n\n**Statement of truth** — the declaration at the end of a witness statement confirming that the party honestly believes the facts stated are true; false statements made under a statement of truth may constitute contempt of court.\n\n**Evidence-in-chief** — the evidence a party presents in support of their own case; in family proceedings, this is taken as read from the filed witness statement rather than given orally in examination-in-chief.\n\n**Cross-examination** — questioning of a witness by the opposing party, directed at testing the accuracy and reliability of their evidence; a witness may be cross-examined on the contents of their witness statement at the hearing.\n\n**Exhibit** — a document referred to in a witness statement and attached to it; exhibits are labelled with the witness's initials and a sequential number and form part of the court bundle.\n\n**Hearsay** — a fact not within the witness's own direct knowledge that the witness has been told by a third party; hearsay is admissible in family proceedings but must be identified as such.\n\n## Related entries\n\n- document_explanation__position_statement__cross_cutting\n- process_explanation__child_arrangements_final_hearing__child_arrangements\n- process_explanation__financial_remedy_final_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Witness statement — giving your evidence to the court in writing",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_22",
+      "FPR_Part_17",
+      "court_bundles_guide_2026__008__contents_page_bundle_content_arranged_in"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__d8__divorce__chunk000",
+  "source_file": "raw/layer2/document_explanations/document_explanation__d8__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 470,
+  "text": "# Form D8 — the divorce application\n\n## What it is\n\nForm D8 is the official application form used to start divorce proceedings in England and Wales. Filing it formally begins the divorce process and triggers the court's timetable. The same form is used for the dissolution of a civil partnership and for judicial separation applications. Filing Form D8 starts the divorce track only — it does not start financial remedy proceedings or child arrangements proceedings, which are separate legal processes requiring their own applications.\n\n## When it happens\n\nForm D8 is filed at Stage 2 of the divorce track, after the decision to proceed with divorce has been made. The marriage must have lasted at least one year before an application can be made. There is no requirement to have resolved financial matters or child arrangements before filing, but the relationship between the divorce timetable and the financial remedy timetable — in particular, when the final order can be applied for — is important to understand before filing.\n\n## What it involves\n\n**What the form asks for.** Form D8 asks for the full names and addresses of both parties, details of the marriage (date, place, and the marriage certificate itself), the basis for jurisdiction, and whether the application is being made solely by one party or jointly by both.\n\n**Sole versus joint application.** Under the no-fault divorce procedure introduced in 2022, neither party needs to make allegations against the other. A sole application is made by one party alone; a joint application is made by both. In a sole application, the respondent must be served with the application and file an acknowledgement of service (Form D10). In a joint application, both parties are applicants and there is no service requirement.\n\n**What happens after filing.** The court issues the application and assigns a case number. In a sole application, the court serves the application on the respondent, who then has a period to file their acknowledgement. The 20-week cooling-off period begins from the date the application is issued — not from the date it is filed.\n\n**The marriage certificate.** The original marriage certificate (or a certified copy) must be filed with the D8. A certified copy can be obtained from the General Register Office. If the certificate is in a foreign language, a certified translation is also required.\n\n## What to know if you're unrepresented",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form D8 — the divorce application",
+    "track": "divorce",
+    "stage": "Stage 2 — Filing the application",
+    "source_refs": [
+      "D8",
+      "FPR_Part_7",
+      "advicenow_divorce__008__starting_proceedings_the_application",
+      "advicenow_divorce__009__the_application_continued"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

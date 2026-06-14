@@ -1,0 +1,26 @@
+{
+  "chunk_id": "document_explanation__consent_order__financial_remedy__chunk002",
+  "source_file": "raw/layer2/document_explanations/document_explanation__consent_order__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 199,
+  "text": "## Key terms\n\n**Consent order** — a court order recording the financial terms agreed between the parties; legally binding once approved and sealed by the court.\n\n**D81** — a form setting out each party's current financial position, filed alongside the draft consent order to allow the judge to assess whether the proposed terms are fair.\n\n**Clean break** — a clause in a consent order that prevents either party from making future financial claims against the other; once a clean break order is made, neither party can return to court to seek further financial provision from the former spouse.\n\n**Sealed order** — a court order that has been formally approved and stamped by the court; only a sealed order is enforceable.\n\n## Related entries\n\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy\n- legal_principle__duty_of_full_and_frank_disclosure__financial_remedy",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Consent order — recording a financial agreement with the court",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_9",
+      "PD_9A",
+      "mca_1973__s25",
+      "advicenow_financial_order__009__consent_orders",
+      "sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

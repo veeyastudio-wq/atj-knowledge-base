@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__016__order_412_final_charging_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__016__order_412_final_charging_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 473,
+  "text": "On [date], [name of judge] made an order under case number [case number] requiring the respondent to pay money to the applicant.\n\nThe amount now owing under that order is £[amount] including interest and costs as follows:\n\nThe respondent is the owner of, or has a beneficial interest in, the asset described in the schedule below.\n\n[The parties have been reminded of their duties to identify relevant other parties and have not indicated any such party who should be served with notice prior to this charge being made final. (Or as appropriate)]\n\nThere is no interim order made under s252 of the Insolvency Act 1986 and no restraint order under the Proceeds of Crime Act 2002.\n\nThere is no other justification for the refusal of the charge\n\nIT IS ORDERED THAT:\n\nThe charge created by the interim charging order of this court made on [date] shall continue [as modified by this order].\n\nThe interest of the respondent in the asset[s] described in the schedule below shall stand charged with payment of the sum of £[amount] including interest to [date], together with any further interest becoming due at the rate of £[amount] from [date], and the costs of this application [summarily assessed at £[amount] (inclusive of VAT and disbursements)] / [to be subject to detailed assessment on the [standard] / [indemnity] basis if not agreed by [date and time]].\n\nThe Schedule:\n\n[The property at [property full address and the Land Registry title number].]\n\n[The holding of [description] shares in [company] and all dividends or other interest that accrues on these shares.]\n\nDated [date]\n\n[STOP NOTICE\n\nTo [the Bank of England] / [insert as appropriate]\n\nTake notice that, in relation to the securities specified in the schedule to this order, you may not, without notice to [insert] at [insert] register any transfer, or make any redemption payment, or, in the case of a unit trust, deal with the units, or, where dividends or interest are included in the order, pay any dividend or interest.]\n\nSums remaining due for payment under the order | £[amount]\n\nInterest to the date of the order | £[amount]\n\nCosts to the date of the order | £[amount]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_412_final_charging_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 16,
+    "source_filename": "Order 4.12 - Final Charging Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__position_statement__cross_cutting__chunk001",
+  "source_file": "raw/layer2/document_explanations/document_explanation__position_statement__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 431,
+  "text": "**Write in plain, direct language.** The position statement does not need to use legal terminology. Clear, factual sentences are more effective than elaborate language. The judge is looking for what you want and the key reason you want it — not a comprehensive account of the history of the case.\n\n**A position statement is not the place for evidence or argument.** Reproducing the contents of a witness statement, reciting a long history of events, or making extended legal arguments makes a position statement harder to use. The directions will specify separately if a witness statement is required; the position statement is a different document with a different purpose.\n\n**File and serve it on time.** A late position statement — or no position statement — means the judge may open the hearing without context about your position. Opposing solicitors routinely file position statements; an unrepresented party who does not is at a practical disadvantage at the start of the hearing.\n\n**Serve it on the other party at the same time as filing.** The other party should receive your position statement at the same time it is filed with the court — not after. Check the directions order for the exact deadline and method.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong about position statements — e.g. not knowing they are expected to file one, confusing a position statement with a witness statement, writing one that is too long and too detailed, filing late, or not serving on the other party. -->\n\n## Key terms\n\n**Position statement** — a short pre-hearing document setting out a party's position on the issues the hearing will address; not evidence.\n\n**Directions** — the judge's formal instructions, usually contained in a court order, specifying what each party must file and by when before the next hearing.\n\n## Related entries\n\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__fhdra_hearing__child_arrangements\n- document_explanation__witness_statement__cross_cutting",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Position statement — setting out your case before a hearing",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_22",
+      "court_bundles_guide_2026__008__contents_page_bundle_content_arranged_in",
+      "financial_remedies_guide_2026__008__operation_of_the_financial_remedies_court"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

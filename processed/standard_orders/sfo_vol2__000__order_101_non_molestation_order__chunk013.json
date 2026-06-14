@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__000__order_101_non_molestation_order__chunk013",
+  "source_file": "raw/standard_orders/sfo_vol2__000__order_101_non_molestation_order.md",
+  "layer": "layer1",
+  "chunk_index": 13,
+  "total_chunks": 15,
+  "token_count": 459,
+  "text": "Costs\n\nThe costs of this application are [reserved to the judge hearing the application on the return date] / [in the application] / [specify].\n\nDated [date]\n\n(where the court has made a non-molestation order a copy of the order must be delivered to the officer in charge of the police station for the applicant’s address, or such other police station as the court may specify, and must be accompanied by a statement showing that the respondent has been served with the order or informed of its terms: see fpr 2010, rule 10.10.)\n\nNote to Arresting Officer:\n\nUnder section 42A of the Family Law Act 1996, breach of a non-molestation order is a criminal offence punishable by up to five years’ imprisonment. It is an arrestable offence and it is not necessary to obtain a warrant.\n\n“A person who without reasonable excuse does anything that he is prohibited from doing by a non-molestation order is guilty of an offence”.\n\nFamily Law Act 1996, section 42A(1).\n\n(Where undertakings have been given)\n\nNotice\n\nYou [applicant name] may be held to be in contempt of court and imprisoned or fined, or your assets may be seized, if you break the promises that you have given to the court.\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be sent to prison, or fined, or my assets may be seized for contempt of court.\n\n__________________________________\n\n[applicant name]\n\nNotice\n\nYou [respondent name] may be held to be in contempt of court and imprisoned or fined, or your assets may be seized, if you break the promises that you have given to the court.\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be sent to prison, or fined, or my assets may be seized for contempt of court.\n\n________________________________________\n\n[respondent name]\n\nCommunications with the court\n\nAll communications to the court about this order should be sent to:\n\n[court name]\n\n[court address]\n\nEmail: [court email]\n\nTel:\t[court telephone]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_101_non_molestation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 0,
+    "source_filename": "Order 10.1 - Non-Molestation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

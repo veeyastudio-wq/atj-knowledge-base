@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__017__order_413_order_for_sale_following_final_charging_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__017__order_413_order_for_sale_following_final_charging_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 223,
+  "text": "The applicant shall first apply the proceeds of sale of the property:\n\nto pay the costs and expenses of effecting the sale; and\n\nto discharge any charges or other securities over the property which have priority over the charging order.\n\n(If the property is jointly owned by the respondent and a third party)\n\n[The applicant shall then divide the remaining proceeds of sale into two equal shares and:\n\npay one equal share to the respondent; and\n\nout of the other equal share, retain the amount due to [him] / [her] as stated in paragraph [para number] above and pay the balance (if any) to the respondent.]\n\n(If the property is solely owned by the respondent)\n\n[Out of the remaining proceeds, the applicant shall retain the amount due to [him] / [her] as stated in paragraph [para number] above and pay the balance (if any) to the respondent.]\n\nAny party may apply to the court to vary any of the terms of this Order, or for further directions about the sale or the application of the proceeds of sale, or otherwise.\n\nDated    [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_413_order_for_sale_following_final_charging_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 17,
+    "source_filename": "Order 4.13 - Order for Sale following Final Charging Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

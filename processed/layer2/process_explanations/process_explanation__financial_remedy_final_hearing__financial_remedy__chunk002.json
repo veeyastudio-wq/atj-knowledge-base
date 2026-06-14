@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_final_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 467,
+  "text": "**Costs.** At the end of a final hearing the judge may make a costs order against a party who has behaved unreasonably in the proceedings. Filing a costs schedule (Form H1) is a procedural requirement; an unrepresented party who has not done so may be at a disadvantage if costs are argued.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the financial remedy final hearing — e.g. not preparing the bundle correctly, not understanding how to conduct cross-examination, not making submissions on the statutory factors, not filing Form H1, missing the possibility of late settlement. -->\n\n## Key terms\n\n**Final hearing** — the hearing at which the judge makes a binding financial order after hearing evidence from both parties.\n\n**Oral evidence** — evidence given by a witness in person at a hearing, as opposed to a written statement alone; at the final hearing each party gives oral evidence and is subject to cross-examination.\n\n**Cross-examination** — questioning of a witness by the opposing party, designed to test the accuracy and reliability of their evidence.\n\n**Closing submissions** — each party's argument to the judge at the end of the hearing, addressing the evidence and the law and explaining why the order they seek is appropriate.\n\n**Ex tempore judgment** — a judgment delivered verbally by the judge immediately after hearing submissions, rather than reserved in writing.\n\n**Reserved judgment** — a judgment that the judge does not deliver immediately but hands down in writing at a later date.\n\n**Statutory framework** — the set of legal factors prescribed by statute (in financial remedy cases, primarily the Matrimonial Causes Act 1973) that the judge must consider when making a financial order.\n\n**Form H1** — a statement of costs filed by each party before a financial remedy final hearing, setting out the costs they have incurred in the proceedings.\n\n**Consent order** — a court order recording agreed financial terms; if the parties reach agreement during the final hearing, a consent order can be submitted to the judge in place of a contested judgment.\n\n**Court bundle** — the paginated collection of documents — statements, valuations, correspondence, and court orders — provided to the judge for use at the hearing.\n\n## Related entries",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at a financial remedy final hearing?",
+    "track": "financial_remedy",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

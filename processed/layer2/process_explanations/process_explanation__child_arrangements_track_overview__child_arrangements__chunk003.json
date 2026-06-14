@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_track_overview__child_arrangements__chunk003",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_track_overview__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 3,
+  "total_chunks": 4,
+  "token_count": 434,
+  "text": "**Welfare principle** — the rule in section 1(1) of the Children Act 1989 that the child's welfare is the court's paramount consideration in any decision about the child's upbringing.\n\n**Welfare checklist** — the list of specific factors the court must consider when applying the welfare principle, set out in section 1(3) of the Children Act 1989.\n\n**Section 7 report** — a welfare report prepared by a CAFCASS officer (or in some cases a local authority) when ordered by the court; it sets out findings on the child's circumstances and makes recommendations about arrangements that would best serve the child's welfare.\n\n**Safeguarding letter** — the initial document prepared by CAFCASS before the FHDRA, setting out the results of safeguarding checks and any identified risks. It is not the same as a Section 7 report.\n\n**MIAM** — Mediation Information and Assessment Meeting; the required pre-proceedings step before a court application can be filed.\n\n**C100** — the application form used to apply for a child arrangements order, a prohibited steps order, or a specific issue order under the Children Act 1989.\n\n**C1A** — a supplemental form filed alongside C100 where there are allegations of harm or domestic abuse involving the applicant, respondent, or a child.\n\n**FHDRA** — First Hearing Dispute Resolution Appointment; the initial hearing in private law child arrangements proceedings.\n\n**DRA** — Dispute Resolution Appointment; a subsequent hearing at which settlement is explored before any final hearing.\n\n**Prohibited steps order** — a court order preventing a parent from taking a specified step in relation to a child (for example, removing the child from the jurisdiction) without the court's permission.\n\n**Specific issue order** — a court order giving directions about a specific question relating to parental responsibility, such as which school a child attends or whether a child receives a particular medical treatment.\n\n## Related entries\n\n- process_explanation__divorce_track_overview__divorce\n- process_explanation__financial_remedy_track_overview__financial_remedy",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The child arrangements track — an overview of all six stages",
+    "track": "child_arrangements",
+    "stage": "Stage 1 — Pre-proceedings",
+    "source_refs": [
+      "fpr_2010__012",
+      "pd_12b",
+      "children_act_1989__001"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

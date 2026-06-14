@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 5,
+  "token_count": 367,
+  "text": "[name of estate agents] / [such estate agents as may be agreed between the parties of in default of agreement determined by the court] shall offer the property for sale; and\n\nthe proceeds of sale shall be applied as follows:\n\nto discharge the mortgage [mortgage name];\n\nin payment of the solicitors’ conveyancing costs and disbursements in connection with the sale;\n\nin payment of the estate agents’ charges;\n\n[in payment of any Capital Gains Tax payable upon the sale];\n\n[in payment to the applicant of [a lump sum of £[amount]] / [such sum as is required to discharge the respondent’s obligations under the order of [date]]; and\n\nin payment of the balance to the respondent.\n\nOccupation of the property pending sale\n\nThe respondent has the right to [enter into and] occupy [the family home] / [other property name] until the property is sold [save that in the event that an exchange of contracts for the sale of the property has not been achieved by [date], the respondent shall vacate the property by [date and time] and the applicant has the right to [enter into and] occupy the property to the exclusion of the respondent].\n\nPayment of mortgage and outgoings on property\n\nThe respondent shall discharge as and when each payment becomes due, be solely responsible for and in any event indemnify the applicant against:\n\nall interest and capital repayments due in respect of the mortgage [mortgage name];\n\nall [reasonable] sums due in respect of [service charge], council tax, utilities (including but not limited to gas, electricity, water and telephone accounts), and buildings and contents insurance premiums in respect of [the family home] / [other property name]\n\nuntil [the sale of the property] / [[his] / [her] vacation of the property]\n\nCosts",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_42_order_for_sale_under_mca_1973_s_24a",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 21,
+    "source_filename": "Order 4.2 - Order for Sale under MCA 1973, s. 24A.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__dra_hearing__child_arrangements__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__dra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 494,
+  "text": "## What to know if you're unrepresented\n\n**Read the Section 7 report carefully before the DRA.** The report will contain the CAFCASS officer's findings on each party's parenting capacity and circumstances, the child's expressed wishes and feelings, any welfare concerns, and a recommendation. This recommendation carries significant weight with the judge. Understanding exactly what it says — including anything that is unfavourable — before the DRA is essential.\n\n**Disagreeing with the Section 7 recommendation is possible, but requires clear reasoning grounded in the child's welfare.** A judge will take the CAFCASS recommendation seriously, but it is not binding. A party who disagrees with the recommendation needs to be able to articulate — specifically and calmly — why the recommended arrangements would not best serve the child's welfare, referring to the welfare checklist factors. A response that focuses on the party's own feelings or rights as a parent, rather than on the child's welfare, is unlikely to be persuasive.\n\n**Factual errors in the Section 7 report can be challenged.** If the report contains a factual inaccuracy — a wrong date, a misquotation of what was said during the CAFCASS interview, or a mischaracterisation of circumstances — this can be raised at the DRA and, if necessary, preserved for cross-examination of the CAFCASS officer at the final hearing. Challenging the report effectively requires identifying specific, factual errors rather than expressing general disagreement with the officer's conclusions.\n\n**Settlement at the DRA avoids the cost and stress of a final hearing.** If both parties can agree to arrangements in light of the Section 7 report and any other evidence, a consent order can be made at the DRA. The DRA is a genuine opportunity for resolution even in cases that have been contested since the FHDRA.\n\n**Interim arrangements may have been in place since the FHDRA.** Any interim order made at the FHDRA governs the position during proceedings. If circumstances have changed materially since that interim order was made, the DRA is the appropriate time to raise this with the court.\n\n**A position statement before the DRA helps the judge.** A short written document setting out the party's position in light of the evidence — what order they are seeking and why, engaging with the Section 7 report where relevant — assists the court to use the DRA hearing time efficiently.\n\n## Common mistakes",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Dispute Resolution Appointment (DRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 5 — Dispute Resolution Appointment (DRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

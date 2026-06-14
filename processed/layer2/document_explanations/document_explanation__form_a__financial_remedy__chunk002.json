@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__form_a__financial_remedy__chunk002",
+  "source_file": "raw/layer2/document_explanations/document_explanation__form_a__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 84,
+  "text": "**MIAM** — Mediation Information and Assessment Meeting; the pre-proceedings requirement that must be met (or validly exempted) before Form A can be filed.\n\n## Related entries\n\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- legal_principle__section_25_factors__financial_remedy",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form A — applying to the court for a financial order",
+    "track": "financial_remedy",
+    "stage": "Stage 2 — Filing Form A",
+    "source_refs": [
+      "Form_A",
+      "FPR_Part_9",
+      "PD_9A",
+      "advicenow_financial_order__013__applying_for_a_financial_order"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

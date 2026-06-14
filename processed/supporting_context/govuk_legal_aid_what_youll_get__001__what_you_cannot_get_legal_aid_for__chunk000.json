@@ -1,0 +1,22 @@
+{
+  "chunk_id": "govuk_legal_aid_what_youll_get__001__what_you_cannot_get_legal_aid_for__chunk000",
+  "source_file": "raw/supporting_context/govuk_legal_aid_what_youll_get__001__what_you_cannot_get_legal_aid_for.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 82,
+  "text": "# What you cannot get legal aid for\n\nYou cannot get legal aid for:\n\n- debt problems (unless you might lose your home)\n- employment disputes (unless you’re being discriminated against)\n- appealing benefits decisions (unless you’re appealing to the Upper Tribunal, Court of Appeal or Supreme Court)\n\nIf your human rights are at risk, you could get legal aid for cases that would not usually be eligible .",
+  "metadata": {
+    "source": "Legal aid — what you'll get: GOV.UK",
+    "section": "What you cannot get legal aid for",
+    "parent_document": "Legal aid — what you'll get: GOV.UK",
+    "parent_slug": "govuk_legal_aid_what_youll_get",
+    "section_index": 1,
+    "organisation": "govuk",
+    "url": "https://www.gov.uk/legal-aid/what-youll-get",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

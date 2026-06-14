@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 496,
+  "text": "**The order is binding and enforceable.** Once made, a child arrangements order is a legal obligation. Non-compliance with its terms — by either party — is a matter the court takes seriously. Understanding what the order says and what it requires is important before leaving the hearing.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the final hearing — e.g. not understanding the structure of the hearing, attempting to introduce new evidence not directed by the court, not preparing cross-examination questions in advance, misunderstanding what the judge's questions mean, not bringing the bundle or not preparing a bundle correctly. -->\n\n## Key terms\n\n**Child arrangements order** — a court order that sets out with whom a child lives and when the child spends time with each parent or other person. It replaces the former terms \"residence order\" and \"contact order.\"\n\n**Welfare checklist** — the list of factors set out in section 1(3) of the Children Act 1989 that a court must consider when making decisions about a child's upbringing; includes the child's wishes and feelings, physical and emotional needs, risk of harm, and the capacity of each parent to meet the child's needs.\n\n**CAFCASS** — Children and Family Court Advisory and Support Service; the independent public body whose officers advise the family court on the welfare of children in private law proceedings.\n\n**Section 7 report** — a welfare report prepared by a CAFCASS officer (or local authority) when ordered by the court; sets out findings on the child's welfare and makes recommendations about arrangements.\n\n**Evidence-in-chief** — the evidence a party presents in their own favour; in family proceedings this is usually taken as read from the filed witness statement, rather than given orally.\n\n**Cross-examination** — questioning of a witness by the opposing party, directed at testing the accuracy and reliability of their evidence.\n\n**Closing submissions** — each party's argument to the judge at the end of the hearing, explaining what order is sought and why the evidence and the welfare checklist support that outcome.\n\n## Related entries\n\n- process_explanation__fhdra_hearing__child_arrangements\n- process_explanation__dra_hearing__child_arrangements\n- legal_principle__welfare_principle__child_arrangements\n- legal_principle__paramountcy_vs_balance__child_arrangements",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at the final hearing in child arrangements proceedings",
+    "track": "child_arrangements",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "FPR_Part_12",
+      "PD_12B",
+      "children_act_1989__s1",
+      "govuk_child_arrangements__002__if_you_cannot_agree_on_everything"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

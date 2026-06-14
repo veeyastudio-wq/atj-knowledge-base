@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__fhdra_hearing__child_arrangements__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fhdra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 498,
+  "text": "**An interim order may be made.** The judge may make an interim order governing arrangements for the child while the case continues. This is not the final decision, but it will govern the position until the next hearing.\n\n**Position statements are useful but not always required.** While the FHDRA is not a full evidential hearing, a short written position statement setting out a party's concerns and what order they are seeking helps the judge understand the issues quickly. Some courts provide guidance on whether one is expected.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at the FHDRA — e.g. not reading the safeguarding letter before the hearing, treating the FHDRA as a final hearing and trying to present the full case, agreeing to terms without understanding them, not asking CAFCASS questions about the safeguarding letter, not knowing that CAFCASS is available to speak to before the hearing starts. -->\n\n## Key terms\n\n**FHDRA** — First Hearing Dispute Resolution Appointment; the first court hearing in private law child arrangements proceedings.\n\n**CAFCASS** — Children and Family Court Advisory and Support Service; the independent public body whose officers advise the family court on the welfare of children in proceedings.\n\n**Safeguarding letter** — the document prepared by CAFCASS before the FHDRA, setting out the results of police and children's services checks and any identified safeguarding concerns. It is not a full welfare report.\n\n**Section 7 report** — a full welfare report prepared by a CAFCASS officer (or local authority) when ordered by the court; sets out findings on the child's welfare and makes recommendations about arrangements.\n\n**Section 37 report** — a report ordered from the local authority where the court has concerns that a child may be suffering or at risk of suffering significant harm; used where public law concerns arise in private law proceedings.\n\n**Consent order** — a court order recording the terms of an agreement reached between the parties; legally binding once sealed by the court.\n\n**Interim order** — a temporary court order made during ongoing proceedings to govern the position until a final order is made.\n\n**Directions** — the judge's formal instructions setting out what each party must do and by when before the next hearing.\n\n**DRA** — Dispute Resolution Appointment; the hearing that typically follows the FHDRA if the case has not settled.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Hearing Dispute Resolution Appointment (FHDRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 4 — First Hearing Dispute Resolution Appointment (FHDRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

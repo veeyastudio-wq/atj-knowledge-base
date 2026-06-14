@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__001__order_12_financial_directions_order_shorter_version__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__001__order_12_financial_directions_order_shorter_version.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 20,
+  "token_count": 478,
+  "text": "[etc].\n\n“PPF” means the Pension Protection Fund.\n\n“PRPA” means the person responsible for the pension arrangement.\n\nGeneral\n\nAny requirement in this order for the filing of a document should be complied with by uploading the document to the contested cases online portal. At present, litigants in person do not have access to the online portals and must communicate with the court by email and send by post documents for uploading to the bulk scanning centre at HMCTS Financial Remedy, PO Box 12746, Harlow, CM20 9QZ. Parties are reminded that there is no physical court file so the court file consists only of documents uploaded to the online portals.\n\nRecitals\n\nRecitals as to costs incurred/expected to be incurred\n\nIt is recorded that the applicant [has filed with the court and served on the respondent a costs estimate in Form H stating that the applicant (a) has incurred costs of [set out] up to today’s hearing; and (b) expects to incur further costs of [set out] after today’s hearing up to and including the [financial dispute resolution appointment] / [final hearing] if settlement is not reached] / [has failed to file with the court and serve on the respondent a costs estimate in Form H and shall do so in accordance with paragraph [para number] below].\n\nIt is recorded that the respondent [has filed with the court and served on the applicant a costs estimate in Form H stating that the respondent (a) has incurred costs of [set out] up to today’s hearing; and (b) expects to incur further costs of [set out] after today’s hearing up to and including the [financial dispute resolution appointment] / [final hearing] if settlement is not reached] / [has failed to file with the court and serve on the applicant a costs estimate in Form H and shall do so in accordance with paragraph [para number] below].\n\nAgreements\n\n[Insert (record any agreements reached between the parties – e.g. ‘the parties have agreed the value of the family home at [matrimonial home name] at £[amount] for the purposes of the financial dispute resolution appointment.’)]\n\nUndertakings to the court\n\n[Insert (record any undertakings given – e.g. the paragraphs given below)]\n\nUndertaking to pay mortgage and outgoings on property",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_12_financial_directions_order_shorter_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 1,
+    "source_filename": "Order 1.2 - Financial Directions Order (shorter version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

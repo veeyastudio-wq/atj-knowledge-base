@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__014__order_410_warrant_of_delivery__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__014__order_410_warrant_of_delivery.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 477,
+  "text": "This order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\nFindings of the court\n\n[Name of judge] made an order on [date] requiring the respondent to [insert (e.g. ‘deliver up to the applicant [insert goods, chattels or other property] by [insert date and time]’)].\n\nIt appears that the respondent has failed to do so.\n\nIT IS ORDERED THAT:\n\n[Permission is granted to the applicant to issue a request for the issue of a [warrant] / [writ] of delivery.]\n\nThe enforcement officer(s) authorised to enforce [warrants] / [writs] of delivery shall:\n\nbe entitled to enter the respondent’s premises at [respondent address] / [other address] between the hours of [times] on [days (e.g. ‘weekdays’, ‘any day [on giving [period] notice to the respondent]’ etc.)] for the purposes of searching for and taking control of the goods, chattels and other property of the respondent set out at paragraph [para number] above and in Schedule 1 below and further goods, chattels and other property of the respondent to the value set out in Schedule 2 below;\n\nseize the goods, chattels and other property of the respondent set out at paragraph [para number] above and in Schedule 1 below;\n\nimmediately after seizing those goods, chattels and other property of the respondent, deliver them up to the applicant;\n\ntake control of further goods, chattels and other property of the respondent to the value set out in Schedule 2 below [using reasonable force if necessary], having given the respondent [at least 7 days’] / [shorter period] notice of enforcement;\n\nsell the goods, chattels and other property of the respondent at a public auction(s) for the best price that can reasonably be obtained; having given the respondent, and any co-owner of any of the goods, chattels or other property, [at least 7 days’] / [period] notice of the date, time and place of the public auction(s);\n\nimmediately after selling those other goods, chattels and other property of the respondent, apply the proceeds of sale as follows:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t     Case No: [Case number]",
+    "order_number": "order_410_warrant_of_delivery",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 14,
+    "source_filename": "Order 4.10 - Warrant of Delivery.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

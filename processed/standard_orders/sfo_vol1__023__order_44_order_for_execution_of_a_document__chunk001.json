@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__023__order_44_order_for_execution_of_a_document__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__023__order_44_order_for_execution_of_a_document.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 404,
+  "text": "This order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\nFindings of the court\n\n(for example)\n\n[[Name of proposed purchasers] have made an offer to purchase [the family home] / [other property name] for £[amount].]\n\n[The court is satisfied that this price appears to be the best price reasonably obtainable on a sale of the property.]\n\n[The court is further satisfied that the relevant conveyancing documents, including the contract for sale, were presented to the respondent by [name of conveyancing solicitors] on [date] along with a request that they were returned to them by the respondent. These documents have never been returned to [name of conveyancing solicitors] by the respondent.]\n\n[The respondent has neglected or refused to comply with the order of [date] to sign and execute the relevant conveyancing documents.]\n\nUndertakings to the court\n\n[Insert any undertakings given]\n\nIT IS ORDERED THAT:\n\n[The respondent shall [by [date and time]] / [forthwith] sign [and] / [or] execute and return to [the applicant] / [the conveyancing solicitors] / [etc.] [insert documents] / [all documents necessary to effect [(e.g.) the sale of the property to the proposed purchasers]].]\n\nIn default of the respondent having signed [and] / [or] executed [insert documents] / [all documents necessary to effect [(e.g.) the sale of the property to the proposed purchasers]] [by [date and time]] / [within 7 days of the date of this order], the applicant may make a without notice application for the documents to be signed [and] / [or] executed by a judge of the Family Court sitting at [court name] on behalf of the respondent in accordance with section 39 of the Senior Courts Act 1981.\n\nCosts",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_44_order_for_execution_of_a_document",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 23,
+    "source_filename": "Order 4.4 - Order for Execution of a Document.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__d8__divorce__chunk002",
+  "source_file": "raw/layer2/document_explanations/document_explanation__d8__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 94,
+  "text": "**Conditional order** — formerly called a decree nisi; the court's formal statement that the applicant is entitled to a divorce; made at Stage 4 of the divorce track. The marriage does not end at this stage.\n\n**20-week cooling-off period** — the mandatory minimum period between the issue of the D8 application and the point at which a conditional order can be applied for.\n\n## Related entries\n\n- process_explanation__divorce_track_overview__divorce",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form D8 — the divorce application",
+    "track": "divorce",
+    "stage": "Stage 2 — Filing the application",
+    "source_refs": [
+      "D8",
+      "FPR_Part_7",
+      "advicenow_divorce__008__starting_proceedings_the_application",
+      "advicenow_divorce__009__the_application_continued"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

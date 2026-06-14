@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__018__order_414_interim_third_party_debt_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__018__order_414_interim_third_party_debt_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 446,
+  "text": "Hardship\nIf the third party is a bank or building society, and the respondent or their family suffers hardship through not being able to meet ordinary living expenses as a result of not being able to withdraw money from the account, a court may make a hardship payment order allowing some money to be paid out.\nHardship payment orders\nAn application form (N244) can be obtained from any court office.  An application for a hardship payment order may be made to:\nany family court where the interim third party debt order was made by a family court; or\nthe Royal Courts of Justice in London or to any district registry, where the interim third party debt order was made by the High Court\nA fee may be payable for the application, but in certain circumstances, the applicant can apply for exemption or remission of the fee. Court staff can provide further details about remission and exemption and provide the necessary forms.\nThe application should be made using Form N244. It must include details of the applicant, the court where the interim third party debt order was made, if different, and the claim number. The form must include evidence of the hardship caused by not being able to meet ordinary living expenses and must be accompanied by documentary evidence such as mortgage statements or rent book, wage or salary slips and bank statements proving the applicant’s financial position. There will usually be a hearing.\nIn cases of exceptional urgency, the court may agree to deal with the application without notice being given to the applicant. Details of why the application is exceptionally urgent and why it should be dealt with without notice to the creditor, should be set out in the application.\nIf the judge makes a hardship payment order, the court will draw up an order which will be faxed to the appropriate bank or building society who will then be authorised to pay out the amount, or amounts, specified in the order.\nWhat the third party will do\nIf the third party is a bank or building society, it must search for all accounts held solely by the respondent and, within 7 days of receiving this order, give details of them to the court and the applicant, stating whether it holds sufficient to cover the total shown and, if not, the amounts in them.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_414_interim_third_party_debt_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 18,
+    "source_filename": "Order 4.14 - Interim Third Party Debt Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

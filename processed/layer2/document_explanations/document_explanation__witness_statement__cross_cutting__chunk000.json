@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__witness_statement__cross_cutting__chunk000",
+  "source_file": "raw/layer2/document_explanations/document_explanation__witness_statement__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 478,
+  "text": "# Witness statement — giving your evidence to the court in writing\n\n## What it is\n\nA witness statement is a formal written document containing the evidence a party wants to place before the court. Unlike a position statement, which sets out what a party is seeking, a witness statement contains the facts the party is relying on to support that position. Once filed, the witness statement stands as the party's evidence-in-chief — the other party and, where permitted, the CAFCASS officer can cross-examine the author on its contents at a hearing. It must be signed with a statement of truth.\n\n## When it happens\n\nA witness statement is ordered by the court in its directions — typically in the order made at the FHDRA, DRA, or FDR, setting out what is required before the final hearing or a fact-finding hearing. The directions order will specify the deadline for filing and serving the statement and whether there is a word or page limit. Witness statements are not routinely required at interlocutory hearings (hearings dealing with procedural matters only). They are standard before final hearings and fact-finding hearings in both child arrangements and financial remedy proceedings.\n\n## What it involves\n\n**Format.** A witness statement must be in the first person, dated, and signed. Each paragraph must be numbered consecutively. The statement must set out the source of any fact not within the witness's own direct knowledge (for example, something told to the witness by a third party).\n\n**The statement of truth.** At the end of the statement, immediately before the signature, the witness must include a statement of truth in the prescribed form: \"I believe that the facts stated in this witness statement are true. I understand that proceedings for contempt of court may be brought against anyone who makes, or causes to be made, a false statement in a document verified by a statement of truth.\" Signing a statement of truth is a serious legal act. A person who signs a statement of truth without an honest belief in its truth may be in contempt of court.\n\n**Evidence-in-chief.** In family proceedings, the practice is for witness statements to stand as the witness's evidence-in-chief. This means the witness does not read the statement aloud at the hearing; the judge has already read it. The witness confirms the statement is true, and the other party then proceeds to cross-examine.",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Witness statement — giving your evidence to the court in writing",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_22",
+      "FPR_Part_17",
+      "court_bundles_guide_2026__008__contents_page_bundle_content_arranged_in"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

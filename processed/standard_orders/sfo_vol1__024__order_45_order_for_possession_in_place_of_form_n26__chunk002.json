@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__024__order_45_order_for_possession_in_place_of_form_n26__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__024__order_45_order_for_possession_in_place_of_form_n26.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 445,
+  "text": "Dated [date]\n\nTo the respondent\n\nThe court has ordered you to leave the property by the date stated in paragraph [para number] above.\n\nImportant Notes to the Respondent\n\n(If detailed assessment of costs is ordered)\n\nThe applicant will send you a copy of the bill of costs with a notice telling you what to do if you object to the amount. If you do object, the applicant will ask the court to fix a hearing to assess the amount.\n\n(If there is an order to pay money)\n\nPayments should be made to the applicant, not to the court. If you need more information about making payments, you should contact the applicant.\n\n(If there is an order to pay money, made in a county court)\n\nIf you do not pay the money owed when it is due and the applicant has to take steps to enforce payment, the order will be registered in the Register of County Court Judgments. This may make it difficult for you to get credit. Further information about registration is available in a leaflet which you can get from any county court office.\n\n(If judgment was made in the absence of the respondent)\n\nIf you believe that this order should not have been made, you may apply for the order to be changed or cancelled if you act promptly. You must make an application to this court and support your application with evidence. You should consider taking legal advice if you have not already done so.\n\nIMPORTANT NOTICE TO THE RESPONDENT, [RESPONDENT NAME] OF [RESPONDENT ADDESS]  \n\nYOU MUST OBEY THIS ORDER. You should read it carefully. If you do not understand anything in this order you should go to a solicitor, Legal Advice Centre or Citizens Advice Bureau. [(In without notice cases) You have a right to apply to the court to change or cancel the order.]\n\nWARNING: IF YOU DO NOT OBEY THIS ORDER, YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND YOU MAY BE SENT TO PRISON, FINED OR HAVE YOUR ASSETS SEIZED\n\nYOU MAY ALSO BE PREVENTED FROM MAKING ANY APPLICATION TO COURT IF YOU DO NOT DISCHARGE THESE OBLIGATIONS BY THE DUE DATE.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t     Case No: [Case number]",
+    "order_number": "order_45_order_for_possession_in_place_of_form_n26",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 24,
+    "source_filename": "Order 4.5 - Order for Possession (in place of Form N26).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__002__order_102_occupation_order__chunk005",
+  "source_file": "raw/standard_orders/sfo_vol2__002__order_102_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 5,
+  "total_chunks": 19,
+  "token_count": 481,
+  "text": "The respondent, [respondent name], must not occupy [the family home] / [the property at [property short name]] [and its surrounding gardens, land and outbuildings]] / [[specify part of] [the family home] / [the property at [property short name]] [between [dates and times]].\n\nThe respondent, [respondent name], shall leave [the family home] / [the property at [property short name]] [and its surrounding gardens, land and outbuildings]] / [[specify part of] [the family home] / [the property at [property short name]] by [date and time] / [within [number hours/days] of this order being personally served on [him] / [her] [and] / [or] of [him] / [her] being made aware of the terms of this order whether by personal service or otherwise].\n\nHaving left [the family home] / [the property] [and its surrounding gardens, land and outbuildings]] / [specify part of the property], the respondent, [respondent name], must not return to, enter or attempt to enter it [except that the respondent may go to the property [without entering it] for the purpose of collecting the relevant children for, and returning them from, such contact with the children as may be agreed in writing between the applicant and the respondent or in default of agreement ordered by the court].\n\nThe respondent, [respondent name], must not obstruct, harass, or interfere with the applicant, [applicant name]’s, peaceful occupation of [the family home] / [the property at [property short name]] [and its surrounding gardens, land and outbuildings]] / [[specify part of] [the family home] / [the property at [property short name]].\n\nOccupation Order under Sections 37 and 38 of the Family Law Act 1996\n\nThe respondent, [respondent name], shall allow the applicant, [applicant name], to enter into and occupy [the family home] / [the property at [property short name]] [and its surrounding gardens, land and outbuildings] / [part of [the family home] / [the property at [property short name]] [and its surrounding gardens, land and outbuildings], namely [specify part]].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 2,
+    "source_filename": "Order 10.2 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

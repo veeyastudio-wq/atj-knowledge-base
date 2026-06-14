@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__fhdra_hearing__child_arrangements__chunk003",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fhdra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 3,
+  "total_chunks": 4,
+  "token_count": 76,
+  "text": "**DRA** — Dispute Resolution Appointment; the hearing that typically follows the FHDRA if the case has not settled.\n\n## Related entries\n\n- process_explanation__child_arrangements_track_overview__child_arrangements\n- process_explanation__dra_hearing__child_arrangements\n- document_explanation__non_molestation_order__cross_cutting",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Hearing Dispute Resolution Appointment (FHDRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 4 — First Hearing Dispute Resolution Appointment (FHDRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

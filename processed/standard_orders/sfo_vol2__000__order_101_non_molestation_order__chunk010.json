@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__000__order_101_non_molestation_order__chunk010",
+  "source_file": "raw/standard_orders/sfo_vol2__000__order_101_non_molestation_order.md",
+  "layer": "layer1",
+  "chunk_index": 10,
+  "total_chunks": 15,
+  "token_count": 473,
+  "text": "[Name of whichever party is the alleged victim] is to complete Form EX740 (Application and information needed by the court to consider whether to prevent (prohibit) questioning (cross-examination) in person) by [date].\n\n(or)\n\n[Name of whichever party is the alleged perpetrator] is to complete Form EX741 (Application and information needed by the court to consider whether to prevent (prohibit) questioning (cross-examination) in person)] by [date].\n\nProhibition on cross examination in person and consideration of appointing a qualified legal representative\n\nThe court has determined that an automatic prohibition on cross examination applies under the Matrimonial and Family Proceedings Act 1984 (MFPA) because:\n\n(select relevant subparagraphs)\n\n[Section 31R: The vulnerable party is the victim of a specified domestic abuse offence perpetrated by the other party;]\n\n[Section 31S: The vulnerable party is protected by an on-notice protective injunction against the other party;]\n\n[Section 31T: The vulnerable party adduces specified evidence that they are a victim of domestic abuse perpetrated by the other party.]\n\n(or)\n\n[Under Section 31U of the MFPA, it appears to the court that the quality of the party’s evidence on cross-examination is likely to be diminished if the cross-examination is conducted in person, or if the conduct of cross-examination in person would cause significant distress to a party, and it would not be contrary to the interests of justice to make the direction.]\n\nThe [applicant] / [respondent] must notify the court by 4.00pm on:\n\nwhether, in their view, there are suitable alternative means of cross-examination; and\n\nshould the court determine that there are no suitable alternative means of cross-examination, whether they intend to appoint their own qualified legal representative.\n\nThe file is to be referred to Judge [name of judge] on [date (following deadline for filing the response set out above)] to consider whether it is necessary for the court to appoint a qualified legal representative to conduct cross examination on behalf of either party.\n\nIf [name] does intend to appoint their own qualified legal representative for the purpose of cross-examination, they shall provide the name and contact details of that person no later than [date].\n\nAppointment of a qualified legal representative\n\n(insert the following recital into the order)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_101_non_molestation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 0,
+    "source_filename": "Order 10.1 - Non-Molestation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk003",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 3,
+  "total_chunks": 4,
+  "token_count": 178,
+  "text": "**MIAM** — Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** — Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial remedy proceedings.\n\n**Without prejudice** — a label applied to statements or offers made during negotiation, preventing them from being referred to in court proceedings; it allows parties to negotiate freely without their offers being used against them.\n\n**FDA** — First Appointment; the initial directions hearing in financial remedy proceedings.\n\n**FDR** — Financial Dispute Resolution hearing; the without-prejudice, settlement-focused hearing at which a judge indicates the likely outcome.\n\n## Related entries\n\n- process_explanation__divorce_track_overview__divorce\n- process_explanation__child_arrangements_track_overview__child_arrangements\n- document_explanation__form_a__financial_remedy",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The financial remedy track — an overview of all six stages",
+    "track": "financial_remedy",
+    "stage": "Stage 1 — Pre-proceedings (MIAM)",
+    "source_refs": [
+      "fpr_2010__009",
+      "pd_9a",
+      "govuk__divorce"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

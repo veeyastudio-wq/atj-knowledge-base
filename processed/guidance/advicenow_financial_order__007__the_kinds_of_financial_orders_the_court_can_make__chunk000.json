@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__007__the_kinds_of_financial_orders_the_court_can_make__chunk000",
+  "source_file": "raw/guidance/advicenow_financial_order__007__the_kinds_of_financial_orders_the_court_can_make.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 476,
+  "text": "# The kinds of financial orders the court can make\n\nThe court can make interim and final orders. An interim order is an order to help support you while the financial proceedings are going on. The court can make an interim order, for example, for maintenance, at any time after you start your application for a financial order and before the final hearing. However there are limits to what the court can do during this time. For example, the court cannot make an interim property adjustment order.\n\nA final order is an order made at the end of the financial proceedings. The court cannot make a final financial order until you or your ex have got a conditional order in your divorce. A conditional order is the order that confirms you are entitled to a divorce or to end your civil partnership. The final financial order cannot come into effect until the conditional order has been made into a final divorce order. At this point your marriage or civil partnership is officially at an end.\n\nIn this section we explain the different financial orders a court can make. Courts can make one or more of these at the same time.\n\n### An order for maintenance pending suit\n\n‘Maintenance’ is money paid to help support you or your ex. ‘Pending suit’ means that the money is paid in the short term, up until the case is finished. Maintenance is paid regularly at a particular time, for example, monthly. Another name for maintenance pending suit is 'interim maintenance'. When a final order is made for maintenance to be paid, the court calls this order a periodical payments order.\n\n### Periodical payments order\n\n‘Periodical payments’ is another word for maintenance. ‘Periodical’ just means the money is paid regularly at a particular time, for example, monthly. The difference between ‘maintenance pending suit’ and a ‘periodical payments order’ is that a ‘periodical payments order’ provides for maintenance to go on being paid after your financial case is over. The amount paid can be the same as or different to the amount paid as maintenance pending suit.\n\nThe court can specify that the periodical payments will continue until you or your ex dies or the person getting the maintenance remarries or registers a new civil partnership. But it is more usual for the court to order that the periodical payments will end at a specific point in the future, which you may hear referred to as a ‘term order’.",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "The kinds of financial orders the court can make",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 7,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__055__order_157_forced_marriage_disposal_on_undertakings__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__055__order_157_forced_marriage_disposal_on_undertakings.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 397,
+  "text": "# In the Family Court\t\t    Case No: [Case number]\n\nIn the Family Court\t\t    Case No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in private on [date] without a hearing.\n\nThe parties:\tThe applicant is [name]\n\nThe 1st respondent is [name], the [relationship to child]\n\nThe 2nd respondent is [name], the [relationship to child]\n\n(penal notice: not automatically included. if included, the order must be personally served unless the court dispenses with that requirement: fpr 2010, r 37(4))\n\nPenal notice\n\nIMPORTANT WARNING TO [NAME]\n\nIf you [NAME] of [ADDRESS] disobey [this order] / [paragraph[s] [insert paragraph number(s)] of this order] you may be held to be in contempt of court and may be imprisoned, fined or have your assets seized.\n\nYou have the following legal rights:\n\nto seek legal advice. This right does not entitle you to disobey any part of this order until you have sought legal advice;\n\nif you do not speak or understand English adequately, to have an interpreter present in court at public expense in order to assist you at the hearing of any application relating to this order.\n\nRecitals\n\n(Note these details should be included as an exception to the house rules) The judge read the following documents:\n\n[Insert details]\n\nThe judge heard the following oral evidence:\n\n[Insert details]\n\nThe court has considered it appropriate to accept the undertakings offered by the respondent in this matter, on the basis of which undertakings these proceedings have been concluded. In accepting those undertakings, the court considered that it would not have been appropriate to attach a power of arrest to any Forced Marriage Protection Order as may have been made as a final order within these proceedings.\n\nThe court clearly explained the penal consequences of any breach by the parties of their undertakings to them in court today.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\t    Case No: [Case number]",
+    "order_number": "order_157_forced_marriage_disposal_on_undertakings",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 55,
+    "source_filename": "Order 15.7 - Forced Marriage - Disposal on Undertakings.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

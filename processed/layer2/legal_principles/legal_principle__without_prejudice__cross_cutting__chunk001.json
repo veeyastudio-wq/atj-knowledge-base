@@ -1,0 +1,23 @@
+{
+  "chunk_id": "legal_principle__without_prejudice__cross_cutting__chunk001",
+  "source_file": "raw/layer2/legal_principles/legal_principle__without_prejudice__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 456,
+  "text": "\"Without prejudice save as to costs\" (WPSATC) is a common variant used in financial remedy proceedings. Correspondence marked in this way cannot be shown to the court during the substantive hearing, but can be referred to after the judge has given judgment, when the court is deciding whether to make a costs order. It is used to demonstrate that a party made a reasonable settlement offer at an earlier stage — which, if the other party rejected it and obtained a worse outcome at trial, may lead to a costs order against the party who refused the offer.\n\n## What it means if you're unrepresented\n\nMarking correspondence without prejudice is a practical tool available to an unrepresented party. It allows a settlement offer or a willingness to explore compromise to be expressed in writing without that offer being treated as an admission if the case proceeds. An unrepresented party can write a without prejudice letter setting out what they are prepared to accept — and if the case does not settle and the offer is not accepted, that letter cannot be produced at the final hearing.\n\nReceiving a without prejudice letter from the other party does not mean they are conceding anything or that an agreement has been reached. It means they are exploring whether settlement is possible. The fact that it is marked without prejudice means the discussions are confidential to both parties.\n\nIf the other party sends correspondence without the without prejudice label, it is open correspondence and can be referred to in court. This distinction matters when deciding how to respond to communications.\n\nThe FDR hearing is a genuine opportunity to settle. The frankness of the judge's indication at the FDR — which would not be given at a final hearing — is a direct consequence of the without prejudice protection. The judge can say what they think the outcome is likely to be precisely because that view cannot be reported outside the FDR. This is worth understanding before the hearing: the indication, however unwelcome, reflects a judicial view of how the case is likely to be decided.\n\n<!-- discovery gap: to be completed after research conversations. Expected input: whether unrepresented people understand the without prejudice rule at all, and whether they have made mistakes — such as referring to without prejudice offers in open correspondence or in statements — that have caused problems in their proceedings. -->\n\n## Related entries",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "Without prejudice — protecting settlement communications from the court",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_9",
+      "FPR_Part_3"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

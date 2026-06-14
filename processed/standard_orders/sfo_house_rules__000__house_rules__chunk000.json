@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_house_rules__000__house_rules__chunk000",
+  "source_file": "raw/standard_orders/sfo_house_rules__000__house_rules.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 481,
+  "text": "# FAMILY ORDERS\n\nFAMILY ORDERS\n\nHOUSE RULES\n\nMay 2023\n\nIntroduction\n\nAll orders made by the Family Court and the High Court (Family Division) shall be in the standard forms as contained in Volumes 1 and 2.\n\nAccordingly, when drafting orders, whether by consent or following a hearing, the standard order templates should be used, adapted as appropriate to the facts of the case.\n\nContent of order (including recitals)\n\nRecitals in a financial order shall appear at the beginning of the order. Recitals in a children order shall appear at the end of the order. Recitals must only record necessary information, drafted in as short and neutral a manner as possible. They should not record what happened in the hearing and should be limited to essential background matters which are not part of the body of the order. Any purported views of the court which did not form part of the court’s decision should not be recited. The recording of a party’s position before, during, or after the hearing as a recital should cease unless the standard order template requires such information.\n\nThe order shall not recite the documents which the court read, or the witnesses who were heard, save in a case where an order is made without notice, in which case the details shall be recorded in a recital.\n\nWhere an order is made without notice the reason for withholding any notice must be recorded in a recital. Where an order is made on short notice the reason for withholding full notice must be recorded in a recital.\n\nWhere a third party disclosure order or other order directed to a person who is not a party to the proceedings is made, that order should be drawn as a separate order rather than be contained in the main order from the proceedings. Each separate order should be directed to only one third party or person, and where there are a number of third parties or persons to which orders are directed, there should be a drawn a series of separate orders.\n\nWhere a separate order is made, the fact of the separate order having been made should be included in the body of the main order from the hearing, which should identify what the separate order was for and the date by which any information / evidence arising from that order is to be disclosed.\n\nFormat of order\n\nThe body of orders should always be prepared in Times New Roman font, 12 point, with single spacing.",
+  "metadata": {
+    "source": "Standard Family Orders — House Rules (May 2023)",
+    "title": "FAMILY ORDERS",
+    "order_number": "houserulesmay2023",
+    "volume": "house_rules",
+    "parent_document": "Standard Family Orders — House Rules (May 2023)",
+    "parent_slug": "sfo_house_rules",
+    "section_index": 0,
+    "source_filename": "HouseRules.May2023.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2023/05/HouseRules.May2023.docx",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

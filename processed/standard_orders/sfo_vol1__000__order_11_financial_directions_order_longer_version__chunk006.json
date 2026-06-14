@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk006",
+  "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
+  "layer": "layer1",
+  "chunk_index": 6,
+  "total_chunks": 39,
+  "token_count": 479,
+  "text": "[applicant name]\n\n[respondent name]\n\nOrders\n\nIT IS ORDERED [BY CONSENT] THAT:\n\nMaintenance Pending Suit/Interim Periodical Payments\n\nThe [applicant] / [respondent] shall pay to the [respondent] / [applicant] maintenance pending suit until the date of the [decree absolute] / [final [divorce] / [dissolution] order] and afterwards interim periodical payments at the rate of £[amount] per annum, payable [weekly] / [monthly] [in advance] / [in arrears] by standing order from [date (e.g. including a date earlier than the date of the order if backdating)] until further order. [The [applicant] / [respondent] shall be given credit for the payment(s) of £[amount] made on [date(s)].]\n\nLegal Services Payment Order\n\nThis is a legal services payment order made pursuant to [s22ZA of the Matrimonial Causes Act 1973] / [para 38A of Schedule 5 to the Civil Partnership Act 2004].\n\nThe court was satisfied that without the amount specified below, the [applicant] / [respondent] would not reasonably be able to obtain appropriate legal services for the purposes of the proceedings.\n\nThe [respondent] / [applicant] shall pay the amount of £[amount] [by [time and date]] / [per month commencing on [time and date] until [time and date]] to [name], the legal representatives of the [applicant] / [respondent].\n\nOrder in respect of attendance at a [further] MIAM after exemption claimed\n\nThe court has considered the request for an exemption from a Mediation Information and Assessment Meeting (“MIAM”) and [is satisfied that the claimed exemption is valid. However, parties are not prevented from attending a MIAM if they wish to do so.] / [is not satisfied that it was properly claimed and/or it was not supported by the necessary evidence.] / [is satisfied that whilst it was originally valid the exemption no longer applies.] [The [applicant] / [respondent] shall [therefore] attend a [further] MIAM conducted by an authorised family mediator and shall file a completed Form FM1 by [time and date].]\n\n[Form E]/[Form E1]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_11_financial_directions_order_longer_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 0,
+    "source_filename": "Order 1.1 - Financial Directions Order (longer version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__011__order_131_abduction_telephone_disclosure_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__011__order_131_abduction_telephone_disclosure_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 439,
+  "text": "The account holder to which the telephone number is registered;\n\nThe address to which the telephone number is registered;\n\nThe method by which any bill associated with the telephone number is paid, and any bank details as are held by [name of landline or mobile telephone number operator] in relation to the telephone number;\n\nThe itemised call records in relation to the telephone number from [date] to [date], together with any additional information as may be required to interpret the said information;\n\nSuch information as may be reasonably identifiable in the course of its business concerning the telephone numbers and names and addresses of those receiving the calls from and making the calls to the telephone number;\n\nSuch information as may be reasonably identifiable in the course of its business concerning the locations of the said telephone whilst such calls identified above were made or received including cell site locations where possible;\n\n[insert any other information as may be sought].\n\nSuch information is to be provided for the period [insert dates to be covered]. It shall be provided forthwith upon service of this order upon them to the solicitors for the applicant [applicant firm name].\n\nThe solicitors for the applicant are granted permission to serve a copy of this order by email or facsimile.\n\n[Name of landline or mobile telephone number operator] is prohibited from informing the respondents of the making of this order or any action taken in compliance with it.\n\nThe costs incurred by [name of landline or mobile telephone number operator] in complying with this order, which the solicitors for the applicant [father] / [mother] have undertaken to pay by virtue of para 8(b) above, are considered by the court to be a reasonable disbursement on the applicant’s legal aid certificate.\n\nCosts are reserved.\n\nDated [date]\n\nNotice\n\nYou [applicant solicitor name] may be fined or sent to prison for contempt of court if you break the promises that have been given to the court\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be fined or sent to prison for contempt of court\n\n[applicant solicitor name] [on behalf of [applicant firm name]]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_131_abduction_telephone_disclosure_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 11,
+    "source_filename": "Order 13.1 - Abduction - Telephone Disclosure Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk050",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 50,
+  "total_chunks": 61,
+  "token_count": 455,
+  "text": "[the sale of [the family home] / [other property name]]; or\n\na further order of the court, for which both parties shall be at liberty to apply to the court\n\n[provided that the amount as to which the property shall be charged shall not exceed [e.g. one half of the gross proceeds of sale of the property, or if it shall not have been sold, one half of the gross value], any dispute as to such value to be settled by a surveyor agreed between the parties or in default of agreement appointed by the President for the time being of the Royal Institution of Chartered Surveyors].\n\nChild Support Act 1991 clawback: adjournment of capital claims\n\nIn circumstances where the parties have agreed that (i) the provision made by this order fulfils the [applicant’s] / [respondent’s] responsibilities to the child[ren] of the family; (ii) the [respondent] / [applicant] does not intend to seek any [further] financial provision for the maintenance of the child[ren] of the family [including school fees [and] / [or] any other extras for the child[ren]], whether through the court, the CMS or otherwise; and (iii) in the event that the [applicant] / [respondent] becomes liable to make any [further] financial provision for the child[ren] of the family, the [respondent] / [applicant] will indemnify against any liability, and in default of the [respondent] / [applicant] performing [her] / [his] agreement to indemnify the [applicant] / [respondent], the [applicant] / [respondent] shall be entitled to make a claim for a [lump sum order] / [property adjustment order in respect of [family home name] / [other property name]] for the purpose of recompensing [him] / [her], the [applicant’s] / [respondent’s] claims for a [lump sum order] / [property adjustment order in respect of [family home name] / [other property name]] shall be adjourned generally with liberty to the [applicant] / [respondent] to restore.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

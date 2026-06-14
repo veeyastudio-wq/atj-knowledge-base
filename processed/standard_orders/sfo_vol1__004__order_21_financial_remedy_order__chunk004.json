@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk004",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 61,
+  "token_count": 342,
+  "text": "On [date] the parties attended a final meeting held under the collaborative family law process at which the terms set out in this order were agreed and recorded and in respect of which the parties acknowledge that they both had independent legal advice.\n\nIntroductory recital\n\nThe parties agree that the terms set out in this order are accepted in full and final satisfaction of:\n\nall claims for income;\n\nall claims for capital, that is payments of lump sums, transfers of property and variations of settlements;\n\nall claims in respect of each other’s pensions;\n\nall claims in respect of the contents of [the family home] / [other property name] and personal belongings;\n\nall claims in respect of legal costs including those of the [divorce] / [dissolution] proceedings;\n\nall claims against each other’s estate on death; and\n\nall other claims of any nature which one may have against the other [as a result of their [marriage] / [civil partnership]] / [howsoever arising] either in England and Wales or in any other jurisdiction.\n\nDeclarations\n\nGeneral Agreements/Declarations\n\nThe parties agree that neither of them has any legal or equitable interest in the property or assets [currently in the sole name or possession of the other] / [owned by the other], and neither of them has any liability for the debts of the other, except as provided for in this order.\n\nThe parties agree that neither of them shall institute proceedings against the other under [the Married Women’s Property Act 1882] [and] / [or] [the Law of Property Act 1925] [and] / [or] [the Trusts of Land and Appointment of Trustees Act 1996].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

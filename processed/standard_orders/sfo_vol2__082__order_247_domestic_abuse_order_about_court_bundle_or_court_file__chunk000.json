@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__082__order_247_domestic_abuse_order_about_court_bundle_or_court_file__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__082__order_247_domestic_abuse_order_about_court_bundle_or_court_file.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 464,
+  "text": "# In the Family Court\t\tCase No: [Case number]\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in private on [date] at a [type of hearing].\n\nThe parties:\tThe applicant is [local authority]\n\nThe 1st respondent is [name], the [relationship to child]\n\nThe 2nd respondent is [name], the [relationship to child]\n\nThe 3rd [[and] / [to] [insert (number so that each child is identified as a separate respondent)] respondent[s] [is] / [are] the child[ren] (by their children’s guardian [name])\n\nThe intervenor is [name] [in person]\n\nImportant Notices\n\nConfidentiality warnings\n\nDuring the proceedings and after they have concluded no person shall publish information related to the proceedings including accounts of what has gone on in front of the judge, documents filed in the proceedings, transcripts or notes of evidence and submissions, and transcripts and notes of judgments (including extracts, quotations, or summaries of such documents). Any person who does so may be in contempt of court.\n\nUntil the conclusion of the proceedings no person shall publish to the public at large or any section of the public without the court’s permission any material which is intended or likely to identify the child[ren] as being involved in these proceedings or an address or school as being that of the child[ren]. Any person who does so may be guilty of an offence.\n\nThe exceptions to this are in Rules 12.73 or 12.75 or Practice Direction 12G of the Family Procedure Rules 2010.\n\nIT IS ORDERED THAT:\n\n[[Name’s] legal representative] / [The court] shall send the full court bundle or such parts of the court bundle as the court directs to the court-appointed qualified legal representative by [date].\n\nWhere there is no court bundle, the court HMCTS will prepare and provide the qualified legal representative with the full court bundle or such parts of the court bundle as the court directs by [date]. The court will provide the final court bundle or such parts of the court bundle as the court directs to the qualified legal representative 7 days before the hearing with cross-examination.\n\nDated [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_247_domestic_abuse_order_about_court_bundle_or_court_file",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 82,
+    "source_filename": "Order 24.7 - Domestic Abuse - Order about Court bundle or Court file.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

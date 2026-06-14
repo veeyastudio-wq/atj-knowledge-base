@@ -1,0 +1,22 @@
+{
+  "chunk_id": "terminology__mckenzie_friend__cross_cutting__chunk000",
+  "source_file": "raw/layer2/terminology/terminology__mckenzie_friend__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 163,
+  "text": "# McKenzie friend\n\n## What it means\n\nA McKenzie friend is a person who accompanies a litigant in person to court to provide quiet support. They can sit beside the litigant in person during the hearing, take notes, and offer suggestions quietly. They cannot address the court, examine witnesses, or act as a legal representative unless the judge specifically grants them permission to do so.\n\n## When you will encounter it\n\nIf you are representing yourself, you have the right to bring a McKenzie friend to any hearing. You should inform the court in advance that you intend to do so. The other party or the judge may raise the matter at the start of the hearing.\n\n## Track\n\nCross-cutting — applies to all tracks.\n\n## Related entries\n\n- terminology__litigant_in_person__cross_cutting",
+  "metadata": {
+    "content_type": "terminology",
+    "layer": 2,
+    "title": "McKenzie friend",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "financial_remedies_guide_2026__048__useful_how_to_guides_for_people_who_do_not_have_a_lawyer"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": false
+  }
+}

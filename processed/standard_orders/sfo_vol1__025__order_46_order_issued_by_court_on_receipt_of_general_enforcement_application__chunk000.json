@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__025__order_46_order_issued_by_court_on_receipt_of_general_enforcement_application__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__025__order_46_order_issued_by_court_on_receipt_of_general_enforcement_application.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 473,
+  "text": "# 1\n\nIn the Family Court\t\tNo: [Case number]\n\nsitting at [Court name]\n\nORDER TO COMPLETE FORM E1 AND TO ATTEND COURT\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe respondent is [respondent name]\n\nIT IS ORDERED THAT:\n\nThe respondent shall complete Form E1, a blank version of which is served together with this order, and to which all the documents required by the form shall be attached.\n\nThe respondent shall file with the court, and serve on the applicant, the completed form and the required attached documents.  The respondent shall file and serve the form and documents by either:\n\nscanning the form and the attached documents into a single PDF file and emailing it to the court and to the applicant; or\n\nsending the form and the attached documents by first class post to the court office and sending a copy of the form and the attached documents by first class post to the applicant.\n\nThe form and the attached documents shall be filed with the court, and served on the applicant, by the respondent by no later than 4pm on the date 7 business days prior to the date of the hearing in paragraph 4 below.\n\nThe respondent shall attend the Family Court at [insert court name and address] on [date and time].\n\nAt the hearing the respondent shall answer all questions which the court asks and which the court allows the applicant to ask.\n\n(either – for service by email)\n\nThis order and the accompanying blank Form E1 shall be served on the respondent by the court by email. If the applicant has not already served the enforcement application on the respondent, the applicant is authorised to serve it and any further document which requires to be served, by email.\n\n(or – for service by post)\n\nThis order and the accompanying blank Form E1 shall be served on the respondent by the court by first class post. If the applicant has not already served the enforcement application on the respondent, the applicant shall serve it and any further document which requires to be served, by first class post.\n\nDated [date]\n\nIMPORTANT NOTICE TO THE RESPONDENT, [RESPONDENT NAME] OF [RESPONDENT ADDRESS]\n\nIf you do not comply with this order you may be held to be in contempt of court and punished by a fine, imprisonment, confiscation of assets or other punishment under the law.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_46_order_issued_by_court_on_receipt_of_general_enforcement_application",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 25,
+    "source_filename": "Order 4.6 - Order Issued by Court on Receipt of General Enforcement Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

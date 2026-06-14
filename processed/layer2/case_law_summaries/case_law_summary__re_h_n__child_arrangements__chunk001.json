@@ -1,0 +1,24 @@
+{
+  "chunk_id": "case_law_summary__re_h_n__child_arrangements__chunk001",
+  "source_file": "raw/layer2/case_law_summaries/case_law_summary__re_h_n__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 262,
+  "text": "## What it means if you're unrepresented\n\nIf you are alleging domestic abuse, this case supports presenting a full account of how the other party's behaviour affected you and your children over time, rather than reducing it to a list of incidents with dates. Courts are required to look at the pattern of behaviour, not just individual events. If you have been asked to complete a Scott Schedule, you are entitled to provide context alongside each entry. If allegations have been made against you, the same principle applies in reverse — the court will look at the overall picture, not just whether individual allegations can be disputed in isolation. In either situation, written statements that explain the full history of the relationship clearly are more useful than lists.\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people most commonly misunderstand about how domestic abuse allegations are handled in children proceedings — for example, whether they believe the criminal standard of proof applies, or whether they understand the difference between a fact-finding hearing and the welfare hearing that follows it. -->\n\n## Related entries\n\n- legal_principle__welfare_principle__child_arrangements\n- process_explanation__fhdra_hearing__child_arrangements\n- process_explanation__child_arrangements_final_hearing__child_arrangements",
+  "metadata": {
+    "content_type": "case_law_summary",
+    "layer": 2,
+    "title": "Re H-N and Others — domestic abuse allegations in child arrangements proceedings",
+    "track": "child_arrangements",
+    "stage": "cross_cutting",
+    "citation": "Re H-N and Others (Children) (Domestic Abuse: Finding of Fact Hearings) [2021] EWCA Civ 448",
+    "source_refs": [
+      "practice_direction__pd12j",
+      "legal_principle__welfare_principle__child_arrangements"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__107__order_86_public_law_exclusion_requirement__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__107__order_86_public_law_exclusion_requirement.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 455,
+  "text": "# In the Family Court\t\tCase No: [Case number]\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\nExclusion requirement made by [name of judge] in private on [date] at a [type of hearing].\n\nThe parties:\tThe applicant is [local authority] represented by [name] [of counsel]\n\nThe 1st respondent is [name], the [relationship to child], represented by [name] [of counsel]\n\nThe 2nd respondent is [name], the [relationship to child], represented by [name] [of counsel]\n\nThe 3rd [[and] / [to] [insert (number so that each child is identified as a separate respondent)] respondent[s] [is] / [are] the child[ren] (by their children’s guardian [name]) represented by [name] [of counsel]\n\nThe intervenor is [name] [in person] [represented by [name] [of counsel]]\n\nThis order was made [on] / [without] notice to the person to whom it is directed and that person did [not] attend the hearing.\n\nIMPORTANT WARNING TO [NAME OF EXCLUDED PERSON]\n\nIf you [NAME OF EXCLUDED PERSON] of [ADDRESS] disobey this order you may be held to be in contempt of court and may be imprisoned, fined or have your assets seized.\n\nIT IS ORDERED [BY CONSENT] THAT:\n\nExclusion requirement – section 38A Children Act 1989\n\n[Name of excluded person] must by [time] on [date] leave [address].\n\n[Name of excluded person] must not enter [address].\n\n[Name of excluded person] is excluded from [the area delineated in red on the map attached to this order] / [insert clearly defined geographic exclusion].\n\nThis exclusion requirement shall remain in force until [time] on [date].\n\nThis exclusion requirement shall remain in force for the duration of the interim care order.\n\nA power of arrest is attached to this exclusion requirement. The power of arrest shall remain in force until [time] on [date].\n\nThe local authority must deliver this order and a statement of service to [police force] as soon as is practicable.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_86_public_law_exclusion_requirement",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 107,
+    "source_filename": "Order 8.6 - Public Law Exclusion Requirement.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

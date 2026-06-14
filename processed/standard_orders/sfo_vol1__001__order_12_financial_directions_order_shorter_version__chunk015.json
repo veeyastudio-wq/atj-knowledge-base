@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__001__order_12_financial_directions_order_shorter_version__chunk015",
+  "source_file": "raw/standard_orders/sfo_vol1__001__order_12_financial_directions_order_shorter_version.md",
+  "layer": "layer1",
+  "chunk_index": 15,
+  "total_chunks": 20,
+  "token_count": 446,
+  "text": "The report shall be sent to the court in electronic format and served on the parties simultaneously by [time and date].\n\nUpdating property valuations for final hearing\n\nIf either party wishes to assert that the value of the property at [family home name] / [other property name] has, or may have, significantly changed since the valuation for [p]FDR purposes was undertaken, the parties shall jointly instruct [name of expert] to provide an updated [valuation report] / [market appraisal] in respect of the property, confirming whether there has been any change in the value, and the following consequential provisions shall apply:\n\nThe letter of instruction shall be drafted by the [applicant] / [respondent] and agreed with the [respondent] / [applicant] by [time and date];\n\nThe letter of instruction [and [insert any other documents]] shall be sent to the expert by [time and date];\n\nThe report shall be sent to the court in electronic format and served on the parties simultaneously by [time and date]; and\n\nThe costs charged by the expert for preparing the report shall be met by the [applicant] / [respondent] / [parties equally] in the first instance, [such costs to be capped at [price]].\n\nPensions information\n\nThe [pension provider] / [pension scheme] shall [complete, file with the court and serve on the parties a copy of the Form P (pension inquiry form)] / [provide the information required by Regulations 2, 3 and 4 of the Pensions on Divorce etc. (Provision of Information Regulations) 2000] by [time and date].\n\nScott Schedule\n\nThe [applicant] / [respondent] / [parties] shall [each] prepare a Scott Schedule by [time and date], stating in relation to each item of property in dispute in [their] / [each party’s] case as to:\n\nthe party by whom it was acquired;\n\nhow and from whom it was acquired (purchase/inheritance/gift etc) with documentary evidence in support;\n\nits current value with documentary evidence in support; and\n\nwhat order is sought and the justification for seeking it.\n\nCosts estimates",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_12_financial_directions_order_shorter_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 1,
+    "source_filename": "Order 1.2 - Financial Directions Order (shorter version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

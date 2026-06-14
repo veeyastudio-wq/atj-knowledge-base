@@ -1,0 +1,26 @@
+{
+  "chunk_id": "document_explanation__consent_order__financial_remedy__chunk000",
+  "source_file": "raw/layer2/document_explanations/document_explanation__consent_order__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 449,
+  "text": "# Consent order — recording a financial agreement with the court\n\n## What it is\n\nA consent order is a court order that records the financial terms both parties have agreed and makes those terms legally binding and enforceable. An agreement between separating parties, however detailed and however sincerely reached, is not enforceable through the courts until it has been approved by a judge and sealed as a court order. The consent order is the mechanism by which a private agreement becomes a legal order.\n\n## When it happens\n\nA consent order can be submitted to the court at any point after both parties have reached full agreement on their financial terms — before proceedings are issued, during proceedings, or after. In practice, most consent orders arise in one of three situations: after settlement is reached through mediation without court proceedings having been issued; after settlement is reached at or following the FDR hearing; or as a negotiated settlement after the FDR that avoids a final hearing. A consent order must be approved by a judge even where both parties are in complete agreement. It is not self-executing.\n\n## What it involves\n\n**What the document contains.** The consent order sets out the complete terms of the financial agreement — what is happening to the family home, how any other property and assets are to be divided, whether any lump sum payments are to be made, pension arrangements, and any ongoing maintenance obligations. It also typically includes a clean break clause, which prevents either party from making future financial claims against the other once the order takes effect.\n\n**The D81 statement of information.** Alongside the draft consent order, both parties must file a Form D81 — a statement of information about their current financial positions. The judge uses the D81 to assess whether the proposed terms are fair. The consent order will not be approved without a D81.\n\n**How the court considers it.** In most cases, the judge considers the consent order and D81 on paper, without a hearing. The judge is not a rubber stamp: they must be satisfied that the terms are fair and within the range of outcomes a court could properly order. If the judge is not satisfied, they may request further information, invite the parties to attend a hearing, or decline to approve the order.",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Consent order — recording a financial agreement with the court",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_9",
+      "PD_9A",
+      "mca_1973__s25",
+      "advicenow_financial_order__009__consent_orders",
+      "sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__007__order_31_freezing_order__chunk007",
+  "source_file": "raw/standard_orders/sfo_vol1__007__order_31_freezing_order.md",
+  "layer": "layer1",
+  "chunk_index": 7,
+  "total_chunks": 8,
+  "token_count": 75,
+  "text": "[applicant’s firm name]\n\n[applicant’s firm’s address]\n\nRef:\t[applicant’s reference]\n\nDX:\t[applicant’s firm’s DX address]\n\nEmail:\t[applicant’s firm’s email address]\n\nPhone:\t[applicant’s firm’s phone number] (office hours)\n\n[applicant’s firm’s out of hours phone number] (out of office hours)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_31_freezing_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 7,
+    "source_filename": "Order 3.1 - Freezing Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

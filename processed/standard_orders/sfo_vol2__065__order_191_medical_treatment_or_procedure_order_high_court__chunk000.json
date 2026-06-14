@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__065__order_191_medical_treatment_or_procedure_order_high_court__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__065__order_191_medical_treatment_or_procedure_order_high_court.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 460,
+  "text": "# High Court Judgment Template\n\nIn the High Court of Justice\n\nFamily Division\n\nSitting at [the Royal Courts of Justice] / \n[[name] District Registry]\t\tCase No: [Case number]\n\n[The Children Act 1989] /\n\n[The Senior Courts Act 1981]\n\n(delete as appropriate)\n\nORDER MADE BY [NAME OF JUDGE] [SITTING AS] A JUDGE OF THE HIGH COURT, FAMILY DIVISION ON [DATE]\n\nThe parties and representation at this hearing\n\nThe applicant is [name of local authority], represented by [barrister/solicitor name] [instructed by [solicitor name and Firm name]] whose contact details are [ref, phone number and email]\n\nThe 1st respondent is [name], the [relationship to child], [in person], represented by [barrister/solicitor name] [instructed by [solicitor firm name]] whose contact details are [ref, phone number and email]\n\nThe 2nd respondent is [name], the [relationship to child], [in person], represented by [barrister/solicitor name] [instructed by [solicitor firm name]] whose contact details are [ref, phone number and email]\n\nThe 3rd respondent is the child [name of child] (born on [date of birth]) acting by [his] / [her] guardian [guardian name], represented by [barrister/solicitor name] [instructed by [solicitor firm name]] whose contact details are [ref, phone number and email]\n\n(specify if any adult party acts by a litigation friend)\n\nUnless otherwise stated, a reference in this order to ‘the respondent’ means all of the respondents.\n\nRecitals\n\nThe court is satisfied that:\n\n[Specify (e.g. approval of the affirmation by the parties to support the subject of the order in the discharge of the statutory functions of [name body] and throughout the duration of any agreed care plan including upon any subsequent discharge into the community.)]\n\n[Specify (e.g. there is a commitment by the [applicant] / [2nd respondent] to fund the placement for [respondent name] at any specified medical facility or hospital.)]]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_191_medical_treatment_or_procedure_order_high_court",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 65,
+    "source_filename": "Order 19.1 - Medical Treatment or Procedure Order (High Court).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

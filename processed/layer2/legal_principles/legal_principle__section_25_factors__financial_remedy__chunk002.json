@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__section_25_factors__financial_remedy__chunk002",
+  "source_file": "raw/layer2/legal_principles/legal_principle__section_25_factors__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 378,
+  "text": "**Conduct is rarely relevant.** The financial remedy track is not the place to present an account of the other party's behaviour during the marriage. The judge is not there to adjudicate fault. Conduct only affects the outcome if it would be inequitable to disregard it — a threshold that most conduct, however distressing, does not meet. Time spent presenting conduct arguments that do not meet this threshold is time not spent on the factors that matter.\n\n**Non-financial contributions count.** A party who left employment to care for children, or who supported the other party's career at the expense of their own, has made a contribution the law recognises as equivalent in principle to direct financial contributions. This is particularly relevant in long marriages where there is a significant disparity in the parties' current earning positions.\n\n**Pension must be considered.** Pension entitlements built up during the marriage are a matrimonial asset. A party who does not raise pension in proceedings — or who agrees a financial settlement without addressing pension — may be giving up a significant entitlement. Pension sharing orders and pension attachment orders are available to the court.\n\n## Common misunderstandings\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people most commonly get wrong about the section 25 factors — e.g. assuming 50/50 is the default, not understanding that conduct rarely affects the outcome, overlooking pension, not understanding what \"needs\" means in this context, or conflating earning capacity with current earnings. -->\n\n## Related entries\n\n- process_explanation__financial_remedy_track_overview__financial_remedy\n- legal_principle__duty_of_full_and_frank_disclosure__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The section 25 factors — how a judge divides assets in a financial remedy case",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "matrimonial_causes_act_1973__003__section_25",
+      "fpr_2010__009__part_9_financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

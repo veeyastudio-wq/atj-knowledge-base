@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk043",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 43,
+  "total_chunks": 61,
+  "token_count": 485,
+  "text": "Child periodical payments order for costs of disability\n\nThe [applicant] / [respondent] shall pay to the [respondent] / [applicant] periodical payments for benefit of [child name] at the rate of £[amount] per annum to meet the costs of [his] / [her] disability. Payments shall start on [date], and shall end on:\n\n[child name] attaining the age of 18 years or ceasing [his] / [her] full-time [secondary] / [tertiary] education [to first degree level] [[including] / [excluding] a gap year], whichever shall be the later; or\n\na further order.\n\n[(For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, the child periodical payments shall be suspended for that year and shall automatically revive when the child commences tertiary education.)]\n\nThe court may (prior to the expiry of the term or subsequently) order a longer period of payment. This order is made pursuant to the Child Support Act 1991 section 8(8).\n\nChild periodical payments order – top-up order\n\nIn circumstances where (i) the CMS has made a CMS calculation in respect of the child[ren] of the family; and (ii) the court is satisfied that the circumstances of the case make it appropriate for the [applicant] / [respondent] to make periodical payments as ordered in paragraph [para number] below in addition to the child maintenance payable in accordance with the CMS calculation, the [applicant] / [respondent] shall pay to the [respondent] / [applicant] periodical payments for benefit of the child[ren] of the family.\n\nPayments shall be [at the rate of £[amount] per annum per child] / [in the sum which, when added to the payments (if any) made by the [applicant] / [respondent] to the CMS pursuant to a CMS calculation, total £[amount] per annum whilst both children are provided for under the CMS calculation or £[amount] per annum whilst only one such child is provided for under the CMS calculation], payable [weekly] / [monthly] [in advance] / [in arrears] by standing order. Payments shall start on [date], and shall end on:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

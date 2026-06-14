@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__004__order_103_police_disclosure_order__chunk003",
+  "source_file": "raw/standard_orders/sfo_vol2__004__order_103_police_disclosure_order.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 5,
+  "token_count": 458,
+  "text": "[set out any details as to payment arrangements if different from the above]].\n\nPermission to the police/Officer in Case as appropriate to [request attendance at the hearing set out above in order to make representations] / [inform the Family Court as to relevant issues concerning the family proceedings] / [attend remotely at any further hearing if requested].\n\nDirections as to redaction\n\n[Name of police force] must not redact any information without application to the court other than:\n\nThe details of children who are not involved in these proceedings;\n\nThe details of any person who declined to give witness statements; and\n\nAny material that is considered by [name of police force] to be “sensitive PNC material” save that if such information would need to be disclosed in any criminal proceedings it must not be redacted.\n\nThe parties are referred to Annex 2 section 6 of the Disclosure of Information Between Family and Criminal Agencies and Jurisdictions: 2024 Protocol in relation to the guidelines followed for redaction. In the event of an issue not covered by the above the Judge may contact the police representative by email for further clarification.\n\nThe right to seek variation or discharge of this order\n\nThe [Commissioner of the Metropolitan Police] / [Chief Constable of [name of police force]] may apply to vary or discharge this order on 2 business days’ notice to the parties, such application to be made not later than 4.00pm on [insert date no later than 14 days from the date of the order].\n\nPermission to the police to request in writing by email an urgent response from the Family Court Judge in the event that this request may impede and/or impact on any criminal investigation/proceedings with an explanation as to the basis of the request. This will not be disclosed to the parties, the Judge must inform the parties of any decision taken in relation to such a request.\n\nDated [date]\n\nCase No: [insert]\n\nANNEX TO THE POLICE DISCLOSURE ORDER MADE ON [DATE] BY [NAME OF JUDGE]\n\nThis annex contains personal details that a party has given notice of a wish to be kept confidential.\n\nApplicant [applicant name]: [insert confidential details]\n\nRespondent [respondent name]: [insert confidential details]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_103_police_disclosure_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 4,
+    "source_filename": "Order 10.3 - Police Disclosure Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

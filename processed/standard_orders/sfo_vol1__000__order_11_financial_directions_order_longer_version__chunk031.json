@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk031",
+  "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
+  "layer": "layer1",
+  "chunk_index": 31,
+  "total_chunks": 39,
+  "token_count": 347,
+  "text": "The case shall be listed for a [directions appointment] / [mention hearing] on [time and date] [on the first open date after [date]] with a time-estimate of [insert]. This hearing may be vacated in the event an agreement is reached and a consent order (accompanied by a D81) is filed and approved.\n\nIf the case does not settle at the pFDR appointment then the parties shall provide an explanation to the next FRC judge dealing with the case so that they can be assured that a thorough FDR exercise has taken place. This explanation should not include reference to any without prejudice positions, but should confirm the basic factual details limited to (i) whether or not it took place and, if so, on what date and whether both parties attended; (ii) the identity of the pFDR evaluator and the legal teams; (iii) the location of the pFDR; and (iv) the length of the pFDR.\n\nStay for arbitration\n\nThe proceedings are stayed to allow the parties to enter arbitration pursuant to the IFLA Financial Scheme. The parties shall (i) promptly inform the court when the final arbitration award has been delivered; and (ii) request the appointed arbitrator to inform the zonal Lead Judge (or if the case has been allocated to High Court Judge level, the allocated judge’s clerk), when the final arbitration award has been made.\n\nUpon receipt of the notification above the court shall list a directions appointment or mention hearing as soon as is practicable, ideally within four weeks. Such hearing may be vacated in the event a consent order (accompanied by a D81) is filed and approved.\n\nStay for non-court dispute resolution",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_11_financial_directions_order_longer_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 0,
+    "source_filename": "Order 1.1 - Financial Directions Order (longer version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

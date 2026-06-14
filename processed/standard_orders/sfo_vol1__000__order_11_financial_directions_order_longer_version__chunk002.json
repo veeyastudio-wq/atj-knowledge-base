@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 39,
+  "token_count": 452,
+  "text": "Pensions\n\n“[Pension name]” means the pension arrangement/plan held by the [applicant] / [respondent] with [scheme/plan provider name] with reference number [number];\n\n“[Pension name]” means the pension arrangement/plan held by the [applicant] / [respondent] with [scheme/plan provider name] with reference number [number];\n\n[etc].\n\n“PPF” means the Pension Protection Fund.\n\n“PRPA” means the person responsible for the pension arrangement.\n\nGeneral\n\nAny requirement in this order for the filing of a document should be complied with by uploading the document to the contested cases online portal. At present, litigants in person do not have access to the online portals and must communicate with the court by email and send by post documents for uploading to the bulk scanning centre at HMCTS Financial Remedy, PO Box 12746, Harlow, CM20 9QZ. Parties are reminded that there is no physical court file so the court file consists only of documents uploaded to the online portals.\n\nRecitals\n\nRecital for without notice hearings\n\n(in the case of an order made without notice)\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] [and heard oral evidence from [name]].\n\nRecital for short informal notice hearings\n\n(in the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] [and heard oral evidence from [name]].\n\nRecital as to attendance at a MIAM\n\nIt is recorded that the [applicant has] / [respondent has] / [parties have] attended a Mediation Information and Assessment Meeting (“MIAM”) and [has] / [have] sent to the court a completed Form FM1 dated [date].\n\nRecitals as to costs incurred/expected to be incurred",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_11_financial_directions_order_longer_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 0,
+    "source_filename": "Order 1.1 - Financial Directions Order (longer version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

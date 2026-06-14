@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 5,
+  "token_count": 488,
+  "text": "The judge read the following affidavits/witness statements [set out] and heard oral testimony from [name].\n\n(In the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\nFindings of the court\n\n[Name of judge] made an order on [date] requiring the respondent to [insert (e.g. ‘pay a lump sum to the applicant of £[amount] by [date and time])]\n\n[Insert findings of breach]\n\nThe court is satisfied that:\n\n(e.g.) the respondent has made no realistic proposal as to how [he] / [she] will [be able to] discharge the obligations under the order of [date] within a reasonable time-frame; and\n\nconsequently, an order for the sale of [the family home] / [other property name] is reasonably required to enable [him] / [her] to discharge [his] / [her] obligations.\n\nUndertakings to the court\n\n[Insert any undertakings given]\n\nIT IS ORDERED THAT:\n\nOrder for sale\n\n[The family home] / [other property name] shall be sold forthwith on the open market for sale and the following conditions will apply:\n\nthe property shall be placed on the open market for sale immediately by [name] for [£[amount]] / [such price as may be agreed between the parties or in default of agreement determined by the court];\n\nthe property shall be sold for [a price in excess of £[amount]] / [such price as may be agreed between the parties, having taken advice from the estate agents, [in excess of £[amount]]] or in default of agreement determined by the court;\n\n[both parties] / [the applicant] / [the respondent] shall have conduct of the sale;\n\n[[the applicant’s] / [respondent’s] solicitors] / [name of solicitors] / [such solicitors as may be agreed between the parties or in default of agreement determined by the court] shall have the conduct of the conveyancing work relating to the sale;\n\n[name of estate agents] / [such estate agents as may be agreed between the parties of in default of agreement determined by the court] shall offer the property for sale; and",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_42_order_for_sale_under_mca_1973_s_24a",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 21,
+    "source_filename": "Order 4.2 - Order for Sale under MCA 1973, s. 24A.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

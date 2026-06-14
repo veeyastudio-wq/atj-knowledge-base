@@ -1,0 +1,21 @@
+{
+  "chunk_id": "govuk_financial_remedy__000__contents__chunk000",
+  "source_file": "raw/guidance/govuk_financial_remedy__000__contents.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 190,
+  "text": "# Contents\n\n- Getting a financial agreement\n- If you agree\n- Get help agreeing\n- Get the court to decide\n- Maintenance payments\n- Tax when transferring assets\n\nWhen you divorce or end a civil partnership you and your ex-partner need to agree how to separate your finances.\n\nThis includes deciding how you’re going to divide:\n\n- pensions\n- property\n- savings\n- investments\n\nYou might get things like:\n\n- a share of your partner’s pension - including State Pension or private pension plans\n- regular maintenance payments to help with children or living expenses\n\nYou can usually avoid going to court hearings if you agree how to split your money and property.\n\nThe rules are different if you were not married or in a civil partnership . You’ll still have to agree on child maintenance payments for any children.\n\nThere are different options in Scotland and options in Northern Ireland .\n\nThis guide is also available in Welsh (Cymraeg) .",
+  "metadata": {
+    "source": "Money and property when you separate or divorce: GOV.UK guide",
+    "section": "Contents",
+    "parent_document": "Money and property when you separate or divorce: GOV.UK guide",
+    "parent_slug": "govuk_financial_remedy",
+    "section_index": 0,
+    "url": "https://www.gov.uk/money-property-when-relationship-ends",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

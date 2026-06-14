@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__023__what_does_it_mean__chunk001",
+  "source_file": "raw/guidance/advicenow_financial_order__023__what_does_it_mean.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 72,
+  "text": "### Respondent\n\nThe person who responds to proceedings for a financial order.\n\n### Settle\n\nSort out the case with your ex by reaching an agreement.\n\n### Statement of issues\n\nAn issue is something you disagree about. A statement of issues is a brief summary of what you want the court to decide for you because you can’t agree them with your ex.",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "What does it mean?",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 23,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__012__going_to_court_the_basics__chunk001",
+  "source_file": "raw/guidance/advicenow_financial_order__012__going_to_court_the_basics.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 462,
+  "text": "You can ask for help paying court fees by completing form EX160 . On the same webpage you can choose to do the form online, which you may find is easier and quicker.\n\nYou have to complete a separate application for each court fee you want help paying. This may mean you have to complete this form more than once during your case.\n\nIf you do have to pay part of or the whole fee, it is possible your ex may be willing to share the cost with you, especially if you are applying for a consent order.\n\nFor more help on this go to Help with court fees in a civil or family case . The court service has made a short video about getting help with court fees that covers the most important things you need to know about the process.\n\n### Family Procedure Rules\n\nThese rules explain what you need to do and when. You may hear lawyers talk about the ‘FPR’. What they are referring to are these rules. An individual rule often comes with one or more additional bits of guidance, called ‘practice directions’. You need to follow the ones that apply to your case. You can find the rules here Family Procedure Rules .\n\nThe good news is that only a few rules and practice directions are likely to apply to your case, unless it is very complicated. So it is not like a book - you do not have to start at the beginning and read all the way through to the end. You need to pick out the rules that are relevant to your case. We will try to help you do this by including any key rules in this guide.\n\n### How long will it take?\n\nThere are usually 3 stages in an application for a financial order when you cannot agree on what should happen: the first appointment, the financial dispute resolution appointment and the final hearing. Often people manage to compromise with the help of the judge, before getting to the final hearing.\n\nIt can take well over a year if you cannot reach an agreement, and your case ends up going all the way to a final hearing. It may take longer if you or your ex is slow to share information about your finances or your situation is complex, perhaps involving things like a family business, complicated pension arrangements or a trust. But if you can reach an agreement, you probably will not need to go through all 3 stages.",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "Going to court - the basics",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 12,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

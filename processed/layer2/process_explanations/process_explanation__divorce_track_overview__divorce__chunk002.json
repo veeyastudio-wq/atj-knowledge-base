@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__divorce_track_overview__divorce__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__divorce_track_overview__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 230,
+  "text": "**Applicant** — the person who files the divorce application. In a joint application, both spouses are applicants.\n\n**Respondent** — in a sole application, the spouse who receives the application and must file an acknowledgement of service.\n\n**Conditional order** — formerly called a decree nisi; the court's formal statement that it is satisfied the applicant is entitled to a divorce. The marriage is not ended at this stage.\n\n**Final order** — formerly called a decree absolute; the order that legally ends the marriage.\n\n**Form D8** — the application form for a divorce, dissolution, or judicial separation order.\n\n**Form D10** — the acknowledgement of service form completed by the respondent in a sole divorce application.\n\n**Form D84** — the application for a conditional order.\n\n**Form D36** — the application for a final order.\n\n**MyHMCTS** — the HMCTS online portal through which divorce applications can be filed and managed.\n\n## Related entries\n\n- process_explanation__financial_remedy_track_overview__financial_remedy\n- process_explanation__child_arrangements_track_overview__child_arrangements",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The divorce track — an overview of all five stages",
+    "track": "divorce",
+    "stage": "Stage 1 — Decision and first steps",
+    "source_refs": [
+      "govuk__divorce",
+      "fpr_2010__007",
+      "fpr_2010__009",
+      "pd_9a"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

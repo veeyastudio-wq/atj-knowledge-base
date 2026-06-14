@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk002",
+  "source_file": "raw/layer2/legal_principles/legal_principle__duty_of_full_and_frank_disclosure__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 164,
+  "text": "## Common misunderstandings\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people most commonly get wrong about the disclosure duty — e.g. believing that assets held in a company or another person's name do not need to be disclosed, not understanding that the duty continues after Form E is exchanged, underestimating the consequences of non-disclosure, or not knowing that a consent order can be set aside for non-disclosure made before it was agreed. -->\n\n## Related entries\n\n- process_explanation__financial_remedy_track_overview__financial_remedy\n- legal_principle__section_25_factors__financial_remedy\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The duty of full and frank disclosure — what it means to tell the whole truth about your finances",
+    "track": "financial_remedy",
+    "stage": "Stage 3 — Financial disclosure (Form E)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "matrimonial_causes_act_1973__003__section_25"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

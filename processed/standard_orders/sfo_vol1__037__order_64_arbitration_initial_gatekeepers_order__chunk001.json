@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__037__order_64_arbitration_initial_gatekeepers_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__037__order_64_arbitration_initial_gatekeepers_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 157,
+  "text": "The applicant shall serve the application and accompanying papers on the respondent forthwith. The service requirements of FPR 18.8 are disapplied.\n\nThe respondent may within 14 days of such service file a short skeleton argument in response including grounds of challenge, if applicable, and a proposed draft order.\n\n(Either)\n\n[The application and the accompanying documents will be considered by a circuit judge without a hearing not sooner than 21 days after issue of the application.]\n\n(Or)\n\n[The application and the accompanying documents shall be placed [before Peel J (for a case proceeding in London or on the South-Eastern circuit)] / [before [name of judge (the relevant fdlj for a case proceeding elsewhere)]] for allocation.]\n\nCosts reserved.\n\nDated  [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_64_arbitration_initial_gatekeepers_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 37,
+    "source_filename": "Order 6.4 - Arbitration Initial Gatekeeper's Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

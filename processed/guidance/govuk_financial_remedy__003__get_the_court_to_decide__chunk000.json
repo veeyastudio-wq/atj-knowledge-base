@@ -1,0 +1,21 @@
+{
+  "chunk_id": "govuk_financial_remedy__003__get_the_court_to_decide__chunk000",
+  "source_file": "raw/guidance/govuk_financial_remedy__003__get_the_court_to_decide.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 25,
+  "text": "# Get the court to decide\n\nIf you cannot agree on everything, you can ask a court to make a financial order .",
+  "metadata": {
+    "source": "Money and property when you separate or divorce: GOV.UK guide",
+    "section": "Get the court to decide",
+    "parent_document": "Money and property when you separate or divorce: GOV.UK guide",
+    "parent_slug": "govuk_financial_remedy",
+    "section_index": 3,
+    "url": "https://www.gov.uk/money-property-when-relationship-ends",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

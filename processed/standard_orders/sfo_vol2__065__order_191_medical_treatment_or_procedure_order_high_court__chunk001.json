@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__065__order_191_medical_treatment_or_procedure_order_high_court__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__065__order_191_medical_treatment_or_procedure_order_high_court.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 448,
+  "text": "[Specify (e.g. there is a commitment by the [applicant] / [2nd respondent] to fund the placement for [respondent name] at any specified medical facility or hospital.)]]\n\nOn [date] the court has made orders that restrict the reporting of information from these proceedings in the terms that are attached. These include provision that prohibit any reporting of this case until the judgment of this court has been handed down in public.\n\nIT IS DECLARED THAT:\n\n[Respondent child name] is a minor born on [date of birth], whose interests have been represented in these proceedings by [his] / [her] guardian or next friend [name].\n\n[Respondent child name] has limited capacity to consent to, to refuse or to make decisions about the medical treatment [he] / [she] should receive namely [specify the treatment and/or procedure] and all ancillary treatment.\n\nIt is lawful and in [respondent child name]’s best interests for the [treatment] [and] [procedure] to [begin] / [be carried out] forthwith.\n\nIt is lawful and in [respondent child name]’s best interests for [name of the body, institution etc] to take all reasonable and proportionate measures that ensure [respondent child name] receives any necessary life sustaining treatment [medication] / [food] / [and] / [hydration], including any measures which amount to restraint.\n\nIT IS ORDERED THAT:\n\nThe applicant is permitted to proceed with [his] / [her] / [its] application dated [date] for [specify].\n\n[Name] is appointed to act as guardian on behalf of [respondent child name].\n\nThe Official Solicitor is appointed to act as [respondent(s) name(s)]’s litigation friend.\n\nPursuant to its powers under the Senior Courts Act 1981 and the Children Act 1989 the court authorises [name of the applicant or relevant authority] to provide and undertake any reasonable and proportionate life sustaining measures that include the provision of artificial nutrition and hydration which have the effect of depriving [respondent child name] of [his] / [her] liberty are authorised by the court",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_191_medical_treatment_or_procedure_order_high_court",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 65,
+    "source_filename": "Order 19.1 - Medical Treatment or Procedure Order (High Court).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

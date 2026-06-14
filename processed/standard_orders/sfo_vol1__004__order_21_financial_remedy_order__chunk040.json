@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk040",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 40,
+  "total_chunks": 61,
+  "token_count": 481,
+  "text": "upon the expiry of this term, the [respondent] / [applicant] shall not be entitled to make any further application in relation to the marriage for an order under the Matrimonial Causes Act 1973 section 23(1)(a) or (b) for periodical payments or secured periodical payments;\n\npursuant to the Matrimonial Causes Act 1973 section 28(1A), the [respondent] / [applicant] may not apply for an order to extend this term; and\n\nupon the expiry of this term, the [respondent] / [applicant] shall not be entitled on the [applicant’s] / [respondent’s] later death to apply for an order under the Inheritance (Provision for Family and Dependants) Act 1975, section 2.\n\nFor avoidance of doubt, the [respondent] / [applicant] may not apply for an order to extend this term. Further, paragraph iv. (3) shall not apply in the event of the [applicant’s] / [respondent’s] death prior to the expiration of this term.\n\n[(For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, the spousal periodical payments shall be suspended for that year and shall automatically revive when the child commences tertiary education.)]\n\nSecured spousal periodical payments order\n\nThe [applicant] / [respondent] shall [by [time] on [date]] / [by [time] on the date [number] days after the date of this order] secure periodical payments to be made to the [respondent] / [applicant] at the rate of £[amount] per annum. Such payments shall be made from [date] and continue until the first to occur of:\n\nthe death of the [respondent] / [applicant];\n\nthe [respondent’s] / [applicant’s] remarriage;\n\n[date]; or\n\nfurther order.\n\nSuch payments shall be secured by [the sum of £[amount]] / [such security to be agreed between the parties or in default of agreement referred to the district judge] and shall be security for the [applicant’s] / [respondent’s] obligation to pay periodical payments provided for in paragraph [para number] above.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

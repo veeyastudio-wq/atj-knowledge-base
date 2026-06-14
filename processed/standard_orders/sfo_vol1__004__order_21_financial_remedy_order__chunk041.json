@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk041",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 41,
+  "total_chunks": 61,
+  "token_count": 473,
+  "text": "The security shall be used to meet the [applicant’s] / [respondent’s] obligation to pay periodical payments to the extent that this obligation is not met by the [applicant] / [respondent].\n\nThe applicant and the respondent shall [by [time] on [date]] / [by [time] on the date [number] days after the date of this order] enter into a deed of security [and in default of agreement as to the form of the deed, the matter shall be referred to conveyancing counsel of the court to settle the deed].\n\nChild periodical payments order – Interim order pending CMS calculation\n\n[By agreement between the parties] the [respondent] / [applicant] shall pay to the [applicant] / [respondent] periodical payments for benefit of the child[ren] of the family. Payments shall be at the rate of £[amount] per annum [per child], payable [weekly] / [monthly] [in advance] / [in arrears] by standing order. Payments shall start on [date], and shall end on the issue of a CMS calculation. [Payments made under this paragraph shall be received by the [applicant] / [respondent] on account of any payments that may be due under the CMS calculation.]\n\nChild periodical payments order\n\n[By agreement between the parties] the [applicant] / [respondent] shall pay to the [respondent] / [applicant] periodical payments for benefit of the child[ren] of the family. Payments shall be at the rate of £[amount] per annum per child, payable [weekly] / [monthly] [in advance] / [in arrears] by standing order. Payments shall start on [date] and shall end on:\n\neach child respectively attaining the age of 18 years or ceasing their full-time [secondary] / [tertiary] education [to first degree level] [[including] / [excluding] a gap year], whichever shall be the later; or\n\na further order.\n\n[(For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, the child periodical payments shall be suspended for that year and shall automatically revive when the child commences tertiary education.)]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

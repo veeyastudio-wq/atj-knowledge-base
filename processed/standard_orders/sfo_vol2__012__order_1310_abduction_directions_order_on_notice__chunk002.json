@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__012__order_1310_abduction_directions_order_on_notice.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 8,
+  "token_count": 479,
+  "text": "(additional orders to be added where appropriate)\n\n(video link) The [applicant] / [respondent] may attend the hearing by video link; it shall be the responsibility of the [applicant] / [respondent]’s solicitors to arrange and test the video link in consultation with the Clerk of the Rules.\n\n(interpreter) HMCTS shall arrange for an interpreter in [insert language] to attend at the hearing listed above not later than 30 minutes prior the time the hearing is listed to commence.\n\n(cafcass/child’s participation: to be used where a cafcass report is not required) The court has determined that [child(ren) name(s)] [is] / [are] too young for their views to be ascertained by a Cafcass officer.\n\nAn officer of the Cafcass High Court team shall provide a report on the issue:\n\nthe child[ren]’s views, wishes and feelings in respect of returning to [insert State];\n\nthe child[ren]’s maturity;\n\nwhether [the child] / [any of the children] should be separately represented.\n\nThe report shall be filed and served by [date].\n\nThe solicitors for the applicant shall notify Cafcass forthwith of the making of this order and shall thereafter provide a copy of the trial bundle and a copy of the draft order made today to the Cafcass High Court Team within 2 working days by email to highcourtgm@cafcass.gov.uk or Third Floor, 21 Bloomsbury Street, Fitzrovia, London WC1B 3HF or by telephone to 07810852554.\n\nThe respondent shall make the child[ren] [child(ren) name(s)] available to be seen by the Cafcass officer at a time and place to be arranged by the officer.\n\nThe Cafcass officer shall be available to attend the hearing on the [morning] / [afternoon] of [date] and shall attend if notified by a party in writing by letter or email to highcourtgm@cafcass.gov.uk at least 2 working days before the date of the final hearing that the officer’s attendance is essential.\n\nWithin one working day of the decision, the solicitor for the applicant shall inform the Cafcass officer of the outcome of the hearing, and provide a copy of the draft order.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1310_abduction_directions_order_on_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 12,
+    "source_filename": "Order 13.10 - Abduction - Directions Order (On Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__004__the_process__chunk004",
+  "source_file": "raw/guidance/advicenow_divorce__004__the_process.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 5,
+  "token_count": 3,
+  "text": "### FINISH",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "The process",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 4,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

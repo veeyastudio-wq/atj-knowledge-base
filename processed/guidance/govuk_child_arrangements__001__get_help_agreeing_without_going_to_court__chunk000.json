@@ -1,0 +1,21 @@
+{
+  "chunk_id": "govuk_child_arrangements__001__get_help_agreeing_without_going_to_court__chunk000",
+  "source_file": "raw/guidance/govuk_child_arrangements__001__get_help_agreeing_without_going_to_court.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 72,
+  "text": "# Get help agreeing without going to court\n\nYou can:\n\n- make a child arrangements plan\n- use mediation to agree on child arrangements\n- find out about other ways to agree without going to court\n\nYou can also get help and information from:\n\n- Citizens Advice\n- Advice Now\n- Children and Family Court Advisory and Support Service ( Cafcass )",
+  "metadata": {
+    "source": "Looking after children if you divorce or separate: GOV.UK guide",
+    "section": "Get help agreeing without going to court",
+    "parent_document": "Looking after children if you divorce or separate: GOV.UK guide",
+    "parent_slug": "govuk_child_arrangements",
+    "section_index": 1,
+    "url": "https://www.gov.uk/looking-after-children-divorce",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

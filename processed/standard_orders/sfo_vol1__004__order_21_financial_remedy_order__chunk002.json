@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 61,
+  "token_count": 488,
+  "text": "[etc].\n\n“PPF” means the Pension Protection Fund.\n\n“PRPA” means the person responsible for the pension arrangement.\n\nRecitals\n\n(in the case of an order made without notice)\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral evidence from [name].\n\n(in the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral evidence from [name].\n\nRecitals as to costs incurred/expected to be incurred\n\nIt is recorded that the applicant [has filed with the court and served on the respondent costs particulars in Form H1 stating that the applicant has incurred costs of [set out] and expects to incur further costs of [set out] after the date of the form (i) up to the end of the final hearing; and (ii) in implementing the proposed order for financial remedy] / [has failed to file with the court and serve on the respondent a costs estimate in Form H1 stating the costs the applicant has incurred and the costs expected to be incurred (i) up to the end of the final hearing; and (ii) in implementing the proposed order for financial remedy, and shall do so in accordance with paragraph [para number] below].\n\nIt is recorded that the respondent [has filed with the court and served on the applicant costs particulars in Form H1 stating that the respondent has incurred costs of [set out] and expects to incur further costs of [set out] after the date of the form (i) up to the end of the final hearing; and (ii) in implementing the proposed order for financial remedy] / [has failed to file with the court and serve on the applicant a costs estimate in Form H1 stating the costs the respondent has incurred and the costs expected to be incurred (i) up to the end of the final hearing; and (ii) in implementing the proposed order for financial remedy, and shall do so in accordance with paragraph [para number] below].\n\nArbitration award recital",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

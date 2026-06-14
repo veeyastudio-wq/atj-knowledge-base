@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__012__applying_for_a_conditional_order__chunk001",
+  "source_file": "raw/guidance/advicenow_divorce__012__applying_for_a_conditional_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 172,
+  "text": "If your ex doesn’t apply for a conditional order when they are asked to, the court will send you an email notification to let you know. If it is safe to do so, you could ask them to check their email to do this next stage of the process. If it is not safe or they still don’t apply, you can change your joint application to a sole application.\n\nYour application will go to the judge as a sole application and your ex will be told by email that you have changed the application from one where you go through the process together, to one where you are the only applicant.\n\nIf you are have applied on paper you both need to complete Form D84 that asks very similar questions. When you have both done all your sections you need to send it to the court by email or post - details are at the end of the form.",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "Applying for a conditional order",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 12,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

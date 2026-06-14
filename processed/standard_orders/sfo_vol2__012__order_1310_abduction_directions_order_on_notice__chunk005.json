@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk005",
+  "source_file": "raw/standard_orders/sfo_vol2__012__order_1310_abduction_directions_order_on_notice.md",
+  "layer": "layer1",
+  "chunk_index": 5,
+  "total_chunks": 8,
+  "token_count": 460,
+  "text": "[Name(s)] shall be discharged as a party to the proceedings.\n\nThe application by [name(s)] for [child(ren) name(s)] to be joined to these proceedings is refused.\n\nCourt bundle, skeleton arguments, bundle of authorities\n\n[The court bundle is limited to a single file containing no more than 350 pages including skeleton arguments.] / [There is permission for the court bundle to exceed 350 pages, such court bundle to be limited to [number] pages.]  [The parties shall file and serve skeleton arguments by 4.00pm on [date].]  [The bundle of authorities must comply with PD 27A, para 4.3.]\n\nSection 5 orders\n\nPursuant to section 5 of the Child Abduction and Custody Act 1985, [local authority] shall immediately on service of this order provide accommodation for [child(ren) name(s)] until [date].\n\nThe solicitor for the applicant shall immediately notify the local authority of the making of this order and shall serve a copy of the sealed order by email or fax as soon as it is available.\n\nThe local authority may apply to the court to vary or discharge paragraph [para number] of this order after it has given at least 24 hours’ notice to the other [parties] / [parties’ solicitors].\n\nPursuant to section 5 of the Child Abduction and Custody Act 1985 the respondent shall allow the child contact with the applicant as follows [insert details (e.g. whether contact by telephone, Skype, face to face etc. and the dates and times and other practical arrangements for contact)].\n\nExpert evidence\n\n(adapt as applicable) The parties shall jointly instruct [identify expert] or an expert to be determined by the court upon application by both parties by email by not later than 4.00pm on [date]; the [solicitor for the] [applicant] / [respondent] shall provide full details of the name of each proposed expert, their qualifications and relevant experience together with details of estimated costs and timescales; if the identity of the expert is not agreed by the parties, each party may set out brief arguments as to why one expert should be selected by the court rather than another.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1310_abduction_directions_order_on_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 12,
+    "source_filename": "Order 13.10 - Abduction - Directions Order (On Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

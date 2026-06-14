@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__011__the_process__chunk000",
+  "source_file": "raw/guidance/advicenow_financial_order__011__the_process.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 5,
+  "token_count": 485,
+  "text": "# The process\n\nWhether you are using a solicitor or doing it yourself, it’s useful to have an understanding of what is involved in a typical application for a financial order. Even though your case may be different, we hope it makes the process seem a bit less daunting.\n\nYou will come across lots of new technical words. This is the jargon that lawyers and court staff use. We think there's no getting around it - you have to understand what it means too. We explain these words here What does it mean?\n\nSometimes we describe the court as ‘doing’ things, for example, sending out a form or making a decision. It sounds a bit odd because a court is really a place. But ‘the court’ is often used as shorthand to refer to the people working in the court.\n\n### The story so far.......\n\nPat and Mo have been married for 8 years. They have 2 children; one is 6 years old and the other is 4. Pat moved out a year ago and Mo has started divorce proceedings. Mo lives in the family home and looks after the children, although the children see Pat regularly. The house is owned jointly by Mo and Pat. This is a step-by-step description of how Mo applies for a financial order. We don't describe the steps Pat has to take as well. The procedure would be the same if Pat and Mo were a same sex couple.\n\n- Mo arranges a meeting with a family mediator. At the end of the meeting the mediator fills in the relevant part of Form A and gives it to Mo. The Form A is the form that starts the process of asking for a financial order - for more information about this form, see Applying for a financial order . (If you are applying to court and asking to be exempt from going to mediation, you may need to send in evidence to support this – go to Part 3 of Form A to see what you need to show the court.)\n\n- Mo fills in a Notice of a financial application (Form A) and signs and dates it. She also fills in a document called the ‘ allocation questionnaire ’. This tells the court about the value of the case and helps court staff decide which judge should deal with the case.\n\n- Mo makes two photocopies of the Form A and the Allocation questionnaire, so she has one for the court, one for Pat and one for her to keep.",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "The process",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 11,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

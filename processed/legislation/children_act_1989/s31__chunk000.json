@@ -1,0 +1,19 @@
+{
+  "chunk_id": "s31__chunk000",
+  "source_file": "raw/legislation/children_act_1989/s31.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 320,
+  "text": "# Section 31\n\n## Part IV Care and Supervision\n\n\n### General\n\n\n#### 31 Care and Supervision\n\n\n**(1)** On the application of any local authority or authorised person, the court may make an order—\n- **(a)** placing the child with respect to whom the application is made in the care of a designated local authority; or\n- **(b)** putting him under the supervision of a designated local authority . . ..\n\n**(2)** A court may only make a care order or supervision order if it is satisfied—\n- **(a)** that the child concerned is suffering, or is likely to suffer, significant harm; and\n- **(b)** that the harm, or likelihood of harm, is attributable to—\n  - **(i)** the care given to the child, or likely to be given to him if the order were not made, not being what it would be reasonable to expect a parent to give to him; or\n  - **(ii)** the child’s being beyond parental control.\n\n**(3)** No care order or supervision order may be made with respect to a child who has reached the age of seventeen (or sixteen, in the case of a child who is married).\n\n**(3A)** A court deciding whether to make a care order—\n- **(a)** is required to consider the permanence provisions of the section 31A plan for the child concerned, but\n- **(b)** is not required to consider the remainder of the section 31A plan, subject to section 34(11).",
+  "metadata": {
+    "source": "Children Act 1989 (c. 41)",
+    "act": "Children Act 1989",
+    "section": "31",
+    "title": "Section 31",
+    "url": "https://www.legislation.gov.uk/ukpga/1989/41/section/31",
+    "version": "Latest available (Revised) — valid from 2026-05-11",
+    "scraped": "2026-06-10",
+    "licence": "Open Government Licence v3.0"
+  }
+}

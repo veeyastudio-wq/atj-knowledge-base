@@ -1,0 +1,25 @@
+{
+  "chunk_id": "document_explanation__form_a__financial_remedy__chunk001",
+  "source_file": "raw/layer2/document_explanations/document_explanation__form_a__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 467,
+  "text": "**The form is available online.** Form A can be downloaded from GOV.UK and filed by post, or submitted through the MyHMCTS online portal. No solicitor is required to file it.\n\n**Filing Form A starts contested proceedings — and triggers costs on both sides.** Once Form A is filed, both parties will begin to incur costs associated with the financial remedy process: court fees, potential expert fees for valuations, and — if either party uses a solicitor — legal costs. This is a practical consideration before filing: if there is any remaining prospect of reaching agreement by negotiation or through mediation, that route avoids the costs of proceedings.\n\n**The other party is notified automatically by the court.** The applicant does not need to serve Form A on the other party personally — the court does this. However, the applicant should be aware that the other party will be informed promptly.\n\n**The type of order specified on Form A can be updated.** Filing Form A to seek a general range of financial orders is standard practice. The specific orders sought are refined as the proceedings develop and the full financial picture becomes clear through Form E disclosure.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong about Form A — e.g. not understanding that it must follow the MIAM, filing it without understanding what type of order to seek, not appreciating that filing starts a timetable with strict deadlines, or not knowing the court fee. -->\n\n## Key terms\n\n**Financial order** — a court order that determines how a couple's finances are divided; types include property adjustment orders, lump sum orders, pension sharing orders, and periodical payments orders.\n\n**Contested proceedings** — proceedings in which the parties cannot agree and require the court to make a decision; as opposed to a consent order, which records an agreement both parties have already reached.\n\n**FDA** — First Appointment; the first court hearing in financial remedy proceedings, typically 12 to 16 weeks after Form A is filed, at which the judge gives directions toward the FDR hearing.\n\n**MIAM** — Mediation Information and Assessment Meeting; the pre-proceedings requirement that must be met (or validly exempted) before Form A can be filed.\n\n## Related entries",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Form A — applying to the court for a financial order",
+    "track": "financial_remedy",
+    "stage": "Stage 2 — Filing Form A",
+    "source_refs": [
+      "Form_A",
+      "FPR_Part_9",
+      "PD_9A",
+      "advicenow_financial_order__013__applying_for_a_financial_order"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

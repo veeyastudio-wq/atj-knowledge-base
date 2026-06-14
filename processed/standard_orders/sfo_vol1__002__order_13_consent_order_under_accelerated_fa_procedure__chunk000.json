@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 448,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\n[The Matrimonial Causes Act 1973] /\n\n[The Civil Partnership Act 2004] /\n\n[Schedule 1 to the Children Act 1989]\n\n(delete as appropriate)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] of [applicant name] and [respondent name]\n\nORDER MADE BY [NAME OF JUDGE] ON [DATE] AT A FIRST APPOINTMENT HEARING HEARD AS A PAPER EXERCISE IN THE ABSENCE OF THE PARTIES UNDER THE ACCELERATED FIRST APPOINTMENT PROCEDURE\n\nThe parties and their representation\n\nThe applicant is [applicant name], who [acts in person] / [is represented by [solicitor] / [counsel], [solicitors’ firm or counsel’s name]]\n\nThe [first] respondent is [respondent name], who [acts in person] / [is represented by [solicitor] / [counsel], [solicitors’ firm or counsel’s name]]\n\n[The second respondent is [respondent name], who [acts in person] / [is represented by [solicitor] / [counsel], [solicitors’ firm or counsel’s name]]]\n\n[The third [etc] respondent is …]\n\n(specify if any party acts by a litigation friend)\n\nRecitals\n\nThe court considered the documentation uploaded to the online portal in accordance with the Accelerated First Appointment Procedure, that is:\n\neach party’s financial statement in Form E filed in accordance with FPR 2010 r 9.14(1);\n\nTemplate ES1;\n\nTemplate ES2;\n\nFM5;\n\nany questionnaire sought to be answered (not exceeding 4 pages);\n\nthe terms of the draft agreed directions order signed by (or on behalf of) each party; and\n\ncertain other documentation vital to the court’s ability to approve the draft consent order, namely [insert].\n\nThe court satisfied itself that the draft agreed directions order contains appropriate directions to comply with FPR 2010 rr 9.15(1), (2), (3) and (7).",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_13_consent_order_under_accelerated_fa_procedure",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 2,
+    "source_filename": "Order 1.3 - Consent Order under Accelerated FA procedure.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

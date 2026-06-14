@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk052",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 52,
+  "total_chunks": 61,
+  "token_count": 481,
+  "text": "the percentage by which the [applicant’s] / [respondent’s] total [earned] income [including bonus and commission] after deduction of income tax and national insurance contributions [and car allowance and pension contributions] shall have increased between the date 15 months before the variation date (i.e. [month] in the first instance) and the date 3 months before the variation date (i.e. [month] in the first instance). The [applicant] / [respondent] shall produce their P60 and last three payslips to the [respondent] / [applicant] by [date] each year, and production of these documents shall be sufficient evidence of the [applicant’s] / [respondent’s] total income and the income tax and national insurance contributions payable on it.\n\nPayment of periodical payments by standing order\n\nThe [applicant] / [respondent] shall make payment of the sums due under paragraph [para number] [and paragraph [para number]] above by standing order into the [respondent’s] / [applicant’s] following account:\n\nName of Bank/Building Society:\t[name of bank]\n\nSort Code: \t\t\t\t[sort code]\n\nAccount Number:\t\t\t[account number]\n\nName of account holder: \t\t[name of account holder]\n\nor such other account as the [respondent] / [applicant] may from time to time nominate in writing.\n\nPermission to disclose order to CMS\n\nThere be permission under [FPR 2010, r 12.73(1)(b)] [and] / [or] [FPR 2010, r 9.46 and Practice Direction 9B] to produce a copy of this order to the CMS.\n\nVariation: periodical payments\n\nParagraph [para number] of the order in this matter dated [date] shall be varied to provide that the [applicant] / [respondent] shall pay to the [respondent] / [applicant] periodical payments. Payments shall be at the rate of £[amount] per annum, payable [weekly] / [monthly] [in advance] / [in arrears] by standing order. Payments shall start on [date], and shall end on the first to occur of:\n\nthe death of either the applicant or the respondent;\n\nthe [respondent’s] / [applicant’s] remarriage; or",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

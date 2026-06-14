@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__027__order_48_appointment_of_a_receiver_order__chunk004",
+  "source_file": "raw/standard_orders/sfo_vol1__027__order_48_appointment_of_a_receiver_order.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 5,
+  "token_count": 383,
+  "text": "The receiver will file at court accounts showing all monies [received by [him] / [her]] / [disbursed by [him] / [her]] / [remitted by [him] / [her]] by no later than [date and time] [and at [yearly] / [6 monthly] intervals thereafter].\n\nThose accounts shall be served on:\n\nThe respondent\n\nThe applicant\n\n[Specify other]\n\nThose served with the accounts shall have a right to inspect the papers relating to the receiver’s discharge of this appointment and [reflected] / [summarised] in those accounts within office hours on reasonable notice, notified to the receiver within [number] days of service of such accounts.\n\nIf the court requires the receiver to attend court in connection with an allegation of non-compliance with any rule, practice direction or direction as to the carrying out of [his] / [her] duties [he] / [she] must do so. In default the court may [terminate the appointment] / [give directions reducing the receiver’s remuneration] / [make orders as to the payment of the costs of any party].\n\nThe court may give directions requiring the receiver to pay monies into court. In default of compliance with such an order, the court may further order that interest be paid on that sum.\n\nThe following further provisions shall apply to the receiver’s remuneration:\n\n[insert].\n\nThe receiver may apply for further directions relating to the discharge of [his] / [her] functions.\n\nSums remaining due for payment under the order | £[amount]\n\nInterest to the date of the order | £[amount]\n\nQuantified costs incurred prior to the date of the hearing | £[amount]\n\nItem | Value | Likely Income\n\n[Item] | £[amount] | £[amount]\n\n[Item] | £[amount] | £[amount]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t        Case No: [Case number]",
+    "order_number": "order_48_appointment_of_a_receiver_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 27,
+    "source_filename": "Order 4.8 - Appointment of a Receiver Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

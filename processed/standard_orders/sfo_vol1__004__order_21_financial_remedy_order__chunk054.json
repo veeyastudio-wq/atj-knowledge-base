@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk054",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 54,
+  "total_chunks": 61,
+  "token_count": 501,
+  "text": "[the [applicant] / [respondent] shall pay to the [respondent] / [applicant] a lump sum of £[amount] by [time] on [date]]; [and] / [or]\n\n[there shall be provision by way of [a] pension sharing order[s] as follows:\n\nin favour of the [respondent] / [applicant] in respect of [percentage]% of the [applicant’s] / [respondent’s] rights under [his] / [her] pension arrangement[s] [pension name(s)]\n\n[etc (repeat for as many pension sharing orders are to be made)]\n\nin accordance with the pension sharing annex[es] attached to this order.\n\nthere be the following consequential directions:\n\nit being agreed between the parties that in the event that the [respondent] / [applicant] non-member spouse predeceases the [applicant] / [respondent] member spouse after this order has taken effect but before its implementation the [applicant] / [respondent] member spouse shall [in order to prevent a loss of pension rights to the family overall] have the consent of the personal representatives of the [respondent] / [applicant] non-member spouse to apply to appeal out of time against the order under the Matrimonial Causes Act 1973, s 40A or s 40B (there being no requirement to obtain permission to apply to set aside an order under FPR 2010 r 9.9A).\n\nboth parties shall do all that is necessary to implement the pension sharing order[s] promptly, including, but not limited to, the signing and returning of any documents related to the implementation [promptly] / [within [21] / [28] days] from a written request by any person properly concerned with the implementation process and paying [promptly] / [within [21] / [28] days] from a proper written request for the share of the fee ordered by the court and required by the pension arrangement to effect implementation.\n\n[the [applicant] / [respondent] shall not intentionally claim, draw down, transfer or otherwise deal with any pension benefits subject to a pension sharing order in this order until the pension share so ordered has been implemented, save in the event of prior written agreement as between the parties].]\n\n[The arrears under paragraph [para number] of the order in this matter dated [date] accrued to [date] shall be remitted.]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

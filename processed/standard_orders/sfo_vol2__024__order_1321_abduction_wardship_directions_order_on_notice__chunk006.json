@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__024__order_1321_abduction_wardship_directions_order_on_notice__chunk006",
+  "source_file": "raw/standard_orders/sfo_vol2__024__order_1321_abduction_wardship_directions_order_on_notice.md",
+  "layer": "layer1",
+  "chunk_index": 6,
+  "total_chunks": 7,
+  "token_count": 230,
+  "text": "There shall be permission to [name] to serve this order and the proceedings on [name] by email and by post to their last known address in England and Wales and through the Central Authority of England and Wales.\n\nCosts be reserved.\n\nDated [date]\n\nNotice\n\nYou [applicant name] may be sent to prison for contempt of court if you break the promise that have been given to the court\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be sent to prison for contempt of court\n\n[applicant name] [signed on [his] / [her] behalf by [applicant firm name]]\n\nNotice\n\nThe firm of solicitors [applicant firm name] may be fined or sent to prison for contempt of court if the promise that have been given to the court is broken\n\nStatement of understanding\n\nI understand the undertakings that I have given, and that if I break any of my promises to the court I may be sent to prison for contempt of court\n\n[applicant solicitor name] [on behalf of [applicant firm name]]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1321_abduction_wardship_directions_order_on_notice",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 24,
+    "source_filename": "Order 13.21 - Abduction - Wardship Directions Order (On Notice).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

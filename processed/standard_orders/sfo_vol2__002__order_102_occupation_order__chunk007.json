@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__002__order_102_occupation_order__chunk007",
+  "source_file": "raw/standard_orders/sfo_vol2__002__order_102_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 7,
+  "total_chunks": 19,
+  "token_count": 473,
+  "text": "[The [applicant [applicant name]] [and] / [or] [respondent [respondent name]] shall discharge the [mortgage payments] / [rental payments] in respect of [the family home] / [the property at [property short name]].\n\n[The [applicant [applicant name]] [and] / [or] [respondent [respondent name]] shall discharge the following outgoings in respect of [the family home] / [the property at [property short name]]: [specify outgoings].\n\nThe applicant [applicant name] shall pay to the respondent [respondent name] £[amount] each [week] / [month], for the use of [the family home] / [the property at [property short name]].\n\nThe applicant [applicant name] shall keep and use the [furniture] / [contents] / [specify (if necessary)] of the [the family home] / [the property at [property short name]].\n\nThe respondent [respondent name] shall return to the applicant [applicant name] the [furniture] / [contents] / [specify (if necessary)] of [the family home] / [the property at [property short name]] by no later than [time and date].\n\nThe applicant [applicant name] shall take reasonable care of the [furniture] / [contents] / [specify (if necessary)] of [the family home] / [the property at [property short name]].\n\nThe applicant [applicant name] shall take all reasonable steps to keep secure [the family home] / [the property at [property short name]] and the [furniture] / [contents] / [specify (if necessary)].\n\nDuration of Occupation Order under Section 33 of the Family Law Act / Power of Arrest\n\nParagraph[s] [para number] of this order shall be effective against the respondent [respondent name] once it is personally served on [him] / [her] [and] / [or] once [he] / [she] is made aware of the terms of this order whether by personal service or otherwise.\n\nParagraph[s] [para number] of this order shall last until [date and time] unless it is set aside or varied before then by an order of the court.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 2,
+    "source_filename": "Order 10.2 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

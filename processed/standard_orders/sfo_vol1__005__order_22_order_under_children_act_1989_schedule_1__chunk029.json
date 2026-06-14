@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__005__order_22_order_under_children_act_1989_schedule_1__chunk029",
+  "source_file": "raw/standard_orders/sfo_vol1__005__order_22_order_under_children_act_1989_schedule_1.md",
+  "layer": "layer1",
+  "chunk_index": 29,
+  "total_chunks": 63,
+  "token_count": 500,
+  "text": "Orders\n\nIT IS ORDERED (BY CONSENT):\n\nLump sum order\n\nThe [respondent] / [applicant] shall pay to the [applicant] / [respondent] for the benefit of the child[ren] of the family a lump sum of £[amount] by [time and date] / [[time] on the date [number] days after the date of this order] [to meet the [applicant’s] / [respondent’s] [removal costs] / [costs of furnishing the child[ren] of the family’s new home] / [costs of redecorating the child[ren] of the family’s new home] / [costs of purchasing a new car] / [etc]].\n\n(either, if the lump sum is more than £5,000) If the [respondent] / [applicant] fails to pay all or any part of this lump sum [by [date for payment]] / [within [number] days of [date for payment]] simple interest shall accrue on the remaining balance of the lump sum at [the rate applicable for the time being to a High Court judgment debt] / [the rate of [percentage]% per annum].\n\n(or, if the lump sum is less than £5,000) If the [respondent] / [applicant] fails to pay all or any part of this lump sum [by [date for payment]] / [within [number] days of [date for payment]], the [respondent] / [applicant] shall pay to the [applicant] / [respondent] a further lump sum calculated as follows: £[amount] per day from [date after date for payment] until the lump sum payment referred to at paragraph [para number of a.] above is paid in full.\n\nSeries of lump sum orders\n\nThe [respondent] / [applicant] shall pay to the [respondent] / [applicant] for the benefit of the child[ren] of the family a series of lump sums:\n\n£[amount] by [time and date] / [[time] on the date [number] days after the date of this order];\n\n£[amount] by [time and date] / [[time] on the date [number] days after the date of this order]; and\n\n£[amount] by [time and date] / [[time] on the date [number] days after the date of this order].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_22_order_under_children_act_1989_schedule_1",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 5,
+    "source_filename": "Order 2.2 - Order under Children Act 1989, Schedule 1.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

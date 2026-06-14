@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk051",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 51,
+  "total_chunks": 61,
+  "token_count": 457,
+  "text": "In the event of the [applicant] / [respondent] not having restored [his] / [her] claim(s) by [date (e.g. by the date three months after the date on which the youngest surviving child of the family attains the age of 18 or ceases full-time secondary education)], [his] / [her] claims shall be dismissed.\n\nThe [respondent] / [applicant] shall indemnify the [applicant] / [respondent] against [his] / [her] liability to make any [further] financial provision for the child[ren] of the family.\n\nAnnual variation in periodical payments\n\n(either)\n\nThe periodical payments set out in paragraph [para number] [and paragraph [para number] above] shall be varied automatically on the “variation date”, which shall be on the date of the payment due in [month] and at yearly intervals afterwards. The change in the payments shall be the percentage [change] / [increase], if any, between the [consumer prices index] / [consumer prices index including owner occupiers’ housing costs] for the month 15 months before the variation date (i.e. [month] in the first instance) and the [consumer prices index] / [consumer prices index including owner occupiers’ housing costs] for the month 3 months before the variation date (i.e. [month] in the first instance).\n\n(or)\n\nThe periodical payments set out in paragraph [para number] [and paragraph [para number] above] shall be varied automatically on the “variation date”, which shall be on the date of the payment due in [month] and at yearly intervals afterwards. The change in payments shall be the [greater] / [lesser] of:\n\nthe percentage [change] / [increase], if any, between the [consumer prices index] / [consumer prices index including owner occupiers’ housing costs] for the month 15 months before the variation date (i.e. [month] in the first instance) and the [consumer prices index] / [consumer prices index including owner occupiers’ housing costs] for the month 3 months before the variation date (i.e. [month] in the first instance); and",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

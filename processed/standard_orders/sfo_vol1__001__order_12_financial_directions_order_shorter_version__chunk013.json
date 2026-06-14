@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__001__order_12_financial_directions_order_shorter_version__chunk013",
+  "source_file": "raw/standard_orders/sfo_vol1__001__order_12_financial_directions_order_shorter_version.md",
+  "layer": "layer1",
+  "chunk_index": 13,
+  "total_chunks": 20,
+  "token_count": 478,
+  "text": "[Save as is expressly ordered by the court, the PODE’s written report shall be admissible without the attendance at court of the PODE.]\n\nTaxation Issues\n\n(see alternative versions in order 1.1)\n\nThe parties shall jointly instruct an [accountant] / [appropriate expert] to act as a single joint expert and to provide a report, addressing the tax liabilities, if any, and date(s) for payment, which would arise whether in the UK or elsewhere in each of the following scenarios:\n\nthe disposal by [either party] / [the applicant] / [the respondent] of [their] / [his] / [her] interest in [the family home] / [other property/ies name];\n\nthe transfer by [either party] / [the applicant] / [the respondent] of [their] / [his] / [her] interest in [the family home] / [other property/ies name] to [the other] / [the respondent] / [the applicant];\n\nthe settling by [either party] / [the applicant] / [the respondent] of [their] / [his] / [her] interest in [the family home] / [other property/ies name] on [the other] / [the respondent] / [the applicant];\n\nthe disposal by either party of [insert] / [any of their other assets], [including the [applicant’s] / [respondent’s] offshore assets];\n\nthe transfer by either party of [insert] / [any of their other assets] to the other, [including the [applicant’s] / [respondent’s] offshore assets];\n\nthe repatriation of any of the [applicant’s] / [respondent’s] offshore assets;\n\nthe possible methods of mitigating the amount of tax due in any of the above scenarios, and the likely effects of such mitigation on the amounts of tax due;\n\n[etc]\n\nThe identity of the expert shall be [expert name] / [chosen in accordance with paragraph [para number] above].\n\nThe letter of instruction [and [insert any other documents]] shall be sent to the expert by [time and date].\n\nThe report shall be sent to the court in electronic format and served on the parties simultaneously by [time and date].\n\nBusiness Valuation\n\n(see alternative versions in order 1.1)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_12_financial_directions_order_shorter_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 1,
+    "source_filename": "Order 1.2 - Financial Directions Order (shorter version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

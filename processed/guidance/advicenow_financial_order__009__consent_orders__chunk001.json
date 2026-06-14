@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__009__consent_orders__chunk001",
+  "source_file": "raw/guidance/advicenow_financial_order__009__consent_orders.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 151,
+  "text": "If you can afford it, it will be very helpful to get some legal advice on a draft consent order prepared by your ex’s solicitor. Go to the box on the right at the top of this section to get affordable advice from one of our panel members.\n\nIf you want legal advice from a solicitor about how to prepare the draft consent order or to do all the drafting for you, you can contact one of our panel of solicitors directly to get information on likely costs and time scales, or you can go to the section called More help and advice .\n\nGetting advice at this point in the process is extremely helpful. We have teamed up with Resolution to provide a panel of expert family solicitors that can help you with this for a low cost.",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "Consent orders",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 9,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

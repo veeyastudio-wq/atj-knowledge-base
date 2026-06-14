@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__034__order_1330_abduction_port_alert_order_freestanding_without_tipstaff__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__034__order_1330_abduction_port_alert_order_freestanding_without_tipstaff.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 130,
+  "text": "The solicitors acting for [applicant] / [respondent] shall provide in writing to the National Border Targeting Centre by e-mail to NBTCsafeguarding@gmp.pnn.police.uk, 24 hour contact details of the solicitor with conduct of this matter (\"the nominated person\") so that, in the event of [child(ren)s’s name(s)] being found at a port, the  National Border Targeting Centre can inform the nominated person immediately.\n\nPermission is granted to the National Border Targeting Centre to apply on written notice to vary or discharge paragraphs [para numbers] of this order.\n\nDated [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1330_abduction_port_alert_order_freestanding_without_tipstaff",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 34,
+    "source_filename": "Order 13.30 - Abduction - Port Alert Order (Freestanding - without Tipstaff).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "chunk_id": "C8__chunk000",
+  "source_file": "raw/court_forms/C8.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 438,
+  "text": "# Apply to keep your contact details confidential: Form C8\n\nUse this form to ask the court to keep yours and your children's contact details private from other parties in family court proceedings.\n\n## Form Content\n\nHMCTS USE ONLY\nC8\nConfidential contact details\nFamily Procedure Rules 2010 Rule 29.1\nUse this form if you do not want to reveal your contact details.\nFor example, this may be because you believe someone involved in the\ncase could harm you or a child.\nYou can also use this form if you do not want to reveal the contact\ndetails of another person in the case.\nContact details include an address, phone number, email address, and\nthe name of anyone a child lives with, if that person is not already part of\nthe case.\nThese details will be kept for use by the court and by the Children and\nFamily Court Advisory and Support Service (Cafcass), Cafcass Cymru or\na local authority, if any of them are involved in your case. They will not be\nrevealed to anyone else unless the court orders that this should happen.\nYou must make sure that any forms or documents you submit to the\ncourt do not include the confidential contact details. This includes\ndocuments from other people, such as medical or financial reports.\nCourt staff cannot check the documents you submit for any\nunintended sharing of confidential contact details.\n1. Name of court\n2. Case number\n3. The full name(s) of the child(ren)\nPage 1\nC8 Confidential contact details (06.26) ©Crown copyright 2026\n\n4. The name of the person whose details are to be kept confidential\n5. Is this person currently a resident in a refuge?\nYes\nNo\nDo not know\nThe omitted contact details\nList below the contact details that you wish to keep confidential. Only include\ncontact details which you believe the other people in the case do not already know.\nIf you want another person’s details kept confidential, complete a separate form for\neach person.\nPage 2\nC8 Confidential contact details (06.26)",
+  "metadata": {
+    "form_id": "C8",
+    "title": "Apply to keep your contact details confidential: Form C8",
+    "description": "Use this form to ask the court to keep yours and your children's contact details private from other parties in family court proceedings.",
+    "track": "children",
+    "landing_url": "https://www.gov.uk/government/publications/form-c8-confidential-contact-details-family-procedure-rules-2010-rule-291",
+    "pdf_url": "https://assets.publishing.service.gov.uk/media/6a103f2229bb11891b1cf073/C8_0626_save.pdf",
+    "version_date": "2026-06-04",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "form_fields": [
+      "Check Box 23",
+      "Check Box 24",
+      "Check Box 25",
+      "Check Box 26",
+      "Check Box 27",
+      "Check Box 30",
+      "Check Box 31",
+      "Check Box 36",
+      "Text Field 87",
+      "Text Field 88",
+      "Text Field 89",
+      "Text Field 90",
+      "Text Field 92",
+      "Text1",
+      "Text2",
+      "Text3",
+      "Text4",
+      "Text5"
+    ]
+  }
+}

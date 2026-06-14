@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__008__order_32_search_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__008__order_32_search_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 9,
+  "token_count": 482,
+  "text": "# In the Family Court\t\tCase No: [Case number]\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\n[The Matrimonial Causes Act 1973] /\n\n[The Civil Partnership Act 2004] /\n\n[The Matrimonial and Family Proceedings Act 1984 and Schedule 7 to the Civil Partnership Act 2004] /\n\n[The Senior Courts Act 1981]\n\n(Delete as appropriate)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] of [applicant name] and [respondent name]\n\nAfter hearing [name the advocates(s) who appeared]\n\nAfter reading the statements and hearing the witnesses specified in the recitals below\n\nSEARCH ORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN PRIVATE\n\nTO [RESPONDENT NAME] OF [RESPONDENT ADDRESS]\n\nWARNING: IF YOU [RESPONDENT NAME] DISOBEY THIS ORDER YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED OR HAVE YOUR ASSETS SEIZED\n\nANY OTHER PERSON WHO KNOWS OF THIS ORDER AND DOES ANYTHING WHICH HELPS OR PERMITS [RESPONDENT NAME] TO BREACH THE TERMS OF THIS ORDER MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED OR HAVE THEIR ASSETS SEIZED\n\nThe parties and other relevant persons\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n(Specify if any party acts by a litigation friend)\n\nThe applicant’s solicitor is [applicant’s firm name]\n\nThe supervising solicitor is [supervising solicitor’s firm name]\n\nDefinitions and interpretation\n\nIf there is more than one respondent:\n\nunless otherwise stated, references in this order to ‘the respondent’ mean both or all of them; and\n\nthis order is effective against any respondent on whom it is served or who is given notice of it.\n\nThis order must be complied with by:\n\nthe respondent;\n\nany director, officer, business partner, or responsible employee of the respondent; and\n\nif the respondent is an individual, any other person having responsible control of the premises to be searched.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_32_search_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 8,
+    "source_filename": "Order 3.2 - Search Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

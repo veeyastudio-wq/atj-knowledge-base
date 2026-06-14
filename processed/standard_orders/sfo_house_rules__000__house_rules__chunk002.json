@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_house_rules__000__house_rules__chunk002",
+  "source_file": "raw/standard_orders/sfo_house_rules__000__house_rules.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 447,
+  "text": "Language\n\nClear English (or Welsh in Wales) should be used at all times. Archaic legal language (“the party of the first part”, “hereinabove”, “heretofore” etc.) should be avoided.\n\nIf definitions are required, they shall appear in the recitals. Abbreviations may be used.\n\nIn the body of the order, parties should be referred to by their status (e.g. “applicant” and “respondent”) rather than by their role in the proceedings (e.g. the mother, the father etc.).\n\nAlthough not grammatically pure the plural pronoun “their” should be used in a singular sense instead of “his or hers”.\n\nAn obligation to do an act as provided for in an order shall be taken to include causing the act to take place. Thus the phrase “or cause to be paid”, does not need to be included in an order.\n\nAn obligation to do an act within a specified period shall state the actual date and time by which the act must be done.\n\nWhere a direction or order is for a party to do something, it must be directed to the party and not to their solicitor.\n\nDates shall be specified without ordinal possessives and must use the full name of the month and the year in full form (e.g. 17 May 2013 and not 17th May 2013 or 17/5/13 or May 17th, 2013 or “this 17th day of May 2013”). Times must be stated using the 24-hour format (e.g. 17:00 or 12:00, not 5pm or noon).\n\nDistances should be specified metrically up to 1,000 metres. Beyond that distance either system, imperial or metric, may be used.\n\nMonetary sums shall be denoted numerically, save that for sums expressed in millions the abbreviation “m” may be used. Other variants e.g. “M” or “millions” should not be used. Currencies shall be expressed by the usual symbols. Thus, for example, £, €, US$ and A$ should be used, not GBP, EUR, USD and AUD.",
+  "metadata": {
+    "source": "Standard Family Orders — House Rules (May 2023)",
+    "title": "FAMILY ORDERS",
+    "order_number": "houserulesmay2023",
+    "volume": "house_rules",
+    "parent_document": "Standard Family Orders — House Rules (May 2023)",
+    "parent_slug": "sfo_house_rules",
+    "section_index": 0,
+    "source_filename": "HouseRules.May2023.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2023/05/HouseRules.May2023.docx",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

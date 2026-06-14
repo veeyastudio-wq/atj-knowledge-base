@@ -1,0 +1,23 @@
+{
+  "chunk_id": "process_explanation__fhdra_hearing__child_arrangements__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fhdra_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 471,
+  "text": "**If the case does not settle**, the judge gives directions. These may include:\n\n- An order for a full welfare report (a Section 7 report) from CAFCASS.\n- Directions for the filing of witness statements.\n- Referral to a local authority for a Section 37 report if there are public law concerns.\n- A further hearing — usually a Dispute Resolution Appointment (DRA) — with a date set.\n- In some cases, an interim child arrangements order governing contact or residence while the proceedings continue.\n\n## What to know if you're unrepresented\n\n**Read the safeguarding letter before the hearing.** CAFCASS prepares the safeguarding letter based on police and children's services checks and on the telephone conversations with both parties. Both parties should receive it before the hearing date. The letter may contain factual errors or characterisations of the telephone conversation that a party wishes to address. The FHDRA is the appropriate time to raise any concerns about the letter's accuracy — not through argument, but by calmly and specifically identifying what is said to be incorrect.\n\n**CAFCASS is not an advocate for either party.** The CAFCASS officer at the FHDRA is an officer of the court. Their role is to assist the court in identifying welfare concerns and to facilitate discussion if it is safe to do so. Questions can be directed to the CAFCASS officer about what the safeguarding letter says and what evidence was relied upon.\n\n**The FHDRA is not the time to present the full case.** The judge is not making a final decision at this hearing. Lengthy statements of grievance, detailed accounts of past events, or attempts to persuade the judge of the substantive position are not appropriate at the FHDRA and are unlikely to advance the case.\n\n**Agreement reached at the FHDRA is binding.** If the parties reach an agreement and the judge makes a consent order, that order is legally enforceable. Agreeing to terms at the FHDRA without fully understanding what is being agreed — or without considering whether the terms are workable — can create problems later.\n\n**An interim order may be made.** The judge may make an interim order governing arrangements for the child while the case continues. This is not the final decision, but it will govern the position until the next hearing.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the First Hearing Dispute Resolution Appointment (FHDRA)?",
+    "track": "child_arrangements",
+    "stage": "Stage 4 — First Hearing Dispute Resolution Appointment (FHDRA)",
+    "source_refs": [
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

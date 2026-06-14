@@ -1,0 +1,36 @@
+{
+  "chunk_id": "D84__chunk001",
+  "source_file": "raw/court_forms/D84.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 489,
+  "text": "3. Has the respondent filed an acknowledgment of service? Note 3: The respondent can\nfile an acknowledgement of\nYes. A paper acknowledgement of service has been filed. service by sending a paper\nGo to question 4. version to the court or by\ncompleting it online using\nYes. An online acknowledgement of service has been filed. the MyHMCTS portal.\nGo to Section C.\nNo. Go to question 6.\n4. Who has signed the paper version of the acknowledgment of service?\nthe respondent (you must attach a copy of the\nacknowledgment of service to this form, marked with an ‘A’)\na legal representative. Go to Section C.\n5. I identify the signature appearing in the statement of truth signature\nbox on the paper version of the acknowledgement of service, a copy\nof which I have attached to this statement and marked ‘A’, as the\nsignature of my\nspouse\ncivil partner\nwho is the respondent in these proceedings.\nNow go to Section C\n6. The respondent has not filed an acknowledgement of service,\nI have attached\na certificate of service (form FP6)\nan order from the court dispensing with or deeming service\nother evidence of service (specify below and attach any\nrelevant evidence)\nNow go to Section C\nPage 2\nD84 Application for a conditional order or (judicial) separation order (03.24)\n\nB. Joint applicants\nThis section should be completed by applicants who made the\ndivorce/dissolution/(judicial) separation application jointly. If you\nwish to proceed as a sole applicant at this stage, please complete\nquestion 10 below.\n7. Full name of applicant 1\nFirst name(s)\nMiddle name(s)\nLast name\n8. Full name of applicant 2\nFirst name(s)\nMiddle name(s)\nLast name\nComplete either question 9 or question 10\n9. This is a joint application and we both apply to the judge to make a\nconditional order of\ndivorce in this case\ndissolution in this case\nor\nin the case of (judicial) separation, the joint applicants apply to the\njudge for a\n(judicial) separation order in this case\nNow go to Section C\nPage 3\nD84 Application for a conditional order or (judicial) separation order (03.24)",
+  "metadata": {
+    "form_id": "D84",
+    "title": "Apply for a conditional order or judicial separation order: Form D84",
+    "description": "Use this form to apply for a conditional order confirming that the court does not see any reason why you cannot divorce or separate.",
+    "track": "divorce",
+    "landing_url": "https://www.gov.uk/government/publications/form-d84-apply-for-a-conditional-order-or-judicial-separation-order",
+    "pdf_url": "https://assets.publishing.service.gov.uk/media/65f972ebaa9b760011fbda3d/D84_0324.pdf",
+    "version_date": "2024-06-13",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "form_fields": [
+      "Case number",
+      "Name of applicant 2",
+      "Name of respondent",
+      "Name of sole applicant or applicant 1",
+      "Or, in the case of (judicial) separation, the sole applicant applies to the judge for a (judicial) separation order in this case",
+      "Text Field 100",
+      "Text Field 101",
+      "Text Field 76",
+      "Text Field 77",
+      "Text Field 78",
+      "Text Field 79",
+      "Text Field 80",
+      "Text Field 81",
+      "Text Field 99"
+    ]
+  }
+}

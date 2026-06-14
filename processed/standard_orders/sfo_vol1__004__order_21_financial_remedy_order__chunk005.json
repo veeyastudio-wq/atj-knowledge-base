@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk005",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 5,
+  "total_chunks": 61,
+  "token_count": 485,
+  "text": "The parties agree that the contents of [the family home] / [[other property full address] known as “[other property name]”] shall [remain the absolute property of the person in whose possession they now are] / [be divided in accordance with schedule[s] [number/letter] attached to this order] / [be divided between the parties by agreement by [date] and in the event that the parties cannot reach agreement by then either of them shall be free to make an application to the court for it to decide the issue, save that it is recorded that in the event that there has been no agreement, order or further application made to the court by [date] all claims in respect of the contents of [the family home] [and] / [or] / [other property name] shall be dismissed and such contents shall remain the absolute property of the person in whose possession they are as at that date] / [remain the absolute property of the [applicant] / [respondent] except for [insert] / [the items attached at schedule [insert] attached to this order] which are to be retained by the [respondent] / [applicant] and shall be made available by the [applicant] / [respondent] for collection [on or before [date]] / [on the date of completion of the sale of the property] / [on [other specified event]]]. The [applicant] / [respondent] agrees to give the [respondent] / [applicant] access to [the family home] / [other property name] to collect such items on receiving [number] days’ notice from [him] / [her] of [his] / [her] wish to do so.\n\nAgreement to refer to arbitration\n\nThe parties agree to refer to arbitration any future dispute between them in relation to [the implementation of paragraph [para number] of this order] / [the variation of paragraph [para number] of this order] / [specify (e.g. chattels)] [which [arises out of or is in connection with this order and] falls within the scope of the IFLA financial scheme].\n\nThe following provisions shall apply:\n\nThe arbitration shall be conducted in accordance with and the parties shall be bound by the IFLA financial scheme rules (‘the rules’) in force at the date of the commencement of the arbitration;",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

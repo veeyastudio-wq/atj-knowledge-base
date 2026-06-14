@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk009",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 9,
+  "total_chunks": 61,
+  "token_count": 494,
+  "text": "____________________________________________\n\n[applicant name]\n\n____________________________________________\n\n[respondent name]\n\nUndertaking to stand as guarantor\n\n[The [applicant] / [respondent] shall stand as guarantor in relation to the mortgage secured upon [family home address] / [other property address] in favour of [company] [for a term of [number] years].] / [The [applicant] / [respondent] shall, [if and only if it shall be necessary to enable the [respondent] / [applicant] to obtain borrowing on reasonable terms], guarantee a mortgage of up to £[amount] to be taken out by the [respondent] / [applicant] on [his] / [her] purchase of [property] or such property [within England and Wales] as [he] / [she] shall [within one year of the date of this order offer to] purchase as [his] / [her] principal residence provided that, if the [respondent] / [applicant] shall default in making any of the payments due under the mortgage and the [applicant] / [respondent] shall be called upon to make any payments under the guarantee, the [respondent] / [applicant] shall indemnify [him] / [her] in respect of that  liability and any consequential interest or charges [and shall repay the sum due immediately upon written request from the [applicant] / [respondent] and in default of such a payment the [applicant] / [respondent] shall be entitled to deduct the same from the periodical payments due to the [respondent] / [applicant] under the terms of this order.]]\n\nThe [respondent] / [applicant] shall forthwith [in the event of [her] / [his] remarriage] [or in the event that [she] / [he] shall have cohabited with another person [for a [continuous] period of more than [period] / [for a period of [number] months in any [number] month period]] take all such steps as shall be necessary to procure the release of the [applicant] / [respondent] from all liability under the guarantee.\n\nUndertaking to discharge liabilities\n\nThe [applicant] / [respondent] shall discharge as and when each payment becomes due, be solely responsible for and in any event indemnify the [respondent] / [applicant] against:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

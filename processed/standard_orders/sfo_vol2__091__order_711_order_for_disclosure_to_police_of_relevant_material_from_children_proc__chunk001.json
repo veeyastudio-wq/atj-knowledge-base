@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__091__order_711_order_for_disclosure_to_police_of_relevant_material_from_children_proc__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__091__order_711_order_for_disclosure_to_police_of_relevant_material_from_children_proc.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 458,
+  "text": "[Name] has been charged on [date] with [offence(s)]. That matter is listed for [hearing type in criminal proceedings] on [date].\n\n[Name of police force] applied within these proceedings for disclosure on [date], and such application was served on the parties.\n\n[Name] applied for an order restraining any party from disclosing the judgments dated [date(s)] to the police.\n\n(If a party consents to the disclosure that fact should be recited)\n\n[Name(s)] [has] / [have] consented to the documents listed in this order being disclosed to [name of police force].\n\nThis order is made without prejudice to section 12 of the Administration of Justice Act 1960 (as amended by chapter 7 of Part 12 of the Family Procedure Rules 2010 and Practice Direction 12G).\n\nIt is recorded that any unauthorised disclosure of the judgments named in this order would be a contempt of court.\n\nIT IS ORDERED [BY CONSENT] THAT:\n\nThe application by [name] for an order restraining any party from disclosing the judgment[s] dated [date(s)] is refused.\n\n[Name] may disclose to [name of police force] for use in relation to the current criminal investigation the following:\n\nThe judgments in these proceedings of [date(s)].\n\nAll documents in the court bundle for case number [case number] as listed in the index [dated] / [to the bundle for the hearing on [date]].\n\n[Or insert a list of specific documents]\n\n[Name of police force] are permitted to disclose the information and documents listed at paragraph [para number] to the Crown Prosecution Service to inform any charging decision and for use in any ensuing criminal prosecution.\n\nShould there be a prosecution of a party in these proceedings, [name of police force] and the Crown Prosecution Service are permitted to disclose the information and documents listed at paragraph [para number] to the defence solicitors of that party.\n\nThe information and documents listed in paragraph [para number] may be used only for the purposes of the criminal investigation/prosecution by [name of police force] and the Crown Prosecution Service and must not be disclosed to any third party not mentioned in this order without the express permission of this court.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_711_order_for_disclosure_to_police_of_relevant_material_from_children_proc",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 91,
+    "source_filename": "Order 7.11 - Order for Disclosure to Police of Relevant Material from Children Proceedings other than Care Proceedings.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

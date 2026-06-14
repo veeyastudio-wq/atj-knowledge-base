@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_financial_order__011__the_process__chunk001",
+  "source_file": "raw/guidance/advicenow_financial_order__011__the_process.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 5,
+  "token_count": 236,
+  "text": "- Mo makes two photocopies of the Form A and the Allocation questionnaire, so she has one for the court, one for Pat and one for her to keep.\n\n- Mo sends the Form A and the copies to the court, following the instructions at the end of the form on where to send it. She completes Form EX160 - applying for help to pay the court fee and includes that as well.\n\n- The court sends Mo and Pat a Notice of a first appointment (Form C) and the Form A to Pat. The Notice of a first appointment tells you when and where your first hearing with a judge will take place. It also tells you what you must do before you meet the judge and any deadlines you must meet. The court checks that Mo and Pat have tried mediation or another method of non-court dispute resolution. If the court does not think they have made an effort to sort out their issues out of court, the judge can pause the application and ask them to try again.\n\n- Mo checks Form C to find out what documents she has to prepare before the first appointment. Form C tells her she must send the following to the court (and send copies to Pat).",
+  "metadata": {
+    "source": "How to apply for a financial order without a lawyer: Advicenow",
+    "section": "The process",
+    "parent_document": "How to apply for a financial order without a lawyer: Advicenow",
+    "parent_slug": "advicenow_financial_order",
+    "section_index": 11,
+    "url": "https://www.advicenow.org.uk/guides/how-apply-financial-order-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

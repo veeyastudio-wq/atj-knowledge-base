@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__001__order_12_financial_directions_order_shorter_version__chunk012",
+  "source_file": "raw/standard_orders/sfo_vol1__001__order_12_financial_directions_order_shorter_version.md",
+  "layer": "layer1",
+  "chunk_index": 12,
+  "total_chunks": 20,
+  "token_count": 455,
+  "text": "The parties shall jointly instruct [name of PODE] / [a suitable PODE, whose name shall be identified] as a single joint expert to provide a report in accordance with the attached letter of instruction, addressing:\n\nthe most cost-effective way to divide the pension provision available to [the applicant] / [the respondent] / [both parties] between the parties so as to provide equality of pension income [now] / [when the [applicant] / [respondent] reaches the age of [60] / [65]] / [when the parties reach their respective state pension age] / [other];\n\nan estimate of the pension income that would be receivable by the [applicant] / [respondent] in each of the scenarios in paragraph i. above;\n\nthe most cost-effective way to divide the pension provision available to [the applicant] / [the respondent] / [both parties] between the parties so as to achieve equality of [capital value] / [CE] of those pensions;\n\n[etc].\n\nThe identity of the expert[s] shall be [expert name[s]] / [chosen in accordance with paragraph [para number] above].\n\nThe letter of instruction [and [insert any other documents]] shall be sent to the PODE by [time and date].\n\nThe report shall be sent to the court in electronic format and served on the parties simultaneously by [time and date].\n\nThe costs charged by the PODE for preparing the report shall be met by the [applicant] / [respondent] / [parties equally] in the first instance.\n\n[Any questions shall be put to the PODE by no later than 10 days after receipt of the report (in accordance with FPR 2010 r 25.10).]\n\n[The PODE shall respond to those questions by [time and date].]\n\n[The costs charged by the PODE for answering those questions shall be met by the [applicant] / [respondent] / [parties equally] / [party raising them] in the first instance.]\n\n[Save as is expressly ordered by the court, the PODE’s written report shall be admissible without the attendance at court of the PODE.]\n\nTaxation Issues\n\n(see alternative versions in order 1.1)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_12_financial_directions_order_shorter_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 1,
+    "source_filename": "Order 1.2 - Financial Directions Order (shorter version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

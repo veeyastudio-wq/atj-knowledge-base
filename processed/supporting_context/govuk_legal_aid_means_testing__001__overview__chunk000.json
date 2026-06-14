@@ -1,0 +1,22 @@
+{
+  "chunk_id": "govuk_legal_aid_means_testing__001__overview__chunk000",
+  "source_file": "raw/supporting_context/govuk_legal_aid_means_testing__001__overview.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 175,
+  "text": "# Overview\n\nMeans testing to assess financial eligibility is one aspect of determining if someone qualifies for civil legal aid. The means test is set out within Civil Legal Aid (Financial Resources and Payment for Services) Regulations 2013.\n\nBefore you complete the means test you should check if your client’s case is within scope as set out in the Legal Aid, Sentencing and Punishment of Offenders Act 2012 (LASPO) .\n\nThe application process depends on the level of help that your application covers. The rules differ for controlled work and licensed work.\n\n### Controlled work and family mediation\n\nYou must assess a client’s income and capital for controlled work and family mediation including:\n\n- legal help\n- help at court\n- family help (lower)\n- family mediation\n- legal representation for proceedings in the immigration and asylum tribunal of the first-tier tribunal or where transitional arrangements apply",
+  "metadata": {
+    "source": "Civil legal aid means testing: GOV.UK",
+    "section": "Overview",
+    "parent_document": "Civil legal aid means testing: GOV.UK",
+    "parent_slug": "govuk_legal_aid_means_testing",
+    "section_index": 1,
+    "organisation": "govuk",
+    "url": "https://www.gov.uk/guidance/civil-legal-aid-means-testing",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__060__order_172_final_order_for_hfea_parental_order_application__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__060__order_172_final_order_for_hfea_parental_order_application.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 160,
+  "text": "The offices are open between 10.00am and 4.30pm Monday to Friday.\n\nName and address of applicant’s legal representatives\n\nThe applicant’s legal representatives are:\n\n[Name, address, reference, fax and telephone numbers (both in and out of office hours) and email]\n\nOrder\nThe Human Fertilisation & Embryology Act 2008 section 54 | Order\nThe Human Fertilisation & Embryology Act 2008 section 54 | Order\nThe Human Fertilisation & Embryology Act 2008 section 54\n\nThe full name(s) of the child(ren) | Boy or Girl | Date(s) of Birth\n\n[insert] | [insert] | [insert]\n\n[insert] | [insert] | [insert]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the [name of court]",
+    "order_number": "order_172_final_order_for_hfea_parental_order_application",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 60,
+    "source_filename": "Order 17.2 - Final Order for HFEA Parental Order Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

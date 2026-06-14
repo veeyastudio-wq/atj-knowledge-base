@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__026__order_47_attachment_of_earnings_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__026__order_47_attachment_of_earnings_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 316,
+  "text": "The court has made an attachment of earnings order and earnings are payable by you to the respondent.\n\nIT IS ORDERED THAT:\n\nYou [name] must make periodical deductions out of the respondent’s earnings in accordance with Schedule 3 to the Attachment of Earnings Act 1971 until [date] / [£[amount], the amount payable under judgment, has been paid].\n\nFor the purpose of calculating the deductions the normal deduction rate is £[amount] per [week] / [month] and the protected rate of earnings is £[amount] per [week] / [month].\n\nAnd you [name] must pay the sums deducted, as and when the deductions are made (at monthly intervals) until further notice to the Designated Family Judge c/o The Centralised Attachment of Earnings Payment System (CAPS) at PO Box 404, Northampton NN1 2ZY. Payments should be made payable to ‘HM Courts and Tribunals Service.\n\nDated [date]\n\nTAKE NOTICE\n\nTo the respondent\n\nThis is a copy of an attachment of earnings order sent to your employer.  If you change your employer, you must notify the court in writing within seven days giving the following details:\n\nThe name and address of your new employer (and the pay office if different)\n\nYour new rate of pay\n\nYour works number and/or pay reference\n\nThe court case number\n\nIF YOU DO NOT DO WHAT THIS NOTICE TELLS YOU, YOU MAY BE FINED OR IMPRISONED OR BOTH\n\nRespondent’s address is [respondent address]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t   Case No: [Case number]",
+    "order_number": "order_47_attachment_of_earnings_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 26,
+    "source_filename": "Order 4.7 - Attachment of Earnings Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

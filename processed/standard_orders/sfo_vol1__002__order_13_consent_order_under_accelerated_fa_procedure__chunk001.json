@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__002__order_13_consent_order_under_accelerated_fa_procedure.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 481,
+  "text": "The court satisfied itself that the draft agreed directions order contains appropriate directions to comply with FPR 2010 rr 9.15(1), (2), (3) and (7).\n\nThe court noted that up to the date of the submission of this order for approval (i) the applicant has incurred costs of £[amount] in relation to these proceedings and expects to incur further costs of £[amount] up to the Financial Dispute Resolution (FDR) Appointment; and (ii) the respondent has incurred costs of £[amount] in relation to these proceedings and expects to incur further costs of £[amount] up to the FDR Appointment.\n\nThe court noted that the applicant and the respondent have been informed of these figures by their respective legal representatives.\n\nAgreements\n\nThe parties have agreed that:\n\n[insert (any agreements reached between the parties about, e.g., asset values)]\n\nIT IS ORDERED (BY CONSENT) THAT:\n\nThe First Appointment listed on [date] is hereby vacated on the basis that the court is satisfied that its duties pursuant to FPR 2010 r 9.15 have been satisfied by its scrutiny of the documents referred to above.\n\nThe case is listed for a FDR Appointment at [time] on the first open date after [date] (time estimate: [1] / [1.5] hour[s]). The parties and their legal representatives (if any) must attend court at least 1 hour before this time to negotiate. (amend in relation to a private fdr appointment to include reference to the subsequent directions hearing/mention)\n\nThe parties must file and serve without prejudice or open offers in writing by no later than 7 days before the FDR Appointment.\n\nThe parties shall file and serve estimates of the costs likely to be incurred to take the matter to final hearing no later than 7 days before the FDR Appointment.\n\nFPR 2010 PD 27A – Family Proceedings: Court Bundles (Universal Practice to be applied in the High Court and Family Court) shall apply.\n\nThe court exercises its powers under FPR 2010 r 9.15(8) to permit the parties not to attend the First Appointment hearing.\n\nThere be the following further directions (questionnaires, valuation etc):\n\n[insert]\n\nCosts in the application.\n\nDated [date]\t\t\t\t\t\tApproved by [name]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_13_consent_order_under_accelerated_fa_procedure",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 2,
+    "source_filename": "Order 1.3 - Consent Order under Accelerated FA procedure.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

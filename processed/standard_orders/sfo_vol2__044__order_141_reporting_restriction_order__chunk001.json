@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__044__order_141_reporting_restriction_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__044__order_141_reporting_restriction_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 5,
+  "token_count": 485,
+  "text": "Recitals\n\nOn [date] the court considered an application for a reporting restriction order.\n\nThe applicant confirmed to the court that the application and any evidence relied on in support had been served on the media in accordance with Practice Direction 12I.\n\n(in the case of an order made without notice TO ANY PARTY EXCEPT THE MEDIA)\n\nThis order was made at a hearing without notice to [name]. The reason why the order was made without notice to [name] was [insert].\n\n(in the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to [name]. The reason why the order was made without full notice having been given to [name] was [insert].\n\nThe judge read the following documents [insert] and heard oral evidence from [name].\n\nSchedule 1 to this order is an explanatory note. It forms part of this order. The note must always be supplied to any person affected by this order.\n\nSubject to the following paragraph, this order binds all persons and all companies or unincorporated bodies (whether acting by their directors, employees or in any other way) who know that the order has been made.\n\nTerritorial limitation\n\nIn respect of persons outside England and Wales:\n\nExcept as provided in sub-paragraph (b) below, the terms of this order do not affect or concern anyone outside the jurisdiction of this court.\n\nThe terms of this order will bind the following persons in a country, territory or state outside the jurisdiction of this court:\n\nthe first and second respondents or their agents;\n\nany person who is subject to the jurisdiction of this court;\n\nany person who has been given written notice of this order at his residence or place of business within the jurisdiction of this court; and\n\nany person who is able to prevent acts or omissions outside the jurisdiction of this court undertaken in knowledge of this order, which constitute or assist in a breach of the terms of this order;\n\nany other person, only to the extent that this order is declared enforceable by or is enforced by a court in that country or state.\n\nUndertakings to the court\n\n(for example) If the court later finds that this order has caused loss to the respondent [and to a third party] and decides that the respondent [and the third party] should be compensated for that loss, the applicant shall comply with any order the court may make.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": 1,
+    "order_number": "order_141_reporting_restriction_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 44,
+    "source_filename": "Order 14.1 - Reporting Restriction Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

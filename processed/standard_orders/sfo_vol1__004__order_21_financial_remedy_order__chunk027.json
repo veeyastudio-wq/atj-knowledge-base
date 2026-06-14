@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk027",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 27,
+  "total_chunks": 61,
+  "token_count": 497,
+  "text": "the property shall be sold for [the best price reasonably attainable] / [a price in excess of £[amount]] / [such price as may be agreed between the parties [in excess of £[amount]] or in default of agreement determined by the court;\n\n[both parties] / [the applicant] / [the respondent] shall have conduct of the sale;\n\n[the [applicant’s] / [respondent’s] solicitors] / [name of solicitors] / [such solicitors as may be agreed between the parties or in default of agreement determined by the court] shall have the conduct of the conveyancing work relating to the sale;\n\n[name of estate agents] / [such estate agents as may be agreed between the parties or in default of agreement determined by the court] shall offer the property for sale; and\n\nthe proceeds of sale shall be applied as follows:\n\nto discharge the mortgage [name of mortgage as in definitions];\n\nin payment of the solicitors’ conveyancing costs and disbursements in connection with the sale;\n\nin payment of the estate agents’ charges;\n\n[in payment of any capital gains tax payable upon the sale];\n\n[in payment to the [applicant] / [respondent] of the lump sum of £[amount] and in payment of the balance to the [respondent] / [applicant]] / [in payment of the balance as to [percentage]% to the applicant and as to [percentage]% to the respondent].\n\nTrust of land\n\n[The trust of land declared below is made pursuant to Matrimonial Causes Act 1973, section 24(1)(b).] With effect from [the making of this order] / [the date of [decree absolute] / [the final [divorce] / [dissolution] order]] [the family home] / [other property name(s)] shall be held by the applicant and the respondent upon a trust of land for themselves as beneficial tenants in common [in equal shares] / [as to [percentage]% to the applicant and as to [percentage]% to the respondent] upon the following terms:\n\nthe [applicant] / [respondent] shall be entitled to occupy the property rent free to the exclusion of the [respondent] / [applicant] until the determining event as defined below;\n\nthe property shall not be sold without the prior written consent of both parties or further order until the first to happen of the following events (“the determining event”):",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

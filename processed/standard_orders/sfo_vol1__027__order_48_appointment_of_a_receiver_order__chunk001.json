@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__027__order_48_appointment_of_a_receiver_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__027__order_48_appointment_of_a_receiver_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 5,
+  "token_count": 468,
+  "text": "This order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\nThis is an order appointing a receiver, and giving directions as to the manner in which the receiver will carry out his role, made pursuant to Civil Procedure Rules 1998 Part 69.\n\nFindings of the court\n\nOn [date], [the court] / [name of judge] made an order requiring the respondent to [insert (e.g. ‘pay a lump sum to the applicant of £[amount] by [date and time]’)].\n\nThe requirements contained in that order were set out clearly to the respondent and served personally on [him] / [her] on [date].\n\nThe following attempts to enforce the order have been undertaken by the applicant:\n\n[insert]\n\nDespite these steps the amounts set out in paragraph [para number] above remain undischarged.\n\nAs at today’s date, the following sums are due from the respondent:\n\nThe applicant has sufficiently proved that alternative enforcement methods are unlikely to be effective.\n\nThe value of the property and its likely income is as follows:\n\nThe nominee appears to be a suitable person to act as receiver.\n\nThe security particulars represent (pending further order) appropriate security for the appointment of the nominee as receiver to proceed.\n\nThe receiver indicates that [his] / [her] costs of securing the discharge of the debt (together with the costs [he] / [she] anticipated of this hearing and the receiver’s costs themselves) are likely to be between £[amount] and £[amount] which the court takes into account in making this appointment.\n\nIT IS ORDERED THAT:\n\n[The nominee is appointed to act as receiver.]\n\n[The nominee shall file at court and serve on [name] evidence that security is in place in accordance with the security particulars no later than [date and time].]\n\n[The nominee shall be appointed to act as receiver from such date being no later than [date] that the receiver files at court and serves on [name] evidence that security is in place in accordance with the security particulars.]\n\nThe nominee shall stand as receiver in relation to the properties.\n\n[He] / [She] shall have control of those properties from the date of this Order.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t        Case No: [Case number]",
+    "order_number": "order_48_appointment_of_a_receiver_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 27,
+    "source_filename": "Order 4.8 - Appointment of a Receiver Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

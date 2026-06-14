@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk021",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 21,
+  "total_chunks": 61,
+  "token_count": 488,
+  "text": "[The applicant] [and] / [or] [the respondent] shall pay promptly all of the premiums [equally] / [as to [percentage] % by the applicant and as to [percentage] % by the respondent]. Upon the maturity of the policy, [the applicant] [and] / [or] [the respondent] shall divide the proceeds [net of any tax and costs of sale] [between the applicant and the respondent equally] / [as to [percentage] % to the applicant and as to [percentage] % to the respondent].\n\nUndertaking to leave by Will/make financial arrangements on death\n\nThe [respondent] / [applicant] shall [forthwith] / [by [time] on the date [number] days from the date of this order] enter into an irrevocable deed of covenant with the [applicant] / [respondent], which shall be binding on the executors and trustees of [his] / [her] [estate] / [will], that in the event of [his] / [her] death during the subsistence of order[s] for periodical payments at paragraph[s] [para number] below in respect of the [applicant] / [respondent] [and] / [or] [the child[ren] of the family], [he] / [she] shall make arrangements [that shall continue the financial provision made in those paragraph[s] for the [applicant] / [respondent] [and] / [or] [the child[ren] of the family] until the order[s] shall cease] / [such that in the event of [his] / [her] death on or before [date] in the year appearing in the left hand of the table below, then the sum in the right hand of the table below shall be paid to the [applicant] / [respondent] [for [his] / [her] benefit] [and] / [or] [for the benefit of the child[ren] of the family]:\n\nThe [respondent] / [applicant] shall provide the [applicant] / [respondent] with written evidence that [he] / [she] has entered into the deed of covenant [and] / [or] a certified copy of the deed [forthwith after] / [within [number] days of] doing so.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

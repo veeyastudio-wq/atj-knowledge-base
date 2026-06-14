@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__060__order_172_final_order_for_hfea_parental_order_application__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__060__order_172_final_order_for_hfea_parental_order_application.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 487,
+  "text": "# In the [name of court]\n\nIn the Family Court\tCase No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in [open court] / [private] on [date]\n\nDefinitions and interpretation\n\nReferences to a ‘Parental Order’ are to an order as defined by Section 54 Human Fertilisation and Embryology Act 2008\n\nAbout the child\n\nThe birth name of the child:\t[child name]\n\nSex:\t[Male] / [Female]\n\nThe child was born on: [date of birth]\tAge now:\t[age]\n\nThe place of birth was: [place of birth]\n\nAbout the applicants\n\nThe full names and occupation – 1st applicant:\t[full name and occupation]\n\nDate of birth of 1st applicant:\t\t\t\t[date of birth]\n\nThe full names and occupation – 2nd applicant:\t[full name and occupation]\n\nDate of birth of 2nd applicant:\t\t\t\t[date of birth]\n\nAddress of first and 2nd applicants:\t\t\t[addresses]\n\nIT IS ORDERED THAT\n\nThe court grants a Parental Order to the applicants\n\nThe child is to be known by the following names: [specify]\n\n[The court has ordered the costs as follows [specify]] / [There is no order for costs]\n\nThe court directs the Registrar General to enter the details set out in this order in the Parental Order Register in accordance with Regulations under paragraph 1 of Schedule 1 to the Adoption and Children Act 2002 as modified by the Human Fertilisation and Embryology (Parental Orders) Regulations 2010 and to insert the words ‘Re-registered by the Register General’ against the Register of Births\n\nDated [date]\n\nCommunications with the court\n\nAll communications to the court about this order should be sent to:\n\n[Type of court] sitting at [court name] at [court address]\n\nIf the order is made at the Royal Courts of Justice, communications should be addressed as follows:\n\nThe Clerk of the Rules, Queen’s Building, Royal Courts of Justice, Strand, London WC2A 2LL quoting the case number. The telephone number is 020 7947 6543.\n\nThe offices are open between 10.00am and 4.30pm Monday to Friday.\n\nName and address of applicant’s legal representatives",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the [name of court]",
+    "order_number": "order_172_final_order_for_hfea_parental_order_application",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 60,
+    "source_filename": "Order 17.2 - Final Order for HFEA Parental Order Application.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

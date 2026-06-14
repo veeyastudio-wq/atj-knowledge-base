@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__017__order_413_order_for_sale_following_final_charging_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__017__order_413_order_for_sale_following_final_charging_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 494,
+  "text": "Findings of the court\n\nOn [date], [name of judge] made an order under case number [case number] requiring the respondent to pay money to the applicant.\n\nOn [date], [name of judge] made a final charging order under case number [case number], charging the respondent’s interest in the property at [property full address including Land Registry title number] with payment of the sum of £[amount] including interest to [date], together with any further interest becoming due at the rate of [percentage]% from [date], and the costs of that application.\n\nThe applicant is entitled to an equitable charge upon the respondent’s interest in the property at [property full address including Land Registry title number] under that charging order.\n\nIT IS ORDERED THAT:\n\nThe remainder of this order will not take effect if the respondent by 4.00pm on [date] / [within [number] days of this order being served on [him] / [her]] pays to the applicant the sum of £[amount] secured by the charge and the applicant’s costs of this application [summarily assessed at £[amount] (inclusive of VAT and disbursements)] / [to be subject to detailed assessment in accordance with the Civil Procedure Rules 1998 Part 47 if not agreed by [date and time]], together with interest at the rate of [percentage]% from the date of this order until payment is received by the applicant.\n\nThe property shall be sold without further reference to the court at a price not less than £[amount], unless that figure is changed by a further order of the court.\n\nThe applicant will have conduct of the sale.\n\nThe court pursuant to section 50 of the Trustee Act 1925 appoints the [applicant] / [applicant’s solicitors] to convey the property.\n\n[To enable the applicant to carry out the sale, there be created and vested in the applicant pursuant to section 90 of the Law of Property Act 1925 a legal term in the property of one day less the remaining period of the term created by the lease under which the respondent holds the property.]\n\n[The respondent must deliver possession of the property to the applicant on or before [date] / [within [number] days of this order being served on [him] / [her]].]\n\nThe applicant shall first apply the proceeds of sale of the property:\n\nto pay the costs and expenses of effecting the sale; and",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_413_order_for_sale_following_final_charging_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 17,
+    "source_filename": "Order 4.13 - Order for Sale following Final Charging Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

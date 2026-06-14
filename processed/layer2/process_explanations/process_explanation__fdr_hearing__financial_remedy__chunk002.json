@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fdr_hearing__financial_remedy__chunk002",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fdr_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 274,
+  "text": "## Key terms\n\n**FDR** — Financial Dispute Resolution hearing; the without-prejudice, judge-led settlement hearing in financial remedy proceedings.\n\n**Without prejudice** — a principle that prevents statements or offers made during settlement negotiations from being used as evidence in court proceedings. Everything at the FDR is without prejudice.\n\n**Judicial indication** — the judge's assessment, given at the FDR, of what outcome would be broadly fair if the case were decided at a final hearing. It is not binding on anyone.\n\n**Open proposals** — written settlement proposals that are not without-prejudice and that can be referred to at a final hearing; each party must file these before the FDR.\n\n**Consent order** — a court order recording the terms of a financial settlement agreed between the parties; it must be approved by a judge to become legally binding.\n\n**Form E** — the detailed financial statement each party completes before the FDA, setting out all assets, income, liabilities, and pensions.\n\n**FDA** — First Appointment; the procedural directions hearing that precedes the FDR.\n\n## Related entries\n\n- process_explanation__financial_remedy_track_overview__financial_remedy\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Financial Dispute Resolution hearing (FDR)?",
+    "track": "financial_remedy",
+    "stage": "Stage 5 — Financial Dispute Resolution (FDR)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

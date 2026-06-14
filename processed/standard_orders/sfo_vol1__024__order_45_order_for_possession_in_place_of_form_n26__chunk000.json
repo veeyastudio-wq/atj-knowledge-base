@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__024__order_45_order_for_possession_in_place_of_form_n26__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__024__order_45_order_for_possession_in_place_of_form_n26.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 480,
+  "text": "# In the Family Court\t     Case No: [Case number]\n\nIn the Family Court\t     Case No: [Case number]\n\nsitting at [Court name]\n\nOrder for Possession under CPR Part 55\n\nThe [Marriage] / [Civil Partnership] / [Relationship] / [Family] of [applicant name] and [respondent name]\n\n(Adapt as necessary)\n\nAfter hearing [name(s) of advocate(s)]\n\nAfter consideration of the documents lodged by the parties\n\n(In the case of an order made without notice) After reading the statements and hearing the witnesses specified in para [para number] of the Recitals below\n\nORDER FOR POSSESSION MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\n(Delete as appropriate)\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nDefinitions\n\nFamily home\n\nThe “family home” means [family home address] registered at the Land Registry with title number [title number].\n\nOther properties\n\n“[Other property name]” means [other property address] registered at the Land Registry with title number [title number];\n\n[etc].\n\nRecitals\n\n(In the case of an order made without notice)\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent was [insert].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral evidence from [name].\n\n(In the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\n(In the case of short service previously granted)\n\nThe respondent was served with notice of this application on [date] by [method of service]. The court ordered that the usual time for service of the claim form of 5 days under CPR 1998 rule 55.5(2)(a) be shortened because [reason].\n\nFindings of the court\n\n(For example)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t     Case No: [Case number]",
+    "order_number": "order_45_order_for_possession_in_place_of_form_n26",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 24,
+    "source_filename": "Order 4.5 - Order for Possession (in place of Form N26).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

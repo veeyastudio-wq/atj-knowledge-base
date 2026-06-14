@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__008__order_32_search_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__008__order_32_search_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 9,
+  "token_count": 468,
+  "text": "the respondent;\n\nany director, officer, business partner, or responsible employee of the respondent; and\n\nif the respondent is an individual, any other person having responsible control of the premises to be searched.\n\nAny requirement that something shall be done to or in the presence of the respondent means:\n\nif there is more than one respondent, to or in the presence of any of them; and\n\nif the respondent is not an individual, to or in the presence of a director, officer, business partner or responsible employee.\n\nA respondent who is an individual who is ordered not to do something must not do it themselves or in any other way. They must not do it through others acting on their behalf or on their instructions or with their encouragement.\n\nA respondent which is not an individual which is ordered not to do something must not do it itself or by its directors, officers, partners, employees or agents or in any other way.\n\nRecitals\n\nThis is a search order made against the respondent [respondent name] on [date] by [name of judge] on the application of the applicant [applicant name].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral testimony from [name].\n\nThis order was made at a hearing [without notice] / [on short informal notice] to the respondent. The reason why the order was made [without notice] / [on short informal notice] to the respondent was [set out]. The respondent has the right to apply to the court to vary or discharge the order – see ‘The right to seek variation or discharge of this order’ below.\n\nThere will be a further hearing in respect of this order on [date] (‘the return date’).\n\nUndertakings given to the court by the applicant [applicant name]\n\nIf the court later finds that this order or carrying it out has caused loss to the respondent [or to any third party], and decides that the respondent [or the third party] should be compensated for that loss, the applicant will comply with any order the court may make. Further, if the carrying out of this order has been in breach of the terms of this order or otherwise in a manner inconsistent with the applicant’s solicitors’ duties as officers of the court, the applicant will comply with any order for damages the court may make.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_32_search_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 8,
+    "source_filename": "Order 3.2 - Search Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

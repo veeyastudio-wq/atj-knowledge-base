@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk028",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 28,
+  "total_chunks": 61,
+  "token_count": 393,
+  "text": "the property shall not be sold without the prior written consent of both parties or further order until the first to happen of the following events (“the determining event”):\n\n[all the surviving children of the family] / [the surviving child of the family] attaining the age of 18 years or ceasing [his] / [her] / [their] full-time [secondary] / [tertiary] education [to first degree level], whichever is the later, save that if prior to this [all the surviving children of the family] / [the surviving child of the family] [have] / [has] ceased to live permanently with the [applicant] / [respondent], the determining event shall arise upon such cessation[. (For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, this shall not be construed as ceasing tertiary education)];\n\nthe death of the [applicant] / [respondent];\n\nthe [applicant’s] / [respondent’s] remarriage or cohabitation with another person [as spouses] [for a [continuous] period of more than [period]] / [for a period of [number] months in any [number] month period];\n\nthe [applicant’s] / [respondent’s] failure to occupy the property for a period of [number] months in any [number] month period;\n\nthe [applicant’s] / [respondent’s] failure to occupy the property as [his] / [her] primary residence; or\n\nfurther order of the court;\n\nprovided that in any event, absent the agreement of the parties, the property shall not be sold without the permission of the court while any child of the family in occupation of the property is still a minor or of full age but receiving full time [secondary education or training] / [tertiary education up to a first degree].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "chunk_id": "govuk_legal_aid_means_testing__006__passporting__chunk000",
+  "source_file": "raw/supporting_context/govuk_legal_aid_means_testing__006__passporting.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 152,
+  "text": "# Passporting\n\nIf a client receives certain benefits they’re passported through the income means test, so they automatically qualify within the income limits but you must still assess their capital.\n\nPassporting benefits include:\n\n- Income Support (IS)\n- income-based Jobseeker’s Allowance (JSA)\n- Universal Credit (UC)\n- Guarantee Credit element of Pension Credit (GC)\n- income-related Employment and Support Allowance (ESA)\n\nYou must assess capital means in all cases. However, if your client receives financial support under sections 4 or 95 of the Immigration and Asylum Act 1999 from the National Asylum Support Service (NASS), they’re passported through both income and capital tests for controlled work immigration and asylum matters only.",
+  "metadata": {
+    "source": "Civil legal aid means testing: GOV.UK",
+    "section": "Passporting",
+    "parent_document": "Civil legal aid means testing: GOV.UK",
+    "parent_slug": "govuk_legal_aid_means_testing",
+    "section_index": 6,
+    "organisation": "govuk",
+    "url": "https://www.gov.uk/guidance/civil-legal-aid-means-testing",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

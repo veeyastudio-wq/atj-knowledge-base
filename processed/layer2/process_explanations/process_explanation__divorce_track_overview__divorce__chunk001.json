@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__divorce_track_overview__divorce__chunk001",
+  "source_file": "raw/layer2/process_explanations/process_explanation__divorce_track_overview__divorce.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 480,
+  "text": "**Stage 5 — The 6-week wait and final order**\nAt least six weeks after the conditional order is pronounced, the applicant may apply for the final order using Form D36. The final order is the order that legally ends the marriage. Applying for the final order before financial matters are resolved carries significant legal and financial risks (see below).\n\n## What to know if you're unrepresented\n\n**Three tracks run simultaneously.** The divorce track, the financial remedy track, and the child arrangements track are three separate legal processes. Each has its own forms, timetables, and — where agreement cannot be reached — its own court proceedings. Completing the divorce does not resolve finances or child arrangements.\n\n**Financial remedy should be resolved before the final order.** Financial remedy proceedings — the process of dividing assets, property, and pensions — should be concluded, at minimum to a sealed consent order, before the final order in divorce is applied for. Applying for the final order while financial matters remain open can affect the ability to make certain financial claims, including claims against a former spouse's pension or estate. The 20-week cooling-off period in Stage 3 exists partly to allow time for financial negotiations.\n\n**The conditional order does not end the marriage.** The conditional order (Stage 4) is the court's confirmation that the divorce can proceed. The parties remain legally married until the final order (Stage 5) is made.\n\n**Joint or sole application.** Either spouse may apply, or both may apply jointly. A joint application removes the need to serve the application on the other party and removes the acknowledgement of service step.\n\n**No fault is required.** Since April 2022, divorce in England and Wales is no fault. Neither party needs to allege conduct or assign blame.\n\n## Common mistakes\n\n<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented people typically get wrong at each stage — e.g. applying for the final order before finances are resolved, misunderstanding what the conditional order means, failing to address financial matters during the cooling-off period, incorrect completion of Form D8. -->\n\n## Key terms\n\n**Applicant** — the person who files the divorce application. In a joint application, both spouses are applicants.\n\n**Respondent** — in a sole application, the spouse who receives the application and must file an acknowledgement of service.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The divorce track — an overview of all five stages",
+    "track": "divorce",
+    "stage": "Stage 1 — Decision and first steps",
+    "source_refs": [
+      "govuk__divorce",
+      "fpr_2010__007",
+      "fpr_2010__009",
+      "pd_9a"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

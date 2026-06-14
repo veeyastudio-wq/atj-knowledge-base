@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__069__order_202_extended_civil_restraint_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__069__order_202_extended_civil_restraint_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 456,
+  "text": "# In the Family Court\tCase No: [Case number]\n\nIn the Family Court\tCase No: [Case number]\n\nsitting at [Court name]\n\nOrder made by [name of judge] in private on [date].\n\nThe parties:\tThe applicant is [name]\n\nThe 1st respondent is [name], the [relationship to child]\n\nThe 2nd respondent is [name], the [relationship to child]\n\nFamily Procedure Rules 2010, Rule 4.8 and Practice Direction 4B\n\n(penal notice: not automatically included. if included, the order must be personally served unless the court dispenses with that requirement: fpr 2010, r 37(4))\n\nPenal notice\n\nIMPORTANT WARNING TO [NAME]\n\nIf you [NAME] of [ADDRESS] disobey [this order] / [paragraph[s] [insert paragraph number(s)] of this order] you may be held to be in contempt of court and may be imprisoned, fined or have your assets seized.\n\nRecitals\n\n[The judge has considered an application by the [applicant] / [respondent]] / [The court has considered, of its own initiative] after hearing [name the advocate(s) who appeared];\n\nAnd has found that [name of person against whom the order is made] has persistently issued claims or made applications which are totally without merit.\n\nIT IS ORDERED THAT\n\nIt is ordered that [name of person against whom the order is made] be restrained from making applications in any court specified below concerning any matter involving or relating to or touching upon or leading to the proceedings in which this order is made without first obtaining the permission of [name of judge] or, if unavailable [name of judge]. The specified court[s] [is] / [are] [the Court of Appeal] the High Court] / [the Family Court] [insert] County Court[s]] / [any Family Court] [any county court] / [any court].\n\nIt is further ordered [specify].\n\nThis order will remain in effect until [date].\n\nIf [name of person against whom the order is made] wishes to apply for permission:\n\nto make an application in these proceedings; OR\n\nto make an application to amend or discharge this order,",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_202_extended_civil_restraint_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 69,
+    "source_filename": "Order 20.2 - Extended Civil Restraint Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

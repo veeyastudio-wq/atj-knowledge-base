@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001",
+  "source_file": "raw/guidance/advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 482,
+  "text": "Alternatively you can instruct a private enquiry agent (also called a ‘process server’) to do this for you but check the cost before you go ahead. Solicitors often prefer to use process servers because unlike court bailiffs (who don’t make repeated efforts to serve the application) a process server will usually keep searching until they are successful and they are usually quicker. You should be able to keep the cost down if you use a process server based near to where the respondent lives. If you can help the agent by telling them where the respondent will be at a particular time on a particular day then that will also help get the job done quickly and cut down on the cost.\n\nThe process server will need the court paperwork to personally serve your ex. You need to call the court and explain your situation and ask for the pack of court documents the process server needs to carry out personal service on your ex. When the process server has served your ex, they will give you a document that states where and when and how they did this. This is called a ‘certificate of service’. You will then need to email this to the court to show that your ex has received the application.\n\nYou may be tempted to deliver the application petition to your ex yourself. Avoid this – it will not count as proper service from the court’s perspective and it might even be dangerous for you to do so!\n\nYou can find an enquiry agent through the Association of British Investigators or the Institute of Professional Investigators.\n\n### Application for deemed service\n\nIf you know your ex has definitely seen your application, for example because of something they have said or written in a text, but is simply refusing to respond then you may be able to apply for what is called ‘deemed service’. This is where the court looks at your evidence that suggests the respondent is aware of the application and ‘deems’ the application served. Your evidence might be a text, a message on social media, or an email. If the court thinks there is enough evidence it can decide that the respondent does know about the application even though they have not confirmed that they do. You need Form D11 . You cannot make this application via the online service yet but you can send your form by email or post to the court. The court fee for this application is currently £190, but the fees do change so check guidance EX50 before you apply.\n\n### Application to dispense with service",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "What to do if your ex does not respond to the application",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 11,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

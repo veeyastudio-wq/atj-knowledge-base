@@ -1,0 +1,21 @@
+{
+  "chunk_id": "court_bundles_guide_2026__017__7_bundle_format_size_and_limits__chunk002",
+  "source_file": "raw/guidance/court_bundles_guide_2026__017__7_bundle_format_size_and_limits.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 4,
+  "token_count": 139,
+  "text": "bundle to be bigger, then it must be split into more than one file.\n7.6 The judge may also give different page limits depending on:\n• the type of case; or\n• the nature of the hearing.\n7.7 Page numbering (pagination) Page numbering means putting a reference\nnumber on every page in the bundle, so that the court and the other parties can find\ndocuments easily.\n7.8 The way pages are numbered depends on the type of case.\nIn financial remedy proceedings (about your finances, for example, when you get\ndivorced), page numbers should usually run from the first page of the bundle to the\nlast page.\nKey points:\n10",
+  "metadata": {
+    "source": "Guide for Litigants in Person: Preparing Court Bundles (March 2026)",
+    "section": "7. Bundle format, size and limits",
+    "parent_document": "Guide for Litigants in Person: Preparing Court Bundles (March 2026)",
+    "parent_slug": "court_bundles_guide_2026",
+    "section_index": 17,
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/03/020326-Preparing-Court-Bundles-for-Family-Proceedings-Guide-for-Litigants-in-Person.pdf",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__069__order_202_extended_civil_restraint_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__069__order_202_extended_civil_restraint_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 489,
+  "text": "If [name of person against whom the order is made] wishes to apply for permission:\n\nto make an application in these proceedings; OR\n\nto make an application to amend or discharge this order,\n\n[he] / [she] must first serve notice of [his] / [her] application on the other party.  The notice must set out the nature and grounds of the application and provide the other party with at least 7 days within which to respond.  [Name of person against whom the order is made] must then apply for permission of the judge identified in the order.  The application for permission must be made in writing and must include the other party’s written response, if any, to the notice served.  The application will be determined without a hearing.\n\nIf [name of person against whom the order is made] repeatedly makes applications for permission under the paragraph above which are totally without merit, the court may direct that if [name of person against whom the order is made] makes any further application for permission which is totally without merit, the decision to dismiss the application will be final and there will be no right of appeal, unless the judge who refused permission grants permission to appeal.\n\nAny application for permission to appeal a refusal of an application under paragraph [] / [para number] above must be made in writing and will be determined without a hearing.\n\nCosts\n\n[There is no order for costs.] /\n\n[It is ordered that [name of person against whom the order is made] pay costs. The sum to be paid is [amount]. [Name of person against whom the order is made] must pay on or before [date] and send payment to the [applicant] / [respondent].]\n\nDated [date]\n\nNote to [name of person against whom the order is made]\n\nIf you attempt to make a further application in these proceedings without first obtaining permission of the judge named in the order above, your application will automatically be dismissed without the judge having to make any further order and without the need for the other party to respond to it.\n\nIf this order was made in your absence, you may make an application to set aside, vary or stay the order. An application must be made within the period specified in the order or, where no period is specified, not more than 7 days after service of this order on you. You do not require permission of the court to make such an application.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_202_extended_civil_restraint_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 69,
+    "source_filename": "Order 20.2 - Extended Civil Restraint Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

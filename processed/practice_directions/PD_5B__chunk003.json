@@ -1,0 +1,18 @@
+{
+  "chunk_id": "PD_5B__chunk003",
+  "source_file": "raw/practice_directions/PD_5B.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 6,
+  "token_count": 464,
+  "text": "A court officer must refuse any application or other document, including any attachment, sent to the court by e-mail if— (a) it does not comply with this Chapter; or (b) a fee is payable and-\n\n\n(i) the sender has not complied with paragraph 3.2; or\n\n\n(ii) the sender has complied with paragraph 3.2 but the court has not been able to charge or take the fee.\n\nTo the top\n\n### Chapter 4: Technical specifications\n\n\n4.1\n\n\nAn e-mail sent to the court must— (a) contain the name of the sender and an address for contact, which can be an e-mail address; and (b) be in plain text or rich text format rather than HTML. (Rule 29.1 specifies the information that a party is not required to reveal, and makes provision for notice by a party to the court where a party does not wish for particulars to be revealed by the court to another person.) 4.2\n\n\nSubject to this practice direction, correspondence and documents may be sent as either text in the body of an e-mail, or as one or more attachments. Any notice given to the court under rule 29.1 (personal details not to be disclosed) must be sent as a separate attachment to the email and not as part of another attachment. 4.3\n\n\nCompleted forms that are prescribed by a rule or practice direction must be sent as attachments. 4.4\n\n\nWhere a prescribed form requires that one or more documents must be attached to that form, that document or documents must be attached to the e-mail to which the form is attached.\n\n\nCourt forms may be downloaded from HMCTS website at: http://hmctsformfinder.justice.gov.uk/HMCTS/FormFinder.do (opens in a new tab) 4.5\n\n\nAttachments must be sent in a format supported by the software used by the court to which it is sent. The format or formats which may be used in sending attachments to a particular specified court are listed in the e-mail guidance on Her Majesty’s Courts and Tribunals website. The e-mail guidance can be found at: https://www.justice.gov.uk/courts/email-guidance#canfile (opens in a new tab) 4.6",
+  "metadata": {
+    "source": "Family Procedure Rules – Practice Directions",
+    "ref": "PD 5B",
+    "title": "Practice Direction 5B – Communication and filing of documents by e-mail",
+    "url": "https://www.justice.gov.uk/courts/procedure-rules/family/practice_directions/practice-direction-5b-communication-and-filing-of-documents-by-e-mail",
+    "status": "Active",
+    "scraped": "2026-06-10",
+    "licence": "Open Government Licence v3.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__005__order_22_order_under_children_act_1989_schedule_1__chunk062",
+  "source_file": "raw/standard_orders/sfo_vol1__005__order_22_order_under_children_act_1989_schedule_1.md",
+  "layer": "layer1",
+  "chunk_index": 62,
+  "total_chunks": 63,
+  "token_count": 342,
+  "text": "Liberty to apply\n\nThe parties shall have liberty to apply to the court concerning the implementation and timing of the terms of this order only.\n\nDated [date]\n\nStatement regarding legal advice where the party concerned is unrepresented and the order is by consent\n\nI confirm that I [have had independent legal advice and am content with the terms of the agreement reached and understand the nature and effect of the draft consent order presented to the court] / [am aware of my right to take independent legal advice and have had the opportunity to do so in respect of this financial agreement, but have decided not to do so. However, I am content with the terms of the agreement reached and understand the nature and effect of the draft consent order presented to the court].\n\nSigned \t\t\t\t\t\t\t\t____________\n[applicant name] [date]\nApplicant\n\nStatement regarding legal advice where the party concerned is unrepresented and the order is by consent\n\nI confirm that I [have had independent legal advice and am content with the terms of the agreement reached and understand the nature and effect of the draft consent order presented to the court] / [am aware of my right to take independent legal advice and have had the opportunity to do so in respect of this financial agreement, but have decided not to do so. However, I am content with the terms of the agreement reached and understand the nature and effect of the draft consent order presented to the court].\n\nSigned \t\t\t\t\t\t\t\t____________\n[respondent name] [date]\nRespondent\n\nYear | Sum\n\n2026 | £[amount]\n\n2027 | £[amount]\n\n2028 | £[amount]\n\n[etc.] | [etc.]\n\n[applicant name] | [respondent name]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_22_order_under_children_act_1989_schedule_1",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 5,
+    "source_filename": "Order 2.2 - Order under Children Act 1989, Schedule 1.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

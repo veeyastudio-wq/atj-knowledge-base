@@ -1,0 +1,36 @@
+{
+  "chunk_id": "D84__chunk003",
+  "source_file": "raw/court_forms/D84.md",
+  "layer": "layer1",
+  "chunk_index": 3,
+  "total_chunks": 4,
+  "token_count": 473,
+  "text": "D. Statement of truth\n14. Sole applicant or applicant 1 Note: where the applicant\nrelies on the respondent’s\nI understand that proceedings for contempt of court may be\nsignature on the\nbrought against anyone who makes, or causes to be made, a false\nAcknowledgment of Service\nstatement in a document verified by a statement of truth without\n(or any other document),\nan honest belief in its truth.\nthe statement of truth\nmust be completed by\nI believe that the facts stated in this form and any continuation\nthe applicant and not the\nsheets are true. solicitor.\nThe applicant believes that the facts stated in this form and\nany continuation sheets are true. I am authorised by the\napplicant to sign this statement.\nSignature\nApplicant\nApplicant’s legal representative (as defined by FPR 2.3(1))\nDate\nDay Month Year\nFull name\nName of applicant’s legal representative’s firm\nIf signing on behalf of firm or company give position or office held\nPage 6\nD84 Application for a conditional order or (judicial) separation order (03.24)\n\n15. Applicant 2\nI understand that proceedings for contempt of court may be\nbrought against anyone who makes, or causes to be made, a false\nstatement in a document verified by a statement of truth without\nan honest belief in its truth.\nI believe that the facts stated in this form and any continuation\nsheets are true.\nThe applicant believes that the facts stated in this form and\nany continuation sheets are true. I am authorised by the\napplicant to sign this statement.\nSignature\nApplicant\nApplicant’s legal representative (as defined by FPR 2.3(1))\nDate\nDay Month Year\nFull name\nName of applicant’s legal representative’s firm\nIf signing on behalf of firm or company give position or office held\nPlease return your form to:\nHMCTS Divorce and\nDissolution service\nPO Box 13226\nHarlow\nCM20 9UG\nEmail:\ncontactdivorce@justice.\ngov.uk\nPhone: 0300 303 0642\nMonday to Friday\n10am to 6pm\nPage 7\nD84 Application for a conditional order or (judicial) separation order (03.24)",
+  "metadata": {
+    "form_id": "D84",
+    "title": "Apply for a conditional order or judicial separation order: Form D84",
+    "description": "Use this form to apply for a conditional order confirming that the court does not see any reason why you cannot divorce or separate.",
+    "track": "divorce",
+    "landing_url": "https://www.gov.uk/government/publications/form-d84-apply-for-a-conditional-order-or-judicial-separation-order",
+    "pdf_url": "https://assets.publishing.service.gov.uk/media/65f972ebaa9b760011fbda3d/D84_0324.pdf",
+    "version_date": "2024-06-13",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "form_fields": [
+      "Case number",
+      "Name of applicant 2",
+      "Name of respondent",
+      "Name of sole applicant or applicant 1",
+      "Or, in the case of (judicial) separation, the sole applicant applies to the judge for a (judicial) separation order in this case",
+      "Text Field 100",
+      "Text Field 101",
+      "Text Field 76",
+      "Text Field 77",
+      "Text Field 78",
+      "Text Field 79",
+      "Text Field 80",
+      "Text Field 81",
+      "Text Field 99"
+    ]
+  }
+}

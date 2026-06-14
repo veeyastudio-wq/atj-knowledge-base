@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk018",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 18,
+  "total_chunks": 61,
+  "token_count": 293,
+  "text": "[until the child[ren] of the family shall [respectively] attain the age of 18 or cease [his] / [her] / [their] full-time secondary education] / [for so long as the order for periodical payments at paragraph [para number] below in respect of the child[ren] of the family shall subsist],\n\nand shall provide the [applicant] / [respondent] with written evidence that [he] / [she] has done so if [he] / [she] requests it; [(in the case, for example, of a policy capable of acquiring a surrender value) the applicant and the respondent having agreed that all of the benefits under the policy shall be paid to the [applicant] / [respondent] [and] / [or] [the child[ren] of the family] [or the [applicant’s] / [respondent’s] estate] and that the [respondent] / [applicant] shall have no beneficial interest in the policy or its proceeds at any time, [except that if the [applicant] / [respondent] remarries or predeceases the [respondent] / [applicant], the [respondent] / [applicant] [and] / [or] [the child[ren] of the family] shall be entitled to all of the benefits under the policy].\n\nUndertaking to take out and assign a life assurance policy",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

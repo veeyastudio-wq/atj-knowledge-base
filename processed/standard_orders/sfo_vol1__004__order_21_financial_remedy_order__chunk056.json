@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk056",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 56,
+  "total_chunks": 61,
+  "token_count": 497,
+  "text": "[The [applicant] / [respondent] shall not intentionally claim, draw down, transfer or otherwise deal with any pension benefits subject to a pension sharing order in this order until the pension share so ordered has been implemented, save in the event of prior written agreement as between the parties].\n\nNomination of death in service benefit\n\nThe [applicant] / [respondent] shall forthwith nominate the [respondent]/ [applicant] to receive [not less than [percentage]% of the death in service benefit payable under such pension scheme(s) as [he] / [she] shall from time to time be a member of [subject to a sum not greater than [number] times the annual amount of the periodical payments due to [him] / [her]] / [£[amount]]. The [applicant] / [respondent] shall only be required to make such nomination until the [earlier] / [later] of the following:\n\nthe death of the [respondent] / [applicant];\n\nthe remarriage of the [respondent] / [applicant]; or\n\nan order terminating the [respondent’s] / [applicant’s] maintenance payments.\n\nPension attachment order\n\nThere shall be provision by way of a pension attachment order in favour of the [applicant] / [respondent] in respect of the [respondent’s] / [applicant’s] rights under [his] / [her] pension arrangement[s] [pension name(s)] under the Matrimonial Causes Act 1973 section 25B by way of periodical payments in accordance with the annex[es] to this order. Any such payment by the PRPA shall be treated for all purposes as a payment made by the [respondent] / [applicant] as the party with pension rights in or towards [his] / [her] liability under this order.\n\nDeclaration under the EU Maintenance Regulation/The Hague Convention\n\n(either, applies to transitional cases covered by the eu maintenance regulation – e.g. where form a was issued prior to 11pm on 31 december 2020)\n\nThe provisions under paragraphs [para numbers] of this order represent “maintenance” for the purposes of the Council Regulation (EC) No 4/2009 of 18 December 2008 on jurisdiction, applicable law, recognition and enforcement of decisions and cooperation in matters relating to maintenance obligations.\n\n(or, applies (where relevant) to cases not covered by the eu maintenance regulation)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__002__order_102_occupation_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__002__order_102_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 19,
+  "token_count": 496,
+  "text": "# In the Family Court\tCase No: [Case number]\n\nIn the Family Court\tCase No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in private on [date] at a [type of hearing].\n\nIMPORTANT NOTICE TO THE RESPONDENT, [RESPONDENT NAME] OF [RESPONDENT ADDRESS]\n\nYOU MUST OBEY THIS ORDER. You should read it carefully. If you do not understand anything in this order you should go to a solicitor, Legal Advice Centre or Citizens Advice Bureau. You have a right to apply to the court to change or cancel the order.\n\nWARNING: ALTERNATIVELY, IF YOU DISOBEY THIS ORDER, YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND MAY BE IMPRISONED, FINED, OR HAVE YOUR ASSETS SEIZED.\n\nThe parties:\tThe applicant is [name] represented by [name] [of counsel]\n\nThe 1st respondent is [name], the [relationship to child], represented by [name] [of counsel]\n\nDefinitions\n\nThe “relevant children” within the meaning of Family Law Act 1996 are:\n\n[child full name] (a [boy] / [girl]) born on [date];\n\n[child full name] (a [boy] / [girl]) born on [date];\n\n[etc].\n\n[The “family home” is the property at [full address] [and its surrounding gardens, land and outbuildings]].\n\n(Most judges are happy to use the short form of a property address in the body of the order after a definition is given, and this is what we have done from here onwards. However some judges demand on the full address being used, especially if a litigant in person is involved/a penal notice is attached to the order. If that is the case you will need to add the full address throughout.)\n\n[“[Property short name]” is the property at [full address] [and its surrounding gardens, land and outbuildings]].\n\n(Most judges are happy to use the short form of a property address in the body of the order after a definition is given, and this is what we have done from here onwards. However some judges demand on the full address being used, especially if a litigant in person is involved/a penal notice is attached to the order. If that is the case you will need to add the full address throughout.)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_102_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 2,
+    "source_filename": "Order 10.2 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

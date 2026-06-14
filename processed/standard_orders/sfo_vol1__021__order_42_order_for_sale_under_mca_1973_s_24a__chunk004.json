@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a__chunk004",
+  "source_file": "raw/standard_orders/sfo_vol1__021__order_42_order_for_sale_under_mca_1973_s_24a.md",
+  "layer": "layer1",
+  "chunk_index": 4,
+  "total_chunks": 5,
+  "token_count": 75,
+  "text": "WARNING: IF YOU DO NOT OBEY THIS ORDER, YOU WILL BE GUILTY OF CONTEMPT OF COURT AND YOU MAY BE SENT TO PRISON, FINED OR HAVE YOUR ASSETS SEIZED\n\nYOU MAY ALSO BE PREVENTED FROM MAKING ANY APPLICATION TO COURT IF YOU DO NOT DISCHARGE THESE OBLIGATIONS BY THE DUE DATE.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_42_order_for_sale_under_mca_1973_s_24a",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 21,
+    "source_filename": "Order 4.2 - Order for Sale under MCA 1973, s. 24A.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

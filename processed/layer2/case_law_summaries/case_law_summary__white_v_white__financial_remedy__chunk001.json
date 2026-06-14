@@ -1,0 +1,24 @@
+{
+  "chunk_id": "case_law_summary__white_v_white__financial_remedy__chunk001",
+  "source_file": "raw/layer2/case_law_summaries/case_law_summary__white_v_white__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 69,
+  "text": "## Related entries\n\n- legal_principle__section_25_factors__financial_remedy\n- case_law_summary__miller_mcfarlane__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy",
+  "metadata": {
+    "content_type": "case_law_summary",
+    "layer": 2,
+    "title": "White v White — the yardstick of equality in financial remedy",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "citation": "White v White [2000] UKHL 54",
+    "source_refs": [
+      "matrimonial_causes_act_1973__s25",
+      "legal_principle__section_25_factors__financial_remedy"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

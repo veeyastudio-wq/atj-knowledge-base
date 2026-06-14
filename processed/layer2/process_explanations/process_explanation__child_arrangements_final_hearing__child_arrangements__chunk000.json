@@ -1,0 +1,25 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 483,
+  "text": "# What happens at the final hearing in child arrangements proceedings\n\n## What it is\n\nThe final hearing is the hearing at which a judge makes a binding child arrangements order, having heard evidence from both parties and — where a welfare report was ordered — from the CAFCASS officer who prepared it. It is a contested hearing: both parties present their case fully, and the judge decides what arrangements best serve the child's welfare. The order made at the final hearing is legally binding on both parties.\n\n## When it happens\n\nThe final hearing is Stage 6 of the child arrangements track. It takes place only if the case has not settled at the FHDRA (Stage 4), the DRA (Stage 5), or through any intervening negotiation. The hearing date is set by the judge at the DRA or in subsequent directions. By the time of the final hearing, any CAFCASS Section 7 report and any directed witness statements will already have been filed and served on both parties.\n\n## What it involves\n\n**Before the hearing**, each party files and serves their final witness statement — the written account of the evidence they want the judge to consider — together with any updating evidence directed by the court. A court bundle is also prepared: a paginated set of all the documents before the court, including the CAFCASS report, the statements, and any relevant orders or correspondence.\n\n**At the hearing**, the typical sequence is:\n\n1. **The applicant presents their case.** The applicant's witness statement stands as their evidence-in-chief. The respondent may cross-examine the applicant on their statement. The judge may also ask questions.\n\n2. **The respondent presents their case.** The same process applies in reverse. The applicant may cross-examine the respondent.\n\n3. **CAFCASS evidence (where a Section 7 report was ordered).** The CAFCASS officer who prepared the welfare report may give evidence. Both parties may ask questions of the officer if the court has given permission for cross-examination.\n\n4. **Closing submissions.** Each party summarises their case and addresses the judge on what order they are seeking and why, with reference to the welfare checklist.\n\n5. **Judgment.** The judge delivers a decision either at the end of the hearing or in writing at a later date. The judgment will explain how the welfare checklist has been applied to reach the decision.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at the final hearing in child arrangements proceedings",
+    "track": "child_arrangements",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "FPR_Part_12",
+      "PD_12B",
+      "children_act_1989__s1",
+      "govuk_child_arrangements__002__if_you_cannot_agree_on_everything"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

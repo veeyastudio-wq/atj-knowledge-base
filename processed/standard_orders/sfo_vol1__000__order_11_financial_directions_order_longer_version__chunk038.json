@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk038",
+  "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
+  "layer": "layer1",
+  "chunk_index": 38,
+  "total_chunks": 39,
+  "token_count": 300,
+  "text": "Costs — order against a publicly funded party\n\nThe [applicant] / [respondent] shall pay [[towards] the [respondent’s] / [applicant’s] costs] / [[proportion] of the [respondent’s] / [applicant’s] costs] of and relating to this hearing [including the costs reserved by the order[s] made on [date(s)]] [summarily assessed at £[amount] (inclusive of VAT and disbursements)] by [date], subject to there being a determination pursuant to section 11 of the Access to Justice Act 1999 that it is reasonable for the [applicant] / [respondent] to do so] / [to be subject to detailed assessment on the [standard] / [indemnity] basis if not agreed], subject to there being a determination pursuant to section 11 of the Access to Justice Act 1999 that it is reasonable for the [applicant] / [respondent] to do so]. [This order for costs shall not be enforced without the court’s permission.]\n\nDelayed costs order\n\nThe time for commencement of proceedings for the assessment of the costs under the Community Legal Services (Financial) Regulations 2000 shall not start until the date of completion of the [transfer] / [sale] of [the family home] / [other property name] referred to in paragraph [para number] of this order.\n\nDated [date]\t\t\t\t\tApproved by [name]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_11_financial_directions_order_longer_version",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 0,
+    "source_filename": "Order 1.1 - Financial Directions Order (longer version).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

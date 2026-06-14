@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__071__order_211_production_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__071__order_211_production_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 2,
+  "token_count": 444,
+  "text": "# In the Family Court    \t          Case No: [Case number]\n\nIn the Family Court    \t          Case No: [Case number]\n\nsitting at [Court name]\n\nBefore [name of judge] in private on [date] at a [type of hearing].\n\nThe parties:\tThe applicant is [name] represented by [name] [of counsel]\n\nThe 1st respondent is [name], the [relationship to child], represented by [name] [of counsel]\n\nThe 2nd respondent is [name], the [relationship to child], represented by [name] [of counsel]\n\nRequest for production of [prisoner name] (prisoner number [number] at HMP [prison name])\n\nThe court directs that:\n\nThe Governor of His Majesty’s Prison [prison name] is requested to produce [prisoner name] (prisoner number [number]) at the [court name and address] by no later than [time by which parties are to attend] for a hearing of family proceedings under case number [case no.] in which [he] / [she] is a [party] / [intervener] / [witness].\n\n[Prisoner name] may request to be produced by [telephone] / [video link] rather than in person, in which case the prison is requested to liaise with the court immediately so that the necessary arrangements can be made.\n\nThe hearing is estimated to last [time estimate] and the prisoner is expected to be present throughout the hearing.\n\nThe court considers that the production of the prisoner at the hearing is desirable in the interests of justice.\n\nRepresentation\n\n[The prisoner [has the benefit of legal aid and] is represented in these proceedings by [solicitors’ details].] / [The prisoner is not represented in these proceedings.]\n\nIssues\n\nThe issues affecting the prisoner to be determined in the proceedings overall are [insert (e.g. whether a care order is made in respect of his/her children and whether they are placed for adoption)].\n\nThe issues affecting the prisoner to be determined at the hearing on [hearing date] are [insert (e.g. whether his/her children are placed in the interim care of the local authority)].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court    \t          Case No: [Case number]",
+    "order_number": "order_211_production_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 71,
+    "source_filename": "Order 21.1 - Production Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "chunk_id": "govuk_legal_aid_overview__002__if_youre_not_sure_if_youre_eligible__chunk000",
+  "source_file": "raw/supporting_context/govuk_legal_aid_overview__002__if_youre_not_sure_if_youre_eligible.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 26,
+  "text": "# If you’re not sure if you’re eligible\n\nYou can check if you can get legal aid for your type of problem .",
+  "metadata": {
+    "source": "Legal aid overview: GOV.UK",
+    "section": "If you’re not sure if you’re eligible",
+    "parent_document": "Legal aid overview: GOV.UK",
+    "parent_slug": "govuk_legal_aid_overview",
+    "section_index": 2,
+    "organisation": "govuk",
+    "url": "https://www.gov.uk/legal-aid",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

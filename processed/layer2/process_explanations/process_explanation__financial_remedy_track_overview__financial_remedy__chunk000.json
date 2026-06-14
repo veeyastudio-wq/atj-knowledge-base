@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 427,
+  "text": "# The financial remedy track — an overview of all six stages\n\n## What it is\n\nThe financial remedy track is the legal process by which a separating couple's finances — property, savings, pensions, income, and debts — are divided, either by an agreement approved by the court or by a court order after a hearing. It is entirely separate from the divorce track and runs on its own timetable. Without a court-sealed financial order, neither party's financial claims against the other are closed, even after the divorce final order is made.\n\n## When it happens\n\nThe financial remedy track is triggered by separation, not by the filing of a divorce application. It can begin before or after the divorce application is issued. It normally runs concurrently with the divorce track's 20-week cooling-off period (Stage 3 of the divorce) and should be resolved — at minimum to a sealed consent order — before the divorce final order is applied for. Applying for the divorce final order while financial matters remain open can affect the ability to make certain financial claims, including claims against a former spouse's pension or estate. Most people going through separation encounter the divorce and financial remedy tracks at the same time, and not recognising that they are two distinct legal processes is a common source of confusion and procedural error.\n\n## What it involves\n\nThe financial remedy track has six stages:\n\n**Stage 1 — Pre-proceedings (MIAM)**\nBefore filing a court application, both parties are required to attend a Mediation Information and Assessment Meeting (MIAM) with an accredited family mediator, unless a specific exemption applies. The MIAM explores whether mediation or another form of dispute resolution is suitable. If both parties reach agreement in mediation, that agreement can be made legally binding by submitting a draft consent order to the court — if the court approves it, no further stages are needed.\n\n**Stage 2 — Filing Form A**\nIf court proceedings are necessary, the applicant files Form A — a notice of intention to proceed with an application for a financial order. The court issues a timetable and fixes a date for the First Appointment. The respondent is notified.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The financial remedy track — an overview of all six stages",
+    "track": "financial_remedy",
+    "stage": "Stage 1 — Pre-proceedings (MIAM)",
+    "source_refs": [
+      "fpr_2010__009",
+      "pd_9a",
+      "govuk__divorce"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

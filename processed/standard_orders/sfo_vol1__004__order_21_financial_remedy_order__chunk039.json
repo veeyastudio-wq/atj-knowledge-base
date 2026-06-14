@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk039",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 39,
+  "total_chunks": 61,
+  "token_count": 487,
+  "text": "Payments shall start on [date], and shall end on the first to occur of:\n\nthe death of either the applicant or the respondent;\n\nthe [respondent’s] / [applicant’s] remarriage;\n\na further order; or\n\n(either – if extendable term)\n\n[insert date or event (e.g. the youngest surviving child of the family attaining the age of 18 or ceasing full-time [secondary] / [tertiary] education [to first degree level] [[including] / [excluding] a gap year])] after which the [respondent’s] / [applicant’s] claims for periodical payments and secured periodical payments shall be dismissed, and it is directed that upon the expiry of this term:\n\nthe [respondent] / [applicant] shall not be entitled to make any further application in relation to the marriage for an order under the Matrimonial Causes Act 1973 section 23(1)(a) or (b) for periodical payments or secured periodical payments; and\n\nthe [respondent] / [applicant] shall not be entitled on the [applicant’s] / [respondent’s] later death to apply for an order under the Inheritance (Provision for Family and Dependants) Act 1975, section 2.\n\nHowever, the [respondent] / [applicant] may apply for an order to extend this term, provided the application is made before the term expires. For the avoidance of doubt, paragraph iv. (2) shall not apply in the event of the [applicant’s] / [respondent’s] death prior to the expiration of this term.\n\n[(For avoidance of doubt, where the relevant child takes a pre-tertiary education gap year, delaying the commencement of tertiary education by one year, the spousal periodical payments shall be suspended for that year and shall automatically revive when the child commences tertiary education.)]\n\n(or – if non-extendable term) [insert date or event (e.g. the youngest surviving child of the family attaining the age of 18 or ceasing full-time [secondary] / [tertiary] education [to first degree level] [[including] / [excluding] a gap year])] after which the [respondent’s] / [applicant’s] claims for periodical payments and secured periodical payments shall be dismissed, and it is directed that:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

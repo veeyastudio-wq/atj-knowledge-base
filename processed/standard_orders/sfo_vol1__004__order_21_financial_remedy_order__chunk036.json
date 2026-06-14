@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk036",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 36,
+  "total_chunks": 61,
+  "token_count": 342,
+  "text": "Variation of Settlement\n\nThe [ante] / [post]-nuptial settlement dated [date] and made between [name] and [name] be varied so as to [give details (e.g. extinguish the interest of the [applicant] / [respondent] in the settlement / settle all of the interest of the [applicant] / [respondent] on [insert] etc.)]. [The settlement to be in the form of the draft deed attached marked [insert]] / [The parties shall agree the form of the settlement by [date]. In default of agreement by that date, the matter shall be referred to conveyancing counsel of the court to settle. And it is directed that the [decree nisi] / [conditional order] shall not be made [absolute] / [final] until the necessary instrument or instruments have been executed].\n\nCompany resignation and transfer of shares\n\nThe [applicant] / [respondent] shall resign on or before [date] as [director] / [company secretary] of [name of company/ies].\n\nThe [applicant] / [respondent] shall transfer to the [respondent] / [applicant] [all] / [[percentage]%] of [his] / [her] [preference] / [ordinary] shares in [name of company/ies] by [time and date] / [[time] on the date [number] days after the date of this order].\n\nThe [applicant] / [respondent] acknowledges that [he] / [she] has no claim against [name of company/ies] [arising out of the termination of [his] / [her] employment or otherwise].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

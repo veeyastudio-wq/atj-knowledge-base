@@ -1,0 +1,22 @@
+{
+  "chunk_id": "fmc_miam__002__what_happens_after_the_first_meeting_or_miam__chunk000",
+  "source_file": "raw/supporting_context/fmc_miam__002__what_happens_after_the_first_meeting_or_miam.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 117,
+  "text": "# What happens after the first meeting or MIAM?\n\nIf everyone agrees to try mediation then an appointment is made for your first mediation session .\n\nIf you decide not to continue into mediation, or it’s not suitable in your circumstances, then the mediator will have explained the range of other options for resolving things as part of the information and assessment meeting or MIAM. If you decide to make an application to court to resolve an issue discussed at the MIAM, then you can ask the mediator to sign the court form, as long as you attended the MIAM within the last four months.",
+  "metadata": {
+    "source": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "section": "What happens after the first meeting or MIAM?",
+    "parent_document": "Mediation Information and Assessment Meeting (MIAM): Family Mediation Council",
+    "parent_slug": "fmc_miam",
+    "section_index": 2,
+    "organisation": "fmc",
+    "url": "https://www.familymediationcouncil.org.uk/family-mediation/assessment-meeting-miam/",
+    "scrape_date": "2026-06-10",
+    "licence": "© Family Mediation Council",
+    "content_type": "supporting_context",
+    "jurisdiction": "England and Wales"
+  }
+}

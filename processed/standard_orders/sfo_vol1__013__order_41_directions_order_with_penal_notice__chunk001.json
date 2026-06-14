@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__013__order_41_directions_order_with_penal_notice__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__013__order_41_directions_order_with_penal_notice.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 448,
+  "text": "This order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [insert].\n\nFindings of the court\n\n[Name of judge] of this court made an order on [date], requiring the respondent to [insert (e.g. ‘file and serve his form e by [date and time])].\n\n[Insert findings of breach]\n\nThe applicant gave the respondent adequate notice of [his] / [her] intention to apply for this order by [insert how (e.g. ‘letter posted to the respondent on [date])]. The applicant also served a copy of [his] / [her] application notice and statement in support on the respondent on [date].\n\nUndertakings to the court\n\n[Insert any undertakings given]\n\nIT IS ORDERED THAT:\n\nOrder to file and serve [Form E] / [Form E1] / [replies to questionnaire]\n\nThe respondent shall file and serve a complete signed copy of [his] / [her] [Form E] / [Form E1] / [replies to questionnaire] together with all relevant attachments and accompanying documents by [time and date].\n\nIf the respondent has not been personally served with this order by [date], and the respondent has thus not completed the steps by [time and date], then [he] / [she] shall file and serve a complete signed copy of [his] / [her] [Form E] / [Form E1] / [replies to questionnaire] together with all relevant attachments and accompanying documents by no later than 4pm on the date [number] days after the date on which [he] / [she] is personally served with this order. If that date falls on a date on which the courts are closed, then [he] / [she] shall file and serve [his] / [her] [Form E] / [Form E1] / [replies to questionnaire] by 4pm on the next day that they are open.\n\nA penal notice is attached to this paragraph.\n\nService of order\n\nThis order shall be personally served on the respondent.\n\nCosts",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_41_directions_order_with_penal_notice",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 13,
+    "source_filename": "Order 4.1 - Directions Order with Penal Notice.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

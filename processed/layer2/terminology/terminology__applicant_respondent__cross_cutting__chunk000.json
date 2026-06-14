@@ -1,0 +1,22 @@
+{
+  "chunk_id": "terminology__applicant_respondent__cross_cutting__chunk000",
+  "source_file": "raw/layer2/terminology/terminology__applicant_respondent__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 154,
+  "text": "# Applicant and respondent\n\n## What it means\n\nThe applicant is the person who starts court proceedings by filing an application. The respondent is the person the application is made against. These labels stay with both parties throughout the proceedings — they are not a reflection of who is in the right or who is at fault. In proceedings where both parties apply jointly, both may be referred to as applicants.\n\n## When you will encounter it\n\nIn every court document from the moment proceedings begin. Forms, orders, letters from the court, and directions will all identify the parties by these labels. The applicant's name appears first on the case heading.\n\n## Track\n\nCross-cutting — applies to all tracks.\n\n## Related entries\n\n- terminology__litigant_in_person__cross_cutting",
+  "metadata": {
+    "content_type": "terminology",
+    "layer": 2,
+    "title": "Applicant and respondent",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_2"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": false
+  }
+}

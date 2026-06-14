@@ -1,0 +1,24 @@
+{
+  "chunk_id": "document_explanation__non_molestation_order__cross_cutting__chunk000",
+  "source_file": "raw/layer2/document_explanations/document_explanation__non_molestation_order__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 474,
+  "text": "# Non-molestation order — applying for protection from abuse or harassment\n\n## What it is\n\nA non-molestation order is a court order that prohibits a person from molesting, harassing, pestering, or using or threatening violence against the applicant or any relevant child. It is a protective order made under Part IV of the Family Law Act 1996. Breaching a non-molestation order without reasonable excuse is a criminal offence.\n\n## When it happens\n\nA non-molestation order can be applied for at any point — before, during, or independently of other family proceedings. It does not require divorce proceedings or child arrangements proceedings to be underway. Applications can be made on notice (with the respondent informed in advance) or without notice in urgent cases where immediate protection is needed.\n\n## What it involves\n\n**The application.** The application is made using Form FL401, which sets out the applicant's relationship to the respondent, the behaviour the applicant is seeking protection from, and whether the application is being made with or without notice. A supporting statement setting out the specific incidents or pattern of behaviour — in particular any threats, acts of violence, harassment, or pestering — is required alongside the form.\n\n**Without notice applications.** If the application is made without notice, the respondent is not told about the hearing in advance. If the court grants the order, it is served on the respondent and a further hearing is listed to give the respondent the opportunity to respond and to challenge the order if they wish. Without notice applications are appropriate only where giving prior notice would expose the applicant or a child to a risk of harm that justifies proceeding without the respondent being informed.\n\n**Duration and renewal.** A non-molestation order is time-limited — typically up to 12 months — and can be renewed by application to the court. The order specifies the conduct it prohibits, which may be expressed in general terms, in relation to specific acts, or both.\n\n**Breach.** Breach of a non-molestation order without reasonable excuse is a criminal offence under section 42A of the Family Law Act 1996. It is punishable by up to five years' imprisonment. Breach is a matter for the police and Crown Prosecution Service, not only a family court enforcement matter.\n\n## What to know if you're unrepresented",
+  "metadata": {
+    "content_type": "document_explanation",
+    "layer": 2,
+    "title": "Non-molestation order — applying for protection from abuse or harassment",
+    "track": "cross_cutting",
+    "stage": "pre_proceedings",
+    "source_refs": [
+      "family_law_act_1996__s42",
+      "family_law_act_1996__s44",
+      "govuk_legal_aid_overview__000__what_you_can_get_legal_aid_for"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

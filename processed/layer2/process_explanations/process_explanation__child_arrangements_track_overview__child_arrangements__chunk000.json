@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__child_arrangements_track_overview__child_arrangements__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_track_overview__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 420,
+  "text": "# The child arrangements track — an overview of all six stages\n\n## What it is\n\nThe child arrangements track is the legal process by which a court determines with whom a child lives, how much time the child spends with each parent, and — through related order types — other significant decisions about the child's upbringing, when the parents or carers cannot reach agreement. It is a separate track from the divorce and the financial remedy process, with its own forms, timetable, and court proceedings. At the centre of every decision the court makes is the welfare principle: the child's welfare is the court's paramount consideration, above the wishes or rights of either parent.\n\n## When it happens\n\nThe child arrangements track can begin at any point — before, during, or after divorce proceedings. It is not triggered by a divorce application and is not dependent on financial remedy proceedings being underway or concluded. It runs on its own timetable. Where all three tracks are running simultaneously, each proceeds independently according to its own hearings and deadlines. The child arrangements track may also arise entirely independently of divorce, between parents who were never married.\n\n## What it involves\n\nThe child arrangements track has six stages:\n\n**Stage 1 — Pre-proceedings**\nBefore making a court application, a parent is required to attend a Mediation Information and Assessment Meeting (MIAM) with an accredited mediator, unless a specific exemption applies. Exemptions include cases involving domestic abuse, child protection concerns, urgency, and certain other specified circumstances. If parents reach an agreed parenting arrangement through mediation or direct negotiation, no court application is needed; the agreement may be formalised as a consent order if the parties wish.\n\n**Stage 2 — Filing the application (C100 form)**\nIf court proceedings are necessary, the applicant files Form C100 with the court. Where there are allegations of harm or domestic abuse involving the child or either party, Form C1A is filed alongside it. The court serves the application on the respondent and notifies CAFCASS. The court fee is payable on filing (with exemptions available based on financial circumstances).",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "The child arrangements track — an overview of all six stages",
+    "track": "child_arrangements",
+    "stage": "Stage 1 — Pre-proceedings",
+    "source_refs": [
+      "fpr_2010__012",
+      "pd_12b",
+      "children_act_1989__001"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

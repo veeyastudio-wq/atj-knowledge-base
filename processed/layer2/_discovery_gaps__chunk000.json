@@ -1,0 +1,10 @@
+{
+  "chunk_id": "_discovery_gaps__chunk000",
+  "source_file": "raw/layer2/_discovery_gaps.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 5,
+  "token_count": 39,
+  "text": "# Layer 2 Discovery Gaps\n\nEntries where `discovery_gap: true` — sections marked with the discovery gap placeholder, to be completed after research conversations with unrepresented litigants.",
+  "metadata": {}
+}

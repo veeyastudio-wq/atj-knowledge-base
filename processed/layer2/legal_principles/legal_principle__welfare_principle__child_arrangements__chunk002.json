@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__welfare_principle__child_arrangements__chunk002",
+  "source_file": "raw/layer2/legal_principles/legal_principle__welfare_principle__child_arrangements.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 67,
+  "text": "## Related entries\n\n- process_explanation__child_arrangements_track_overview__child_arrangements\n- legal_principle__paramountcy_vs_balance__child_arrangements\n- process_explanation__fhdra_hearing__child_arrangements\n- process_explanation__dra_hearing__child_arrangements",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The welfare principle — the child's interests come first",
+    "track": "child_arrangements",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "children_act_1989__001__section_1_welfare",
+      "fpr_2010__012__part_12_children",
+      "pd_12b__child_arrangements_programme"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

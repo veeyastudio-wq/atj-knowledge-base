@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_final_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 465,
+  "text": "# What happens at a financial remedy final hearing?\n\n## What it is\n\nThe financial remedy final hearing is the hearing at which a judge makes a binding financial order if the parties have been unable to reach a settlement at the Financial Dispute Resolution hearing (FDR) or at any point beforehand. Both parties present their case, give oral evidence, and may cross-examine each other. The judge then applies the statutory framework for financial remedy decisions to reach a fair outcome and makes an order that is binding on both parties.\n\n## When it happens\n\nThe final hearing is Stage 6 of the financial remedy track. It takes place only if the case has not settled at the FDR (Stage 5) or through subsequent negotiation. The date is set by the judge at or after the FDR. The final hearing judge must be a different judge from the one who conducted the FDR. Final hearings in financial remedy cases can last from half a day to several days, depending on the complexity of the assets involved.\n\n## What it involves\n\n**Before the hearing**, each party must file and serve a bundle of documents in the format specified by the court, a statement of issues, an updated open proposals document, a costs schedule (Form H1), and in some cases updated valuations or expert reports. The court will give specific directions about filing deadlines at the FDR or in subsequent directions.\n\n**At the hearing**, the typical sequence is:\n\n1. **Opening submissions.** Each party summarises their case and what order they are asking the court to make. This is usually brief.\n\n2. **Evidence.** Each party gives oral evidence — they present their witness statement as their evidence-in-chief (usually taken as read) and are then cross-examined by the other party. Any witnesses who have filed statements may also give evidence and be cross-examined.\n\n3. **Closing submissions.** Each party makes submissions on the law and the facts, addressing the statutory factors the judge must consider and arguing why the order they seek is appropriate. This is often the most technically demanding stage for an unrepresented party.\n\n4. **Judgment.** The judge may give judgment at the end of the hearing (an ex tempore judgment) or may reserve judgment to be handed down in writing at a later date.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What happens at a financial remedy final hearing?",
+    "track": "financial_remedy",
+    "stage": "Stage 6 — Final hearing",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

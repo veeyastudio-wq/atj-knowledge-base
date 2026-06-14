@@ -1,0 +1,24 @@
+{
+  "chunk_id": "process_explanation__fdr_hearing__financial_remedy__chunk000",
+  "source_file": "raw/layer2/process_explanations/process_explanation__fdr_hearing__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 499,
+  "text": "# What is the Financial Dispute Resolution hearing (FDR)?\n\n## What it is\n\nThe Financial Dispute Resolution hearing (FDR) is a judge-led settlement hearing in financial remedy proceedings. The judge hears brief summaries of both parties' positions and gives an indication of what a fair outcome might look like — this indication is not a binding judgment. The parties then negotiate, with the judge available to assist if needed. Most financial remedy cases that reach this stage settle at the FDR. The entire hearing is conducted on a without-prejudice basis: nothing said or offered at the FDR can be referred to at a final hearing if the case does not settle.\n\n## When it happens\n\nThe FDR is Stage 5 of the financial remedy track. It takes place after the FDA (Stage 4), once any outstanding disclosure ordered at the FDA has been completed. The court sets the FDR date at the FDA. If the case settles at the FDR, no final hearing (Stage 6) takes place. If it does not settle, the FDR judge is disqualified from presiding at any subsequent final hearing, and the case is listed before a different judge.\n\n## What it involves\n\nBefore the FDR, each party must file and serve on the other a statement of open proposals — a document setting out the financial settlement they are proposing. Both parties should also file an updated summary of their financial positions if anything has changed since Form E.\n\nAt the FDR hearing itself:\n\n1. **Judicial indication.** The judge reads the papers before the hearing. Each party (or their advocate) gives a short summary of their position. The judge then gives an indication of how the case might be decided at a final hearing — what outcome the judge considers broadly fair, based on the evidence and the applicable legal framework. This indication is not a judgment and does not bind anyone.\n\n2. **Negotiation.** The parties then negotiate — often outside the courtroom, in the courthouse corridors or in separate rooms. The judge remains available throughout the day to hear further submissions or give further indications if the parties reach an impasse on a specific point.\n\n3. **Settlement or adjournment.** If the parties reach agreement, a consent order is drafted and submitted to the judge for approval that day or shortly after. If no agreement is reached by the end of the hearing, the judge gives directions for a final hearing and the case is listed before a new judge.",
+  "metadata": {
+    "content_type": "process_explanation",
+    "layer": 2,
+    "title": "What is the Financial Dispute Resolution hearing (FDR)?",
+    "track": "financial_remedy",
+    "stage": "Stage 5 — Financial Dispute Resolution (FDR)",
+    "source_refs": [
+      "fpr_2010__009__part_9_financial_remedies",
+      "pd_9a__financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

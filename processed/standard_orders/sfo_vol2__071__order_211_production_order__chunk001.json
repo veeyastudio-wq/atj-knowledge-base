@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__071__order_211_production_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__071__order_211_production_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 379,
+  "text": "The issues affecting the prisoner to be determined at the hearing on [hearing date] are [insert (e.g. whether his/her children are placed in the interim care of the local authority)].\n\nThe prisoner’s Article [insert (e.g. ‘8’)] rights are relevant to the question of whether to produce the prisoner because the proceedings relate to [insert (e.g. his right to a family life)].  The prisoner’s Article 6 rights are engaged by the need for [him] / [her] to be able to participate in the court process.\n\nNeed to attend\n\nThe court does not consider that the prisoner can participate adequately in the proceedings by providing submissions in writing because [insert (e.g. the other parties will be attending court to negotiate and make oral submissions, and the prisoner must be able to participate and/or respond)].\n\n[Name of prisoner] needs to attend the hearing to give evidence.\n\nDated [date]\n\nOrder\nThe Children Act 1989 \nHuman Rights Act 1998, Schedule 1 Articles 6 and 8 \nCrime (Sentences) Act 1997, Schedule 1\nPrison Service Order 4625 | Order\nThe Children Act 1989 \nHuman Rights Act 1998, Schedule 1 Articles 6 and 8 \nCrime (Sentences) Act 1997, Schedule 1\nPrison Service Order 4625 | Order\nThe Children Act 1989 \nHuman Rights Act 1998, Schedule 1 Articles 6 and 8 \nCrime (Sentences) Act 1997, Schedule 1\nPrison Service Order 4625\n\nThe full name(s) of the child(ren) | Boy or Girl | Date(s) of Birth\n\n[insert] | [insert] | [insert]\n\n[insert] | [insert] | [insert]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court    \t          Case No: [Case number]",
+    "order_number": "order_211_production_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 71,
+    "source_filename": "Order 21.1 - Production Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

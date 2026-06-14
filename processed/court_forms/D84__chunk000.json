@@ -1,0 +1,36 @@
+{
+  "chunk_id": "D84__chunk000",
+  "source_file": "raw/court_forms/D84.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 322,
+  "text": "# Apply for a conditional order or judicial separation order: Form D84\n\nUse this form to apply for a conditional order confirming that the court does not see any reason why you cannot divorce or separate.\n\n## Form Content\n\nCase number\nApplication for a conditional order Name of sole applicant or applicant 1\nor (judicial) separation order\nName of applicant 2\nName of respondent\nSole applicants - complete Sections A, C and D\nJoint applicants - complete Sections B, C and D\nA. Sole applicant Money and property when\nyou divorce or separate\nThis section is to be completed by an applicant who made the If you have not already\ndivorce/dissolution/(judicial) separation application solely. applied for a financial order\nyou can still do so if you\nwant to.\n1. Full name of sole applicant\nYou can find more guidance\non financial orders and\nFirst name(s) how to get help agreeing\non any issues at www.gov.\nuk/money-property-when-\nMiddle name(s) relationship-ends/apply-for-\na-financial-order\nLast name\n2. The sole applicant applies to the judge for a conditional order of\ndivorce in this case\ndissolution in this case\nHMCTS USE ONLY\nor\nin the case of (judicial) separation, the sole applicant applies to the\njudge for a\n(judicial) separation order in this case\nPage 1\nD84 Application for a conditional order or (judicial) separation order (03.24) ©Crown copyright 2024",
+  "metadata": {
+    "form_id": "D84",
+    "title": "Apply for a conditional order or judicial separation order: Form D84",
+    "description": "Use this form to apply for a conditional order confirming that the court does not see any reason why you cannot divorce or separate.",
+    "track": "divorce",
+    "landing_url": "https://www.gov.uk/government/publications/form-d84-apply-for-a-conditional-order-or-judicial-separation-order",
+    "pdf_url": "https://assets.publishing.service.gov.uk/media/65f972ebaa9b760011fbda3d/D84_0324.pdf",
+    "version_date": "2024-06-13",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "form_fields": [
+      "Case number",
+      "Name of applicant 2",
+      "Name of respondent",
+      "Name of sole applicant or applicant 1",
+      "Or, in the case of (judicial) separation, the sole applicant applies to the judge for a (judicial) separation order in this case",
+      "Text Field 100",
+      "Text Field 101",
+      "Text Field 76",
+      "Text Field 77",
+      "Text Field 78",
+      "Text Field 79",
+      "Text Field 80",
+      "Text Field 81",
+      "Text Field 99"
+    ]
+  }
+}

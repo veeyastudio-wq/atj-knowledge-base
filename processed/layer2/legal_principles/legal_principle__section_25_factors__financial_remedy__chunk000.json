@@ -1,0 +1,24 @@
+{
+  "chunk_id": "legal_principle__section_25_factors__financial_remedy__chunk000",
+  "source_file": "raw/layer2/legal_principles/legal_principle__section_25_factors__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 464,
+  "text": "# The section 25 factors — how a judge divides assets in a financial remedy case\n\n## What it is\n\nSection 25 of the Matrimonial Causes Act 1973 sets out the factors a family court must take into account when deciding how to divide a couple's finances on divorce. There is no fixed formula — the judge weighs all the factors together against the overarching objective of reaching a fair outcome for both parties and for any children of the family.\n\n## Where it comes from\n\nSection 25 of the Matrimonial Causes Act 1973 is the primary statutory provision governing financial remedy decisions. It has been in force, in broadly its current form, since 1984. Case law has developed a framework of three broad objectives — needs, sharing, and compensation — that courts use to structure the application of the section 25 factors, but these are tools of analysis, not separate legal rules.\n\n## What it means in practice\n\nWhen a judge is deciding a financial remedy case, they must consider:\n\n- **The welfare of any minor children of the family.** This is the court's first consideration — it takes priority over all other section 25 factors. Housing and financial provision for children who live primarily with one parent will be central to any financial order.\n\n- **The income, earning capacity, property, and other financial resources of each party**, both now and in the foreseeable future. This includes earning potential — not just current earnings. A judge will consider whether a party could reasonably be expected to increase their income through employment or retraining.\n\n- **The financial needs, obligations, and responsibilities of each party**, now and in the foreseeable future. Housing needs are usually the most significant factor in practice, particularly where children are involved.\n\n- **The standard of living enjoyed by the family during the marriage.** This does not mean the court tries to replicate that standard after separation — available resources often do not allow it — but it forms part of the picture.\n\n- **The age of each party and the duration of the marriage.** A short marriage typically leads to a different outcome than a long one. An older party with limited earning years remaining has different needs from a younger one.\n\n- **Any physical or mental disability of either party.** Disability affecting earning capacity or care needs is a relevant factor.",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "The section 25 factors — how a judge divides assets in a financial remedy case",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "matrimonial_causes_act_1973__003__section_25",
+      "fpr_2010__009__part_9_financial_remedies",
+      "guidance__financial_remedies_guide_2026"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}

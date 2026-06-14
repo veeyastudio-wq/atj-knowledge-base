@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__018__order_414_interim_third_party_debt_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__018__order_414_interim_third_party_debt_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 4,
+  "token_count": 462,
+  "text": "the amount now owing under that order is £[amount] including interest and costs as follows:\n\nthere is a debt due or accruing due by the third party to the respondent.\n\nIT IS ORDERED THAT:\n\nUntil the hearing listed at paragraph [para number], the third party must not, unless the court orders otherwise, pay to the respondent, or to any other person, any sum of money due or accruing due by the third party to the respondent, except for any part of that sum which exceeds the following total:\n\nThe application shall be listed for a further hearing before a [District] / [Circuit] / [High Court] Judge at the Family Court sitting at [court name] on [date (which should be within 28 days)] at [time] when the judge will decide whether a final third party debt order should be made.\n\nThis interim order does not authorise the third party to pay any money to the applicant at this stage.\n\n[The applicant shall serve the interim third party debt order, the application notice, and all documents filed in support of it in accordance with Civil Procedure Rules, rule 72.5 on:\n\nthe third party by 4:00pm on the date 21 days before the hearing listed in paragraph [para number] above; and\n\nthe respondent not less than\n\n7 days after a copy has been served on the third party; and\n\n7 days before the hearing listed in paragraph [para number] above.]\n\nIf the respondent or the third party objects to the court making a final third party debt order, that person shall file with the court and serve on the parties written evidence stating the grounds of objection by 4:00pm on the date 3 days before the hearing listed in paragraph [para number] above.\n\nDated [date]\n\nSums remaining due for payment under the order | £[amount]\n\nInterest to the date of the order | £[amount]\n\nCosts to the date of the order | £[amount]\n\nSums remaining due for payment under the order | £[amount]\n\nInterest to the date of the order | £[amount]\n\nCourt fee | £[amount]\n\nCosts of this application to the date of the order | £[amount]\n\nTOTAL: | £[amount]\n\nTO THE THIRD PARTY:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_414_interim_third_party_debt_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 18,
+    "source_filename": "Order 4.14 - Interim Third Party Debt Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

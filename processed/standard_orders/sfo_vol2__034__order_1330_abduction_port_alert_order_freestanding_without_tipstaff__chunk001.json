@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__034__order_1330_abduction_port_alert_order_freestanding_without_tipstaff__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__034__order_1330_abduction_port_alert_order_freestanding_without_tipstaff.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 418,
+  "text": "The solicitors acting for the [applicant] / [respondent] shall send a sealed copy of this order along with the completed form 7 to NBTCsafeguarding@gmp.pnn.police.uk\n\nOn receipt of a sealed copy of this order and a completed form 7., The National Border Targeting Centre do implement an All-Ports Warning in respect of [child(ren)s’s name(s), sex and date of birth]. This All-Ports Warning shall remain in place for a period of [28] / [number] (if longer than 28 days is required, a specific date must be entered, do not enter to further order of the court or any other variation) days from the date of this order being made, unless renewed by an order of the court issued no later than two clear working days prior to the expiration of the 28-day period above.\n\nFor as long as the All-Ports Warning is in force pursuant to para [para number] above, [child(ren)s’s name(s)] [is] / [are] not permitted to leave the jurisdiction of England and Wales.\n\nIn the event that [child(ren)s’s name(s)] [is] / [are] found to be at any port within the jurisdiction of England and Wales and are booked to travel by air, sea or rail out of England and Wales, a Police Officer is ordered to and must remove the passport, identity card and any other travel document to prevent [child(ren)s’s name(s)] from leaving the jurisdiction of England and Wales.\n\nAny passport, identity card and any other travel document seized under para [para number] above must be delivered to the solicitors acting for the applicant by way of Royal Mail Special Recorded Delivery as soon as practicable after seizure.\n\nThe solicitors acting for the [applicant] / [respondent] shall forthwith serve a sealed copy of this order on the National Border Targeting Centre by e-mail to NBTCsafeguarding@gmp.pnn.police.uk along with a completed form 7.",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_1330_abduction_port_alert_order_freestanding_without_tipstaff",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 34,
+    "source_filename": "Order 13.30 - Abduction - Port Alert Order (Freestanding - without Tipstaff).docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

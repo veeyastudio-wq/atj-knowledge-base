@@ -1,0 +1,23 @@
+{
+  "chunk_id": "terminology__clean_break__financial_remedy__chunk000",
+  "source_file": "raw/layer2/terminology/terminology__clean_break__financial_remedy.md",
+  "layer": "layer2",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 226,
+  "text": "# Clean break\n\n## What it means\n\nA clean break is a financial settlement that ends all financial claims between the parties permanently, with no ongoing payments between them. Once a clean break order is made, neither party can return to court to make further financial claims against the other — even if circumstances change significantly in the future. The court is required by the Matrimonial Causes Act 1973 to consider whether a clean break is appropriate in every financial remedy case.\n\n## When you will encounter it\n\nIn financial remedy proceedings, at every stage from the FDA onwards. The court will ask whether a clean break is possible. If one party is seeking ongoing maintenance payments and the other wants a clean break, this will be one of the issues at the FDR and final hearing.\n\n## Track\n\nFinancial remedy.\n\n## Related entries\n\n- document_explanation__consent_order__financial_remedy\n- process_explanation__fdr_hearing__financial_remedy\n- process_explanation__financial_remedy_final_hearing__financial_remedy\n- legal_principle__section_25_factors__financial_remedy",
+  "metadata": {
+    "content_type": "terminology",
+    "layer": 2,
+    "title": "Clean break",
+    "track": "financial_remedy",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "mca_1973__s25A",
+      "advicenow_financial_order__003__key_things_to_know_about_financial_orders"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__087__order_59_bench_warrant_for_arrest__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol2__087__order_59_bench_warrant_for_arrest.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 4,
+  "token_count": 449,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\n(not for use in committal proceedings but in other proceedings where it is necessary to secure the attendance of a party or a witness by a bench warrant)\n\nThe [name of statute] Act [year]\n\n(either)\n\nThe [Marriage] / [Civil Partnership] / [Relationship] / [Family] of [applicant name] and [respondent name]\n\n(Adapt as necessary)\n\n(or)\n\nThe children of the family\n\nAfter hearing [name the advocates(s) who appeared]\n\nAfter consideration of the documents lodged by the parties\n\nWARRANT FOR ARREST ISSUED BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nRecitals\n\nThis is a warrant for the arrest of [the respondent [respondent name]] / [[name] of [address]].\n\nAn important notice to [the respondent] / [name] is set out in the schedule below.\n\nThis warrant for arrest has been issued because in the opinion of the court there are reasonable grounds for believing that [the respondent] / [name] failed to attend at the Family Court sitting at [place] at [date and time] contrary to an express requirement of this court contained in its witness summons dated [date], which (at the time when any necessary payment or offer of payment was apparently made to [respondent name] / [name]) appears to have been served on [the respondent] / [name] on [date].\n\nBY THIS WARRANT THE COURT DIRECTS THAT:\n\nThe [Tipstaff of the High Court of Justice] / [Bailiff of the Family Court], whether acting by themself or their deputy or an assistant or a police officer, shall:\n\nas soon as practicable arrest [the respondent] / [name]:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_59_bench_warrant_for_arrest",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 87,
+    "source_filename": "Order 5.9 - Bench Warrant for Arrest.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__010__order_34_free_standing_legal_services_payment_order__chunk000",
+  "source_file": "raw/standard_orders/sfo_vol1__010__order_34_free_standing_legal_services_payment_order.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 3,
+  "token_count": 408,
+  "text": "# High Court Judgment Template\n\nIn the Family Court\t\tCase No: [Case number]\n\nsitting at [Court name]\n\n[The Matrimonial Causes Act 1973] /\n\n[The Matrimonial and Family Proceedings Act 1984 and Schedule 7 to the Civil Partnership Act 2004] /\n\n[The Civil Partnership Act 2004]\n\n(Delete as appropriate)\n\nThe [Marriage] / [Civil Partnership] of [applicant name] and [respondent name]\n\nAfter hearing [name the advocates(s) who appeared]\n\nAfter consideration of the documents lodged by the parties\n\n(In the case of an order made without notice) After reading the statements and hearing the witnesses specified in para [para number] of the recitals below\n\nORDER MADE BY [NAME OF JUDGE] ON [DATE] SITTING IN [OPEN COURT] / [PRIVATE]\n\nWARNING: IF YOU DO NOT COMPLY WITH THIS ORDER, YOU MAY BE HELD TO BE IN CONTEMPT OF COURT AND YOU MAY BE SENT TO PRISON, BE FINED, OR HAVE YOUR ASSETS SEIZED.\n\nThe parties\n\nThe applicant is [applicant name]\n\nThe [first] respondent is [respondent name]\n\n[The second respondent is [respondent name]]\n\n[The third [etc] respondent is [respondent name]]\n\n[The intervener is [intervener name]]\n\n(Specify if any party acts by a litigation friend)\n\nRecitals\n\n(In the case of an order made without notice)\n\nThis order was made at a hearing without notice to the respondent. The reason why the order was made without notice to the respondent was [set out].\n\nThe judge read the following affidavits/witness statements [set out] and heard oral testimony from [name].\n\n(In the case of an order made following the giving of short informal notice)\n\nThis order was made at a hearing without full notice having been given to the respondent. The reason why the order was made without full notice having been given to the respondent was [set out].",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_34_free_standing_legal_services_payment_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 10,
+    "source_filename": "Order 3.4 - Free-standing Legal Services Payment Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

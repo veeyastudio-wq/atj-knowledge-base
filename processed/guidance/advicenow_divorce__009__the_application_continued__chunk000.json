@@ -1,0 +1,21 @@
+{
+  "chunk_id": "advicenow_divorce__009__the_application_continued__chunk000",
+  "source_file": "raw/guidance/advicenow_divorce__009__the_application_continued.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 5,
+  "token_count": 423,
+  "text": "# The application continued...\n\n### Jurisdiction\n\nYou must be able to show that you or your ex has a connection with England or Wales to start divorce proceedings or proceedings to end a civil partnership. A court only has the legal power to deal with your case if you can show this connection. ‘Jurisdiction’ is the legal word for this power.\n\nThe application asks you for information that will enable the court to decide whether it has the legal power to deal with your case.\n\nYou need to confirm your connection to England or Wales. For many people this will be that they both usually live in England or Wales (the law calls this being ‘habitually resident’). In the online application you need to answer ‘yes’ or ‘no’ to the question about if your lives are mainly based in England or Wales. If you do the paper application you need to decide if you can tick the box that says In this situation you tick the box against the words: ‘both parties to the marriage/civil partners are habitually resident in England and Wales’.\n\nMany people will be able to answer ‘yes’ to this question and then move on to the next section. If you answer ‘no’, you will need to answer more questions to see if you have a different connection to England or Wales. This could be that one of you usually lives in England or Wales or that England or Wales is the country you consider to be your permanent home (the law calls this ‘domicile’).\n\nIf you are not sure how to answer these questions, or you think this option does not apply to you try and get some legal advice, see the section called More help and advice for more details.\n\n### Personal details for you and your ex\n\nYou need to provide your personal contact details and say how you would like the court to contact you. If you are applying by yourself, you need to provide your ex’s postal address. If you have it, it would also help to provide a current email address for your ex too. This is so your ex can be sent, or ‘served with’, your application.",
+  "metadata": {
+    "source": "How to get a divorce without a lawyer: Advicenow",
+    "section": "The application continued...",
+    "parent_document": "How to get a divorce without a lawyer: Advicenow",
+    "parent_slug": "advicenow_divorce",
+    "section_index": 9,
+    "url": "https://www.advicenow.org.uk/get-help/family-and-children/divorce-and-separation/get-divorce-without-lawyer",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk002",
+  "source_file": "raw/standard_orders/sfo_vol2__021__order_1319_abduction_electronic_tagging_order.md",
+  "layer": "layer1",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 304,
+  "text": "IT IS ORDERED THAT:\n\nThe respondent, [respondent name], shall be subject to electronic tagging in accordance with the provisions of the schedule of information below.\n\nNOMS HM Prison and Probation Service, having liaised with the Family Division lawyers of the President of the Family Division’s office, President’s Chambers, Royal Courts of Justice, Strand, London WC2A 2LL is requested to effect and to continue the electronic tagging of the respondent [respondent name] (born on [date of birth]) as provided for in this order in accordance with the provisions of the schedule of information as provided below.\n\nCosts are reserved.\n\nDated [date]\n\nSchedule of information provided for the purposes of effecting and continuing the electronic tagging of a person\n\nName and date of birth of person to be electronically tagged\n\n[Name]\n\n[Date of birth]\n\nAddress and place of curfew\n\n[Address/place]\n\nDate and time at which the electronically tagged person agrees to be present at the address of the place of curfew for the purposes of the installation of the monitoring device\n\n[Date and time]\n\nStart date of curfew\t[Start date]\n\nEnd date of curfew\t[End date]\n\nDays on which curfew is in place\t[Days]\n\nCurfew hours\t[Hours]\n\nName and contact details of relevant person whom should be contacted if there is a breach of the curfew or if the tag is removed or otherwise interfered with\n\n[Name and contact details]\n\nDated [date]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "IN THE HIGH COURT OF JUSTICE",
+    "order_number": "order_1319_abduction_electronic_tagging_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 21,
+    "source_filename": "Order 13.19 - Abduction - Electronic Tagging Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

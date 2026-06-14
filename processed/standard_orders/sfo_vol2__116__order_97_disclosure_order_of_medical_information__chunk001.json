@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__116__order_97_disclosure_order_of_medical_information__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol2__116__order_97_disclosure_order_of_medical_information.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 3,
+  "token_count": 486,
+  "text": "Recitals\n\nThis is an order for medical information to be provided to this court by [specify the provider].\n\nThe reason that this request for information is made is [specify].\n\nThis order was made at a hearing [without notice] / [on short informal notice] to the [name of provider]. The reason why the order was made [without notice] / [on short informal notice] to the [name of provider] was [insert]. The [name of provider] has the right to apply to the court to vary or discharge the order – see “The right to seek variation or discharge of this order” below.\n\nNo patient or parental consent is required for release of this information to this court.\n\nIT IS ORDERED (BY CONSENT):\n\n[Name of provider] shall by 4.00pm on [date] disclose to the [Local Authority] / [other named party] the following information:\n\n(clearly specify by reference to the check-list below)\n\n[insert]\n\n[insert]\n\n[etc]\n\n[The Local Authority] / [other named party] shall serve a copy of this order on [specify the provider] together with (a) a letter setting out in respect of the solicitors representing each party the full name of the firm, the full postal address, and the reference at that firm dealing with the matter giving his/her email address and direct telephone number, and (b) a copy of the Protocol.\n\n[The Local Authority] / [other named party] shall file with this court and serve on the other parties the supplied information by 4.00pm on [date].\n\nThe information when supplied may be used only for the purposes of these proceedings and must not be disclosed to any third party without the express permission of this court.\n\nThe right to seek variation or discharge of this order\n\n(where the order was made on no, or short, notice) The [name of provider] may apply for discharge or variation of this order, upon giving two clear business days’ notice of the hearing to the parties, by 4.00pm on  [date].\n\nDated [date]\n\nCHECK-LIST\n\nPrimary Care\n\nGeneral Practice Medical and prescribing record\n\nMidwifery record (ante- and post-natal)\n\nHealth Visitor record (individual and family)\n\nSchool Nurse record\n\nGeneral Dental Practice record\n\nCommunity Dental record\n\nNHS computer for immunisations and child health surveillance",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the High Court of Justice",
+    "order_number": "order_97_disclosure_order_of_medical_information",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 116,
+    "source_filename": "Order 9.7 - Disclosure Order of Medical Information.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__007__order_31_freezing_order__chunk005",
+  "source_file": "raw/standard_orders/sfo_vol1__007__order_31_freezing_order.md",
+  "layer": "layer1",
+  "chunk_index": 5,
+  "total_chunks": 8,
+  "token_count": 486,
+  "text": "Provision of security\n\nThe order will cease to have effect if the respondent:\n\nprovides security by paying the sum of £[amount] into court, to be held to the order of the court; or\n\nmakes provision for security in that sum by another method agreed with the applicant’s legal representatives.\n\nCosts\n\nThe costs of this application are reserved to the judge hearing the application on the return date.\n\nThe right to seek variation or discharge of this order\n\nAnyone served with or notified of this order may apply to the court at any time to vary or discharge this order (or so much of it as affects that person), but they must first inform the applicant’s solicitors. If any evidence is to be relied upon in support of the application, the substance of it must be communicated in writing to the applicant’s solicitors in advance.\n\nParties other than the applicant and respondent\n\n(Effect of this order)\n\nIt is a contempt of court for any person notified of this order knowingly to assist in or permit a breach of this order. Any person doing so may be imprisoned, fined or have their assets seized.\n\n(Set off by bank)\n\nThis injunction does not prevent any bank from exercising any right of set off it may have in respect of any facility which it gave to the respondent before it was notified of this order.\n\n(Withdrawals by the respondent)\n\nNo bank need enquire as to the application or proposed application of any money withdrawn by the respondent if the withdrawal appears to be permitted by this order.\n\n(For worldwide injunction)\n\nPersons outside England and Wales\n\nExcept as provided in the following paragraph, the terms of this order do not affect or concern anyone outside the jurisdiction of this court.\n\nThe terms of this order will affect the following persons in a country or state outside the jurisdiction of this court:\n\nthe respondent or [his] / [her] officer or agent appointed by power of attorney;\n\nany person who:\n\nis subject to the jurisdiction of this court;\n\nhas been given written notice of this order at their residence or place of business within the jurisdiction of this court; and\n\nis able to prevent acts or omissions outside the jurisdiction of this court which constitute or assist in a breach of the terms of this order; and\n\nany other person, only to the extent that this order is declared enforceable by or is enforced by a court in that country or state.\n\n(For worldwide injunction)\n\nAssets located outside England and Wales",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "High Court Judgment Template",
+    "order_number": "order_31_freezing_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 7,
+    "source_filename": "Order 3.1 - Freezing Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

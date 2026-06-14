@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk006",
+  "source_file": "raw/standard_orders/sfo_vol1__004__order_21_financial_remedy_order.md",
+  "layer": "layer1",
+  "chunk_index": 6,
+  "total_chunks": 61,
+  "token_count": 492,
+  "text": "The following provisions shall apply:\n\nThe arbitration shall be conducted in accordance with and the parties shall be bound by the IFLA financial scheme rules (‘the rules’) in force at the date of the commencement of the arbitration;\n\nA party invoking this agreement shall serve on the other party written notice identifying the dispute to be arbitrated and requesting agreement to the appointment of an arbitrator;\n\n[The arbitrator to be appointed shall be [arbitrator name] if available];\n\nIf by the date fourteen days after service of the notice referred to at sub-paragraph b. above the parties have reached agreement on the appointment of an arbitrator, they shall complete, sign and lodge with IFLA a form ARB1FS (or the corresponding arbitration application form then in force) nominating the agreed arbitrator;\n\nIf by the date fourteen days after service of the notice referred to at sub-paragraph b. above the parties have failed to reach agreement on the appointment of an arbitrator, they shall complete, sign and lodge with IFLA a form ARB1FS (or the corresponding arbitration application form then in force) requesting IFLA to offer the appointment to an arbitrator selected by IFLA in accordance with article 4.3.3 of the rules (7th edition, 2021) (or the corresponding provision then in force);\n\nThe seat of the arbitration shall be [insert (e.g. london, england)];\n\nThis agreement is an arbitration agreement for the purpose of section 6 of the Arbitration Act 1996.\n\nDeclaration regarding lump sum order(s)\n\nThe parties agree and declare that the lump sum order[s] set out in paragraph[s]  [para number(s)] below should be considered to be [a series of lump sum orders] / [a lump sum order payable by instalments].\n\nDeclaration as to solvency\n\nThe [applicant] / [respondent] declares that [he] / [she] is solvent as at the date of [his] / [her] signing this order in that:\n\n[he] / [she] is able to pay [his] / [her] debts as they fall due; and\n\nthe value of [his] / [her] assets equals or exceeds the amount of [his] / [her] liabilities, including contingent and prospective liabilities.\n\nDeclaration of intention not to seek a variation of a periodical payments order\n\n(receiving party)",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": "In the Family Court\t\tCase No: [Case number]",
+    "order_number": "order_21_financial_remedy_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 4,
+    "source_filename": "Order 2.1 - Financial Remedy Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

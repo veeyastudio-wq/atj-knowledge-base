@@ -1,0 +1,21 @@
+{
+  "chunk_id": "govuk_divorce__000__contents__chunk000",
+  "source_file": "raw/guidance/govuk_divorce__000__contents.md",
+  "layer": "layer1",
+  "chunk_index": 0,
+  "total_chunks": 1,
+  "token_count": 207,
+  "text": "# Contents\n\n- Check you can get a divorce\n- Before you apply\n- How to apply\n- What happens after you apply\n- Apply for a conditional order or decree nisi\n- Finalise your divorce\n- If your husband or wife lacks mental capacity\n\nYou can get divorced in England or Wales if all of the following are true:\n\n- you’ve been married for over a year\n- your relationship has permanently broken down\n- your marriage is legally recognised in the UK (including same-sex marriage)\n\nThis guide is also available in Welsh (Cymraeg) .\n\nIf you are ending a civil relationship, read the guide for ending a civil partnership .\n\nIf you do not want a divorce, you can get a legal separation so you can live apart without ending the marriage. You might also be able to annul the marriage . You can apply for separation or annulment during your first year of marriage.\n\nThere is a different process if you want to get a divorce in Scotland or get a divorce in Northern Ireland .",
+  "metadata": {
+    "source": "Get a divorce: GOV.UK guide",
+    "section": "Contents",
+    "parent_document": "Get a divorce: GOV.UK guide",
+    "parent_slug": "govuk_divorce",
+    "section_index": 0,
+    "url": "https://www.gov.uk/divorce",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "guidance",
+    "jurisdiction": "England and Wales"
+  }
+}

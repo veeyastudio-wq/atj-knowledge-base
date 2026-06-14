@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol1__020__order_416_hardship_payment_order__chunk001",
+  "source_file": "raw/standard_orders/sfo_vol1__020__order_416_hardship_payment_order.md",
+  "layer": "layer1",
+  "chunk_index": 1,
+  "total_chunks": 2,
+  "token_count": 468,
+  "text": "This order was made at a hearing without full notice having been given to the applicant. The reason why the order was made without full notice having been given to the applicant was [insert].\n\nFindings of the court\n\nOn [date and time], [name of judge] / [the court] made an interim third party debt order, forbidding the third party, unless the court orders otherwise, from paying to the respondent, or to any other person, any sum of money due or accruing due by the third party to the respondent, except for any part of that sum which exceeds the following total:\n\nIt appears that the amount which is due from the third party to the respondent (after deducting the expenses allowed on receiving the interim third party debt order) is £[amount].\n\nThe respondent has applied under CPR 72.7 for the release of the sum of £[amount] to [him] / [her] to enable [his] / [her] needs to be met pending the hearing of the applicant’s application for a final third party debt order on [date and time].\n\nThe respondent is beneficially entitled to the contents of the account.\n\nThe respondent states that without being able to access the contents of the account, [he] / [she] will suffer hardship in various ways which are set out in [his] / [her] statement set out above.\n\nThe court finds that there is the risk of hardship in the following ways:\n\n[insert]\n\nand makes the order below to alleviate that hardship.\n\nIT IS ORDERED THAT:\n\n[The respondent shall have permission to seek payment from the third party of the sum of £[amount].]\n\n(either)\n\n[The third party shall have permission to release the sum specified at paragraph [para number] above to the respondent.]\n\n(Or)\n\n[The third party shall have permission to pay to the respondent the sum of £[amount].]\n\nThe costs of this application shall be reserved to the judge hearing the applicant’s application for a final third party debt order.\n\nDated [date]\n\nSums remaining due for payment under the order | £[amount]\n\nInterest to the date of the order | £[amount]\n\nCourt fee | £[amount]\n\nCosts of this application to the date of the order | £[amount]\n\nTOTAL: | £[amount]",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "title": 1,
+    "order_number": "order_416_hardship_payment_order",
+    "volume": 1,
+    "parent_document": "Standard Family Orders — Volume 1: Financial Remedies (May 2026)",
+    "parent_slug": "sfo_vol1",
+    "section_index": 20,
+    "source_filename": "Order 4.16 - Hardship Payment Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-1-05.26.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}

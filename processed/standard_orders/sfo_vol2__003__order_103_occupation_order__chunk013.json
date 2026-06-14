@@ -1,0 +1,25 @@
+{
+  "chunk_id": "sfo_vol2__003__order_103_occupation_order__chunk013",
+  "source_file": "raw/standard_orders/sfo_vol2__003__order_103_occupation_order.md",
+  "layer": "layer1",
+  "chunk_index": 13,
+  "total_chunks": 19,
+  "token_count": 481,
+  "text": "it has considered the matters adduced by [name] and concluded that the facilities available at court should afford sufficient protection.\n\n[Name] must by 4.00pm on [date] ask [name of intermediary provider] to provide a quotation for the supply of services in the form of a preliminary assessment to include necessary preparative work and, if required, intermediary services and necessary preparative work for the ground rules hearing and final hearing and the following directions apply:\n\nthe quotation must be sent to HMCTS for the attention of the court manager by [date];\n\nHMCTS must confirm acceptance of the quotation and payment of intermediary services within 7 days after receipt of the quotation;\n\nthe case will be listed for a ground rules hearing at [time] on [date] allowing [time estimate];\n\n[Name of intermediary provider] must file a preliminary assessment by [4 weeks after confirmation of payment of services by HMCTS] / [date] and shall attend, if required, the subsequent hearings;\n\nany default in compliance with these directions shall be brought to the attention of the case management judge on 48 hours’ notice to all parties.\n\nThe following measures are to apply to all hearings in this matter unless otherwise ordered. They must also be set out clearly in a separate schedule headed ‘Measures which apply in case number [case number]’ which is to be placed prominently on the case file and provided by the court office to security and the court usher for each hearing.\n\nMeasures are to be taken to:\n\nprovide separate entrances to, and waiting areas in, the court building for [name(s)];\n\nprevent [name] from seeing [name] whilst within the court building or its precincts;\n\nmake sure that [name] is to arrive at court no later than 30 minutes before the hearing and is to report to [court security] / [the usher] immediately on arrival;\n\nsecurity and the court staff must liaise to make sure that the parties do not meet except when they are in the hearing room;\n\nneither party is to approach the other directly;\n\nallow [name] to participate in hearings and give evidence:\n\nby live link;\n\nby a recording made [and transcribed] in advance of the hearing;\n\nwith the aid of a [signer] / [other];\n\nby use of evidence already given in other proceedings, namely [give details];\n\n[other].\n\nprovide for [name] to:",
+  "metadata": {
+    "source": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "title": "In the Family Court\tCase No: [Case number]",
+    "order_number": "order_103_occupation_order",
+    "volume": 2,
+    "parent_document": "Standard Family Orders — Volume 2: Children and Other Orders (May 2026)",
+    "parent_slug": "sfo_vol2",
+    "section_index": 3,
+    "source_filename": "Order 10.3 - Occupation Order.docx",
+    "source_page": "https://www.judiciary.uk/guidance-and-resources/update-from-mr-justice-peel-judge-in-charge-of-the-standard-orders/",
+    "url": "https://www.judiciary.uk/wp-content/uploads/2026/05/SFO-Volume-2-05.26-1.zip",
+    "scrape_date": "2026-06-10",
+    "licence": "Open Government Licence v3.0",
+    "content_type": "standard_order",
+    "jurisdiction": "England and Wales"
+  }
+}
