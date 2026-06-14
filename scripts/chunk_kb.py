@@ -74,8 +74,20 @@ def make_output_path(file_path: Path, chunk_index: int) -> Path:
 
 # ── Core chunking logic ───────────────────────────────────────────────────────
 
-def chunk_file(file_path: Path, splitter: RecursiveCharacterTextSplitter) -> list[dict]:
-    """Read a markdown file, split into chunks, return list of chunk dicts."""
+def chunk_file(file_path: Path, splitter: RecursiveCharacterTextSplitter = None) -> list[dict]:
+    """Read a markdown file, split into chunks, return list of chunk dicts.
+
+    splitter is optional — if omitted, one is created from module-level config.
+    This allows the function to be imported and called as chunk_file(path).
+    """
+    if splitter is None:
+        splitter = RecursiveCharacterTextSplitter.from_tiktoken_encoder(
+            encoding_name=ENCODING,
+            chunk_size=CHUNK_SIZE,
+            chunk_overlap=CHUNK_OVERLAP,
+            separators=["\n\n", "\n", ". ", " ", ""],
+        )
+
     content = file_path.read_text(encoding="utf-8")
     metadata, body = parse_frontmatter(content)
 
