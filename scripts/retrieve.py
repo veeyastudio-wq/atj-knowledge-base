@@ -92,9 +92,7 @@ LIMIT %s
 def dense_retrieve(cur, embedding: list[float], layer: str, n: int) -> list[dict]:
     vec_str = "[" + ",".join(str(x) for x in embedding) + "]"
     cur.execute(DENSE_SQL, (vec_str, layer, vec_str, n))
-    rows = cur.fetchall()
-    cols = [d[0] for d in cur.description]
-    return [dict(zip(cols, r)) for r in rows]
+    return [dict(r) for r in cur.fetchall()]
 
 
 # ---------------------------------------------------------------------------
@@ -123,9 +121,7 @@ LIMIT %s
 
 def sparse_retrieve(cur, query: str, layer: str, n: int) -> list[dict]:
     cur.execute(SPARSE_SQL, (query, layer, query, n))
-    rows = cur.fetchall()
-    cols = [d[0] for d in cur.description]
-    return [dict(zip(cols, r)) for r in rows]
+    return [dict(r) for r in cur.fetchall()]
 
 
 # ---------------------------------------------------------------------------
