@@ -1,18 +1,18 @@
 ============================================================
 ATJ RETRIEVAL EVALUATION REPORT
-Generated: 2026-06-14T12:05:00.900348Z
+Generated: 2026-06-14T12:11:24.909195Z
 ============================================================
 
-OVERALL RESULT: FAIL ✗
-  Context recall @ 10:  73.9%
+OVERALL RESULT: PASS ✓
+  Context recall @ 10:  75.4%
   Pass threshold:          75%
-  Hits / Total:            51 / 69
+  Hits / Total:            52 / 69
 
 BY LAYER
   layer1: 72.4% (0.7241 recall)
-  layer2: 75.0% (0.75 recall)
+  layer2: 77.5% (0.775 recall)
 
-MISSED QUERIES (18) — top candidates to inspect:
+MISSED QUERIES (17) — top candidates to inspect:
 
   Query:    I've got my first court hearing coming up - will the judge just make a final decision then or is it more like a starting point?
   Expected: process_explanation__child_arrangements_track_overview__child_arrangements__chunk002
@@ -51,7 +51,7 @@ MISSED QUERIES (18) — top candidates to inspect:
   Returned: advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001, sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_childγçös_whereabouts_e__chunk001, advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002...
 
   Query:    My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?
-  Expected: legal_principle__proportionality__cross_cutting__chunk000
+  Expected: legal_principle__proportionality__cross_cutting__chunk001
   Returned: process_explanation__financial_remedy_track_overview__financial_remedy__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000...
 
   Query:    I've been told I need to apply online for a child arrangements order - can I do that through the online system, or do I have to print it out and take it to court?
@@ -65,10 +65,6 @@ MISSED QUERIES (18) — top candidates to inspect:
   Query:    I signed an agreement with my ex about splitting our finances but we didn't go through the court - is that enough to make it official?
   Expected: _discovery_gaps__chunk003
   Returned: document_explanation__consent_order__financial_remedy__chunk000, process_explanation__financial_remedy_track_overview__financial_remedy__chunk001, document_explanation__consent_order__financial_remedy__chunk002...
-
-  Query:    The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say — can they do that?
-  Expected: legal_principle__proportionality__cross_cutting__chunk000
-  Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, _discovery_gaps__chunk004...
 
   Query:    My child has been taken abroad without my permission - what kind of court order can force the other parent to come to court and bring them back?
   Expected: sfo_vol2__040__order_136_abduction_attendance_order__chunk000
@@ -85,12 +81,5 @@ MISSED QUERIES (18) — top candidates to inspect:
   Query:    What does FDR mean? The court has listed something called an FDR hearing and I don't know what it is
   Expected: process_explanation__financial_remedy_track_overview__financial_remedy__chunk003
   Returned: process_explanation__fdr_hearing__financial_remedy__chunk000, process_explanation__fdr_hearing__financial_remedy__chunk002, process_explanation__fda_hearing__financial_remedy__chunk000...
-
-NEXT STEPS
-  - Review the missed queries above. Are the expected chunks too short
-    or too general to be reliably retrieved?
-  - Check whether the expected chunk text actually answers the query.
-  - Consider increasing chunk overlap or adjusting RRF_K.
-  - If recall is close (70-74%), spot-check misses before adjusting params.
 
 ============================================================

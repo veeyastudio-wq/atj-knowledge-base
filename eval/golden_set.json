@@ -252,7 +252,7 @@
     },
     {
       "query": "My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
       "chunk_text_preview": "# Proportionality \u2014 the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
@@ -378,7 +378,7 @@
     },
     {
       "query": "The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say \u2014 can they do that?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
       "chunk_text_preview": "# Proportionality \u2014 the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
@@ -490,5 +490,5 @@
     }
   ],
   "cleaned_at": "2026-06-14",
-  "cleaning_notes": "Removed 6 bad ground truth pairs. Reclassified 3 near-misses to correct expected chunks."
+  "cleaning_notes": "Removed 6 bad ground truth pairs. Reclassified 3 near-misses to correct expected chunks. Updated 2 proportionality pairs to chunk001 after content moved on re-chunking."
 }

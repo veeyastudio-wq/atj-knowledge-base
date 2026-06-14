@@ -51,7 +51,7 @@ EMBEDDING_DIM = 1536
 RRF_K = 60
 
 TOP_K = 10          # results returned per layer
-DENSE_CANDIDATES = 20   # how many to fetch from each signal before fusion
+DENSE_CANDIDATES = 50   # how many to fetch from each signal before fusion
 SPARSE_CANDIDATES = 20
 
 log = logging.getLogger(__name__)

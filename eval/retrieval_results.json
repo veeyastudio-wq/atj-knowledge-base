@@ -1,19 +1,19 @@
 {
-  "evaluated_at": "2026-06-14T12:05:00.900348Z",
+  "evaluated_at": "2026-06-14T12:11:24.909195Z",
   "golden_set": "eval/golden_set.json",
   "top_k": 10,
   "threshold": 0.75,
   "total_pairs": 69,
-  "hits_overall": 51,
-  "recall_overall": 0.7391,
+  "hits_overall": 52,
+  "recall_overall": 0.7536,
   "recall_by_layer": {
     "layer1": 0.7241,
-    "layer2": 0.75
+    "layer2": 0.775
   },
-  "passed": false,
+  "passed": true,
   "retrieval_failures": 0,
   "failure_details": [],
-  "miss_count": 18,
+  "miss_count": 17,
   "misses": [
     {
       "query": "I've got my first court hearing coming up - will the judge just make a final decision then or is it more like a starting point?",
@@ -112,7 +112,7 @@
         "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
         "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
+        "sfo_vol2__087__order_59_bench_warrant_for_arrest__chunk002"
       ]
     },
     {
@@ -197,7 +197,7 @@
     },
     {
       "query": "My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
       "hit": false,
@@ -273,26 +273,6 @@
         "process_explanation__divorce_track_overview__divorce__chunk001",
         "document_explanation__form_a__financial_remedy__chunk000",
         "legal_principle__section_25_factors__financial_remedy__chunk002"
-      ]
-    },
-    {
-      "query": "The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say \u2014 can they do that?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
-      "layer": "layer2",
-      "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "_discovery_gaps__chunk004",
-        "legal_principle__proportionality__cross_cutting__chunk001",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
-        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",
-        "legal_principle__without_prejudice__cross_cutting__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003",
-        "_discovery_gaps__chunk003"
       ]
     },
     {
@@ -734,7 +714,7 @@
         "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
         "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
+        "sfo_vol2__087__order_59_bench_warrant_for_arrest__chunk002"
       ]
     },
     {
@@ -854,7 +834,7 @@
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
         "legal_principle__without_prejudice__cross_cutting__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",
-        "process_explanation__fda_hearing__financial_remedy__chunk000"
+        "legal_principle__proportionality__cross_cutting__chunk001"
       ]
     },
     {
@@ -954,7 +934,7 @@
         "case_law_summary__re_h_n__child_arrangements__chunk001",
         "terminology__statement_of_truth__cross_cutting__chunk000",
         "legal_principle__paramountcy_vs_balance__child_arrangements__chunk001",
-        "_discovery_gaps__chunk002"
+        "legal_principle__proportionality__cross_cutting__chunk001"
       ]
     },
     {
@@ -969,12 +949,12 @@
         "document_explanation__position_statement__cross_cutting__chunk001",
         "document_explanation__witness_statement__cross_cutting__chunk000",
         "document_explanation__witness_statement__cross_cutting__chunk001",
+        "legal_principle__proportionality__cross_cutting__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
         "document_explanation__witness_statement__cross_cutting__chunk002",
         "_discovery_gaps__chunk003",
         "process_explanation__fhdra_hearing__child_arrangements__chunk002",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000"
+        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001"
       ]
     },
     {
@@ -1079,7 +1059,7 @@
     },
     {
       "query": "My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
       "hit": false,
@@ -1185,8 +1165,8 @@
       "hit": true,
       "rank": 3,
       "top_returned": [
-        "PD_12M__chunk000",
         "PD_36Z__chunk034",
+        "PD_12M__chunk000",
         "sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk023",
         "PD_36Z__chunk035",
         "sfo_vol2__108__order_87_public_law_secure_accommodation_order__chunk001",
@@ -1439,16 +1419,16 @@
     },
     {
       "query": "The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say \u2014 can they do that?",
-      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk000",
+      "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
-      "hit": false,
-      "rank": null,
+      "hit": true,
+      "rank": 1,
       "top_returned": [
+        "legal_principle__proportionality__cross_cutting__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
         "_discovery_gaps__chunk004",
-        "legal_principle__proportionality__cross_cutting__chunk001",
         "process_explanation__fhdra_hearing__child_arrangements__chunk001",
         "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",

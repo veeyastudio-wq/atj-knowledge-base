@@ -1,0 +1,23 @@
+{
+  "chunk_id": "legal_principle__proportionality__cross_cutting__chunk002",
+  "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
+  "layer": "layer2",
+  "chunk_index": 2,
+  "total_chunks": 3,
+  "token_count": 64,
+  "text": "## Related entries\n\n- process_explanation__fda_hearing__financial_remedy\n- process_explanation__fhdra_hearing__child_arrangements\n- legal_principle__section_25_factors__financial_remedy\n- legal_principle__welfare_principle__child_arrangements",
+  "metadata": {
+    "content_type": "legal_principle",
+    "layer": 2,
+    "title": "Proportionality — the court's duty to deal with cases justly",
+    "track": "cross_cutting",
+    "stage": "cross_cutting",
+    "source_refs": [
+      "FPR_Part_1",
+      "financial_remedies_guide_2026__008__operation_of_the_financial_remedies_court"
+    ],
+    "jurisdiction": "England and Wales",
+    "last_updated": "2026-06-10",
+    "discovery_gap": true
+  }
+}
