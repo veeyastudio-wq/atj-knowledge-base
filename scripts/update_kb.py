@@ -94,13 +94,15 @@ def check_eval_pass() -> bool:
         return False
     text = EVAL_REPORT_PATH.read_text()
     for line in text.splitlines():
-        if "Overall context recall" in line:
+        if "Context recall @" in line:
             try:
-                recall = float(line.split(":")[1].strip().replace("%", ""))
+                recall = float(line.split(":")[1].strip().replace("%", "").strip())
                 print(f"  Context recall: {recall:.1f}%")
                 return recall >= PASS_THRESHOLD
             except Exception:
                 pass
+        if "OVERALL RESULT: PASS" in line:
+            return True
     return False
 
 

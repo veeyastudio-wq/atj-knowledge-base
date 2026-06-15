@@ -58,7 +58,7 @@ File content:
 
 
 def triage_file(path: str, content: str) -> dict:
-    prompt = TRIAGE_PROMPT.format(path=path, content=content[:6000])
+    prompt = TRIAGE_PROMPT.replace("{path}", path).replace("{content}", content[:6000])
     message = client.messages.create(
         model="claude-sonnet-4-6",
         max_tokens=500,

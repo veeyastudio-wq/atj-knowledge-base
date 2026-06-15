@@ -40,7 +40,7 @@ def load_registry() -> dict:
 
 def scan_raw() -> dict:
     current = {}
-    for path in sorted(RAW_PATH.rglob("*")):
+    for path in sorted(RAW_PATH.rglob("*.md")):
         if path.is_file():
             rel = str(path.relative_to(Path(".")))
             current[rel] = hash_file(path)
