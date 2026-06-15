@@ -46,7 +46,7 @@
 | requests-toolbelt | 1.0.0 | requests utility (dependency) |
 | tiktoken | 0.13.0 | Token counting for chunking (cl100k_base) |
 
-**Note:** `scripts/requirements.txt` lists only the five scraper dependencies (requests, beautifulsoup4, pdfplumber, pypdf, python-docx). The retrieval, embedding, and update pipeline dependencies (anthropic, openai, psycopg2-binary, pgvector, langchain-text-splitters, tiktoken, python-dotenv) are installed separately and not captured in that file. A single unified requirements file does not currently exist.
+All dependencies for all scripts — scrapers, chunking, embedding, retrieval, triage, and evaluation — are listed in `scripts/requirements.txt`. Install with `pip3 install -r scripts/requirements.txt` from the repo root.
 
 ---
 
@@ -146,28 +146,28 @@ All scripts live in `scripts/` and are run from the repo root with `python3 scri
 
 ## Dependencies
 
-**`scripts/requirements.txt`** (scraper dependencies only):
+All dependencies are in `scripts/requirements.txt`. Install from repo root:
 
-```
-requests>=2.31.0
-beautifulsoup4>=4.12.0
-pdfplumber>=0.10.0
-pypdf>=3.0.0
-python-docx>=1.1.0
+```bash
+pip3 install -r scripts/requirements.txt
 ```
 
-**Additional packages required by the pipeline but not in requirements.txt** (must be installed manually):
-
-```
-anthropic
-openai
-psycopg2-binary
-pgvector
-langchain-text-splitters
-tiktoken
-python-dotenv
-numpy
-```
+| Package | Min version | Role |
+|---|---|---|
+| requests | 2.31.0 | HTTP in all scrapers |
+| beautifulsoup4 | 4.12.0 | HTML parsing in scrapers |
+| pdfplumber | 0.10.0 | PDF text extraction |
+| pypdf | 3.0.0 | PDF AcroForm field extraction |
+| python-docx | 1.1.0 | .docx parsing (standard orders scraper) |
+| langchain-text-splitters | 0.3.0 | RecursiveCharacterTextSplitter for chunking |
+| tiktoken | 0.13.0 | Token counting (cl100k_base) |
+| PyYAML | 6.0 | YAML frontmatter parsing in chunk_kb.py |
+| openai | 2.41.0 | text-embedding-3-small embeddings |
+| psycopg2-binary | 2.9.0 | PostgreSQL adapter |
+| pgvector | 0.4.0 | pgvector Python client |
+| numpy | 2.0.0 | Numerical operations |
+| anthropic | 0.109.0 | Claude API (triage + golden set generation) |
+| python-dotenv | 1.0.0 | `.env` file loading |
 
 ---
 
