@@ -1,0 +1,95 @@
+---
+content_type: process_explanation
+layer: 2
+title: "Serving court documents — what it means and how to do it"
+track: cross_cutting
+stage: cross_cutting
+source_refs:
+  - FPR_Part_6
+  - PD_6D
+  - PD_36G
+jurisdiction: England and Wales
+last_updated: 2026-06-15
+discovery_gap: true
+---
+
+# Serving court documents — what it means and how to do it
+
+## What it is
+
+Serving documents means formally delivering court papers to the other person — the respondent — in a way the court rules recognise as valid. It is not enough to drop something through a letterbox or send an informal message. Service is a legal step that starts the clock on the respondent's right to respond and confirms they have been told about the proceedings. Until valid service has happened, the case cannot move forward.
+
+## When it happens
+
+Service of the main application happens after the court issues it. Once the court seals and returns the application with a case number, the 28-day service window opens. Service of other documents — such as witness statements, position statements, or letters to the court — follows deadlines set out in the directions the court gives at or after the first hearing.
+
+## What it involves
+
+**The 28-day deadline.** Where the applicant is responsible for serving the main application, service must be completed before midnight on the day 28 days after the date the application was issued by the court. This is set out in FPR rule 6.6A. The deadline can be extended by applying to the court, but that application must normally be made before the 28 days expire.
+
+**Who can serve.** The application can be served by a court officer or by the applicant. The applicant cannot personally serve the respondent themselves — rule 6.5(3) expressly prohibits the applicant from handing documents directly to the respondent. An agent or process server can be used instead.
+
+**Methods of service.** Service can be effected by:
+- First class post (or another service guaranteeing next business day delivery)
+- Email, with a confirmation notice also sent by post to the respondent's postal address
+- Personal service — leaving the documents with the respondent (not by the applicant themselves)
+- Bailiff service — a court-appointed bailiff delivers the documents in person
+
+**When the court serves.** For matrimonial and civil partnership applications, the court officer will normally serve by email if an email address is available, and by first class post if not (rule 6.8). If court service fails — the email bounces or the postal application is returned — the court will notify the applicant. The applicant can then give the court an alternative address, but after one further attempt the court will not try again. The applicant must then arrange service themselves or apply for an order under rule 6.19.
+
+**Certificate of service.** Where the applicant or their agent serves personally, a certificate of service must be filed with the court stating the date, time, and method of service, and confirming how the server identified the respondent. This is the court's proof that service happened.
+
+**Deemed service dates.** Documents served under the rules are treated as having been received on a date set out in a table in rule 6.34. The deemed date depends on the method: for first class post, service is deemed on the second day after posting; for email, on the day the email was sent (or the next business day if sent after 4.30 pm). These deemed dates are relevant when calculating response deadlines.
+
+**If service has failed or is impossible.** Where service fails, the court has two powers:
+- Under rule 6.19, it can authorise service by an alternative method or at an alternative place if there is good reason.
+- Under rule 6.20, it can dispense with service entirely where it is impracticable to serve by any method — for example where the respondent has gone abroad and no address can be found.
+
+**Serving someone you believe is staying in a refuge.** Where there are reasonable grounds to believe the respondent is staying in a domestic abuse refuge, a separate set of rules applies under FPR rule 6.23A and Practice Direction 6D. The applicant must apply to the court for directions on service. The court then takes control of the process through the refuge organisation. The location, name, and any identifying details of the refuge must never be disclosed to the applicant or their solicitor. For more detail on how service works in this situation, see the section below for unrepresented people.
+
+**Online applications for children proceedings.** Applicants applying for a section 8 order under the Children Act 1989 — such as a child arrangements order — can start the application online using the HMCTS online system under the pilot scheme in Practice Direction 36G. This lets the applicant complete the application form online, then either print it and file it at court in the usual way, or submit it by email generated by the system. The online system does not replace the need to attend court or to serve the respondent — it only generates the application. The pilot scheme runs until 31 March 2027. Since 24 November 2025, legally represented applicants must use a different system (referred to in Practice Direction 36ZD) and may not use the PD_36G online system.
+
+## What to know if you're unrepresented
+
+**The 28-day clock runs from issue, not from when you receive the papers back.** When the court issues your application and sends you the sealed copy, the 28-day window has already started. If you need to arrange service yourself, do not wait — identify the method immediately and act within the first week to leave margin.
+
+**The court usually handles service of the main application — but check.** For divorce and matrimonial applications, the court will normally serve the respondent directly. You do not need to arrange this yourself unless the court tells you to. However, if the court's attempt fails and the application is returned undelivered, the court will send you a notification and it then becomes your problem to resolve.
+
+**If you cannot locate the respondent.** If you do not know where the respondent is, try to find a last known address and tell the court. If you genuinely cannot find any address or method to serve them, you can apply for an order dispensing with service under rule 6.20. This is uncommon and requires evidence that proper steps were taken to find them.
+
+**If you think the respondent is hiding in a women's refuge or men's refuge.** You cannot serve a person you believe is living in a refuge yourself. You must apply to the court and ask for directions under rule 6.23A. The court will then contact the organisation running the refuge — through its chief executive or director — to arrange delivery of the documents. The court will never tell you which refuge, what address, or any identifying detail about where the person is staying. That protection is absolute: even the PO Box used for service must not be disclosed to you.
+
+If personal service is absolutely necessary — which is rare and requires the court to find exceptional and urgent circumstances — a bailiff carries it out, usually in plain clothing and (where the person is in a refuge for women) ideally a female officer. The bailiff goes to the head office of the refuge organisation or a pre-arranged neutral address, not to the refuge itself.
+
+In most cases the court will direct email service or postal service through the refuge's PO Box or head office address. You will not see these addresses.
+
+**Online filing for C100 applications (child arrangements).** If you are applying for a child arrangements order or another section 8 order, you can use the HMCTS online service to fill in the C100 form. Once you have completed it, you either print and take it to court, or the system generates an email to file it electronically. This is a convenience tool for generating the application — it does not serve the respondent and does not remove any of the steps described in this entry.
+
+**Keep proof of everything.** If you arrange personal service, file the certificate of service as soon as service has been effected. If the court is serving, keep any notifications the court sends you. Judges take service seriously: without proper proof that the respondent was served, hearings may be adjourned, which delays your case and may result in a wasted costs order.
+
+## Common mistakes
+
+<!-- discovery gap: to be completed after research conversations. Expected input: what unrepresented applicants typically get wrong about service — for example, missing the 28-day deadline without realising the clock started at issue, attempting to serve the respondent personally (which is not permitted), using informal delivery (WhatsApp, text, hand-delivery) and not understanding why it is not valid service, not filing a certificate of service, not knowing what to do when court service fails, or misunderstanding how the refuge service mechanism works. -->
+
+## Key terms
+
+**Service** — the formal delivery of court documents to a party in a way the court rules recognise as valid. Informal delivery does not count.
+
+**Personal service** — leaving documents directly with the person to be served. Must be carried out by someone other than the applicant.
+
+**Deemed service date** — the date on which a document is treated as having been received, set out in FPR rule 6.34. This date governs when response periods begin, not the date the document was actually read.
+
+**Certificate of service** — a document filed at court confirming that service has been effected, stating the date, time, and method used, and how the server knew the identity of the person served.
+
+**Bailiff** — a court-appointed officer who can carry out personal service on behalf of an applicant.
+
+**Section 8 order** — a Children Act 1989 order about arrangements for a child, including child arrangements orders (who the child lives with and spends time with), specific issue orders, and prohibited steps orders.
+
+**Refuge** — for the purposes of service rules, a refuge established to provide accommodation to victims of or those at risk of domestic abuse, or a residential home maintained by a public body that provides accommodation for such people. The name, address, and any identifying details of a refuge must not be disclosed to the party serving documents.
+
+## Related entries
+
+- document_explanation__non_molestation_order__cross_cutting
+- process_explanation__fhdra_hearing__child_arrangements
+- process_explanation__fda_hearing__financial_remedy
+- terminology__directions__cross_cutting
