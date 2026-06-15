@@ -1,6 +1,6 @@
 ============================================================
 ATJ RETRIEVAL EVALUATION REPORT
-Generated: 2026-06-14T12:11:24.909195Z
+Generated: 2026-06-15T09:48:35.818769Z
 ============================================================
 
 OVERALL RESULT: PASS ✓
@@ -47,7 +47,7 @@ MISSED QUERIES (17) — top candidates to inspect:
   Returned: advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk002, PD_5A__chunk001, C2__chunk000...
 
   Query:    My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?
-  Expected: PD_6D__chunk003
+  Expected: PD_6D__chunk000
   Returned: advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001, sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_childγçös_whereabouts_e__chunk001, advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002...
 
   Query:    My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?

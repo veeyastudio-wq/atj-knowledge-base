@@ -1,5 +1,5 @@
 {
-  "evaluated_at": "2026-06-14T12:11:24.909195Z",
+  "evaluated_at": "2026-06-15T09:48:35.818769Z",
   "golden_set": "eval/golden_set.json",
   "top_k": 10,
   "threshold": 0.75,
@@ -177,7 +177,7 @@
     },
     {
       "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
-      "expected_chunk_id": "PD_6D__chunk003",
+      "expected_chunk_id": "PD_6D__chunk000",
       "layer": "layer1",
       "source_file": "raw/practice_directions/PD_6D.md",
       "hit": false,
@@ -899,7 +899,7 @@
     },
     {
       "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
-      "expected_chunk_id": "PD_6D__chunk003",
+      "expected_chunk_id": "PD_6D__chunk000",
       "layer": "layer1",
       "source_file": "raw/practice_directions/PD_6D.md",
       "hit": false,
