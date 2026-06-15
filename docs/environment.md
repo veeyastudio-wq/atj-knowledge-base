@@ -113,7 +113,7 @@ atj-knowledge-base/
 │   ├── standard_orders/        # Standard Family Orders Vol 1 & 2 (.docx → .md)
 │   └── supporting_context/     # CAFCASS, FMC, GOV.UK legal aid pages
 └── scripts/                    # All Python scripts (see Scripts section)
-    └── requirements.txt        # Scraper dependencies only
+    └── requirements.txt        # All project dependencies (scrapers, pipeline, retrieval)
 ```
 
 ---
