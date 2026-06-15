@@ -39,7 +39,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/update_kb.py
+        run: python scripts/this_does_not_exist.py
 
       - name: Commit updated registry
         run: |
