@@ -107,7 +107,7 @@ def main():
         if memories:
             print(f"[case_memory — {len(memories)} item(s) retrieved]")
             for m in memories:
-                print(f"  {m['created_at']} | {m['content'][:120]}")
+                print(f"  {m['created_at']} | {m['role']} | {m['content'][:120]}")
         else:
             print("[case_memory — empty]")
 
@@ -131,11 +131,8 @@ def main():
         conversation_history.append({"role": "assistant", "content": assistant_text})
 
         try:
-            write_memory(
-                user_identifier,
-                session_id,
-                f"User asked: {user_message}\nCompanion replied: {assistant_text}",
-            )
+            write_memory(user_identifier, session_id, user_message, role="user")
+            write_memory(user_identifier, session_id, assistant_text, role="assistant")
         except Exception as exc:
             print(f"[memory write failed: {exc}]")
 

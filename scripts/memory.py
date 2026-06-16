@@ -132,9 +132,15 @@ def write_memory(
     user_identifier: str,
     session_id: str,
     content: str,
+    *,
+    role: str = "user",
     memory_enabled: bool = True,
 ) -> None:
-    """Extract facts from content and write to the memory graph for this user."""
+    """Extract facts from content and write to the memory graph for this user.
+
+    role: "user" for things the person said, "assistant" for model responses.
+    Defaults to "user" so existing callers that omit it are unaffected.
+    """
     _require_init()
 
     if not memory_enabled:
@@ -145,7 +151,7 @@ def write_memory(
     success = False
     count = 0
     try:
-        asyncio.run(_write_async(user_identifier, session_id, content))
+        asyncio.run(_write_async(user_identifier, session_id, content, role))
         count = 1
         success = True
     except Exception as exc:
@@ -162,11 +168,11 @@ def write_memory(
         )
 
 
-async def _write_async(user_identifier: str, session_id: str, content: str) -> None:
+async def _write_async(user_identifier: str, session_id: str, content: str, role: str) -> None:
     async with _make_client() as client:
         await client.short_term.add_message(
             session_id=user_identifier,   # user_identifier scopes the session
-            role="user",
+            role=role,
             content=content,
             user_identifier=user_identifier,
             extract_entities=False,
