@@ -1,5 +1,5 @@
 {
-  "evaluated_at": "2026-06-15T09:48:35.818769Z",
+  "evaluated_at": "2026-06-16T05:54:50.661780Z",
   "golden_set": "eval/golden_set.json",
   "top_k": 10,
   "threshold": 0.75,
@@ -109,10 +109,10 @@
         "sfo_vol2__054__order_156_forced_marriage_directions_order_or_order_for_return_without_notice__chunk001",
         "sfo_vol2__058__order_161_female_genital_mutilation_order__chunk001",
         "sfo_vol2__043__order_139_abduction_directions_order_without_notice__chunk001",
-        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
+        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol2__087__order_59_bench_warrant_for_arrest__chunk002"
+        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
       ]
     },
     {
@@ -143,16 +143,16 @@
       "hit": false,
       "rank": null,
       "top_returned": [
+        "process_explanation__serving_applications__cross_cutting__chunk000",
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk001",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
         "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk004",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002",
-        "_discovery_gaps__chunk003",
-        "document_explanation__form_a__financial_remedy__chunk001",
-        "document_explanation__position_statement__cross_cutting__chunk001",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001"
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002"
       ]
     },
     {
@@ -171,8 +171,8 @@
         "advicenow_financial_order__009__consent_orders__chunk000",
         "C100__chunk000",
         "sfo_vol2__000__order_101_non_molestation_order__chunk002",
-        "C100__chunk005",
-        "advicenow_divorce__009__the_application_continued__chunk003"
+        "advicenow_divorce__009__the_application_continued__chunk003",
+        "C100__chunk005"
       ]
     },
     {
@@ -588,13 +588,13 @@
         "document_explanation__form_a__financial_remedy__chunk000",
         "document_explanation__form_a__financial_remedy__chunk001",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
         "document_explanation__d8__divorce__chunk000",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk001",
         "document_explanation__d8__divorce__chunk001",
-        "process_explanation__fda_hearing__financial_remedy__chunk002",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
-        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
-        "process_explanation__divorce_track_overview__divorce__chunk001",
-        "process_explanation__divorce_track_overview__divorce__chunk002"
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk000",
+        "process_explanation__fda_hearing__financial_remedy__chunk002"
       ]
     },
     {
@@ -711,10 +711,10 @@
         "sfo_vol2__054__order_156_forced_marriage_directions_order_or_order_for_return_without_notice__chunk001",
         "sfo_vol2__058__order_161_female_genital_mutilation_order__chunk001",
         "sfo_vol2__043__order_139_abduction_directions_order_without_notice__chunk001",
-        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
+        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
         "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol2__087__order_59_bench_warrant_for_arrest__chunk002"
+        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
       ]
     },
     {
@@ -765,16 +765,16 @@
       "hit": false,
       "rank": null,
       "top_returned": [
+        "process_explanation__serving_applications__cross_cutting__chunk000",
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk001",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
         "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk004",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002",
-        "_discovery_gaps__chunk003",
-        "document_explanation__form_a__financial_remedy__chunk001",
-        "document_explanation__position_statement__cross_cutting__chunk001",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001"
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002"
       ]
     },
     {
@@ -853,8 +853,8 @@
         "advicenow_financial_order__009__consent_orders__chunk000",
         "C100__chunk000",
         "sfo_vol2__000__order_101_non_molestation_order__chunk002",
-        "C100__chunk005",
-        "advicenow_divorce__009__the_application_continued__chunk003"
+        "advicenow_divorce__009__the_application_continued__chunk003",
+        "C100__chunk005"
       ]
     },
     {
@@ -1049,12 +1049,12 @@
         "document_explanation__form_a__financial_remedy__chunk001",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
         "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk001",
         "process_explanation__fda_hearing__financial_remedy__chunk002",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
         "document_explanation__d8__divorce__chunk000",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
-        "document_explanation__d8__divorce__chunk001",
-        "process_explanation__divorce_track_overview__divorce__chunk002",
-        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000"
+        "document_explanation__fp2_application_notice__cross_cutting__chunk000"
       ]
     },
     {
@@ -1289,12 +1289,12 @@
         "document_explanation__non_molestation_order__cross_cutting__chunk001",
         "document_explanation__non_molestation_order__cross_cutting__chunk002",
         "_discovery_gaps__chunk004",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
         "document_explanation__form_a__financial_remedy__chunk001",
         "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
         "document_explanation__form_a__financial_remedy__chunk000",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001"
+        "process_explanation__fhdra_hearing__child_arrangements__chunk001"
       ]
     },
     {
@@ -1392,9 +1392,9 @@
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
         "terminology__final_order__divorce__chunk000",
-        "legal_principle__paramountcy_vs_balance__child_arrangements__chunk001",
-        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001"
+        "process_explanation__serving_applications__cross_cutting__chunk001",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
+        "legal_principle__paramountcy_vs_balance__child_arrangements__chunk001"
       ]
     },
     {

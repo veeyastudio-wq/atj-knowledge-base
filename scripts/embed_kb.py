@@ -71,7 +71,7 @@ def insert_chunk(cur, chunk: dict, embedding: list[float]):
         chunk["total_chunks"],
         chunk["token_count"],
         chunk["text"],
-        json.dumps(chunk["metadata"]),
+        json.dumps(chunk["metadata"], default=str),
         embedding,
     ))
 

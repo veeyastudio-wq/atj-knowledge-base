@@ -1,6 +1,6 @@
 ============================================================
 ATJ RETRIEVAL EVALUATION REPORT
-Generated: 2026-06-15T09:48:35.818769Z
+Generated: 2026-06-16T05:54:50.661780Z
 ============================================================
 
 OVERALL RESULT: PASS ✓
@@ -40,7 +40,7 @@ MISSED QUERIES (17) — top candidates to inspect:
 
   Query:    What happens if I miss the deadline the court set for sending in my documents?
   Expected: terminology__directions__cross_cutting__chunk000
-  Returned: legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003, process_explanation__financial_remedy_track_overview__financial_remedy__chunk001...
+  Returned: process_explanation__serving_applications__cross_cutting__chunk000, process_explanation__serving_applications__cross_cutting__chunk003, process_explanation__serving_applications__cross_cutting__chunk001...
 
   Query:    My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?
   Expected: FP2__chunk000
