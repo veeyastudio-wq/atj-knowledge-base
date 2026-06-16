@@ -19,34 +19,40 @@
 
 | Field | Value |
 |---|---|
-| Version | Python 3.9.6 |
-| Executable | `/usr/bin/python3` |
-| Prefix | `/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9` |
-| Virtualenv | None — packages installed to the macOS Command Line Tools system Python |
-| Install method | `pip3 install` globally |
+| Version | Python 3.12.13 |
+| Executable | `/opt/homebrew/opt/python@3.12/bin/python3.12` |
+| Prefix | `/opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12` |
+| Virtualenv | None — packages installed globally to Homebrew Python 3.12 via `--break-system-packages` |
+| Install method | `/opt/homebrew/bin/pip3.12 install --break-system-packages` |
 
-**Installed packages (all relevant to this project, from `pip3 list`):**
+**Note on Python versions:** The system Python at `/usr/bin/python3` is Python 3.9.6 (macOS Command Line Tools). It cannot be used for this project because its pip (21.2.4) predates `--break-system-packages` and cannot install modern packages. All scripts must be run with `/opt/homebrew/bin/python3.12` or `python3.12`. The `update_kb.py` pipeline uses `sys.executable` to invoke sub-scripts, so it inherits whichever interpreter it is launched with — always launch it with `python3.12`.
+
+**Installed packages (all relevant to this project, from `/opt/homebrew/bin/pip3.12 list`):**
 
 | Package | Installed version | Role |
 |---|---|---|
 | anthropic | 0.109.1 | Claude API client (triage, golden set generation) |
-| beautifulsoup4 | 4.14.3 | HTML parsing in scrapers |
-| langchain-core | 0.3.86 | Dependency of langchain-text-splitters |
-| langchain-text-splitters | 0.3.11 | RecursiveCharacterTextSplitter used in chunk_kb.py |
-| numpy | 2.0.2 | Numerical operations |
+| beautifulsoup4 | 4.15.0 | HTML parsing in scrapers |
+| langchain-core | 1.4.7 | Dependency of langchain-text-splitters |
+| langchain-text-splitters | 1.1.2 | RecursiveCharacterTextSplitter used in chunk_kb.py |
+| neo4j | 6.2.0 | Neo4j async driver (memory layer dependency) |
+| neo4j-agent-memory | 0.5.0 | Memory layer — graph-backed per-user memory via Neo4j |
+| numpy | 2.4.6 | Numerical operations |
 | openai | 2.41.1 | Embeddings via text-embedding-3-small |
-| pdfplumber | 0.11.8 | PDF text extraction in scrapers |
+| pdfplumber | 0.11.10 | PDF text extraction in scrapers |
 | pgvector | 0.4.2 | pgvector Python client |
 | psycopg2-binary | 2.9.12 | PostgreSQL adapter |
-| pypdf | 6.13.1 | PDF form field extraction in scrapers |
-| pypdfium2 | 5.9.0 | PDF rendering (pdfplumber dependency) |
+| pypdf | 6.13.2 | PDF form field extraction in scrapers |
+| pypdfium2 | 5.10.1 | PDF rendering (pdfplumber dependency) |
 | python-docx | 1.2.0 | .docx parsing in standard_orders_scraper.py |
-| python-dotenv | 1.2.1 | `.env` file loading |
-| requests | 2.32.5 | HTTP in all scrapers |
+| python-dotenv | 1.2.2 | `.env` file loading |
+| PyYAML | 6.0.3 | YAML frontmatter parsing in chunk_kb.py |
+| requests | 2.34.2 | HTTP in all scrapers |
 | requests-toolbelt | 1.0.0 | requests utility (dependency) |
+| sentence-transformers | 5.5.1 | Local embeddings for memory layer (BAAI/bge-small-en-v1.5) |
 | tiktoken | 0.13.0 | Token counting for chunking (cl100k_base) |
 
-All dependencies for all scripts — scrapers, chunking, embedding, retrieval, triage, and evaluation — are listed in `scripts/requirements.txt`. Install with `pip3 install -r scripts/requirements.txt` from the repo root.
+All dependencies for all scripts — scrapers, chunking, embedding, retrieval, triage, evaluation, and memory — are listed in `scripts/requirements.txt`. Install with `python3.12 -m pip install --break-system-packages -r scripts/requirements.txt` from the repo root.
 
 ---
 
@@ -168,22 +174,36 @@ pip3 install -r scripts/requirements.txt
 | numpy | 2.0.0 | Numerical operations |
 | anthropic | 0.109.0 | Claude API (triage + golden set generation) |
 | python-dotenv | 1.0.0 | `.env` file loading |
+| neo4j-agent-memory | 0.5.0 | Memory layer — graph-backed per-user memory |
+| sentence-transformers | (latest) | Local embeddings for memory layer (BAAI/bge-small-en-v1.5) |
 
 ---
 
 ## Docker containers
 
+**atj-db — pgvector (RAG store)**
+
 | Field | Value |
 |---|---|
 | Container name | `atj-db` |
 | Image | `pgvector/pgvector:pg16` |
-| Status | Running |
 | Port mapping | `0.0.0.0:5432->5432/tcp` |
 | Database name | `atj` |
 | DB user | `postgres` |
 | DB password | `postgres` |
 | Start command | `docker start atj-db` |
-| First-time setup | `docker run -d --name atj-db -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=atj -p 5432:5432 pgvector/pgvector:pg16` then `python3 scripts/setup_db.py` |
+| First-time setup | `docker run -d --name atj-db -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=atj -p 5432:5432 pgvector/pgvector:pg16` then `python3.12 scripts/setup_db.py` |
+
+**atj-neo4j — Neo4j (memory layer)**
+
+| Field | Value |
+|---|---|
+| Container name | `atj-neo4j` |
+| Image | `neo4j:5.26-community` |
+| Port mapping | `7474->7474/tcp` (HTTP browser), `7687->7687/tcp` (Bolt) |
+| Auth | Set at container creation via `-e NEO4J_AUTH=neo4j/<password>` in the `docker run` command; the Python driver connects using `NEO4J_URI`/`NEO4J_USER`/`NEO4J_PASSWORD` from `.env` |
+| Start command | `docker start atj-neo4j` |
+| Used by | `scripts/memory.py` — per-user graph-backed memory via neo4j-agent-memory v0.5 |
 
 **Retrieval configuration (in retrieve.py):**
 
@@ -208,8 +228,11 @@ Stored in `.env` at repo root. Loaded via `python-dotenv`. Gitignored — never 
 |---|---|---|
 | `OPENAI_API_KEY` | `embed_kb.py`, `retrieve.py`, `generate_golden_set.py` | Authenticates calls to the OpenAI Embeddings API (text-embedding-3-small) |
 | `ANTHROPIC_API_KEY` | `triage_changes.py`, `generate_golden_set.py` | Authenticates calls to the Claude API for materiality triage and golden set generation |
+| `NEO4J_URI` | `scripts/memory.py` | Bolt URI for the `atj-neo4j` container (e.g. `bolt://localhost:7687`) |
+| `NEO4J_USER` | `scripts/memory.py` | Neo4j username |
+| `NEO4J_PASSWORD` | `scripts/memory.py` | Neo4j password |
 
-In GitHub Actions, both keys are stored as repository secrets (`secrets.OPENAI_API_KEY`, `secrets.ANTHROPIC_API_KEY`) and injected at runtime. They do not exist in any committed file.
+In GitHub Actions, OpenAI and Anthropic keys are stored as repository secrets (`secrets.OPENAI_API_KEY`, `secrets.ANTHROPIC_API_KEY`) and injected at runtime. The Neo4j keys are local-only — the memory layer is not used in the CI pipeline. They do not exist in any committed file.
 
 ---
 
