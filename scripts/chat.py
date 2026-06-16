@@ -103,6 +103,14 @@ def main():
 
         memory_context = format_memory_context(memories)
         kb_context = format_kb_context(kb_result)
+
+        if memories:
+            print(f"[case_memory — {len(memories)} item(s) retrieved]")
+            for m in memories:
+                print(f"  {m['created_at']} | {m['content'][:120]}")
+        else:
+            print("[case_memory — empty]")
+
         turn_content = build_turn_content(user_message, memory_context, kb_context)
 
         messages = conversation_history + [{"role": "user", "content": turn_content}]
