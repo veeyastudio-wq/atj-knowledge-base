@@ -2,15 +2,15 @@
   "generated_at": "2026-06-14T11:13:59.295085Z",
   "model": "claude-sonnet-4-6",
   "total_pairs": 69,
-  "layer1_pairs": 29,
-  "layer2_pairs": 40,
+  "layer1_pairs": 23,
+  "layer2_pairs": 46,
   "pairs": [
     {
       "query": "I stayed home to look after the kids for 15 years while my wife worked, does that mean I get less of the house when we divorce?",
       "expected_chunk_id": "case_law_summary__white_v_white__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/case_law_summaries/case_law_summary__white_v_white__financial_remedy.md",
-      "chunk_text_preview": "# White v White \u2014 the yardstick of equality in financial remedy\n\n## What was decided\n\nMartin and Pamela White had farmed together in partnership throughout their 33-year marriage. When the marriage en"
+      "chunk_text_preview": "# White v White — the yardstick of equality in financial remedy\n\n## What was decided\n\nMartin and Pamela White had farmed together in partnership throughout their 33-year marriage. When the marriage en"
     },
     {
       "query": "The CAFCASS report recommends less contact for me - does the judge have to follow that or can I argue against it?",
@@ -45,7 +45,7 @@
       "expected_chunk_id": "_discovery_gaps__chunk004",
       "layer": "layer2",
       "source_file": "raw/layer2/_discovery_gaps.md",
-      "chunk_text_preview": "| document_explanation__non_molestation_order__cross_cutting | cross_cutting | What unrepresented people most commonly get wrong when applying for a non-molestation order \u2014 e.g. insufficient detail in"
+      "chunk_text_preview": "| document_explanation__non_molestation_order__cross_cutting | cross_cutting | What unrepresented people most commonly get wrong when applying for a non-molestation order — e.g. insufficient detail in"
     },
     {
       "query": "I gave up my career to raise our kids while my wife built up her pension - does that count for nothing now we're divorcing?",
@@ -59,28 +59,28 @@
       "expected_chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
-      "chunk_text_preview": "**Stage 3 \u2014 Financial disclosure (Form E)**\nBoth parties must complete Form E \u2014 a detailed financial statement covering all assets, income, liabilities, pensions, business interests, and outgoings \u2014 a"
+      "chunk_text_preview": "**Stage 3 — Financial disclosure (Form E)**\nBoth parties must complete Form E — a detailed financial statement covering all assets, income, liabilities, pensions, business interests, and outgoings — a"
     },
     {
       "query": "I've been told I need to bring a questionnaire and a chronology to my FDA hearing - what are these and when do I need to hand them in?",
       "expected_chunk_id": "process_explanation__fda_hearing__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__fda_hearing__financial_remedy.md",
-      "chunk_text_preview": "# What is the First Appointment (FDA)?\n\n## What it is\n\nThe First Appointment (FDA) is a short directions hearing \u2014 typically 30 to 45 minutes \u2014 that takes place after both parties have exchanged their"
+      "chunk_text_preview": "# What is the First Appointment (FDA)?\n\n## What it is\n\nThe First Appointment (FDA) is a short directions hearing — typically 30 to 45 minutes — that takes place after both parties have exchanged their"
     },
     {
       "query": "My ex's solicitor has sent over a draft consent order - should I just sign it or do I need a solicitor to check it first?",
-      "expected_chunk_id": "advicenow_financial_order__009__consent_orders__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/guidance/advicenow_financial_order__009__consent_orders.md",
-      "chunk_text_preview": "If you can afford it, it will be very helpful to get some legal advice on a draft consent order prepared by your ex\u2019s solicitor. Go to the box on the right at the top of this section to get affordable"
+      "expected_chunk_id": "document_explanation__consent_order__financial_remedy__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/document_explanations/document_explanation__consent_order__financial_remedy.md",
+      "chunk_text_preview": "# Consent order — recording a financial agreement with the court\n\n## What it is\n\nA consent order is a court order that records the financial terms both parties have agreed and makes those terms legally binding and enforceable. An agreement between separating parties, however detailed and however sin"
     },
     {
       "query": "The social worker wrote a report about my child's health for the adoption case - will I get to see it or is it kept secret?",
       "expected_chunk_id": "FPR_Part_14__chunk008",
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_14.md",
-      "chunk_text_preview": "(6)\u00a0A report to the court under this rule is confidential.\n\n\n### Health reports E+W\n\n\n14.12. \u2014(1)\u00a0Reports by a registered medical practitioner (\u201chealth reports\u201d) made not more than 3 months earlier on"
+      "chunk_text_preview": "(6) A report to the court under this rule is confidential.\n\n\n### Health reports E+W\n\n\n14.12. —(1) Reports by a registered medical practitioner (“health reports”) made not more than 3 months earlier on"
     },
     {
       "query": "Do I have to get a solicitor to fill in Form A or can I do it myself?",
@@ -94,42 +94,42 @@
       "expected_chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
-      "chunk_text_preview": "**The order is binding and enforceable.** Once made, a child arrangements order is a legal obligation. Non-compliance with its terms \u2014 by either party \u2014 is a matter the court takes seriously. Understa"
+      "chunk_text_preview": "**The order is binding and enforceable.** Once made, a child arrangements order is a legal obligation. Non-compliance with its terms — by either party — is a matter the court takes seriously. Understa"
     },
     {
-      "query": "We're still married even after the conditional order comes through \u2013 is that right?",
+      "query": "We're still married even after the conditional order comes through – is that right?",
       "expected_chunk_id": "process_explanation__divorce_track_overview__divorce__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__divorce_track_overview__divorce.md",
-      "chunk_text_preview": "**Stage 5 \u2014 The 6-week wait and final order**\nAt least six weeks after the conditional order is pronounced, the applicant may apply for the final order using Form D36. The final order is the order tha"
+      "chunk_text_preview": "**Stage 5 — The 6-week wait and final order**\nAt least six weeks after the conditional order is pronounced, the applicant may apply for the final order using Form D36. The final order is the order tha"
     },
     {
       "query": "The other side has legal aid but I've been told I might get my costs paid - what does it mean when it says the court has to decide if it's 'reasonable' before I can get the money?",
       "expected_chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk038",
       "layer": "layer1",
       "source_file": "raw/standard_orders/sfo_vol1__000__order_11_financial_directions_order_longer_version.md",
-      "chunk_text_preview": "Costs \u2014 order against a publicly funded party\n\nThe [applicant] / [respondent] shall pay [[towards] the [respondent\u2019s] / [applicant\u2019s] costs] / [[proportion] of the [respondent\u2019s] / [applicant\u2019s] costs"
+      "chunk_text_preview": "Costs — order against a publicly funded party\n\nThe [applicant] / [respondent] shall pay [[towards] the [respondent’s] / [applicant’s] costs] / [[proportion] of the [respondent’s] / [applicant’s] costs"
     },
     {
       "query": "My child was adopted but I'm trying to get a declaration of parentage - will the court use their adoptive name or their birth name on the paperwork?",
       "expected_chunk_id": "PD_8B__chunk002",
       "layer": "layer1",
       "source_file": "raw/practice_directions/PD_8B.md",
-      "chunk_text_preview": "13.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Pursuant to FPR r. 8.22(1) there is a mandatory requirement for all names by which a person is known to appear on the declaration of parentage.\u00a0\u00a0Where a declaration of parentage is made in r"
+      "chunk_text_preview": "13.       Pursuant to FPR r. 8.22(1) there is a mandatory requirement for all names by which a person is known to appear on the declaration of parentage.  Where a declaration of parentage is made in r"
     },
     {
       "query": "What is a children's guardian and will the court automatically appoint one for my child in court proceedings?",
       "expected_chunk_id": "FPR_Part_16__chunk000",
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_16.md",
-      "chunk_text_preview": "# Part 16 \u2014 Representation of Children and Reports in Proceedings Involving Children\n\n## PART 16 E+W REPRESENTATION OF CHILDREN AND REPORTS IN PROCEEDINGS INVOLVING CHILDREN\n\n\n### CHAPTER 1 E+W APPLIC"
+      "chunk_text_preview": "# Part 16 — Representation of Children and Reports in Proceedings Involving Children\n\n## PART 16 E+W REPRESENTATION OF CHILDREN AND REPORTS IN PROCEEDINGS INVOLVING CHILDREN\n\n\n### CHAPTER 1 E+W APPLIC"
     },
     {
       "query": "My child has been taken by their other parent and a court order has been made against me - it says something about a Tipstaff, what does that mean and do I have to do what they say?",
-      "expected_chunk_id": "sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice.md",
-      "chunk_text_preview": "You have the following legal rights:\n\nto seek legal advice.  This right does not entitle you to disobey any part of this order until you have sought legal advice.\n\nto require the applicant's solicitor"
+      "expected_chunk_id": "terminology__tipstaff__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/terminology/terminology__tipstaff__cross_cutting.md",
+      "chunk_text_preview": "# Tipstaff\n\n## What it means\n\nThe Tipstaff is the enforcement officer of the High Court of Justice, based at the Royal Courts of Justice in London. There is only one Tipstaff, supported by a deputy and assistants. The Tipstaff is not a bailiff and not a police officer — they are a dedicated court of"
     },
     {
       "query": "What actually happens at an FDR hearing? I've got one coming up and I have no idea what to expect",
@@ -143,14 +143,14 @@
       "expected_chunk_id": "_discovery_gaps__chunk004",
       "layer": "layer2",
       "source_file": "raw/layer2/_discovery_gaps.md",
-      "chunk_text_preview": "| document_explanation__non_molestation_order__cross_cutting | cross_cutting | What unrepresented people most commonly get wrong when applying for a non-molestation order \u2014 e.g. insufficient detail in"
+      "chunk_text_preview": "| document_explanation__non_molestation_order__cross_cutting | cross_cutting | What unrepresented people most commonly get wrong when applying for a non-molestation order — e.g. insufficient detail in"
     },
     {
       "query": "What happens if I miss the deadline the court set for sending in my documents?",
       "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "chunk_text_preview": "# Directions\n\n## What it means\n\nDirections are instructions made by the court that set out what each party must do before the next hearing, and by when. They are not optional \u2014 failing to comply with "
+      "chunk_text_preview": "# Directions\n\n## What it means\n\nDirections are instructions made by the court that set out what each party must do before the next hearing, and by when. They are not optional — failing to comply with "
     },
     {
       "query": "Do I need to send my position statement to the other side before the hearing, or just give it to the court?",
@@ -164,28 +164,28 @@
       "expected_chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
-      "chunk_text_preview": "**Stage 3 \u2014 Financial disclosure (Form E)**\nBoth parties must complete Form E \u2014 a detailed financial statement covering all assets, income, liabilities, pensions, business interests, and outgoings \u2014 a"
+      "chunk_text_preview": "**Stage 3 — Financial disclosure (Form E)**\nBoth parties must complete Form E — a detailed financial statement covering all assets, income, liabilities, pensions, business interests, and outgoings — a"
     },
     {
       "query": "The judge at my FDR said what they think should happen - does that mean it's decided? Do I have to accept it?",
       "expected_chunk_id": "process_explanation__fdr_hearing__financial_remedy__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__fdr_hearing__financial_remedy.md",
-      "chunk_text_preview": "## What to know if you're unrepresented\n\n**The judicial indication is not a decision.** The judge's assessment of a likely outcome at the FDR is an indication only. It carries significant weight \u2014 it "
+      "chunk_text_preview": "## What to know if you're unrepresented\n\n**The judicial indication is not a decision.** The judge's assessment of a likely outcome at the FDR is an indication only. It carries significant weight — it "
     },
     {
       "query": "My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?",
-      "expected_chunk_id": "FP2__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/FP2.md",
-      "chunk_text_preview": "# Make an application to court within family proceedings: Form FP2\n\nUse this form to make an application under Part 18 of the Family Procedure Rules 2010. You can ask for a court order as part of exis"
+      "expected_chunk_id": "document_explanation__fp2_application_notice__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/document_explanations/document_explanation__fp2_application_notice__cross_cutting.md",
+      "chunk_text_preview": "# FP2 — how to apply for something within existing court proceedings\n\n## What it is\n\nForm FP2 is the application notice used to ask a court for something within family proceedings that have already started — or to go back to the court after a final order has been made. It is the form you use when yo"
     },
     {
       "query": "My ex has just told me they got a big bonus after we both sent in our financial forms. Do they have to tell the court about that or can they just keep quiet about it?",
       "expected_chunk_id": "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__duty_of_full_and_frank_disclosure__financial_remedy.md",
-      "chunk_text_preview": "# The duty of full and frank disclosure \u2014 what it means to tell the whole truth about your finances\n\n## What it is\n\nBoth parties in financial remedy proceedings are under a legal duty to provide full,"
+      "chunk_text_preview": "# The duty of full and frank disclosure — what it means to tell the whole truth about your finances\n\n## What it is\n\nBoth parties in financial remedy proceedings are under a legal duty to provide full,"
     },
     {
       "query": "My ex and I agreed he would pay maintenance instead of going through the CMS - but what happens if he dies before finishing paying? Can I still claim something from his estate?",
@@ -196,10 +196,10 @@
     },
     {
       "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
-      "expected_chunk_id": "PD_6D__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_6D.md",
-      "chunk_text_preview": "(ii) the CEO, director or accountable person to whom the documents are addressed in accordance with paragraph (i) must then use their best endeavours to provide the documents to the person to be serve"
+      "expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk003",
+      "layer": "layer2",
+      "source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "chunk_text_preview": "**If you think the respondent is hiding in a women's refuge or men's refuge.** You cannot serve a person you believe is living in a refuge yourself. You must apply to the court and ask for directions under rule 6.23A. The court will then contact the organisation running the refuge — through its chie"
     },
     {
       "query": "I've been writing my position statement like a story of everything that's happened over the years - is that wrong?",
@@ -209,18 +209,18 @@
       "chunk_text_preview": "**Write in plain, direct language.** The position statement does not need to use legal terminology. Clear, factual sentences are more effective than elaborate language. The judge is looking for what y"
     },
     {
-      "query": "I have a hearing coming up and someone mentioned I should submit a position statement \u2014 what's supposed to go in it and how long should it be?",
+      "query": "I have a hearing coming up and someone mentioned I should submit a position statement — what's supposed to go in it and how long should it be?",
       "expected_chunk_id": "document_explanation__position_statement__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/document_explanations/document_explanation__position_statement__cross_cutting.md",
-      "chunk_text_preview": "# Position statement \u2014 setting out your case before a hearing\n\n## What it is\n\nA position statement is a short written document submitted to the court before a hearing that sets out a party's position "
+      "chunk_text_preview": "# Position statement — setting out your case before a hearing\n\n## What it is\n\nA position statement is a short written document submitted to the court before a hearing that sets out a party's position "
     },
     {
       "query": "My husband's solicitor keeps saying I should only get what I 'need' because he earned all the money during our marriage - is that right?",
       "expected_chunk_id": "case_law_summary__white_v_white__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/case_law_summaries/case_law_summary__white_v_white__financial_remedy.md",
-      "chunk_text_preview": "# White v White \u2014 the yardstick of equality in financial remedy\n\n## What was decided\n\nMartin and Pamela White had farmed together in partnership throughout their 33-year marriage. When the marriage en"
+      "chunk_text_preview": "# White v White — the yardstick of equality in financial remedy\n\n## What was decided\n\nMartin and Pamela White had farmed together in partnership throughout their 33-year marriage. When the marriage en"
     },
     {
       "query": "Do I have to go to mediation before I can apply to court, or can I just go straight to the judge?",
@@ -241,7 +241,7 @@
       "expected_chunk_id": "process_explanation__fdr_hearing__financial_remedy__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__fdr_hearing__financial_remedy.md",
-      "chunk_text_preview": "## What to know if you're unrepresented\n\n**The judicial indication is not a decision.** The judge's assessment of a likely outcome at the FDR is an indication only. It carries significant weight \u2014 it "
+      "chunk_text_preview": "## What to know if you're unrepresented\n\n**The judicial indication is not a decision.** The judge's assessment of a likely outcome at the FDR is an indication only. It carries significant weight — it "
     },
     {
       "query": "If I send in Form A will my ex find out straight away?",
@@ -255,28 +255,28 @@
       "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
-      "chunk_text_preview": "# Proportionality \u2014 the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
+      "chunk_text_preview": "# Proportionality — the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
     },
     {
       "query": "What is a position statement and do I need to write one before my court hearing?",
       "expected_chunk_id": "document_explanation__position_statement__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/document_explanations/document_explanation__position_statement__cross_cutting.md",
-      "chunk_text_preview": "# Position statement \u2014 setting out your case before a hearing\n\n## What it is\n\nA position statement is a short written document submitted to the court before a hearing that sets out a party's position "
+      "chunk_text_preview": "# Position statement — setting out your case before a hearing\n\n## What it is\n\nA position statement is a short written document submitted to the court before a hearing that sets out a party's position "
     },
     {
       "query": "What is a CETV? My husband's pension statement mentions it and I need to understand what it means for our divorce finances",
       "expected_chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk003",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
-      "chunk_text_preview": "**MIAM** \u2014 Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** \u2014 Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial re"
+      "chunk_text_preview": "**MIAM** — Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** — Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial re"
     },
     {
       "query": "How do I make an application to the court during my case - do I need to fill in a form and tell the other person?",
       "expected_chunk_id": "D11__chunk004",
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_18.md",
-      "chunk_text_preview": "# Part 18 \u2014 Procedure for Other Applications in Proceedings\n\n## PART 18 E+W PROCEDURE FOR OTHER APPLICATIONS IN PROCEEDINGS\n\n\n### Types of application for which Part 18 procedure may be followed E+W\n\n"
+      "chunk_text_preview": "# Part 18 — Procedure for Other Applications in Proceedings\n\n## PART 18 E+W PROCEDURE FOR OTHER APPLICATIONS IN PROCEEDINGS\n\n\n### Types of application for which Part 18 procedure may be followed E+W\n\n"
     },
     {
       "query": "I've been told I need to apply online for a child arrangements order - can I do that through the online system, or do I have to print it out and take it to court?",
@@ -290,14 +290,14 @@
       "expected_chunk_id": "sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk023",
       "layer": "layer1",
       "source_file": "raw/standard_orders/sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord.md",
-      "chunk_text_preview": "The provisions of FPR 25.19(1) apply to [the [child\u2019s solicitor] / [name of party instructing\u2019s solicitor].\n\nIn respect of the court\u2019s sealed order and approved [written]/ [transcript of] judgment (or"
+      "chunk_text_preview": "The provisions of FPR 25.19(1) apply to [the [child’s solicitor] / [name of party instructing’s solicitor].\n\nIn respect of the court’s sealed order and approved [written]/ [transcript of] judgment (or"
     },
     {
       "query": "What does the 'statement of truth' bit on the form mean, and what happens if I get something wrong?",
-      "expected_chunk_id": "PD_17A__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/Form_A.md",
-      "chunk_text_preview": "5. Statement of truth\nI understand that proceedings for contempt of court may be brought against\nanyone who makes, or causes to be made, a false statement in a document\nverified by a statement of trut"
+      "expected_chunk_id": "terminology__statement_of_truth__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/terminology/terminology__statement_of_truth__cross_cutting.md",
+      "chunk_text_preview": "# Statement of truth\n\n## What it means\n\nA statement of truth is a declaration signed at the end of certain court documents — witness statements, financial statements, and some applications — confirming that the contents are true to the best of the signatory's knowledge and belief. Signing a statemen"
     },
     {
       "query": "CAFCASS rang me and I'm worried they're on my ex's side - are they supposed to be neutral or do they take sides?",
@@ -311,7 +311,7 @@
       "expected_chunk_id": "PD_41C__chunk000",
       "layer": "layer1",
       "source_file": "raw/practice_directions/PD_41C.md",
-      "chunk_text_preview": "---\nsource: Family Procedure Rules \u2013 Practice Directions\nref: PD 41C\ntitle: Practice Direction 41C \u2013 Proceeding by electronic means: appeals in family proceedings heard in the High Court\nurl: https://"
+      "chunk_text_preview": "---\nsource: Family Procedure Rules – Practice Directions\nref: PD 41C\ntitle: Practice Direction 41C – Proceeding by electronic means: appeals in family proceedings heard in the High Court\nurl: https://"
     },
     {
       "query": "How long do I have to serve the application on the other person after it's been issued by the court?",
@@ -325,7 +325,7 @@
       "expected_chunk_id": "process_explanation__fda_hearing__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__fda_hearing__financial_remedy.md",
-      "chunk_text_preview": "# What is the First Appointment (FDA)?\n\n## What it is\n\nThe First Appointment (FDA) is a short directions hearing \u2014 typically 30 to 45 minutes \u2014 that takes place after both parties have exchanged their"
+      "chunk_text_preview": "# What is the First Appointment (FDA)?\n\n## What it is\n\nThe First Appointment (FDA) is a short directions hearing — typically 30 to 45 minutes — that takes place after both parties have exchanged their"
     },
     {
       "query": "I can't afford a solicitor - is there any way to get help paying for a non-molestation order?",
@@ -339,7 +339,7 @@
       "expected_chunk_id": "D11__chunk000",
       "layer": "layer1",
       "source_file": "raw/court_forms/D11.md",
-      "chunk_text_preview": "# Apply for an interim order as part of divorce, dissolution or separation court proceedings: Form D11\n\nUse this form to make a general application (\u2018application notice\u2019) as part of divorce, dissoluti"
+      "chunk_text_preview": "# Apply for an interim order as part of divorce, dissolution or separation court proceedings: Form D11\n\nUse this form to make a general application (‘application notice’) as part of divorce, dissoluti"
     },
     {
       "query": "My husband cheated on me and was emotionally abusive throughout our marriage - surely the judge will take that into account when splitting our assets?",
@@ -353,21 +353,21 @@
       "expected_chunk_id": "_discovery_gaps__chunk003",
       "layer": "layer2",
       "source_file": "raw/layer2/_discovery_gaps.md",
-      "chunk_text_preview": "| case_law_summary__miller_mcfarlane__financial_remedy | financial_remedy | What unrepresented people most commonly misunderstand about this case \u2014 e.g. whether they conflate the sharing principle wit"
+      "chunk_text_preview": "| case_law_summary__miller_mcfarlane__financial_remedy | financial_remedy | What unrepresented people most commonly misunderstand about this case — e.g. whether they conflate the sharing principle wit"
     },
     {
       "query": "What documents do I need to submit to the court for my financial settlement hearing?",
       "expected_chunk_id": "financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are__chunk000",
       "layer": "layer1",
       "source_file": "raw/guidance/financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are.md",
-      "chunk_text_preview": "# 6. The required documents for the purposes of paragraph 5 (ii) are:-\n\n(i) each party\u2019s financial statement in Form E filed in accordance with FPR 2010 r9.14(1);\n(ii) Template ES1;\n(iii) Template ES2"
+      "chunk_text_preview": "# 6. The required documents for the purposes of paragraph 5 (ii) are:-\n\n(i) each party’s financial statement in Form E filed in accordance with FPR 2010 r9.14(1);\n(ii) Template ES1;\n(iii) Template ES2"
     },
     {
       "query": "What happens if my ex doesn't follow the court order once it's made?",
       "expected_chunk_id": "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__child_arrangements_final_hearing__child_arrangements.md",
-      "chunk_text_preview": "**The order is binding and enforceable.** Once made, a child arrangements order is a legal obligation. Non-compliance with its terms \u2014 by either party \u2014 is a matter the court takes seriously. Understa"
+      "chunk_text_preview": "**The order is binding and enforceable.** Once made, a child arrangements order is a legal obligation. Non-compliance with its terms — by either party — is a matter the court takes seriously. Understa"
     },
     {
       "query": "If I get a non-molestation order will that help me keep the kids or get more money in the divorce?",
@@ -377,18 +377,18 @@
       "chunk_text_preview": "## What to know if you're unrepresented\n\n**Legal aid is available.** Victims of domestic abuse applying for a non-molestation order can qualify for legal aid regardless of their financial means, subje"
     },
     {
-      "query": "The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say \u2014 can they do that?",
+      "query": "The judge kept cutting me off at the first hearing and said they didn't need to hear everything I wanted to say — can they do that?",
       "expected_chunk_id": "legal_principle__proportionality__cross_cutting__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__proportionality__cross_cutting.md",
-      "chunk_text_preview": "# Proportionality \u2014 the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
+      "chunk_text_preview": "# Proportionality — the court's duty to deal with cases justly\n\n## What it is\n\nThe proportionality principle requires the court to deal with a case in a way that is proportionate to its nature, import"
     },
     {
       "query": "I'm trying to get a special guardianship order - will I be allowed to see the report the local authority has written about me?",
       "expected_chunk_id": "FPR_Part_12__chunk021",
       "layer": "layer1",
       "source_file": "raw/legislation/fpr_2010/FPR_Part_12.md",
-      "chunk_text_preview": "(2)\u00a0On giving the direction the court may adjourn the proceedings.\n\n\n(3)\u00a0As soon as practicable after the direction is given the court will record the direction.\n\n\n(4)\u00a0As soon as practicable after the"
+      "chunk_text_preview": "(2) On giving the direction the court may adjourn the proceedings.\n\n\n(3) As soon as practicable after the direction is given the court will record the direction.\n\n\n(4) As soon as practicable after the"
     },
     {
       "query": "My child has been taken abroad without my permission - what kind of court order can force the other parent to come to court and bring them back?",
@@ -402,7 +402,7 @@
       "expected_chunk_id": "_discovery_gaps__chunk003",
       "layer": "layer2",
       "source_file": "raw/layer2/_discovery_gaps.md",
-      "chunk_text_preview": "| case_law_summary__miller_mcfarlane__financial_remedy | financial_remedy | What unrepresented people most commonly misunderstand about this case \u2014 e.g. whether they conflate the sharing principle wit"
+      "chunk_text_preview": "| case_law_summary__miller_mcfarlane__financial_remedy | financial_remedy | What unrepresented people most commonly misunderstand about this case — e.g. whether they conflate the sharing principle wit"
     },
     {
       "query": "Will my divorce hearing be open to the public or held behind closed doors?",
@@ -416,7 +416,7 @@
       "expected_chunk_id": "process_explanation__divorce_track_overview__divorce__chunk001",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__divorce_track_overview__divorce.md",
-      "chunk_text_preview": "**Stage 5 \u2014 The 6-week wait and final order**\nAt least six weeks after the conditional order is pronounced, the applicant may apply for the final order using Form D36. The final order is the order tha"
+      "chunk_text_preview": "**Stage 5 — The 6-week wait and final order**\nAt least six weeks after the conditional order is pronounced, the applicant may apply for the final order using Form D36. The final order is the order tha"
     },
     {
       "query": "I'm scared about going to court and seeing my abuser - can I do anything to avoid being in the same room as them?",
@@ -433,18 +433,18 @@
       "chunk_text_preview": "16.2 Bundles or preliminary documents delivered after 11am on the day before the hearing may not be accepted by the Clerk of the Rules and, if not accepted, must be delivered:\n\n\n(a) in a case where th"
     },
     {
-      "query": "The judge gave me a list of things I need to do before the next hearing \u2013 do I actually have to do all of them or are some optional?",
+      "query": "The judge gave me a list of things I need to do before the next hearing – do I actually have to do all of them or are some optional?",
       "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "chunk_text_preview": "# Directions\n\n## What it means\n\nDirections are instructions made by the court that set out what each party must do before the next hearing, and by when. They are not optional \u2014 failing to comply with "
+      "chunk_text_preview": "# Directions\n\n## What it means\n\nDirections are instructions made by the court that set out what each party must do before the next hearing, and by when. They are not optional — failing to comply with "
     },
     {
       "query": "Who gets sent a copy of my application form when I start court proceedings?",
-      "expected_chunk_id": "PD_14A__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_14A.md",
-      "chunk_text_preview": "# Practice Direction 14A \u2013 Who Receives a Copy of the Application Form for Orders in Proceedings\n\nsee also Part 14 , Practice Direction 14B , Practice Direction 14C , Practice Direction 14D , Practice"
+      "expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk002",
+      "layer": "layer2",
+      "source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "chunk_text_preview": "**Online applications for children proceedings.** Applicants applying for a section 8 order under the Children Act 1989 — such as a child arrangements order — can start the application online using the HMCTS online system under the pilot scheme in Practice Direction 36G. This lets the applicant comp"
     },
     {
       "query": "My ex was abusive and I'm terrified of seeing them at court - is there anything I can do so I don't have to be in the same room as them?",
@@ -461,25 +461,25 @@
       "chunk_text_preview": "IT IS DECLARED THAT:\n\nThe court in England and Wales has jurisdiction in relation to the child[ren] on the basis that:\n\n(please select the appropriate paragraph from list a. to f. below)\n\n(pre-11pm on"
     },
     {
-      "query": "I think my husband is hiding money in an account I don't know about \u2014 what happens if the judge finds out he's been lying about his finances?",
+      "query": "I think my husband is hiding money in an account I don't know about — what happens if the judge finds out he's been lying about his finances?",
       "expected_chunk_id": "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/legal_principles/legal_principle__duty_of_full_and_frank_disclosure__financial_remedy.md",
-      "chunk_text_preview": "# The duty of full and frank disclosure \u2014 what it means to tell the whole truth about your finances\n\n## What it is\n\nBoth parties in financial remedy proceedings are under a legal duty to provide full,"
+      "chunk_text_preview": "# The duty of full and frank disclosure — what it means to tell the whole truth about your finances\n\n## What it is\n\nBoth parties in financial remedy proceedings are under a legal duty to provide full,"
     },
     {
       "query": "What does FDR mean? The court has listed something called an FDR hearing and I don't know what it is",
       "expected_chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk003",
       "layer": "layer2",
       "source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
-      "chunk_text_preview": "**MIAM** \u2014 Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** \u2014 Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial re"
+      "chunk_text_preview": "**MIAM** — Mediation Information and Assessment Meeting; the required pre-proceedings step.\n\n**CETV** — Cash Equivalent Transfer Value; the value assigned to a pension for the purposes of financial re"
     },
     {
       "query": "I want to appeal the judge's decision but I'm confused about all the different types of judges mentioned in the paperwork - what do terms like 'circuit judge level' and 'district judge level' actually mean?",
       "expected_chunk_id": "PD_30A__chunk000",
       "layer": "layer1",
       "source_file": "raw/practice_directions/PD_30A.md",
-      "chunk_text_preview": "# Practice Direction 30A \u2013 Appeals\n\nSee also Part 30\n\n\n### This Practice Direction supplements FPR Part 30\n\n\nContents of this Practice Direction\n\n\n### Application and interpretation\n\n\n1.1 This practic"
+      "chunk_text_preview": "# Practice Direction 30A – Appeals\n\nSee also Part 30\n\n\n### This Practice Direction supplements FPR Part 30\n\n\nContents of this Practice Direction\n\n\n### Application and interpretation\n\n\n1.1 This practic"
     },
     {
       "query": "How do I address the judge at my final hearing? I don't want to get it wrong and look stupid.",
