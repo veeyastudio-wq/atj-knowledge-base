@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from memory import initialise_memory, retrieve_memory, write_memory
 from retrieve import retrieve
+from response_check import check_response
 
 load_dotenv()
 
@@ -124,6 +125,15 @@ def main():
         assistant_text = "".join(
             block.text for block in response.content if block.type == "text"
         )
+
+        check = check_response(
+            user_message,
+            assistant_text,
+            user_identifier=user_identifier,
+            session_id=session_id,
+        )
+        if not check["compliant"]:
+            print(f"\n[COMPLIANCE FLAG] {check['reason']}\n")
 
         print(f"\nATJ: {assistant_text}\n")
 
