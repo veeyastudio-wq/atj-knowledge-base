@@ -1,7 +1,12 @@
 """
-Cross-tenant isolation test for the ATJ memory layer.
+Cross-tenant isolation test for the ATJ memory layer (fact-extraction flow).
 
-Tests that memory written for user A is never returned when retrieving for user B.
+Tests that facts extracted from user A's content are never returned when
+retrieving for user B, and vice versa. Uses geographically distinct content
+so the extracted fact VALUES contain the location marker — the marker-based
+leak detection works on the formatted "category: value" strings returned by
+retrieve_memory, not on raw input content.
+
 Run from repo root: python3.12 scripts/test_memory_isolation.py
 """
 
@@ -14,13 +19,25 @@ from memory import initialise_memory, write_memory, retrieve_memory, delete_user
 USER_A = "test_user_a"
 USER_B = "test_user_b"
 
-CONTENT_A = "User A is going through a divorce in Manchester. They have two children aged 7 and 9."
-CONTENT_B = "User B has a financial remedy hearing in Bristol next Tuesday. They own a property in Bath."
+# Content chosen so extraction produces facts that contain the location marker.
+# USER_A content → facts will reference Manchester.
+# USER_B content → facts will reference Bristol.
+CONTENT_A = (
+    "I have a Financial Dispute Resolution hearing at Manchester County Court "
+    "on 3 September 2026. My solicitor is based in Manchester. "
+    "The family home in Manchester is valued at £320,000."
+)
+CONTENT_B = (
+    "My First Appointment was held at Bristol Family Court on 14 May 2026. "
+    "The consent order was approved at Bristol County Court. "
+    "There is a pension sharing order for the respondent's Bristol City Council pension."
+)
 
-QUERY_A = "divorce Manchester children"
-QUERY_B = "financial remedy Bristol property"
+QUERY_A = "hearing Manchester court date"
+QUERY_B = "hearing Bristol court order"
 
-# Distinctive phrases that must only appear in the right user's results
+# Markers that must only appear in the right user's results.
+# These will be in the extracted fact VALUES (e.g. "hearing_outcome: FDR at Manchester County Court").
 MARKER_A = "manchester"
 MARKER_B = "bristol"
 
@@ -40,18 +57,18 @@ def main() -> None:
         print(f"  FAIL: {e}")
         sys.exit(1)
 
-    # Write distinct memory for each user
-    print("Writing memory for test_user_a...")
+    # Write distinct content for each user
+    print("Writing memory for test_user_a (Manchester content)...")
     try:
-        write_memory(USER_A, "session_a", CONTENT_A)
+        write_memory(USER_A, "session_a", CONTENT_A, role="user")
         print("  OK")
     except Exception as e:
         errors.append(f"write USER_A failed: {e}")
         print(f"  FAIL: {e}")
 
-    print("Writing memory for test_user_b...")
+    print("Writing memory for test_user_b (Bristol content)...")
     try:
-        write_memory(USER_B, "session_b", CONTENT_B)
+        write_memory(USER_B, "session_b", CONTENT_B, role="user")
         print("  OK")
     except Exception as e:
         errors.append(f"write USER_B failed: {e}")
@@ -62,20 +79,26 @@ def main() -> None:
     results_a = []
     try:
         results_a = retrieve_memory(USER_A, QUERY_A)
-        print(f"  {len(results_a)} result(s) returned")
+        print(f"  {len(results_a)} fact(s) returned")
+        for r in results_a:
+            print(f"    {r['content']}")
     except Exception as e:
         errors.append(f"retrieve USER_A failed: {e}")
         print(f"  FAIL: {e}")
 
-    if not contains_marker(results_a, MARKER_A):
-        msg = f"User A retrieval did not return User A's own content (marker '{MARKER_A}' not found)"
+    if not results_a:
+        msg = "User A retrieval returned no facts — extraction may have failed"
+        errors.append(msg)
+        print(f"  FAIL: {msg}")
+    elif not contains_marker(results_a, MARKER_A):
+        msg = f"User A's own marker '{MARKER_A}' not found in any returned fact"
         errors.append(msg)
         print(f"  FAIL: {msg}")
     else:
-        print(f"  OK — User A's own content found")
+        print(f"  OK — User A's marker '{MARKER_A}' found in returned facts")
 
     if contains_marker(results_a, MARKER_B):
-        msg = f"ISOLATION BREACH: User B's content (marker '{MARKER_B}') appeared in User A's results"
+        msg = f"ISOLATION BREACH: User B's marker '{MARKER_B}' appeared in User A's results"
         errors.append(msg)
         print(f"  FAIL: {msg}")
     else:
@@ -86,20 +109,26 @@ def main() -> None:
     results_b = []
     try:
         results_b = retrieve_memory(USER_B, QUERY_B)
-        print(f"  {len(results_b)} result(s) returned")
+        print(f"  {len(results_b)} fact(s) returned")
+        for r in results_b:
+            print(f"    {r['content']}")
     except Exception as e:
         errors.append(f"retrieve USER_B failed: {e}")
         print(f"  FAIL: {e}")
 
-    if not contains_marker(results_b, MARKER_B):
-        msg = f"User B retrieval did not return User B's own content (marker '{MARKER_B}' not found)"
+    if not results_b:
+        msg = "User B retrieval returned no facts — extraction may have failed"
+        errors.append(msg)
+        print(f"  FAIL: {msg}")
+    elif not contains_marker(results_b, MARKER_B):
+        msg = f"User B's own marker '{MARKER_B}' not found in any returned fact"
         errors.append(msg)
         print(f"  FAIL: {msg}")
     else:
-        print(f"  OK — User B's own content found")
+        print(f"  OK — User B's marker '{MARKER_B}' found in returned facts")
 
     if contains_marker(results_b, MARKER_A):
-        msg = f"ISOLATION BREACH: User A's content (marker '{MARKER_A}') appeared in User B's results"
+        msg = f"ISOLATION BREACH: User A's marker '{MARKER_A}') appeared in User B's results"
         errors.append(msg)
         print(f"  FAIL: {msg}")
     else:
