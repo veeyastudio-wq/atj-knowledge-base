@@ -24,6 +24,19 @@ Graph schema — typed fact nodes extending POLE+O:
 
   All ATJFact nodes carry user_identifier as a direct property for sweep deletion.
 
+  CaseStage supersession:
+    When a new case_stage fact is written, any existing active CaseStage node
+    for that user (where invalid_at IS NULL) has invalid_at set to the current
+    timestamp before the new node is created. This means retrieve_memory always
+    returns at most one active CaseStage per user. All other fact types are
+    additive — they are never superseded.
+
+  Per-fact compliance audit:
+    After Anthropic extraction and before Neo4j writes, each fact is checked
+    individually by a second API call (Haiku) that judges the fact's category
+    and value against the exclusion list. Facts that fail are logged as
+    audit_reject and never written. Facts that pass proceed to Neo4j normally.
+
   The neo4j-agent-memory library's add_entity() has no user_identifier parameter,
   making its entity API unsuitable for multi-tenant storage. Raw Cypher is used
   for writes and reads to maintain per-user isolation across all typed nodes.
@@ -33,6 +46,10 @@ Public API:
     write_memory(user_identifier, session_id, content, *, role, memory_enabled)
     retrieve_memory(user_identifier, query)
     delete_user_memory(user_identifier)
+
+Semi-public (importable for testing):
+    _compliance_check(category, value) -> (passes: bool, reason: str)
+    _filter_by_compliance(user_identifier, facts) -> list[dict]
 """
 
 import asyncio
@@ -51,6 +68,7 @@ load_dotenv()
 
 _LOG_PATH = Path("logs/memory_ops.jsonl")
 _EXTRACTION_MODEL = "claude-sonnet-4-6"
+_COMPLIANCE_MODEL = "claude-haiku-4-5-20251001"
 
 _FACT_CATEGORIES = frozenset([
     "case_stage",
@@ -100,6 +118,29 @@ Output ONLY a JSON array. No markdown fences, no extra text. Each item must have
   "value": a concise, factual string — no full sentences, no verbatim quotation of the input
 
 Return [] if there is nothing storable. That is a valid and expected output.\
+"""
+
+_COMPLIANCE_SYSTEM = """\
+You are a compliance auditor for a family court case management system.
+
+You will receive a single extracted fact: a category and a value. Determine
+whether the value violates any of these prohibited content types:
+
+1. Emotional expressions or feelings
+2. Speculative statements (language implying uncertainty: might, could, perhaps, wondering, maybe)
+3. Legal questions asked by the user (anything phrased as a question seeking legal guidance)
+4. General legal information or explanations
+5. Anything that could constitute legal advice (recommendations, should, must, you need to)
+
+A passing fact is concise and purely factual — it records an objective case
+detail (a date, a name, a court order, a stage of proceedings, a monetary value)
+without any of the above violations.
+
+Respond with a JSON object with exactly two keys:
+  "passes": true if the fact is safe to store, false if it violates a prohibition
+  "reason": one sentence — if passes=true write "OK"; if passes=false name the specific prohibition violated
+
+No markdown fences. No extra text. JSON only.\
 """
 
 _neo4j_uri: str | None = None
@@ -174,6 +215,61 @@ def _extract_facts(content: str) -> list[dict]:
     ]
 
 
+def _compliance_check(category: str, value: str) -> tuple[bool, str]:
+    """Run a per-fact compliance audit using Haiku.
+
+    Returns (passes, reason). passes=True means the fact is safe to write.
+    Called per-fact by _filter_by_compliance; never writes to Neo4j.
+    On parse failure, defaults to rejecting (fail-safe).
+    """
+    message = _anthropic_client.messages.create(
+        model=_COMPLIANCE_MODEL,
+        max_tokens=128,
+        system=_COMPLIANCE_SYSTEM,
+        messages=[{"role": "user", "content": f"category: {category}\nvalue: {value}"}],
+    )
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```", 2)[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+    try:
+        result = json.loads(raw)
+    except json.JSONDecodeError:
+        return False, f"compliance check parse error: {raw!r}"
+    return bool(result.get("passes", False)), str(result.get("reason", "unknown"))
+
+
+def _filter_by_compliance(user_identifier: str, facts: list[dict]) -> list[dict]:
+    """Run the compliance audit on each fact individually.
+
+    Returns only facts that pass. Rejected facts are logged as audit_reject
+    with their category, value, and the reason given by the compliance model.
+    """
+    passing = []
+    for fact in facts:
+        t0 = time.monotonic()
+        passes, reason = _compliance_check(fact["type"], fact["value"])
+        latency_ms = (time.monotonic() - t0) * 1000
+        if passes:
+            passing.append(fact)
+        else:
+            _log_memory_op(
+                user_identifier=user_identifier,
+                operation="audit_reject",
+                entity_count=0,
+                latency_ms=latency_ms,
+                success=False,
+                error=json.dumps({
+                    "category": fact["type"],
+                    "value": fact["value"],
+                    "reason": reason,
+                }),
+            )
+    return passing
+
+
 # ── Public API ────────────────────────────────────────────────────────────────
 
 def initialise_memory() -> None:
@@ -220,9 +316,14 @@ def write_memory(
 ) -> None:
     """Extract structured facts from content and write them to the memory graph.
 
-    No raw content is stored. The Anthropic extraction step runs first; only
-    the returned structured facts (type + value) reach Neo4j. If nothing
-    storable is present in this turn, nothing is written — entity_count=0.
+    Pipeline per call:
+      1. Anthropic extraction (Sonnet) — raw content → list of {type, value} facts
+      2. Per-fact compliance audit (Haiku) — reject prohibited content, log audit_reject
+      3. Neo4j write — supersede existing CaseStage if new case_stage fact present,
+         then CREATE the new typed ATJFact node
+
+    No raw content is stored at any stage. entity_count in the write log reflects
+    facts that passed compliance and were actually written.
 
     role: accepted for API compatibility but not used in extraction.
     """
@@ -236,7 +337,8 @@ def write_memory(
     success = False
     count = 0
     try:
-        facts = _extract_facts(content)
+        extracted = _extract_facts(content)
+        facts = _filter_by_compliance(user_identifier, extracted) if extracted else []
         if facts:
             asyncio.run(_write_async(user_identifier, session_id, facts))
         count = len(facts)
@@ -260,8 +362,20 @@ async def _write_async(user_identifier: str, session_id: str, facts: list[dict])
     try:
         async with driver.session() as session:
             for fact in facts:
-                # Label comes from a static dict keyed on validated category — not user input
                 label = _CATEGORY_TO_LABEL.get(fact["type"], "ATJFact")
+
+                # CaseStage supersession: mark any current active CaseStage invalid
+                # before creating the replacement. All other types are additive.
+                if fact["type"] == "case_stage":
+                    await session.run(
+                        "MATCH (u:User {identifier: $uid})"
+                        "-[:HAS_ATJ_FACT]->(f:ATJFact:CaseStage) "
+                        "WHERE f.invalid_at IS NULL "
+                        "SET f.invalid_at = datetime()",
+                        uid=user_identifier,
+                    )
+
+                # Label is from _CATEGORY_TO_LABEL — a static dict, not user input
                 query = (
                     f"MERGE (u:User {{identifier: $uid}}) "
                     f"CREATE (f:ATJFact:{label} {{"
@@ -284,12 +398,14 @@ async def _write_async(user_identifier: str, session_id: str, facts: list[dict])
 
 
 def retrieve_memory(user_identifier: str, query: str) -> list:
-    """Retrieve all stored case facts for this user.
+    """Retrieve all active stored case facts for this user.
 
     Returns a list of dicts with keys: content, role, created_at, user_identifier.
     content is formatted as "{category}: {value}" — structured fact, not raw text.
-    query is accepted for API compatibility; retrieval is user-scoped via graph
-    traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
+    Only facts where invalid_at IS NULL are returned. For CaseStage this means
+    only the current stage; for all other types it is a no-op (invalid_at is never
+    set on them). query is accepted for API compatibility; retrieval is user-scoped
+    via graph traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
     """
     _require_init()
 
@@ -321,6 +437,7 @@ async def _retrieve_async(user_identifier: str, query: str) -> list:
         async with driver.session() as session:
             result = await session.run(
                 "MATCH (u:User {identifier: $uid})-[:HAS_ATJ_FACT]->(f:ATJFact) "
+                "WHERE f.invalid_at IS NULL "
                 "RETURN f.category AS category, f.value AS value, "
                 "       toString(f.created_at) AS created_at "
                 "ORDER BY f.created_at DESC",
@@ -370,7 +487,7 @@ async def _delete_async(user_identifier: str) -> int:
     count = 0
     try:
         async with driver.session() as session:
-            # Delete typed ATJFact nodes via relationship traversal
+            # Delete typed ATJFact nodes via relationship traversal (includes superseded)
             result = await session.run(
                 "MATCH (u:User {identifier: $uid})-[:HAS_ATJ_FACT]->(f:ATJFact) "
                 "DETACH DELETE f",
