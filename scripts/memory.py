@@ -6,14 +6,27 @@ Each turn is passed through an Anthropic extraction step that returns a list of
 structured case facts. Only those facts reach the graph. If nothing storable is
 present in a turn, nothing is written — that is a valid and expected outcome.
 
-Stored node types:
-  (:User {identifier})                     — one node per user_identifier
-  (:Preference {category, preference, ...}) — one node per extracted fact
-  (:User)-[:HAS_PREFERENCE]->(:Preference)  — scoping edge
+Graph schema — typed fact nodes extending POLE+O:
 
-Fact categories (POLE+O extension for family court):
-  case_stage | key_date | document_status | party_name |
-  financial_figure | order_made | hearing_outcome
+  Custom family-court domain types:
+    (:ATJFact:CaseStage)       — case_stage       — Current stage of proceedings
+    (:ATJFact:Deadline)        — key_date         — Specific dates and deadlines
+    (:ATJFact:FinancialFigure) — financial_figure — Monetary values
+    (:ATJFact:OrderType)       — order_made       — Court orders
+    (:ATJFact:HearingType)     — hearing_outcome  — Hearing outcomes
+
+  Base POLE+O types:
+    (:ATJFact:Person)          — party_name       — Parties, solicitors, individuals
+    (:ATJFact:Document)        — document_status  — Document states (Object > Document)
+
+  User scoping:
+    (:User {identifier})-[:HAS_ATJ_FACT]->(:ATJFact)
+
+  All ATJFact nodes carry user_identifier as a direct property for sweep deletion.
+
+  The neo4j-agent-memory library's add_entity() has no user_identifier parameter,
+  making its entity API unsuitable for multi-tenant storage. Raw Cypher is used
+  for writes and reads to maintain per-user isolation across all typed nodes.
 
 Public API:
     initialise_memory()
@@ -26,32 +39,17 @@ import asyncio
 import json
 import os
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
 import anthropic as _anthropic
 from dotenv import load_dotenv
 from neo4j import AsyncGraphDatabase
-from neo4j_agent_memory import MemoryClient, MemorySettings
-from neo4j_agent_memory.config.settings import (
-    EmbeddingConfig,
-    EnrichmentConfig,
-    ExtractionConfig,
-    GeocodingConfig,
-    MemoryConfig,
-    Neo4jConfig,
-    ResolutionConfig,
-    SchemaConfig,
-    SearchConfig,
-)
-from neo4j_agent_memory.embeddings.sentence_transformers import SentenceTransformerEmbedder
-from pydantic import SecretStr
 
 load_dotenv()
 
 _LOG_PATH = Path("logs/memory_ops.jsonl")
-_EMBED_MODEL = "BAAI/bge-small-en-v1.5"
-_EMBED_DIMS = 384
 _EXTRACTION_MODEL = "claude-sonnet-4-6"
 
 _FACT_CATEGORIES = frozenset([
@@ -63,6 +61,20 @@ _FACT_CATEGORIES = frozenset([
     "order_made",
     "hearing_outcome",
 ])
+
+# Maps extraction category → additional Neo4j label on the :ATJFact base node.
+# Five custom family-court types (brief spec) + two POLE+O base types.
+# Values are statically defined here; they are the only strings interpolated
+# into Cypher label position — user input never reaches that position.
+_CATEGORY_TO_LABEL: dict[str, str] = {
+    "case_stage":        "CaseStage",        # custom ATJ
+    "key_date":          "Deadline",         # custom ATJ
+    "financial_figure":  "FinancialFigure",  # custom ATJ
+    "order_made":        "OrderType",        # custom ATJ
+    "hearing_outcome":   "HearingType",      # custom ATJ
+    "party_name":        "Person",           # POLE+O
+    "document_status":   "Document",         # POLE+O Object > Document
+}
 
 _EXTRACTION_SYSTEM = """\
 You are a structured data extractor for a family court case management system.
@@ -90,8 +102,8 @@ Output ONLY a JSON array. No markdown fences, no extra text. Each item must have
 Return [] if there is nothing storable. That is a valid and expected output.\
 """
 
-_settings: MemorySettings | None = None
-_embedder: SentenceTransformerEmbedder | None = None
+_neo4j_uri: str | None = None
+_neo4j_auth: tuple | None = None
 _anthropic_client: _anthropic.Anthropic | None = None
 
 
@@ -123,12 +135,8 @@ def _log_memory_op(
 # ── Internal helpers ──────────────────────────────────────────────────────────
 
 def _require_init() -> None:
-    if _settings is None:
+    if _neo4j_uri is None:
         raise RuntimeError("Call initialise_memory() before using memory functions.")
-
-
-def _make_client() -> MemoryClient:
-    return MemoryClient(_settings, embedder=_embedder)
 
 
 def _extract_facts(content: str) -> list[dict]:
@@ -144,7 +152,6 @@ def _extract_facts(content: str) -> list[dict]:
         messages=[{"role": "user", "content": content}],
     )
     raw = message.content[0].text.strip()
-    # Strip markdown fences defensively, even though the prompt forbids them
     if raw.startswith("```"):
         raw = raw.split("```", 2)[1]
         if raw.startswith("json"):
@@ -171,7 +178,7 @@ def _extract_facts(content: str) -> list[dict]:
 
 def initialise_memory() -> None:
     """Initialise the memory layer. Call once at startup."""
-    global _settings, _embedder, _anthropic_client
+    global _neo4j_uri, _neo4j_auth, _anthropic_client
 
     load_dotenv()
 
@@ -179,39 +186,28 @@ def initialise_memory() -> None:
     user = os.environ["NEO4J_USER"]
     password = os.environ["NEO4J_PASSWORD"]
 
+    _neo4j_uri = uri
+    _neo4j_auth = (user, password)
     _anthropic_client = _anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    _embedder = SentenceTransformerEmbedder(model_name=_EMBED_MODEL, device="cpu")
-
-    _settings = MemorySettings(
-        neo4j=Neo4jConfig(
-            uri=uri,
-            username=user,
-            password=SecretStr(password),
-        ),
-        embedding=EmbeddingConfig(
-            provider="openai",  # overridden by the custom embedder argument
-            dimensions=_EMBED_DIMS,
-        ),
-        extraction=ExtractionConfig(
-            extractor_type="none",
-            enable_spacy=False,
-            enable_gliner=False,
-            enable_llm_fallback=False,
-        ),
-        schema_config=SchemaConfig(),
-        resolution=ResolutionConfig(),
-        memory=MemoryConfig(multi_tenant=True),
-        search=SearchConfig(),
-        geocoding=GeocodingConfig(),
-        enrichment=EnrichmentConfig(),
-    )
 
     asyncio.run(_init_async())
 
 
 async def _init_async() -> None:
-    async with _make_client():
-        pass
+    """Create indexes for the ATJFact schema on first run."""
+    driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
+    try:
+        async with driver.session() as session:
+            await session.run(
+                "CREATE INDEX atj_fact_user IF NOT EXISTS "
+                "FOR (n:ATJFact) ON (n.user_identifier)"
+            )
+            await session.run(
+                "CREATE CONSTRAINT atj_fact_id IF NOT EXISTS "
+                "FOR (n:ATJFact) REQUIRE n.id IS UNIQUE"
+            )
+    finally:
+        await driver.close()
 
 
 def write_memory(
@@ -260,19 +256,31 @@ def write_memory(
 
 
 async def _write_async(user_identifier: str, session_id: str, facts: list[dict]) -> None:
-    async with _make_client() as client:
-        for fact in facts:
-            await client.long_term.add_preference(
-                category=fact["type"],
-                preference=fact["value"],
-                context=f"session:{session_id}",
-                generate_embedding=True,
-                metadata={
-                    "atj_session_id": session_id,
-                    "user_identifier": user_identifier,
-                },
-                user_identifier=user_identifier,
-            )
+    driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
+    try:
+        async with driver.session() as session:
+            for fact in facts:
+                # Label comes from a static dict keyed on validated category — not user input
+                label = _CATEGORY_TO_LABEL.get(fact["type"], "ATJFact")
+                query = (
+                    f"MERGE (u:User {{identifier: $uid}}) "
+                    f"CREATE (f:ATJFact:{label} {{"
+                    f"  id: $id, category: $category, value: $value, "
+                    f"  user_identifier: $uid, session_id: $sid, "
+                    f"  created_at: datetime() "
+                    f"}}) "
+                    f"MERGE (u)-[:HAS_ATJ_FACT]->(f)"
+                )
+                await session.run(
+                    query,
+                    uid=user_identifier,
+                    id=str(uuid.uuid4()),
+                    category=fact["type"],
+                    value=fact["value"],
+                    sid=session_id,
+                )
+    finally:
+        await driver.close()
 
 
 def retrieve_memory(user_identifier: str, query: str) -> list:
@@ -281,7 +289,7 @@ def retrieve_memory(user_identifier: str, query: str) -> list:
     Returns a list of dicts with keys: content, role, created_at, user_identifier.
     content is formatted as "{category}: {value}" — structured fact, not raw text.
     query is accepted for API compatibility; retrieval is user-scoped via graph
-    traversal (User→HAS_PREFERENCE→Preference), not vector search.
+    traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
     """
     _require_init()
 
@@ -308,20 +316,28 @@ def retrieve_memory(user_identifier: str, query: str) -> list:
 
 
 async def _retrieve_async(user_identifier: str, query: str) -> list:
-    async with _make_client() as client:
-        prefs = await client.long_term.get_preferences_for(
-            user_identifier,
-            active_only=True,
-        )
-        return [
-            {
-                "content": f"{p.category}: {p.preference}",
-                "role": "fact",
-                "created_at": str(p.created_at),
-                "user_identifier": user_identifier,
-            }
-            for p in prefs
-        ]
+    driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
+    try:
+        async with driver.session() as session:
+            result = await session.run(
+                "MATCH (u:User {identifier: $uid})-[:HAS_ATJ_FACT]->(f:ATJFact) "
+                "RETURN f.category AS category, f.value AS value, "
+                "       toString(f.created_at) AS created_at "
+                "ORDER BY f.created_at",
+                uid=user_identifier,
+            )
+            records = await result.data()
+            return [
+                {
+                    "content": f"{r['category']}: {r['value']}",
+                    "role": "fact",
+                    "created_at": r["created_at"],
+                    "user_identifier": user_identifier,
+                }
+                for r in records
+            ]
+    finally:
+        await driver.close()
 
 
 def delete_user_memory(user_identifier: str) -> None:
@@ -350,15 +366,20 @@ def delete_user_memory(user_identifier: str) -> None:
 
 
 async def _delete_async(user_identifier: str) -> int:
-    uri = os.environ["NEO4J_URI"]
-    user = os.environ["NEO4J_USER"]
-    password = os.environ["NEO4J_PASSWORD"]
-
-    driver = AsyncGraphDatabase.driver(uri, auth=(user, password))
+    driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
     count = 0
     try:
         async with driver.session() as session:
-            # Collect IDs of all Preference nodes linked to this user
+            # Delete typed ATJFact nodes via relationship traversal
+            result = await session.run(
+                "MATCH (u:User {identifier: $uid})-[:HAS_ATJ_FACT]->(f:ATJFact) "
+                "DETACH DELETE f",
+                uid=user_identifier,
+            )
+            summary = await result.consume()
+            count += summary.counters.nodes_deleted
+
+            # Legacy Preference nodes (prior schema — clean up if present)
             result = await session.run(
                 "MATCH (u:User {identifier: $uid})-[:HAS_PREFERENCE]->(p:Preference) "
                 "RETURN p.id AS pref_id",
@@ -367,7 +388,7 @@ async def _delete_async(user_identifier: str) -> int:
             records = await result.data()
             pref_ids = [r["pref_id"] for r in records]
 
-            # Delete the User node; DETACH DELETE removes all HAS_PREFERENCE edges
+            # Delete the User node; DETACH DELETE removes all relationship edges
             result = await session.run(
                 "MATCH (u:User {identifier: $uid}) DETACH DELETE u",
                 uid=user_identifier,
@@ -375,7 +396,7 @@ async def _delete_async(user_identifier: str) -> int:
             summary = await result.consume()
             count += summary.counters.nodes_deleted
 
-            # Delete any Preference nodes that are now orphaned (no other user owns them)
+            # Delete any legacy Preference nodes now orphaned
             if pref_ids:
                 result = await session.run(
                     """
@@ -395,7 +416,6 @@ async def _delete_async(user_identifier: str) -> int:
                 MATCH (n)
                 WHERE n.user_identifier = $uid
                    OR n.identifier = $uid
-                   OR n.session_id = $uid
                 DETACH DELETE n
                 """,
                 uid=user_identifier,
