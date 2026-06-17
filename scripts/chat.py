@@ -21,7 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from memory import initialise_memory, retrieve_memory, write_memory
 from retrieve import retrieve
-from response_check import check_response
+from response_check import check_response, FALLBACK_RESPONSE
 
 load_dotenv()
 
@@ -134,15 +134,18 @@ def main():
         )
         if not check["compliant"]:
             print(f"\n[COMPLIANCE FLAG] {check['reason']}\n")
+            displayed_text = FALLBACK_RESPONSE
+        else:
+            displayed_text = assistant_text
 
-        print(f"\nATJ: {assistant_text}\n")
+        print(f"\nATJ: {displayed_text}\n")
 
         conversation_history.append({"role": "user", "content": user_message})
-        conversation_history.append({"role": "assistant", "content": assistant_text})
+        conversation_history.append({"role": "assistant", "content": displayed_text})
 
         try:
             write_memory(user_identifier, session_id, user_message, role="user")
-            write_memory(user_identifier, session_id, assistant_text, role="assistant")
+            write_memory(user_identifier, session_id, displayed_text, role="assistant")
         except Exception as exc:
             print(f"[memory write failed: {exc}]")
 

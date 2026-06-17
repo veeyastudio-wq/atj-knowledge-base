@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from dotenv import load_dotenv
 load_dotenv(dotenv_path=".env")
 
-from response_check import check_response
+from response_check import check_response, FALLBACK_RESPONSE
 
 LOG_PATH = Path("logs/chat_ops.jsonl")
 
@@ -64,12 +64,15 @@ PASS_ASSISTANT = (
 
 # ── Log helpers ───────────────────────────────────────────────────────────────
 
-def get_log_entries_for_user(uid: str) -> list[dict]:
+def get_log_entries_for_user(uid: str, after_line: int = 0) -> list[dict]:
+    """Return response_check log entries for uid, skipping the first after_line lines."""
     if not LOG_PATH.exists():
         return []
     entries = []
     with LOG_PATH.open(encoding="utf-8") as fh:
-        for line in fh:
+        for i, line in enumerate(fh):
+            if i < after_line:
+                continue
             line = line.strip()
             if not line:
                 continue
@@ -87,8 +90,17 @@ def get_log_entries_for_user(uid: str) -> list[dict]:
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
+def log_line_count() -> int:
+    """Return current number of lines in the log file (0 if absent)."""
+    if not LOG_PATH.exists():
+        return 0
+    with LOG_PATH.open(encoding="utf-8") as fh:
+        return sum(1 for line in fh if line.strip())
+
+
 def main() -> None:
     errors = []
+    log_start = log_line_count()  # snapshot before this run's entries are written
 
     # ── Case 1: FAIL ─────────────────────────────────────────────────────────
     print("Case 1: response that crosses into legal advice — expect FAIL")
@@ -144,16 +156,73 @@ def main() -> None:
 
     print()
 
+    # ── Case 3: fallback substitution ────────────────────────────────────────
+    print("Case 3: fallback substitution — non-compliant response must yield FALLBACK_RESPONSE")
+
+    try:
+        result_sub = check_response(
+            FAIL_USER_MSG,
+            FAIL_ASSISTANT,
+            user_identifier=TEST_USER,
+            session_id=TEST_SESSION,
+        )
+        displayed_text = FALLBACK_RESPONSE if not result_sub["compliant"] else FAIL_ASSISTANT
+        print(f"  compliant={result_sub['compliant']}")
+        print(f"  displayed_text matches FALLBACK_RESPONSE: {displayed_text == FALLBACK_RESPONSE}")
+    except Exception as e:
+        errors.append(f"Case 3 check_response raised: {e}")
+        print(f"  FAIL: {e}")
+        displayed_text = FAIL_ASSISTANT
+
+    if displayed_text != FALLBACK_RESPONSE:
+        msg = "Case 3: displayed_text is not FALLBACK_RESPONSE — substitution logic broken"
+        errors.append(msg)
+        print(f"  FAIL: {msg}")
+    else:
+        print("  OK — displayed_text is exactly FALLBACK_RESPONSE")
+
+    # Verify the log entry for this Case 3 call has original_draft and fallback_substituted
+    all_entries = get_log_entries_for_user(TEST_USER, after_line=log_start)
+    fail_entries_all = [e for e in all_entries if e.get("result") == "fail"]
+    latest_fail = fail_entries_all[-1] if fail_entries_all else None
+
+    if latest_fail is None:
+        msg = "Case 3: no fail log entry found to inspect"
+        errors.append(msg)
+        print(f"  FAIL: {msg}")
+    else:
+        if latest_fail.get("original_draft") != FAIL_ASSISTANT:
+            msg = (
+                f"Case 3: log entry original_draft mismatch — "
+                f"got {latest_fail.get('original_draft')!r:.60}"
+            )
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print("  OK — log entry original_draft matches FAIL_ASSISTANT")
+
+        if latest_fail.get("fallback_substituted") is not True:
+            msg = (
+                f"Case 3: log entry fallback_substituted expected True, "
+                f"got {latest_fail.get('fallback_substituted')!r}"
+            )
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print("  OK — log entry fallback_substituted is True")
+
+    print()
+
     # ── Log verification ──────────────────────────────────────────────────────
-    print("Log verification: both checks logged to chat_ops.jsonl")
-    entries = get_log_entries_for_user(TEST_USER)
+    print("Log verification: all checks logged to chat_ops.jsonl")
+    entries = get_log_entries_for_user(TEST_USER, after_line=log_start)
     print(f"  {len(entries)} entry/entries found for {TEST_USER!r}")
 
     for e in entries:
         print(f"  {json.dumps(e)}")
 
-    if len(entries) < 2:
-        msg = f"Expected at least 2 log entries, found {len(entries)}"
+    if len(entries) < 3:
+        msg = f"Expected at least 3 log entries (cases 1, 2, 3), found {len(entries)}"
         errors.append(msg)
         print(f"  FAIL: {msg}")
     else:
@@ -174,18 +243,30 @@ def main() -> None:
         else:
             print(f"  OK — pass entry logged")
 
-        # Confirm required fields present
-        required = {"timestamp", "user_identifier", "session_id", "operation",
-                    "result", "reason", "latency_ms", "success", "error"}
+        # All entries must have base fields; fail entries must also have the new fields
+        base_required = {"timestamp", "user_identifier", "session_id", "operation",
+                         "result", "reason", "latency_ms", "success", "error",
+                         "original_draft", "fallback_substituted"}
         for entry in entries:
-            missing = required - entry.keys()
+            missing = base_required - entry.keys()
             if missing:
                 msg = f"Log entry missing fields: {missing}"
                 errors.append(msg)
                 print(f"  FAIL: {msg}")
                 break
         else:
-            print("  OK — all required fields present in log entries")
+            print("  OK — all required fields present in every log entry")
+
+        # Pass entries must have original_draft=None and fallback_substituted=False
+        bad_pass = [e for e in pass_entries
+                    if e.get("original_draft") is not None
+                    or e.get("fallback_substituted") is not False]
+        if bad_pass:
+            msg = f"Pass entry has unexpected original_draft or fallback_substituted: {bad_pass[0]}"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print("  OK — pass entries have original_draft=null and fallback_substituted=false")
 
     print()
     if errors:

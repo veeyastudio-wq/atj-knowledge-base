@@ -32,6 +32,17 @@ from memory import _COMPLIANCE_MODEL  # single source of truth for the audit mod
 
 _LOG_PATH = Path("logs/chat_ops.jsonl")
 
+FALLBACK_RESPONSE = (
+    "I can't answer that one directly, it would mean telling you what to do "
+    "in your own case, and that crosses from giving you information into giving "
+    "you advice, which isn't something this can responsibly do. What I can do "
+    "is explain what's actually happening at this stage, or set out the options "
+    "that typically exist here without picking one for you. Tell me which of "
+    "those would help, or if this feels like the kind of call a solicitor, "
+    "McKenzie friend, or Citizens Advice should weigh in on, I can help you "
+    "think through what to ask them."
+)
+
 _CHECKER_SYSTEM = """\
 You are reviewing a single response from a legal information assistant to a litigant
 in person navigating the England and Wales family court system.
@@ -78,6 +89,8 @@ def _log_check(
     latency_ms: float,
     success: bool,
     error: str | None = None,
+    original_draft: str | None = None,
+    fallback_substituted: bool = False,
 ) -> None:
     entry = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -89,6 +102,8 @@ def _log_check(
         "latency_ms": round(latency_ms, 2),
         "success": success,
         "error": error,
+        "original_draft": original_draft,
+        "fallback_substituted": fallback_substituted,
     }
     _LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     with _LOG_PATH.open("a", encoding="utf-8") as fh:
@@ -159,6 +174,8 @@ def check_response(
             latency_ms=(time.monotonic() - t0) * 1000,
             success=success,
             error=error,
+            original_draft=assistant_text if result == "fail" else None,
+            fallback_substituted=(result == "fail"),
         )
 
     return {"compliant": result == "pass", "reason": reason}
