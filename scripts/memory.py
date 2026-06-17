@@ -323,7 +323,7 @@ async def _retrieve_async(user_identifier: str, query: str) -> list:
                 "MATCH (u:User {identifier: $uid})-[:HAS_ATJ_FACT]->(f:ATJFact) "
                 "RETURN f.category AS category, f.value AS value, "
                 "       toString(f.created_at) AS created_at "
-                "ORDER BY f.created_at",
+                "ORDER BY f.created_at DESC",
                 uid=user_identifier,
             )
             records = await result.data()
