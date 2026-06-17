@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-06-17T16:04:11.263702+00:00",
+  "note": "evaluate_retrieval.py scopes each pair's retrieval using the 'layer' field — it calls retrieve(query, layer=pair['layer'], top_k=top_k). Changing only expected_chunk_id without also updating layer to 'layer2' would leave the evaluation searching layer1 only, and the proposed correction would silently have no effect. Every proposal in this file includes proposed_layer='layer2' as a reminder that both fields must be updated together when applying a correction.",
+  "golden_set": "eval/golden_set.json",
+  "top_k": 10,
+  "candidate_gate": 5,
+  "total_layer1_pairs_examined": 29,
+  "proposal_count": 9,
+  "proposals": [
+    {
+      "query": "My ex's solicitor has sent over a draft consent order - should I just sign it or do I need a solicitor to check it first?",
+      "current_expected_chunk_id": "advicenow_financial_order__009__consent_orders__chunk001",
+      "current_source_file": "raw/guidance/advicenow_financial_order__009__consent_orders.md",
+      "proposed_expected_chunk_id": "document_explanation__consent_order__financial_remedy__chunk000",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/document_explanations/document_explanation__consent_order__financial_remedy.md",
+      "layer2_rank": 2,
+      "reason": "The layer2 chunk provides a plain-English explanation of what a consent order actually is and why it matters (legal enforceability), directly supporting the user's decision-making about whether to have it reviewed before signing, whereas the layer1 preview only mentions getting advice without explaining the underlying reason."
+    },
+    {
+      "query": "My child has been taken by their other parent and a court order has been made against me - it says something about a Tipstaff, what does that mean and do I have to do what they say?",
+      "current_expected_chunk_id": "sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk001",
+      "current_source_file": "raw/standard_orders/sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice.md",
+      "proposed_expected_chunk_id": "terminology__tipstaff__cross_cutting__chunk000",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/terminology/terminology__tipstaff__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The candidate layer2 chunk directly explains what a Tipstaff is in plain language, which is precisely what the user is asking, whereas the layer1 chunk addresses enforcement of court orders generally but does not explain the Tipstaff role."
+    },
+    {
+      "query": "My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?",
+      "current_expected_chunk_id": "FP2__chunk000",
+      "current_source_file": "raw/court_forms/FP2.md",
+      "proposed_expected_chunk_id": "document_explanation__fp2_application_notice__cross_cutting__chunk000",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/document_explanations/document_explanation__fp2_application_notice__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk directly explains Form FP2 in plain language tailored to the user's exact situation (asking for something extra or changing an existing order within ongoing proceedings), whereas the layer1 chunk is just the technical form definition."
+    },
+    {
+      "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
+      "current_expected_chunk_id": "PD_6D__chunk000",
+      "current_source_file": "raw/practice_directions/PD_6D.md",
+      "proposed_expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk003",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk directly explains the plain-English process for serving someone in a refuge (applying for court directions, the court contacting the refuge management) whereas the layer1 chunk only provides a technical snippet about what the refuge's accountable person must do afterward."
+    },
+    {
+      "query": "How do I make an application to the court during my case - do I need to fill in a form and tell the other person?",
+      "current_expected_chunk_id": "D11__chunk004",
+      "current_source_file": "raw/legislation/fpr_2010/FPR_Part_18.md",
+      "proposed_expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk002",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk explains how to complete and file an application form in children proceedings, directly addressing the user's questions about filling in a form and the process, whereas the layer1 chunk only provides the technical heading for Part 18 procedure without practical guidance."
+    },
+    {
+      "query": "I've been told I need to apply online for a child arrangements order - can I do that through the online system, or do I have to print it out and take it to court?",
+      "current_expected_chunk_id": "PD_36G__chunk001",
+      "current_source_file": "raw/practice_directions/PD_36G.md",
+      "proposed_expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk002",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk directly explains that child arrangements orders can be started online through the HMCTS system under the pilot scheme, and addresses the specific question about whether to file online or print and submit to court—whereas the layer1 chunk is just the raw introductory section of Practice Direction 36G without practical guidance for the applicant."
+    },
+    {
+      "query": "What does the 'statement of truth' bit on the form mean, and what happens if I get something wrong?",
+      "current_expected_chunk_id": "PD_17A__chunk001",
+      "current_source_file": "raw/court_forms/Form_A.md",
+      "proposed_expected_chunk_id": "terminology__statement_of_truth__cross_cutting__chunk000",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/terminology/terminology__statement_of_truth__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk directly explains what a statement of truth means in plain language and explicitly addresses the consequence of getting something wrong (contempt of court), whereas the layer1 chunk only provides the legal warning text without explanation of the underlying concept."
+    },
+    {
+      "query": "What documents do I need to submit to the court for my financial settlement hearing?",
+      "current_expected_chunk_id": "financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are__chunk000",
+      "current_source_file": "raw/guidance/financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are.md",
+      "proposed_expected_chunk_id": "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/process_explanations/process_explanation__financial_remedy_track_overview__financial_remedy.md",
+      "layer2_rank": 3,
+      "reason": "The layer2 chunk explains Form E and the financial disclosure process in plain English, directly addressing the core document requirement (Form E) mentioned in the layer1 chunk, but in accessible language suitable for litigants in person preparing for their hearing."
+    },
+    {
+      "query": "Who gets sent a copy of my application form when I start court proceedings?",
+      "current_expected_chunk_id": "PD_14A__chunk000",
+      "current_source_file": "raw/practice_directions/PD_14A.md",
+      "proposed_expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk002",
+      "proposed_layer": "layer2",
+      "proposed_source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "layer2_rank": 1,
+      "reason": "The layer2 chunk directly explains the practical process of how applications are submitted in children proceedings and which system to use, providing the plain-English guidance a litigant in person needs to understand how their application gets initiated and distributed, whereas the layer1 chunk is merely a title/heading reference to the relevant practice direction."
+    }
+  ],
+  "no_proposal": [
+    {
+      "query": "I'm going through family court and I don't know where to get help - is there a list of organisations or resources for parents like me?",
+      "current_expected_chunk_id": "cafcass_resources_parents__000__information_and_resources_for_parents__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "The social worker wrote a report about my child's health for the adoption case - will I get to see it or is it kept secret?",
+      "current_expected_chunk_id": "FPR_Part_14__chunk008",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "The other side has legal aid but I've been told I might get my costs paid - what does it mean when it says the court has to decide if it's 'reasonable' before I can get the money?",
+      "current_expected_chunk_id": "sfo_vol1__000__order_11_financial_directions_order_longer_version__chunk038",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "My child was adopted but I'm trying to get a declaration of parentage - will the court use their adoptive name or their birth name on the paperwork?",
+      "current_expected_chunk_id": "PD_8B__chunk002",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "What is a children's guardian and will the court automatically appoint one for my child in court proceedings?",
+      "current_expected_chunk_id": "FPR_Part_16__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "My ex and I agreed he would pay maintenance instead of going through the CMS - but what happens if he dies before finishing paying? Can I still claim something from his estate?",
+      "current_expected_chunk_id": "sfo_vol1__004__order_21_financial_remedy_order__chunk008",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "Do I have to go to mediation before I can apply to court, or can I just go straight to the judge?",
+      "current_expected_chunk_id": "fmc_why_choose_mediation__001__when_should_i_try_family_mediation__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "Can the court order a DNA test to find out if someone is the father of my child?",
+      "current_expected_chunk_id": "sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk029",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "What is a family assistance order and what does it mean for me and my children?",
+      "current_expected_chunk_id": "sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk023",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "Can I do my appeal in the High Court online instead of going in person?",
+      "current_expected_chunk_id": "PD_41C__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "How long do I have to serve the application on the other person after it's been issued by the court?",
+      "current_expected_chunk_id": "FPR_Part_6__chunk002",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "What form do I need to fill in to apply for a temporary order during my divorce proceedings?",
+      "current_expected_chunk_id": "D11__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "I'm trying to get a special guardianship order - will I be allowed to see the report the local authority has written about me?",
+      "current_expected_chunk_id": "FPR_Part_12__chunk021",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "My child has been taken abroad without my permission - what kind of court order can force the other parent to come to court and bring them back?",
+      "current_expected_chunk_id": "sfo_vol2__040__order_136_abduction_attendance_order__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "Will my divorce hearing be open to the public or held behind closed doors?",
+      "current_expected_chunk_id": "FPR_Part_7__chunk010",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "I'm scared about going to court and seeing my abuser - can I do anything to avoid being in the same room as them?",
+      "current_expected_chunk_id": "C100__chunk028",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "I submitted the court bundle late and now the clerk won't accept it - what am I supposed to do with it?",
+      "current_expected_chunk_id": "PD_27A__chunk020",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "My ex was abusive and I'm terrified of seeing them at court - is there anything I can do so I don't have to be in the same room as them?",
+      "current_expected_chunk_id": "advicenow_financial_order__017__the_first_appointment__chunk001",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "My ex took our kids abroad and won't bring them back - can the English courts still deal with our case even though the children aren't here right now?",
+      "current_expected_chunk_id": "sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk007",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    },
+    {
+      "query": "I want to appeal the judge's decision but I'm confused about all the different types of judges mentioned in the paperwork - what do terms like 'circuit judge level' and 'district judge level' actually mean?",
+      "current_expected_chunk_id": "PD_30A__chunk000",
+      "note": "No same-topic layer2 chunk in top 5 results"
+    }
+  ]
+}
