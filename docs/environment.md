@@ -85,6 +85,8 @@ atj-knowledge-base/
 ├── docs/
 │   ├── environment.md          # This file
 │   └── layer2_entry_format_spec.md  # Canonical spec for all Layer 2 entry types
+├── prompts/
+│   └── system_prompt.md        # System prompt defining the companion persona, the legal information/advice boundary with worked examples, and instructions for the reasoning engine
 ├── eval/
 │   ├── README.md               # How to run evaluation
 │   ├── golden_set.json         # 69 hand-curated query→expected_chunk pairs
@@ -131,6 +133,7 @@ All scripts live in `scripts/` and are run from the repo root with `python3 scri
 | Script | Description |
 |---|---|
 | `chunk_kb.py` | Reads all `raw/**/*.md` files, applies RecursiveCharacterTextSplitter (512 tokens, 50 overlap, cl100k_base), and writes chunk JSON files to `processed/`; exposes `chunk_file()` as an importable function |
+| `chat.py` | CLI test harness orchestrating memory retrieval, KB retrieval, Claude API call, response check, and memory write in a single loop; for internal validation only, not a production interface |
 | `court_forms_scraper.py` | Scrapes 21 family law court forms from GOV.UK publication pages, downloads each primary PDF, extracts body text (pdfplumber) and AcroForm fields (pypdf), saves to `raw/court_forms/` |
 | `detect_changes.py` | Computes SHA-256 hashes of all `raw/*.md` files, compares against `data/file_registry.json`, outputs `data/delta_report.json` listing changed/new/deleted files |
 | `embed_kb.py` | Reads chunk JSON files from `processed/`, calls OpenAI text-embedding-3-small to generate 1536-dimension vectors, loads into pgvector via psycopg2; exposes `embed_chunks()` as an importable function |
@@ -139,12 +142,17 @@ All scripts live in `scripts/` and are run from the repo root with `python3 scri
 | `generate_golden_set.py` | Samples chunks from pgvector, calls Claude to generate realistic unrepresented-litigant questions for each chunk, outputs `eval/golden_set.json` and `eval/golden_set_summary.txt` |
 | `guidance_scraper.py` | Scrapes GOV.UK procedural guidance, judiciary PDF guides, and Advicenow guides; splits at H2 boundaries into individual section files; saves to `raw/guidance/` |
 | `pd_scraper.py` | Scrapes all active (non-expired, non-revoked) FPR Practice Directions from justice.gov.uk, saves one file per PD to `raw/practice_directions/` |
+| `propose_golden_updates.py` | For each layer1 pair in `eval/golden_set.json`, runs hybrid retrieval across both layers and uses Claude to judge whether a better layer2 chunk exists; outputs `eval/golden_set_update_proposal.json`; reusable permanent utility |
+| `prune_logs.py` | Removes JSONL log entries older than `LOG_RETENTION_DAYS` (90 days, placeholder pending legal review) using an atomic `.tmp`-then-replace write; accepts any log file path as argument |
+| `response_check.py` | Checks each generated assistant response against the information-versus-advice boundary; substitutes a fixed fallback on failure and logs the original draft to `logs/chat_ops.jsonl` |
 | `retrieve.py` | Hybrid retrieval combining dense (HNSW cosine, top 50 candidates) and sparse (BM25 via GIN full-text, top 20 candidates) signals using RRF (k=60), returning top 10 results per layer; usable standalone or importable |
 | `scrape_fl401.py` | Standalone one-off scraper for the FL401 form PDF from GOV.UK; saves to `raw/court_forms/FL401.md` using the same frontmatter pattern as `court_forms_scraper.py` |
 | `setup_db.py` | Creates the pgvector extension and `chunks` table in PostgreSQL; run once on a fresh database |
 | `standard_orders_scraper.py` | Downloads Standard Family Orders Volume 1 (Financial) and Volume 2 (Children) ZIP archives from judiciary.uk, extracts and parses each .docx using python-docx, saves one .md per order to `raw/standard_orders/` |
 | `statute_scraper.py` | Scrapes specific sections from the Children Act 1989, Matrimonial Causes Act 1973, and Family Law Act 1996 from legislation.gov.uk; saves to `raw/legislation/` |
 | `supporting_context_scraper.py` | Scrapes CAFCASS, Family Mediation Council, and GOV.UK legal aid pages; splits at H2 boundaries; saves to `raw/supporting_context/` |
+| `test_prune_logs.py` | Six-case test suite for `prune_logs.py` covering retention window, mixed-age entries, malformed-line handling, and stale-`.tmp` recovery |
+| `test_response_check.py` | Test suite for `response_check.py` |
 | `triage_changes.py` | Reads `data/delta_report.json`, sends each changed/new file to the Claude API for legal materiality assessment, classifies each as SAFE (auto-promote) or HOLD (needs human review), outputs `data/triage_report.json` |
 | `update_kb.py` | Orchestrates the full KB update pipeline: detect → triage → re-chunk/re-embed SAFE files → remove deleted from pgvector → eval gate (must pass 75%) → update `data/file_registry.json` |
 
