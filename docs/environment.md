@@ -213,6 +213,27 @@ pip3 install -r scripts/requirements.txt
 | Start command | `docker start atj-neo4j` |
 | Used by | `scripts/memory.py` — per-user graph-backed memory via neo4j-agent-memory v0.5 |
 
+---
+
+## Staging environment
+
+A hardened DigitalOcean droplet in the London (LON1) region runs the same stack as local: `atj-db` (pgvector/pgvector:pg16) and `atj-neo4j` (neo4j:5.26-community), managed via Docker Compose. Both database ports are bound to `127.0.0.1` only and are not reachable from the public internet — access is via SSH tunnel only. UFW allows only port 22 inbound. fail2ban and unattended-upgrades are enabled.
+
+The staging user is `atj-deploy` (passwordless sudo, key-only auth). Root SSH login is disabled. No IP address, hostname, or credentials are stored in this repo. See `staging.txt` (gitignored, local only) for the connection details.
+
+To connect via tunnel:
+```bash
+# pgvector (local port 15432)
+ssh -L 15432:127.0.0.1:5432 atj-deploy@<staging-ip> -N
+
+# Neo4j Bolt (local port 17687) and browser (local port 17474)
+ssh -L 17687:127.0.0.1:7687 -L 17474:127.0.0.1:7474 atj-deploy@<staging-ip> -N
+```
+
+`OPENAI_API_KEY` and `ANTHROPIC_API_KEY` must be set manually in `/home/atj-deploy/atj/.env` on the droplet before running any embedding or API scripts. DB credentials in that file are fresh for this environment and not reused from local.
+
+---
+
 **Retrieval configuration (in retrieve.py):**
 
 | Parameter | Value |

@@ -1,3 +1,6 @@
 .DS_Store
 .env
 logs/*.jsonl
+
+# Staging droplet reference (IP, credentials)
+staging.txt
