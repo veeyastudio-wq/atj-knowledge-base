@@ -134,6 +134,10 @@ Full legal GDPR compliance framework, instruct a solicitor, running in parallel 
 
 No human review queue exists for response_check.py fallbacks or memory layer audit_rejects. A false positive, the check wrongly blocking a fine answer, currently only surfaces in the log, nobody reviews it. Acceptable while only Vilam and Claude are testing via the CLI harness. Must be addressed, even just manual log review, before any real user, including pilot participants, has a live session.
 
+Compliance model false positive on family court abbreviations: Haiku rejected "FDA hearing" (First Directions Appointment) as out-of-scope, misreading it as Food and Drug Administration. Non-deterministic — passes on some runs, fails on others. Core family court vocabulary must not be audit-rejected. Fix: add an explicit abbreviations glossary to _COMPLIANCE_SYSTEM in memory.py before any real user session. Tracked here; not urgent while only test data is being processed.
+
+Reconciliation gap — same-turn duplicates: _reconcile_facts only compares new facts against what is already in Neo4j. If two facts about the same evolving thing arrive in the same conversational turn, neither will supersede the other. Narrow edge case, acceptable for now, revisit if it surfaces in real sessions.
+
 Monitor NAMS (Neo4j Agent Memory Service) for UK/EU region availability, would simplify self-hosting if it arrives.
 
 Decide whether to build a cheap, narrow paid guide as a pre-launch validation and audience-building test, flagged, not decided.
