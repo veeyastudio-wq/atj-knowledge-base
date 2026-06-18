@@ -24,12 +24,18 @@ Graph schema — typed fact nodes extending POLE+O:
 
   All ATJFact nodes carry user_identifier as a direct property for sweep deletion.
 
-  CaseStage supersession:
+  CaseStage supersession and fact reconciliation:
     When a new case_stage fact is written, any existing active CaseStage node
     for that user (where invalid_at IS NULL) has invalid_at set to the current
     timestamp before the new node is created. This means retrieve_memory always
-    returns at most one active CaseStage per user. All other fact types are
-    additive — they are never superseded.
+    returns at most one active CaseStage per user.
+
+    All other fact types go through LLM-based reconciliation: if the new fact
+    refers to the same real-world subject as an existing active fact of the same
+    type, the existing fact is superseded (invalid_at set) and the new value
+    replaces it. If genuinely distinct, it is added without affecting existing
+    nodes. Reconciliation defaults to "new" on model uncertainty or parse
+    failure — false merges (erasing a stored fact) are worse than false separates.
 
   Per-fact compliance audit:
     After Anthropic extraction and before Neo4j writes, each fact is checked
@@ -141,6 +147,41 @@ Respond with a JSON object with exactly two keys:
   "reason": one sentence — if passes=true write "OK"; if passes=false name the specific prohibition violated
 
 No markdown fences. No extra text. JSON only.\
+"""
+
+_RECONCILIATION_SYSTEM = """\
+You are a fact reconciliation assistant for a family court case management system.
+
+You will receive a candidate fact value and a list of existing active facts of the same
+category for this user, each with an id and value.
+
+Decide whether the candidate is:
+  "update" — it refers to the same real-world subject as one existing fact,
+              with a changed or corrected value (e.g. a hearing that has been rescheduled).
+  "new"    — it refers to a genuinely distinct subject from all existing facts
+              (e.g. a different deadline, a different hearing, a different party).
+
+Worked example 1 — UPDATE:
+  candidate_value: "FDA hearing: 22 August 2026"
+  existing_facts:  [{"id": "abc-123", "value": "FDA hearing: 15 July 2026"}]
+  → {"action": "update", "target_id": "abc-123"}
+  Reason: same named event (FDA hearing) — the date has moved.
+
+Worked example 2 — NEW:
+  candidate_value: "Form E deadline: 20 June 2026"
+  existing_facts:  [{"id": "abc-123", "value": "FDA hearing: 15 July 2026"}]
+  → {"action": "new", "target_id": null}
+  Reason: different subjects — a filing deadline and a hearing are distinct events.
+
+Rules:
+- If genuinely uncertain whether two facts refer to the same subject, choose "new".
+  The "new" default protects against false merges that would silently erase a stored fact.
+- A date change alone is an update only when the subject is clearly the same named event.
+  Do not merge facts solely because they share a date format or time reference.
+
+Output JSON only — no markdown fences, no extra text. Exactly two keys:
+  "action":    "update" or "new"
+  "target_id": the id string of the existing fact being superseded, or null\
 """
 
 _neo4j_uri: str | None = None
@@ -270,6 +311,105 @@ def _filter_by_compliance(user_identifier: str, facts: list[dict]) -> list[dict]
     return passing
 
 
+def _reconciliation_check(new_value: str, existing_facts: list[dict]) -> dict:
+    """Check whether new_value updates an existing fact or is a new distinct fact.
+
+    Returns {"action": "new"/"update", "target_id": str | None}.
+    Returns new/null immediately without an API call if existing_facts is empty.
+    Fails safe to {"action": "new", "target_id": None} on any parse error or
+    unexpected model output — false merges are worse than false separates.
+    """
+    if not existing_facts:
+        return {"action": "new", "target_id": None}
+
+    payload = json.dumps({
+        "candidate_value": new_value,
+        "existing_facts": existing_facts,
+    })
+    message = _anthropic_client.messages.create(
+        model=_COMPLIANCE_MODEL,
+        max_tokens=128,
+        system=_RECONCILIATION_SYSTEM,
+        messages=[{"role": "user", "content": payload}],
+    )
+    raw = message.content[0].text.strip()
+    if raw.startswith("```"):
+        raw = raw.split("```", 2)[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+        raw = raw.strip()
+    try:
+        result = json.loads(raw)
+        action = result.get("action", "new")
+        target_id = result.get("target_id", None)
+        if action not in ("update", "new"):
+            return {"action": "new", "target_id": None}
+        if action == "update" and not isinstance(target_id, str):
+            return {"action": "new", "target_id": None}
+        return {"action": action, "target_id": target_id}
+    except json.JSONDecodeError:
+        return {"action": "new", "target_id": None}
+
+
+async def _fetch_existing_facts(user_identifier: str, categories: set) -> dict:
+    """Fetch active facts for each given category. Returns {category: [{id, value}]}."""
+    driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
+    result_map: dict[str, list[dict]] = {}
+    try:
+        async with driver.session() as session:
+            for cat in categories:
+                label = _CATEGORY_TO_LABEL.get(cat, "ATJFact")
+                result = await session.run(
+                    f"MATCH (u:User {{identifier: $uid}})-[:HAS_ATJ_FACT]->(f:ATJFact:{label}) "
+                    "WHERE f.invalid_at IS NULL "
+                    "RETURN f.id AS id, f.value AS value",
+                    uid=user_identifier,
+                )
+                records = await result.data()
+                result_map[cat] = [{"id": r["id"], "value": r["value"]} for r in records]
+    finally:
+        await driver.close()
+    return result_map
+
+
+def _reconcile_facts(user_identifier: str, facts: list[dict]) -> list[dict]:
+    """Tag each fact with action and target_id for the write step.
+
+    case_stage facts get action="case_stage" (existing supersession path, unchanged).
+    All other facts: fetch existing active facts of the same type, call
+    _reconciliation_check, tag with the result. Logs one "reconcile" entry per
+    non-case_stage fact to memory_ops.jsonl.
+    """
+    non_cs_categories = {f["type"] for f in facts if f["type"] != "case_stage"}
+    existing_by_cat: dict[str, list[dict]] = {}
+    if non_cs_categories:
+        existing_by_cat = asyncio.run(_fetch_existing_facts(user_identifier, non_cs_categories))
+
+    tagged = []
+    for fact in facts:
+        if fact["type"] == "case_stage":
+            tagged.append({**fact, "action": "case_stage", "target_id": None})
+        else:
+            existing = existing_by_cat.get(fact["type"], [])
+            t0 = time.monotonic()
+            check = _reconciliation_check(fact["value"], existing)
+            latency_ms = (time.monotonic() - t0) * 1000
+            tagged.append({**fact, "action": check["action"], "target_id": check["target_id"]})
+            _log_memory_op(
+                user_identifier=user_identifier,
+                operation="reconcile",
+                entity_count=1,
+                latency_ms=latency_ms,
+                success=True,
+                error=json.dumps({
+                    "category": fact["type"],
+                    "action": check["action"],
+                    "target_id": check["target_id"],
+                }),
+            )
+    return tagged
+
+
 # ── Public API ────────────────────────────────────────────────────────────────
 
 def initialise_memory() -> None:
@@ -319,8 +459,11 @@ def write_memory(
     Pipeline per call:
       1. Anthropic extraction (Sonnet) — raw content → list of {type, value} facts
       2. Per-fact compliance audit (Haiku) — reject prohibited content, log audit_reject
-      3. Neo4j write — supersede existing CaseStage if new case_stage fact present,
-         then CREATE the new typed ATJFact node
+      3. LLM reconciliation (Haiku) — for non-case_stage facts, decide whether each
+         fact updates an existing one (same subject, changed value) or is distinct.
+         Defaults to "new" on model uncertainty or parse failure.
+      4. Neo4j write — supersede existing node for case_stage or any reconciled update,
+         then CREATE the new typed ATJFact node.
 
     No raw content is stored at any stage. entity_count in the write log reflects
     facts that passed compliance and were actually written.
@@ -339,6 +482,7 @@ def write_memory(
     try:
         extracted = _extract_facts(content)
         facts = _filter_by_compliance(user_identifier, extracted) if extracted else []
+        facts = _reconcile_facts(user_identifier, facts) if facts else []
         if facts:
             asyncio.run(_write_async(user_identifier, session_id, facts))
         count = len(facts)
@@ -363,16 +507,27 @@ async def _write_async(user_identifier: str, session_id: str, facts: list[dict])
         async with driver.session() as session:
             for fact in facts:
                 label = _CATEGORY_TO_LABEL.get(fact["type"], "ATJFact")
+                action = fact.get("action", "new")
 
-                # CaseStage supersession: mark any current active CaseStage invalid
-                # before creating the replacement. All other types are additive.
-                if fact["type"] == "case_stage":
+                # case_stage: supersede any active CaseStage node for this user.
+                # update: supersede the specific node identified by reconciliation.
+                # new: no existing node to invalidate.
+                if action == "case_stage":
                     await session.run(
                         "MATCH (u:User {identifier: $uid})"
                         "-[:HAS_ATJ_FACT]->(f:ATJFact:CaseStage) "
                         "WHERE f.invalid_at IS NULL "
                         "SET f.invalid_at = datetime()",
                         uid=user_identifier,
+                    )
+                elif action == "update":
+                    await session.run(
+                        "MATCH (u:User {identifier: $uid})"
+                        "-[:HAS_ATJ_FACT]->(f:ATJFact) "
+                        "WHERE f.id = $target_id AND f.invalid_at IS NULL "
+                        "SET f.invalid_at = datetime()",
+                        uid=user_identifier,
+                        target_id=fact["target_id"],
                     )
 
                 # Label is from _CATEGORY_TO_LABEL — a static dict, not user input
@@ -403,8 +558,9 @@ def retrieve_memory(user_identifier: str, query: str) -> list:
     Returns a list of dicts with keys: content, role, created_at, user_identifier.
     content is formatted as "{category}: {value}" — structured fact, not raw text.
     Only facts where invalid_at IS NULL are returned. For CaseStage this means
-    only the current stage; for all other types it is a no-op (invalid_at is never
-    set on them). query is accepted for API compatibility; retrieval is user-scoped
+    only the current stage; for all other types, LLM reconciliation may have set
+    invalid_at on superseded facts, so retrieve returns only the current value for
+    each subject. query is accepted for API compatibility; retrieval is user-scoped
     via graph traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
     """
     _require_init()
