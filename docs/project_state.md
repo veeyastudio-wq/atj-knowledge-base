@@ -110,7 +110,7 @@ Independent response check: built. On a failed compliance check, a fixed fallbac
 
 Log retention: scripts/prune_logs.py exists. LOG_RETENTION_DAYS = 90 is an explicit placeholder pending legal review, not a validated compliance figure. No file locking yet, safe only for single-developer manual runs, needs real locking before ever being scheduled against live concurrent traffic.
 
-Plan Mode: Claude Code defaults to plan mode project-wide (.claude/settings.json). Every Claude Code prompt includes a containment question; prompts touching the memory layer, the legal information/advice boundary, or irreversible actions also include a stress-test question.
+Plan Mode: Claude Code defaults to plan mode project-wide (.claude/settings.json). Every Claude Code prompt includes a containment question; prompts touching the memory layer, the legal information/advice boundary, or irreversible actions also include a stress-test question. Caveat: the stress-test question is still the same Claude Code session checking its own work, weaker than the independent check already built into the product, the separate compliance-check model in memory.py and response_check.py, a genuinely different model reviewing output with no visibility into the first model's reasoning. Acknowledged limitation, not solved.
 
 Production readiness: secrets management, observability, and GDPR data architecture are met in code. Data minimisation decision log exists on Drive (Version 2, unchanged by this restructuring, still Drive-native for now). Hosting provider decision and the full legal GDPR framework remain outstanding, see regulatory boundary above.
 
