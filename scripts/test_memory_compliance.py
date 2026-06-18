@@ -23,6 +23,7 @@ load_dotenv(dotenv_path=".env")
 from memory import (
     initialise_memory,
     retrieve_memory,
+    delete_user_memory,
     _compliance_check,
     _filter_by_compliance,
 )
@@ -72,101 +73,110 @@ def main() -> None:
         print(f"  FAIL: {e}")
         sys.exit(1)
 
-    print(f"Fact under test:")
-    print(f"  category : {VIOLATING_FACT['type']!r}")
-    print(f"  value    : {VIOLATING_FACT['value']!r}\n")
-
-    # Step 1: _compliance_check must reject the violating fact
-    print("Step 1: _compliance_check rejects the violating fact")
     try:
-        passes, reason = _compliance_check(VIOLATING_FACT["type"], VIOLATING_FACT["value"])
-        print(f"  passes={passes}  reason={reason!r}")
-    except Exception as e:
-        errors.append(f"_compliance_check raised: {e}")
-        print(f"  FAIL: {e}")
-        sys.exit(1)
+        print(f"Fact under test:")
+        print(f"  category : {VIOLATING_FACT['type']!r}")
+        print(f"  value    : {VIOLATING_FACT['value']!r}\n")
 
-    if passes:
-        msg = "Violating fact passed compliance check — audit is not working"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print("  OK — fact correctly rejected")
-
-    # Step 2: _filter_by_compliance removes the fact from the write queue
-    print("\nStep 2: _filter_by_compliance returns empty list")
-    try:
-        remaining = _filter_by_compliance(TEST_USER, [VIOLATING_FACT])
-        print(f"  Facts remaining after filter: {len(remaining)}")
-    except Exception as e:
-        errors.append(f"_filter_by_compliance raised: {e}")
-        print(f"  FAIL: {e}")
-        sys.exit(1)
-
-    if remaining:
-        msg = f"Expected 0 facts after compliance filter, got {len(remaining)}"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print("  OK — fact removed from write queue")
-
-    # Step 3: log file contains an audit_reject entry for this user
-    print("\nStep 3: audit_reject entry written to log")
-    entry = last_audit_reject_for_user(TEST_USER)
-    if entry is None:
-        msg = f"No audit_reject log entry found for {TEST_USER!r} in {LOG_PATH}"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  Entry found:")
-        print(f"    {json.dumps(entry, indent=4)}")
-
+        # Step 1: _compliance_check must reject the violating fact
+        print("Step 1: _compliance_check rejects the violating fact")
         try:
-            detail = json.loads(entry.get("error", "{}"))
-        except json.JSONDecodeError:
-            detail = {}
-            msg = f"Log entry 'error' field is not valid JSON: {entry.get('error')!r}"
-            errors.append(msg)
-            print(f"  FAIL: {msg}")
+            passes, reason = _compliance_check(VIOLATING_FACT["type"], VIOLATING_FACT["value"])
+            print(f"  passes={passes}  reason={reason!r}")
+        except Exception as e:
+            errors.append(f"_compliance_check raised: {e}")
+            print(f"  FAIL: {e}")
+            sys.exit(1)
 
-        if detail.get("category") != VIOLATING_FACT["type"]:
-            msg = (
-                f"Log entry category mismatch: "
-                f"expected {VIOLATING_FACT['type']!r}, got {detail.get('category')!r}"
-            )
-            errors.append(msg)
-            print(f"  FAIL: {msg}")
-        elif detail.get("value") != VIOLATING_FACT["value"]:
-            msg = (
-                f"Log entry value mismatch: "
-                f"expected {VIOLATING_FACT['value']!r}, got {detail.get('value')!r}"
-            )
+        if passes:
+            msg = "Violating fact passed compliance check — audit is not working"
             errors.append(msg)
             print(f"  FAIL: {msg}")
         else:
-            print(
-                f"  OK — category={detail['category']!r}  "
-                f"reason={detail.get('reason')!r}"
-            )
+            print("  OK — fact correctly rejected")
 
-    # Step 4: nothing was written to Neo4j for this user
-    print("\nStep 4: retrieve_memory returns empty (nothing was written)")
-    try:
-        facts = retrieve_memory(TEST_USER, "case stage")
-        if facts:
-            msg = (
-                f"Expected 0 facts in Neo4j for {TEST_USER!r}, "
-                f"got {len(facts)}: {facts}"
-            )
+        # Step 2: _filter_by_compliance removes the fact from the write queue
+        print("\nStep 2: _filter_by_compliance returns empty list")
+        try:
+            remaining = _filter_by_compliance(TEST_USER, [VIOLATING_FACT])
+            print(f"  Facts remaining after filter: {len(remaining)}")
+        except Exception as e:
+            errors.append(f"_filter_by_compliance raised: {e}")
+            print(f"  FAIL: {e}")
+            sys.exit(1)
+
+        if remaining:
+            msg = f"Expected 0 facts after compliance filter, got {len(remaining)}"
             errors.append(msg)
             print(f"  FAIL: {msg}")
         else:
-            print("  OK — no facts stored for this user")
-    except Exception as e:
-        errors.append(f"retrieve_memory raised: {e}")
-        print(f"  FAIL: {e}")
+            print("  OK — fact removed from write queue")
 
-    # No Neo4j cleanup needed — nothing was written
+        # Step 3: log file contains an audit_reject entry for this user
+        print("\nStep 3: audit_reject entry written to log")
+        entry = last_audit_reject_for_user(TEST_USER)
+        if entry is None:
+            msg = f"No audit_reject log entry found for {TEST_USER!r} in {LOG_PATH}"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print(f"  Entry found:")
+            print(f"    {json.dumps(entry, indent=4)}")
+
+            try:
+                detail = json.loads(entry.get("error", "{}"))
+            except json.JSONDecodeError:
+                detail = {}
+                msg = f"Log entry 'error' field is not valid JSON: {entry.get('error')!r}"
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+
+            if detail.get("category") != VIOLATING_FACT["type"]:
+                msg = (
+                    f"Log entry category mismatch: "
+                    f"expected {VIOLATING_FACT['type']!r}, got {detail.get('category')!r}"
+                )
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+            elif detail.get("value") != VIOLATING_FACT["value"]:
+                msg = (
+                    f"Log entry value mismatch: "
+                    f"expected {VIOLATING_FACT['value']!r}, got {detail.get('value')!r}"
+                )
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+            else:
+                print(
+                    f"  OK — category={detail['category']!r}  "
+                    f"reason={detail.get('reason')!r}"
+                )
+
+        # Step 4: nothing was written to Neo4j for this user
+        print("\nStep 4: retrieve_memory returns empty (nothing was written)")
+        try:
+            memory_result = retrieve_memory(TEST_USER, "case stage")
+            facts = memory_result["facts"]
+            if facts:
+                msg = (
+                    f"Expected 0 facts in Neo4j for {TEST_USER!r}, "
+                    f"got {len(facts)}: {facts}"
+                )
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+            else:
+                print("  OK — no facts stored for this user")
+        except Exception as e:
+            errors.append(f"retrieve_memory raised: {e}")
+            print(f"  FAIL: {e}")
+
+    finally:
+        # Defensive guard: nothing is written in this test, so this is a no-op.
+        # Protects against future changes that might write to Neo4j before cleanup.
+        try:
+            delete_user_memory(TEST_USER)
+        except Exception:
+            pass
+
     print()
     if errors:
         print("FAIL")

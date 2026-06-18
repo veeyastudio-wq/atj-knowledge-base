@@ -19,7 +19,7 @@ from anthropic import Anthropic
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from memory import initialise_memory, retrieve_memory, write_memory
+from memory import initialise_memory, retrieve_memory, write_memory, RETRIEVE_MEMORY_LIMIT
 from retrieve import retrieve
 from response_check import check_response, FALLBACK_RESPONSE
 
@@ -91,10 +91,13 @@ def main():
             continue
 
         try:
-            memories = retrieve_memory(user_identifier, user_message)
+            memory_result = retrieve_memory(user_identifier, user_message)
+            memories = memory_result["facts"]
+            mem_truncated = memory_result["truncated"]
         except Exception as exc:
             print(f"[memory retrieval failed: {exc}]")
             memories = []
+            mem_truncated = False
 
         try:
             kb_result = retrieve(user_message, top_k=KB_TOP_K)
@@ -103,10 +106,22 @@ def main():
             kb_result = {}
 
         memory_context = format_memory_context(memories)
+        if mem_truncated:
+            memory_context = (
+                f"Note: this user has more stored facts than fit in context. "
+                f"Only the {RETRIEVE_MEMORY_LIMIT} most recent are shown. "
+                f"Older facts may be relevant.\n\n"
+                + memory_context
+            )
         kb_context = format_kb_context(kb_result)
 
         if memories:
             print(f"[case_memory — {len(memories)} item(s) retrieved]")
+            if mem_truncated:
+                print(
+                    f"[case_memory — WARNING: result truncated at {RETRIEVE_MEMORY_LIMIT} facts, "
+                    f"older facts excluded from this turn]"
+                )
             for m in memories:
                 print(f"  {m['created_at']} | {m['role']} | {m['content'][:120]}")
         else:

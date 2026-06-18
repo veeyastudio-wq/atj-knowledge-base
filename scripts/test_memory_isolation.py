@@ -57,91 +57,95 @@ def main() -> None:
         print(f"  FAIL: {e}")
         sys.exit(1)
 
-    # Write distinct content for each user
-    print("Writing memory for test_user_a (Manchester content)...")
     try:
-        write_memory(USER_A, "session_a", CONTENT_A, role="user")
-        print("  OK")
-    except Exception as e:
-        errors.append(f"write USER_A failed: {e}")
-        print(f"  FAIL: {e}")
-
-    print("Writing memory for test_user_b (Bristol content)...")
-    try:
-        write_memory(USER_B, "session_b", CONTENT_B, role="user")
-        print("  OK")
-    except Exception as e:
-        errors.append(f"write USER_B failed: {e}")
-        print(f"  FAIL: {e}")
-
-    # Retrieve for user A — must contain A's marker, must not contain B's marker
-    print("\nRetrieving memory for test_user_a...")
-    results_a = []
-    try:
-        results_a = retrieve_memory(USER_A, QUERY_A)
-        print(f"  {len(results_a)} fact(s) returned")
-        for r in results_a:
-            print(f"    {r['content']}")
-    except Exception as e:
-        errors.append(f"retrieve USER_A failed: {e}")
-        print(f"  FAIL: {e}")
-
-    if not results_a:
-        msg = "User A retrieval returned no facts — extraction may have failed"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    elif not contains_marker(results_a, MARKER_A):
-        msg = f"User A's own marker '{MARKER_A}' not found in any returned fact"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  OK — User A's marker '{MARKER_A}' found in returned facts")
-
-    if contains_marker(results_a, MARKER_B):
-        msg = f"ISOLATION BREACH: User B's marker '{MARKER_B}' appeared in User A's results"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  OK — No User B content leaked into User A's results")
-
-    # Retrieve for user B — must contain B's marker, must not contain A's marker
-    print("\nRetrieving memory for test_user_b...")
-    results_b = []
-    try:
-        results_b = retrieve_memory(USER_B, QUERY_B)
-        print(f"  {len(results_b)} fact(s) returned")
-        for r in results_b:
-            print(f"    {r['content']}")
-    except Exception as e:
-        errors.append(f"retrieve USER_B failed: {e}")
-        print(f"  FAIL: {e}")
-
-    if not results_b:
-        msg = "User B retrieval returned no facts — extraction may have failed"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    elif not contains_marker(results_b, MARKER_B):
-        msg = f"User B's own marker '{MARKER_B}' not found in any returned fact"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  OK — User B's marker '{MARKER_B}' found in returned facts")
-
-    if contains_marker(results_b, MARKER_A):
-        msg = f"ISOLATION BREACH: User A's marker '{MARKER_A}') appeared in User B's results"
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  OK — No User A content leaked into User B's results")
-
-    # Cleanup
-    print("\nCleaning up test users...")
-    for user in (USER_A, USER_B):
+        # Write distinct content for each user
+        print("Writing memory for test_user_a (Manchester content)...")
         try:
-            delete_user_memory(user)
-            print(f"  Deleted {user}")
+            write_memory(USER_A, "session_a", CONTENT_A, role="user")
+            print("  OK")
         except Exception as e:
-            print(f"  Warning: cleanup for {user} failed: {e}")
+            errors.append(f"write USER_A failed: {e}")
+            print(f"  FAIL: {e}")
+
+        print("Writing memory for test_user_b (Bristol content)...")
+        try:
+            write_memory(USER_B, "session_b", CONTENT_B, role="user")
+            print("  OK")
+        except Exception as e:
+            errors.append(f"write USER_B failed: {e}")
+            print(f"  FAIL: {e}")
+
+        # Retrieve for user A — must contain A's marker, must not contain B's marker
+        print("\nRetrieving memory for test_user_a...")
+        results_a = []
+        try:
+            memory_result_a = retrieve_memory(USER_A, QUERY_A)
+            results_a = memory_result_a["facts"]
+            print(f"  {len(results_a)} fact(s) returned")
+            for r in results_a:
+                print(f"    {r['content']}")
+        except Exception as e:
+            errors.append(f"retrieve USER_A failed: {e}")
+            print(f"  FAIL: {e}")
+
+        if not results_a:
+            msg = "User A retrieval returned no facts — extraction may have failed"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        elif not contains_marker(results_a, MARKER_A):
+            msg = f"User A's own marker '{MARKER_A}' not found in any returned fact"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print(f"  OK — User A's marker '{MARKER_A}' found in returned facts")
+
+        if contains_marker(results_a, MARKER_B):
+            msg = f"ISOLATION BREACH: User B's marker '{MARKER_B}' appeared in User A's results"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print(f"  OK — No User B content leaked into User A's results")
+
+        # Retrieve for user B — must contain B's marker, must not contain A's marker
+        print("\nRetrieving memory for test_user_b...")
+        results_b = []
+        try:
+            memory_result_b = retrieve_memory(USER_B, QUERY_B)
+            results_b = memory_result_b["facts"]
+            print(f"  {len(results_b)} fact(s) returned")
+            for r in results_b:
+                print(f"    {r['content']}")
+        except Exception as e:
+            errors.append(f"retrieve USER_B failed: {e}")
+            print(f"  FAIL: {e}")
+
+        if not results_b:
+            msg = "User B retrieval returned no facts — extraction may have failed"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        elif not contains_marker(results_b, MARKER_B):
+            msg = f"User B's own marker '{MARKER_B}' not found in any returned fact"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print(f"  OK — User B's marker '{MARKER_B}' found in returned facts")
+
+        if contains_marker(results_b, MARKER_A):
+            msg = f"ISOLATION BREACH: User A's marker '{MARKER_A}') appeared in User B's results"
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            print(f"  OK — No User A content leaked into User B's results")
+
+    finally:
+        # Cleanup
+        print("\nCleaning up test users...")
+        for user in (USER_A, USER_B):
+            try:
+                delete_user_memory(user)
+                print(f"  Deleted {user}")
+            except Exception as e:
+                print(f"  Warning: cleanup for {user} failed: {e}")
 
     # Result
     print()

@@ -98,7 +98,8 @@ def run_scenario_a(errors: list) -> None:
 
     print("\n  Retrieving active facts...")
     try:
-        results = retrieve_memory(TEST_USER_A, "hearing date")
+        memory_result = retrieve_memory(TEST_USER_A, "hearing date")
+        results = memory_result["facts"]
         kd_results = [r for r in results if r["content"].startswith("key_date:")]
         print(f"  {len(kd_results)} active key_date fact(s):")
         for r in kd_results:
@@ -175,7 +176,8 @@ def run_scenario_b(errors: list) -> None:
 
     print("\n  Retrieving active facts...")
     try:
-        results = retrieve_memory(TEST_USER_B, "dates deadlines")
+        memory_result = retrieve_memory(TEST_USER_B, "dates deadlines")
+        results = memory_result["facts"]
         kd_results = [r for r in results if r["content"].startswith("key_date:")]
         print(f"  {len(kd_results)} active key_date fact(s):")
         for r in kd_results:
@@ -238,7 +240,8 @@ def run_scenario_c(errors: list) -> None:
 
     print("\n  Retrieving active facts...")
     try:
-        results = retrieve_memory(TEST_USER_C, "case stage")
+        memory_result = retrieve_memory(TEST_USER_C, "case stage")
+        results = memory_result["facts"]
         cs_results = [r for r in results if r["content"].startswith("case_stage:")]
         print(f"  {len(cs_results)} active case_stage fact(s):")
         for r in cs_results:
@@ -302,20 +305,21 @@ def main() -> None:
         print(f"  FAIL: {e}")
         sys.exit(1)
 
-    run_scenario_a(errors)
-    print()
-    run_scenario_b(errors)
-    print()
-    run_scenario_c(errors)
-
-    print("\n" + "─" * 60)
-    print("Cleaning up...")
-    for uid in [TEST_USER_A, TEST_USER_B, TEST_USER_C]:
-        try:
-            delete_user_memory(uid)
-            print(f"  Deleted {uid}")
-        except Exception as e:
-            print(f"  Warning: cleanup failed for {uid}: {e}")
+    try:
+        run_scenario_a(errors)
+        print()
+        run_scenario_b(errors)
+        print()
+        run_scenario_c(errors)
+    finally:
+        print("\n" + "─" * 60)
+        print("Cleaning up...")
+        for uid in [TEST_USER_A, TEST_USER_B, TEST_USER_C]:
+            try:
+                delete_user_memory(uid)
+                print(f"  Deleted {uid}")
+            except Exception as e:
+                print(f"  Warning: cleanup failed for {uid}: {e}")
 
     print()
     if errors:

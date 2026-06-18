@@ -75,6 +75,9 @@ load_dotenv()
 _LOG_PATH = Path("logs/memory_ops.jsonl")
 _EXTRACTION_MODEL = "claude-sonnet-4-6"
 _COMPLIANCE_MODEL = "claude-haiku-4-5-20251001"
+# Soft limit — see retrieve_memory docstring. Increase with care; every fact
+# returned is injected into the model context.
+RETRIEVE_MEMORY_LIMIT = 50
 
 _FACT_CATEGORIES = frozenset([
     "case_stage",
@@ -552,25 +555,28 @@ async def _write_async(user_identifier: str, session_id: str, facts: list[dict])
         await driver.close()
 
 
-def retrieve_memory(user_identifier: str, query: str) -> list:
-    """Retrieve all active stored case facts for this user.
+def retrieve_memory(user_identifier: str, query: str) -> dict:
+    """Retrieve active stored case facts for this user.
 
-    Returns a list of dicts with keys: content, role, created_at, user_identifier.
-    content is formatted as "{category}: {value}" — structured fact, not raw text.
-    Only facts where invalid_at IS NULL are returned. For CaseStage this means
-    only the current stage; for all other types, LLM reconciliation may have set
-    invalid_at on superseded facts, so retrieve returns only the current value for
-    each subject. query is accepted for API compatibility; retrieval is user-scoped
-    via graph traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
+    Returns a dict with keys:
+        "facts"     — list of dicts with keys: content, role, created_at,
+                      user_identifier. content is "{category}: {value}".
+                      Only facts where invalid_at IS NULL are included.
+        "truncated" — True if the user has more active facts than
+                      RETRIEVE_MEMORY_LIMIT; older facts were excluded.
+
+    query is accepted for API compatibility; retrieval is user-scoped via graph
+    traversal (User→HAS_ATJ_FACT→ATJFact), not vector search.
     """
     _require_init()
 
     t0 = time.monotonic()
     error: str | None = None
     success = False
-    results: list = []
+    results: dict = {"facts": [], "truncated": False}
     try:
-        results = asyncio.run(_retrieve_async(user_identifier, query))
+        facts, truncated = asyncio.run(_retrieve_async(user_identifier, query))
+        results = {"facts": facts, "truncated": truncated}
         success = True
     except Exception as exc:
         error = str(exc)
@@ -579,7 +585,7 @@ def retrieve_memory(user_identifier: str, query: str) -> list:
         _log_memory_op(
             user_identifier=user_identifier,
             operation="retrieve",
-            entity_count=len(results),
+            entity_count=len(results["facts"]),
             latency_ms=(time.monotonic() - t0) * 1000,
             success=success,
             error=error,
@@ -587,7 +593,7 @@ def retrieve_memory(user_identifier: str, query: str) -> list:
     return results
 
 
-async def _retrieve_async(user_identifier: str, query: str) -> list:
+async def _retrieve_async(user_identifier: str, query: str) -> tuple[list, bool]:
     driver = AsyncGraphDatabase.driver(_neo4j_uri, auth=_neo4j_auth)
     try:
         async with driver.session() as session:
@@ -596,19 +602,26 @@ async def _retrieve_async(user_identifier: str, query: str) -> list:
                 "WHERE f.invalid_at IS NULL "
                 "RETURN f.category AS category, f.value AS value, "
                 "       toString(f.created_at) AS created_at "
-                "ORDER BY f.created_at DESC",
+                "ORDER BY f.created_at DESC "
+                "LIMIT $limit",
                 uid=user_identifier,
+                limit=RETRIEVE_MEMORY_LIMIT + 1,
             )
-            records = await result.data()
-            return [
-                {
-                    "content": f"{r['category']}: {r['value']}",
-                    "role": "fact",
-                    "created_at": r["created_at"],
-                    "user_identifier": user_identifier,
-                }
-                for r in records
-            ]
+            raw = await result.data()
+            truncated = len(raw) > RETRIEVE_MEMORY_LIMIT
+            records = raw[:RETRIEVE_MEMORY_LIMIT]
+            return (
+                [
+                    {
+                        "content": f"{r['category']}: {r['value']}",
+                        "role": "fact",
+                        "created_at": r["created_at"],
+                        "user_identifier": user_identifier,
+                    }
+                    for r in records
+                ],
+                truncated,
+            )
     finally:
         await driver.close()
 

@@ -66,93 +66,94 @@ def main() -> None:
         print(f"  FAIL: {e}")
         sys.exit(1)
 
-    print("Writing first case_stage fact...")
     try:
-        write_memory(TEST_USER, "session_s1", CONTENT_1, role="user")
-        print("  OK")
-    except Exception as e:
-        errors.append(f"write 1 failed: {e}")
-        print(f"  FAIL: {e}")
+        print("Writing first case_stage fact...")
+        try:
+            write_memory(TEST_USER, "session_s1", CONTENT_1, role="user")
+            print("  OK")
+        except Exception as e:
+            errors.append(f"write 1 failed: {e}")
+            print(f"  FAIL: {e}")
 
-    print("Writing second case_stage fact...")
-    try:
-        write_memory(TEST_USER, "session_s2", CONTENT_2, role="user")
-        print("  OK")
-    except Exception as e:
-        errors.append(f"write 2 failed: {e}")
-        print(f"  FAIL: {e}")
+        print("Writing second case_stage fact...")
+        try:
+            write_memory(TEST_USER, "session_s2", CONTENT_2, role="user")
+            print("  OK")
+        except Exception as e:
+            errors.append(f"write 2 failed: {e}")
+            print(f"  FAIL: {e}")
 
-    # retrieve_memory must return only the active (non-superseded) CaseStage
-    print("\nRetrieving active facts...")
-    results = []
-    try:
-        results = retrieve_memory(TEST_USER, "case stage")
-        case_stage_results = [r for r in results if r["content"].startswith("case_stage:")]
-        print(f"  {len(case_stage_results)} active case_stage fact(s) returned:")
-        for r in case_stage_results:
-            print(f"    {r['content']}")
-    except Exception as e:
-        errors.append(f"retrieve_memory failed: {e}")
-        print(f"  FAIL: {e}")
+        # retrieve_memory must return only the active (non-superseded) CaseStage
+        print("\nRetrieving active facts...")
         case_stage_results = []
+        try:
+            memory_result = retrieve_memory(TEST_USER, "case stage")
+            results = memory_result["facts"]
+            case_stage_results = [r for r in results if r["content"].startswith("case_stage:")]
+            print(f"  {len(case_stage_results)} active case_stage fact(s) returned:")
+            for r in case_stage_results:
+                print(f"    {r['content']}")
+        except Exception as e:
+            errors.append(f"retrieve_memory failed: {e}")
+            print(f"  FAIL: {e}")
 
-    print("\nStep A: exactly one active case_stage fact in retrieve_memory")
-    if len(case_stage_results) != 1:
-        msg = (
-            f"Expected 1 active case_stage fact from retrieve_memory, "
-            f"got {len(case_stage_results)}"
-        )
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        print(f"  OK — 1 active fact: {case_stage_results[0]['content']!r}")
-
-    # Direct Neo4j query: both nodes should exist, first with invalid_at set
-    print("\nStep B: Neo4j graph state — first node must have invalid_at set")
-    nodes = query_all_casestage_nodes(TEST_USER)
-    print(f"  Total CaseStage nodes in graph: {len(nodes)}")
-    for n in nodes:
-        print(
-            f"    value={n['value']!r}  "
-            f"created_at={n['created_at']}  "
-            f"invalid_at={n['invalid_at']}"
-        )
-
-    superseded = [n for n in nodes if n["invalid_at"] is not None]
-    active_in_graph = [n for n in nodes if n["invalid_at"] is None]
-
-    if len(nodes) < 2:
-        msg = (
-            f"Expected at least 2 CaseStage nodes in graph, found {len(nodes)}. "
-            "Extraction may have failed to produce case_stage for one of the writes."
-        )
-        errors.append(msg)
-        print(f"  FAIL: {msg}")
-    else:
-        if len(superseded) < 1:
-            msg = "No superseded CaseStage nodes found — invalid_at was not set"
-            errors.append(msg)
-            print(f"  FAIL: {msg}")
-        else:
-            print(f"  OK — {len(superseded)} superseded node(s) with invalid_at set")
-
-        if len(active_in_graph) != 1:
+        print("\nStep A: exactly one active case_stage fact in retrieve_memory")
+        if len(case_stage_results) != 1:
             msg = (
-                f"Expected exactly 1 active CaseStage node in graph "
-                f"(invalid_at IS NULL), found {len(active_in_graph)}"
+                f"Expected 1 active case_stage fact from retrieve_memory, "
+                f"got {len(case_stage_results)}"
             )
             errors.append(msg)
             print(f"  FAIL: {msg}")
         else:
-            print(f"  OK — exactly 1 active CaseStage node in graph")
+            print(f"  OK — 1 active fact: {case_stage_results[0]['content']!r}")
 
-    # Cleanup
-    print("\nCleaning up...")
-    try:
-        delete_user_memory(TEST_USER)
-        print(f"  Deleted {TEST_USER}")
-    except Exception as e:
-        print(f"  Warning: cleanup failed: {e}")
+        # Direct Neo4j query: both nodes should exist, first with invalid_at set
+        print("\nStep B: Neo4j graph state — first node must have invalid_at set")
+        nodes = query_all_casestage_nodes(TEST_USER)
+        print(f"  Total CaseStage nodes in graph: {len(nodes)}")
+        for n in nodes:
+            print(
+                f"    value={n['value']!r}  "
+                f"created_at={n['created_at']}  "
+                f"invalid_at={n['invalid_at']}"
+            )
+
+        superseded = [n for n in nodes if n["invalid_at"] is not None]
+        active_in_graph = [n for n in nodes if n["invalid_at"] is None]
+
+        if len(nodes) < 2:
+            msg = (
+                f"Expected at least 2 CaseStage nodes in graph, found {len(nodes)}. "
+                "Extraction may have failed to produce case_stage for one of the writes."
+            )
+            errors.append(msg)
+            print(f"  FAIL: {msg}")
+        else:
+            if len(superseded) < 1:
+                msg = "No superseded CaseStage nodes found — invalid_at was not set"
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+            else:
+                print(f"  OK — {len(superseded)} superseded node(s) with invalid_at set")
+
+            if len(active_in_graph) != 1:
+                msg = (
+                    f"Expected exactly 1 active CaseStage node in graph "
+                    f"(invalid_at IS NULL), found {len(active_in_graph)}"
+                )
+                errors.append(msg)
+                print(f"  FAIL: {msg}")
+            else:
+                print(f"  OK — exactly 1 active CaseStage node in graph")
+
+    finally:
+        print("\nCleaning up...")
+        try:
+            delete_user_memory(TEST_USER)
+            print(f"  Deleted {TEST_USER}")
+        except Exception as e:
+            print(f"  Warning: cleanup failed: {e}")
 
     print()
     if errors:
