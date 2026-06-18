@@ -132,6 +132,7 @@ Second terminology pass, deferred until discovery informs what gaps matter most.
 
 Full legal GDPR compliance framework, instruct a solicitor, running in parallel with build.
 
+No human review queue exists for response_check.py fallbacks or memory layer audit_rejects. A false positive, the check wrongly blocking a fine answer, currently only surfaces in the log, nobody reviews it. Acceptable while only Vilam and Claude are testing via the CLI harness. Must be addressed, even just manual log review, before any real user, including pilot participants, has a live session.
 
 Monitor NAMS (Neo4j Agent Memory Service) for UK/EU region availability, would simplify self-hosting if it arrives.
 

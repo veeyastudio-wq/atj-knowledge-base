@@ -111,3 +111,7 @@ Respondent R-001, friend of Vilam, mid-proceedings, child arrangements, had repr
 ## Documentation workflow change, this session
 
 The Drive-native brief (34 revisions) and the separate Technical Environment doc are retired in favour of docs/project_state.md and this file, both in the repo. This was possible because the repo folder is itself synced to Google Drive under CloudStorage, confirmed by directly searching Drive and finding docs/environment.md independently indexed there, meaning any file Claude Code writes into the repo is readable by Claude in claude.ai with no separate Drive-native copy and no manual relay from Vilam. The Data Minimisation Decision Log stays Drive-native for now, the same pattern could apply to it later.
+
+## Self-correcting loop deferred, response_check.py (this session)
+
+Decided not to build a self-correcting loop for response_check.py yet. Every check, pass or fail, already logs to chat_ops.jsonl with the original draft preserved, so nothing is lost by waiting. A correction mechanism needs real failure data to be designed against, not guessed at before any exists.
