@@ -1,18 +1,18 @@
 ============================================================
 ATJ RETRIEVAL EVALUATION REPORT
-Generated: 2026-06-16T05:54:50.661780Z
+Generated: 2026-06-18T06:34:42.825593Z
 ============================================================
 
 OVERALL RESULT: PASS ✓
-  Context recall @ 10:  75.4%
+  Context recall @ 10:  82.6%
   Pass threshold:          75%
-  Hits / Total:            52 / 69
+  Hits / Total:            57 / 69
 
 BY LAYER
-  layer1: 72.4% (0.7241 recall)
-  layer2: 77.5% (0.775 recall)
+  layer1: 78.3% (0.7826 recall)
+  layer2: 84.8% (0.8478 recall)
 
-MISSED QUERIES (17) — top candidates to inspect:
+MISSED QUERIES (12) — top candidates to inspect:
 
   Query:    I've got my first court hearing coming up - will the judge just make a final decision then or is it more like a starting point?
   Expected: process_explanation__child_arrangements_track_overview__child_arrangements__chunk002
@@ -30,25 +30,9 @@ MISSED QUERIES (17) — top candidates to inspect:
   Expected: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002
   Returned: process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002...
 
-  Query:    My child has been taken by their other parent and a court order has been made against me - it says something about a Tipstaff, what does that mean and do I have to do what they say?
-  Expected: sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk001
-  Returned: sfo_vol2__046__order_151_forced_marriage_order_requesting_safe_well_check_without_notice__chunk001, sfo_vol2__051__order_153_forced_marriage_order_requesting_consular_interview_without_notice__chunk001, sfo_vol2__053__order_155_forced_marriage_directions_order_without_notice__chunk001...
-
   Query:    I've got a final hearing coming up for my child arrangements case and I have no idea what to expect - what do people like me usually get wrong?
   Expected: _discovery_gaps__chunk004
   Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000, process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__fhdra_hearing__child_arrangements__chunk001...
-
-  Query:    What happens if I miss the deadline the court set for sending in my documents?
-  Expected: terminology__directions__cross_cutting__chunk000
-  Returned: process_explanation__serving_applications__cross_cutting__chunk000, process_explanation__serving_applications__cross_cutting__chunk003, process_explanation__serving_applications__cross_cutting__chunk001...
-
-  Query:    My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?
-  Expected: FP2__chunk000
-  Returned: advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk002, PD_5A__chunk001, C2__chunk000...
-
-  Query:    My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?
-  Expected: PD_6D__chunk000
-  Returned: advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001, sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_childγçös_whereabouts_e__chunk001, advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002...
 
   Query:    My ex has loads of money and is burying me in paperwork and lengthy letters, is there anything the court can do to stop them using their money against me like this?
   Expected: legal_principle__proportionality__cross_cutting__chunk001
@@ -69,10 +53,6 @@ MISSED QUERIES (17) — top candidates to inspect:
   Query:    My child has been taken abroad without my permission - what kind of court order can force the other parent to come to court and bring them back?
   Expected: sfo_vol2__040__order_136_abduction_attendance_order__chunk000
   Returned: PD_12F__chunk010, sfo_vol2__024__order_1321_abduction_wardship_directions_order_on_notice__chunk004, sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk002...
-
-  Query:    The judge gave me a list of things I need to do before the next hearing – do I actually have to do all of them or are some optional?
-  Expected: terminology__directions__cross_cutting__chunk000
-  Returned: process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001, process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001, process_explanation__fhdra_hearing__child_arrangements__chunk001...
 
   Query:    My ex took our kids abroad and won't bring them back - can the English courts still deal with our case even though the children aren't here right now?
   Expected: sfo_vol2__088__order_70_private_law_case_management_directions_and_orders_precedent_library_ord__chunk007

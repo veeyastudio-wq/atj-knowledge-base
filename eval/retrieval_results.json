@@ -1,19 +1,19 @@
 {
-  "evaluated_at": "2026-06-16T05:54:50.661780Z",
+  "evaluated_at": "2026-06-18T06:34:42.825593Z",
   "golden_set": "eval/golden_set.json",
   "top_k": 10,
   "threshold": 0.75,
   "total_pairs": 69,
-  "hits_overall": 52,
-  "recall_overall": 0.7536,
+  "hits_overall": 57,
+  "recall_overall": 0.8261,
   "recall_by_layer": {
-    "layer1": 0.7241,
-    "layer2": 0.775
+    "layer1": 0.7826,
+    "layer2": 0.8478
   },
   "passed": true,
   "retrieval_failures": 0,
   "failure_details": [],
-  "miss_count": 17,
+  "miss_count": 12,
   "misses": [
     {
       "query": "I've got my first court hearing coming up - will the judge just make a final decision then or is it more like a starting point?",
@@ -96,26 +96,6 @@
       ]
     },
     {
-      "query": "My child has been taken by their other parent and a court order has been made against me - it says something about a Tipstaff, what does that mean and do I have to do what they say?",
-      "expected_chunk_id": "sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "sfo_vol2__046__order_151_forced_marriage_order_requesting_safe_well_check_without_notice__chunk001",
-        "sfo_vol2__051__order_153_forced_marriage_order_requesting_consular_interview_without_notice__chunk001",
-        "sfo_vol2__053__order_155_forced_marriage_directions_order_without_notice__chunk001",
-        "sfo_vol2__054__order_156_forced_marriage_directions_order_or_order_for_return_without_notice__chunk001",
-        "sfo_vol2__058__order_161_female_genital_mutilation_order__chunk001",
-        "sfo_vol2__043__order_139_abduction_directions_order_without_notice__chunk001",
-        "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
-        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
-        "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
-      ]
-    },
-    {
       "query": "I've got a final hearing coming up for my child arrangements case and I have no idea what to expect - what do people like me usually get wrong?",
       "expected_chunk_id": "_discovery_gaps__chunk004",
       "layer": "layer2",
@@ -133,66 +113,6 @@
         "_discovery_gaps__chunk002",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
         "process_explanation__fhdra_hearing__child_arrangements__chunk002"
-      ]
-    },
-    {
-      "query": "What happens if I miss the deadline the court set for sending in my documents?",
-      "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
-      "layer": "layer2",
-      "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "process_explanation__serving_applications__cross_cutting__chunk000",
-        "process_explanation__serving_applications__cross_cutting__chunk003",
-        "process_explanation__serving_applications__cross_cutting__chunk001",
-        "process_explanation__serving_applications__cross_cutting__chunk002",
-        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003",
-        "process_explanation__serving_applications__cross_cutting__chunk004",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002"
-      ]
-    },
-    {
-      "query": "My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?",
-      "expected_chunk_id": "FP2__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/FP2.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk002",
-        "PD_5A__chunk001",
-        "C2__chunk000",
-        "advicenow_financial_order__012__going_to_court_the_basics__chunk001",
-        "C100__chunk023",
-        "advicenow_financial_order__009__consent_orders__chunk000",
-        "C100__chunk000",
-        "sfo_vol2__000__order_101_non_molestation_order__chunk002",
-        "advicenow_divorce__009__the_application_continued__chunk003",
-        "C100__chunk005"
-      ]
-    },
-    {
-      "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
-      "expected_chunk_id": "PD_6D__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_6D.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001",
-        "sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_child\u03b3\u00e7\u00f6s_whereabouts_e__chunk001",
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002",
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk000",
-        "sfo_vol2__113__order_94_disclosure_order_against_government_departments_of_a_child\u03b3\u00e7\u00f6s_whereabo__chunk001",
-        "sfo_vol2__111__order_92_disclosure_order_against_the_police_of_a_child\u03b3\u00e7\u00f6s_whereabouts_etc__chunk001",
-        "advicenow_financial_order__017__the_first_appointment__chunk001",
-        "sfo_vol2__114__order_95_disclosure_order_against_hmrc_of_a_child\u03b3\u00e7\u00f6s_whereabouts_etc__chunk001",
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk001",
-        "sfo_vol2__033__order_133_abduction_disclosure_order_version_2__chunk001"
       ]
     },
     {
@@ -293,26 +213,6 @@
         "sfo_vol2__099__order_78_search_and_return_order_s_34_fla_1986__chunk001",
         "PD_12F__chunk000",
         "sfo_vol2__041__order_137_abduction_freezing_order__chunk000"
-      ]
-    },
-    {
-      "query": "The judge gave me a list of things I need to do before the next hearing \u2013 do I actually have to do all of them or are some optional?",
-      "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
-      "layer": "layer2",
-      "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "hit": false,
-      "rank": null,
-      "top_returned": [
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
-        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",
-        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk002",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002",
-        "_discovery_gaps__chunk001"
       ]
     },
     {
@@ -531,30 +431,30 @@
         "document_explanation__form_a__financial_remedy__chunk002",
         "process_explanation__fdr_hearing__financial_remedy__chunk002",
         "_discovery_gaps__chunk001",
+        "terminology__directions__cross_cutting__chunk000",
         "document_explanation__form_a__financial_remedy__chunk001",
         "document_explanation__form_a__financial_remedy__chunk000",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
-        "process_explanation__fdr_hearing__financial_remedy__chunk000"
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002"
       ]
     },
     {
       "query": "My ex's solicitor has sent over a draft consent order - should I just sign it or do I need a solicitor to check it first?",
-      "expected_chunk_id": "advicenow_financial_order__009__consent_orders__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/guidance/advicenow_financial_order__009__consent_orders.md",
+      "expected_chunk_id": "document_explanation__consent_order__financial_remedy__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/document_explanations/document_explanation__consent_order__financial_remedy.md",
       "hit": true,
-      "rank": 1,
+      "rank": 2,
       "top_returned": [
-        "advicenow_financial_order__009__consent_orders__chunk001",
-        "advicenow_financial_order__009__consent_orders__chunk000",
-        "sfo_vol1__004__order_21_financial_remedy_order__chunk060",
-        "PD_41H__chunk007",
-        "govuk_financial_remedy__001__making_an_agreement_legally_binding__chunk000",
-        "sfo_vol1__005__order_22_order_under_children_act_1989_schedule_1__chunk062",
-        "financial_remedies_guide_2026__057__6_the_required_documents_for_the_purposes_of_paragraph_5_ii_are__chunk000",
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk003",
-        "PD_36N__chunk007",
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk000"
+        "document_explanation__consent_order__financial_remedy__chunk001",
+        "document_explanation__consent_order__financial_remedy__chunk000",
+        "document_explanation__consent_order__financial_remedy__chunk002",
+        "document_explanation__form_a__financial_remedy__chunk000",
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
+        "document_explanation__form_a__financial_remedy__chunk001",
+        "process_explanation__dra_hearing__child_arrangements__chunk001",
+        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
+        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
+        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001"
       ]
     },
     {
@@ -699,22 +599,22 @@
     },
     {
       "query": "My child has been taken by their other parent and a court order has been made against me - it says something about a Tipstaff, what does that mean and do I have to do what they say?",
-      "expected_chunk_id": "sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/standard_orders/sfo_vol2__023__order_1320_abduction_wardship_directions_order_without_notice.md",
-      "hit": false,
-      "rank": null,
+      "expected_chunk_id": "terminology__tipstaff__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/terminology/terminology__tipstaff__cross_cutting.md",
+      "hit": true,
+      "rank": 1,
       "top_returned": [
-        "sfo_vol2__046__order_151_forced_marriage_order_requesting_safe_well_check_without_notice__chunk001",
-        "sfo_vol2__051__order_153_forced_marriage_order_requesting_consular_interview_without_notice__chunk001",
-        "sfo_vol2__053__order_155_forced_marriage_directions_order_without_notice__chunk001",
-        "sfo_vol2__054__order_156_forced_marriage_directions_order_or_order_for_return_without_notice__chunk001",
-        "sfo_vol2__058__order_161_female_genital_mutilation_order__chunk001",
-        "sfo_vol2__043__order_139_abduction_directions_order_without_notice__chunk001",
-        "sfo_vol2__012__order_1310_abduction_directions_order_on_notice__chunk004",
-        "sfo_vol2__035__order_1331_abduction_concurrent_asylum_claim_first_directions_on_notice__chunk004",
-        "sfo_vol2__021__order_1319_abduction_electronic_tagging_order__chunk001",
-        "sfo_vol1__033__order_59_bench_warrant_for_arrest__chunk002"
+        "terminology__tipstaff__cross_cutting__chunk000",
+        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
+        "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
+        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
+        "legal_principle__paramountcy_vs_balance__child_arrangements__chunk000",
+        "legal_principle__paramountcy_vs_balance__child_arrangements__chunk001",
+        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
+        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk004",
+        "document_explanation__non_molestation_order__cross_cutting__chunk002"
       ]
     },
     {
@@ -762,9 +662,10 @@
       "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "hit": false,
-      "rank": null,
+      "hit": true,
+      "rank": 1,
       "top_returned": [
+        "terminology__directions__cross_cutting__chunk000",
         "process_explanation__serving_applications__cross_cutting__chunk000",
         "process_explanation__serving_applications__cross_cutting__chunk003",
         "process_explanation__serving_applications__cross_cutting__chunk001",
@@ -773,8 +674,7 @@
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003",
         "process_explanation__serving_applications__cross_cutting__chunk004",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
-        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002"
+        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001"
       ]
     },
     {
@@ -839,22 +739,22 @@
     },
     {
       "query": "My case is already going through the courts but I need to ask for something extra - like a change to an existing order. What form do I need to fill in?",
-      "expected_chunk_id": "FP2__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/FP2.md",
-      "hit": false,
-      "rank": null,
+      "expected_chunk_id": "document_explanation__fp2_application_notice__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/document_explanations/document_explanation__fp2_application_notice__cross_cutting.md",
+      "hit": true,
+      "rank": 1,
       "top_returned": [
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk002",
-        "PD_5A__chunk001",
-        "C2__chunk000",
-        "advicenow_financial_order__012__going_to_court_the_basics__chunk001",
-        "C100__chunk023",
-        "advicenow_financial_order__009__consent_orders__chunk000",
-        "C100__chunk000",
-        "sfo_vol2__000__order_101_non_molestation_order__chunk002",
-        "advicenow_divorce__009__the_application_continued__chunk003",
-        "C100__chunk005"
+        "document_explanation__fp2_application_notice__cross_cutting__chunk000",
+        "document_explanation__form_a__financial_remedy__chunk000",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk001",
+        "document_explanation__form_a__financial_remedy__chunk001",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk002",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
+        "process_explanation__fda_hearing__financial_remedy__chunk002",
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk002",
+        "document_explanation__non_molestation_order__cross_cutting__chunk002",
+        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk003"
       ]
     },
     {
@@ -899,22 +799,22 @@
     },
     {
       "query": "My ex is hiding in a women's refuge and I need to get court papers to them - how does that actually work without me finding out where they're staying?",
-      "expected_chunk_id": "PD_6D__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_6D.md",
-      "hit": false,
-      "rank": null,
+      "expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk003",
+      "layer": "layer2",
+      "source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
+      "hit": true,
+      "rank": 1,
       "top_returned": [
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk001",
-        "sfo_vol2__110__order_91_disclosure_order_against_a_local_authority_of_a_child\u03b3\u00e7\u00f6s_whereabouts_e__chunk001",
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk002",
-        "advicenow_divorce__011__what_to_do_if_your_ex_does_not_respond_to_the_application__chunk000",
-        "sfo_vol2__113__order_94_disclosure_order_against_government_departments_of_a_child\u03b3\u00e7\u00f6s_whereabo__chunk001",
-        "sfo_vol2__111__order_92_disclosure_order_against_the_police_of_a_child\u03b3\u00e7\u00f6s_whereabouts_etc__chunk001",
-        "advicenow_financial_order__017__the_first_appointment__chunk001",
-        "sfo_vol2__114__order_95_disclosure_order_against_hmrc_of_a_child\u03b3\u00e7\u00f6s_whereabouts_etc__chunk001",
-        "advicenow_financial_order__016__checklist_things_to_do_before_the_first_appointment__chunk001",
-        "sfo_vol2__033__order_133_abduction_disclosure_order_version_2__chunk001"
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk001",
+        "process_explanation__serving_applications__cross_cutting__chunk002",
+        "process_explanation__serving_applications__cross_cutting__chunk004",
+        "document_explanation__non_molestation_order__cross_cutting__chunk001",
+        "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk001",
+        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
+        "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
+        "document_explanation__non_molestation_order__cross_cutting__chunk000"
       ]
     },
     {
@@ -1179,22 +1079,22 @@
     },
     {
       "query": "What does the 'statement of truth' bit on the form mean, and what happens if I get something wrong?",
-      "expected_chunk_id": "PD_17A__chunk001",
-      "layer": "layer1",
-      "source_file": "raw/court_forms/Form_A.md",
+      "expected_chunk_id": "terminology__statement_of_truth__cross_cutting__chunk000",
+      "layer": "layer2",
+      "source_file": "raw/layer2/terminology/terminology__statement_of_truth__cross_cutting.md",
       "hit": true,
       "rank": 1,
       "top_returned": [
-        "PD_17A__chunk001",
-        "C8__chunk001",
-        "PD_17A__chunk000",
-        "C1A__chunk006",
-        "PD_17A__chunk004",
-        "Form_E1__chunk011",
-        "PD_17A__chunk003",
-        "FP6__chunk001",
-        "PD_41G__chunk012",
-        "PD_17A__chunk002"
+        "terminology__statement_of_truth__cross_cutting__chunk000",
+        "document_explanation__witness_statement__cross_cutting__chunk001",
+        "document_explanation__witness_statement__cross_cutting__chunk000",
+        "document_explanation__witness_statement__cross_cutting__chunk002",
+        "_discovery_gaps__chunk003",
+        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk001",
+        "document_explanation__position_statement__cross_cutting__chunk001",
+        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk000",
+        "legal_principle__duty_of_full_and_frank_disclosure__financial_remedy__chunk002",
+        "document_explanation__position_statement__cross_cutting__chunk000"
       ]
     },
     {
@@ -1386,8 +1286,8 @@
       "rank": 5,
       "top_returned": [
         "terminology__conditional_order__divorce__chunk000",
-        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
+        "process_explanation__fhdra_hearing__child_arrangements__chunk001",
         "document_explanation__non_molestation_order__cross_cutting__chunk000",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
@@ -1582,39 +1482,39 @@
       "expected_chunk_id": "terminology__directions__cross_cutting__chunk000",
       "layer": "layer2",
       "source_file": "raw/layer2/terminology/terminology__directions__cross_cutting.md",
-      "hit": false,
-      "rank": null,
+      "hit": true,
+      "rank": 3,
       "top_returned": [
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk001",
         "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk001",
+        "terminology__directions__cross_cutting__chunk000",
         "process_explanation__fhdra_hearing__child_arrangements__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk002",
         "process_explanation__financial_remedy_track_overview__financial_remedy__chunk001",
         "process_explanation__child_arrangements_final_hearing__child_arrangements__chunk000",
         "process_explanation__child_arrangements_track_overview__child_arrangements__chunk001",
         "process_explanation__fhdra_hearing__child_arrangements__chunk002",
-        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002",
-        "_discovery_gaps__chunk001"
+        "process_explanation__financial_remedy_final_hearing__financial_remedy__chunk002"
       ]
     },
     {
       "query": "Who gets sent a copy of my application form when I start court proceedings?",
-      "expected_chunk_id": "PD_14A__chunk000",
-      "layer": "layer1",
-      "source_file": "raw/practice_directions/PD_14A.md",
+      "expected_chunk_id": "process_explanation__serving_applications__cross_cutting__chunk002",
+      "layer": "layer2",
+      "source_file": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md",
       "hit": true,
-      "rank": 2,
+      "rank": 1,
       "top_returned": [
-        "PD_36Z__chunk018",
-        "PD_14A__chunk000",
-        "advicenow_divorce__009__the_application_continued__chunk004",
-        "advicenow_financial_order__011__the_process__chunk001",
-        "D11__chunk004",
-        "PD_36Z__chunk019",
-        "C7__chunk002",
-        "sfo_vol1__008__order_32_search_order__chunk002",
-        "PD_12B__chunk009",
-        "advicenow_divorce__012__applying_for_a_conditional_order__chunk001"
+        "process_explanation__serving_applications__cross_cutting__chunk002",
+        "document_explanation__form_a__financial_remedy__chunk000",
+        "process_explanation__serving_applications__cross_cutting__chunk003",
+        "process_explanation__serving_applications__cross_cutting__chunk000",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk001",
+        "terminology__applicant_respondent__cross_cutting__chunk000",
+        "process_explanation__serving_applications__cross_cutting__chunk001",
+        "document_explanation__form_a__financial_remedy__chunk001",
+        "process_explanation__divorce_track_overview__divorce__chunk002",
+        "document_explanation__fp2_application_notice__cross_cutting__chunk000"
       ]
     },
     {

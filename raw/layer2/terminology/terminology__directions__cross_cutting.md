@@ -8,7 +8,7 @@ source_refs:
   - FPR_Part_1
   - FPR_Part_4
 jurisdiction: England and Wales
-last_updated: 2026-06-10
+last_updated: 2026-06-18
 discovery_gap: false
 ---
 
@@ -16,11 +16,21 @@ discovery_gap: false
 
 ## What it means
 
-Directions are instructions made by the court that set out what each party must do before the next hearing, and by when. They are not optional — failing to comply with directions is a serious matter that can result in evidence being excluded or a costs order being made against the party at fault. Directions are usually made at the end of each hearing and confirmed in a written order sent to both parties.
+Directions are the judge's instructions to both parties that set out exactly what each person needs to do before the next hearing, and by when. After most hearings the judge gives a list of tasks — for example, filing a witness statement, sending in documents, or filing a position statement — and sets a deadline for each one. The list is recorded in a written order sent to both parties.
+
+**All of these steps are mandatory, not optional.** If a direction says you must send in your documents by a certain date, you must comply with that deadline. Failing to do so is treated seriously by the court.
+
+## What happens if you miss a deadline
+
+If you miss a deadline set by a directions order, act as soon as possible:
+
+- Tell the other party and the court promptly, and explain what happened.
+- If you need more time, you can apply to the court for an extension — including after a deadline has already passed. Parties cannot agree between themselves to extend a deadline set by a court order; only the court can do that.
+- The most common consequences of non-compliance are that your evidence may be excluded at the next hearing, or the court may make a costs order against you.
 
 ## When you will encounter it
 
-After every procedural hearing — the FDA, FHDRA, DRA, and others. The directions order will list tasks such as filing a witness statement, exchanging documents, or filing a position statement, each with a specific deadline. You will also see the word used in correspondence and in judgments.
+After every procedural hearing — the FDA, FHDRA, DRA, and others. You will also see the word used in correspondence and in judgments.
 
 ## Track
 
