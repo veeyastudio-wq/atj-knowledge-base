@@ -26,7 +26,7 @@ Hallucination risk: the product must never generate case law citations or presen
 
 UK GDPR: data users share falls into special category territory under Article 9. The memory layer architecture is built around this as a first-order requirement. The Data (Use and Access) Act 2025's automated decision-making provisions (Articles 22A to 22D, in force since 5 February 2026) are low risk for ATJ's use case but must be raised with the solicitor during legal consultation. The ICO's January 2026 agentic AI report requires the data minimisation logic to be documented at the agent level, individuals informed when special category data may be used or inferred, and memory storage able to be switched off per user without breaking the product.
 
-Actions still required before real user data touches the system: solicitor consultation on the information-versus-advice boundary (timing resolved, runs in parallel with build, not yet sent, Vilam's call), the full legal GDPR compliance framework, a specific legal opinion on the in-room recording feature before it's prioritised, and a production hosting decision (Hetzner Cloud, DigitalOcean London, or AWS eu-west-2).
+Actions still required before real user data touches the system: solicitor consultation on the information-versus-advice boundary (timing resolved, runs in parallel with build, not yet sent, Vilam's call), the full legal GDPR compliance framework, and a specific legal opinion on the in-room recording feature before it's prioritised. Hosting is decided: DigitalOcean, London (LON1) region. A hardened staging droplet now runs there, Docker Compose with atj-db and atj-neo4j, both bound to localhost only, reachable via SSH tunnel, see the Staging environment section in environment.md for detail. OPENAI_API_KEY and ANTHROPIC_API_KEY on that droplet are pending manual entry, so nothing that calls either API works against staging yet.
 
 ## Roles and working method
 
@@ -132,7 +132,7 @@ Second terminology pass, deferred until discovery informs what gaps matter most.
 
 Full legal GDPR compliance framework, instruct a solicitor, running in parallel with build.
 
-Decide on production hosting provider.
+Hosting decided: DigitalOcean London (LON1). Set OPENAI_API_KEY and ANTHROPIC_API_KEY in /home/atj-deploy/atj/.env on the staging droplet before running any scripts that call either API.
 
 Monitor NAMS (Neo4j Agent Memory Service) for UK/EU region availability, would simplify self-hosting if it arrives.
 
