@@ -39,9 +39,11 @@ Requires the API server to be running:
 """
 
 import argparse
+import json
 import sys
 import time
 import uuid
+from collections import Counter
 
 import requests
 
@@ -116,6 +118,24 @@ SCENARIOS = [
 ]
 
 
+def _parse_chat_response(resp: requests.Response) -> dict:
+    """Parse /chat JSON, retrying once with control-char stripping on failure.
+
+    Uses resp.content (raw bytes) rather than resp.text so that requests's
+    charset detection cannot misinterpret UTF-8 sequences. On a first-attempt
+    JSONDecodeError, strips ASCII control characters outside the allowed set
+    (tab 0x09, LF 0x0a, CR 0x0d) and retries — this recovers from the rare
+    case where a model response contains a bare control character that the
+    FastAPI serialiser did not escape. If the stripped parse also fails, the
+    JSONDecodeError propagates so the caller can log it as a genuine error.
+    """
+    try:
+        return json.loads(resp.content)
+    except json.JSONDecodeError:
+        cleaned = bytes(b for b in resp.content if b >= 0x20 or b in (0x09, 0x0a, 0x0d))
+        return json.loads(cleaned)
+
+
 def run_scenario(scenario: dict, reps: int, api_base: str) -> list[dict]:
     results = []
     for rep in range(reps):
@@ -135,13 +155,14 @@ def run_scenario(scenario: dict, reps: int, api_base: str) -> list[dict]:
                     timeout=90,
                 )
                 resp.raise_for_status()
-                data = resp.json()
+                data = _parse_chat_response(resp)
                 session_id = data["session_id"]
                 turn_results.append({
                     "turn": turn_idx + 1,
                     "compliant": data["compliant"],
                     "fallback_triggered": data["fallback_triggered"],
                     "error": None,
+                    "error_type": None,
                 })
             except Exception as exc:
                 turn_results.append({
@@ -149,6 +170,7 @@ def run_scenario(scenario: dict, reps: int, api_base: str) -> list[dict]:
                     "compliant": None,
                     "fallback_triggered": None,
                     "error": str(exc),
+                    "error_type": type(exc).__name__,
                 })
 
             time.sleep(0.5)
@@ -163,12 +185,15 @@ def summarise(scenario: dict, results: list[dict], reps: int) -> dict:
     n_turns = len(scenario["turns"])
     fallback_counts = [0] * n_turns
     error_counts = [0] * n_turns
+    error_types: list[list[str]] = [[] for _ in range(n_turns)]
 
     for rep_result in results:
         for t in rep_result["turns"]:
             idx = t["turn"] - 1
             if t["error"]:
                 error_counts[idx] += 1
+                label = t.get("error_type") or "Error"
+                error_types[idx].append(label)
             elif t["fallback_triggered"]:
                 fallback_counts[idx] += 1
 
@@ -181,12 +206,15 @@ def summarise(scenario: dict, results: list[dict], reps: int) -> dict:
         if exceeded:
             flagged_turns.append(i + 1)
         preview = scenario["turns"][i][:70]
+        # Distinct error type counts for display: e.g. {"JSONDecodeError": 1}
+        error_type_counts = dict(Counter(error_types[i]))
         turn_summaries.append({
             "turn": i + 1,
             "preview": preview,
             "truncated": len(scenario["turns"][i]) > 70,
             "fallback_count": fallback_counts[i],
             "error_count": error_counts[i],
+            "error_type_counts": error_type_counts,
             "valid_reps": valid,
             "fallback_rate": rate,
             "exceeds_threshold": exceeded,
@@ -212,8 +240,14 @@ def print_summary(summary: dict) -> None:
     for ts in summary["turn_summaries"]:
         rate_pct = f"{ts['fallback_rate'] * 100:.1f}%"
         flag = "  ← EXCEEDS THRESHOLD" if ts["exceeds_threshold"] else ""
-        err_note = f"  ({ts['error_count']} error(s) excluded)" if ts["error_count"] else ""
         ellipsis = "…" if ts["truncated"] else ""
+        if ts["error_count"]:
+            type_detail = ", ".join(
+                f"{n}×{t}" for t, n in sorted(ts["error_type_counts"].items())
+            )
+            err_note = f"  ({ts['error_count']} error(s) excluded: {type_detail})"
+        else:
+            err_note = ""
         print(
             f"  Turn {ts['turn']} : {ts['fallback_count']}/{ts['valid_reps']} "
             f"fallbacks ({rate_pct}){flag}{err_note}"
