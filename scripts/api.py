@@ -49,6 +49,7 @@ context-enriched turn_content — context (memory + KB) is injected fresh into
 the current turn only, exactly as the CLI harness does.
 """
 
+import asyncio
 import os
 import sys
 import uuid
@@ -97,7 +98,9 @@ from chat import (
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    initialise_memory()
+    # initialise_memory() calls asyncio.run() internally; run it in a thread
+    # so it gets its own event loop rather than conflicting with uvicorn's.
+    await asyncio.to_thread(initialise_memory)
     app.state.system_prompt = load_system_prompt()
     app.state.client = Anthropic()
     yield
