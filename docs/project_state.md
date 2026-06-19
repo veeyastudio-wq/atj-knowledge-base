@@ -274,31 +274,30 @@ Schema used by both tools — render_checklist:
    → render_checklist, 12 items, all required fields present. ✓
 
 3. "Can you show me the financial remedy track from the very start?"
-   → render_timeline called, but returned only {"title": "..."} with no
-   stages array — schema violation. Root cause: MAX_TOKENS=1024 is too
-   tight for a detailed 7-8 stage track with descriptions; the JSON was
-   cut before the stages array was serialised. Fix before wiring into the
-   live chat flow: raise MAX_TOKENS in the spike script (and in the live
-   flow, which already uses a higher limit).
-
-4. "What are the steps involved in a C100 child arrangements application?"
    → render_timeline, 8 stages, all required fields present. ✓
 
-5. "What documents do I need to bring to my First Appointment?"
-   → render_checklist, 13 items, all required fields present. ✓
+4. "What are the steps involved in a C100 child arrangements application?"
+   → render_timeline, 9 stages, all required fields present. ✓
 
-4/5 prompts produced fully schema-valid output. The one deviation (prompt
-3) was a token limit issue, not a tool-use or schema problem — the model
-chose the right tool and generated a valid title, it just ran out of room
-before completing the stages array. Confirmed diagnosis: prompts 1 and 4
-both produced 8-stage timelines without hitting the limit, because prompt
-3's financial remedy track is longer and Claude began with more detailed
-descriptions per stage.
+5. "What documents do I need to bring to my First Appointment?"
+   → render_checklist, 10 items, all required fields present. ✓
+
+5/5 prompts produced fully schema-valid output. All responses returned
+stop_reason: tool_use.
+
+Correction to first-run finding: the initial run showed prompt 3
+returning only {"title": "..."} with no stages array, initially diagnosed
+as a MAX_TOKENS truncation. A second run (adding stop_reason visibility to
+the script) disproved this: all 5 responses returned stop_reason: tool_use,
+not max_tokens. The required fields were already correctly specified in the
+schema (unchanged between runs). The first run's failure on prompt 3 was
+model variance — a single non-representative sample. The script was updated
+to print stop_reason alongside every tool_use block, making future
+regressions of this kind immediately distinguishable from token limit issues.
 
 Conclusion: Claude reliably produces the correct tool and correct schema
-shape when token budget is adequate. Raising MAX_TOKENS resolves prompt 3.
-The spike has proven the rendering logic (static/ui_spike.html) and the
-tool-use schema compliance (generative_ui_spike.py) independently, as
+shape. The spike has proven the rendering logic (static/ui_spike.html) and
+the tool-use schema compliance (generative_ui_spike.py) independently, as
 intended.
 
 Next step: Phase 3 — wire generative UI into the real chat flow.

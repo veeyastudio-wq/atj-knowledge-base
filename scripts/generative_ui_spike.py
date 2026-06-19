@@ -129,9 +129,11 @@ def run_prompt(client: Anthropic, prompt: str, index: int) -> None:
         messages=[{"role": "user", "content": prompt}],
     )
 
+    print(f"stop_reason: {response.stop_reason}")
+
     tool_use_blocks = [b for b in response.content if b.type == "tool_use"]
     if not tool_use_blocks:
-        print(f"[No tool_use block — stop_reason: {response.stop_reason}]")
+        print("[No tool_use block]")
         return
 
     for block in tool_use_blocks:
