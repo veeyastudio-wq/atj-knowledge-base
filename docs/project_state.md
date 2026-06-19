@@ -122,6 +122,149 @@ Walking skeleton frontend: static/index.html is a minimal vanilla JS page served
 
 Conversational first, not navigation-based. Claude surfaces visuals, timelines, checklists, and dashboards at runtime via a generative UI architecture (Claude emits structured content, a thin frontend layer renders it), rather than fixed pre-built screens. Opening experience is a warm intake conversation that builds case context and gathers documents/photos without feeling like a form. Returning users get a time and date aware, proactive experience, Claude surfaces what matters without being asked, emotionally aware through situational inference rather than stored emotional data. Document handling: Claude asks what the document is, offers understand/fill in/talk through, guides forms one step at a time. Writing support: Claude asks where the user is (not started, partial, draft to polish) and offers voice recording throughout. Case file panel is a self-building living record of documents, letters, forms, timelines, and calendar events, full memory/document integration required for pilot. Visual identity: calm, mature, minimal, Claude's own interface pushed softer, Wysa-level tonal discipline around not overstating what the AI is to the user. Token cost requirements for the pilot build: Anthropic automatic prompt caching on system and compliance check prompts, RAG retrieval capped at 3 to 7 chunks per call, explicit max_tokens on every call. Live in-court recording remains deferred pending legal opinion regardless of this scope decision, this is a legal constraint, not a sequencing choice.
 
+## Phase 1 — walking skeleton (complete, 19 June 2026)
+
+End-to-end loop proven working: browser → FastAPI → memory retrieval → RAG
+retrieval → Claude reasoning call → independent compliance check → memory
+write → response back to browser. Components built this session:
+
+- scripts/api.py: minimal FastAPI wrapper around the existing orchestration
+  in chat.py. Imports existing functions, no duplicated logic. Local dev
+  only, no auth, no deployment config.
+- Short-term session history, separate from long-term Neo4j memory. In-memory
+  per-session store, capped at 10 turns, non-persistent across server
+  restarts by design. Long-term memory retrieval/write via memory.py
+  unchanged.
+- static/index.html: minimal vanilla JS frontend served by FastAPI at /.
+  No framework, no build step. Shows fallback indicator and session status
+  line for testing visibility.
+- Fixed a startup crash: initialise_memory()'s internal asyncio.run() call
+  conflicted with FastAPI's running event loop. Resolved by running it via
+  asyncio.to_thread().
+
+## Compliance consistency findings (19 June 2026)
+
+Built scripts/eval_compliance.py to test the compliance check by repeated
+trial rather than single-run spot checks, after manual testing showed the
+same prompt sequence producing different pass/fail outcomes across runs.
+Default 20 reps per scenario (statistical reasoning for this default is in
+the script's docstring).
+
+Root cause found: the compliance check itself was working correctly in
+every observed case. The failures were the model's generation habit of
+appending a personalised closing clause to otherwise-clean informational
+answers, either restating the user's specific figures, sequencing the
+user's own next steps as a directive plan, or coaching what specific
+question to ask a solicitor.
+
+Three system prompt iterations were made to prompts/system_prompt.md
+("WHERE ANSWERS ACTUALLY GO WRONG" section). Results across four borderline
+test scenarios, N=20 per cell unless noted:
+
+- custody_split_then_c100: T1 70%→65%, T2 stayed at 0% throughout (no
+  over-correction).
+- financial_settlement_offer: T1 stayed at 75% (an apparent improvement to
+  53% in rerun 1 was a measurement artifact from an eval script bug, not a
+  real effect — see below). T2 stayed at 5% throughout.
+- urgent_contact_action: clearest genuine improvement. T1 50%→32%, T2
+  45%→20%, both turns improved across all three iterations with no
+  over-correction.
+- solicitor_advice_evaluation: T1/T2 baseline 37%/35%. First two prompt
+  iterations made T2 substantially worse (55%, then 80%), traced to the
+  model echoing the exact sentence structure of a WRONG example we'd
+  written into the prompt as a "don't do this" demonstration. Removing the
+  example and replacing it with a direct behavioural rule (no illustrative
+  example) brought T2 back to 40%, statistically indistinguishable from
+  baseline (37%/35% vs 40%/40%, well within normal variance at N=20).
+
+Decision: did not attempt a fourth prompt pattern. Three iterations showed
+diminishing and then negative returns. This scenario is documented as a
+known, accepted limitation, not a solved problem: a genuinely neutral
+informational question about hearing risk vs consent order gets blocked by
+the compliance check roughly one time in three, baseline and after
+iteration alike. The compliance check is functioning as the real safety
+net for this scenario, not the system prompt. No unsafe content has reached
+a user in any test run, the cost is a false-positive fallback rate on a
+legitimate question, which is a UX cost, not a safety failure. Worth
+revisiting later via response_check.py tuning or improving the fallback
+experience itself, not further system prompt iteration.
+
+Lesson for future prompt edits: a vivid, quotable WRONG example in a system
+prompt risks being reproduced by the model as a template, even while
+correctly avoiding the specific pattern it was meant to discourage. Prefer
+direct behavioural rules naming the signature of the unwanted pattern over
+illustrative "don't say this" example sentences, especially for closing
+or redirect language the model is likely to fall back on under pressure to
+conclude an answer cleanly.
+
+Separately fixed in scripts/eval_compliance.py: a JSONDecodeError caused by
+unescaped control characters in API responses was silently excluding reps
+from the denominator rather than counting them as errors. Fixed to retry
+with control characters stripped, and to surface unrecoverable failures
+explicitly (e.g. "1×JSONDecodeError") rather than an opaque error count.
+
+## Build sequencing plan
+
+Walking skeleton approach: prove the riskiest, least-precedented piece
+early and in isolation, before building features on top of an unproven
+foundation, rather than building every component to completion in
+parallel and discovering integration problems at the end.
+
+1. Walking skeleton (complete) — minimal API + bare frontend, full loop
+   proven end to end.
+2. Generative UI spike, isolated — prototype Claude emitting structured
+   content (timelines, checklists, document cards) rendered by a thin
+   frontend layer, against fake/static data first, before connecting it
+   to live backend responses. This is the most technically demanding and
+   least precedented piece, tested in isolation deliberately.
+3. Wire generative UI into the real chat flow, once the spike works.
+4. Case file panel — living record fed by real memory and document
+   storage, not mocked. Built after the chat loop is solid since it's a
+   second UI surface drawing on the same underlying state.
+5. Document handling and writing support workflows (upload, ask-what-it-is
+   flow, three writing-support paths).
+6. Voice recording on mobile, reliable from day one per the locked UI
+   direction, additive to phase 5.
+7. Baseline interaction polish: streaming, stop button, typing indicators,
+   trust signals, searchable history.
+
+Next step: Phase 2, the generative UI spike.
+
+## Claude Code prompt rule, standing (three tiers)
+
+1. Containment question on every prompt, tailored to the specific change
+   ("confirm this only touches X and nothing else"). Baseline for all
+   routine work.
+2. Stress-test question (argue against the plan before running it) added
+   only when the prompt touches the memory layer, the legal information
+   vs advice boundary, or anything irreversible. Caveat: this is still the
+   same Claude Code session checking its own work, weaker than the
+   project's actual independent check (response_check.py, a genuinely
+   separate model with no visibility into the first model's reasoning).
+3. Every prompt producing runnable code ends with an instruction to
+   actually run it and paste real output before reporting a commit ready,
+   not just describe the diff. This is functional self-verification, not
+   judgment self-review, so it doesn't carry the same weakness as the
+   stress-test question.
+
+Starting now (compliance testing cycle complete as of this commit): Claude
+in claude.ai reads the actual changed files in full on each commit, not
+just diffs, as an independent code-quality check, separate from anything
+Claude Code reports about its own work. Same separation-of-concerns logic
+as response_check.py being a different model from the generator.
+
+AI-specific requirements adopted as standing practice (from an external
+best-practices document reviewed 19 June 2026, AI-specific items only, not
+the full process framework): explicit failure handling required for model
+timeouts and malformed/unparseable outputs (proven necessary by the
+eval_compliance.py JSONDecodeError bug), prompts versioned via git
+(already true for system_prompt.md via commit history, now explicit),
+audit trail for AI actions (already satisfied by chat_ops.jsonl logging
+every check pass/fail). The full 7-phase analyse/design/approval/implement/
+test/self-review/verify cycle was reviewed and explicitly not adopted as a
+blanket requirement, judged too heavy for this build stage; heavier process
+already applies only where the containment/stress-test tiers call for it.
+
 ## Open items / next steps
 
 Continue discovery, priority is finding someone with zero legal representation throughout.
