@@ -31,15 +31,22 @@ Send a message:
          -H "Content-Type: application/json" \\
          -d '{"user_id": "test_user_001", "message": "What is Form E?"}'
 
---- Statelessness note ---
+--- Session history ---
 
-Each POST /chat call is one independent turn. There is no in-request conversation
-history carried between HTTP requests (unlike the CLI loop in chat.py, which
-accumulates history within a single CLI session). Cross-session persistence is
-provided by the Neo4j memory layer via retrieve_memory — which is the right
-persistence mechanism for an HTTP API. The in-request conversation history the
-CLI maintains is an artefact of the REPL pattern, not a requirement of the
-underlying orchestration.
+Pass session_id in the request body to continue an existing conversation. If
+omitted, a new session_id is generated and returned in the response — the
+frontend should persist this and include it on subsequent turns.
+
+Two memory layers operate in parallel:
+  Short-term: in-process dict (_session_store), last SESSION_HISTORY_LIMIT turns
+    per session_id. Resets on server restart — non-persistent by design for
+    local dev.
+  Long-term: Neo4j via memory.py. Extracted facts written after every turn,
+    retrieved at the start of every turn. Survives restarts.
+
+Prior turns in the messages array carry the raw user message, not the
+context-enriched turn_content — context (memory + KB) is injected fresh into
+the current turn only, exactly as the CLI harness does.
 """
 
 import os
@@ -48,6 +55,17 @@ import uuid
 from contextlib import asynccontextmanager
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+# Maximum number of prior turns retained per session in the in-memory store.
+# Each turn = 2 messages (user + assistant), so the Claude messages array can
+# grow to SESSION_HISTORY_LIMIT * 2 + 1 entries before hitting this cap.
+SESSION_HISTORY_LIMIT = 10
+
+# Short-term session history store.
+# Maps session_id → list of {"role": "user"/"assistant", "content": str}.
+# Non-persistent: resets on server restart. Known and accepted limitation for
+# local dev — durable session storage is a production concern, not a local one.
+_session_store: dict[str, list[dict]] = {}
 
 from dotenv import load_dotenv
 
@@ -85,6 +103,7 @@ app = FastAPI(title="ATJ API", lifespan=lifespan)
 class ChatRequest(BaseModel):
     user_id: str
     message: str
+    session_id: str | None = None
 
 
 class ChatResponse(BaseModel):
@@ -104,7 +123,8 @@ def health():
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(req: ChatRequest):
-    session_id = str(uuid.uuid4())
+    session_id = req.session_id or str(uuid.uuid4())
+    history = _session_store.get(session_id, [])
 
     try:
         memory_result = retrieve_memory(req.user_id, req.message)
@@ -130,11 +150,14 @@ def chat(req: ChatRequest):
     kb_context = format_kb_context(kb_result)
     turn_content = build_turn_content(req.message, memory_context, kb_context)
 
+    # Prior history uses raw user messages; context is injected fresh each turn.
+    messages = history + [{"role": "user", "content": turn_content}]
+
     response = app.state.client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
         system=app.state.system_prompt,
-        messages=[{"role": "user", "content": turn_content}],
+        messages=messages,
     )
     assistant_text = "".join(
         block.text for block in response.content if block.type == "text"
@@ -155,6 +178,12 @@ def chat(req: ChatRequest):
         write_memory(req.user_id, session_id, displayed_text, role="assistant")
     except Exception:
         pass
+
+    updated = history + [
+        {"role": "user", "content": req.message},
+        {"role": "assistant", "content": displayed_text},
+    ]
+    _session_store[session_id] = updated[-(SESSION_HISTORY_LIMIT * 2):]
 
     return ChatResponse(
         response=displayed_text,
