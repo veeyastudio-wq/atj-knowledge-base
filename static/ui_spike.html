@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATJ — generative UI spike</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.55;
+      background: #f5f4f1;
+      color: #1c1b18;
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 0 20px 80px;
+    }
+
+    .spike-label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #a8a39c;
+      margin-bottom: 36px;
+    }
+
+    /* ── Shared card ── */
+    .ui-card {
+      background: #fff;
+      border: 1px solid #e0ddd9;
+      border-radius: 6px;
+      padding: 28px 32px;
+      margin-bottom: 32px;
+    }
+
+    .ui-card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1c1b18;
+      margin-bottom: 24px;
+    }
+
+    /* ── Timeline ── */
+    .timeline {
+      position: relative;
+    }
+
+    .timeline-stage {
+      display: flex;
+      gap: 16px;
+      position: relative;
+    }
+
+    /* vertical connector between stages */
+    .timeline-stage:not(:last-child) .stage-spine::after {
+      content: "";
+      display: block;
+      width: 1px;
+      background: #e0ddd9;
+      flex: 1;
+      margin: 4px auto 0;
+    }
+
+    .stage-spine {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20px;
+      flex-shrink: 0;
+    }
+
+    .stage-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 4px;
+    }
+
+    .timeline-stage[data-status="complete"] .stage-dot {
+      background: #5a8c5e;
+    }
+
+    .timeline-stage[data-status="current"] .stage-dot {
+      background: #3a6496;
+      box-shadow: 0 0 0 3px rgba(58, 100, 150, 0.15);
+      width: 14px;
+      height: 14px;
+      margin-top: 3px;
+    }
+
+    .timeline-stage[data-status="upcoming"] .stage-dot {
+      background: #fff;
+      border: 2px solid #c8c4be;
+    }
+
+    .stage-body {
+      padding-bottom: 20px;
+      flex: 1;
+    }
+
+    .timeline-stage:last-child .stage-body {
+      padding-bottom: 0;
+    }
+
+    .stage-label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .timeline-stage[data-status="complete"] .stage-label {
+      color: #5a8c5e;
+    }
+
+    .timeline-stage[data-status="current"] .stage-label {
+      color: #3a6496;
+      font-weight: 600;
+    }
+
+    .timeline-stage[data-status="upcoming"] .stage-label {
+      color: #6e6b65;
+    }
+
+    .stage-date {
+      font-size: 12px;
+      color: #a8a39c;
+      margin-top: 1px;
+    }
+
+    .stage-desc {
+      font-size: 13px;
+      color: #6e6b65;
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    /* ── Checklist ── */
+    .checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .checklist-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .checklist-item input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      accent-color: #5a8c5e;
+      cursor: default;
+    }
+
+    .checklist-content {
+      flex: 1;
+    }
+
+    .checklist-label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
+    }
+
+    .checklist-item.done .checklist-label {
+      color: #a8a39c;
+      text-decoration: line-through;
+      text-decoration-color: #c8c4be;
+      font-weight: 400;
+    }
+
+    .checklist-desc {
+      font-size: 13px;
+      color: #a8a39c;
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    .checklist-item:not(.done) .checklist-desc {
+      color: #6e6b65;
+    }
+  </style>
+</head>
+<body>
+  <p class="spike-label">ATJ — generative UI spike · static fixtures · local dev only</p>
+
+  <div id="timeline-root"></div>
+  <div id="checklist-root"></div>
+
+  <script>
+    const timelineFixture = {
+      title: "Your divorce — where things stand",
+      stages: [
+        {
+          id: "s1",
+          label: "Application filed",
+          status: "complete",
+          description: "Your D8 application was submitted online via MyHMCTS.",
+          date: "3 March 2026"
+        },
+        {
+          id: "s2",
+          label: "Acknowledgement of service",
+          status: "complete",
+          description: "Your ex-spouse confirmed receipt of the application."
+        },
+        {
+          id: "s3",
+          label: "20-week cooling-off period",
+          status: "current",
+          description: "This period must pass before the court can make a conditional order.",
+          date: "Ends 21 July 2026"
+        },
+        {
+          id: "s4",
+          label: "Conditional order",
+          status: "upcoming",
+          description: "A judge confirms the legal grounds for divorce are met."
+        },
+        {
+          id: "s5",
+          label: "6-week wait",
+          status: "upcoming"
+        },
+        {
+          id: "s6",
+          label: "Final order",
+          status: "upcoming",
+          description: "The marriage is legally ended."
+        }
+      ]
+    };
+
+    const checklistFixture = {
+      title: "Before your FDR hearing",
+      items: [
+        {
+          id: "c1",
+          label: "File and serve Form E",
+          done: true,
+          description: "Full financial disclosure. Sworn as a statement of truth."
+        },
+        {
+          id: "c2",
+          label: "Exchange questionnaires",
+          done: true,
+          description: "Questions arising from the other party's Form E."
+        },
+        {
+          id: "c3",
+          label: "Chronology",
+          done: false,
+          description: "A short timeline of the marriage and key financial events."
+        },
+        {
+          id: "c4",
+          label: "Statement of issues",
+          done: false,
+          description: "A brief summary of what remains in dispute."
+        },
+        {
+          id: "c5",
+          label: "Open proposals",
+          done: false,
+          description: "Your opening position on how assets should be divided."
+        },
+        {
+          id: "c6",
+          label: "Costs estimate (Form H1)",
+          done: false,
+          description: "An estimate of the costs incurred so far."
+        }
+      ]
+    };
+
+    function renderTimeline(fixture, container) {
+      const card = document.createElement("div");
+      card.className = "ui-card";
+
+      const title = document.createElement("div");
+      title.className = "ui-card-title";
+      title.textContent = fixture.title;
+      card.appendChild(title);
+
+      const list = document.createElement("div");
+      list.className = "timeline";
+
+      fixture.stages.forEach(function(stage) {
+        const row = document.createElement("div");
+        row.className = "timeline-stage";
+        row.dataset.status = stage.status;
+
+        const spine = document.createElement("div");
+        spine.className = "stage-spine";
+
+        const dot = document.createElement("div");
+        dot.className = "stage-dot";
+        spine.appendChild(dot);
+        row.appendChild(spine);
+
+        const body = document.createElement("div");
+        body.className = "stage-body";
+
+        const label = document.createElement("div");
+        label.className = "stage-label";
+        label.textContent = stage.label;
+        body.appendChild(label);
+
+        if (stage.date) {
+          const date = document.createElement("div");
+          date.className = "stage-date";
+          date.textContent = stage.date;
+          body.appendChild(date);
+        }
+
+        if (stage.description) {
+          const desc = document.createElement("div");
+          desc.className = "stage-desc";
+          desc.textContent = stage.description;
+          body.appendChild(desc);
+        }
+
+        row.appendChild(body);
+        list.appendChild(row);
+      });
+
+      card.appendChild(list);
+      container.appendChild(card);
+    }
+
+    function renderChecklist(fixture, container) {
+      const card = document.createElement("div");
+      card.className = "ui-card";
+
+      const title = document.createElement("div");
+      title.className = "ui-card-title";
+      title.textContent = fixture.title;
+      card.appendChild(title);
+
+      const list = document.createElement("div");
+      list.className = "checklist";
+
+      fixture.items.forEach(function(item) {
+        const row = document.createElement("div");
+        row.className = "checklist-item" + (item.done ? " done" : "");
+
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.checked = item.done;
+        checkbox.disabled = true;
+        row.appendChild(checkbox);
+
+        const content = document.createElement("div");
+        content.className = "checklist-content";
+
+        const label = document.createElement("div");
+        label.className = "checklist-label";
+        label.textContent = item.label;
+        content.appendChild(label);
+
+        if (item.description) {
+          const desc = document.createElement("div");
+          desc.className = "checklist-desc";
+          desc.textContent = item.description;
+          content.appendChild(desc);
+        }
+
+        row.appendChild(content);
+        list.appendChild(row);
+      });
+
+      card.appendChild(list);
+      container.appendChild(card);
+    }
+
+    renderTimeline(timelineFixture, document.getElementById("timeline-root"));
+    renderChecklist(checklistFixture, document.getElementById("checklist-root"));
+  </script>
+</body>
+</html>

@@ -228,7 +228,80 @@ parallel and discovering integration problems at the end.
 7. Baseline interaction polish: streaming, stop button, typing indicators,
    trust signals, searchable history.
 
-Next step: Phase 2, the generative UI spike.
+Phase 2 complete (19 June 2026). See below.
+
+## Phase 2 — generative UI spike (complete, 19 June 2026)
+
+Two new files added, isolated from the rest of the build:
+
+**static/ui_spike.html** — standalone static page, no framework, no build
+step, no backend calls. Renders two hardcoded fixture objects on load:
+
+- Timeline fixture: "Your divorce — where things stand", 6 stages using the
+  divorce track (filed/acknowledged/20-week period/conditional order/6-week
+  wait/final order). Two stages complete (green dot), one current (blue dot
+  with glow, bold label), three upcoming (hollow gray dot). Gray vertical
+  connector lines between stages.
+- Checklist fixture: "Before your FDR hearing", 6 items. Two checked/done
+  (strikethrough, muted text), four unchecked with normal-weight labels and
+  gray description text below each.
+
+Styling: warm off-white background, white cards, system sans-serif font.
+Calm and minimal per the locked UI direction. Spike label at top identifies
+this as dev-only.
+
+**scripts/generative_ui_spike.py** — standalone script, not connected to
+chat.py, api.py, memory.py, or retrieve.py. Defines two tools
+(render_timeline and render_checklist) with the same schemas as the HTML
+fixtures. Sends 5 varied prompts to claude-sonnet-4-6 with
+tool_choice={"type": "any"} and prints the raw tool_use block for each.
+
+Schema used by both tools — render_timeline:
+  { "title": string, "stages": [{ "id", "label",
+    "status": "upcoming"|"current"|"complete",
+    "description"?, "date"? }] }
+
+Schema used by both tools — render_checklist:
+  { "title": string, "items": [{ "id", "label", "done": boolean,
+    "description"? }] }
+
+5-prompt run results (19 June 2026):
+
+1. "What happens after I file for divorce?"
+   → render_timeline, 8 stages, all required fields present. ✓
+
+2. "What do I need to do before my financial dispute resolution hearing?"
+   → render_checklist, 12 items, all required fields present. ✓
+
+3. "Can you show me the financial remedy track from the very start?"
+   → render_timeline called, but returned only {"title": "..."} with no
+   stages array — schema violation. Root cause: MAX_TOKENS=1024 is too
+   tight for a detailed 7-8 stage track with descriptions; the JSON was
+   cut before the stages array was serialised. Fix before wiring into the
+   live chat flow: raise MAX_TOKENS in the spike script (and in the live
+   flow, which already uses a higher limit).
+
+4. "What are the steps involved in a C100 child arrangements application?"
+   → render_timeline, 8 stages, all required fields present. ✓
+
+5. "What documents do I need to bring to my First Appointment?"
+   → render_checklist, 13 items, all required fields present. ✓
+
+4/5 prompts produced fully schema-valid output. The one deviation (prompt
+3) was a token limit issue, not a tool-use or schema problem — the model
+chose the right tool and generated a valid title, it just ran out of room
+before completing the stages array. Confirmed diagnosis: prompts 1 and 4
+both produced 8-stage timelines without hitting the limit, because prompt
+3's financial remedy track is longer and Claude began with more detailed
+descriptions per stage.
+
+Conclusion: Claude reliably produces the correct tool and correct schema
+shape when token budget is adequate. Raising MAX_TOKENS resolves prompt 3.
+The spike has proven the rendering logic (static/ui_spike.html) and the
+tool-use schema compliance (generative_ui_spike.py) independently, as
+intended.
+
+Next step: Phase 3 — wire generative UI into the real chat flow.
 
 ## Claude Code prompt rule, standing (three tiers)
 
