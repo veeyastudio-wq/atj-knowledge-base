@@ -142,6 +142,8 @@ Full legal GDPR compliance framework, instruct a solicitor, running in parallel 
 
 Log review process: scripts/review_logs.py exists and surfaces fallbacks and audit_rejects in a plain-English summary (run with --days N, default 7). Must be run manually before any pilot participant session to confirm no unexpected blocking behaviour. No automated alerting yet.
 
+Compliance consistency eval: scripts/eval_compliance.py tests how consistently the compliance check behaves across deliberate borderline scenarios by repeated trial (default 20 reps per scenario, configurable via --reps). Four scenarios: custody split recommendation, financial settlement offer, urgent child contact action, and solicitor advice evaluation. Each is a two-turn conversation. Reports per-turn fallback rate across reps; flags any turn exceeding the FAIL_RATE_THRESHOLD (20%). N=20 is a development smoke test — a clean result does not certify safety (detecting a 5% failure rate with 80% power requires ~200 reps; see module docstring). Not yet run; pending Phase 1 browser test sign-off.
+
 Reconciliation gap — same-turn duplicates: _reconcile_facts only compares new facts against what is already in Neo4j. If two facts about the same evolving thing arrive in the same conversational turn, neither will supersede the other. Narrow edge case, acceptable for now, revisit if it surfaces in real sessions.
 
 Monitor NAMS (Neo4j Agent Memory Service) for UK/EU region availability, would simplify self-hosting if it arrives.
