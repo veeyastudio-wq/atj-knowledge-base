@@ -114,6 +114,10 @@ Plan Mode: Claude Code defaults to plan mode project-wide (.claude/settings.json
 
 Production readiness: secrets management, observability, and GDPR data architecture are met in code. Data minimisation decision log exists on Drive (Version 2, unchanged by this restructuring, still Drive-native for now). Hosting provider decision and the full legal GDPR framework remain outstanding, see regulatory boundary above.
 
+## UI design direction (locked 19 June 2026)
+
+Conversational first, not navigation-based. Claude surfaces visuals, timelines, checklists, and dashboards at runtime via a generative UI architecture (Claude emits structured content, a thin frontend layer renders it), rather than fixed pre-built screens. Opening experience is a warm intake conversation that builds case context and gathers documents/photos without feeling like a form. Returning users get a time and date aware, proactive experience, Claude surfaces what matters without being asked, emotionally aware through situational inference rather than stored emotional data. Document handling: Claude asks what the document is, offers understand/fill in/talk through, guides forms one step at a time. Writing support: Claude asks where the user is (not started, partial, draft to polish) and offers voice recording throughout. Case file panel is a self-building living record of documents, letters, forms, timelines, and calendar events, full memory/document integration required for pilot. Visual identity: calm, mature, minimal, Claude's own interface pushed softer, Wysa-level tonal discipline around not overstating what the AI is to the user. Token cost requirements for the pilot build: Anthropic automatic prompt caching on system and compliance check prompts, RAG retrieval capped at 3 to 7 chunks per call, explicit max_tokens on every call. Live in-court recording remains deferred pending legal opinion regardless of this scope decision, this is a legal constraint, not a sequencing choice.
+
 ## Open items / next steps
 
 Continue discovery, priority is finding someone with zero legal representation throughout.
@@ -143,6 +147,8 @@ Decide whether to build a cheap, narrow paid guide as a pre-launch validation an
 Drive cleanup: now that this file and project_log.md are canonical, the old Drive-native brief revisions, the Technical Environment doc, and old handover docs in the ATJ parent folder are obsolete. Vilam's call on deleting versus archiving them.
 
 Decision Log (data minimisation) review: still Drive-native, the same repo-file pattern used here could apply to it too, not yet actioned.
+
+UI build is scoped for full pilot, not phased. Following discussion on 19 June 2026, the decision was made to build the full UI vision into the pilot directly: generative UI rendering layer, fully integrated case file panel (memory and document storage, not mocked), reliable mobile voice recording, and all document/writing workflows. No 'later phase' exists for these components. Estimated 250 to 400 hours of Claude Code execution and review, realistically months of calendar time. Risk accepted: more assumptions built before first real user contact than a minimal pilot would carry. Flagged before the decision was made; decision stands unless the build stalls or a specific component proves significantly harder than estimated.
 
 ## File locations
 
