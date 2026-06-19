@@ -53,6 +53,7 @@ import os
 import sys
 import uuid
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -67,12 +68,17 @@ SESSION_HISTORY_LIMIT = 10
 # local dev — durable session storage is a production concern, not a local one.
 _session_store: dict[str, list[dict]] = {}
 
+# Static frontend directory — absolute path so the mount works regardless of
+# where uvicorn is invoked from.
+STATIC_DIR = Path(__file__).parent.parent / "static"
+
 from dotenv import load_dotenv
 
 load_dotenv()
 
 from anthropic import Anthropic
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from memory import initialise_memory, retrieve_memory, write_memory, RETRIEVE_MEMORY_LIMIT
@@ -194,3 +200,8 @@ def chat(req: ChatRequest):
         memory_truncated=mem_truncated,
         session_id=session_id,
     )
+
+
+# Serve static/ at / — must be mounted after all API routes so explicit routes
+# take priority. html=True makes / serve index.html automatically.
+app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
