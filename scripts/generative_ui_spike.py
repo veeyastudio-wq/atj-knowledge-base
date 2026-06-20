@@ -36,7 +36,11 @@ SYSTEM = (
     "what someone needs to do or prepare — tasks, documents, steps to complete "
     "before a deadline — always use the render_checklist tool. Use realistic, "
     "accurate content drawn from the England and Wales family court system. "
-    "Always call one of the provided tools; do not reply in plain text."
+    "Always call one of the provided tools; do not reply in plain text. "
+    "If the user's question covers both the financial remedy track and the "
+    "child arrangements track, call render_timeline twice in the same response "
+    "— once for each track as its own complete, separate timeline. Do not "
+    "merge both tracks into a single combined timeline."
 )
 
 TOOLS = [
@@ -119,9 +123,10 @@ PROMPTS = [
 
 def _call_once(
     client: Anthropic, prompt: str
-) -> tuple[str | None, dict | None, str]:
-    """One API call. Returns (tool_name, input_dict, stop_reason).
-    tool_name and input_dict are None if no tool_use block was returned."""
+) -> tuple[list[tuple[str, dict]], str]:
+    """One API call. Returns (blocks, stop_reason) where blocks is a list of
+    (tool_name, input_dict) tuples for every tool_use block in the response.
+    Empty list if no tool_use block was returned."""
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
@@ -130,11 +135,8 @@ def _call_once(
         tool_choice={"type": "any"},
         messages=[{"role": "user", "content": prompt}],
     )
-    blocks = [b for b in response.content if b.type == "tool_use"]
-    if not blocks:
-        return None, None, response.stop_reason
-    block = blocks[0]
-    return block.name, block.input, response.stop_reason
+    blocks = [(b.name, b.input) for b in response.content if b.type == "tool_use"]
+    return blocks, response.stop_reason
 
 
 def _validate(tool_name: str | None, inp: dict | None) -> tuple[bool, str]:
@@ -172,45 +174,93 @@ def _print_raw(tool_name: str | None, inp: dict | None, indent: str = "    ") ->
 def run_rep(
     client: Anthropic, prompt: str, prompt_idx: int, rep: int
 ) -> dict:
-    """Run one rep with retry-once. Returns result dict with outcome and attempts."""
+    """Run one rep with retry-once. Returns result dict with outcome and attempts.
+
+    Handles responses with multiple tool_use blocks (e.g. two render_timeline
+    calls for a combined-track question). All blocks are validated individually;
+    the response passes only if every block is valid. The return dict keeps
+    backward-compatible top-level keys (tool_name, input, valid, reason) pointing
+    to the first block so callers that expect a single-block record still work.
+    """
     label = f"P{prompt_idx}r{rep}"
 
-    tool1, inp1, sr1 = _call_once(client, prompt)
-    valid1, reason1 = _validate(tool1, inp1)
+    def _validate_all(blocks: list[tuple[str, dict]]) -> tuple[bool, list[dict]]:
+        if not blocks:
+            return False, [{"tool_name": None, "input": None,
+                            "valid": False, "reason": "no tool_use block returned"}]
+        results = []
+        for tool_name, inp in blocks:
+            valid, reason = _validate(tool_name, inp)
+            results.append({"tool_name": tool_name, "input": inp,
+                            "valid": valid, "reason": reason})
+        return all(r["valid"] for r in results), results
 
-    if valid1:
-        print(f"  {label}: passed_first  (stop_reason: {sr1})")
+    def _print_blocks(block_results: list[dict], indent: str = "    ") -> None:
+        for i, r in enumerate(block_results, 1):
+            status = "valid" if r["valid"] else f"INVALID: {r['reason']}"
+            print(f"{indent}block {i}: {r['tool_name']}  [{status}]")
+            _print_raw(r["tool_name"], r["input"], indent=indent + "  ")
+
+    def _attempt_record(block_results: list[dict], stop_reason: str) -> dict:
+        # Backward-compat keys point to first block; 'blocks' carries the full list.
+        first = block_results[0]
+        all_valid = all(r["valid"] for r in block_results)
+        fail_reason = next((r["reason"] for r in block_results if not r["valid"]), "")
+        return {
+            "stop_reason": stop_reason,
+            "tool_name": first["tool_name"],
+            "input": first["input"],
+            "valid": all_valid,
+            "reason": fail_reason,
+            "blocks": block_results,
+        }
+
+    blocks1, sr1 = _call_once(client, prompt)
+    all_valid1, block_results1 = _validate_all(blocks1)
+
+    if all_valid1:
+        n = len(blocks1)
+        if n == 1:
+            # Preserve original single-block output format exactly.
+            print(f"  {label}: passed_first  (stop_reason: {sr1})")
+        else:
+            print(f"  {label}: passed_first  (stop_reason: {sr1}, blocks: {n})")
+            _print_blocks(block_results1)
         return {
             "label": label,
             "prompt_idx": prompt_idx,
             "outcome": "passed_first",
-            "attempts": [
-                {"stop_reason": sr1, "tool_name": tool1,
-                 "input": inp1, "valid": True, "reason": ""},
-            ],
+            "attempts": [_attempt_record(block_results1, sr1)],
         }
 
-    print(f"  {label}: RETRY — attempt 1 failed: {reason1}  (stop_reason: {sr1})")
-    _print_raw(tool1, inp1)
+    fail_summary = "; ".join(
+        f"block {i+1} {r['reason']}" for i, r in enumerate(block_results1) if not r["valid"]
+    )
+    print(f"  {label}: RETRY — attempt 1 failed: {fail_summary}  "
+          f"(stop_reason: {sr1}, blocks: {len(blocks1)})")
+    _print_blocks(block_results1)
 
-    tool2, inp2, sr2 = _call_once(client, prompt)
-    valid2, reason2 = _validate(tool2, inp2)
+    blocks2, sr2 = _call_once(client, prompt)
+    all_valid2, block_results2 = _validate_all(blocks2)
 
-    if valid2:
-        print(f"    attempt 2: passed_retry  (stop_reason: {sr2})")
+    if all_valid2:
+        print(f"    attempt 2: passed_retry  (stop_reason: {sr2}, blocks: {len(blocks2)})")
+        _print_blocks(block_results2, indent="      ")
     else:
-        print(f"    attempt 2: FALLBACK — {reason2}  (stop_reason: {sr2})")
-        _print_raw(tool2, inp2)
+        fail_summary2 = "; ".join(
+            f"block {i+1} {r['reason']}" for i, r in enumerate(block_results2) if not r["valid"]
+        )
+        print(f"    attempt 2: FALLBACK — {fail_summary2}  "
+              f"(stop_reason: {sr2}, blocks: {len(blocks2)})")
+        _print_blocks(block_results2, indent="      ")
 
     return {
         "label": label,
         "prompt_idx": prompt_idx,
-        "outcome": "passed_retry" if valid2 else "fallback",
+        "outcome": "passed_retry" if all_valid2 else "fallback",
         "attempts": [
-            {"stop_reason": sr1, "tool_name": tool1,
-             "input": inp1, "valid": False, "reason": reason1},
-            {"stop_reason": sr2, "tool_name": tool2,
-             "input": inp2, "valid": valid2, "reason": reason2},
+            _attempt_record(block_results1, sr1),
+            _attempt_record(block_results2, sr2),
         ],
     }
 
