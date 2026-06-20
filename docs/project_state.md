@@ -218,9 +218,11 @@ parallel and discovering integration problems at the end.
    to live backend responses. This is the most technically demanding and
    least precedented piece, tested in isolation deliberately.
 3. Wire generative UI into the real chat flow, once the spike works.
+   (complete, 20 June 2026 — full loop proven end to end, see Phase 3
+   section above.)
 4. Case file panel — living record fed by real memory and document
    storage, not mocked. Built after the chat loop is solid since it's a
-   second UI surface drawing on the same underlying state.
+   second UI surface drawing on the same underlying state. (next)
 5. Document handling and writing support workflows (upload, ask-what-it-is
    flow, three writing-support paths).
 6. Voice recording on mobile, reliable from day one per the locked UI
@@ -506,6 +508,38 @@ static/ui_spike.html already proved the rendering pattern against
 fixtures in Phase 2, this is porting that proven rendering logic to
 read from the real tool_blocks field instead of hardcoded fixtures.
 
+## Frontend rendering — Phase 3 complete (4c0d8dd, 20 June 2026)
+
+static/index.html now renders tool_blocks live. CSS and both render
+functions (renderTimeline, renderChecklist) ported from
+static/ui_spike.html unchanged. Response handling rebuilt so each ATJ
+turn is a container: response text first if non-empty, then any
+compliant tool_blocks rendered below it in the same turn, in order.
+Non-compliant blocks carry no tool_input (suppressed server-side per
+bddf409) and are skipped silently on the frontend rather than rendered
+empty. Verified live over HTTP against uvicorn on three cases: single
+timeline (5 stages), single checklist (10 items), and combined-track
+(two timeline cards, Financial Remedy then Child Arrangements, both
+compliant, both rendered in the same turn).
+
+Phase 3 is now complete. The full loop — browser to FastAPI to memory
+retrieval to RAG to Claude with tools to independent compliance check to
+rendered structured content — is proven end to end.
+
+**New finding from frontend verification:** the explicit two-track
+phrasing "Show me the financial remedy track and the child arrangements
+track please" reliably produced two timeline cards, but the shorter
+phrasing "financial remedy and child arrangements both at once" sometimes
+produced only one. This is distinct from the earlier MAX_TOKENS
+truncation bug (fixed and verified at 2048 tokens, commit history covers
+that). This is a prompt-following reliability gap on terser phrasing,
+not yet run through a formal eval batch. eval_tool_compliance.py's
+combined_track_variants test (4 phrasings, 40 calls, 0 fallbacks) did
+not include this shorter phrasing, so this gap was not previously
+measured or bounded. Flagged as a known limitation for a future eval
+pass. The failure mode is a missing card, not unsafe content reaching a
+user — not a blocker.
+
 ## Claude Code prompt rule, standing (three tiers)
 
 1. Containment question on every prompt, tailored to the specific change
@@ -572,6 +606,8 @@ Decide whether to build a cheap, narrow paid guide as a pre-launch validation an
 Drive cleanup: now that this file and project_log.md are canonical, the old Drive-native brief revisions, the Technical Environment doc, and old handover docs in the ATJ parent folder are obsolete. Vilam's call on deleting versus archiving them.
 
 Decision Log (data minimisation) review: still Drive-native, the same repo-file pattern used here could apply to it too, not yet actioned.
+
+Run a phrasing-variation eval on combined-track prompts (shorter, more casual phrasings specifically) to bound how often the second timeline is dropped. The existing combined_track_variants eval used 4 phrasings, all moderately explicit; the gap is casual/terse phrasings where the model may default to a single-track response. Failure mode is a missing card, not unsafe content, so not a blocker, but needs to be measured before the combined-track feature can be called reliable across the phrasing range real users will use.
 
 UI build is scoped for full pilot, not phased. Following discussion on 19 June 2026, the decision was made to build the full UI vision into the pilot directly: generative UI rendering layer, fully integrated case file panel (memory and document storage, not mocked), reliable mobile voice recording, and all document/writing workflows. No 'later phase' exists for these components. Estimated 250 to 400 hours of Claude Code execution and review, realistically months of calendar time. Risk accepted: more assumptions built before first real user contact than a minimal pilot would carry. Flagged before the decision was made; decision stands unless the build stalls or a specific component proves significantly harder than estimated.
 
