@@ -17,6 +17,7 @@ Usage:
     python3.12 scripts/generative_ui_spike.py
 """
 
+import argparse
 import json
 
 from dotenv import load_dotenv
@@ -215,15 +216,29 @@ def run_rep(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Generative UI spike — tool-use schema test")
+    parser.add_argument("--prompt", type=str, default=None,
+                        help="Run a single prompt instead of the built-in 5")
+    parser.add_argument("--reps", type=int, default=1,
+                        help="Number of reps for --prompt (default 1; ignored without --prompt)")
+    args = parser.parse_args()
+
     client = Anthropic()
     results = []
     sep = "─" * 64
 
-    for p_idx, prompt in enumerate(PROMPTS, 1):
+    if args.prompt is not None:
+        prompts_to_run = [args.prompt]
+        reps = args.reps
+    else:
+        prompts_to_run = PROMPTS
+        reps = REPS
+
+    for p_idx, prompt in enumerate(prompts_to_run, 1):
         print(f"\n{sep}")
         print(f"Prompt {p_idx}: {prompt}")
         print(sep)
-        for rep in range(1, REPS + 1):
+        for rep in range(1, reps + 1):
             result = run_rep(client, prompt, p_idx, rep)
             results.append(result)
 
@@ -242,12 +257,12 @@ def main() -> None:
     print()
     print(f"  {'Prompt':<50}  {'fallbacks':>9}  {'retried':>7}")
     print(f"  {'─'*50}  {'─'*9}  {'─'*7}")
-    for p_idx, prompt in enumerate(PROMPTS, 1):
+    for p_idx, prompt in enumerate(prompts_to_run, 1):
         p_results = [r for r in results if r["prompt_idx"] == p_idx]
         p_fallbacks = sum(1 for r in p_results if r["outcome"] == "fallback")
         p_retried = sum(1 for r in p_results if r["outcome"] in ("passed_retry", "fallback"))
         short = prompt[:50]
-        print(f"  {short:<50}  {p_fallbacks}/{REPS}        {p_retried}/{REPS}")
+        print(f"  {short:<50}  {p_fallbacks}/{reps}        {p_retried}/{reps}")
     print(sep)
 
 

@@ -314,10 +314,15 @@ The one anomalous response from the original single-shot run (prompt 3,
 stages missing) was isolated variance — not reproduced across 20 calls.
 
 Conclusion: Claude reliably produces the correct tool and correct schema
-shape. The spike has proven the rendering logic (static/ui_spike.html)
-and the tool-use schema compliance (generative_ui_spike.py) independently,
-as intended. Validation and retry logic is in place for when wiring into
-the live chat flow introduces real-world variance.
+shape for well-scoped single-track prompts. The spike has proven the
+rendering logic (static/ui_spike.html) and the tool-use schema compliance
+(generative_ui_spike.py) independently, as intended. Validation and retry
+logic is in place for when wiring into the live chat flow introduces
+real-world variance. Caveat from adversarial batch: combined-track prompts
+("financial remedy and child arrangements both at once") generate 13–15
+stage timelines that exceeded the original 1024 token budget deterministically,
+leaving the stages array empty on every attempt and retry. The fix — raising
+MAX_TOKENS to 2048 — was verified on 20 June 2026 (see below).
 
 Adversarial batch results (10 prompts × 4 reps = 40 calls, 20 June 2026).
 Prompts designed to be ambiguous, vague, off-topic, or mixed-intent:
@@ -358,6 +363,16 @@ input is {"title": "..."} with no stages key.
 MAX_TOKENS raised from 1024 to 2048 in generative_ui_spike.py (20 June
 2026). This gives headroom for large combined-track timelines without
 risking truncation on mid-sized checklists and timelines.
+
+MAX_TOKENS fix verified (20 June 2026). Reran the deterministically
+failing prompt "financial remedy and child arrangements both at once
+whats the order of everything" 4 times against MAX_TOKENS=2048. All 4
+reps returned stop_reason: tool_use with a fully populated stages array
+(13–15 stages each, covering MIAM, FHDRA, FDA, FDR, DRA, final hearings
+for both tracks, and post-order steps). 0 retries, 0 fallbacks. The
+failure mode — stages array never opened before budget exhaustion — is
+not reproducible at 2048 tokens. Phase 2 adversarial findings are now
+fully resolved.
 
 Deferred to Phase 3: whether combined-track questions ("financial remedy
 and child arrangements both at once") should route to two separate tool
@@ -404,13 +419,6 @@ blanket requirement, judged too heavy for this build stage; heavier process
 already applies only where the containment/stress-test tiers call for it.
 
 ## Open items / next steps
-
-Immediate next step: MAX_TOKENS was raised from 1024 to 2048 in
-generative_ui_spike.py to fix the P9 combined-track failure (see Phase 2
-section above), but this has not been re-tested. Rerun the adversarial
-prompt "financial remedy and child arrangements both at once whats the
-order of everything" a few times against the new budget before treating
-Phase 2 as fully closed or starting Phase 3.
 
 Continue discovery, priority is finding someone with zero legal representation throughout.
 
