@@ -295,10 +295,29 @@ model variance — a single non-representative sample. The script was updated
 to print stop_reason alongside every tool_use block, making future
 regressions of this kind immediately distinguishable from token limit issues.
 
+Validation, retry, and fallback detection added to generative_ui_spike.py
+(20 June 2026). Content-level validation checks that title is non-empty
+and stages/items is a non-empty list — not just schema shape. Retry-once
+logic: on validation failure, the same prompt is resent once; if that
+also fails, the call is marked as a fallback. This mirrors the
+retry-then-fallback pattern in response_check.py, which retries a
+compliance check failure once before serving the fixed fallback response.
+
+20-call batch results (5 prompts × 4 reps, 20 June 2026):
+  Total calls (first attempts) : 20
+  Passed first attempt         : 20/20 (100%)
+  Needed retry                 : 0/20 (0%)
+  Fallback after retry         : 0/20 (0%)
+
+All 5 prompts clean across all 4 reps. 0 retries fired, 0 fallbacks.
+The one anomalous response from the original single-shot run (prompt 3,
+stages missing) was isolated variance — not reproduced across 20 calls.
+
 Conclusion: Claude reliably produces the correct tool and correct schema
-shape. The spike has proven the rendering logic (static/ui_spike.html) and
-the tool-use schema compliance (generative_ui_spike.py) independently, as
-intended.
+shape. The spike has proven the rendering logic (static/ui_spike.html)
+and the tool-use schema compliance (generative_ui_spike.py) independently,
+as intended. Validation and retry logic is in place for when wiring into
+the live chat flow introduces real-world variance.
 
 Next step: Phase 3 — wire generative UI into the real chat flow.
 

@@ -1,12 +1,15 @@
 """
 scripts/generative_ui_spike.py
 
-Phase 2 generative UI spike — tool-use schema test.
+Phase 2 generative UI spike — tool-use schema test with validation,
+retry, and fallback detection.
 
-Tests whether Claude reliably produces render_timeline and render_checklist
-tool_use blocks with the exact schema the frontend expects. Sends 5 varied
-prompts against a minimal context (no RAG, no memory, no compliance check).
-For each prompt, the raw tool_use block is printed for manual inspection.
+Runs 5 prompts × 4 reps (20 calls) to measure the real failure rate
+before wiring Claude's tool output into the live chat flow. For each
+call: validates that the tool_use block contains a non-empty stages or
+items array (not just schema shape), retries once on failure, records
+the final outcome (passed_first / passed_retry / fallback). Prints
+full raw input for any call that fails validation.
 
 Not imported by or connected to any other module in this project.
 
@@ -15,8 +18,6 @@ Usage:
 """
 
 import json
-import sys
-from pathlib import Path
 
 from dotenv import load_dotenv
 from anthropic import Anthropic
@@ -25,6 +26,7 @@ load_dotenv()
 
 MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 1024
+REPS = 4
 
 SYSTEM = (
     "You are an assistant for people navigating divorce and family court "
@@ -114,12 +116,11 @@ PROMPTS = [
 ]
 
 
-def run_prompt(client: Anthropic, prompt: str, index: int) -> None:
-    sep = "─" * 64
-    print(f"\n{sep}")
-    print(f"Prompt {index}: {prompt}")
-    print(sep)
-
+def _call_once(
+    client: Anthropic, prompt: str
+) -> tuple[str | None, dict | None, str]:
+    """One API call. Returns (tool_name, input_dict, stop_reason).
+    tool_name and input_dict are None if no tool_use block was returned."""
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
@@ -128,27 +129,125 @@ def run_prompt(client: Anthropic, prompt: str, index: int) -> None:
         tool_choice={"type": "any"},
         messages=[{"role": "user", "content": prompt}],
     )
+    blocks = [b for b in response.content if b.type == "tool_use"]
+    if not blocks:
+        return None, None, response.stop_reason
+    block = blocks[0]
+    return block.name, block.input, response.stop_reason
 
-    print(f"stop_reason: {response.stop_reason}")
 
-    tool_use_blocks = [b for b in response.content if b.type == "tool_use"]
-    if not tool_use_blocks:
-        print("[No tool_use block]")
+def _validate(tool_name: str | None, inp: dict | None) -> tuple[bool, str]:
+    """Content-level validation: non-empty title and non-empty stages/items list.
+    Returns (valid, failure_reason). failure_reason is '' on success."""
+    if tool_name is None or inp is None:
+        return False, "no tool_use block returned"
+    if tool_name == "render_timeline":
+        if not isinstance(inp.get("title"), str) or not inp["title"].strip():
+            return False, "title empty or missing"
+        stages = inp.get("stages")
+        if not isinstance(stages, list) or len(stages) == 0:
+            return False, "stages empty or missing"
+        return True, ""
+    if tool_name == "render_checklist":
+        if not isinstance(inp.get("title"), str) or not inp["title"].strip():
+            return False, "title empty or missing"
+        items = inp.get("items")
+        if not isinstance(items, list) or len(items) == 0:
+            return False, "items empty or missing"
+        return True, ""
+    return False, f"unexpected tool name: {tool_name!r}"
+
+
+def _print_raw(tool_name: str | None, inp: dict | None, indent: str = "    ") -> None:
+    if inp is None:
+        print(f"{indent}(no input)")
         return
+    raw = json.dumps(inp, indent=2, ensure_ascii=False)
+    print(f"{indent}raw input ({tool_name}):")
+    for line in raw.splitlines():
+        print(f"{indent}  {line}")
 
-    for block in tool_use_blocks:
-        print(f"\ntool: {block.name}")
-        print("input:")
-        print(json.dumps(block.input, indent=2, ensure_ascii=False))
+
+def run_rep(
+    client: Anthropic, prompt: str, prompt_idx: int, rep: int
+) -> dict:
+    """Run one rep with retry-once. Returns result dict with outcome and attempts."""
+    label = f"P{prompt_idx}r{rep}"
+
+    tool1, inp1, sr1 = _call_once(client, prompt)
+    valid1, reason1 = _validate(tool1, inp1)
+
+    if valid1:
+        print(f"  {label}: passed_first  (stop_reason: {sr1})")
+        return {
+            "label": label,
+            "prompt_idx": prompt_idx,
+            "outcome": "passed_first",
+            "attempts": [
+                {"stop_reason": sr1, "tool_name": tool1,
+                 "input": inp1, "valid": True, "reason": ""},
+            ],
+        }
+
+    print(f"  {label}: RETRY — attempt 1 failed: {reason1}  (stop_reason: {sr1})")
+    _print_raw(tool1, inp1)
+
+    tool2, inp2, sr2 = _call_once(client, prompt)
+    valid2, reason2 = _validate(tool2, inp2)
+
+    if valid2:
+        print(f"    attempt 2: passed_retry  (stop_reason: {sr2})")
+    else:
+        print(f"    attempt 2: FALLBACK — {reason2}  (stop_reason: {sr2})")
+        _print_raw(tool2, inp2)
+
+    return {
+        "label": label,
+        "prompt_idx": prompt_idx,
+        "outcome": "passed_retry" if valid2 else "fallback",
+        "attempts": [
+            {"stop_reason": sr1, "tool_name": tool1,
+             "input": inp1, "valid": False, "reason": reason1},
+            {"stop_reason": sr2, "tool_name": tool2,
+             "input": inp2, "valid": valid2, "reason": reason2},
+        ],
+    }
 
 
 def main() -> None:
     client = Anthropic()
-    for i, prompt in enumerate(PROMPTS, 1):
-        run_prompt(client, prompt, i)
+    results = []
     sep = "─" * 64
+
+    for p_idx, prompt in enumerate(PROMPTS, 1):
+        print(f"\n{sep}")
+        print(f"Prompt {p_idx}: {prompt}")
+        print(sep)
+        for rep in range(1, REPS + 1):
+            result = run_rep(client, prompt, p_idx, rep)
+            results.append(result)
+
+    total = len(results)
+    retried = sum(1 for r in results if r["outcome"] in ("passed_retry", "fallback"))
+    fallbacks = sum(1 for r in results if r["outcome"] == "fallback")
+    passed_first = total - retried
+
     print(f"\n{sep}")
-    print(f"Done. {len(PROMPTS)} prompts completed.")
+    print("SUMMARY")
+    print(sep)
+    print(f"  Total calls (first attempts) : {total}")
+    print(f"  Passed first attempt         : {passed_first}/{total}  ({passed_first/total*100:.0f}%)")
+    print(f"  Needed retry                 : {retried}/{total}  ({retried/total*100:.0f}%)")
+    print(f"  Fallback after retry         : {fallbacks}/{total}  ({fallbacks/total*100:.0f}%)")
+    print()
+    print(f"  {'Prompt':<50}  {'fallbacks':>9}  {'retried':>7}")
+    print(f"  {'─'*50}  {'─'*9}  {'─'*7}")
+    for p_idx, prompt in enumerate(PROMPTS, 1):
+        p_results = [r for r in results if r["prompt_idx"] == p_idx]
+        p_fallbacks = sum(1 for r in p_results if r["outcome"] == "fallback")
+        p_retried = sum(1 for r in p_results if r["outcome"] in ("passed_retry", "fallback"))
+        short = prompt[:50]
+        print(f"  {short:<50}  {p_fallbacks}/{REPS}        {p_retried}/{REPS}")
     print(sep)
 
 
