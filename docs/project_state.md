@@ -429,6 +429,50 @@ prose responses.
 Next: static/index.html still needs to render the live tool_use output,
 the frontend has only ever rendered the spike's hardcoded fixtures.
 
+## Adversarial eval against tool-use content (15cabaa)
+
+scripts/eval_tool_compliance.py built and run, 10 reps per scenario
+against the live chat.py tool-use path. Two of three scenario groups
+generalised cleanly beyond the specific cases that originally surfaced
+problems: combined_track_variants (4 phrasings, 40 calls, 0 fallbacks, 0
+malformed checker output, two-call routing reliable across phrasing) and
+brief_bridging_text (3 prompts, 30 calls, 0 fallbacks, 0 malformed
+output, hallucination fix not narrowly tuned to the one sentence that
+broke first).
+
+The third, decision_coaching_checklist, surfaced two findings outside
+the scope this script was built to test. The model never attempted a
+checklist on any of 30 reps across 3 phrasings, responding in prose
+instead every time, so this is testing the pre-existing prose compliance
+path, not tool-use content. Fallback rates: 20%, 50%, 20%.
+
+Finding 1, a substantive legal judgement question, not an engineering
+bug: two verbatim failing transcripts were reviewed directly. Both are
+well-constructed, explicit decline up front, correct citation of the
+Children Act 1989 welfare checklist, redirection to free legal clinics
+for case-specific judgement. Both still contain a moment of asymmetric
+or strategy-shaped framing at the exact point where the model addresses
+what the user should weigh, naming the cost of pursuing a hearing
+without naming the cost of accepting an inadequate arrangement in one
+case, and characterising a "reasonable, child-focused proposal" as
+carrying more weight than a "maximalist position" in the other.
+Genuinely borderline, not an obvious false positive or an obvious
+violation. This sits squarely in the territory the project has already
+named, that the gap between information and advice is narrower in
+practice than it sounds. Flagged as priority material for the planned
+solicitor review of system_prompt.md, real borderline transcripts rather
+than hypothetical scenarios, decision deferred to that review rather
+than resolved here.
+
+Finding 2, a logging gap: chat_ops.jsonl only writes original_draft when
+result == "fail" (response_check.py line 188). There is no record
+anywhere of what the model said on a passing check. This contradicts the
+project's standing assumption that the audit trail covers every check
+pass or fail. Open decision, not yet made: whether to log all generated
+content, a sample, or something redacted, a direct tradeoff against the
+existing data minimisation principle (local embeddings, special category
+data not leaving ATJ infrastructure).
+
 ## Claude Code prompt rule, standing (three tiers)
 
 1. Containment question on every prompt, tailored to the specific change
