@@ -473,6 +473,39 @@ content, a sample, or something redacted, a direct tradeoff against the
 existing data minimisation principle (local embeddings, special category
 data not leaving ATJ infrastructure).
 
+## Duplication fix and api.py wiring (134731b, bddf409)
+
+Discovered while preparing to wire the frontend: static/index.html talks
+only to scripts/api.py, not chat.py. api.py had its own separate inline
+copy of the orchestration logic and had drifted, it had none of the
+tool-use wiring or compliance fixes from earlier in this phase. This was
+caught by checking directly rather than assuming the frontend path was
+current.
+
+Fixed by extracting the shared orchestration into run_turn() in chat.py
+(134731b), build turn content, call Claude with tools, check every
+returned block for compliance, handle fallback. Verified behaviour
+identical to the pre-refactor version against the standard 5-prompt
+regression set before committing.
+
+api.py then wired onto run_turn() instead of maintaining a second copy
+(bddf409). ChatResponse extended with tool_blocks, carrying tool name,
+tool_input, and per-block compliant status, so the frontend has what it
+needs to render structured content. Non-compliant tool content is
+suppressed before serialisation, a failing block's tool_input is
+replaced with an empty object rather than sent to the client, mirroring
+the existing principle on the text path where a failing response is
+replaced with FALLBACK_RESPONSE rather than the rejected draft itself.
+Verified over real HTTP requests against the same 5-prompt set, plus
+explicit confirmation that the suppression works on the one prompt that
+fails compliance.
+
+Next: static/index.html still renders plain text only. tool_blocks is
+now available from the API but nothing on the frontend reads it yet.
+static/ui_spike.html already proved the rendering pattern against
+fixtures in Phase 2, this is porting that proven rendering logic to
+read from the real tool_blocks field instead of hardcoded fixtures.
+
 ## Claude Code prompt rule, standing (three tiers)
 
 1. Containment question on every prompt, tailored to the specific change
