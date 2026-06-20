@@ -405,6 +405,13 @@ already applies only where the containment/stress-test tiers call for it.
 
 ## Open items / next steps
 
+Immediate next step: MAX_TOKENS was raised from 1024 to 2048 in
+generative_ui_spike.py to fix the P9 combined-track failure (see Phase 2
+section above), but this has not been re-tested. Rerun the adversarial
+prompt "financial remedy and child arrangements both at once whats the
+order of everything" a few times against the new budget before treating
+Phase 2 as fully closed or starting Phase 3.
+
 Continue discovery, priority is finding someone with zero legal representation throughout.
 
 Run the next discovery conversation; any financial remedy participant must be asked specifically about their Form E experience on MyHMCTS.
