@@ -374,12 +374,20 @@ failure mode — stages array never opened before budget exhaustion — is
 not reproducible at 2048 tokens. Phase 2 adversarial findings are now
 fully resolved.
 
-Deferred to Phase 3: whether combined-track questions ("financial remedy
-and child arrangements both at once") should route to two separate tool
-calls rather than one oversized timeline. Two calls would fit cleanly
-within any token budget and let the frontend render them as separate
-panels. Decision deferred until the generative UI is wired to the live
-chat flow and real user phrasing is known.
+Combined-track routing decision resolved, 20 June 2026. generative_ui_spike.py
+system prompt now instructs the model to call render_timeline twice, once
+per track, for questions spanning financial remedy and child arrangements,
+rather than producing one combined timeline. _call_once and run_rep updated
+to return and validate all tool_use blocks per response, not just the
+first, since the original single-block return signature would have
+silently dropped a second call. 5-rep test against the previously failing
+combined-track prompt: 5/5 returned exactly two valid tool_use blocks,
+stop_reason tool_use, no retries, no fallbacks. N=5 is a smoke test, not
+certification. Separate observation, not yet investigated: stage count
+for the same track varied across reps (financial remedy 7 to 13 stages,
+child arrangements 9 to 11), worth revisiting once real user phrasing is
+in use. Phase 3 chat.py wiring should carry the equivalent two-call
+instruction into the live system prompt.
 
 Next step: Phase 3 — wire generative UI into the real chat flow.
 
