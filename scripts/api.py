@@ -82,18 +82,8 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from memory import initialise_memory, retrieve_memory, write_memory, RETRIEVE_MEMORY_LIMIT
-from retrieve import retrieve
-from response_check import check_response, FALLBACK_RESPONSE
-from chat import (
-    load_system_prompt,
-    format_memory_context,
-    format_kb_context,
-    build_turn_content,
-    MODEL,
-    MAX_TOKENS,
-    KB_TOP_K,
-)
+from memory import initialise_memory
+from chat import load_system_prompt, run_turn
 
 
 @asynccontextmanager
@@ -115,14 +105,32 @@ class ChatRequest(BaseModel):
     session_id: str | None = None
 
 
+class ToolBlock(BaseModel):
+    """Structured output from a single tool_use block returned by the model.
+
+    tool_input carries the full data (stages for render_timeline, items for
+    render_checklist) as returned by the model — this is what the frontend
+    renders. It is returned over HTTP but is not written to chat_ops.jsonl;
+    the log's data-minimisation behaviour (original_draft only on failures)
+    is unchanged.
+    """
+    tool_name: str
+    tool_input: dict
+    compliant: bool
+    compliance_reason: str | None
+
+
 class ChatResponse(BaseModel):
     response: str
     compliant: bool
-    compliance_reason: str | None
+    compliance_reason: str | None  # first tool-block failure reason, or None.
+    # Note: text-block failure reasons are not separately surfaced here —
+    # run_turn() does not return them. fallback_triggered is always accurate;
+    # compliance_reason may be None even when compliant=False for text-only
+    # failures. Resolving this requires run_turn() to return richer data.
     fallback_triggered: bool
-    memory_facts_retrieved: int
-    memory_truncated: bool
     session_id: str
+    tool_blocks: list[ToolBlock]
 
 
 @app.get("/health")
@@ -135,59 +143,43 @@ def chat(req: ChatRequest):
     session_id = req.session_id or str(uuid.uuid4())
     history = _session_store.get(session_id, [])
 
-    try:
-        memory_result = retrieve_memory(req.user_id, req.message)
-        memories = memory_result["facts"]
-        mem_truncated = memory_result["truncated"]
-    except Exception:
-        memories = []
-        mem_truncated = False
+    # run_turn handles memory retrieval, KB retrieval, the Claude API call with
+    # tools, compliance checks on every returned block (text and tool_use),
+    # fallback logic, and memory writes. All the logic that was previously
+    # duplicated here now lives in one place.
+    result = run_turn(
+        req.message,
+        history,
+        app.state.system_prompt,
+        app.state.client,
+        req.user_id,
+        session_id,
+    )
 
-    try:
-        kb_result = retrieve(req.message, top_k=KB_TOP_K)
-    except Exception:
-        kb_result = {}
+    displayed_text = result["displayed_text"]
 
-    memory_context = format_memory_context(memories)
-    if mem_truncated:
-        memory_context = (
-            f"Note: this user has more stored facts than fit in context. "
-            f"Only the {RETRIEVE_MEMORY_LIMIT} most recent are shown. "
-            f"Older facts may be relevant.\n\n"
-            + memory_context
+    tool_blocks = [
+        ToolBlock(
+            tool_name=tool_name,
+            # Suppress generated content for failing blocks — only compliant
+            # content is sent to the client. Mirrors the text field: failing
+            # text is swapped for FALLBACK_RESPONSE before serialisation.
+            # The full tool_input is retained server-side in run_turn()'s
+            # result and in chat_ops.jsonl (original_draft on fail).
+            tool_input=tool_input if tool_check["compliant"] else {},
+            compliant=tool_check["compliant"],
+            compliance_reason=tool_check.get("reason"),
         )
-    kb_context = format_kb_context(kb_result)
-    turn_content = build_turn_content(req.message, memory_context, kb_context)
+        for tool_name, tool_input, tool_check in result["tool_results"]
+    ]
+
+    # Surface the first tool-block failure as the top-level compliance_reason.
+    compliance_reason = next(
+        (tb.compliance_reason for tb in tool_blocks if not tb.compliant),
+        None,
+    )
 
     # Prior history uses raw user messages; context is injected fresh each turn.
-    messages = history + [{"role": "user", "content": turn_content}]
-
-    response = app.state.client.messages.create(
-        model=MODEL,
-        max_tokens=MAX_TOKENS,
-        system=app.state.system_prompt,
-        messages=messages,
-    )
-    assistant_text = "".join(
-        block.text for block in response.content if block.type == "text"
-    )
-
-    check = check_response(
-        req.message,
-        assistant_text,
-        user_identifier=req.user_id,
-        session_id=session_id,
-    )
-
-    fallback_triggered = not check["compliant"]
-    displayed_text = FALLBACK_RESPONSE if fallback_triggered else assistant_text
-
-    try:
-        write_memory(req.user_id, session_id, req.message, role="user")
-        write_memory(req.user_id, session_id, displayed_text, role="assistant")
-    except Exception:
-        pass
-
     updated = history + [
         {"role": "user", "content": req.message},
         {"role": "assistant", "content": displayed_text},
@@ -196,12 +188,11 @@ def chat(req: ChatRequest):
 
     return ChatResponse(
         response=displayed_text,
-        compliant=check["compliant"],
-        compliance_reason=check.get("reason"),
-        fallback_triggered=fallback_triggered,
-        memory_facts_retrieved=len(memories),
-        memory_truncated=mem_truncated,
+        compliant=result["compliant"],
+        compliance_reason=compliance_reason,
+        fallback_triggered=result["fallback_fired"],
         session_id=session_id,
+        tool_blocks=tool_blocks,
     )
 
 
