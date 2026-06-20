@@ -319,6 +319,53 @@ and the tool-use schema compliance (generative_ui_spike.py) independently,
 as intended. Validation and retry logic is in place for when wiring into
 the live chat flow introduces real-world variance.
 
+Adversarial batch results (10 prompts × 4 reps = 40 calls, 20 June 2026).
+Prompts designed to be ambiguous, vague, off-topic, or mixed-intent:
+  Total calls (first attempts) : 40
+  Passed first attempt         : 36/40 (90%)
+  Needed retry                 : 4/40  (10%)
+  Fallback after retry         : 4/40  (10%)
+
+All 4 retries were from one prompt only: "financial remedy and child
+arrangements both at once whats the order of everything". Every rep on
+this prompt returned render_timeline with only a title and no stages
+array, stop_reason: max_tokens, on both the first attempt and the retry.
+The model was attempting a combined 12-15 stage timeline covering both
+tracks simultaneously, and exhausted the 1024 token budget before
+reaching the stages array. The retry does not help because the same
+prompt hits the same ceiling identically both times.
+
+All other 9 prompts — including "hi", "summarise my case", "is my ex
+allowed to do this" — passed first attempt, clean. No retries, no
+fallbacks on any of them.
+
+Three prompts hit stop_reason: max_tokens but still passed validation:
+- "do I need a solicitor or can I do this myself and what forms..."
+  (4/4 reps max_tokens, all passed — 6-12 item checklists, JSON closed
+  cleanly before the budget ran out)
+- "I have a hearing tomorrow and no idea what to bring or what's going
+  to happen" (4/4 reps max_tokens, all passed — 10 item checklists,
+  all complete)
+- "I don't even know where to start..." (1/4 reps max_tokens, passed)
+
+For these three prompts, stop_reason: max_tokens did not mean content
+loss — the model completed the array and closed the JSON object before
+running out of tokens. The budget ran out at or after the closing brace.
+This is distinct from the P9 failure where the array was never opened.
+The log confirmed this: P3r1's input has 6 fully-formed items; P9r1's
+input is {"title": "..."} with no stages key.
+
+MAX_TOKENS raised from 1024 to 2048 in generative_ui_spike.py (20 June
+2026). This gives headroom for large combined-track timelines without
+risking truncation on mid-sized checklists and timelines.
+
+Deferred to Phase 3: whether combined-track questions ("financial remedy
+and child arrangements both at once") should route to two separate tool
+calls rather than one oversized timeline. Two calls would fit cleanly
+within any token budget and let the frontend render them as separate
+panels. Decision deferred until the generative UI is wired to the live
+chat flow and real user phrasing is known.
+
 Next step: Phase 3 — wire generative UI into the real chat flow.
 
 ## Claude Code prompt rule, standing (three tiers)

@@ -25,7 +25,7 @@ from anthropic import Anthropic
 load_dotenv()
 
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 1024
+MAX_TOKENS = 2048
 REPS = 4
 
 SYSTEM = (

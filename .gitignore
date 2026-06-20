@@ -1,6 +1,9 @@
 .DS_Store
 .env
+logs/
 logs/*.jsonl
 
 # Staging droplet reference (IP, credentials)
 staging.txt
+**/__pycache__/
+eval/golden_set_summary.txt
