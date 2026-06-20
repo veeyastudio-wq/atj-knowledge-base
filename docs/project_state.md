@@ -391,6 +391,44 @@ instruction into the live system prompt.
 
 Next step: Phase 3 — wire generative UI into the real chat flow.
 
+## Phase 3 — wiring into the live chat flow (in progress, 20 June 2026)
+
+Phase 3 wiring committed (a7959c4, 0dc2560). The generative UI tools and
+the two-call combined-track routing rule are live in chat.py, no longer
+isolated in the spike script. The independent compliance check was
+extended to cover tool_use content, closing a vacuous-pass gap where
+tool-only responses with no text block were previously checked against
+an empty string and trivially passed, this gap existed the moment tools
+were added and was caught before any live testing relied on the checker.
+
+Two checker calibration issues were found and fixed during this wiring,
+both scoped narrowly to the tool-use call path so the existing
+calibrated behaviour for ordinary prose responses elsewhere is
+untouched: a false positive on single-track timelines checked in
+isolation without knowing they're one half of a parallel-tracks pair,
+and a hallucination where the checker, given a short bridging sentence
+next to a substantive user question, would about 40% of the time (2/5
+reps) generate and judge its own imagined answer instead of the actual
+text. Both fixes verified clean on rerun, the hallucination fix
+specifically at 10/10 after showing 2/5 failures before.
+
+Final 5-prompt regression: 4/5 clean, P5 correctly flagged and fell
+back, a genuine catch of advice-adjacent checklist framing, not a
+defect.
+
+Open and explicitly unresolved: these fixes are validated only against
+the specific cases that surfaced them, not a full eval_compliance.py-
+style adversarial batch against tool-use content generally, that remains
+outstanding. Also unresolved: the model doesn't yet consistently decline
+decision-coaching checklist requests before generating, P5 attempted one
+this run after declining with prose in an earlier run, the compliance
+check caught it both times the model attempted it, but this is worth a
+future look the same way the closing-clause prompt work happened for
+prose responses.
+
+Next: static/index.html still needs to render the live tool_use output,
+the frontend has only ever rendered the spike's hardcoded fixtures.
+
 ## Claude Code prompt rule, standing (three tiers)
 
 1. Containment question on every prompt, tailored to the specific change
