@@ -12,9 +12,20 @@ The checker receives only the user_message and assistant_text — no system
 prompt, no conversation history, no KB context. It judges the response on
 its face.
 
+For tool_use blocks (render_timeline, render_checklist), check_tool_use_block
+assembles a synthetic prose representation of the tool output — title plus
+all stage/item labels and descriptions — and passes that through the same
+checker. This prevents tool_use content from bypassing compliance by virtue
+of containing no text blocks. The checker's behaviour on this synthetic prose
+is validated only against a small set of deliberately targeted test prompts,
+not against a full eval_compliance.py-style batch. A fuller adversarial run
+against tool_use scenarios is outstanding.
+
 Public API:
     check_response(user_message, assistant_text, *, user_identifier, session_id)
         -> {"compliant": bool, "reason": str | None}
+    check_tool_use_block(user_message, tool_name, tool_input, *, user_identifier, session_id)
+        -> {"compliant": bool, "reason": str | None, "prose": str}
 """
 
 import json
@@ -179,3 +190,94 @@ def check_response(
         )
 
     return {"compliant": result == "pass", "reason": reason}
+
+
+def _assemble_tool_prose(
+    tool_name: str, tool_input: dict, *, context_block_count: int = 1
+) -> str:
+    """Build a synthetic prose representation of a tool_use block.
+
+    Produces a sentence the compliance checker can read as a normal response:
+    title followed by all stage/item labels and descriptions joined inline.
+    Keeps the checker's input in the distribution it was calibrated on
+    (prose sentences) rather than presenting raw JSON or isolated field values.
+
+    When context_block_count > 1 and the tool is render_timeline, a framing
+    sentence is prepended telling the checker this is one of several parallel
+    tracks shown separately, so it does not penalise single-track ordering as
+    if it were claiming the tracks are sequential.
+    """
+    if tool_name == "render_timeline":
+        title = tool_input.get("title", "(no title)")
+        stages = tool_input.get("stages", [])
+        parts = []
+        for s in stages:
+            label = s.get("label", "")
+            desc = s.get("description", "")
+            parts.append(f"{label} — {desc}" if desc else label)
+        body = "; ".join(parts) if parts else "(no stages)"
+        prose = (
+            f"The assistant provided a timeline titled '{title}' "
+            f"with the following stages: {body}."
+        )
+        if context_block_count > 1:
+            prose = (
+                "Note: the assistant was instructed to show the financial remedy "
+                "and child arrangements tracks separately, as two timelines in the "
+                "same response, each covering one track that runs in parallel on its "
+                "own timetable independently of the other. "
+                "The following is one of those two separate timelines. "
+            ) + prose
+        return prose
+    if tool_name == "render_checklist":
+        title = tool_input.get("title", "(no title)")
+        items = tool_input.get("items", [])
+        parts = []
+        for i in items:
+            label = i.get("label", "")
+            desc = i.get("description", "")
+            parts.append(f"{label} — {desc}" if desc else label)
+        body = "; ".join(parts) if parts else "(no items)"
+        return (
+            f"The assistant provided a checklist titled '{title}' "
+            f"with the following items: {body}."
+        )
+    return (
+        f"The assistant called the tool '{tool_name}' with the following input: "
+        f"{json.dumps(tool_input, ensure_ascii=False)}"
+    )
+
+
+def check_tool_use_block(
+    user_message: str,
+    tool_name: str,
+    tool_input: dict,
+    *,
+    user_identifier: str = "unknown",
+    session_id: str = "unknown",
+    context_block_count: int = 1,
+) -> dict:
+    """Check a single tool_use block for compliance.
+
+    Assembles a synthetic prose representation of the tool output and passes
+    it through check_response, which uses the same checker and logging as
+    freeform text checks. If the block fails, the original_draft in the log
+    will be the assembled prose, not the raw JSON.
+
+    context_block_count: total number of tool_use blocks in the response.
+    When > 1 and the tool is render_timeline, a framing sentence is prepended
+    to tell the checker this is one of several parallel tracks shown separately.
+
+    Returns {"compliant": bool, "reason": str | None, "prose": str}.
+    The "prose" key carries the assembled text so callers can display it.
+    """
+    prose = _assemble_tool_prose(
+        tool_name, tool_input, context_block_count=context_block_count
+    )
+    result = check_response(
+        user_message,
+        prose,
+        user_identifier=user_identifier,
+        session_id=session_id,
+    )
+    return {**result, "prose": prose}

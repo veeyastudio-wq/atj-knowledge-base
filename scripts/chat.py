@@ -21,14 +21,87 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from memory import initialise_memory, retrieve_memory, write_memory, RETRIEVE_MEMORY_LIMIT
 from retrieve import retrieve
-from response_check import check_response, FALLBACK_RESPONSE
+from response_check import check_response, check_tool_use_block, FALLBACK_RESPONSE
 
 load_dotenv()
 
 SYSTEM_PROMPT_PATH = Path(__file__).parent.parent / "prompts" / "system_prompt.md"
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 1500
+MAX_TOKENS = 2048  # raised from 1500 to match spike: combined-track two-call responses need headroom
 KB_TOP_K = 4  # kept deliberately tight, see context engineering notes
+
+# Tool schemas — identical to scripts/generative_ui_spike.py; keep in sync manually.
+TOOLS = [
+    {
+        "name": "render_timeline",
+        "description": (
+            "Render a vertical timeline of stages in a legal process or journey. "
+            "Use for questions about what happens next, what a track looks like "
+            "from start to finish, or where the user is in a multi-step process."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "title": {"type": "string", "description": "Short heading for the timeline."},
+                "stages": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id":          {"type": "string"},
+                            "label":       {"type": "string"},
+                            "status":      {"type": "string", "enum": ["upcoming", "current", "complete"]},
+                            "description": {"type": "string"},
+                            "date":        {"type": "string"},
+                        },
+                        "required": ["id", "label", "status"],
+                    },
+                },
+            },
+            "required": ["title", "stages"],
+        },
+    },
+    {
+        "name": "render_checklist",
+        "description": (
+            "Render a checklist of tasks or required items. Use for questions "
+            "about what someone needs to do, prepare, or have ready — before a "
+            "hearing, before filing, or at a given stage of proceedings."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "title": {"type": "string", "description": "Short heading for the checklist."},
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id":          {"type": "string"},
+                            "label":       {"type": "string"},
+                            "done":        {"type": "boolean"},
+                            "description": {"type": "string"},
+                        },
+                        "required": ["id", "label", "done"],
+                    },
+                },
+            },
+            "required": ["title", "items"],
+        },
+    },
+]
+
+# Appended to the loaded system prompt at call time; keeps system_prompt.md unchanged.
+_TOOL_SYSTEM_ADDITION = (
+    "\n\n## Visual output tools\n\n"
+    "When asked about a process, journey, or sequence of steps, use the render_timeline tool. "
+    "When asked what someone needs to do or prepare — tasks, documents, steps to complete "
+    "before a deadline — use the render_checklist tool. "
+    "If the user's question covers both the financial remedy track and the child arrangements "
+    "track, call render_timeline twice in the same response — once for each track as its own "
+    "complete, separate timeline. Do not merge both tracks into a single combined timeline. "
+    "For all other questions, reply in plain text as normal."
+)
 
 
 def load_system_prompt() -> str:
@@ -134,27 +207,106 @@ def main():
         response = client.messages.create(
             model=MODEL,
             max_tokens=MAX_TOKENS,
-            system=system_prompt,
+            system=system_prompt + _TOOL_SYSTEM_ADDITION,
+            tools=TOOLS,
+            tool_choice={"type": "auto"},
             messages=messages,
         )
+
         assistant_text = "".join(
             block.text for block in response.content if block.type == "text"
         )
+        tool_use_blocks = [
+            (block.name, block.input)
+            for block in response.content
+            if block.type == "tool_use"
+        ]
 
-        check = check_response(
-            user_message,
-            assistant_text,
-            user_identifier=user_identifier,
-            session_id=session_id,
-        )
-        if not check["compliant"]:
-            print(f"\n[COMPLIANCE FLAG] {check['reason']}\n")
+        # Compliance checks — text block first, then each tool_use block.
+        # Tool-use-only responses produce assistant_text="", which would trivially
+        # pass a text-only check; tool_use blocks must always be checked explicitly.
+        compliant = True
+        fail_reason = None
+
+        if assistant_text:
+            # When the response also includes tool_use blocks, the text block is
+            # typically a short framing sentence. Append a note so the checker does
+            # not hallucinate additional content to fill the perceived gap. The note
+            # explicitly states that brevity is not a reason to reduce scrutiny —
+            # the checker must still flag the text present if it crosses into advice.
+            _checker_text = assistant_text
+            if tool_use_blocks:
+                _checker_text = (
+                    assistant_text
+                    + "\n\n[Note for compliance checker: The text above is "
+                    "intentionally brief — the substantive content for this turn "
+                    "is being provided separately as one or more structured "
+                    "timelines or checklists alongside this response. Evaluate "
+                    "only the literal text given above. Do not generate, imagine, "
+                    "or attempt to complete additional content that was not given. "
+                    "Brevity is not a reason to reduce scrutiny: if the text "
+                    "actually present crosses into advice, flag it as normal.]"
+                )
+            text_check = check_response(
+                user_message,
+                _checker_text,
+                user_identifier=user_identifier,
+                session_id=session_id,
+            )
+            if text_check["compliant"]:
+                print("  [compliance — text: PASS]")
+            else:
+                print(f"  [compliance — text: FAIL] {text_check['reason']}")
+                compliant = False
+                fail_reason = text_check["reason"]
+
+        tool_results = []
+        for tool_name, tool_input in tool_use_blocks:
+            tool_check = check_tool_use_block(
+                user_message,
+                tool_name,
+                tool_input,
+                user_identifier=user_identifier,
+                session_id=session_id,
+                context_block_count=len(tool_use_blocks),
+            )
+            tool_results.append((tool_name, tool_input, tool_check))
+            status = "PASS" if tool_check["compliant"] else f"FAIL: {tool_check['reason']}"
+            print(f"  [compliance — {tool_name}: {status}]")
+            print(f"  prose sent to checker:")
+            for line in tool_check["prose"].splitlines():
+                print(f"    {line}")
+            if not tool_check["compliant"]:
+                compliant = False
+                fail_reason = tool_check["reason"]
+
+        if not compliant:
+            print(f"\n[COMPLIANCE FLAG] {fail_reason}\n")
             displayed_text = FALLBACK_RESPONSE
-        else:
+        elif tool_results:
+            parts = []
+            for tool_name, tool_input, _ in tool_results:
+                if tool_name == "render_timeline":
+                    n = len(tool_input.get("stages", []))
+                    parts.append(f"[timeline: {tool_input.get('title', '?')} — {n} stages]")
+                elif tool_name == "render_checklist":
+                    n = len(tool_input.get("items", []))
+                    parts.append(f"[checklist: {tool_input.get('title', '?')} — {n} items]")
+                else:
+                    parts.append(f"[{tool_name}]")
+            displayed_text = "\n".join(parts)
+        elif assistant_text:
             displayed_text = assistant_text
+        else:
+            print("[warning: response contained no text and no tool_use blocks]")
+            displayed_text = FALLBACK_RESPONSE
 
         print(f"\nATJ: {displayed_text}\n")
 
+        # Conversation history stores the displayed text, not raw tool_use blocks.
+        # Tool_use/tool_result pairs in history would require tool_result blocks
+        # the test harness does not provide; a text summary is API-safe for
+        # subsequent turns and sufficient for this harness.
         conversation_history.append({"role": "user", "content": user_message})
         conversation_history.append({"role": "assistant", "content": displayed_text})
 
