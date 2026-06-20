@@ -607,7 +607,26 @@ Drive cleanup: now that this file and project_log.md are canonical, the old Driv
 
 Decision Log (data minimisation) review: still Drive-native, the same repo-file pattern used here could apply to it too, not yet actioned.
 
-Run a phrasing-variation eval on combined-track prompts (shorter, more casual phrasings specifically) to bound how often the second timeline is dropped. The existing combined_track_variants eval used 4 phrasings, all moderately explicit; the gap is casual/terse phrasings where the model may default to a single-track response. Failure mode is a missing card, not unsafe content, so not a blocker, but needs to be measured before the combined-track feature can be called reliable across the phrasing range real users will use.
+Combined-track terse phrasing eval — run and closed (combined_track_terse_phrasings, 5 prompts × 20 reps = 100 calls, 20 June 2026). Block-count distribution per prompt:
+
+  "financial remedy and child arrangements both at once whats the order of everything"
+    2 blocks: 20/20 — 0 fallbacks
+
+  "money stuff and the kids stuff at the same time, what happens"
+    1 block: 7/20, 2 blocks: 13/20 — 35% drop rate; 1 malformed checker response (rep 8,
+    checker hallucinated instead of judging the synthetic prose; triggered a fallback,
+    so no bad content reached a user, but a routing failure still caused the single-block result)
+
+  "I've got both going on, finances and arrangements for the kids, what order does it all happen in"
+    1 block: 1/20, 2 blocks: 19/20 — 5% drop rate; 0 fallbacks
+
+  "both at once — finances and children, what's the order"
+    2 blocks: 20/20 — 0 fallbacks
+
+  "sorting out money and kids both at the same time, walk me through it"
+    2 blocks: 20/20 — 0 fallbacks
+
+The gap is phrasing-specific, not a general terseness problem. Four of five phrasings hit 19–20/20 dual-block, including the one originally observed to fail manually during Phase 3 verification. The outlier is the "money stuff / kids stuff" phrasing, which avoids both "financial remedy" and "child arrangements" entirely and yields a 35% single-block rate. The routing instruction in _TOOL_SYSTEM_ADDITION is reliable for any phrasing that uses recognisable variants of those terms; it does not reliably fire when neither term nor any close variant appears. No content compliance failures across all 100 calls. No system prompt change needed: the failure mode (one missing card) is bounded and phrasing-specific, the routing instruction is working for the realistic phrasing range, and improving coverage of highly colloquial avoidance of the legal terms is a diminishing return at this stage.
 
 UI build is scoped for full pilot, not phased. Following discussion on 19 June 2026, the decision was made to build the full UI vision into the pilot directly: generative UI rendering layer, fully integrated case file panel (memory and document storage, not mocked), reliable mobile voice recording, and all document/writing workflows. No 'later phase' exists for these components. Estimated 250 to 400 hours of Claude Code execution and review, realistically months of calendar time. Risk accepted: more assumptions built before first real user contact than a minimal pilot would carry. Flagged before the decision was made; decision stands unless the build stalls or a specific component proves significantly harder than estimated.
 

@@ -195,6 +195,24 @@ SCENARIOS = [
         ],
     },
     {
+        "name": "combined_track_terse_phrasings",
+        "description": (
+            "Five terse/casual phrasings of the combined financial-remedy + child-arrangements "
+            "question. Distinct from combined_track_variants, whose four phrasings are all "
+            "moderately explicit and showed 0 fallbacks across 40 calls. This scenario targets "
+            "shorter, more colloquial phrasing to measure how often the two-call render_timeline "
+            "routing rule drops the second timeline. Fallback rate is secondary — the primary "
+            "signal is block_counts: how many reps return 2 blocks vs 1."
+        ),
+        "prompts": [
+            "financial remedy and child arrangements both at once whats the order of everything",
+            "money stuff and the kids stuff at the same time, what happens",
+            "I've got both going on, finances and arrangements for the kids, what order does it all happen in",
+            "both at once — finances and children, what's the order",
+            "sorting out money and kids both at the same time, walk me through it",
+        ],
+    },
+    {
         "name": "brief_bridging_text",
         "description": (
             "Three prompts framed to invite a brief preamble before a structured tool call. "
