@@ -628,6 +628,40 @@ Combined-track terse phrasing eval — run and closed (combined_track_terse_phra
 
 The gap is phrasing-specific, not a general terseness problem. Four of five phrasings hit 19–20/20 dual-block, including the one originally observed to fail manually during Phase 3 verification. The outlier is the "money stuff / kids stuff" phrasing, which avoids both "financial remedy" and "child arrangements" entirely and yields a 35% single-block rate. The routing instruction in _TOOL_SYSTEM_ADDITION is reliable for any phrasing that uses recognisable variants of those terms; it does not reliably fire when neither term nor any close variant appears. No content compliance failures across all 100 calls. No system prompt change needed: the failure mode (one missing card) is bounded and phrasing-specific, the routing instruction is working for the realistic phrasing range, and improving coverage of highly colloquial avoidance of the legal terms is a diminishing return at this stage.
 
+## Pilot scope reviewed, functionality by functionality (21 June 2026)
+
+Full pilot scope brief reviewed one functionality at a time with Claude,
+original wording preserved throughout, decisions recorded as notes in
+docs/pilot_scope.md rather than duplicated here. Summary: document and
+photo upload kept (Claude's native vision, image never stored, only
+transcribed text kept), voice recording dropped for pilot, returning
+users kept (builds on existing memory layer), urgent moments safety
+handling kept but flagged as untested and needing the same adversarial
+rigor the compliance checker got, case file panel kept as a goal but
+reduced from full scope pending a retention decision, baseline
+interaction requirements split (streaming, stop button, typing
+indicators, source grounding locked, searchable history folded into the
+same pending retention decision as the case file panel). A third
+generative UI tool type, tappable choice buttons, was also agreed,
+following the same architecture already proven for timelines and
+checklists.
+
+Not yet reviewed or decided: the text-based half of writing support
+(drafting help without voice), and the mobile-first, responsive
+requirement stated in the original brief's opening experience section,
+nothing mobile-specific exists in the codebase yet.
+
+Open decision before next phase: case-related data retention, how long
+documents and conversation history are kept, access, and deletion
+controls. Blocks full build of the case file panel and searchable
+history. Related to but distinct from the existing chat_ops.jsonl
+logging gap.
+
+Next: sequenced build plan and technical architecture for the kept
+items, to be done in a fresh thread, connecting each to the existing
+backend, and picking up the still-undecided text drafting and mobile
+requirements.
+
 UI build is scoped for full pilot, not phased. Following discussion on 19 June 2026, the decision was made to build the full UI vision into the pilot directly: generative UI rendering layer, fully integrated case file panel (memory and document storage, not mocked), reliable mobile voice recording, and all document/writing workflows. No 'later phase' exists for these components. Estimated 250 to 400 hours of Claude Code execution and review, realistically months of calendar time. Risk accepted: more assumptions built before first real user contact than a minimal pilot would carry. Flagged before the decision was made; decision stands unless the build stalls or a specific component proves significantly harder than estimated.
 
 ## File locations
