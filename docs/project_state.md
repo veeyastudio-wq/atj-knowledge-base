@@ -225,9 +225,16 @@ parallel and discovering integration problems at the end.
    second UI surface drawing on the same underlying state. (next)
 5. Document handling and writing support workflows (upload, ask-what-it-is
    flow, three writing-support paths).
-6. Voice recording on mobile, reliable from day one per the locked UI
+6. Visual design pass — once document handling and the core chat loop are
+   functionally built, dedicate a step to actual visual design execution
+   against the locked direction (calm, mature, minimal, Claude's own
+   interface pushed softer, Wysa-level tonal discipline), rather than
+   treating that direction as a principle with no place in the build order.
+   Vilam leads this step directly given his design background. Comes before
+   the case file panel so its patterns can carry into that surface.
+7. Voice recording on mobile, reliable from day one per the locked UI
    direction, additive to phase 5.
-7. Baseline interaction polish: streaming, stop button, typing indicators,
+8. Baseline interaction polish: streaming, stop button, typing indicators,
    trust signals, searchable history.
 
 Phase 2 complete (19 June 2026). See below.
