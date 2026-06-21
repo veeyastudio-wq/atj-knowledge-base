@@ -103,6 +103,8 @@ class ChatRequest(BaseModel):
     user_id: str
     message: str
     session_id: str | None = None
+    image_data: str | None = None        # base64-encoded image bytes, no data-URL prefix
+    image_media_type: str | None = None  # e.g. "image/jpeg", "image/png", "image/webp"
 
 
 class ToolBlock(BaseModel):
@@ -155,6 +157,8 @@ def chat(req: ChatRequest):
         app.state.client,
         req.user_id,
         session_id,
+        image_data=req.image_data,
+        image_media_type=req.image_media_type,
     )
 
     displayed_text = result["displayed_text"]

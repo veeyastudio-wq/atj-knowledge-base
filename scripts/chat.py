@@ -222,6 +222,8 @@ def run_turn(
     client: Anthropic,
     user_identifier: str,
     session_id: str,
+    image_data: str | None = None,
+    image_media_type: str | None = None,
 ) -> dict:
     """Execute one conversational turn end-to-end.
 
@@ -288,7 +290,28 @@ def run_turn(
             print(f"[returning user — {len(ts)} time-sensitive fact(s) surfaced in system prompt]")
 
     turn_content = build_turn_content(user_message, memory_context, kb_context)
-    messages = conversation_history + [{"role": "user", "content": turn_content}]
+
+    # When an image is present, build a multi-block content list so the image
+    # is sent inline alongside the text context. The image bytes (base64) live
+    # only in this local variable for the duration of the API call; they are
+    # never written to disk, never logged, and not included in conversation
+    # history (only the text response is stored after this function returns).
+    if image_data and image_media_type:
+        current_user_content = [
+            {
+                "type": "image",
+                "source": {
+                    "type": "base64",
+                    "media_type": image_media_type,
+                    "data": image_data,
+                },
+            },
+            {"type": "text", "text": turn_content},
+        ]
+    else:
+        current_user_content = turn_content
+
+    messages = conversation_history + [{"role": "user", "content": current_user_content}]
 
     response = client.messages.create(
         model=MODEL,
