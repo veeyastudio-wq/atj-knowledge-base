@@ -10,6 +10,7 @@ Usage:
     python scripts/chat.py
 """
 
+import re
 import sys
 import uuid
 from pathlib import Path
@@ -104,6 +105,62 @@ _TOOL_SYSTEM_ADDITION = (
 )
 
 
+# Keywords and patterns used to identify time-sensitive memory facts.
+# Checked against lowercased fact content; year pattern checked on raw content.
+_TS_KEYWORDS = frozenset({
+    "hearing", "deadline", "fdr", "fda", "directions",
+    "appointment", "filing", "court date",
+})
+_TS_MONTHS = frozenset({
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+})
+_TS_YEAR_RE = re.compile(r"\b20\d{2}\b")
+
+
+def _time_sensitive_facts(memories: list) -> list[str]:
+    """Return content strings of facts that appear to be time-sensitive.
+
+    Scans for date-like signals: month names, 20xx year patterns, and keywords
+    for events that occur at a specific point in time. Works only on the content
+    strings already stored — does not call the extraction LLM or add fact types.
+    """
+    results = []
+    for m in memories:
+        content = m.get("content", "")
+        lower = content.lower()
+        if (
+            any(kw in lower for kw in _TS_KEYWORDS)
+            or any(month in lower for month in _TS_MONTHS)
+            or bool(_TS_YEAR_RE.search(content))
+        ):
+            results.append(content)
+    return results
+
+
+def _returning_user_addition(time_sensitive: list[str]) -> str:
+    """System prompt addition for a returning user's first turn.
+
+    Only applied when conversation_history is empty and at least one
+    time-sensitive fact exists. Instructs the model to surface upcoming
+    items naturally — not as a notification or a bulleted list — and to
+    follow the user's lead if they open with something different.
+    """
+    facts_block = "\n".join(f"- {f}" for f in time_sensitive)
+    return (
+        "\n\n## Returning user — upcoming items\n\n"
+        "This is the start of a new conversation with a returning user. "
+        "The following items from their case memory appear to be time-sensitive "
+        "(a date, deadline, or upcoming event):\n\n"
+        f"{facts_block}\n\n"
+        "If it fits naturally with how the conversation opens, acknowledge "
+        "what's coming up — the way a knowledgeable friend would mention it in "
+        "passing, not as a system notification or a bulleted list. Reassuring "
+        "and calm in tone. If the user's opening message takes the conversation "
+        "in a different direction, follow their lead; don't force these items in."
+    )
+
+
 def load_system_prompt() -> str:
     if not SYSTEM_PROMPT_PATH.exists():
         raise FileNotFoundError(f"System prompt not found at {SYSTEM_PROMPT_PATH}")
@@ -196,13 +253,24 @@ def run_turn(
     else:
         print("[case_memory — empty]")
 
+    # On the first turn of a new session, scan for time-sensitive facts and
+    # fold a note into the system prompt so the model can open naturally as
+    # a returning-user-aware companion. No effect on subsequent turns or on
+    # sessions where no time-sensitive facts are found.
+    system_to_use = system_prompt + _TOOL_SYSTEM_ADDITION
+    if not conversation_history and memories:
+        ts = _time_sensitive_facts(memories)
+        if ts:
+            system_to_use += _returning_user_addition(ts)
+            print(f"[returning user — {len(ts)} time-sensitive fact(s) surfaced in system prompt]")
+
     turn_content = build_turn_content(user_message, memory_context, kb_context)
     messages = conversation_history + [{"role": "user", "content": turn_content}]
 
     response = client.messages.create(
         model=MODEL,
         max_tokens=MAX_TOKENS,
-        system=system_prompt + _TOOL_SYSTEM_ADDITION,
+        system=system_to_use,
         tools=TOOLS,
         tool_choice={"type": "auto"},
         messages=messages,
