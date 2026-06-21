@@ -163,15 +163,14 @@ documents, letters, forms, timelines, checklists, calendar events.
 Requires full memory layer and document storage integration with the UI
 for the pilot, not a partial or mocked version.
 
-DECISION (21 June 2026): kept as a goal, scope changed from this
-section's original instruction. Full scope is now conditional on a
-retention decision being made first (see Open decision below), not
-committed to by default as a side effect of building the feature. This
-feature requires keeping a detailed derived record of someone's real
-legal situation for the length of their case, potentially a year or
-more, a materially bigger and currently undecided data commitment than
-anything else in this build. Settle the retention question first, then
-build the full version once that's answered.
+DECISION (21 June 2026, updated 21 June 2026): kept, full scope,
+pending solicitor review. A provisional retention policy is now
+documented in docs/data_retention.md: case facts, transcribed
+documents, and conversation history retained for the life of the active
+case with a 24-month inactivity trigger and unconditional user deletion
+right. This resolves the data commitment question that previously blocked
+full scope. Build can proceed; live user data must not be handled until
+the solicitor confirms the policy.
 
 ## Baseline interaction requirements
 
@@ -182,11 +181,11 @@ searchable conversation history.
 DECISION (21 June 2026): split. Streaming responses, the stop button,
 typing indicators, and source grounding are kept and locked, standard
 chat interface work, source grounding builds directly on the existing
-RAG retrieval system already in place. Searchable conversation history
-was not decided separately, it's folded into the same open retention
-decision as the case file panel below, since both depend on the same
-underlying question, how long is someone's actual case data and
-conversation history kept, and who can access it.
+RAG retrieval system already in place. Searchable conversation history is now kept, pending solicitor review.
+The retention question it depended on is documented in
+docs/data_retention.md (provisional), removing the blocker. Same
+sign-off condition as the case file panel: build can proceed, live user
+data must not be handled until the solicitor confirms the policy.
 
 ## Hard boundaries, what the product never does
 

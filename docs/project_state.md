@@ -655,7 +655,10 @@ Open decision before next phase: case-related data retention, how long
 documents and conversation history are kept, access, and deletion
 controls. Blocks full build of the case file panel and searchable
 history. Related to but distinct from the existing chat_ops.jsonl
-logging gap.
+logging gap. Retention policy now documented in docs/data_retention.md,
+provisional pending solicitor review. Case file panel and searchable
+history are no longer blocked by an undecided question, only by the
+solicitor sign-off step before live user data is handled.
 
 Next: sequenced build plan and technical architecture for the kept
 items, to be done in a fresh thread, connecting each to the existing
