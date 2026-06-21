@@ -8,8 +8,8 @@
 
 ## Session pointer
 
-Last verified commit: 5ab4181 (typing indicator, word-by-word reveal, stop button)
-Next prompt queued: source grounding for chat responses, building on the existing RAG retrieval already in place (step 6 continued)
+Last verified commit: 14a9a3c (source grounding)
+Next prompt queued: document and photo upload (step 7)
 
 ---
 
@@ -229,8 +229,18 @@ parallel and discovering integration problems at the end.
 5. Mobile-first baseline (complete, 21 June 2026, commit 5af9728) —
    established as the foundation before further interface work, rather
    than retrofitted later.
-6. Baseline interaction polish: streaming, stop button, typing
-   indicators, source grounding, searchable history. (next)
+6. Baseline interaction polish (complete for four of five items, 21 June
+   2026, commits 5ab4181 and 14a9a3c) — stop button, typing indicator,
+   word-by-word reveal, and source grounding are all built and verified.
+   Searchable history remains genuinely blocked, not deferred: it depends
+   on durable conversation storage that doesn't exist until the case file
+   panel's data model is built (step 9), so it stays there rather than
+   counting as done here. Known limitation from source grounding: RAG
+   retrieval always runs and sources are always surfaced regardless of
+   relevance, since retrieve.py wasn't confirmed to expose a per-chunk
+   score usable as a gate. Accepted as-is for now, the same way the
+   solicitor-advice compliance false-positive rate was accepted rather
+   than chased — flagged for a future look, not blocking.
 7. Document and photo upload — Claude's native vision, image never
    stored, only transcribed text retained, per the Document handling
    decision in docs/pilot_scope.md.
