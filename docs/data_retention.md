@@ -21,7 +21,12 @@ before going live with real user data.
 ## How long
 
 - Active case: no fixed cap while the user is actively engaging.
-- Inactivity: if an account has no activity for 24 months, the user is
+- Outer limit: regardless of activity, case data is deleted no later
+  than 5 years from case start, unless the user has actively re-confirmed
+  retention before that point. This is a backstop, not the expected
+  path, most cases will be closed out or deleted well before this limit
+  is reached.
+- Inactivity: if an account has no activity for 12 months, the user is
   notified and given 30 days to respond before case data (facts,
   transcribed documents, conversation history) is deleted. The account
   itself can remain.
@@ -50,4 +55,9 @@ respects the product's actual purpose, a 90-day cap as used for
 compliance logs would break the case file panel and persistent memory
 for any real proceeding. Indefinite retention with no end point doesn't
 satisfy storage limitation, so an inactivity trigger and an
-unconditional user deletion right both exist as bounds.
+unconditional user deletion right both exist as bounds. An outer limit
+and a shorter inactivity window were added after a stress test review
+flagged that "life of the active case" with no ceiling at all, and a
+24-month inactivity window, were both weaker than they needed to be for
+Article 9 adjacent data. Both remain provisional pending solicitor
+confirmation, like the rest of this document.
