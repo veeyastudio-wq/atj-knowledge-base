@@ -587,6 +587,8 @@ Outreach in progress across multiple channels, current status tracked in Airtabl
 
 Send prompts/system_prompt.md to whoever is lined up for the solicitor consultation when Vilam decides to action it, this is the priority artefact for that review, not a general discussion of the product concept.
 
+Three items flagged by the stress test review of docs/data_retention.md (commit 12c71d0) also need solicitor input alongside system_prompt.md: a definition of "case start" for the 5 year outer retention limit, a UX and audit trail design for the re-confirmation mechanism that can extend retention past that limit, and the named legal basis with a balancing test for 5 year retention of Article 9 adjacent data. None of these change the policy text in data_retention.md, they are implementation detail the solicitor will need to weigh in on.
+
 Map the MyHMCTS Form E journey, required before the Form E Layer 2 entry can be written.
 
 Second terminology pass, deferred until discovery informs what gaps matter most.
