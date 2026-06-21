@@ -61,11 +61,44 @@
       font-size: 1rem;
     }
 
+    #stop-btn {
+      min-height: 44px;
+      min-width: 64px;
+      padding: 0 18px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
     #status {
       font-size: 0.75rem;
       color: #a8a39c;
       margin-top: 6px;
       min-height: 1.2em;
+    }
+
+    /* ── Typing indicator ── */
+    .typing-indicator {
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      padding: 6px 0 2px;
+    }
+
+    .typing-indicator span {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #c8c4be;
+      animation: typing-dot 1.2s ease-in-out infinite;
+    }
+
+    .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+    .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes typing-dot {
+      0%, 60%, 100% { opacity: 0.3; }
+      30%            { opacity: 1;   }
     }
 
     /* ── Shared card ── */
@@ -260,6 +293,7 @@
   <div id="input-row">
     <input id="msg-input" type="text" placeholder="Type a message and press Enter…" autocomplete="off">
     <button id="send-btn">Send</button>
+    <button id="stop-btn" hidden>Stop</button>
   </div>
   <div id="status"></div>
 
@@ -270,7 +304,62 @@
     const messagesEl = document.getElementById("messages");
     const inputEl    = document.getElementById("msg-input");
     const sendBtn    = document.getElementById("send-btn");
+    const stopBtn    = document.getElementById("stop-btn");
     const statusEl   = document.getElementById("status");
+
+    // Active reveal state — cleared when reveal finishes or is skipped.
+    let _revealTimer = null;
+    let _revealSkip  = null;
+
+    function createTypingIndicator() {
+      const turn = document.createElement("div");
+      turn.className = "turn";
+      const lbl = document.createElement("span");
+      lbl.className = "label label-atj";
+      lbl.textContent = "ATJ:";
+      turn.appendChild(lbl);
+      const dots = document.createElement("div");
+      dots.className = "typing-indicator";
+      for (let i = 0; i < 3; i++) dots.appendChild(document.createElement("span"));
+      turn.appendChild(dots);
+      return turn;
+    }
+
+    // Reveal `text` into `el` word by word at ~40 ms/word.
+    // Calls onDone when complete. Sets _revealSkip so the stop button
+    // can jump straight to the final text without cancelling onDone.
+    function revealWords(el, text, onDone) {
+      const words = text.split(" ");
+      let idx = 0;
+
+      function finish() {
+        if (_revealTimer) { clearTimeout(_revealTimer); _revealTimer = null; }
+        el.textContent = text;
+        _revealSkip = null;
+        onDone();
+      }
+      _revealSkip = finish;
+
+      function step() {
+        if (idx >= words.length) {
+          el.textContent = text;
+          _revealTimer = null;
+          _revealSkip  = null;
+          onDone();
+          return;
+        }
+        el.textContent = words.slice(0, idx + 1).join(" ");
+        idx++;
+        messagesEl.scrollTop = messagesEl.scrollHeight;
+        _revealTimer = setTimeout(step, 40);
+      }
+
+      step();
+    }
+
+    stopBtn.addEventListener("click", function () {
+      if (_revealSkip) _revealSkip();
+    });
 
     function appendTurn(role, text, fallback) {
       const turn = document.createElement("div");
@@ -407,6 +496,11 @@
 
       appendTurn("user", message, false);
 
+      // Show typing indicator while fetch is in flight.
+      const typingEl = createTypingIndicator();
+      messagesEl.appendChild(typingEl);
+      messagesEl.scrollTop = messagesEl.scrollHeight;
+
       const payload = { user_id: USER_ID, message };
       if (sessionId) payload.session_id = sessionId;
 
@@ -417,19 +511,21 @@
           body: JSON.stringify(payload),
         });
 
+        typingEl.remove();
+
         if (!res.ok) {
           appendTurn("atj", "[HTTP " + res.status + "]", false);
           statusEl.textContent = "Error " + res.status;
+          sendBtn.disabled = false;
+          inputEl.focus();
           return;
         }
 
         const data = await res.json();
         sessionId = data.session_id;
 
-        // Build the ATJ turn container. If the response text is non-empty,
-        // show it. Then render any compliant tool_blocks below it in the same
-        // turn. Blocks where compliant is false carry no tool_input (emptied
-        // server-side) and are skipped silently.
+        // Build the ATJ turn container. Text is revealed word by word;
+        // tool_blocks render in full immediately after the text reveal ends.
         const atjTurn = document.createElement("div");
         atjTurn.className = "turn";
 
@@ -445,32 +541,42 @@
           atjTurn.appendChild(tag);
         }
 
-        if (data.response) {
-          const body = document.createElement("div");
-          body.className = "text";
-          body.textContent = data.response;
-          atjTurn.appendChild(body);
-        }
-
-        (data.tool_blocks || []).forEach(function(block) {
-          if (!block.compliant) return;
-          if (block.tool_name === "render_timeline") {
-            renderTimeline(block.tool_input, atjTurn);
-          } else if (block.tool_name === "render_checklist") {
-            renderChecklist(block.tool_input, atjTurn);
-          }
-        });
-
         messagesEl.appendChild(atjTurn);
         messagesEl.scrollTop = messagesEl.scrollHeight;
 
         statusEl.textContent =
           "session: " + sessionId +
           (data.fallback_triggered ? " | FALLBACK FIRED" : "");
+
+        function afterReveal() {
+          stopBtn.hidden = true;
+          (data.tool_blocks || []).forEach(function(block) {
+            if (!block.compliant) return;
+            if (block.tool_name === "render_timeline") {
+              renderTimeline(block.tool_input, atjTurn);
+            } else if (block.tool_name === "render_checklist") {
+              renderChecklist(block.tool_input, atjTurn);
+            }
+          });
+          messagesEl.scrollTop = messagesEl.scrollHeight;
+          sendBtn.disabled = false;
+          inputEl.focus();
+        }
+
+        if (data.response) {
+          const textBody = document.createElement("div");
+          textBody.className = "text";
+          atjTurn.appendChild(textBody);
+          stopBtn.hidden = false;
+          revealWords(textBody, data.response, afterReveal);
+        } else {
+          afterReveal();
+        }
+
       } catch (err) {
+        typingEl.remove();
         appendTurn("atj", "[error: " + err.message + "]", false);
         statusEl.textContent = "Request failed";
-      } finally {
         sendBtn.disabled = false;
         inputEl.focus();
       }
