@@ -6,6 +6,13 @@
 
 ---
 
+## Session pointer
+
+Last verified commit: 5ab4181 (typing indicator, word-by-word reveal, stop button)
+Next prompt queued: source grounding for chat responses, building on the existing RAG retrieval already in place (step 6 continued)
+
+---
+
 ## What this project is
 
 An AI product designed to support people navigating the UK family court system without legal representation, litigants in person going through divorce and family law proceedings. The product is a companion, not a lawyer. It provides comprehension, process guidance, document support, and emotional grounding throughout the entire legal journey, from the first letter to the final hearing.
