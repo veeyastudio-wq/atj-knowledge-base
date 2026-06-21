@@ -131,6 +131,7 @@ class ChatResponse(BaseModel):
     fallback_triggered: bool
     session_id: str
     tool_blocks: list[ToolBlock]
+    sources: list[str]
 
 
 @app.get("/health")
@@ -193,6 +194,7 @@ def chat(req: ChatRequest):
         fallback_triggered=result["fallback_fired"],
         session_id=session_id,
         tool_blocks=tool_blocks,
+        sources=result["sources"],
     )
 
 

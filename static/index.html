@@ -76,6 +76,14 @@
       min-height: 1.2em;
     }
 
+    /* ── Source grounding ── */
+    .sources-line {
+      font-size: 0.75rem;
+      color: #a8a39c;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
     /* ── Typing indicator ── */
     .typing-indicator {
       display: inline-flex;
@@ -558,6 +566,12 @@
               renderChecklist(block.tool_input, atjTurn);
             }
           });
+          if (data.sources && data.sources.length > 0) {
+            const srcLine = document.createElement("div");
+            srcLine.className = "sources-line";
+            srcLine.textContent = "Based on: " + data.sources.join(", ");
+            atjTurn.appendChild(srcLine);
+          }
           messagesEl.scrollTop = messagesEl.scrollHeight;
           sendBtn.disabled = false;
           inputEl.focus();

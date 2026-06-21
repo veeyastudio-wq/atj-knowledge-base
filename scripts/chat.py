@@ -185,6 +185,28 @@ def format_kb_context(kb_result: dict) -> str:
     return "\n\n".join(parts) if parts else "No relevant knowledge base content found."
 
 
+def extract_sources(kb_result: dict) -> list[str]:
+    """Return distinct human-readable source titles from retrieved KB chunks.
+
+    Layer 2 chunks carry metadata["title"]; layer 1 chunks carry
+    metadata["source"]. Both are clean strings written at ingest time.
+    Returned in retrieval order (layer2 first, then layer1), deduplicated.
+    Returns [] if retrieval found nothing or metadata is absent.
+    """
+    seen: set[str] = set()
+    sources: list[str] = []
+    for layer in ("layer2", "layer1"):
+        for chunk in kb_result.get(layer, []):
+            meta = chunk.get("metadata") or {}
+            if not isinstance(meta, dict):
+                continue
+            title = meta.get("title") or meta.get("source") or ""
+            if title and title not in seen:
+                seen.add(title)
+                sources.append(title)
+    return sources
+
+
 def build_turn_content(user_message: str, memory_context: str, kb_context: str) -> str:
     return (
         f"<case_memory>\n{memory_context}\n</case_memory>\n\n"
@@ -240,6 +262,7 @@ def run_turn(
             + memory_context
         )
     kb_context = format_kb_context(kb_result)
+    sources = extract_sources(kb_result)
 
     if memories:
         print(f"[case_memory — {len(memories)} item(s) retrieved]")
@@ -375,6 +398,7 @@ def run_turn(
         "compliant": compliant,
         "fallback_fired": not compliant,
         "tool_results": tool_results,
+        "sources": sources,
     }
 
 
