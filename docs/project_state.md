@@ -210,32 +210,45 @@ early and in isolation, before building features on top of an unproven
 foundation, rather than building every component to completion in
 parallel and discovering integration problems at the end.
 
-1. Walking skeleton (complete) — minimal API + bare frontend, full loop
-   proven end to end.
-2. Generative UI spike, isolated — prototype Claude emitting structured
-   content (timelines, checklists, document cards) rendered by a thin
-   frontend layer, against fake/static data first, before connecting it
-   to live backend responses. This is the most technically demanding and
-   least precedented piece, tested in isolation deliberately.
-3. Wire generative UI into the real chat flow, once the spike works.
-   (complete, 20 June 2026 — full loop proven end to end, see Phase 3
-   section above.)
-4. Case file panel — living record fed by real memory and document
-   storage, not mocked. Built after the chat loop is solid since it's a
-   second UI surface drawing on the same underlying state. (next)
-5. Document handling and writing support workflows (upload, ask-what-it-is
-   flow, three writing-support paths).
-6. Visual design pass — once document handling and the core chat loop are
-   functionally built, dedicate a step to actual visual design execution
-   against the locked direction (calm, mature, minimal, Claude's own
-   interface pushed softer, Wysa-level tonal discipline), rather than
-   treating that direction as a principle with no place in the build order.
-   Vilam leads this step directly given his design background. Comes before
-   the case file panel so its patterns can carry into that surface.
-7. Voice recording on mobile, reliable from day one per the locked UI
-   direction, additive to phase 5.
-8. Baseline interaction polish: streaming, stop button, typing indicators,
-   trust signals, searchable history.
+1. Walking skeleton (complete, 19 June 2026) — minimal API + bare
+   frontend, full loop proven end to end.
+2. Generative UI spike, isolated (complete, 19 June 2026) — prototype
+   Claude emitting structured content rendered by a thin frontend layer,
+   against fixtures first.
+3. Wire generative UI into the real chat flow (complete, 20 June 2026).
+4. Returning user experience (complete, 21 June 2026, commit 051abef) —
+   time-sensitive facts from existing memory surfaced naturally on the
+   first turn of a returning session.
+5. Mobile-first baseline (complete, 21 June 2026, commit 5af9728) —
+   established as the foundation before further interface work, rather
+   than retrofitted later.
+6. Baseline interaction polish: streaming, stop button, typing
+   indicators, source grounding, searchable history. (next)
+7. Document and photo upload — Claude's native vision, image never
+   stored, only transcribed text retained, per the Document handling
+   decision in docs/pilot_scope.md.
+8. Visual design pass — once document handling and the core chat loop
+   are functionally built, dedicate a step to actual visual design
+   execution against the locked direction (calm, mature, minimal,
+   Claude's own interface pushed softer, Wysa-level tonal discipline).
+   Vilam leads this step directly given his design background.
+9. Case file panel — living record fed by real memory and document
+   storage, not mocked. Built after document handling and the visual
+   design pass so it has real content to display and an established
+   visual language to use, not a second UI surface guessing at both.
+10. Text-based writing support — not yet reviewed or scoped. The three
+    starting points (haven't started, have some thoughts, have a draft)
+    and how they map onto the tappable choice buttons pattern still need
+    a dedicated decision pass, the same way document handling and urgent
+    moments each got one.
+
+Voice recording on mobile is removed from this list. It was reviewed and
+dropped for pilot on 21 June 2026, see docs/pilot_scope.md, Writing
+support section, no native audio input in the Messages API, would
+require a separate third-party speech-to-text integration with its own
+privacy questions, judged out of scope rather than carried as unscoped
+risk. It no longer belongs in the active build sequence; if revisited
+later it re-enters this list at that point, not before.
 
 Phase 2 complete (19 June 2026). See below.
 
