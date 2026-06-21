@@ -120,7 +120,7 @@ Walking skeleton frontend: static/index.html is a minimal vanilla JS page served
 
 ## UI design direction (locked 19 June 2026)
 
-Conversational first, not navigation-based. Claude surfaces visuals, timelines, checklists, and dashboards at runtime via a generative UI architecture (Claude emits structured content, a thin frontend layer renders it), rather than fixed pre-built screens. Opening experience is a warm intake conversation that builds case context and gathers documents/photos without feeling like a form. Returning users get a time and date aware, proactive experience, Claude surfaces what matters without being asked, emotionally aware through situational inference rather than stored emotional data. Document handling: Claude asks what the document is, offers understand/fill in/talk through, guides forms one step at a time. Writing support: Claude asks where the user is (not started, partial, draft to polish) and offers voice recording throughout. Case file panel is a self-building living record of documents, letters, forms, timelines, and calendar events, full memory/document integration required for pilot. Visual identity: calm, mature, minimal, Claude's own interface pushed softer, Wysa-level tonal discipline around not overstating what the AI is to the user. Token cost requirements for the pilot build: Anthropic automatic prompt caching on system and compliance check prompts, RAG retrieval capped at 3 to 7 chunks per call, explicit max_tokens on every call. Live in-court recording remains deferred pending legal opinion regardless of this scope decision, this is a legal constraint, not a sequencing choice.
+Conversational first, not navigation-based. Claude surfaces visuals, timelines, checklists, and dashboards at runtime via a generative UI architecture (Claude emits structured content, a thin frontend layer renders it), rather than fixed pre-built screens. Opening experience is a warm intake conversation that builds case context and gathers documents/photos without feeling like a form. Returning users get a time and date aware, proactive experience, Claude surfaces what matters without being asked, emotionally aware through situational inference rather than stored emotional data. Document handling: Claude asks what the document is, offers understand/fill in/talk through, guides forms one step at a time. Writing support: Claude asks where the user is (not started, partial, draft to polish) and offers voice recording throughout. Case file panel is a self-building living record of documents, letters, forms, timelines, and calendar events, full memory/document integration required for pilot. Visual identity: calm, mature, minimal, Claude's own interface pushed softer, Wysa-level tonal discipline around not overstating what the AI is to the user. Token cost requirements for the pilot build: Anthropic automatic prompt caching on system and compliance check prompts, RAG retrieval capped at 3 to 7 chunks per call, explicit max_tokens on every call. Live in-court recording remains deferred pending legal opinion regardless of this scope decision, this is a legal constraint, not a sequencing choice. Mobile-first is now the approach for all UI work from this point forward, not a retrofit applied at the end; the base styles target a narrow mobile viewport first, with a single 768px breakpoint for wider screens, established as the baseline before further interface work is layered on top.
 
 ## Phase 1 — walking skeleton (complete, 19 June 2026)
 
@@ -668,6 +668,38 @@ backend, and picking up the still-undecided text drafting and mobile
 requirements.
 
 UI build is scoped for full pilot, not phased. Following discussion on 19 June 2026, the decision was made to build the full UI vision into the pilot directly: generative UI rendering layer, fully integrated case file panel (memory and document storage, not mocked), reliable mobile voice recording, and all document/writing workflows. No 'later phase' exists for these components. Estimated 250 to 400 hours of Claude Code execution and review, realistically months of calendar time. Risk accepted: more assumptions built before first real user contact than a minimal pilot would carry. Flagged before the decision was made; decision stands unless the build stalls or a specific component proves significantly harder than estimated.
+
+## Returning user experience (051abef, 21 June 2026)
+
+On the first turn of a new session, after memory retrieval runs as normal, the retrieved
+facts are scanned for time-sensitive signals: keywords (hearing, deadline, FDR, FDA,
+directions, appointment, filing, court date), month names, and 20xx year patterns. If any
+facts match, a short addition is folded into the system prompt for that turn only, instructing
+the model to surface what's upcoming naturally — the way a knowledgeable friend would mention
+it in passing, not as a notification or a bulleted list. Reassuring in tone; the model follows
+the user's lead if they open with something unrelated. No effect on memory extraction, fact
+types, or response_check.py. Only the content strings already stored are scanned.
+
+Two test cases against real Neo4j: a user with four time-sensitive facts (FDR hearing 14
+August 2026, Form E deadline 1 August 2026) received "Hello — good to have you back. You've
+got a couple of things coming up fairly soon: your Form E is due on 1 August, and the FDR
+hearing is on 14 August at Manchester Family Court." Natural, specific, reassuring, not a list.
+Compliance: PASS. A second test with a user with no memory facts confirmed no returning-user
+addition fires and the standard intake opening is unchanged.
+
+## Mobile-first baseline (this commit, 21 June 2026)
+
+static/index.html restructured to mobile-first CSS. Viewport meta tag added. Base styles (no
+media query) now target narrow viewports: system sans-serif font throughout, warm off-white
+body background (#faf9f7), messages area and input row full width with 12px side padding,
+messages max-height 55vh so input stays visible on small screens, input border and
+border-radius matching the card system, input font-size 16px to prevent iOS auto-zoom, send
+button min-height 44px and min-width 64px for comfortable touch targets. A single
+min-width: 768px media query restores desktop behaviour: max-width 760px centred with 40px
+top margin, messages area min/max-height at prior pixel values, card padding restored to
+28px 32px. Timeline and checklist card padding reduced to 16px at base (from 28px 32px) to
+give text adequate horizontal room on a 375px screen; both render functions and their data
+structures are unchanged. No backend files touched.
 
 ## File locations
 

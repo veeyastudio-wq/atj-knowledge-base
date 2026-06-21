@@ -2,28 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ATJ — local dev</title>
   <style>
-    body { font-family: monospace; max-width: 760px; margin: 40px auto; padding: 0 16px; }
-    #messages { border: 1px solid #ccc; min-height: 320px; max-height: 560px; padding: 12px; overflow-y: auto; margin-bottom: 10px; }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    /* ── Base styles: mobile-first (all viewports < 768px) ── */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #faf9f7;
+      color: #1c1b18;
+      margin: 0;
+      padding: 16px 12px;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    #messages {
+      background: #fff;
+      border: 1px solid #e0ddd9;
+      border-radius: 6px;
+      min-height: 200px;
+      max-height: 55vh;
+      padding: 12px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
     .turn { margin: 10px 0; }
     .label { font-weight: bold; }
     .label-user { }
     .label-atj { }
-    .text { white-space: pre-wrap; }
+    .text { white-space: pre-wrap; font-size: 0.9375rem; line-height: 1.5; }
     .fallback-tag { color: #c00; font-size: 0.8em; margin-left: 6px; }
+
     #input-row { display: flex; gap: 8px; }
-    #msg-input { flex: 1; padding: 8px; font-family: monospace; font-size: 1em; }
-    #send-btn { padding: 8px 16px; font-family: monospace; }
-    #status { font-size: 0.8em; color: #666; margin-top: 6px; min-height: 1.2em; }
+
+    #msg-input {
+      flex: 1;
+      min-width: 0;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 16px;
+      border: 1px solid #c8c4be;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    #send-btn {
+      min-height: 44px;
+      min-width: 64px;
+      padding: 0 18px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    #status {
+      font-size: 0.75rem;
+      color: #a8a39c;
+      margin-top: 6px;
+      min-height: 1.2em;
+    }
 
     /* ── Shared card ── */
     .ui-card {
       background: #fff;
       border: 1px solid #e0ddd9;
       border-radius: 6px;
-      padding: 28px 32px;
-      margin-bottom: 32px;
+      padding: 16px;
+      margin-bottom: 24px;
       margin-top: 10px;
     }
 
@@ -31,7 +82,7 @@
       font-size: 15px;
       font-weight: 600;
       color: #1c1b18;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     /* ── Timeline ── */
@@ -177,6 +228,29 @@
 
     .checklist-item:not(.done) .checklist-desc {
       color: #6e6b65;
+    }
+
+    /* ── Wider viewports (768px and above) ── */
+    @media (min-width: 768px) {
+      body {
+        max-width: 760px;
+        margin: 40px auto;
+        padding: 0 16px;
+      }
+
+      #messages {
+        min-height: 320px;
+        max-height: 560px;
+      }
+
+      .ui-card {
+        padding: 28px 32px;
+        margin-bottom: 32px;
+      }
+
+      .ui-card-title {
+        margin-bottom: 24px;
+      }
     }
   </style>
 </head>
