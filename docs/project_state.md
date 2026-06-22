@@ -8,9 +8,11 @@
 
 ## Session pointer
 
-Last verified commit: bd3d955 (step 9 complete — case file panel,
-PostgreSQL durable history, /case-file endpoint, panel UI)
-Next prompt queued: step 10 — text-based writing support
+Last verified commit: 6aa1201 (step 10 complete — render_choices tool,
+tappable choice buttons frontend, writing support flow scoped and routing
+confirmed)
+Next prompt queued: step 11 — to be scoped (design pass deferred to end
+of build; next build step not yet determined)
 
 ---
 
