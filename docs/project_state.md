@@ -256,19 +256,31 @@ parallel and discovering integration problems at the end.
    execution against the locked direction (calm, mature, minimal,
    Claude's own interface pushed softer, Wysa-level tonal discipline).
    Vilam leads this step directly given his design background.
-   In progress (22 June 2026) in a dedicated design thread. Screen-by-screen
-   element breakdown completed. Vilam is providing colour, typography, and
-   styling direction. No code changes in this thread — design outputs will
-   be handed back to the build thread once direction is locked.
+   Deferred to end of build. Design pass will be applied to the complete
+   interface once all functional build steps are done. Not a blocking
+   dependency for any remaining build step.
 9. Case file panel — living record fed by real memory and document
    storage, not mocked. Built after document handling and the visual
    design pass so it has real content to display and an established
    visual language to use, not a second UI surface guessing at both.
-10. Text-based writing support — not yet reviewed or scoped. The three
-    starting points (haven't started, have some thoughts, have a draft)
-    and how they map onto the tappable choice buttons pattern still need
-    a dedicated decision pass, the same way document handling and urgent
-    moments each got one.
+   (complete, 22 June 2026, commits 6735bd6 through bd3d955 —
+   PostgreSQL conversation_history and document_store tables,
+   durable turn and document writes in api.py, read functions in
+   case_file.py, /case-file endpoint, case file panel UI in
+   static/index.html)
+10. Text-based writing support (complete, 22 June 2026, commits
+    eaeb4f2 and 6aa1201) — writing support flow scoped and decided:
+    two-step opening via render_choices (what document, then where are
+    you with it), three modes (haven't started, have some thoughts,
+    have a draft), compliance constraint that the product reflects back
+    only what the user provides. render_choices tool added to chat.py,
+    renderChoices frontend rendering added to static/index.html,
+    tappable buttons verified working end to end.
+11. Searchable history — search input in the case file panel
+    querying conversation_history by keyword. Data is in PostgreSQL,
+    /case-file endpoint exists, panel exists. One new API endpoint
+    and one frontend addition. Last pure build item before pre-pilot
+    testing phase.
 
 Voice recording on mobile is removed from this list. It was reviewed and
 dropped for pilot on 21 June 2026, see docs/pilot_scope.md, Writing
