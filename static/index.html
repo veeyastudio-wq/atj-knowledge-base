@@ -174,6 +174,59 @@
       margin-bottom: 20px;
     }
 
+    /* ── Case file panel (mobile) ── */
+    #case-panel { margin-top: 24px; }
+
+    /* ── Panel turn rows ── */
+    .panel-turn {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0ede9;
+      font-size: 0.875rem;
+      line-height: 1.4;
+    }
+    .panel-turn:last-child { border-bottom: none; }
+
+    .panel-turn-role {
+      font-weight: 600;
+      color: #1c1b18;
+      margin-right: 6px;
+      text-transform: capitalize;
+    }
+
+    .panel-turn-content {
+      color: #6e6b65;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── Panel document rows ── */
+    .panel-doc-row {
+      padding: 8px 0;
+      border-bottom: 1px solid #f0ede9;
+      font-size: 0.875rem;
+    }
+    .panel-doc-row:last-child { border-bottom: none; }
+
+    .panel-doc-label {
+      font-weight: 500;
+      color: #1c1b18;
+    }
+
+    .panel-doc-date {
+      font-size: 0.75rem;
+      color: #a8a39c;
+      margin-top: 2px;
+    }
+
+    .panel-empty {
+      font-size: 0.875rem;
+      color: #a8a39c;
+      padding: 8px 0;
+    }
+
     /* ── Timeline ── */
     .timeline {
       position: relative;
@@ -322,10 +375,18 @@
     /* ── Wider viewports (768px and above) ── */
     @media (min-width: 768px) {
       body {
-        max-width: 760px;
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        column-gap: 24px;
+        align-items: start;
+        max-width: 1100px;
         margin: 40px auto;
         padding: 0 16px;
       }
+
+      #chat-col { min-width: 0; }
+
+      #case-panel { margin-top: 0; }
 
       #messages {
         min-height: 320px;
@@ -344,20 +405,33 @@
   </style>
 </head>
 <body>
-  <h3>ATJ — local dev</h3>
-  <div id="messages"></div>
-  <div id="input-row">
-    <input id="msg-input" type="text" placeholder="Type a message and press Enter…" autocomplete="off">
-    <label id="img-label" for="img-input">Photo</label>
-    <input id="img-input" type="file" accept="image/*" capture="environment">
-    <button id="send-btn">Send</button>
-    <button id="stop-btn" hidden>Stop</button>
+  <div id="chat-col">
+    <h3>ATJ — local dev</h3>
+    <div id="messages"></div>
+    <div id="input-row">
+      <input id="msg-input" type="text" placeholder="Type a message and press Enter…" autocomplete="off">
+      <label id="img-label" for="img-input">Photo</label>
+      <input id="img-input" type="file" accept="image/*" capture="environment">
+      <button id="send-btn">Send</button>
+      <button id="stop-btn" hidden>Stop</button>
+    </div>
+    <div id="img-preview-row" hidden>
+      <img id="img-preview" alt="Selected image preview">
+      <button id="img-clear-btn" type="button">✕</button>
+    </div>
+    <div id="status"></div>
   </div>
-  <div id="img-preview-row" hidden>
-    <img id="img-preview" alt="Selected image preview">
-    <button id="img-clear-btn" type="button">✕</button>
+
+  <div id="case-panel">
+    <div id="panel-history" class="ui-card">
+      <div class="ui-card-title">Conversation history</div>
+      <div id="panel-history-list"></div>
+    </div>
+    <div id="panel-documents" class="ui-card">
+      <div class="ui-card-title">Documents</div>
+      <div id="panel-documents-list"></div>
+    </div>
   </div>
-  <div id="status"></div>
 
   <script>
     const USER_ID = "test_user_001";
@@ -580,6 +654,90 @@
       container.appendChild(card);
     }
 
+    // ── Case file panel ──────────────────────────────────────────────
+
+    function formatDate(iso) {
+      const d = new Date(iso);
+      const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+      const day = d.getUTCDate();
+      const mon = months[d.getUTCMonth()];
+      const yr  = d.getUTCFullYear();
+      const hh  = String(d.getUTCHours()).padStart(2, "0");
+      const mm  = String(d.getUTCMinutes()).padStart(2, "0");
+      return day + " " + mon + " " + yr + " " + hh + ":" + mm;
+    }
+
+    function renderPanelHistory(turns) {
+      const list = document.getElementById("panel-history-list");
+      list.innerHTML = "";
+      const recent = turns.slice(-20);
+      if (recent.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "panel-empty";
+        empty.textContent = "No conversation history yet.";
+        list.appendChild(empty);
+        return;
+      }
+      recent.forEach(function(turn) {
+        const row = document.createElement("div");
+        row.className = "panel-turn";
+
+        const role = document.createElement("span");
+        role.className = "panel-turn-role";
+        role.textContent = turn.role + ":";
+        row.appendChild(role);
+
+        const content = document.createElement("span");
+        content.className = "panel-turn-content";
+        content.textContent = turn.content;
+        row.appendChild(content);
+
+        list.appendChild(row);
+      });
+    }
+
+    function renderPanelDocuments(docs) {
+      const list = document.getElementById("panel-documents-list");
+      list.innerHTML = "";
+      if (docs.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "panel-empty";
+        empty.textContent = "No documents uploaded yet.";
+        list.appendChild(empty);
+        return;
+      }
+      docs.forEach(function(doc) {
+        const row = document.createElement("div");
+        row.className = "panel-doc-row";
+
+        const label = document.createElement("div");
+        label.className = "panel-doc-label";
+        label.textContent = doc.document_label || "Unlabelled document";
+        row.appendChild(label);
+
+        const date = document.createElement("div");
+        date.className = "panel-doc-date";
+        date.textContent = formatDate(doc.created_at);
+        row.appendChild(date);
+
+        list.appendChild(row);
+      });
+    }
+
+    async function loadCaseFile() {
+      try {
+        const res = await fetch("/case-file?user_id=" + encodeURIComponent(USER_ID));
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        renderPanelHistory(data.history);
+        renderPanelDocuments(data.documents);
+      } catch (err) {
+        console.error("CASE FILE ERROR:", err);
+      }
+    }
+
+    // ── Chat send ────────────────────────────────────────────────────
+
     async function send() {
       const message = inputEl.value.trim();
       if (!message && !_pendingImageData) return;
@@ -668,6 +826,7 @@
           messagesEl.scrollTop = messagesEl.scrollHeight;
           sendBtn.disabled = false;
           inputEl.focus();
+          loadCaseFile();
         }
 
         if (data.response) {
@@ -695,6 +854,7 @@
     });
 
     inputEl.focus();
+    loadCaseFile();
   </script>
 </body>
 </html>
