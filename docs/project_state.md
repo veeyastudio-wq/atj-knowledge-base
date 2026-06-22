@@ -8,8 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: 14a9a3c (source grounding)
-Next prompt queued: document and photo upload (step 7)
+Last verified commit: 94de093 (document and photo upload complete,
+preview bug fixed)
+Next prompt queued: visual design pass (step 8, Vilam-led)
 
 ---
 
@@ -241,9 +242,13 @@ parallel and discovering integration problems at the end.
    score usable as a gate. Accepted as-is for now, the same way the
    solicitor-advice compliance false-positive rate was accepted rather
    than chased — flagged for a future look, not blocking.
-7. Document and photo upload — Claude's native vision, image never
-   stored, only transcribed text retained, per the Document handling
-   decision in docs/pilot_scope.md.
+7. Document and photo upload (complete, 22 June 2026, commits d5ef63f
+   and 94de093) — Claude's native vision, image never stored, only
+   transcribed text retained, per the Document handling decision in
+   docs/pilot_scope.md. No-storage guarantee confirmed by live
+   filesystem check and chat_ops.jsonl grep. Visual check passed at
+   375px and desktop. SpooledTemporaryFile gap caught and closed by
+   switching to JSON+base64 before any commit landed.
 8. Visual design pass — once document handling and the core chat loop
    are functionally built, dedicate a step to actual visual design
    execution against the locked direction (calm, mature, minimal,
