@@ -8,9 +8,10 @@
 
 ## Session pointer
 
-Last verified commit: 94de093 (document and photo upload complete,
-preview bug fixed)
-Next prompt queued: visual design pass (step 8, Vilam-led)
+Last verified commit: b9c7486 (step 7 complete — document and photo
+upload, no-storage guarantee verified)
+Next prompt queued: step 9 — case file panel (step 8 visual design pass
+is in progress in a separate thread, Vilam-led)
 
 ---
 
@@ -254,6 +255,10 @@ parallel and discovering integration problems at the end.
    execution against the locked direction (calm, mature, minimal,
    Claude's own interface pushed softer, Wysa-level tonal discipline).
    Vilam leads this step directly given his design background.
+   In progress (22 June 2026) in a dedicated design thread. Screen-by-screen
+   element breakdown completed. Vilam is providing colour, typography, and
+   styling direction. No code changes in this thread — design outputs will
+   be handed back to the build thread once direction is locked.
 9. Case file panel — living record fed by real memory and document
    storage, not mocked. Built after document handling and the visual
    design pass so it has real content to display and an established
