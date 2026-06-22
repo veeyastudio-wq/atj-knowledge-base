@@ -90,6 +90,39 @@ TOOLS = [
             "required": ["title", "items"],
         },
     },
+    {
+        "name": "render_choices",
+        "description": (
+            "Render a short set of tappable options for the user to choose from. "
+            "Use when asking a clarifying question that has a small, known set of "
+            "answers — for example, where the user is in a process, what kind of "
+            "document they are working on, or which path they want to take next. "
+            "Do not use for open-ended questions where free text is more appropriate. "
+            "Maximum 4 options."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "question": {
+                    "type": "string",
+                    "description": "The question being asked. One sentence, plain English."
+                },
+                "options": {
+                    "type": "array",
+                    "description": "The choices available. Maximum 4 items.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id":    {"type": "string"},
+                            "label": {"type": "string", "description": "Short, plain English. Max 6 words."},
+                        },
+                        "required": ["id", "label"],
+                    },
+                },
+            },
+            "required": ["question", "options"],
+        },
+    },
 ]
 
 # Appended to the loaded system prompt at call time; keeps system_prompt.md unchanged.
@@ -101,6 +134,10 @@ _TOOL_SYSTEM_ADDITION = (
     "If the user's question covers both the financial remedy track and the child arrangements "
     "track, call render_timeline twice in the same response — once for each track as its own "
     "complete, separate timeline. Do not merge both tracks into a single combined timeline. "
+    "When asking the user a clarifying question that has a small fixed set of answers — such "
+    "as where they are in a process, or which document they are working on — use the "
+    "render_choices tool instead of asking the question in plain text. Maximum 4 options. "
+    "Do not use render_choices for open-ended questions. "
     "For all other questions, reply in plain text as normal."
 )
 
