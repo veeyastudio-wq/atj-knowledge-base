@@ -372,6 +372,49 @@
       color: #6e6b65;
     }
 
+    /* ── Choices ── */
+    .choices-card {
+      background: #fff;
+      border: 1px solid #e0ddd9;
+      border-radius: 6px;
+      padding: 16px;
+      margin-top: 10px;
+    }
+
+    .choices-question {
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #1c1b18;
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .choices-options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .choice-btn {
+      display: block;
+      width: 100%;
+      padding: 10px 14px;
+      text-align: left;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: #3a3733;
+      background: #faf9f7;
+      border: 1px solid #c8c4be;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.1s, border-color 0.1s;
+    }
+
+    .choice-btn:hover {
+      background: #f0ede9;
+      border-color: #a8a39c;
+    }
+
     /* ── Wider viewports (768px and above) ── */
     @media (min-width: 768px) {
       body {
@@ -654,6 +697,39 @@
       container.appendChild(card);
     }
 
+    function renderChoices(fixture, container) {
+      const card = document.createElement("div");
+      card.className = "choices-card";
+
+      const question = document.createElement("div");
+      question.className = "choices-question";
+      question.textContent = fixture.question;
+      card.appendChild(question);
+
+      const options = document.createElement("div");
+      options.className = "choices-options";
+
+      fixture.options.forEach(function(option) {
+        const btn = document.createElement("button");
+        btn.className = "choice-btn";
+        btn.textContent = option.label;
+        btn.addEventListener("click", function() {
+          card.querySelectorAll(".choice-btn").forEach(function(b) {
+            b.disabled = true;
+          });
+          btn.style.fontWeight = "600";
+          btn.style.borderColor = "#3a6496";
+          inputEl.value = option.label;
+          send();
+          inputEl.value = "";
+        });
+        options.appendChild(btn);
+      });
+
+      card.appendChild(options);
+      container.appendChild(card);
+    }
+
     // ── Case file panel ──────────────────────────────────────────────
 
     function formatDate(iso) {
@@ -815,6 +891,8 @@
               renderTimeline(block.tool_input, atjTurn);
             } else if (block.tool_name === "render_checklist") {
               renderChecklist(block.tool_input, atjTurn);
+            } else if (block.tool_name === "render_choices") {
+              renderChoices(block.tool_input, atjTurn);
             }
           });
           if (data.sources && data.sources.length > 0) {
