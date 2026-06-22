@@ -167,7 +167,7 @@ DECISION (21 June 2026, updated 21 June 2026): kept, full scope,
 pending solicitor review. A provisional retention policy is now
 documented in docs/data_retention.md: case facts, transcribed
 documents, and conversation history retained for the life of the active
-case with a 24-month inactivity trigger and unconditional user deletion
+case with a 12-month inactivity trigger and unconditional user deletion
 right. This resolves the data commitment question that previously blocked
 full scope. Build can proceed; live user data must not be handled until
 the solicitor confirms the policy.

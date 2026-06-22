@@ -8,10 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: b9c7486 (step 7 complete — document and photo
-upload, no-storage guarantee verified)
-Next prompt queued: step 9 — case file panel (step 8 visual design pass
-is in progress in a separate thread, Vilam-led)
+Last verified commit: bd3d955 (step 9 complete — case file panel,
+PostgreSQL durable history, /case-file endpoint, panel UI)
+Next prompt queued: step 10 — text-based writing support
 
 ---
 
