@@ -112,6 +112,28 @@ def save_turn(user_id: str, session_id: str, role: str, content: str) -> None:
         print(f"HISTORY WRITE ERROR: {exc}")
 
 
+def save_document(
+    user_id: str,
+    session_id: str,
+    document_label: str | None,
+    transcribed_text: str,
+) -> None:
+    try:
+        conn = psycopg2.connect(**_DB_CONFIG)
+        cur = conn.cursor()
+        cur.execute(
+            "INSERT INTO document_store"
+            " (user_id, session_id, document_label, transcribed_text)"
+            " VALUES (%s, %s, %s, %s)",
+            (user_id, session_id, document_label, transcribed_text),
+        )
+        conn.commit()
+        cur.close()
+        conn.close()
+    except psycopg2.Error as exc:
+        print(f"DOCUMENT WRITE ERROR: {exc}")
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # initialise_memory() calls asyncio.run() internally; run it in a thread
@@ -188,6 +210,9 @@ def chat(req: ChatRequest):
     )
 
     displayed_text = result["displayed_text"]
+
+    if req.image_data is not None:
+        save_document(req.user_id, session_id, None, displayed_text)
 
     tool_blocks = [
         ToolBlock(
