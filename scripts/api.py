@@ -56,6 +56,8 @@ import uuid
 from contextlib import asynccontextmanager
 from pathlib import Path
 
+import psycopg2
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # Maximum number of prior turns retained per session in the in-memory store.
@@ -73,6 +75,14 @@ _session_store: dict[str, list[dict]] = {}
 # where uvicorn is invoked from.
 STATIC_DIR = Path(__file__).parent.parent / "static"
 
+_DB_CONFIG = {
+    "host": "localhost",
+    "port": 5432,
+    "dbname": "atj",
+    "user": "postgres",
+    "password": "postgres",
+}
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -84,6 +94,22 @@ from pydantic import BaseModel
 
 from memory import initialise_memory
 from chat import load_system_prompt, run_turn
+
+
+def save_turn(user_id: str, session_id: str, role: str, content: str) -> None:
+    try:
+        conn = psycopg2.connect(**_DB_CONFIG)
+        cur = conn.cursor()
+        cur.execute(
+            "INSERT INTO conversation_history (user_id, session_id, role, content)"
+            " VALUES (%s, %s, %s, %s)",
+            (user_id, session_id, role, content),
+        )
+        conn.commit()
+        cur.close()
+        conn.close()
+    except psycopg2.Error as exc:
+        print(f"HISTORY WRITE ERROR: {exc}")
 
 
 @asynccontextmanager
@@ -190,6 +216,8 @@ def chat(req: ChatRequest):
         {"role": "assistant", "content": displayed_text},
     ]
     _session_store[session_id] = updated[-(SESSION_HISTORY_LIMIT * 2):]
+    save_turn(req.user_id, session_id, "user", req.message)
+    save_turn(req.user_id, session_id, "assistant", displayed_text)
 
     return ChatResponse(
         response=displayed_text,
