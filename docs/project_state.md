@@ -8,11 +8,11 @@
 
 ## Session pointer
 
-Last verified commit: aa8b3e6 (step 11 complete — searchable history,
-PostgreSQL full-text search, /case-file/search endpoint, search input
-in case file panel)
+Last verified commit: 8c4f7ad (docs update — steps 11 and 12 added
+to build sequencing plan, design pass deferred confirmed)
 Next prompt queued: step 12 — adversarial testing of urgent moments
-safety handling (pre-pilot requirement)
+safety handling (pre-pilot requirement). Read system_prompt.md SAFETY
+section before writing any eval scenarios.
 
 ---
 
