@@ -102,4 +102,78 @@ This strategy assumes the product is fully built and ready for launch. Active de
 | FFRAP | Outreach in progress | Approaching | June 2026 |
 | Support Through Court | Email sent to Charlotte Rook | No response yet | June 2026 |
 | McKenzie Friends | 23 direct email, 27 web form only | Decision on approach pending | June 2026 |
+| McKenzie Friends — Dave Barma and Gemma Bailey | Individual email (Dave) / LinkedIn (Gemma) | Researched. Contact details confirmed. Drafts produced. Not yet sent. | June 2026 |
 | Branding | Internal | In progress | June 2026 |
+
+---
+
+## Thread log: McKenzie Friends outreach
+
+- Decision made: contact Dave and Gemma separately, not as part of the main outreach wave
+
+### Additional contacts: Dave Barma and Gemma Bailey
+
+Dave Barma and Gemma Bailey — two of the best-known McKenzie Friends in the UK, working nationally, operating primarily online. Co-publish a set of guides for litigants in person via mckenziefriend.gumroad.com: a child arrangement hearing attendance guide, a self-representation starter pack, and a divorce application guide — all written in plain English, no legal jargon. Both have personal lived experience of the family court system; Dave went through proceedings himself on two separate occasions.
+
+Contact details confirmed:
+- Dave Barma: childrenfirstmckenziefriendservices@outlook.com / 07359033341 / linkedin.com/in/dave-barma-2ba594250 / Children First McKenzie Friend Services Ltd
+- Gemma Bailey: no public direct email found. LinkedIn: uk.linkedin.com/in/gemma-bailey-827a54134. Channel: LinkedIn message. Note — if not connected, a connection request is required before a full message can be sent.
+
+Outreach channel decision: email for Dave, LinkedIn message for Gemma.
+
+### Next steps when this thread reopens
+
+### Dave Barma and Gemma Bailey — individual outreach
+
+#### Status
+Drafts produced. Not yet sent.
+
+#### The ask
+Not asking them to refer clients or share client information. The ask is: if they have clients who went through the entire process with zero legal representation throughout, would they be willing to mention that a short, informal research conversation exists. The client opts in — nothing is shared without consent.
+
+#### Draft messages produced
+
+**Dave Barma — email**
+
+Subject: Research project — family court without legal representation
+
+Hi Dave,
+
+I'm Vilam, based in London. I'm in the early research stage of a project looking at what it's really like to go through divorce and family court proceedings in England and Wales with no legal representation, from the first letter through to the final hearing.
+
+I came across the guide you and Gemma wrote for litigants in person attending child arrangement hearings. The plain, experience based way it's written is exactly the kind of insight I'm trying to understand properly before building anything.
+
+There's one gap I haven't filled yet. I haven't spoken to anyone who went through their entire case with zero legal representation throughout, not even at the start. You'll see more of that than most people. If you're willing, would you mention this to one or two clients who fit that description? Enough for them to know a short, informal research conversation exists if they're interested. Nothing they're obliged to do.
+
+To be clear about where this stands, this is research only. No product exists yet, nothing to sign up for or pay for.
+
+If you're open to it, let me know and I'll send over a short note you can pass on, or people can message me directly.
+
+Thanks for the work you and Gemma are doing in this space.
+
+Vilam
+
+---
+
+**Gemma Bailey — LinkedIn message**
+
+Hi Gemma,
+
+I'm Vilam, based in London. I'm in the early research stage of a project looking at what it's really like to go through divorce and family court proceedings in England and Wales with no legal representation, from the first letter through to the final hearing.
+
+I found the guide you and Dave wrote for litigants in person, and the practical, jargon free tone is exactly the kind of insight I'm trying to understand properly before building anything.
+
+One gap I haven't filled yet. I haven't spoken to anyone who went through their entire case with zero legal representation throughout, not even at the start. You'll see more of that than most people. If you're willing, would you mention this to one or two clients who fit that, enough for them to know a short, informal research conversation exists if they're interested? Nothing they're obliged to do.
+
+To be upfront, this is research only at this stage. No product exists yet, nothing to sign up for or pay for.
+
+Happy to send over a short note you can pass on, or people can message me directly. Either way, thank you for the work you and Dave are doing here.
+
+Vilam
+
+---
+
+#### Open items
+- Whether to offer research participants anything for their time — not yet decided
+- Gemma Bailey: confirm connection status on LinkedIn before attempting to send message; a connection request may be needed first
+- Vilam's direct contact details (email or other) need to be inserted into both messages before sending
