@@ -94,7 +94,7 @@ from pydantic import BaseModel
 
 from memory import initialise_memory
 from chat import load_system_prompt, run_turn
-from case_file import get_conversation_history, get_documents
+from case_file import get_conversation_history, get_documents, search_conversation_history
 
 
 def save_turn(user_id: str, session_id: str, role: str, content: str) -> None:
@@ -190,6 +190,10 @@ class CaseFileResponse(BaseModel):
     documents: list[dict]
 
 
+class SearchResponse(BaseModel):
+    results: list[dict]
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
@@ -201,6 +205,13 @@ def case_file(user_id: str):
         history=get_conversation_history(user_id, limit=100),
         documents=get_documents(user_id, limit=50),
     )
+
+
+@app.get("/case-file/search", response_model=SearchResponse)
+def case_file_search(user_id: str, q: str = ""):
+    if not q.strip():
+        return SearchResponse(results=[])
+    return SearchResponse(results=search_conversation_history(user_id, q))
 
 
 @app.post("/chat", response_model=ChatResponse)

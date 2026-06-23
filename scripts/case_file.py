@@ -136,6 +136,45 @@ def get_documents(user_id: str, limit: int = 50) -> list[dict]:
         return []
 
 
+def search_conversation_history(user_id: str, query: str, limit: int = 50) -> list[dict]:
+    """Search conversation_history rows matching query using PostgreSQL full-text search.
+
+    Uses plainto_tsquery('english', ...) — handles stemming and stop words.
+    Results are ordered newest first (created_at DESC).
+    Each row: id, session_id, role, content, created_at (ISO string).
+    """
+    try:
+        conn = psycopg2.connect(**_DB_CONFIG)
+        cur = conn.cursor()
+        cur.execute(
+            """
+            SELECT id, session_id, role, content, created_at
+            FROM conversation_history
+            WHERE user_id = %s
+              AND to_tsvector('english', content) @@ plainto_tsquery('english', %s)
+            ORDER BY created_at DESC
+            LIMIT %s
+            """,
+            (user_id, query, limit),
+        )
+        rows = cur.fetchall()
+        cur.close()
+        conn.close()
+        return [
+            {
+                "id":         row[0],
+                "session_id": row[1],
+                "role":       row[2],
+                "content":    row[3],
+                "created_at": row[4].isoformat(),
+            }
+            for row in rows
+        ]
+    except psycopg2.Error as exc:
+        print(f"SEARCH ERROR: {exc}")
+        return []
+
+
 if __name__ == "__main__":
     print("── get_conversation_history('history_test_001') ─────────────────")
     turns = get_conversation_history("history_test_001")

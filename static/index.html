@@ -227,6 +227,36 @@
       padding: 8px 0;
     }
 
+    /* ── History search ── */
+    #history-search-row {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    #history-search-input {
+      flex: 1;
+      min-width: 0;
+      padding: 7px 10px;
+      font-family: inherit;
+      font-size: 16px;
+      border: 1px solid #c8c4be;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    #history-search-btn,
+    #history-search-clear {
+      padding: 7px 12px;
+      font-family: inherit;
+      font-size: 0.875rem;
+      border: 1px solid #c8c4be;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
     /* ── Timeline ── */
     .timeline {
       position: relative;
@@ -468,6 +498,12 @@
   <div id="case-panel">
     <div id="panel-history" class="ui-card">
       <div class="ui-card-title">Conversation history</div>
+      <div id="history-search-row">
+        <input id="history-search-input" type="search"
+               placeholder="Search history…" autocomplete="off">
+        <button id="history-search-btn">Search</button>
+        <button id="history-search-clear" hidden>Clear</button>
+      </div>
       <div id="panel-history-list"></div>
     </div>
     <div id="panel-documents" class="ui-card">
@@ -812,6 +848,29 @@
       }
     }
 
+    async function searchHistory() {
+      const searchInput = document.getElementById("history-search-input");
+      const clearBtn    = document.getElementById("history-search-clear");
+      const query = searchInput.value.trim();
+      if (!query) {
+        loadCaseFile();
+        clearBtn.hidden = true;
+        return;
+      }
+      try {
+        const res = await fetch(
+          "/case-file/search?user_id=" + encodeURIComponent(USER_ID) +
+          "&q=" + encodeURIComponent(query)
+        );
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        renderPanelHistory(data.results);
+        clearBtn.hidden = false;
+      } catch (err) {
+        console.error("SEARCH ERROR:", err);
+      }
+    }
+
     // ── Chat send ────────────────────────────────────────────────────
 
     async function send() {
@@ -933,6 +992,16 @@
 
     inputEl.focus();
     loadCaseFile();
+
+    document.getElementById("history-search-btn").addEventListener("click", searchHistory);
+    document.getElementById("history-search-input").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") searchHistory();
+    });
+    document.getElementById("history-search-clear").addEventListener("click", function() {
+      document.getElementById("history-search-input").value = "";
+      document.getElementById("history-search-clear").hidden = true;
+      loadCaseFile();
+    });
   </script>
 </body>
 </html>
