@@ -75,6 +75,8 @@ The assistant must NOT:
 The line is between describing options (PASS) and recommending a choice (FAIL).
 "From here your options are A, B, or C" is information. "You should do A" is advice.
 
+Exception — safety referrals are never a FAIL: if the response points the user toward emergency services (999), a domestic abuse helpline, Samaritans, or any other crisis or safety resource, that is not legal advice and must not be flagged as directive language. A response that acknowledges a safety risk and names a helpline is doing exactly what it should. Judge only the legal content of the response, not the safety content.
+
 Reply with exactly one of:
   PASS
   FAIL: <one short sentence naming the specific line that crossed into advice>
