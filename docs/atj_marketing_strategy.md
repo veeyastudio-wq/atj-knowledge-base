@@ -98,30 +98,174 @@ This strategy assumes the product is fully built and ready for launch. Active de
 |---|---|---|---|
 | Facebook groups | Family court Facebook communities | Active, comments posted | June 2026 |
 | Wikivorce | Partnership/listing outreach | Responded treating as product partnership, reframe sent | June 2026 |
-| Citizens Advice Bureau | 5 bureaux contacted | Approaching | June 2026 |
+| Citizens Advice bureaux | 5 London bureaux contacted by email | Emails sent ~15 June 2026. No responses as of 23 June 2026. Two-week follow-up due ~29 June 2026. | June 2026 |
 | FFRAP | Outreach in progress | Approaching | June 2026 |
 | Support Through Court | Email sent to Charlotte Rook | No response yet | June 2026 |
-| McKenzie Friends | 23 direct email, 27 web form only | Decision on approach pending | June 2026 |
+| McKenzie Friends — SPMF | 24 practitioners, direct email | Not started. Full list compiled. Outreach email not yet drafted. | June 2026 |
+| McKenzie Friends — UK Network | 35 practitioners, web form contact | Not started. Full list compiled. 15 profiles need names confirmed before submitting forms. | June 2026 |
 | McKenzie Friends — Dave Barma and Gemma Bailey | Individual email (Dave) / LinkedIn (Gemma) | Researched. Contact details confirmed. Drafts produced. Not yet sent. | June 2026 |
 | Branding | Internal | In progress | June 2026 |
 
 ---
 
+## Thread log: Citizens Advice outreach
+
+### Goal
+Find people who went through family court proceedings with zero legal representation throughout — the one research population not yet captured in any conversation. Individual Citizens Advice bureaux help people complete forms and navigate proceedings day to day, putting them in direct contact with this population.
+
+### Approach decided
+- Target individual London bureaux, not the national organisation
+- The ask is a referral relationship, not client data. Bureaux cannot share client information so the email asks for a short call to explore whether they would pass on an invitation to clients who might want to share their experience
+- Email format: short, warm, personal. Lead with the personal reason, not the product. One ask only. No closing platitude. Signed Vilam Vuong
+- Style confirmed from a reference email Vilam provided
+
+### Bureaux contacted
+
+All five emailed on approximately 15 June 2026. Subject line on all five: "A question about people you support through divorce and family court"
+
+1. RCJ Advice (Citizens Advice Islington) — feedback@rcjadvice.org.uk — addressed to Rita Suglani (Director of Family Legal Services) by name, no direct email for Rita found so used the general feedback inbox. Operates inside the Royal Courts of Justice and the Central Family Court at First Avenue House. Free legal advice for people who cannot afford a solicitor — what to file, what to expect at hearings. Closest fit to the target population of the five bureaux
+2. Citizens Advice Camden — administrator@camdencabservice.org.uk — covers Camden borough, close to the Central Family Court. No current named contact found
+3. Citizens Advice Southwark — Operations@CitizensAdviceSouthwark.org.uk — this inbox is explicitly for external organisations, separate from the client advice line. Covers housing through to family matters across Southwark
+4. Citizens Advice East End — feedback@eastendcab.org.uk — largest Citizens Advice bureau in the country, covering Hackney, Newham and Tower Hamlets. No named contact found
+5. Citizens Advice Wandsworth — info@cawandsworth.org — families and relationships listed as a specific advice area. Already takes referrals from partner professionals via webform
+
+### Bureaux ruled out and why
+- Croydon: contact form explicitly states it should not be used for referrals by third parties
+- Lambeth: web form only, no visible general email address
+- Ealing: no longer operates its own bureau, runs through the Ealing Advice Service consortium
+
+### Email body sent (identical across all five, with name and one tailored line per bureau)
+
+Subject: A question about people you support through divorce and family court
+
+Hi [name / there],
+
+I hope you're well. My name is Vilam Vuong.
+
+Having been through the UK family court system myself, and watched a close friend go through divorce proceedings without a lawyer, I want to help people in that position understand the process and feel less lost in it. I'm exploring whether an AI companion, not a lawyer, could do that. It's still early, nothing is built yet, I'm at the research stage.
+
+Would it be okay if we had a short call? I want to learn from people who went through it without a lawyer whether something like this would genuinely help them, and hear what you're seeing on the ground too.
+
+Best,
+Vilam Vuong
+
+### Responses received
+None as of 23 June 2026, approximately one week after sending.
+
+### Decisions made
+- Do not follow up before two weeks have passed. One week of silence from shared, high-volume inboxes is not unusual
+- Two-week follow-up due approximately 29 June 2026. Write a short one-line nudge at that point, not a second full email
+- Follow-up email not yet drafted
+
+### Logged in Airtable
+All five bureaux logged in Channels table (base appqkREbZXUDLBlZ5, table tbl4x8lOYPQ4xJqSu) with status Approaching and per-bureau notes on contact rationale.
+
+---
+
 ## Thread log: McKenzie Friends outreach
 
-- Decision made: contact Dave and Gemma separately, not as part of the main outreach wave
+### Competition concern and resolution
+Vilam raised two concerns: (1) ATJ might displace McKenzie Friend work, and (2) using their goodwill to build something that eventually competes with them felt ethically off.
 
-### Additional contacts: Dave Barma and Gemma Bailey
+Resolution reached in this thread:
+- On displacement: McKenzie Friends physically attend court, advocate in real time, and maintain months-long relationships. ATJ handles comprehension, process guidance and grounding between hearings. Overlap exists only at the lightest end of what a McKenzie Friend does. ATJ may free them up for cases that genuinely need a human present. Displacement is real but partial
+- On transparency: the fix is honesty, not avoidance. Approach McKenzie Friends openly about what ATJ is and let them decide. The test is whether they would feel misled reading the outreach email after the fact. If no, proceed
+- Decision: pursue McKenzie Friends as a research channel with transparent framing
 
-Dave Barma and Gemma Bailey — two of the best-known McKenzie Friends in the UK, working nationally, operating primarily online. Co-publish a set of guides for litigants in person via mckenziefriend.gumroad.com: a child arrangement hearing attendance guide, a self-representation starter pack, and a divorce application guide — all written in plain English, no legal jargon. Both have personal lived experience of the family court system; Dave went through proceedings himself on two separate occasions.
+### Scope
+- England and Wales, no geographic limit
+- All practitioners found, no cap
+- This thread: build the list only. Do not draft the outreach email yet
+- Decision to pursue all including web form contacts
 
-Contact details confirmed:
-- Dave Barma: childrenfirstmckenziefriendservices@outlook.com / 07359033341 / linkedin.com/in/dave-barma-2ba594250 / Children First McKenzie Friend Services Ltd
-- Gemma Bailey: no public direct email found. LinkedIn: uk.linkedin.com/in/gemma-bailey-827a54134. Channel: LinkedIn message. Note — if not connected, a connection request is required before a full message can be sent.
+### Directories researched
+1. Society of Professional McKenzie Friends (SPMF) — mckenziefriends.directory — vetted and insured, direct personal email for every member. 24 members
+2. McKenzie Friend UK Network — mckenziefriendservice.co.uk — training-based, contact via per-profile web form only, no direct email visible. 35 members
+3. Learned Society of McKenzie Friends — tlsmf.org.uk — only four members, form contact only, not pursued as a volume channel
 
-Outreach channel decision: email for Dave, LinkedIn message for Gemma.
+### Pool A: SPMF — 24 practitioners with direct email
 
-### Next steps when this thread reopens
+Priority contacts (London / South East, family law):
+- James Jonklaas — Greater London — Divorce, Financial & Child Arrangements — jamesjonklaas@gmail.com — 020-8871-0823
+- Fuzhan Abasi — London — Family Law, Domestic Abuse, Children — admin@familyfirstlawyers.co.uk — 02036 331798
+- Junior Leachman — London — Family, Divorce, Commercial — leachmanconsultancy@gmail.com — 02045 427333
+- Abraham Blay — London, Luton, Kent, Coventry, MK — Family Law, Civil — ablay@worksafeandlegal.com — 03300 438462
+- Robert Smith — London & South East — Family Law — altruro@btinternet.com — 07432 301884
+- Diana Asavei — London & Midlands East — Family & Civil — roconslts@outlook.com — 07831 849890
+
+Priority contacts (national, divorce and financial remedy):
+- John Ison — England, Wales, N. Ireland — Family (Children, Divorce, Financial) — john.ison@courtwithoutalawyer.co.uk — 07970 678822
+- Ray Barry — England, Wales, N. Ireland — Family (Children, Divorce, Financial) — ray.barry@courtwithoutalawyer.co.uk — 07905 502856
+- Helen Price — England and Wales — All Family Court — mckenziefriendsupport@gmail.com — 07891 761168
+- Eyitayo Ashaolu — England and Wales — Financial Remedy & Child Arrangements — Tayo@nexumckenzie.com — 07464 418013
+- Kim Simpson — NE England plus national — Children & Family, Family Finance — kim.simpson@wearesff.com — 07951 544852
+- John Craig — England and Wales — Family Law — Admin@jcjlaw.co.uk — 07741 525529
+- Carina Schneider — England — Family Law, Immigration — carina@felippettoassociates.com — 07498 223544
+
+Regional:
+- Dominika Garbarz — North West — Family Law — dominika@ecac-uk.co.uk — 01772 700468
+- Julie Watts — Surrey & West Sussex — All Family Law — jw@juliewattsfamilylaw.co.uk — 01306 644697
+- James Wesson — Lincs, Cambs, Rutland, Leics — Family, Criminal, Commercial — Jameswesson3@gmail.com — 07375 121390
+- James Newport — East of England, East Midlands — Family, Civil — James@tswcgroup.co.uk — 07711 193009
+- Ria Cohen — Devon, Cornwall, SW England — Family, divorce and children — riacohenfamilylaw@icloud.com — 07791 881697
+- Ian Oldfield — Devon, Cornwall, Somerset — Family, Divorce, Co-Habitee Finance — mckenziefriend@shoutforyou.co.uk — 07488 384605
+- Richard Kaye — South West — Family and Civil — richard@exeterfriend.co.uk — 07402 723330
+- Kimberley Isherwood — Wales & West — Family, Education, Criminal — Kimberleyisherwood@protonmail.com — 07494 440527
+
+Lower priority (non-family focus, include but deprioritise):
+- Ivan Murray-Smith — National — Parking, Traffic, Civil, Criminal — ivanleo@gmail.com — 07854 541109
+- Muhammad Ammar — London / EU — Civil and Crime — roconslts@outlook.com — 07441 396824
+- Jill Dennington Green — South West & Nottinghamshire — Health and Social Care — Jill@jilldgreen.co.uk — 07854 138985
+
+### Pool B: McKenzie Friend UK Network — 35 practitioners, web form
+
+Contact via form at mckenziefriendservice.co.uk/[number]. Visit each profile URL before submitting to confirm the person's name and address them by name in the form message.
+
+Named standouts:
+- Phil Kedge (/1) — South — Founder and director of the network. Retired Police Chief Inspector, in practice since 2012. Separate contact page at /contactphil
+- Anna Hussain (/60) — London — Lived experience of both represented and self-represented proceedings. Strong testimonials. Divorce, financial settlements, child arrangements
+- Nigel Yates (/13) — East (Reading, Oxford, Slough, Basingstoke, Aldershot) — 30+ years in HR before specialising in family court. Consistently strong testimonials
+- Louise Neville (/10) — London — Master Level Divorce and Breakup Coach. 9.5 years personal experience. Parent Speaker on the Cafcass Family Forum
+- Simon Trott (/17) — South West (Swindon, Bristol, Reading, Bournemouth, Taunton) — LLB 1983, former RAF pilot
+- Jonathan Cotterill-Bolsover (/23) — North East — child arrangements specialist
+- Deborah Jones (/38) — East Midlands — specialises in financial and practical realities of divorce and separation
+- Elfan Dan (/59) — Wales — Divorce Coach and McKenzie Friend combined
+- Marie Peters (/45) — South — qualified social worker, 20+ years, child protection focus
+- Dr Jon Bedworth (/50) — South East — BA Social Science, PhD, former software engineer, personal family court experience
+- Mario Romero (/11) — London — independent consultant, 30+ years project management
+- Jean (surname TBC) (/8) — Eastern — 35 years in financial services, specialises in financial remedies
+
+15 profiles where full name still needs confirming before submitting the form:
+/4, /53, /39, /34, /32, /6, /20, /7, /25, /62, /37, /9, /46, /24, /22, /19, /14, /51, /2, /54
+
+### Additional: Dave Barma and Gemma Bailey
+Two of the best-known McKenzie Friends in the UK. National reach. Run the UK Family Court Support Hub Facebook group. Contact via mckenziefriend.gumroad.com. Referenced in existing project notes as known prior contacts — confirm whether they have been approached before and whether to include them in this wave or handle separately.
+
+### Totals
+- Pool A (direct email): 24 practitioners
+- Pool B (web form): 35 practitioners
+- Additional known contacts: 2 (Dave Barma, Gemma Bailey)
+- Total: approximately 61 practitioners
+
+### Logged in Airtable
+Both pools logged as separate records in Channels table (base appqkREbZXUDLBlZ5, table tbl4x8lOYPQ4xJqSu):
+- Society of Professional McKenzie Friends (SPMF) — status: Not started
+- McKenzie Friend UK Network — status: Not started
+
+### What is not yet done
+- Outreach email not drafted
+- Framing note for when it is drafted: McKenzie Friends are not being asked to refer clients. They are being asked directly about what they see on the ground. They are the experts. The email should acknowledge honestly that ATJ may sit near what they do and let them decide whether to engage. Do not hide what the product is
+- 15 Pool B names still need confirming before forms are submitted
+- Confirm whether Dave Barma and Gemma Bailey have been approached before
+
+### Next steps when this topic reopens
+1. Draft the McKenzie Friend outreach email — same short format as Citizens Advice, different framing
+2. Confirm names for the 15 unnamed Pool B profiles by visiting each URL
+3. Send Pool A emails — ready to go once email is drafted
+4. Submit Pool B web forms — confirm names first
+5. Check whether the Citizens Advice two-week follow-up point has been reached (~29 June 2026) and send the nudge if so
+
+---
 
 ### Dave Barma and Gemma Bailey — individual outreach
 
