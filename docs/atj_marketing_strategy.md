@@ -24,13 +24,8 @@ This strategy assumes the product is fully built and ready for launch. Active de
 - Why this niche: solicitors don't bid on these terms, so competition and cost should be lower than typical legal advertising
 - Points to coming soon or waitlist page before pilot completes, switches to live subscription page after pilot clears
 
-### 2. TikTok
-- Faceless, AI voice, AI-generated or stylised visuals
-- No synthetic avatar, no photorealistic face, no personal trauma storytelling
-- Content style: acknowledge the problem plainly, offer the practical fix, never deep emotional storytelling
-- Why: research shows AI content is penalised specifically on deep emotional sharing but performs fine on practical, matter-of-fact content
-- Scripts written collaboratively, grounded in real specifics, not generic AI output
-- Starts as soon as ready, builds in the background before pilot completes
+## TikTok
+Full TikTok content brief, account details, visual system, production stack, cadence, and all 20 scripts are documented in docs/tiktok_content_brief.md. Read that file at the start of every TikTok content session. Do not duplicate content here.
 
 ### 3. SEO Blog Content
 - Vilam's name attached as founder on all written content
