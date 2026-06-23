@@ -8,11 +8,11 @@
 
 ## Session pointer
 
-Last verified commit: 6aa1201 (step 10 complete — render_choices tool,
-tappable choice buttons frontend, writing support flow scoped and routing
-confirmed)
-Next prompt queued: step 11 — to be scoped (design pass deferred to end
-of build; next build step not yet determined)
+Last verified commit: aa8b3e6 (step 11 complete — searchable history,
+PostgreSQL full-text search, /case-file/search endpoint, search input
+in case file panel)
+Next prompt queued: step 12 — adversarial testing of urgent moments
+safety handling (pre-pilot requirement)
 
 ---
 
@@ -276,11 +276,15 @@ parallel and discovering integration problems at the end.
     only what the user provides. render_choices tool added to chat.py,
     renderChoices frontend rendering added to static/index.html,
     tappable buttons verified working end to end.
-11. Searchable history — search input in the case file panel
-    querying conversation_history by keyword. Data is in PostgreSQL,
-    /case-file endpoint exists, panel exists. One new API endpoint
-    and one frontend addition. Last pure build item before pre-pilot
-    testing phase.
+11. Searchable history (complete, 23 June 2026, commit aa8b3e6) —
+    search_conversation_history() using PostgreSQL full-text search
+    added to case_file.py, /case-file/search endpoint added to api.py,
+    search input wired into the case file panel in static/index.html.
+12. Adversarial testing of urgent moments safety handling — the SAFETY
+    section exists in system_prompt.md but has never been tested with
+    the same rigour as the compliance checker. Pre-pilot requirement.
+    Same approach as eval_compliance.py: deliberate borderline scenarios,
+    repeated trials, fallback rate measurement.
 
 Voice recording on mobile is removed from this list. It was reviewed and
 dropped for pilot on 21 June 2026, see docs/pilot_scope.md, Writing
