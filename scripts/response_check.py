@@ -51,7 +51,9 @@ FALLBACK_RESPONSE = (
     "that typically exist here without picking one for you. Tell me which of "
     "those would help, or if this feels like the kind of call a solicitor, "
     "McKenzie friend, or Citizens Advice should weigh in on, I can help you "
-    "think through what to ask them."
+    "think through what to ask them. If anything you're dealing with feels "
+    "unsafe or frightening, the National Domestic Abuse Helpline (0808 2000 247) "
+    "and Samaritans (116 123) are both free and available any time."
 )
 
 _CHECKER_SYSTEM = """\
