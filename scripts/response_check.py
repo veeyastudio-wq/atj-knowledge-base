@@ -344,6 +344,21 @@ def check_tool_use_block(
     Returns {"compliant": bool, "reason": str | None, "prose": str}.
     The "prose" key carries the assembled text so callers can display it.
     """
+    user_lower = user_message.lower()
+    if any(term in user_lower for term in _SAFETY_SIGNAL_TERMS):
+        _log_check(
+            user_identifier=user_identifier,
+            session_id=session_id,
+            result="pass",
+            reason="safety_tool_block_exempted",
+            latency_ms=0.0,
+            success=True,
+            error=None,
+            original_draft=None,
+            fallback_substituted=False,
+        )
+        return {"compliant": True, "reason": "safety_tool_block_exempted", "prose": ""}
+
     prose = _assemble_tool_prose(
         tool_name, tool_input, context_block_count=context_block_count
     )
