@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from memory import initialise_memory, retrieve_memory, write_memory, RETRIEVE_MEMORY_LIMIT
 from retrieve import retrieve
-from response_check import check_response, check_tool_use_block, FALLBACK_RESPONSE
+from response_check import check_response_with_safety_gate, check_tool_use_block, FALLBACK_RESPONSE
 
 load_dotenv()
 
@@ -393,7 +393,7 @@ def run_turn(
                 "Brevity is not a reason to reduce scrutiny: if the text "
                 "actually present crosses into advice, flag it as normal.]"
             )
-        text_check = check_response(
+        text_check = check_response_with_safety_gate(
             user_message,
             _checker_text,
             user_identifier=user_identifier,

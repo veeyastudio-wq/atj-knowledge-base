@@ -22,6 +22,12 @@ not against a full eval_compliance.py-style batch. A fuller adversarial run
 against tool_use scenarios is outstanding.
 
 Public API:
+    check_response_with_safety_gate(user_message, assistant_text, *, user_identifier, session_id)
+        -> {"compliant": bool, "reason": str | None}
+        Recommended entry point for all response checks. Bypasses the advice-boundary
+        check when the user message contains a safety signal and the response contains
+        an appropriate safety resource referral, preventing correct safety responses
+        from being blocked as directive advice.
     check_response(user_message, assistant_text, *, user_identifier, session_id)
         -> {"compliant": bool, "reason": str | None}
     check_tool_use_block(user_message, tool_name, tool_input, *, user_identifier, session_id)
@@ -123,6 +129,69 @@ def _log_check(
     _LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     with _LOG_PATH.open("a", encoding="utf-8") as fh:
         fh.write(json.dumps(entry) + "\n")
+
+
+# Terms whose presence in the user message indicates a safety disclosure.
+_SAFETY_SIGNAL_TERMS = (
+    "scared", "frightened", "afraid", "danger", "threatening", "threatened",
+    "hit me", "hurt me", "pushed me", "hitting", "hurting", "violent",
+    "violence", "abuse", "abusive", "unsafe", "not safe", "giving up",
+    "can't go on", "don't see a way", "end it all",
+)
+
+# Terms whose presence in the assistant response indicates an appropriate
+# safety resource referral.
+_SAFETY_RESPONSE_TERMS = (
+    "999", "samaritans", "helpline", "domestic abuse", "national domestic",
+    "refuge", "0808", "116 123", "immediate danger", "immediate risk",
+)
+
+
+def check_response_with_safety_gate(
+    user_message: str,
+    assistant_text: str,
+    *,
+    user_identifier: str = "unknown",
+    session_id: str = "unknown",
+) -> dict:
+    """Recommended entry point for all response checks.
+
+    Bypasses the advice-boundary check when the user message contains a safety
+    signal and the assistant response contains an appropriate safety resource
+    referral. This prevents correct safety responses from being blocked as
+    directive advice by the compliance checker.
+
+    Step 1 — if the lowercased user_message contains any _SAFETY_SIGNAL_TERMS
+              AND the lowercased assistant_text contains any _SAFETY_RESPONSE_TERMS,
+              log a bypass pass and return compliant=True immediately.
+    Step 2 — otherwise, delegate to check_response() unchanged.
+    """
+    user_lower = user_message.lower()
+    assistant_lower = assistant_text.lower()
+
+    has_safety_signal = any(term in user_lower for term in _SAFETY_SIGNAL_TERMS)
+    has_safety_response = any(term in assistant_lower for term in _SAFETY_RESPONSE_TERMS)
+
+    if has_safety_signal and has_safety_response:
+        _log_check(
+            user_identifier=user_identifier,
+            session_id=session_id,
+            result="pass",
+            reason="safety_response_exempted",
+            latency_ms=0.0,
+            success=True,
+            error=None,
+            original_draft=None,
+            fallback_substituted=False,
+        )
+        return {"compliant": True, "reason": "safety_response_exempted"}
+
+    return check_response(
+        user_message,
+        assistant_text,
+        user_identifier=user_identifier,
+        session_id=session_id,
+    )
 
 
 def check_response(
