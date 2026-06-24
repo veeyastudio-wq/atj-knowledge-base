@@ -38,7 +38,10 @@ TOOLS = [
         "description": (
             "Render a vertical timeline of stages in a legal process or journey. "
             "Use for questions about what happens next, what a track looks like "
-            "from start to finish, or where the user is in a multi-step process."
+            "from start to finish, or where the user is in a multi-step process. "
+            "Do not use this tool as the first or only response to any message that "
+            "contains fear, physical danger, domestic abuse, threatening behaviour, "
+            "or emotional distress. A safety acknowledgement in plain text must come first."
         ),
         "input_schema": {
             "type": "object",
@@ -67,7 +70,10 @@ TOOLS = [
         "description": (
             "Render a checklist of tasks or required items. Use for questions "
             "about what someone needs to do, prepare, or have ready — before a "
-            "hearing, before filing, or at a given stage of proceedings."
+            "hearing, before filing, or at a given stage of proceedings. "
+            "Do not use this tool as the first or only response to any message that "
+            "contains fear, physical danger, domestic abuse, threatening behaviour, "
+            "or emotional distress. A safety acknowledgement in plain text must come first."
         ),
         "input_schema": {
             "type": "object",
@@ -98,6 +104,12 @@ TOOLS = [
             "answers — for example, where the user is in a process, what kind of "
             "document they are working on, or which path they want to take next. "
             "Do not use for open-ended questions where free text is more appropriate. "
+            "Do not use this tool as the first or only response to any message that "
+            "contains fear, physical danger, domestic abuse, threatening behaviour, "
+            "or emotional distress. In those cases, produce a text response "
+            "acknowledging the safety concern and naming the relevant support resource "
+            "first. A tool call may follow the text response but must never precede or "
+            "replace it. "
             "Maximum 4 options."
         ),
         "input_schema": {
