@@ -154,6 +154,15 @@ _TOOL_SYSTEM_ADDITION = (
     "For all other questions, reply in plain text as normal."
 )
 
+# Inlined from response_check._SAFETY_SIGNAL_TERMS — identical terms, kept here
+# to avoid a circular import. Update both lists in sync if terms change.
+_SAFETY_SIGNAL_TERMS = (
+    "scared", "frightened", "afraid", "danger", "threatening", "threatened",
+    "hit me", "hurt me", "pushed me", "hitting", "hurting", "violent",
+    "violence", "abuse", "abusive", "unsafe", "not safe", "giving up",
+    "can't go on", "don't see a way", "end it all",
+)
+
 
 # Keywords and patterns used to identify time-sensitive memory facts.
 # Checked against lowercased fact content; year pattern checked on raw content.
@@ -381,6 +390,56 @@ def run_turn(
         if block.type == "tool_use"
     ]
 
+    # Safety retry gate: if the user message carries a safety signal and the
+    # initial response has no text block (bare tool call), retry once with a
+    # corrective user turn and an assistant prefill that forces text first.
+    # Single retry only — if the retry also has no text block, original is used.
+    #
+    # The messages array already ends with the current user turn, so a synthetic
+    # minimal assistant turn is injected before the corrective user turn to
+    # maintain the required user/assistant alternation.
+    safety_retry_fired = False
+    _user_lower = user_message.lower()
+    if (
+        not assistant_text
+        and tool_use_blocks
+        and any(term in _user_lower for term in _SAFETY_SIGNAL_TERMS)
+    ):
+        retry_messages = messages + [
+            {"role": "assistant", "content": "—"},
+            {
+                "role": "user",
+                "content": (
+                    "Before you answer with any tool, acknowledge what I said "
+                    "about my safety first in a text response."
+                ),
+            },
+            {"role": "assistant", "content": "I hear you —"},
+        ]
+        retry_response = client.messages.create(
+            model=MODEL,
+            max_tokens=MAX_TOKENS,
+            system=system_to_use,
+            tools=TOOLS,
+            tool_choice={"type": "auto"},
+            messages=retry_messages,
+        )
+        retry_text = "".join(
+            block.text for block in retry_response.content if block.type == "text"
+        )
+        retry_tool_blocks = [
+            (block.name, block.input)
+            for block in retry_response.content
+            if block.type == "tool_use"
+        ]
+        if retry_text:
+            print("[safety retry — text block produced, using retry response]")
+            assistant_text = retry_text
+            tool_use_blocks = retry_tool_blocks
+            safety_retry_fired = True
+        else:
+            print("[safety retry — retry also produced no text block, using original]")
+
     # Compliance checks — text block first, then each tool_use block.
     # Tool-use-only responses produce assistant_text="", which would trivially
     # pass a text-only check; tool_use blocks must always be checked explicitly.
@@ -444,6 +503,8 @@ def run_turn(
         displayed_text = FALLBACK_RESPONSE
     elif tool_results:
         parts = []
+        if assistant_text:
+            parts.append(assistant_text)
         for tool_name, tool_input, _ in tool_results:
             if tool_name == "render_timeline":
                 n = len(tool_input.get("stages", []))
@@ -472,6 +533,7 @@ def run_turn(
         "fallback_fired": not compliant,
         "tool_results": tool_results,
         "sources": sources,
+        "safety_retry_fired": safety_retry_fired,
     }
 
 
