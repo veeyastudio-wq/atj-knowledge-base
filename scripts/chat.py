@@ -138,6 +138,7 @@ _TOOL_SYSTEM_ADDITION = (
     "as where they are in a process, or which document they are working on — use the "
     "render_choices tool instead of asking the question in plain text. Maximum 4 options. "
     "Do not use render_choices for open-ended questions. "
+    "If the user's message contains any indication of fear, physical danger, domestic abuse, or emotional distress, you must produce a text block acknowledging it and naming the relevant support resource before calling any tool. Never open a response with a tool call when a safety signal is present. "
     "For all other questions, reply in plain text as normal."
 )
 
