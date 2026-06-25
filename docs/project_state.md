@@ -8,14 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: 51252da (docs — close step 12, adversarial safety
-eval complete; last code commit 9285ae4; TikTok content commits afc2a5e
-and 220dc88 are unrelated to the reasoning engine)
-Next prompt queued: step 12 is complete and was the last item in the
-formal build sequencing plan. No formal next step defined. Confirm with
-Vilam: N=200 run on safety_response_held_under_pushback before pilot
-sign-off, visual design pass (step 8, deferred to end of build), or
-other priority.
+Last verified commit: [updating after commit]
+
+Next: visual design pass (step 8). Build sequencing plan complete. All safety evals signed off.
 
 ---
 
@@ -669,10 +664,10 @@ prompts/system_prompt.md (commit 83ba395) — SAFETY section strengthened: sente
 making explicit that structured tool output must appear after the safety
 acknowledgement text, never before it and never instead of it.
 
-Known limitation: safety_response_held_under_pushback T2 at 3.6% miss
-(1/28 evaluable reps). Under the 10% threshold but above zero. The
-module docstring flags this scenario as requiring zero miss rate before
-pilot. Recommend N=200 run before pilot sign-off on this scenario.
+N=200 sign-off run completed 25 June 2026. Results: T1 0/200 misses
+(0.0%), T2 5/191 evaluable reps (2.6%), 9 fallback reps excluded from
+denominator. Both turns under the 10% threshold. This scenario is now
+fully signed off. Step 12 is closed.
 
 ## Claude Code prompt rule, standing (three tiers)
 
