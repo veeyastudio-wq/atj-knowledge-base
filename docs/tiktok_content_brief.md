@@ -110,7 +110,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Family court isn't one case. It's three. Running at the same time. Nobody tells you that." | Figure alone at table covered in papers. Slow zoom in. |
+| Hook | 0-3 sec | "Family court isn't one case. It's three. Nobody tells you that." | Figure alone at table covered in papers. Slow zoom in. |
 | The one thing | 3-15 sec | "The divorce. The finances. The children. Three different processes. Different forms, different hearings, different timelines. All happening at once." | Three illustrations cutting in one at a time. Wedding ring. House. Small hand holding adult hand. |
 | Close | 15-20 sec | "Know what you're actually dealing with before you spend another penny." | All three objects on screen together. Account name appears. |
 
@@ -158,7 +158,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "If you're a father going into family court, the system is not automatically on your side. But it's not automatically against you either." | A single adult figure standing alone. Minimal. Still. |
+| Hook | 0-3 sec | "The system isn't on your side as a father. It isn't against you either." | A single adult figure standing alone. Minimal. Still. |
 | The one thing | 3-15 sec | "The court's only concern is the welfare of the child. Not your rights as a father. Understanding that distinction changes how you present your case entirely." | Scales of justice graphic. Simple and bold. Child figure at centre. |
 | Close | 15-20 sec | "Stop fighting for your rights. Start demonstrating your role." | Bold single figure with child. Account name appears. |
 
@@ -182,7 +182,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Your first family court hearing. No lawyer. You don't know what's about to happen. Neither did I." | Empty courtroom chairs. Wide shot. Slow zoom in to single empty chair. |
+| Hook | 0-3 sec | "No lawyer. No idea what's coming. Your first family court hearing." | Empty courtroom chairs. Wide shot. Slow zoom in to single empty chair. |
 | The one thing | 3-15 sec | "The first hearing is usually a FHDRA. A first hearing dispute resolution appointment. The judge isn't making big decisions yet. They're trying to understand the case and see if anything can be agreed." | Simple timeline graphic. First hearing marked. Later hearings greyed out. |
 | Close | 15-20 sec | "You don't need to win at the first hearing. You need to be prepared and composed." | Single chair graphic. Account name appears. |
 
@@ -218,7 +218,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Without prejudice. Two words that could cost you everything if you don't know what they mean." | Two figures facing each other. Speech bubble. Question mark. |
+| Hook | 0-3 sec | "Without prejudice. Two words that could cost you everything." | Two figures facing each other. Speech bubble. Question mark. |
 | The one thing | 3-15 sec | "It means whatever they're about to say cannot be used as evidence in court. It's an attempt to negotiate privately. You don't have to agree to anything. You can listen, take notes, and say you need time to consider." | Speech bubble graphic. Lock icon. Court graphic crossed out. |
 | Close | 15-20 sec | "Without prejudice protects them. It also protects you. Use that time wisely." | Lock graphic. Account name appears. |
 
@@ -338,7 +338,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "The other side has a solicitor. You don't. That gap is real. But it isn't as wide as they want you to think." | Two figures. One with briefcase. One without. Facing each other. |
+| Hook | 0-3 sec | "They have a solicitor. You don't. That gap isn't what you think." | Two figures. One with briefcase. One without. Facing each other. |
 | The one thing | 3-15 sec | "Judges in family court deal with litigants in person every day. They make allowances. They explain procedure. They cannot advise you, but they will not penalise you for not being a lawyer. What they will notice is whether you're prepared, calm, and focused on the child's welfare." | Judge figure. Two figures before them. Equal height. |
 | Close | 15-20 sec | "Prepared beats represented more often than you think." | Bold equal scales graphic. Account name appears. |
 
@@ -362,7 +362,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Some of what your solicitor does you genuinely need them for. Some of it you don't. Here's how to tell the difference." | Single figure. Two doors. Static. Clean. |
+| Hook | 0-3 sec | "Not everything your solicitor does is worth the money. Here's how to tell." | Single figure. Two doors. Static. Clean. |
 | The one thing | 3-15 sec | "You need a solicitor for complex financial remedy hearings, contested final hearings, and anything involving serious allegations. You probably don't need one for filing standard forms, writing a position statement, corresponding with the court, or attending a first hearing where no big decisions are being made. Every hour you use them for the second list is money spent on something you could do yourself with the right information." | Simple graphic. Two columns. Need a solicitor. Don't need one. Items appearing one at a time. |
 | Close | 15-20 sec | "Use them where they're irreplaceable. Do the rest yourself." | Bold two column graphic. Account name appears. |
 
@@ -374,7 +374,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Before your first family court hearing, most people do the same thing. They panic and Google. Here's what to do instead." | Single figure. Desk. Laptop closed. Notepad open. Static. Clean. |
+| Hook | 0-3 sec | "Before your first hearing, most people panic and Google. Here's what to do instead." | Single figure. Desk. Laptop closed. Notepad open. Static. Clean. |
 | The one thing | 3-15 sec | "Three things. Know exactly what order you're applying for and why. Have your key dates and facts written down and in front of you. Read the court order from your last hearing the night before so you know what the judge already knows. That's it. Preparation isn't knowing the law. It's knowing your own case cold." | Simple graphic. Three items appearing one at a time. Order. Facts. Last order. |
 | Close | 15-20 sec | "You don't need to know everything. You need to know your case." | Single figure. Notepad. Composed. Account name appears. |
 
@@ -434,7 +434,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Your solicitor's ideal outcome and your ideal outcome are not the same thing. That's not an accusation. It's just the business model." | Clock. Pound sign beside it. Static. Clean. |
+| Hook | 0-3 sec | "Your solicitor profits from your case running longer. That's not accusation. It's the model." | Clock. Pound sign beside it. Static. Clean. |
 | The one thing | 3-15 sec | "You want this resolved quickly, cheaply, and with as little damage as possible. They are paid by the hour for as long as the case runs. Every letter, every call, every adjournment is revenue. The system is not designed for speed. It is designed for thoroughness. Knowing that going in means you stop being surprised by the bill and start making deliberate decisions about when you actually need them in the room." | Simple graphic. Your timeline. Their timeline. Running at different speeds. |
 | Close | 15-20 sec | "You are not their only client. Act accordingly." | Bold clock graphic. Account name appears. |
 
@@ -482,7 +482,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Your ex just said something in court that isn't true. You're sitting there. What do you do right now." | Two figures. One speaking. One still. Judge present. Static. Clean. |
+| Hook | 0-3 sec | "Your ex just lied in court. You're sitting there. What do you do." | Two figures. One speaking. One still. Judge present. Static. Clean. |
 | The one thing | 3-15 sec | "Do not react. Do not interrupt. Write it down — the exact words, as close as you can. When it is your turn to speak, address it factually and briefly. Tell the judge what the reality is and what evidence you have to support that. If you have none, say you dispute it and that you can provide evidence before the next hearing. Losing your composure in that moment is the only way to make things worse." | Simple graphic. Two columns. What not to do. What to do. Appearing one at a time. |
 | Close | 15-20 sec | "In that moment the evidence you built before today is the only thing that helps you." | Single figure. Composed. Document beside them. Account name appears. |
 
@@ -518,7 +518,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "The other side has a solicitor. You don't. Here's how to handle the next sixty minutes." | Two figures. One with briefcase. One with notepad. Courtroom door. Static. |
+| Hook | 0-3 sec | "The other side has a solicitor. You don't. Here's how to handle it." | Two figures. One with briefcase. One with notepad. Courtroom door. Static. |
 | The one thing | 3-15 sec | "Speak directly to the judge, not to the solicitor. If a legal term is used you don't understand, ask the judge to explain it — you are entitled to do that. Don't be drawn into argument with the solicitor. They are experienced at it and you are not. Your job is to stay calm, address the judge, and keep coming back to what is best for your child. The solicitor is not your audience. The judge is." | Simple graphic. Figure speaking. Arrow pointing to judge. Solicitor to the side. |
 | Close | 15-20 sec | "Don't compete with the solicitor. Speak past them to the judge." | Single figure. Judge opposite. Solicitor to side. Account name appears. |
 
@@ -530,7 +530,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "A family court judge doesn't care how you feel about your ex. Here's what they do care about." | Single judge figure. Static. Bold. Clean. |
+| Hook | 0-3 sec | "The judge doesn't care how you feel about your ex. Here's what they care about." | Single judge figure. Static. Bold. Clean. |
 | The one thing | 3-15 sec | "They care about the child's welfare. They care about each parent's ability to support the child's relationship with the other parent. They care about stability, routine, and safety. Your feelings about what happened in your marriage are understandable. They are not relevant. The parents who do best in court are the ones who leave their marriage at the door." | Simple graphic. List appearing one item at a time. Child welfare. Stability. Safety. Co-parenting. |
 | Close | 15-20 sec | "Walk in as a parent. Not as an ex." | Single figure. Composed. Account name appears. |
 
@@ -554,7 +554,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "The document that could win or lose your case. Most people write it completely wrong." | Single sheet of paper. Hand hovering over it. Not writing. Static. Clean. |
+| Hook | 0-3 sec | "The document that could win or lose your case. Most people get it wrong." | Single sheet of paper. Hand hovering over it. Not writing. Static. Clean. |
 | The one thing | 3-15 sec | "It's called a witness statement. It's not a diary. It's not a letter to the judge. It's a structured, factual account of events relevant to your case. No opinions. No emotions. No attacking your ex. Stick to what happened, when it happened, and what evidence supports it. A witness statement full of anger reads as instability. A witness statement full of facts reads as credibility." | Simple document graphic. Two columns. What not to write. What to write. |
 | Close | 15-20 sec | "Facts win cases. Feelings lose them. Know the difference before you put pen to paper." | Bold document graphic. Account name appears. |
 
@@ -578,7 +578,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Your family court hearing is on video. Most people treat it like a Zoom call. That's a mistake." | Laptop screen. Video call. Single figure. Casual setting. Static. Clean. |
+| Hook | 0-3 sec | "Your hearing is on video. Most people treat it like a Zoom call. Wrong." | Laptop screen. Video call. Single figure. Casual setting. Static. Clean. |
 | The one thing | 3-15 sec | "A remote hearing is still a court hearing. The judge is still watching. How you present yourself, your background, your composure, whether you're distracted — all of it is visible. Dress as you would in person. Find a quiet private space. Test your connection the day before. Have your documents in front of you. Log in early. A technical excuse does not stop a hearing from proceeding without you." | Simple split screen graphic. Wrong way. Right way. Each with clear visual differences. |
 | Close | 15-20 sec | "The screen makes it feel informal. The judge does not see it that way." | Bold laptop graphic. Account name appears. |
 
@@ -590,7 +590,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Your ex is ignoring the court order. The court gave you a weapon. Are you using it?" | Single document. Bold stamp on it. Static. Clean. |
+| Hook | 0-3 sec | "Your ex is breaching the order. You already have the power to act." | Single document. Bold stamp on it. Static. Clean. |
 | The one thing | 3-15 sec | "A court order is legally binding. Breaching it is contempt of court. You can go back to court and apply to enforce it. The judge can impose fines, unpaid work, or in serious cases imprisonment. Most people don't know this. They absorb breach after breach and say nothing. Every breach you document and every one you fail to report weakens your position. The court needs to see a pattern. Give it one." | Simple graphic. Order on one side. Breach documented on other. Arrow pointing back to court. |
 | Close | 15-20 sec | "Document every breach. Date, time, what happened. Then use it." | Bold stamped document graphic. Account name appears. |
 
@@ -626,7 +626,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Hiring a McKenzie Friend could be the best or worst decision you make. Here's the difference." | Two figures. One supporting. One controlling. Static. Clean. |
+| Hook | 0-3 sec | "A McKenzie Friend could be the best or worst decision you make." | Two figures. One supporting. One controlling. Static. Clean. |
 | The one thing | 3-15 sec | "A McKenzie Friend can sit beside you, take notes, quietly suggest questions, and help you stay calm. They cannot speak to the judge. They cannot represent you. They are not regulated. Anyone can call themselves a McKenzie Friend and some charge significant fees for very little. A good one is invaluable. A bad one can actively damage your case if the judge sees them as controlling the proceedings. Check their experience before you hand over a penny." | Simple graphic. What they can do. What they cannot. Two clear columns. |
 | Close | 15-20 sec | "Support in court is valuable. Make sure you know exactly what you're paying for." | Bold two column graphic. Account name appears. |
 
@@ -650,7 +650,7 @@ Every script is documented in the following format:
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "The legal framework judges use to decide your child's future. Most parents have never seen it." | Single document. Bold. Clean. Judge's hand beside it. Static. |
+| Hook | 0-3 sec | "Judges use a specific framework to decide your child's future. Have you seen it?" | Single document. Bold. Clean. Judge's hand beside it. Static. |
 | The one thing | 3-15 sec | "It's called the welfare checklist. Every judge in every child arrangements case must consider it. Your child's wishes. Their physical and emotional needs. The effect of any change in circumstances. Their age, background, any characteristics the court considers relevant. Any harm they've suffered or are at risk of suffering. And the capability of each parent to meet those needs. That is what the judge is measuring you against. Know it before you walk in." | Simple checklist graphic. Seven items appearing one at a time. Each one bold and clear. |
 | Close | 15-20 sec | "If you're not addressing the welfare checklist, you're not making your case." | Bold checklist graphic. Account name appears. |
 
@@ -735,7 +735,7 @@ This series does not go live until the solicitor review of the system prompt and
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "Legal aid was cut for almost everyone in 2013. Domestic abuse survivors were the exception. Are you claiming it?" | Bold pound sign. Key beside it. Static. Clean. |
+| Hook | 0-3 sec | "Domestic abuse survivors kept their legal aid in 2013. Are you claiming it?" | Bold pound sign. Key beside it. Static. Clean. |
 | The one thing | 3-15 sec | "If you have experienced domestic abuse you may qualify for legal aid to cover the cost of a solicitor in family court proceedings. You need evidence of the abuse. That can be a police report, a GP record, a social services record, a letter from a domestic abuse support worker, or a court order. You do not need a conviction. You do not need to have reported it formally. Evidence of what happened is enough." | Simple graphic. List of evidence types appearing one at a time. Each one ticked. |
 | Close | 15-20 sec | "A free solicitor may be available to you. Check before you assume you're on your own. If you need immediate support the National Domestic Abuse Helpline is free, confidential and available twenty four hours a day on 0808 2000 247." | Bold key graphic. Account name appears. |
 
@@ -771,7 +771,7 @@ This series does not go live until the solicitor review of the system prompt and
 
 | Segment | Timing | Script | Visual |
 |---|---|---|---|
-| Hook | 0-3 sec | "There is a new approach in some family courts that puts your safety first from day one. Here's what it means." | Single figure. Court building. Light. Static. Clean. |
+| Hook | 0-3 sec | "A new approach in some courts puts your safety first. Here's what it means." | Single figure. Court building. Light. Static. Clean. |
 | The one thing | 3-15 sec | "It's called the Pathfinder pilot. It's running in selected courts across England and Wales. Instead of waiting for hearings to establish what happened, the court gathers information early. It speaks to both parties and to children directly. It brings in support services sooner. The aim is to stop survivors of domestic abuse being put through a system that was never designed with their safety in mind. If your case is in a Pathfinder court your experience will be different from what most people describe online." | Simple graphic. Traditional court process on one side. Pathfinder process on other. Key differences highlighted. |
 | Close | 15-20 sec | "The system is changing. Slowly. But it is changing. If you need immediate support the National Domestic Abuse Helpline is free, confidential and available twenty four hours a day on 0808 2000 247." | Bold graphic. Two paths. New one highlighted. Account name appears. |
 
