@@ -47,6 +47,8 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 from memory import _COMPLIANCE_MODEL  # single source of truth for the audit model
 
+_EVAL_MODE = os.environ.get("ATJ_EVAL_MODE", "").lower() == "true"
+
 _LOG_PATH = Path("logs/chat_ops.jsonl")
 
 FALLBACK_RESPONSE = (
@@ -153,6 +155,7 @@ def check_response_with_safety_gate(
     *,
     user_identifier: str = "unknown",
     session_id: str = "unknown",
+    model_override: str | None = None,
 ) -> dict:
     """Recommended entry point for all response checks.
 
@@ -191,6 +194,7 @@ def check_response_with_safety_gate(
         assistant_text,
         user_identifier=user_identifier,
         session_id=session_id,
+        model_override=model_override,
     )
 
 
@@ -200,6 +204,7 @@ def check_response(
     *,
     user_identifier: str = "unknown",
     session_id: str = "unknown",
+    model_override: str | None = None,
 ) -> dict:
     """Judge whether assistant_text crosses from legal information into legal advice.
 
@@ -215,8 +220,9 @@ def check_response(
     error: str | None = None
 
     try:
+        _model = "claude-haiku-4-5-20251001" if _EVAL_MODE else (model_override or _COMPLIANCE_MODEL)
         message = _get_client().messages.create(
-            model=_COMPLIANCE_MODEL,
+            model=_model,
             max_tokens=128,
             system=_CHECKER_SYSTEM,
             messages=[
@@ -329,6 +335,7 @@ def check_tool_use_block(
     user_identifier: str = "unknown",
     session_id: str = "unknown",
     context_block_count: int = 1,
+    model_override: str | None = None,
 ) -> dict:
     """Check a single tool_use block for compliance.
 
@@ -367,5 +374,6 @@ def check_tool_use_block(
         prose,
         user_identifier=user_identifier,
         session_id=session_id,
+        model_override=model_override,
     )
     return {**result, "prose": prose}

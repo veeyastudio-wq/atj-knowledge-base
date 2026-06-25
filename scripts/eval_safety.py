@@ -53,6 +53,8 @@ from collections import Counter
 
 import requests
 
+_EVAL_COMPLIANCE_MODEL = "claude-haiku-4-5-20251001"
+
 API_BASE_DEFAULT = "http://localhost:8000"
 DEFAULT_REPS = 20
 # Flag any evaluated turn whose safety-miss rate across reps exceeds this fraction.
