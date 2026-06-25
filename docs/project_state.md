@@ -8,9 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: 9285ae4 (feat: ATJ_EVAL_MODE flag — last ATJ
-reasoning engine commit for step 12; TikTok content commits afc2a5e
-and 220dc88 followed, unrelated to the reasoning engine)
+Last verified commit: 51252da (docs — close step 12, adversarial safety
+eval complete; last code commit 9285ae4; TikTok content commits afc2a5e
+and 220dc88 are unrelated to the reasoning engine)
 Next prompt queued: step 12 is complete and was the last item in the
 formal build sequencing plan. No formal next step defined. Confirm with
 Vilam: N=200 run on safety_response_held_under_pushback before pilot
@@ -284,7 +284,7 @@ parallel and discovering integration problems at the end.
     added to case_file.py, /case-file/search endpoint added to api.py,
     search input wired into the case file panel in static/index.html.
 12. Adversarial testing of urgent moments safety handling (complete,
-    25 June 2026, commits 9303757 through 9285ae4) — eval_safety.py
+    25 June 2026, commits 83ba395 through 9285ae4) — eval_safety.py
     built with four adversarial scenarios and 70-rep formal sign-off.
     Full safety stack built: pre-compliance safety gate, tool-block
     gate, retry gate in run_turn(), displayed_text fix, ATJ_EVAL_MODE
@@ -635,7 +635,7 @@ _EVAL_COMPLIANCE_MODEL constant added (informational; actual model switch
 lives in response_check.py since eval calls the FastAPI endpoint, not the
 Anthropic API directly).
 
-response_check.py (commits 9303757, 9285ae4) — check_response_with_
+response_check.py (commits feacc80, e9fa226, 9303757, 9285ae4) — check_response_with_
 safety_gate() is the recommended entry point: bypasses the LLM compliance
 check when the user message contains a safety signal (_SAFETY_SIGNAL_TERMS)
 AND the response contains a safety resource referral (_SAFETY_RESPONSE_
@@ -652,18 +652,20 @@ to all three public functions. FALLBACK_RESPONSE updated to include safety
 helpline numbers so even a fallback on a safety-signal turn contains
 appropriate resources.
 
-chat.py (commits 2804bd9, 2ce7766) — safety retry gate in run_turn():
-when a safety signal is present and the model returns a bare tool call
-with no text block, a 3-entry injection fires (synthetic assistant stub
-"—", user correction turn, assistant prefill "I hear you —") to force
-a text-first response before tools. displayed_text fix: when both
-assistant_text and tool_results are present, assistant_text is prepended
-to the tool summaries so the safety acknowledgement reaches the API
-response. All three tool descriptions updated to prohibit tool-first
+chat.py (commits c854bf7, 2804bd9, 2ce7766) — safety retry gate in
+run_turn(): when a safety signal is present and the model returns a bare
+tool call with no text block, a 3-entry injection fires (synthetic
+assistant stub "—", user correction turn, assistant prefill "I hear you
+—") to force a text-first response before tools. displayed_text fix:
+when both assistant_text and tool_results are present, assistant_text is
+prepended to the tool summaries so the safety acknowledgement reaches the
+API response. _TOOL_SYSTEM_ADDITION updated (c854bf7) to require a text
+acknowledgement before any tool call when a safety signal is present. All
+three tool descriptions updated (2804bd9) to prohibit tool-first
 responses on safety turns. _SAFETY_SIGNAL_TERMS inlined separately
 (avoids circular import with response_check.py).
 
-prompts/system_prompt.md — SAFETY section strengthened: sentence added
+prompts/system_prompt.md (commit 83ba395) — SAFETY section strengthened: sentence added
 making explicit that structured tool output must appear after the safety
 acknowledgement text, never before it and never instead of it.
 
