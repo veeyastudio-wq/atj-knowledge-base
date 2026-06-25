@@ -1207,3 +1207,1722 @@ Layer 2 scripts go deeper on topics already covered in the main series. Same top
 **Visual:** Single figure. Child figure beside them. Both walking forward. Simple. Clean. Quiet.
 
 **Caption:** Going through family court for your child. Support for litigants in person who are self-representing in child arrangements cases in England and Wales. Family court support. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+# ATJ TikTok — Layer 4 to Layer 7
+*100 new scripts. Hooks ≤15 words. Titles ≤10 words. Description ≤50 words. Close ≤15 words, alluding to Talia. Three visual options per post. SEO caption + fixed hashtags.*
+
+---
+
+## LAYER 4 — 25 posts
+
+---
+
+### L4-01 — court_bundle_nobody_explains
+
+**Hook:** Nobody tells you what a court bundle is until you need one.
+
+**Description:** A court bundle is every document the judge reads. You build it yourself. Wrong order, missing pages, or no index means the judge can't follow your case. Here's what goes in it and how to organise it.
+
+**Close:** We can walk you through building yours. Link in bio.
+
+**Visuals:**
+1. Person at kitchen table surrounded by stacked papers and folders, overhead shot, flat graphic style
+2. Stack of documents with colour-coded tabs, index page on top, bold solid background
+3. Close-up of a hand placing a numbered divider into a ring binder
+
+**Caption:** What is a court bundle in family court and how do you put one together? How to prepare a court bundle as a litigant in person in England and Wales. Court bundle family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-02 — form_ex160_fee_remission
+
+**Hook:** You might not have to pay that court fee. Check this first.
+
+**Description:** Form EX160 is a fee remission application. If your income is below a certain threshold the court fee is reduced or waived entirely. Most people pay fees they didn't have to. Takes ten minutes to check.
+
+**Close:** Don't pay what you don't owe. Link in bio.
+
+**Visuals:**
+1. Person at laptop, relieved expression, pound coin graphic beside them, flat illustration
+2. Form with fee amount crossed out, tick beside it, bold background
+3. Close-up of a hand hovering over a form, pen down, not signing
+
+**Caption:** What is form EX160 and how do you apply for a court fee remission? How to reduce or waive family court fees as a litigant in person in England and Wales. EX160 fee remission. Court fees family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-03 — what_judge_reads_first
+
+**Hook:** The judge read something about you before you walked in.
+
+**Description:** Before your first hearing the judge has already read the CAFCASS safeguarding letter and any position statements filed. They have formed an initial impression. What you file before the hearing matters as much as what you say in the room.
+
+**Close:** Know what they read. We can help. Link in bio.
+
+**Visuals:**
+1. Judge figure at desk, document in hand, single figure waiting outside door, flat graphic
+2. Two documents on a desk, one highlighted, one in shadow, bold background
+3. Close-up of a printed page, judge's hand resting beside it, not touching
+
+**Caption:** What does a family court judge read before your first hearing? How pre-hearing documents shape the judge's first impression in child arrangements cases in England and Wales. Family court judge. Position statement. CAFCASS letter. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-04 — pension_ignored_in_divorce
+
+**Hook:** Most people ignore the pension in divorce. That is a costly mistake.
+
+**Description:** Pensions are often the largest marital asset, worth more than the house. They are routinely ignored or undervalued by people settling without advice. You need a PODE report before you agree to anything involving a pension.
+
+**Close:** Don't settle blind. We built something to help. Link in bio.
+
+**Visuals:**
+1. Two figures at a table, one gesturing at a document, one looking away, flat graphic
+2. Pension pot graphic beside a house graphic, scales between them, bold background
+3. Close-up of a financial document, pension line highlighted in bold
+
+**Caption:** What happens to pensions in a divorce? Why ignoring the pension in financial remedy proceedings is one of the most expensive mistakes in England and Wales. Pension divorce. PODE report. Financial remedy. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-05 — c1a_domestic_abuse_flag
+
+**Hook:** Did you know there's a separate form for abuse allegations?
+
+**Description:** If there are domestic abuse allegations in your child arrangements case you must complete a C1A alongside the C100. Failing to file it means abuse concerns are not formally flagged to the court. Most people don't know it exists.
+
+**Close:** Know which forms apply to you. Link in bio.
+
+**Visuals:**
+1. Person staring at two forms on a table, uncertain expression, flat illustration
+2. C100 form and C1A form side by side, arrow pointing to C1A, bold background
+3. Close-up of a form header reading C1A, pen beside it, not yet filled
+
+**Caption:** What is a C1A form and when do you need to file it? How to flag domestic abuse in a child arrangements application in family court in England and Wales. C1A form. C100 form. Domestic abuse family court. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-06 — stop_emailing_solicitor_everything
+
+**Hook:** Every email to your solicitor is being charged. Stop sending them.
+
+**Description:** Solicitors charge for reading and responding to emails. Clients who send multiple emails a day are burning money. Batch your questions. Use one email per sitting. Ask what can wait until your next appointment. This habit alone saves hundreds.
+
+**Close:** Save it for what actually needs them. Link in bio.
+
+**Visuals:**
+1. Person at phone, typing rapidly, pound signs appearing above their head, flat graphic
+2. Email inbox graphic, unread count rising, charge counter beside it, bold background
+3. Close-up of a phone screen showing a compose email window, fingers on keyboard
+
+**Caption:** How much do solicitors charge for emails? Why every message to your family law solicitor costs money and how to reduce your legal bill in England and Wales. Solicitor fees emails. Legal fees family court. Litigant in person. Divorce costs. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-07 — prohibited_steps_order_explained
+
+**Hook:** Your ex is about to take your child abroad. You can stop them.
+
+**Description:** A prohibited steps order prevents a specific action, such as taking a child out of the country or changing their school, without court permission. You can apply urgently. The court can grant it the same day if the risk is immediate.
+
+**Close:** Know your options before it's too late. Link in bio.
+
+**Visuals:**
+1. Two figures, child between them, one figure holding a passport, flat illustration
+2. Passport graphic with a bold cross through it, court order beside it, bold background
+3. Close-up of a passport on a table, hand beside it, not touching
+
+**Caption:** What is a prohibited steps order in family court? How to stop your ex taking your child abroad or making decisions without your consent in England and Wales. Prohibited steps order. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-08 — specific_issue_order_school
+
+**Hook:** You and your ex can't agree on which school. The court decides.
+
+**Description:** A specific issue order resolves a single dispute about a child's upbringing — school choice, medical treatment, religious practice. You apply to the court and a judge makes the decision. It does not reopen the whole arrangements case.
+
+**Close:** We can help you understand what to apply for. Link in bio.
+
+**Visuals:**
+1. Two parent figures facing opposite directions, school building between them, flat graphic
+2. Two school buildings, question mark above, single court stamp below, bold background
+3. Close-up of a school prospectus on a table, two different ones side by side
+
+**Caption:** What is a specific issue order in family court? How to resolve disagreements about a child's school, medical care, or upbringing in England and Wales. Specific issue order. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-09 — emotional_3am_moment
+
+**Hook:** It's three in the morning and you're reading court documents alone.
+
+**Description:** That moment is real. The isolation of going through this without professional support at the hours it hits hardest is one of the things nobody prepares you for. You are not behind. You are not failing. You are doing this alone and that is genuinely hard.
+
+**Close:** You don't have to do this alone. Link in bio.
+
+**Visuals:**
+1. Single figure at a desk, lamp on, clock showing 3am, papers spread out, flat graphic
+2. Lamp circle of light on a dark background, single document illuminated, bold minimal
+3. Close-up of a clock face at 3am, document edge visible in foreground
+
+**Caption:** The emotional reality of going through family court alone at night. What it feels like to be a litigant in person without support in England and Wales. Family court alone. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-10 — how_to_address_the_judge
+
+**Hook:** You called the judge the wrong thing. Here's what to say.
+
+**Description:** District judges are addressed as Sir or Madam. Circuit judges are Your Honour. High Court judges are My Lord or My Lady. Getting it wrong won't lose your case but getting it right signals you have prepared. It matters more than you think.
+
+**Close:** Prepare every detail. We help with that. Link in bio.
+
+**Visuals:**
+1. Single figure standing, judge opposite, speech bubble above with question mark, flat graphic
+2. Three title cards — Sir/Madam, Your Honour, My Lord/My Lady — stacked bold on solid background
+3. Close-up of a person's mouth, mid-speech, courtroom setting suggested in background
+
+**Caption:** How do you address a judge in family court? What to call a district judge, circuit judge, or High Court judge in family court proceedings in England and Wales. How to address a judge. Family court England. Litigant in person. Court etiquette. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-11 — parenting_plan_not_legally_binding
+
+**Hook:** Your parenting plan means nothing unless the court seals it.
+
+**Description:** A parenting plan is a private agreement between parents. It is not a court order. It cannot be enforced if the other party ignores it. To make it legally binding you need a consent order sealed by a judge. Without it you have a document, not a guarantee.
+
+**Close:** Make it enforceable. We'll show you how. Link in bio.
+
+**Visuals:**
+1. Two figures shaking hands over a document, no stamp visible, flat illustration
+2. Document with no court stamp, cross beside it, second document with stamp, tick beside it
+3. Close-up of a document with a blank space where a court stamp should be
+
+**Caption:** Is a parenting plan legally binding in England and Wales? Why a parenting plan without a court order cannot be enforced in family court. Parenting plan family court. Consent order. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-12 — form_e_what_goes_in_it
+
+**Hook:** Form E asks for everything. Most people get it wrong.
+
+**Description:** Form E is your full financial disclosure in divorce proceedings. It covers income, assets, debts, pensions, and outgoings. It is signed with a statement of truth, which means lying is perjury. Every figure must be supported by evidence. Guessing is not acceptable.
+
+**Close:** We can walk you through it section by section. Link in bio.
+
+**Visuals:**
+1. Person at a desk surrounded by bank statements and financial documents, flat graphic
+2. Form E graphic, sections labelled, income, assets, pensions, debts, bold background
+3. Close-up of a hand completing a financial form, calculator beside it
+
+**Caption:** What goes in Form E for divorce financial proceedings? How to complete financial disclosure in a financial remedy case in England and Wales. Form E divorce. Financial disclosure. Financial remedy. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-13 — did_you_know_cohabitation_no_rights
+
+**Hook:** Did you know unmarried partners have almost no automatic financial rights?
+
+**Description:** Common law marriage does not exist in England and Wales. If you are unmarried and your relationship ends, you have no automatic right to your partner's pension, savings, or property regardless of how long you lived together. This shocks most people.
+
+**Close:** Know where you stand before you need to. Link in bio.
+
+**Visuals:**
+1. Two figures, no ring visible, house between them, question mark above, flat graphic
+2. Two columns — married and unmarried — rights listed beside each, bold background
+3. Close-up of two hands, no wedding ring, keys on table between them
+
+**Caption:** Do unmarried couples have financial rights when they separate? Why common law marriage does not exist in England and Wales and what that means for cohabiting couples. Common law marriage. Cohabitation rights. Family court England. Divorce. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-14 — prepare_for_cafcass_call_practical
+
+**Hook:** The CAFCASS call is tomorrow. Three things to do tonight.
+
+**Description:** Write down what you want to say about your relationship with your child. Write down your specific concerns about the other parent with dates and examples. Decide what you will not say because it cannot be evidenced. Then sleep. The call is evidence. Treat it like one.
+
+**Close:** We help you prepare for this call. Link in bio.
+
+**Visuals:**
+1. Person at a table, notepad open, pen in hand, focused expression, flat graphic
+2. Notepad with three bullet points, phone graphic beside it, bold background
+3. Close-up of a handwritten list on a notepad, pen resting beside it
+
+**Caption:** How to prepare for the CAFCASS safeguarding call in family court. Three things to do the night before CAFCASS calls you in a child arrangements case in England and Wales. CAFCASS call preparation. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-15 — have_you_considered_direct_access
+
+**Hook:** Have you considered hiring a barrister just for one hearing?
+
+**Description:** Direct access allows you to hire a barrister for a single hearing without a solicitor instructing them. You handle the paperwork yourself. They appear in court for you on the day. For a contested final hearing this can be the most important decision you make.
+
+**Close:** Know your options. We can explain them. Link in bio.
+
+**Visuals:**
+1. Single figure in a courtroom, barrister figure beside them, flat illustration
+2. Two route graphic — full solicitor path versus direct access path — costs beside each, bold
+3. Close-up of a barrister's wig and gown hanging on a hook, minimal and clean
+
+**Caption:** What is direct access to a barrister in family court? How to hire a barrister without a solicitor for a family court hearing in England and Wales. Direct access barrister. Family court England. Litigant in person. Final hearing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-16 — scott_schedule_what_it_is
+
+**Hook:** The court asked for a Scott Schedule. Most people have never heard of it.
+
+**Description:** A Scott Schedule is a document used in fact-finding hearings. Each allegation is listed in a table. The applicant states what happened. The respondent replies. The judge assesses each one. It is precise, structured, and nothing like a witness statement. Getting the format wrong delays your case.
+
+**Close:** We'll explain the format before you start. Link in bio.
+
+**Visuals:**
+1. Person staring at a blank table on paper, confused expression, flat graphic
+2. Scott Schedule table graphic, columns labelled, allegations, response, finding, bold background
+3. Close-up of a structured table document, headings visible, rows empty
+
+**Caption:** What is a Scott Schedule in family court? How allegations are listed and responded to in fact-finding hearings in England and Wales. Scott Schedule family court. Fact finding hearing. Domestic abuse family court. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-17 — insight_judges_see_same_mistakes
+
+**Hook:** Judges see the same litigant in person mistakes every single week.
+
+**Description:** Bringing irrelevant marriage history into a child hearing. Addressing the other parent directly instead of the judge. Filing statements that read as personal attacks. These are the patterns that damage credibility before you've made your case. Knowing them in advance is the whole advantage.
+
+**Close:** Avoid the avoidable mistakes. We help with that. Link in bio.
+
+**Visuals:**
+1. Judge figure at bench, weary expression, two figures below in familiar standoff, flat graphic
+2. Three common mistakes listed, each with a cross, bold graphic on solid background
+3. Close-up of a judge's notepad, pen marking something, figure visible in background
+
+**Caption:** What mistakes do litigants in person make in family court? The most common errors judges see in child arrangements cases in England and Wales and how to avoid them. Family court mistakes. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-18 — how_to_write_a_chronology
+
+**Hook:** A chronology could be the most useful document you file. Here's why.
+
+**Description:** A chronology is a timeline of key events in your case. It helps the judge understand a complex history quickly. One page. Dates on the left. Brief factual description on the right. No opinions. No emotions. Judges appreciate them. Most litigants in person don't file one.
+
+**Close:** We help you build yours. Link in bio.
+
+**Visuals:**
+1. Person drawing a timeline on paper, calm and focused, flat graphic
+2. Clean vertical timeline graphic, dates on one side, events on other, bold background
+3. Close-up of a ruled page with dated entries, pen resting beside it
+
+**Caption:** What is a chronology in family court and how do you write one? How to present your case history clearly to a judge as a litigant in person in England and Wales. Chronology family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-19 — stop_paying_solicitor_for_letters
+
+**Hook:** Your solicitor just charged you to write a three-line letter.
+
+**Description:** Standard correspondence with the court or the other side is something you can often handle yourself. Filing acknowledgements, chasing directions, confirming hearing dates — none of these require a solicitor. Learn which letters you can write and which you genuinely cannot. The saving is significant.
+
+**Close:** Know what you can do yourself. Link in bio.
+
+**Visuals:**
+1. Person sealing an envelope, satisfied expression, pound sign graphic crossed out, flat graphic
+2. Two column graphic, letters a solicitor writes versus letters you can write, bold background
+3. Close-up of an envelope being sealed, pen and paper beside it
+
+**Caption:** What court correspondence can you handle yourself without a solicitor? How to reduce your legal bill by managing your own letters in a family court case in England and Wales. Solicitor fees. Litigant in person. Family court England. Reduce legal fees. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-20 — what_happens_at_MIAM_practically
+
+**Hook:** What actually happens at a MIAM? Most people imagine the worst.
+
+**Description:** A MIAM is one meeting with a mediator, usually sixty to ninety minutes. They explain mediation. They assess whether your case is suitable. You do not have to mediate afterwards. If it is not suitable — for example where there is domestic abuse — they issue an exemption certificate.
+
+**Close:** Know before you go. We've got you. Link in bio.
+
+**Visuals:**
+1. Two figures in chairs, mediator between them, calm neutral setting, flat graphic
+2. Single room, two chairs, clock on wall, simple and still, bold background
+3. Close-up of two hands resting on a table, mediator's notepad visible
+
+**Caption:** What actually happens at a MIAM mediation information and assessment meeting? What to expect at your MIAM appointment before family court in England and Wales. MIAM family court. Mediation. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-21 — transferring_property_after_divorce
+
+**Hook:** Your divorce is final. The house is still in both names. Why?
+
+**Description:** A final divorce order does not automatically transfer property. You need a separate court order or a deed of transfer to change legal ownership. Until that happens both names remain on the title and both remain liable for the mortgage. Many people don't discover this until they try to sell.
+
+**Close:** Don't leave it unresolved. We can explain the next step. Link in bio.
+
+**Visuals:**
+1. Two figures, house between them, both still connected to it by a line, flat graphic
+2. House graphic, two names on title, divorce stamp beside it but names unchanged, bold background
+3. Close-up of a land registry document, two names listed, no transfer marked
+
+**Caption:** Does divorce automatically transfer the house into one person's name? Why property transfer requires a separate step after divorce in England and Wales. Property transfer divorce. Financial remedy. Consent order. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-22 — did_you_know_you_can_record_cafcass
+
+**Hook:** Did you know you can ask CAFCASS to record your call?
+
+**Description:** You can request that your CAFCASS safeguarding call be recorded. This protects you if anything you said is later misrepresented in the safeguarding letter. Ask at the start of the call before anything else. It is your right. Most people don't know to ask.
+
+**Close:** Know your rights before that call. Link in bio.
+
+**Visuals:**
+1. Person on phone, record icon visible on screen, calm and prepared, flat graphic
+2. Phone graphic with record symbol active, document beside it with tick, bold background
+3. Close-up of a phone screen mid-call, record button visible, finger hovering
+
+**Caption:** Can you record your CAFCASS safeguarding call in family court? What rights litigants in person have when speaking to CAFCASS in child arrangements cases in England and Wales. CAFCASS call. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-23 — how_to_respond_to_false_statement
+
+**Hook:** Your ex filed a witness statement full of lies. Here's your response.
+
+**Description:** Do not file an angry rebuttal. Write a short, factual response that addresses only the claims that are evidenced and material to your child's welfare. Ignore the noise. Challenge the substance. A judge reading two angry statements discounts both. A calm factual response next to a hostile one reads as credibility.
+
+**Close:** We help you draft responses that work. Link in bio.
+
+**Visuals:**
+1. Two figures, one with aggressive document, one with calm composed document, flat graphic
+2. Two documents side by side, one dense and chaotic, one clean and structured, bold background
+3. Close-up of a hand writing a measured sentence, crossed-out angry draft beside it
+
+**Caption:** How to respond to a false witness statement in family court. What to include and what to leave out when replying to allegations in child arrangements proceedings in England and Wales. Witness statement family court. False allegations. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-24 — have_you_considered_negotiated_settlement
+
+**Hook:** Have you considered settling before the next hearing? Here's why that matters.
+
+**Description:** Most family court cases settle before a final hearing. A negotiated settlement, even an imperfect one, ends the case on your terms. A final hearing puts the decision entirely in the hands of a judge. Knowing when to settle is as important as knowing how to fight.
+
+**Close:** We help you think through the decision. Link in bio.
+
+**Visuals:**
+1. Two figures at a table, document between them, handshake forming, flat graphic
+2. Two paths graphic — settlement path and final hearing path — outcomes beside each, bold
+3. Close-up of a settlement offer letter on a table, pen resting beside it
+
+**Caption:** Should you settle your family court case before the final hearing? When a negotiated settlement is better than a contested hearing in England and Wales. Family court settlement. Child arrangements. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L4-25 — insight_what_no_order_means_for_you
+
+**Hook:** The judge made no order. That is not the same as losing.
+
+**Description:** A no order outcome means the judge decided that making an order would not benefit the child more than making none. It often means the court believes parents can manage without judicial intervention. It is not a statement about who was right. It is a statement about what the child needs.
+
+**Close:** Understand what every outcome means. Link in bio.
+
+**Visuals:**
+1. Figure leaving courtroom, no document in hand, walking forward not defeated, flat graphic
+2. Scales graphic, balanced, no order stamp beside them, bold background
+3. Close-up of a court order with no order written in the outcome box
+
+**Caption:** What does a no order mean in family court? What happens when a judge makes no child arrangements order in England and Wales. No order principle. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+## LAYER 5 — 25 posts
+
+---
+
+### L5-01 — how_to_file_at_court_yourself
+
+**Hook:** You don't need a solicitor to file at court. Here's how.
+
+**Description:** Most family court applications can be filed online via the HMCTS portal or by post. You complete the form, pay the fee or apply for remission, and submit. The court then processes it and sends you a case number. No solicitor required at the filing stage.
+
+**Close:** We'll show you exactly how. Link in bio.
+
+**Visuals:**
+1. Person at laptop, HMCTS portal on screen, calm and focused, flat graphic
+2. Form, envelope, court building in sequence, arrow connecting each, bold background
+3. Close-up of a screen showing an online court filing portal, cursor on submit button
+
+**Caption:** How do you file a family court application yourself without a solicitor? How to submit court forms online or by post as a litigant in person in England and Wales. File family court application. HMCTS portal. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-02 — what_costs_order_feels_like
+
+**Hook:** They won. And now you're paying their legal fees too.
+
+**Description:** A costs order in family court is rare but real. It is awarded when a party has behaved unreasonably, pursued unsubstantiated allegations, or ignored court directions. If it happens to you it means paying the other side's legal costs on top of your own. The way to avoid it is to behave reasonably at every stage.
+
+**Close:** We help you stay on the right side of this. Link in bio.
+
+**Visuals:**
+1. Figure receiving two invoices, one their own, one opponent's, flat graphic
+2. Scales graphic, unreasonable behaviour on one side, costs order on other, bold background
+3. Close-up of two legal invoices side by side on a table
+
+**Caption:** What is a costs order in family court and how do you avoid one? When judges award costs against a party in child arrangements and divorce proceedings in England and Wales. Costs order family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-03 — stop_using_children_as_messengers
+
+**Hook:** Stop sending messages to your ex through your child. The judge will find out.
+
+**Description:** Using children to communicate with the other parent is one of the most damaging things a parent can do in a contested case. CAFCASS asks children questions. Children repeat what they hear. What your child says in a CAFCASS interview reflects directly on you as a parent.
+
+**Close:** Protect your case by protecting your child. Link in bio.
+
+**Visuals:**
+1. Child figure between two adult figures, speech bubble passing through the child, flat graphic
+2. Child figure at centre, CAFCASS officer listening, parent visible in background, bold graphic
+3. Close-up of a child's hand holding a folded note, adult hands on either side
+
+**Caption:** Why using your child to pass messages to your ex damages your family court case. What CAFCASS hears from children and how it affects child arrangements proceedings in England and Wales. Child arrangements. CAFCASS. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-04 — what_final_order_actually_says
+
+**Hook:** Read your final order again. There's more in it than you think.
+
+**Description:** A child arrangements final order specifies where the child lives, when they spend time with each parent, and any conditions attached. It may also include provisions about holidays, school, medical decisions, and what happens at changeover. Every word is legally binding. Know exactly what yours says.
+
+**Close:** We help you understand every line. Link in bio.
+
+**Visuals:**
+1. Person reading a document carefully, highlighter in hand, focused, flat graphic
+2. Final order document, sections highlighted, conditions visible, bold background
+3. Close-up of a court order, specific clause highlighted, finger pointing to it
+
+**Caption:** What does a child arrangements final order actually contain? What to look for in your court order after a family court hearing in England and Wales. Child arrangements order. Final order family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-05 — emotional_you_are_not_failing
+
+**Hook:** You missed a deadline. You said the wrong thing. You are not failing.
+
+**Description:** Litigants in person make mistakes. The system was not designed for you. Judges know this. Missing a step or misjudging a hearing does not end a case. What matters is what you do next. Recovery is possible. Giving up is the only thing that isn't.
+
+**Close:** Whatever went wrong, next step matters. Link in bio.
+
+**Visuals:**
+1. Single figure, head down but still standing, road continuing ahead, flat graphic
+2. Timeline with a stumble marked, path continuing upward afterwards, bold background
+3. Close-up of a crumpled document being smoothed out, hands steady
+
+**Caption:** What to do when you make a mistake in family court. How litigants in person recover from errors in child arrangements proceedings in England and Wales. Family court mistake. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-06 — did_you_know_LASPO_cut_legal_aid
+
+**Hook:** Legal aid for family law was gutted in 2013. Here's what remained.
+
+**Description:** The Legal Aid Sentencing and Punishment of Offenders Act 2013 removed legal aid from most private family law cases. What remained was legal aid for domestic abuse survivors and child protection cases. If neither applies to you, you are almost certainly self-funding or self-representing.
+
+**Close:** Know what you're entitled to. Link in bio.
+
+**Visuals:**
+1. Legal aid document, large section crossed out, small section remaining, flat graphic
+2. Before and after graphic, legal aid coverage 2012 versus 2013, bold background
+3. Close-up of a policy document, highlighted text showing what was removed
+
+**Caption:** What happened to legal aid for family law in 2013? How LASPO changed access to legal representation in family court in England and Wales. Legal aid family court. LASPO. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-07 — how_to_prepare_position_statement_fast
+
+**Hook:** You have forty-eight hours to file a position statement. Do this.
+
+**Description:** One paragraph on who you are. One paragraph on what order you are seeking and why. One paragraph on what you agree the other parent can provide. Nothing else. Judges read hundreds of these. The ones that are short, factual, and child-focused are the ones that land.
+
+**Close:** We help you write it right. Link in bio.
+
+**Visuals:**
+1. Person writing quickly but calmly, clock on wall, focused not panicked, flat graphic
+2. Three-paragraph document structure, each paragraph labelled, bold background
+3. Close-up of a half-written page, three clear sections visible, pen moving
+
+**Caption:** How to write a position statement in forty-eight hours for family court. What to include in a quick position statement as a litigant in person in England and Wales. Position statement family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-08 — insight_adjournments_cost_you
+
+**Hook:** Your case was adjourned again. Here's what that is actually costing you.
+
+**Description:** Every adjournment adds months to a case. It adds stress, legal fees if you have representation, and emotional cost to you and your child. Courts adjourn for many reasons — missing evidence, overloaded lists, CAFCASS delays. Most are outside your control. But being prepared eliminates the ones that aren't.
+
+**Close:** Be the one who is always ready. Link in bio.
+
+**Visuals:**
+1. Figure in courtroom, judge pointing to calendar, dejected expression, flat graphic
+2. Timeline with adjournment markers, months added each time, bold graphic
+3. Close-up of a court diary with a date crossed out and rescheduled
+
+**Caption:** Why do family court cases get adjourned so often? What adjournments cost litigants in person in child arrangements proceedings in England and Wales. Family court adjournment. Litigant in person. Family court England. Child arrangements delay. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-09 — have_you_considered_a_consent_order_for_children
+
+**Hook:** Have you considered getting the children's arrangements put into a court order?
+
+**Description:** Even when parents agree, a consent order for child arrangements is worth considering. Without one, either parent can change arrangements unilaterally and the other has no immediate legal remedy. An agreed order filed with the court takes the argument out of the future. It protects both of you.
+
+**Close:** Turn your agreement into something enforceable. Link in bio.
+
+**Visuals:**
+1. Two figures nodding, document between them, court stamp appearing, flat graphic
+2. Handshake graphic, court order appearing below it, solid and sealed, bold background
+3. Close-up of a consent order with judge's signature, pen beside it
+
+**Caption:** Should you get a consent order for child arrangements even if you agree? Why a court order protects agreed child arrangements in England and Wales. Consent order child arrangements. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-10 — what_happens_when_child_refuses_contact
+
+**Hook:** Your child is refusing contact. The order still stands.
+
+**Description:** A child arrangements order is legally binding on the parents, not on the child. If a child refuses contact the parent with whom they live must take reasonable steps to encourage it. Simply allowing a child to refuse without intervention can be treated as a breach of the order by the resident parent.
+
+**Close:** Know what the order actually requires of you. Link in bio.
+
+**Visuals:**
+1. Child figure, arms crossed, adult figure outside door, flat illustration
+2. Court order document, child figure beside it, arrow showing parent's obligation, bold graphic
+3. Close-up of a child's feet on one side of a threshold, not crossing
+
+**Caption:** What happens when a child refuses contact under a family court order? What resident parents are legally required to do when children won't attend contact in England and Wales. Child refuses contact. Child arrangements order. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-11 — stop_putting_it_all_in_the_statement
+
+**Hook:** Your witness statement is forty pages. That is hurting your case.
+
+**Description:** A witness statement should cover the facts relevant to the welfare of your child. Not the history of your relationship. Not everything your ex has ever done. Judges have limited time. A focused ten-page statement is taken more seriously than an unfocused forty-page one. Edit ruthlessly.
+
+**Close:** We help you cut it to what matters. Link in bio.
+
+**Visuals:**
+1. Person staring at a huge stack of papers, judge in background looking overwhelmed, flat graphic
+2. Thick document with a cross, thin clean document with a tick, bold side-by-side graphic
+3. Close-up of a heavily marked-up draft, red edits visible, pen crossing out paragraphs
+
+**Caption:** How long should a witness statement be in family court? Why shorter focused statements work better than exhaustive ones in child arrangements cases in England and Wales. Witness statement family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-12 — form_c100_section_by_section
+
+**Hook:** Section five of the C100 stops most people cold. Here's why.
+
+**Description:** Section five asks you to describe the orders you are applying for in legal terms. Most people write what they want to happen in plain English. What the court needs is the specific legal provision — lives with, spends time with, or a combination. The guidance notes explain this. Most people never read them.
+
+**Close:** We read forms like this with you. Link in bio.
+
+**Visuals:**
+1. Person reading a form, pen hovering, section five highlighted, flat graphic
+2. C100 form, section five zoomed in, two answer options side by side, bold background
+3. Close-up of a form section, legal term visible, handwritten answer beneath it
+
+**Caption:** How to complete section five of the C100 form for child arrangements. What the C100 form asks for and what litigants in person get wrong in England and Wales. C100 form. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-13 — emotional_your_child_still_needs_you
+
+**Hook:** The system is grinding you down. Your child still needs you to stay in it.
+
+**Description:** There are moments in a long case where giving up feels like the only option. The cost. The delays. The emotional weight. But withdrawing from proceedings or stopping engaging does not end the case. It hands it to the other side. Your child needs you in that room.
+
+**Close:** Stay in it. We're here to help. Link in bio.
+
+**Visuals:**
+1. Figure at courtroom door, hand on handle, child figure visible through window, flat graphic
+2. Long road graphic, halfway point marked, destination still visible, bold background
+3. Close-up of a child's hand reaching toward an adult hand, not yet touching
+
+**Caption:** What to do when family court feels impossible to keep going with. Why staying engaged in proceedings matters for your child in England and Wales. Family court burnout. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-14 — how_to_use_text_messages_as_evidence
+
+**Hook:** Your ex's texts are evidence. Most people don't know how to use them.
+
+**Description:** Text messages, WhatsApp messages, and emails are admissible as evidence in family court if relevant to the welfare of the child. You need to produce them in a readable format, label them clearly with dates and context, and include them in your bundle. Screenshots are acceptable but must be complete and unedited.
+
+**Close:** We help you organise your evidence properly. Link in bio.
+
+**Visuals:**
+1. Person scrolling through phone, selecting a message, flat graphic
+2. Phone screenshot, message visible, printed page beside it, label attached, bold background
+3. Close-up of a phone screen showing a message, hand holding it toward a document stack
+
+**Caption:** Can you use text messages as evidence in family court? How to present WhatsApp and text message evidence in child arrangements proceedings in England and Wales. Text messages family court. Evidence family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-15 — did_you_know_ex_parte_orders_exist
+
+**Hook:** Did you know a court can make an order without hearing your side first?
+
+**Description:** Without notice orders, also called ex parte orders, are made in urgent situations where telling the other party would put someone at risk. If one is made against you, you receive it along with a date for a return hearing where you can challenge it. Do not breach it in the meantime.
+
+**Close:** Know what to do if this happens. Link in bio.
+
+**Visuals:**
+1. Figure receiving a document, surprised expression, judge in background, flat graphic
+2. Order appearing on a table without warning, return hearing date stamped below, bold graphic
+3. Close-up of an order document, without notice stamped in bold at the top
+
+**Caption:** What is a without notice or ex parte order in family court? What to do if a court order is made against you without your knowledge in England and Wales. Without notice order. Ex parte order. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-16 — insight_court_is_last_resort
+
+**Hook:** The court does not want your case. It wants you to resolve it.
+
+**Description:** Family courts are under enormous pressure. Judges actively encourage settlement at every stage. The no order principle reflects this. Every hearing starts with the question of whether the parties can agree anything before the judge needs to decide. Arriving with a genuine willingness to settle puts you in a stronger position than arriving for a fight.
+
+**Close:** We help you prepare to negotiate, not just fight. Link in bio.
+
+**Visuals:**
+1. Judge figure, hand raised, pointing toward two figures to talk to each other, flat graphic
+2. Courtroom with settlement table highlighted more brightly than the judge's bench, bold graphic
+3. Close-up of two documents — court listing and settlement offer — side by side
+
+**Caption:** Why family court judges want you to settle rather than fight. How the no order principle shapes every family court hearing in England and Wales. No order principle. Family court settlement. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-17 — how_to_prepare_for_final_hearing
+
+**Hook:** Your final hearing is in four weeks. Start here.
+
+**Description:** Know your witness statement inside out. Prepare for cross examination on every significant claim you made. Read the other party's statement and note what you dispute with evidence. Read the CAFCASS report and know which recommendations you agree with and which you contest. Have your bundle indexed and complete one week before.
+
+**Close:** We help you prepare for this one properly. Link in bio.
+
+**Visuals:**
+1. Figure at desk, documents spread, calendar with final hearing marked four weeks out, flat graphic
+2. Preparation checklist graphic, five items, each with a checkbox, bold background
+3. Close-up of a calendar with a date circled, preparation notes written around it
+
+**Caption:** How to prepare for a final hearing in family court. What litigants in person need to do in the weeks before a contested final hearing in England and Wales. Final hearing preparation. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-18 — what_clean_break_order_means
+
+**Hook:** A clean break order. Most divorcing couples don't get one. Should you?
+
+**Description:** A clean break order ends all financial claims between former spouses once and for all. Without one, either party can make financial claims in the future regardless of how long ago the divorce was finalised. It is particularly important if one party later comes into money or property.
+
+**Close:** Understand whether you need one. Link in bio.
+
+**Visuals:**
+1. Two figures walking in opposite directions, clean line between them, document in each hand, flat graphic
+2. Timeline graphic, divorce point marked, future financial claims blocked by clean break order, bold
+3. Close-up of a consent order, clean break clause highlighted
+
+**Caption:** What is a clean break order in divorce? Why a financial clean break matters after divorce in England and Wales. Clean break order. Financial remedy. Consent order. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-19 — have_you_considered_section_91_14
+
+**Hook:** Have you considered asking the court to restrict future applications?
+
+**Description:** A section 91.14 order restricts a person from making further court applications without the court's permission. It is used where one party has made repeated or vexatious applications. If you are on the receiving end of repeated proceedings, this is a tool the court has. Most people don't know it exists.
+
+**Close:** Know every tool available to you. Link in bio.
+
+**Visuals:**
+1. Stack of application forms, cross through new one, court gate graphic, flat illustration
+2. Section 91.14 label on a barrier graphic, application blocked, bold background
+3. Close-up of a court order restricting further applications, text highlighted
+
+**Caption:** What is a section 91.14 order in family court? How to stop repeated or vexatious court applications in child arrangements cases in England and Wales. Section 91.14. Vexatious applications. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-20 — stop_fighting_in_front_of_child
+
+**Hook:** The judge will find out if you argue in front of your child.
+
+**Description:** Children tell CAFCASS what they see at home. They tell teachers. They tell family members. Conflict witnessed by a child is noted in CAFCASS reports and can directly influence a judge's view of which parent provides the more stable environment. What happens at home does not stay at home.
+
+**Close:** Protect your case and your child at the same time. Link in bio.
+
+**Visuals:**
+1. Child figure in background, two adult figures arguing in foreground, flat graphic
+2. CAFCASS report graphic, parental conflict noted in bold, bold background
+3. Close-up of a child's face looking toward the camera, adult silhouettes arguing behind
+
+**Caption:** Does arguing in front of your child affect your family court case? How parental conflict at home affects CAFCASS reports and child arrangements decisions in England and Wales. Parental conflict family court. CAFCASS. Child arrangements. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-21 — insight_interim_vs_final_order
+
+**Hook:** The difference between an interim order and a final order matters more than you think.
+
+**Description:** An interim order is temporary. A final order is binding until varied. But interim orders frequently become the template for final orders because judges are reluctant to disturb what appears to be working. Every interim arrangement you accept is setting the precedent for what follows. Understand what you are agreeing to before you agree.
+
+**Close:** Know what you're signing before you sign it. Link in bio.
+
+**Visuals:**
+1. Two orders side by side, interim and final, arrow from one to the other becoming permanent, flat graphic
+2. Timeline, interim order at start, dotted line becoming final order, bold background
+3. Close-up of two documents, interim label on one, final order label on other
+
+**Caption:** What is the difference between an interim and a final order in family court? Why interim child arrangements orders often become permanent in England and Wales. Interim order family court. Final order. Child arrangements. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-22 — how_to_vary_a_child_arrangements_order
+
+**Hook:** Your circumstances have changed. Your court order hasn't. Here's what to do.
+
+**Description:** You can apply to vary a child arrangements order if there has been a significant change in circumstances — a new job, a house move, a change in the child's needs, or a change in the other parent's situation. The bar is not low. You need to show something material has changed, not just that you want a different arrangement.
+
+**Close:** We help you assess whether you have grounds. Link in bio.
+
+**Visuals:**
+1. Figure holding old court order, circumstances visibly changed around them, flat graphic
+2. Original order graphic, circumstances box updated, new application graphic below, bold background
+3. Close-up of a court order with a change of circumstances note written beside it
+
+**Caption:** How do you vary a child arrangements order in family court? What counts as a significant change in circumstances to reopen a child arrangements case in England and Wales. Vary child arrangements order. Family court England. Litigant in person. Child custody UK. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-23 — did_you_know_you_can_appeal
+
+**Hook:** Did you know you can appeal a family court decision?
+
+**Description:** You can appeal a family court order if the judge made a legal error or if the decision was wrong on the facts. You need permission to appeal and you must apply within twenty-one days of the order. Permission is not guaranteed. You need to show the appeal has a real prospect of success.
+
+**Close:** Know whether you have grounds. We can help. Link in bio.
+
+**Visuals:**
+1. Figure at courtroom door, looking back at decision, arrow pointing upward to appeal court, flat graphic
+2. Order graphic, appeal arrow pointing upward to higher court graphic, twenty-one days marked, bold
+3. Close-up of a court order, appeal deadline date stamped on it
+
+**Caption:** Can you appeal a family court decision in England and Wales? How to appeal a child arrangements or financial remedy order in family court. Appeal family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-24 — emotional_nobody_sees_what_this_costs
+
+**Hook:** Nobody sees what this is costing you. The sleepless nights. The isolation.
+
+**Description:** Family court cases consume people. The financial cost is visible. The emotional cost is invisible. The sleeplessness, the constant replaying of hearings, the fear about the next one — these are real. And they are happening to you while you are also expected to be a functioning parent. That takes extraordinary strength.
+
+**Close:** You are not alone in this. Link in bio.
+
+**Visuals:**
+1. Figure in bed, eyes open, clock showing night, papers on the bedside table, flat graphic
+2. Single lamp in darkness, document beside it, night scene minimal and still, bold background
+3. Close-up of tired eyes, lamp in background, night visible through window
+
+**Caption:** The hidden emotional cost of going through family court alone. What litigants in person go through that nobody else sees in England and Wales. Family court emotional impact. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L5-25 — how_to_write_closing_submissions
+
+**Hook:** The judge asked for closing submissions. Here's what that means.
+
+**Description:** Closing submissions are a short oral or written summary of your case at the end of a hearing. You tell the judge what you have proven, why the evidence supports your position, and what order you are asking for. You do not repeat everything. You highlight what matters most. Most litigants in person don't prepare for this.
+
+**Close:** We help you prepare every part of a hearing. Link in bio.
+
+**Visuals:**
+1. Figure standing before a judge, single page in hand, calm and clear, flat graphic
+2. Single document, three sections, what I proved, why it matters, what I ask for, bold background
+3. Close-up of a half-page summary document, clear headings, pen resting beside it
+
+**Caption:** What are closing submissions in family court and how do you prepare them? How to summarise your case at the end of a hearing as a litigant in person in England and Wales. Closing submissions family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+## LAYER 6 — 25 posts
+
+---
+
+### L6-01 — how_to_request_court_documents
+
+**Hook:** You can request documents from the court. Most people never do.
+
+**Description:** As a party to proceedings you are entitled to copies of all filed documents, orders made in your case, and the court record. You can request these in writing from the court office. If you have lost an order or were never given a document that was filed, you can ask for it. This is your right.
+
+**Close:** Know what you're entitled to access. Link in bio.
+
+**Visuals:**
+1. Figure at court counter, clerk passing documents across, flat graphic
+2. Folder of documents with party's name on front, court stamp visible, bold background
+3. Close-up of a written request letter addressed to the court, pen beside it
+
+**Caption:** How do you get copies of your court documents in family court? How to request filed documents and court orders as a litigant in person in England and Wales. Court documents family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-02 — insight_judges_remember_conduct
+
+**Hook:** Judges remember how you behaved last time. Every single time.
+
+**Description:** In a case spanning multiple hearings the same judge may not always be assigned. But when they are, your conduct at every prior hearing is on record and in memory. The parent who was disruptive at hearing one is the parent the judge is watching more carefully at hearing two. Consistency of conduct is not optional.
+
+**Close:** Every hearing is your record. Make it count. Link in bio.
+
+**Visuals:**
+1. Judge figure, file open, notes visible from previous hearing, figure before them, flat graphic
+2. Timeline of hearings, conduct notes marked at each one, cumulative picture forming, bold graphic
+3. Close-up of a judge's notebook with handwritten observation, date beside it
+
+**Caption:** Do family court judges remember how you behaved at previous hearings? Why consistent conduct across all hearings matters in child arrangements cases in England and Wales. Family court conduct. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-03 — what_special_measures_are
+
+**Hook:** You don't have to be in the same room as your abuser in court.
+
+**Description:** Special measures in family court include separate waiting rooms, screens, video links, and staggered entry and exit times. If you are a victim of domestic abuse you can ask for these before your hearing. You apply to the court in advance. You do not have to face your abuser across a courtroom.
+
+**Close:** Know what protections exist before your next hearing. Link in bio.
+
+**Visuals:**
+1. Two figures in separate rooms, screen between courtroom spaces, flat graphic
+2. Courtroom plan showing separate entrances, waiting areas, bold schematic background
+3. Close-up of a screen in a courtroom, figure visible on it, empty chair in foreground
+
+**Caption:** What are special measures in family court for domestic abuse survivors? How to apply for screens, separate waiting rooms, and video links in family court in England and Wales. Special measures family court. Domestic abuse family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-04 — stop_venting_to_solicitor
+
+**Hook:** Stop venting to your solicitor. They're charging you for it.
+
+**Description:** Solicitors are not counsellors. Every call where you process your feelings rather than progress your case is a charged call. The emotional side of family court is real and it deserves support, but not from someone billing at £300 an hour. Keep solicitor time for legal work only.
+
+**Close:** Use the right support for the right thing. Link in bio.
+
+**Visuals:**
+1. Figure on phone, emotional expression, pound signs rising beside them, flat graphic
+2. Phone call graphic, time counter and cost counter running simultaneously, bold background
+3. Close-up of a phone screen, call duration visible, legal pad untouched beside it
+
+**Caption:** Why venting to your solicitor in family court is costing you money. How to separate emotional support from legal advice and reduce your legal bill in England and Wales. Solicitor fees. Family court costs. Litigant in person. Reduce legal fees. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-05 — have_you_considered_FDR
+
+**Hook:** Have you considered an FDR? It could end your financial case in one day.
+
+**Description:** A financial dispute resolution hearing is a without prejudice meeting with a judge who gives an indication of what a fair settlement might look like. It is not binding. But knowing what a judge thinks is likely to happen at a final hearing changes the negotiation dramatically. Most cases settle at FDR.
+
+**Close:** Understand every stage of the financial process. Link in bio.
+
+**Visuals:**
+1. Two figures at a table, judge figure across from them giving an indication, flat graphic
+2. FDR graphic in a financial case timeline, settlement marker appearing after it, bold background
+3. Close-up of a financial settlement document, FDR indication note beside it
+
+**Caption:** What is a financial dispute resolution hearing in divorce proceedings? How the FDR hearing works and why most financial cases settle at this stage in England and Wales. FDR hearing. Financial remedy. Divorce finances. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-06 — what_Cafcass_section_7_recommends
+
+**Hook:** CAFCASS wrote a report recommending less contact than you hoped for. Now what?
+
+**Description:** A section 7 recommendation is not a court order. The judge must consider it but is not bound by it. If you disagree with the recommendations you must file a response, address the welfare checklist, and present evidence that contradicts the officer's conclusions. Silence on a recommendation is read as acceptance.
+
+**Close:** We help you respond to what CAFCASS recommends. Link in bio.
+
+**Visuals:**
+1. Figure reading a report, disappointed expression, judge in background with report visible, flat graphic
+2. CAFCASS report graphic, recommendation section highlighted, response document beside it, bold
+3. Close-up of a section 7 report page, recommendation underlined, response note beside it
+
+**Caption:** What do you do if CAFCASS recommends less contact than you want in a section 7 report? How to challenge CAFCASS recommendations in family court in England and Wales. Section 7 report CAFCASS. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-07 — how_to_log_evidence_daily
+
+**Hook:** Start a log today. What you write now is what helps you later.
+
+**Description:** Date. Time. What happened. Who was present. What was said. Any messages or calls related to it. This is your evidence log. Keep it factual. Keep it specific. Keep it consistent. Courts weight documented patterns over remembered incidents. A log started today may be the most important document in your case.
+
+**Close:** We help you build and organise your log. Link in bio.
+
+**Visuals:**
+1. Person writing in a notebook, date at top, calm and methodical, flat graphic
+2. Notebook graphic, dated entries building up, each short and specific, bold background
+3. Close-up of a handwritten log entry, date visible, factual note below it
+
+**Caption:** How to keep an evidence log for a family court case. Why documenting incidents daily is one of the most important things a litigant in person can do in England and Wales. Evidence log family court. Child arrangements. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-08 — form_d8_divorce_petition_explained
+
+**Hook:** The D8 form starts the divorce. Most people fill it in wrong.
+
+**Description:** Form D8 is the divorce application. You state the date and place of marriage, confirm the marriage has broken down irretrievably, and provide details of any children. Since no-fault divorce was introduced in 2022, you no longer need to allege behaviour or list reasons. Most people still don't know this.
+
+**Close:** Start the right way from the beginning. Link in bio.
+
+**Visuals:**
+1. Person completing a form, calm expression, no-fault stamp appearing above it, flat graphic
+2. D8 form graphic, no-fault divorce label, 2022 reform highlighted, bold background
+3. Close-up of a divorce application form, marriage date field completed, pen resting
+
+**Caption:** How do you complete the D8 divorce application form? What no-fault divorce means for the divorce petition in England and Wales since 2022. D8 divorce form. No fault divorce. Divorce England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-09 — emotional_people_will_not_understand
+
+**Hook:** The people around you don't understand what you're going through. That's normal.
+
+**Description:** Family court is unlike anything most people experience. The language, the stakes, the unpredictability. Friends and family who haven't been through it often give well-meaning advice that is wrong or irrelevant to your jurisdiction. The isolation of facing something nobody in your life fully understands is one of the hardest parts.
+
+**Close:** We understand exactly what you're going through. Link in bio.
+
+**Visuals:**
+1. Single figure at a table, others around them talking but not connecting, flat graphic
+2. Single figure in spotlight, others in soft background, disconnected but present, bold graphic
+3. Close-up of a person's hands on a table, others' hands visible but apart
+
+**Caption:** Why family court feels so isolating even when people are trying to help. The experience of going through proceedings that nobody around you fully understands in England and Wales. Family court alone. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-10 — did_you_know_cohabitation_agreement
+
+**Hook:** Did you know unmarried couples can create their own legal agreement?
+
+**Description:** A cohabitation agreement sets out how assets and finances will be managed and divided if the relationship ends. It is legally binding if properly drafted and signed. It cannot grant the same protections as marriage but it provides far more than no agreement at all. Most cohabiting couples don't have one.
+
+**Close:** Know what protections are available to you. Link in bio.
+
+**Visuals:**
+1. Two figures, no ring, signing a document together, flat graphic
+2. Cohabitation agreement graphic, key clauses visible, both signatures at bottom, bold background
+3. Close-up of a cohabitation agreement being signed, two pens, two signatures
+
+**Caption:** What is a cohabitation agreement and is it legally binding? How unmarried couples can protect their assets if they separate in England and Wales. Cohabitation agreement. Unmarried couples rights. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-11 — how_to_ask_for_more_time_in_court
+
+**Hook:** You can ask the judge for more time. Most people don't.
+
+**Description:** If you need a moment to collect your thoughts, refer to a document, or gather yourself during a hearing you can ask the judge for a brief pause. Judges routinely grant this for litigants in person. You simply say you need a moment to refer to your notes. You are not required to perform under pressure without pause.
+
+**Close:** Know every small right you have. Link in bio.
+
+**Visuals:**
+1. Figure in courtroom, hand raised slightly, judge nodding, flat graphic
+2. Courtroom graphic, brief pause visible as a pause symbol, calm not panicked, bold background
+3. Close-up of a hand reaching for a document on a table, judge's hand visible in background
+
+**Caption:** Can you ask a judge for more time in a family court hearing? What litigants in person can request during hearings in England and Wales. Family court hearing tips. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-12 — insight_what_a_barrister_actually_does
+
+**Hook:** A barrister and a solicitor are not the same thing. Here's the difference.
+
+**Description:** A solicitor manages your case, advises you, and handles correspondence. A barrister is a specialist advocate who argues in court. For most family court hearings your solicitor will instruct a barrister to appear. Via direct access you can instruct a barrister yourself. Understanding the difference helps you spend the right money on the right person.
+
+**Close:** Know who you actually need in the room. Link in bio.
+
+**Visuals:**
+1. Two figures — one in an office, one in a courtroom — arrows showing their distinct roles, flat graphic
+2. Two-column graphic, solicitor role and barrister role listed side by side, bold background
+3. Close-up of a barrister's brief and a solicitor's file, side by side on a desk
+
+**Caption:** What is the difference between a solicitor and a barrister in family court? When you need a solicitor and when you need a barrister in family proceedings in England and Wales. Solicitor vs barrister. Family court England. Litigant in person. Direct access barrister. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-13 — how_to_get_school_records_as_evidence
+
+**Hook:** Your child's school records could be the most powerful evidence you have.
+
+**Description:** Schools keep records of attendance, welfare concerns, meetings with parents, and any disclosures made by children. You can request your child's records as their parent. These records can evidence involvement, consistency, and any welfare concerns that have been formally noted. Most litigants don't think to ask for them.
+
+**Close:** We help you identify what evidence to gather. Link in bio.
+
+**Visuals:**
+1. Person at a school reception desk, requesting a file, calm and purposeful, flat graphic
+2. School file graphic, attendance record, welfare notes, parental meeting log, bold background
+3. Close-up of a school record folder, parent name and date fields visible
+
+**Caption:** Can you use your child's school records as evidence in family court? How to obtain and use school records in child arrangements cases in England and Wales. School records family court. Evidence family court. Child arrangements. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-14 — stop_copying_american_legal_advice
+
+**Hook:** That advice you found online is American. It does not apply here.
+
+**Description:** The majority of legal content on the internet is American. American family law is fundamentally different from English and Welsh family law. Different presumptions, different processes, different terminology, different outcomes. Following American advice in a UK proceeding can actively damage your case. England and Wales is its own jurisdiction.
+
+**Close:** Get information that actually applies to you. Link in bio.
+
+**Visuals:**
+1. Figure at laptop, US flag visible on screen, UK flag crossed out beside it, flat graphic
+2. Globe graphic, US highlighted, UK jurisdiction separately circled and labelled, bold background
+3. Close-up of a screen showing American legal advice, England and Wales flag beside it with a cross
+
+**Caption:** Why American family law advice does not apply to family court cases in England and Wales. The difference between US and UK family law for litigants in person. American family law. Family court England. Litigant in person. UK family law. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-15 — have_you_considered_supported_referral
+
+**Hook:** Have you considered asking your GP to write a letter for your case?
+
+**Description:** A letter from a GP confirming a mental health concern, a physical injury, or a welfare visit can constitute evidence in family court. GPs can also refer to specialist services whose records may become evidence. Most people don't think to ask their GP to document something that later becomes relevant.
+
+**Close:** Know what professional records can support your case. Link in bio.
+
+**Visuals:**
+1. Figure at a GP desk, doctor writing a letter, flat graphic
+2. GP letter graphic, headed paper, key observation highlighted, bold background
+3. Close-up of a medical letter, date and professional header visible, relevant line underlined
+
+**Caption:** Can a GP letter be used as evidence in family court? How medical records and professional letters support child arrangements cases in England and Wales. GP letter family court. Medical evidence. Child arrangements. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-16 — what_happens_first_hearing_actually
+
+**Hook:** You've read everything. Nothing prepares you for that room.
+
+**Description:** The first hearing is often in a small room, not a formal courtroom. The judge may be behind a desk, not a bench. It is often quicker than you expect. The atmosphere is more procedural than dramatic. The worst preparation is expecting it to look like television. It doesn't. Knowing that helps.
+
+**Close:** We help you know what to expect. Link in bio.
+
+**Visuals:**
+1. Figure entering a small room with a desk and a judge, surprised by the informality, flat graphic
+2. Small room layout versus television courtroom, side by side, bold graphic
+3. Close-up of a small courtroom sign, functional not grand
+
+**Caption:** What does a family court hearing room actually look like? What to expect from the physical environment of a hearing as a litigant in person in England and Wales. Family court hearing room. First hearing. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-17 — how_no_fault_divorce_works
+
+**Hook:** You no longer have to blame anyone to get a divorce. Here's how it works.
+
+**Description:** Since April 2022 couples in England and Wales can apply for divorce on the sole ground that the marriage has irretrievably broken down. No reasons required. No fault assigned. You can apply jointly or alone. The process takes a minimum of twenty-six weeks from application to final order.
+
+**Close:** Understand the process before you start it. Link in bio.
+
+**Visuals:**
+1. Two figures, no confrontation, document between them, simple and calm, flat graphic
+2. No fault divorce timeline graphic, 26 weeks marked, stages labelled, bold background
+3. Close-up of a divorce application, no fault box checked, date of application visible
+
+**Caption:** How does no-fault divorce work in England and Wales? What the 2022 divorce reform means for couples applying for divorce today. No fault divorce. Divorce England. Divorce timeline. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-18 — did_you_know_you_can_represent_yourself_final
+
+**Hook:** Did you know you can represent yourself at a final hearing?
+
+**Description:** There is no rule that requires you to have legal representation at any stage of family court proceedings, including a final hearing. Judges regularly deal with unrepresented parties at final hearings. It is harder without representation but it is done. Thorough preparation is what makes the difference.
+
+**Close:** We help you be as prepared as possible. Link in bio.
+
+**Visuals:**
+1. Single figure in a formal courtroom, standing and speaking to a judge, flat graphic
+2. Courtroom graphic, one side with barrister, one side with litigant in person, both present, bold
+3. Close-up of a single figure's hands holding a statement, courtroom setting behind them
+
+**Caption:** Can you represent yourself at a final hearing in family court? What litigants in person need to know about appearing at a contested final hearing in England and Wales. Self-representing final hearing. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-19 — emotional_anger_hurts_your_case
+
+**Hook:** Your anger is justified. It is also the thing most likely to damage your case.
+
+**Description:** Anger in a courtroom is read as instability. Anger in a witness statement is read as unreliability. Anger directed at your ex in a hearing is read as an inability to co-parent. None of this is fair. All of it is true. The most effective litigants in person are the ones who feel everything and show nothing in the room.
+
+**Close:** We help you channel it into something that works. Link in bio.
+
+**Visuals:**
+1. Figure in hearing, controlled expression, fist slightly clenched beneath the desk, flat graphic
+2. Anger graphic on one side, composed courtroom figure on other, wall between them, bold background
+3. Close-up of a hand under a table, gripping tightly, composed posture above
+
+**Caption:** Why anger damages your family court case even when it is completely justified. How to manage your emotions as a litigant in person in hearings in England and Wales. Anger family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-20 — how_to_ask_for_an_adjournment
+
+**Hook:** You're not ready for your hearing. You can ask for more time.
+
+**Description:** If you need an adjournment you must apply as early as possible, in writing, stating the reason clearly. Last minute adjournment requests are looked on unfavourably. Valid reasons include a medical emergency, a missing piece of essential evidence, or not having received documents in time. Personal reasons alone are rarely enough.
+
+**Close:** Know how to ask properly if you need to. Link in bio.
+
+**Visuals:**
+1. Figure at a desk writing a letter urgently, calendar visible, flat graphic
+2. Adjournment request graphic, valid reasons listed, timing shown, bold background
+3. Close-up of a letter headed application to adjourn, date visible, reason below it
+
+**Caption:** How do you ask for an adjournment in family court? What counts as a valid reason for postponing a hearing in England and Wales. Adjournment family court. Litigant in person. Family court England. Child arrangements hearing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-21 — insight_social_media_in_court
+
+**Hook:** Your social media posts have been screenshotted. Assume they're in the bundle.
+
+**Description:** Social media posts, including private ones shared with mutual connections, regularly appear in family court bundles. Posts that contradict evidence you have given, show behaviour inconsistent with your position, or undermine your credibility will be used. Lock your accounts at the start of proceedings and think before you post anything.
+
+**Close:** Protect your case in every space. Link in bio.
+
+**Visuals:**
+1. Figure posting on phone, screenshot graphic appearing, document graphic beside it, flat graphic
+2. Social media post graphic, screenshot arrow, court bundle graphic beside it, bold background
+3. Close-up of a phone screen, post visible, screenshot notification appearing
+
+**Caption:** Can social media be used as evidence in family court? Why your posts can end up in the court bundle in child arrangements and divorce cases in England and Wales. Social media evidence family court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-22 — how_to_deal_with_delays
+
+**Hook:** Your case has been delayed again. Here's how to use that time.
+
+**Description:** Delays are a feature of family court, not a bug. Overloaded lists, CAFCASS backlogs, and the complexity of cases all contribute. Every delay is time you can use to strengthen your position. Update your evidence log. Read your witness statement again. Review the other party's documents. Prepare questions for cross examination. Delays are frustrating. They are also preparation time.
+
+**Close:** Use every week the system gives you. Link in bio.
+
+**Visuals:**
+1. Figure with calendar showing delayed date, turning to a preparation checklist, flat graphic
+2. Calendar with delay marked, checklist appearing beside it, each item being ticked, bold background
+3. Close-up of a rescheduled hearing date, preparation notes written around it
+
+**Caption:** What to do when your family court case is delayed. How litigants in person can use court delays productively in child arrangements cases in England and Wales. Family court delay. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-23 — did_you_know_your_ex_can_be_cross_examined
+
+**Hook:** Did you know you can cross examine your ex on their witness statement?
+
+**Description:** At a contested hearing both parties can be cross examined on their written statements. As a litigant in person you have the right to question the other party. You must do so through the judge — you put your question to the judge who may allow it — and your questions must be relevant and appropriate. You can prepare questions in advance.
+
+**Close:** We help you prepare questions that land. Link in bio.
+
+**Visuals:**
+1. Figure standing, question card in hand, judge between them and their ex, flat graphic
+2. Two figures, question arrow going through judge before reaching the other party, bold graphic
+3. Close-up of a prepared question list on paper, pen beside it, numbered clearly
+
+**Caption:** Can you cross examine your ex in family court as a litigant in person? How cross examination works in child arrangements hearings in England and Wales. Cross examination litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-24 — have_you_considered_letter_before_application
+
+**Hook:** Have you sent a letter before applying to court? It could change everything.
+
+**Description:** A letter before application is a formal letter to the other party setting out what you want and giving them an opportunity to respond before court proceedings begin. It demonstrates to the court that you attempted to resolve matters first. Courts look favourably on parties who tried. It is also often enough to produce movement.
+
+**Close:** Start with the step that might avoid court. Link in bio.
+
+**Visuals:**
+1. Figure posting a letter, courtroom visible in background but not yet entered, flat graphic
+2. Letter graphic, send arrow, response option, court application held back, bold background
+3. Close-up of a formal letter on headed paper, opening line visible, envelope beside it
+
+**Caption:** What is a letter before application in family court proceedings? Why writing formally before applying to court can help your case in England and Wales. Letter before application. Family court England. Litigant in person. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L6-25 — stop_sharing_proceedings_online
+
+**Hook:** Sharing details of your family court case online is contempt of court.
+
+**Description:** Family court proceedings are held in private. Publishing information that identifies the parties, the children, or the details of the case is a contempt of court, regardless of whether you feel your story deserves to be told. This includes posting on Facebook, TikTok, Reddit, or any public forum. The consequences are serious.
+
+**Close:** Protect yourself and your case. Link in bio.
+
+**Visuals:**
+1. Figure typing on phone, court graphic in background, warning symbol appearing, flat graphic
+2. Social media post with court case details, contempt stamp appearing over it, bold background
+3. Close-up of a phone showing a post being deleted, court order visible on desk beside it
+
+**Caption:** Can you share details of your family court case on social media? Why publishing information about family proceedings is contempt of court in England and Wales. Family court privacy. Contempt of court. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+## LAYER 7 — 25 posts
+
+---
+
+### L7-01 — how_to_serve_documents_on_your_ex
+
+**Hook:** You have to serve documents on your ex. Here's what that actually means.
+
+**Description:** Service means formally delivering court documents to the other party in a way the court recognises. For most family court applications this means first class post to their last known address or personal service by a process server. You must file a certificate of service with the court confirming it was done.
+
+**Close:** Get the process right from the start. Link in bio.
+
+**Visuals:**
+1. Figure posting a large envelope, second figure's house visible, flat graphic
+2. Documents graphic, service arrow, certificate of service graphic below, bold background
+3. Close-up of an envelope being sealed, address visible, recorded delivery label attached
+
+**Caption:** How do you serve court documents on the other party in family court? What service of documents means and how to do it correctly as a litigant in person in England and Wales. Service of documents family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-02 — insight_what_balanced_looks_like
+
+**Hook:** The most credible thing you can do in court is acknowledge the other parent's strengths.
+
+**Description:** Parents who present themselves as the only capable parent lose credibility. Judges see this constantly. The parent who acknowledges what the other parent does well, while clearly articulating their own strengths and any genuine concerns, reads as balanced, child-focused, and trustworthy. Balance is a tactic as much as it is a virtue.
+
+**Close:** We help you frame your case the way judges respond to. Link in bio.
+
+**Visuals:**
+1. Figure speaking, acknowledging other parent figure with a nod, judge watching, flat graphic
+2. Two columns, other parent's strengths, my strengths, both visible and balanced, bold background
+3. Close-up of a witness statement, balanced paragraph visible, not one-sided
+
+**Caption:** Why acknowledging the other parent's strengths helps your family court case. How presenting a balanced view of parenting builds credibility with judges in England and Wales. Credibility family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-03 — what_parental_responsibility_actually_is
+
+**Hook:** You keep hearing parental responsibility. Here's what it actually means.
+
+**Description:** Parental responsibility is the legal right and duty to make decisions about a child's upbringing — education, medical treatment, religion, travel. Mothers have it automatically. Fathers have it if they are married to the mother, named on the birth certificate since 2003, or have a parental responsibility agreement or order. Not having it limits what you can legally do.
+
+**Close:** Know exactly what rights you have. Link in bio.
+
+**Visuals:**
+1. Two parent figures, legal document between them, PR label visible, flat graphic
+2. Parental responsibility graphic, who has it and how, bold checklist background
+3. Close-up of a birth certificate, father's name field visible
+
+**Caption:** What is parental responsibility in family law and who has it automatically? How fathers acquire parental responsibility in England and Wales. Parental responsibility. Father's rights. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-04 — did_you_know_mediation_can_be_free
+
+**Hook:** Did you know mediation can be free if your income qualifies?
+
+**Description:** If you are on a low income or receiving certain benefits you may qualify for legally aided mediation at no cost to you. This is separate from the MIAM. Full mediation sessions where you and your ex work through issues with a professional mediator can be funded. Most people assume mediation is expensive. It doesn't have to be.
+
+**Close:** Find out if you qualify. We can point you in the right direction. Link in bio.
+
+**Visuals:**
+1. Two figures at a table, mediator between them, free label visible, flat graphic
+2. Mediation graphic, income threshold indicator, green tick for qualifying, bold background
+3. Close-up of a legal aid mediation certificate, income figure below threshold
+
+**Caption:** Can you get free mediation for a family court dispute? Who qualifies for legally aided family mediation in England and Wales. Free mediation family court. Legal aid mediation. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-05 — how_to_handle_a_hearing_you_lost
+
+**Hook:** You lost the hearing. Here is what to do in the next twenty-four hours.
+
+**Description:** Read the order the moment it arrives. Note every direction and every deadline. Identify what you could have done differently. Decide whether the outcome warrants an appeal and apply within twenty-one days if so. Begin preparing for the next hearing immediately. A lost hearing is not a lost case. What you do next is everything.
+
+**Close:** The next step is what matters. We help with that. Link in bio.
+
+**Visuals:**
+1. Figure leaving a courtroom, head up, document in hand, calm not defeated, flat graphic
+2. Lost hearing marked on timeline, next hearing visible, preparation arrow between them, bold graphic
+3. Close-up of a court order, outcome section visible, next date highlighted
+
+**Caption:** What to do after losing a family court hearing. How litigants in person recover from a bad outcome in child arrangements proceedings in England and Wales. Lost family court hearing. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-06 — stop_calling_it_custody
+
+**Hook:** Stop calling it custody. That word doesn't exist in English family law.
+
+**Description:** Custody is an American legal term. In England and Wales the correct terms are child arrangements, lives with, and spends time with. Using the wrong terminology in documents or in court signals that your information may not be jurisdiction specific. Small things read as signals. Use the right language.
+
+**Close:** Get the language right. It matters more than you think. Link in bio.
+
+**Visuals:**
+1. Figure crossing out the word custody on a document, writing child arrangements above it, flat graphic
+2. Two word graphics, custody crossed out, child arrangements highlighted, bold background
+3. Close-up of a form with custody crossed out and replaced with the correct terminology
+
+**Caption:** Why you should stop saying custody in family court in England and Wales. The correct legal terminology for child arrangements in UK family law. Child custody UK. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-07 — how_to_present_evidence_in_court
+
+**Hook:** You have the evidence. Presenting it badly loses you the hearing.
+
+**Description:** Evidence should be referenced by the page number in your bundle. You say: if you turn to page forty-two of the bundle. You do not hand things to the judge directly. You do not read out long passages. You direct the judge to the document and say briefly what it shows. Less is more. Judges read. You point.
+
+**Close:** Know how to use what you've gathered. Link in bio.
+
+**Visuals:**
+1. Figure in court, pointing to a bundle, judge turning to the same page, flat graphic
+2. Bundle open, page number highlighted, arrow pointing judge toward it, bold graphic
+3. Close-up of a bundle page, page number tab visible, passage underlined
+
+**Caption:** How do you present evidence in a family court hearing? How to refer to documents and exhibits correctly as a litigant in person in England and Wales. Presenting evidence family court. Litigant in person. Court bundle. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-08 — emotional_the_system_was_not_built_for_you
+
+**Hook:** The family court system was not built for people like you. That's the truth.
+
+**Description:** Family court was designed for legally represented parties. The forms, the language, the procedures — none of it assumes you don't have professional support. Every litigant in person is navigating a system that was built without them in mind. That is not your failure. It is the system's. And it is why finding the right information matters so much.
+
+**Close:** We built something for exactly this. Link in bio.
+
+**Visuals:**
+1. Figure in a vast institutional building, small and alone, flat graphic
+2. System graphic with represented parties at centre, litigant in person at the edge, bold background
+3. Close-up of a court door, small figure's reflection visible in the glass
+
+**Caption:** Why family court is so hard to navigate without a solicitor. How the system was designed for represented parties not litigants in person in England and Wales. Family court system. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-09 — have_you_considered_a_parenting_coordinator
+
+**Hook:** Have you considered a parenting coordinator? Most people have never heard of them.
+
+**Description:** A parenting coordinator is a neutral professional who helps high-conflict co-parents resolve day-to-day disputes without going back to court. They can make binding decisions on low-level issues where both parents agree to their appointment. They reduce court applications and reduce conflict. They are not the same as a mediator.
+
+**Close:** Know every tool that keeps you out of court. Link in bio.
+
+**Visuals:**
+1. Two parent figures, coordinator between them, arrows showing dispute resolution, flat graphic
+2. Parenting coordinator graphic, disputes resolved without court, cost comparison visible, bold graphic
+3. Close-up of a parenting coordination agreement, both signatures visible
+
+**Caption:** What is a parenting coordinator and how do they help co-parents in conflict? How parenting coordinators reduce court applications in family disputes in England and Wales. Parenting coordinator. High conflict co-parenting. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-10 — what_threshold_criteria_means
+
+**Hook:** The court used the words threshold criteria. Here's what that means for you.
+
+**Description:** Threshold criteria is the legal test for whether a court can make a care or supervision order. It means the court must be satisfied that a child is suffering or is likely to suffer significant harm attributable to the care given by the parent. Understanding this term tells you how serious the court considers the situation.
+
+**Close:** Know what every legal term in your case means. Link in bio.
+
+**Visuals:**
+1. Judge figure, threshold document on desk, figure below looking uncertain, flat graphic
+2. Threshold criteria graphic, significant harm test visible, bold legal language demystified
+3. Close-up of a court document with threshold criteria highlighted, plain language beside it
+
+**Caption:** What does threshold criteria mean in family court proceedings? How the significant harm test works in care and child arrangements cases in England and Wales. Threshold criteria. Significant harm. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-11 — how_to_find_a_good_mckenzie_friend
+
+**Hook:** Finding a good McKenzie Friend is harder than you think. Here's how.
+
+**Description:** Ask for references and evidence of cases they have supported. Ask whether they have ever been refused permission to act by a court. Ask what they can and cannot do. Avoid anyone who claims they can speak to the judge for you — they cannot. Avoid anyone who charges excessive fees without transparency. Check reviews.
+
+**Close:** Know what good support looks like. Link in bio.
+
+**Visuals:**
+1. Figure interviewing a McKenzie Friend candidate, checklist visible, flat graphic
+2. Good McKenzie Friend versus bad one, two columns, clear distinguishing features, bold graphic
+3. Close-up of a checklist for assessing a McKenzie Friend, items being ticked
+
+**Caption:** How do you find a good McKenzie Friend for family court? What to look for and what to avoid when choosing a McKenzie Friend in England and Wales. McKenzie Friend family court. Litigant in person. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-12 — insight_what_resident_parent_means
+
+**Hook:** Resident parent. Non-resident parent. Here's why the label matters.
+
+**Description:** The parent with whom the child primarily lives is often called the resident parent, though the formal term is the parent with whom the child lives. This distinction affects applications, enforcement, and how breaches are treated. Knowing which position you hold in the proceedings changes how you present your case.
+
+**Close:** Know your position and play it well. Link in bio.
+
+**Visuals:**
+1. Two figures, one at a home setting, one visiting, child with resident parent, flat graphic
+2. Resident and non-resident labels, different legal positions visible, bold graphic
+3. Close-up of a court order, lives with and spends time with clauses highlighted
+
+**Caption:** What does resident parent mean in family court proceedings? The difference between the parent a child lives with and the parent they spend time with in England and Wales. Resident parent. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-13 — did_you_know_court_can_instruct_expert
+
+**Hook:** Did you know the court can instruct its own expert without asking you?
+
+**Description:** In complex cases the court can instruct an independent expert — a psychologist, a medical expert, or a financial specialist — whose report goes to the judge. Both parties usually share the cost. You cannot veto this instruction but you can provide evidence that challenges the expert's conclusions once the report is received.
+
+**Close:** Know what can happen in your case. Link in bio.
+
+**Visuals:**
+1. Judge figure, expert figure beside them, both looking at report, parties in background, flat graphic
+2. Expert instruction graphic, cost split between parties visible, report to judge below, bold graphic
+3. Close-up of an expert report cover, court instruction reference visible at the top
+
+**Caption:** Can family court instruct its own expert without your agreement? How independent expert reports work in child arrangements and financial remedy cases in England and Wales. Expert witness family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-14 — how_to_stay_composed_giving_evidence
+
+**Hook:** You're about to give evidence. Here's how to stay composed.
+
+**Description:** Breathe before you answer. Take your time. Answer the question asked, nothing more. If you don't understand a question, say so. If you need to refer to a document, ask the judge. Never argue with a question — note your disagreement and move on. Your composure is part of your evidence.
+
+**Close:** Walk into that witness box ready. Link in bio.
+
+**Visuals:**
+1. Figure in a witness box, composed, hands visible and still, flat graphic
+2. Five rules graphic — breathe, pause, answer, refer, compose — each one appearing, bold background
+3. Close-up of steady hands resting on a ledge, courtroom visible behind
+
+**Caption:** How to stay calm when giving evidence in family court. What to do in the witness box as a litigant in person in child arrangements hearings in England and Wales. Giving evidence family court. Witness box. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-15 — stop_assuming_50_50_is_default
+
+**Hook:** There is no default fifty-fifty in English family law. Stop assuming there is.
+
+**Description:** English family courts have no presumption of equal shared care. The starting point is the welfare of the child. What arrangement serves the child best is decided on the specific facts of each case. Some cases result in equal sharing. Many do not. Assuming fifty-fifty as a baseline is not just wrong — it shapes your application in ways that can weaken it.
+
+**Close:** Know what you're actually asking for. Link in bio.
+
+**Visuals:**
+1. Figure with fifty-fifty chart expecting it, judge with different graphic, flat graphic
+2. Fifty-fifty split graphic with a cross, welfare checklist with a tick, bold side-by-side
+3. Close-up of a court order, time split visible but not equal, welfare note beside it
+
+**Caption:** Is fifty-fifty shared care the default in family court in England and Wales? Why equal shared care is not automatic in child arrangements cases. Shared care family court. Child arrangements. Family court England. Litigant in person. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-16 — emotional_it_changes_you
+
+**Hook:** Going through family court changes you. That's not weakness. That's reality.
+
+**Description:** People who have been through long proceedings describe it as a before and after in their lives. The constant vigilance, the financial stress, the grinding uncertainty. These leave marks. Acknowledging that is not self-pity. It is self-awareness. And knowing what it is doing to you is how you manage it rather than let it manage you.
+
+**Close:** You deserve support through this. Link in bio.
+
+**Visuals:**
+1. Figure, before proceedings versus after, subtle difference in posture, both still standing, flat graphic
+2. Before and after silhouette, same person, different weight of experience, bold minimal graphic
+3. Close-up of hands, older and more marked, papers held with experience
+
+**Caption:** How going through family court changes people. The long-term emotional impact of family proceedings on litigants in person in England and Wales. Family court emotional impact. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-17 — have_you_considered_reviewing_your_order
+
+**Hook:** Have you actually read your court order since it was made?
+
+**Description:** Court orders are sometimes made in complex hearings where you are under stress and not processing every detail. Reading your order carefully when you are calm reveals what is actually required of both parties, what the conditions are, and what happens next. Many people discover things they missed the first time.
+
+**Close:** Read it again. We help you understand it. Link in bio.
+
+**Visuals:**
+1. Figure reading a document carefully at a desk, highlighter in hand, calm, flat graphic
+2. Court order graphic, overlooked clause highlighted, surprised expression icon beside it, bold
+3. Close-up of a court order, specific condition underlined, note written beside it
+
+**Caption:** Why you should re-read your family court order carefully when you are calm. What litigants in person miss in court orders made during stressful hearings in England and Wales. Court order family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-18 — how_to_challenge_a_CAFCASS_report
+
+**Hook:** The CAFCASS report is wrong. You can challenge it. Here's how.
+
+**Description:** If a section 7 report contains factual errors or conclusions you dispute, you must file a written response before the next hearing. Identify specific errors, provide evidence that contradicts them, and address any recommendations you contest by reference to the welfare checklist. You can also request that the CAFCASS officer attend the hearing to give evidence.
+
+**Close:** You are not obliged to accept a report unchallenged. Link in bio.
+
+**Visuals:**
+1. Figure with CAFCASS report, filing a response document beside it, flat graphic
+2. Report graphic, disputed section highlighted, response document beside it, bold background
+3. Close-up of a CAFCASS report page, error circled, evidence reference noted beside it
+
+**Caption:** How do you challenge a CAFCASS section 7 report in family court? What to do if the CAFCASS report contains errors or unfair recommendations in England and Wales. Challenge CAFCASS report. Section 7 report. Child arrangements. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-19 — insight_family_court_is_not_criminal
+
+**Hook:** Family court and criminal court are completely different things. Here's why that matters.
+
+**Description:** The standard of proof in family court is the balance of probabilities — more likely than not. In criminal court it is beyond reasonable doubt. This means something can be found proven in family court that would not meet the criminal standard. Domestic abuse findings, for example, can be made in family court even without a criminal conviction.
+
+**Close:** Understand the standard you're operating under. Link in bio.
+
+**Visuals:**
+1. Two court buildings, different scales visible above each, flat graphic
+2. Two standard of proof graphics side by side, balance of probabilities versus beyond reasonable doubt, bold
+3. Close-up of a court document, balance of probabilities standard cited in text
+
+**Caption:** What is the standard of proof in family court? How the balance of probabilities differs from the criminal standard in England and Wales. Standard of proof family court. Family court England. Litigant in person. Domestic abuse family court. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-20 — how_to_write_to_the_court
+
+**Hook:** You need to write to the court. Most people don't know how.
+
+**Description:** All correspondence with the court should include your full name, the case number, the names of the parties, and what you are asking for or providing. Send it to the correct court. Keep a copy. If you are filing something with a deadline, use tracked post or the online portal so you have proof of receipt.
+
+**Close:** Every communication with the court matters. Link in bio.
+
+**Visuals:**
+1. Figure writing a letter, case number visible at top, flat graphic
+2. Letter to court graphic, required elements labelled, tracked post confirmation below, bold background
+3. Close-up of a letter heading, case number, party names, date, all visible
+
+**Caption:** How do you write to the family court as a litigant in person? What to include in correspondence with the court in England and Wales. Writing to family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-21 — stop_using_legal_jargon_you_dont_understand
+
+**Hook:** Stop using legal words in your statement you don't fully understand.
+
+**Description:** A witness statement that misuses legal terminology undermines your credibility. If you use a term incorrectly a judge or the opposing party can use it to suggest you don't understand your own case. Write in plain English. Describe what happened. If a legal term is needed use it correctly or not at all.
+
+**Close:** We help you say exactly what you mean. Link in bio.
+
+**Visuals:**
+1. Figure writing, crossing out a legal term, replacing with plain English, flat graphic
+2. Legal jargon graphic with cross, plain English version with tick, bold side-by-side
+3. Close-up of a draft statement, legal term crossed out, clearer phrase written above
+
+**Caption:** Why using legal jargon incorrectly damages your family court case. How litigants in person should write witness statements in plain English in England and Wales. Witness statement tips. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-22 — did_you_know_superscript_practice_direction
+
+**Hook:** Did you know there are rules that govern how every family court hearing runs?
+
+**Description:** Practice directions are the detailed rules that govern how family court proceedings are conducted — how documents must be filed, how bundles must be prepared, how evidence must be presented. They are publicly available. Most litigants in person have never read them. Reading even a summary changes how prepared you are.
+
+**Close:** Know the rules of the game before you play. Link in bio.
+
+**Visuals:**
+1. Figure at a desk, practice direction document open, surprised at the detail, flat graphic
+2. Practice direction cover graphic, key rules listed, public access label visible, bold background
+3. Close-up of a practice direction document, rule heading visible, plain language summary beside it
+
+**Caption:** What are practice directions in family court and why do they matter? How the rules governing family court proceedings affect litigants in person in England and Wales. Practice directions family court. Litigant in person. Family court England. Child arrangements. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-23 — how_to_behave_at_changeover
+
+**Hook:** Changeover is where most damage is done. Here's what to do instead.
+
+**Description:** The handover of a child is one of the highest-risk moments in a contested arrangements case. Arguments at changeover are witnessed by the child and sometimes recorded. Keep it brief. Keep it neutral. Stick to the agreed time and location. Anything said or done at changeover can be used in the next hearing.
+
+**Close:** Protect your case at every handover. Link in bio.
+
+**Visuals:**
+1. Two adult figures at a doorstep, child between them, brief and neutral exchange, flat graphic
+2. Changeover graphic, do and don't list, bold and clear, minimal background
+3. Close-up of a child's hand being passed between two adult hands, neutral setting
+
+**Caption:** How to handle child changeover during a family court case. Why behaviour at handover matters for your case in child arrangements proceedings in England and Wales. Child changeover. Child arrangements. Litigant in person. Family court England. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-24 — emotional_you_found_this_account
+
+**Hook:** You found this account because you needed it. That means something.
+
+**Description:** Most people find information like this after weeks or months of searching through confusing websites, contradicting advice, and mounting anxiety. If you're here, you're still looking. You're still trying to understand. That determination is what gets people through family court. The system is hard. You are harder.
+
+**Close:** Everything you need to know is closer than you think. Link in bio.
+
+**Visuals:**
+1. Figure at a phone, account visible on screen, relief in expression, flat graphic
+2. Single figure, light appearing around them, information closing in, positive not threatening, bold
+3. Close-up of a phone screen showing the account, figure's reflection in the screen
+
+**Caption:** Finding information about family court as a litigant in person in England and Wales. What it means to keep searching when the system makes it this hard. Family court support. Litigant in person. Family court England. Self-representing. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
+
+---
+
+### L7-25 — what_talia_actually_is
+
+**Hook:** What if you had something that knew your case and was available at midnight?
+
+**Description:** Not a solicitor. Not a generic chatbot. Something that understands the family court process in England and Wales, knows your case, helps you prepare for hearings, walks you through forms, and is available when it's three in the morning and you can't sleep. That's what we built. For people exactly like you.
+
+**Close:** Link in bio. We built this for you.
+
+**Visuals:**
+1. Single figure at night, phone open, information appearing, calm returning to their face, flat graphic
+2. Phone screen graphic, chat interface visible, family court question being answered, bold background
+3. Close-up of a phone screen at night, lamp in background, answer appearing on screen
+
+**Caption:** An AI companion for people navigating family court without a solicitor in England and Wales. Built for litigants in person going through child arrangements and divorce proceedings. Family court support. Litigant in person. Family court England. Without a lawyer. #familycourt #litigantinperson #familycourtuk #childcustodyuk #divorceuk
