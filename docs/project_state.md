@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: [updating after commit]
+Last verified commit: 877d8f1 (docs — N=200 sign-off recorded, step 12 closed)
 
 Next: visual design pass (step 8). Build sequencing plan complete. All safety evals signed off.
 
