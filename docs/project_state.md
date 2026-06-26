@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: PLACEHOLDER (design — visual design v8 complete, design system locked)
+Last verified commit: 70c87e3 (design — visual design v8 complete, design system locked)
 
 Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
 
