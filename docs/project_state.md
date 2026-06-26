@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: 7cb8e51 (design — wireframes v9 committed, step 8 complete)
+Last verified commit: f9b74f5 (date awareness injection into system prompt at call time in run_turn())
 
 Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
 
@@ -886,6 +886,14 @@ got a couple of things coming up fairly soon: your Form E is due on 1 August, an
 hearing is on 14 August at Manchester Family Court." Natural, specific, reassuring, not a list.
 Compliance: PASS. A second test with a user with no memory facts confirmed no returning-user
 addition fires and the standard intake opening is unchanged.
+
+## Date awareness (this commit, f9b74f5)
+
+On every API request, the current date and day of week are injected into the system prompt at call time inside run_turn() in scripts/chat.py. The injection appends a short sentence after _TOOL_SYSTEM_ADDITION: "Today is {day}, {date}. When answering any question involving deadlines, hearing dates, time remaining, or what is coming up, use this date as your reference point for what 'today', 'this week', 'soon', or 'upcoming' means."
+
+The date is generated via datetime.now() on each request, not at server startup, so it always reflects the actual date of the call. This means a user who leaves the browser open overnight will receive the correct date on their next message without any client-side logic required.
+
+Combined with the existing time-sensitive memory scan from the returning user experience (step 4), the model now knows both today's date and what is upcoming in the user's case, enabling responses like "your Form E is due in 8 days" rather than "your Form E is due on 1 August."
 
 ## Mobile-first baseline (this commit, 21 June 2026)
 
