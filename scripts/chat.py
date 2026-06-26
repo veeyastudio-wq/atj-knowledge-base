@@ -13,6 +13,7 @@ Usage:
 import re
 import sys
 import uuid
+from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -341,7 +342,14 @@ def run_turn(
     # fold a note into the system prompt so the model can open naturally as
     # a returning-user-aware companion. No effect on subsequent turns or on
     # sessions where no time-sensitive facts are found.
-    system_to_use = system_prompt + _TOOL_SYSTEM_ADDITION
+    _now = datetime.now()
+    _date_injection = (
+        f"\n\nToday is {_now.strftime('%A')}, {_now.day} {_now.strftime('%B %Y')}. "
+        "When answering any question involving deadlines, hearing dates, time remaining, "
+        "or what is coming up, use this date as your reference point for what 'today', "
+        "'this week', 'soon', or 'upcoming' means."
+    )
+    system_to_use = system_prompt + _TOOL_SYSTEM_ADDITION + _date_injection
     if not conversation_history and memories:
         ts = _time_sensitive_facts(memories)
         if ts:
