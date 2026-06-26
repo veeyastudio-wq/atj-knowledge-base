@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: (pending — visual design v9 committed, step 8 complete)
+Last verified commit: 7cb8e51 (design — wireframes v9 committed, step 8 complete)
 
 Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
 
