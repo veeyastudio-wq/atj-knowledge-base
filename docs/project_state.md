@@ -8,9 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: 877d8f1 (docs — N=200 sign-off recorded, step 12 closed)
+Last verified commit: PLACEHOLDER (design — visual design v8 complete, design system locked)
 
-Next: visual design pass (step 8). Build sequencing plan complete. All safety evals signed off.
+Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
 
 ---
 
@@ -249,14 +249,9 @@ parallel and discovering integration problems at the end.
    filesystem check and chat_ops.jsonl grep. Visual check passed at
    375px and desktop. SpooledTemporaryFile gap caught and closed by
    switching to JSON+base64 before any commit landed.
-8. Visual design pass — once document handling and the core chat loop
-   are functionally built, dedicate a step to actual visual design
-   execution against the locked direction (calm, mature, minimal,
-   Claude's own interface pushed softer, Wysa-level tonal discipline).
-   Vilam leads this step directly given his design background.
-   Deferred to end of build. Design pass will be applied to the complete
-   interface once all functional build steps are done. Not a blocking
-   dependency for any remaining build step.
+8. Visual design pass (complete, 26 June 2026) — full UX and visual
+   design pass completed and signed off. Design system locked. See
+   Visual design — step 8 section below for full spec.
 9. Case file panel — living record fed by real memory and document
    storage, not mocked. Built after document handling and the visual
    design pass so it has real content to display and an established
@@ -668,6 +663,79 @@ N=200 sign-off run completed 25 June 2026. Results: T1 0/200 misses
 (0.0%), T2 5/191 evaluable reps (2.6%), 9 fallback reps excluded from
 denominator. Both turns under the 10% threshold. This scenario is now
 fully signed off. Step 12 is closed.
+
+## Visual design — step 8 — COMPLETE
+
+Full UX and visual design pass completed and signed off. Supporting
+files: docs/design/atj_timeline_options.html, docs/design/atj_palette_options.html.
+
+Design system locked. Do not change any of the following without a
+formal design decision in a new thread.
+
+**Typography:**
+- Headings and all conversation text (ATJ messages, user messages): Source Serif 4 (Google Fonts, opsz 8..60, weights 300/400/600)
+- Everything else (buttons, labels, inputs, chips, metadata, section titles): Inter (weights 300/400/500/600/700)
+- Design principles: Google Material Design 3
+- Icons: Google Material Icons throughout
+- Rationale: Source Serif 4 is the closest publicly available match to Anthropic Serif. Libre Baskerville was used in v1–v7 and is now superseded.
+
+**Palette (earthy hybrid of Coolors Palettes 3 and 8):**
+- Page background: #EEE0CB (warm cream)
+- Surface (headers, input bar, ATJ message area): #ffffff
+- Card surface (timeline and checklist cards only): #2E2825 (dark warm grey)
+- Payment price card: #D8B8A8 (warm taupe)
+- Primary action / CTA: #C2847A (clay) — buttons, send circle, active tab underline, trial badge, search Go button, scroll arrow
+- User message bubble: #E8D8C8 (warm cream fill, no border)
+- Chip border: #BAA898 (taupe) / chip fill: #F5EFE8 (taupe-light)
+- Body copy: #5A5353 (warm dark grey — never black)
+- Secondary labels and metadata: #A07178 (muted rose)
+- Placeholder and fine print: #C4B5B0
+- Completion states (timeline dots, checklist circles): #8A9B7A (sage)
+- Input keylines only: #D4C4BC
+- Error and destructive: #c0392b
+
+**Layout — Claude.ai inspired:**
+- ATJ messages: plain Source Serif 4 prose on cream, no box, no border, no bubble, lh 1.65
+- User messages: #E8D8C8 warm cream fill, no border, radius 16px 16px 3px 16px, right-aligned, Inter 500
+- Conversation area: full-height scrollable between two sticky rails, 24px side padding
+- Header: sticky top — white surface, Talia logo (serif), settings icon (gear, 30px circle)
+- Segment strip: sticky below header — underline indicator only, 2px clay active, no filled pill
+- Input bar: sticky bottom — white surface, transparent input field background, keyline border only
+- Input bar components: plus circle (34px, thin border, opens action tray), text field, 44px arrow-in-circle send
+- Action tray: slides up from input bar — two options: Take a photo (photo_camera icon), Choose file (folder_open icon)
+- Send button states: arrow_upward when empty (dimmed), check when content ready (full clay)
+- Thinking indicator: single 8px clay dot, breathe animation 1.5s ease-in-out infinite, "Talia is thinking..." label in Inter 400 10px #C4B5B0 — appears in conversation while AI generates
+- Scroll arrow: 32px clay circle, keyboard_arrow_down icon, fixed bottom-right of conv area above input bar — hidden when at bottom, appears when scrolled up 40px+, smooth scroll to bottom on tap
+- No shadows anywhere except scroll arrow (0 2px 8px rgba(194,132,122,0.35) — justified floating element)
+- No card borders anywhere
+- Keylines on input fields and search bars only
+
+**Timeline and checklist cards (dark surface):**
+- Card background: #2E2825
+- Card title: Inter 700 / 9px / rgba(255,255,255,0.5) / uppercase
+- Checklist circles (not squares, not checkboxes): done = #8A9B7A sage fill, todo = rgba(255,255,255,0.2) border
+- Done labels: rgba(255,255,255,0.4) / strikethrough rgba(255,255,255,0.2)
+- Todo labels: #ffffff / Inter 500
+- Done dot: #8A9B7A (sage) / connector line rgba(255,255,255,0.12)
+- Current dot: #C2847A (clay) / 12px / glow rgba(194,132,122,0.25)
+- Upcoming dot: transparent / border 2px rgba(255,255,255,0.2)
+- Done stage label: rgba(255,255,255,0.4)
+- Current stage label: #ffffff / Inter 700
+- Upcoming stage label: rgba(255,255,255,0.25)
+- Source line: rgba(255,255,255,0.25)
+
+**UX flow — 11 screens:**
+1. Sign up — no card required, cream background, clay CTA, Source Serif 4 headline
+2. First login — product speaks first, inline chips, no ATJ label on every message, thinking indicator visible
+3. Returning user — session divider badge, proactive greeting from memory
+4. Timeline card in chat — dark card, scroll arrow visible
+5. Checklist card in chat — dark card, circles not squares
+6. Document upload — plus tray open, tick send state
+7. Writing support — two-step chip intake, inline chips
+8. Case file panel — three sections, single search across conversations and documents
+9. Settings — gear icon, clay trial badge, cream background
+10. Trial end — white surface, clay circle icon, calm copy, no urgency
+11. Payment — warm taupe price card, clay CTA
 
 ## Claude Code prompt rule, standing (three tiers)
 

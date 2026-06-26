@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATJ Timeline Options — Dark Card Spec · v8</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #EEE0CB;
+  color: #5A5353;
+  min-height: 100vh;
+  padding: 48px 32px 80px;
+}
+
+h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #5A5353;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #A07178;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A07178;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* DARK CARD BASE */
+.dark-card {
+  background: #2E2825;
+  border-radius: 14px;
+  padding: 20px 22px 24px;
+}
+
+.card-title {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 18px;
+}
+
+/* TIMELINE */
+.tl-stages { display: flex; flex-direction: column; }
+
+.tl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.tl-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.tl-dot.done      { background: #8A9B7A; }
+.tl-dot.current   { background: #C2847A; box-shadow: 0 0 0 4px rgba(194,132,122,0.25); width: 14px; height: 14px; margin-top: 2px; }
+.tl-dot.upcoming  { background: transparent; border: 2px solid rgba(255,255,255,0.2); }
+
+.tl-line {
+  width: 1px;
+  height: 18px;
+  background: rgba(255,255,255,0.12);
+  margin: 2px 0;
+}
+
+.tl-content { padding-bottom: 2px; }
+
+.tl-stage {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.tl-stage.done     { color: rgba(255,255,255,0.4); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); }
+.tl-stage.current  { color: #fff; font-weight: 700; }
+.tl-stage.upcoming { color: rgba(255,255,255,0.25); }
+
+.tl-date {
+  font-size: 10px;
+  color: rgba(255,255,255,0.25);
+  margin-top: 1px;
+}
+
+.tl-date.current { color: rgba(255,255,255,0.5); }
+
+/* CHECKLIST */
+.cl-items { display: flex; flex-direction: column; gap: 10px; }
+
+.cl-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cl-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cl-circle.done {
+  background: #8A9B7A;
+}
+
+.cl-circle.done::after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translateY(-1px);
+  display: block;
+}
+
+.cl-circle.todo {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.cl-label { font-size: 13px; line-height: 1.4; }
+.cl-label.done { color: rgba(255,255,255,0.4); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); }
+.cl-label.todo { color: #fff; font-weight: 500; }
+
+.cl-desc {
+  font-size: 11px;
+  color: rgba(255,255,255,0.3);
+  margin-top: 2px;
+}
+
+/* SOURCE LINE */
+.source-line {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 10px;
+  color: rgba(255,255,255,0.25);
+}
+
+/* ANNOTATION */
+.annotation {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: #5A5353;
+}
+
+.annotation strong { font-weight: 600; }
+
+.annotation code {
+  font-family: 'SF Mono', Menlo, monospace;
+  font-size: 12px;
+  background: #F5EFE8;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #5A5353;
+}
+
+/* ANATOMY TABLE */
+.anatomy {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+.anatomy th {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #A07178;
+  border-bottom: 1px solid #D4C4BC;
+  padding: 8px 12px;
+}
+
+.anatomy td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #EEE0CB;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.anatomy tr:last-child td { border-bottom: none; }
+
+.dot-preview {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.divider {
+  height: 1px;
+  background: #D4C4BC;
+  margin: 40px 0 0;
+}
+
+/* TRACK COMPARISON */
+.track-wrap {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  margin-top: 12px;
+}
+
+.track-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #A07178;
+  margin-bottom: 12px;
+}
+
+.two-tracks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .two-tracks { grid-template-columns: 1fr; }
+  .cards-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<h1>Timeline Options</h1>
+<p class="subtitle">Dark card spec — all states · Locked v8 · 25 June 2026</p>
+
+<!-- ── DIVORCE TRACK ── -->
+<p class="section-title">Option A — Divorce track (6 stages)</p>
+<div class="cards-row">
+
+  <!-- State: Stage 3 current -->
+  <div class="dark-card">
+    <div class="card-title">Your divorce — where things stand</div>
+    <div class="tl-stages">
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Application filed</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Acknowledgement of service</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot current"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-stage current">20-week cooling-off period</div>
+          <div class="tl-date current">Ends approx. 14 Aug 2026</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Conditional order</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">6-week wait</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Final order</div></div>
+      </div>
+    </div>
+    <div class="source-line">Family Procedure Rules 2010, Part 7</div>
+  </div>
+
+  <!-- State: Stage 5 current (near end) -->
+  <div class="dark-card">
+    <div class="card-title">Your divorce — where things stand</div>
+    <div class="tl-stages">
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Application filed</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Acknowledgement of service</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">20-week cooling-off period</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Conditional order</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot current"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-stage current">6-week wait</div>
+          <div class="tl-date current">From 3 June 2026</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Final order</div></div>
+      </div>
+    </div>
+    <div class="source-line">Family Procedure Rules 2010, Part 7</div>
+  </div>
+
+</div>
+
+<!-- ── FINANCIAL REMEDY TRACK ── -->
+<p class="section-title">Option B — Financial remedy track (7 stages)</p>
+<div class="cards-row">
+
+  <div class="dark-card">
+    <div class="card-title">Financial remedy — where things stand</div>
+    <div class="tl-stages">
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">MIAM</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Form A filed</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot current"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-stage current">Financial disclosure — Form E</div>
+          <div class="tl-date current">Deadline 1 Aug 2026</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">First Appointment (FDA)</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Financial Dispute Resolution (FDR)</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Final hearing</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Consent order</div></div>
+      </div>
+    </div>
+    <div class="source-line">Family Procedure Rules 2010, Part 9</div>
+  </div>
+
+  <!-- Child arrangements -->
+  <div class="dark-card">
+    <div class="card-title">Child arrangements — where things stand</div>
+    <div class="tl-stages">
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">MIAM</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">C100 application filed</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage done">Cafcass safeguarding checks</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot current"></div><div class="tl-line"></div></div>
+        <div class="tl-content">
+          <div class="tl-stage current">FHDRA</div>
+          <div class="tl-date current">14 Aug 2026 · Manchester Family Court</div>
+        </div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div><div class="tl-line"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Dispute resolution appointment (DRA)</div></div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-spine"><div class="tl-dot upcoming"></div></div>
+        <div class="tl-content"><div class="tl-stage upcoming">Final hearing</div></div>
+      </div>
+    </div>
+    <div class="source-line">Family Procedure Rules 2010, Part 12</div>
+  </div>
+
+</div>
+
+<!-- ── CHECKLIST OPTIONS ── -->
+<p class="section-title">Checklist — before hearing (with descriptions)</p>
+<div class="cards-row">
+
+  <div class="dark-card">
+    <div class="card-title">Before your FDR hearing</div>
+    <div class="cl-items">
+      <div class="cl-row">
+        <div class="cl-circle done"></div>
+        <div>
+          <div class="cl-label done">Serve Form E on the other side</div>
+        </div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle done"></div>
+        <div>
+          <div class="cl-label done">File questionnaire responses</div>
+        </div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div>
+          <div class="cl-label todo">Prepare open proposals document</div>
+          <div class="cl-desc">A without-prejudice document setting out what you're asking for</div>
+        </div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div>
+          <div class="cl-label todo">Bring original documents</div>
+          <div class="cl-desc">Pay slips, bank statements, mortgage statements</div>
+        </div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div>
+          <div class="cl-label todo">Note hearing time and court room</div>
+        </div>
+      </div>
+    </div>
+    <div class="source-line">FPR 2010 r.9.17 — FDR appointment procedure</div>
+  </div>
+
+  <div class="dark-card">
+    <div class="card-title">Before your FHDRA</div>
+    <div class="cl-items">
+      <div class="cl-row">
+        <div class="cl-circle done"></div>
+        <div><div class="cl-label done">Submit C100 and supporting docs</div></div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle done"></div>
+        <div><div class="cl-label done">Complete Cafcass safeguarding letter</div></div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div>
+          <div class="cl-label todo">Prepare a brief position statement</div>
+          <div class="cl-desc">One to two pages — what you're asking for and why</div>
+        </div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div><div class="cl-label todo">Confirm hearing venue and time</div></div>
+      </div>
+      <div class="cl-row">
+        <div class="cl-circle todo"></div>
+        <div>
+          <div class="cl-label todo">Bring ID and any relevant correspondence</div>
+        </div>
+      </div>
+    </div>
+    <div class="source-line">FPR 2010 Practice Direction 12B</div>
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<!-- ANATOMY TABLE -->
+<p class="section-title" style="margin-top:36px;">Dot &amp; Connector Anatomy</p>
+<div class="annotation" style="padding:0; overflow:hidden;">
+  <table class="anatomy">
+    <thead>
+      <tr>
+        <th>Element</th>
+        <th>Spec</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="dot-preview" style="background:#8A9B7A;"></span>Done dot</td>
+        <td><code>#8A9B7A</code> sage fill · 12px</td>
+      </tr>
+      <tr>
+        <td><span class="dot-preview" style="background:#C2847A; box-shadow: 0 0 0 3px rgba(194,132,122,0.25);"></span>Current dot</td>
+        <td><code>#C2847A</code> clay fill · 14px · glow <code>rgba(194,132,122,0.25)</code> 4px spread</td>
+      </tr>
+      <tr>
+        <td><span class="dot-preview" style="background:transparent; border:2px solid #BAA898;"></span>Upcoming dot</td>
+        <td>Transparent fill · 2px border <code>rgba(255,255,255,0.2)</code></td>
+      </tr>
+      <tr>
+        <td>Connector line</td>
+        <td>1px · <code>rgba(255,255,255,0.12)</code> · 18px tall</td>
+      </tr>
+      <tr>
+        <td>Done stage label</td>
+        <td>Inter 400 · 13px · <code>rgba(255,255,255,0.4)</code> · strikethrough <code>rgba(255,255,255,0.2)</code></td>
+      </tr>
+      <tr>
+        <td>Current stage label</td>
+        <td>Inter 700 · 13px · <code>#ffffff</code></td>
+      </tr>
+      <tr>
+        <td>Upcoming stage label</td>
+        <td>Inter 400 · 13px · <code>rgba(255,255,255,0.25)</code></td>
+      </tr>
+      <tr>
+        <td>Date sub-label (current)</td>
+        <td>Inter 400 · 10px · <code>rgba(255,255,255,0.5)</code></td>
+      </tr>
+      <tr>
+        <td>Date sub-label (other)</td>
+        <td>Inter 400 · 10px · <code>rgba(255,255,255,0.25)</code></td>
+      </tr>
+      <tr>
+        <td>Source line</td>
+        <td>Inter 400 · 10px · <code>rgba(255,255,255,0.25)</code> · 1px top border <code>rgba(255,255,255,0.08)</code></td>
+      </tr>
+      <tr>
+        <td>Card title</td>
+        <td>Inter 700 · 9px · uppercase · letter-spacing 0.08em · <code>rgba(255,255,255,0.5)</code></td>
+      </tr>
+      <tr>
+        <td>Card background</td>
+        <td><code>#2E2825</code> dark warm grey · radius 14px · no border · no shadow</td>
+      </tr>
+      <tr>
+        <td>Checklist circle — done</td>
+        <td><code>#8A9B7A</code> sage fill · 20px · white tick overlay</td>
+      </tr>
+      <tr>
+        <td>Checklist circle — todo</td>
+        <td>Transparent · 2px border <code>rgba(255,255,255,0.2)</code> · 20px · NOT a checkbox, NOT a square</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="annotation" style="margin-top:16px;">
+  <strong>Two-track display:</strong> when the user asks about both financial remedy and child arrangements, render two separate timeline cards in the same turn — one per track. Do not combine into a single timeline. Each card uses this identical dark-card spec.
+</div>
+
+</body>
+</html>

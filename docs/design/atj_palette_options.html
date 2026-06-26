@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATJ Palette Options — Earthy Hybrid (Palettes 3 × 8)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #EEE0CB;
+  color: #5A5353;
+  min-height: 100vh;
+  padding: 48px 32px 80px;
+}
+
+h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #5A5353;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A07178;
+  margin-bottom: 48px;
+  letter-spacing: 0.01em;
+}
+
+.section-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #A07178;
+  margin-bottom: 16px;
+  margin-top: 40px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.swatch {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.swatch-color {
+  height: 72px;
+}
+
+.swatch-info {
+  background: #fff;
+  padding: 12px 14px 14px;
+}
+
+.swatch-hex {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5A5353;
+  font-family: 'SF Mono', 'Menlo', monospace;
+  letter-spacing: 0.02em;
+}
+
+.swatch-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #5A5353;
+  margin-top: 2px;
+}
+
+.swatch-role {
+  font-size: 11px;
+  font-weight: 400;
+  color: #A07178;
+  margin-top: 4px;
+  line-height: 1.45;
+}
+
+.divider {
+  height: 1px;
+  background: #D4C4BC;
+  margin: 40px 0 0;
+}
+
+/* Annotation blocks */
+.note {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #5A5353;
+}
+
+.note strong {
+  font-weight: 600;
+}
+
+/* Typography specimen */
+.specimen-block {
+  background: #fff;
+  border-radius: 10px;
+  padding: 28px 28px 32px;
+  margin-top: 12px;
+}
+
+.specimen-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #EEE0CB;
+}
+
+.specimen-row:last-child { border-bottom: none; }
+
+.specimen-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #C4B5B0;
+  min-width: 140px;
+}
+
+.specimen-text-serif {
+  font-family: 'Source Serif 4', Georgia, serif;
+  color: #5A5353;
+}
+
+.specimen-text-inter {
+  font-family: 'Inter', sans-serif;
+  color: #5A5353;
+}
+
+/* Interaction states */
+.states-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn-demo {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  border: none;
+}
+
+.btn-primary { background: #C2847A; color: #fff; }
+.btn-secondary { background: transparent; border: 1.5px solid #BAA898; color: #5A5353; }
+.btn-ghost { background: #F5EFE8; color: #5A5353; }
+.btn-danger { background: #c0392b; color: #fff; }
+.btn-disabled { background: #EEE0CB; color: #C4B5B0; }
+
+.chip-demo {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1.5px solid #BAA898;
+  background: #F5EFE8;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5A5353;
+  cursor: default;
+}
+
+/* Dark card sample */
+.dark-card {
+  background: #2E2825;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-top: 12px;
+}
+
+.dark-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.stage-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.stage-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stage-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.stage-dot.done { background: #8A9B7A; }
+.stage-dot.current { background: #C2847A; box-shadow: 0 0 0 4px rgba(194,132,122,0.25); width: 14px; height: 14px; margin-top: 2px; }
+.stage-dot.upcoming { background: transparent; border: 2px solid rgba(255,255,255,0.2); }
+
+.stage-line {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.12);
+  margin: 3px 0;
+}
+
+.stage-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.stage-label.done { color: rgba(255,255,255,0.4); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); }
+.stage-label.current { color: #fff; font-weight: 700; }
+.stage-label.upcoming { color: rgba(255,255,255,0.25); }
+
+/* Checklist circles */
+.check-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.check-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.check-circle.done { background: #8A9B7A; }
+.check-circle.todo { background: transparent; border: 2px solid rgba(255,255,255,0.2); }
+
+.check-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+}
+
+.check-label.done { color: rgba(255,255,255,0.4); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); }
+.check-label.todo { color: #fff; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<h1>ATJ Colour Palette</h1>
+<p class="subtitle">Earthy hybrid — Coolors Palettes 3 × 8 · Locked v8 · 25 June 2026</p>
+
+<!-- SURFACES -->
+<p class="section-title">Surfaces</p>
+<div class="palette-grid">
+  <div class="swatch">
+    <div class="swatch-color" style="background:#EEE0CB;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#EEE0CB</div>
+      <div class="swatch-name">Warm cream</div>
+      <div class="swatch-role">Page background, user message bubble fill</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#ffffff; border: 1px solid #EEE0CB;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#FFFFFF</div>
+      <div class="swatch-name">White</div>
+      <div class="swatch-role">Header, input bar, ATJ message surface</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#2E2825;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#2E2825</div>
+      <div class="swatch-name">Dark warm grey</div>
+      <div class="swatch-role">Timeline and checklist card surface only</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#D8B8A8;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#D8B8A8</div>
+      <div class="swatch-name">Warm taupe</div>
+      <div class="swatch-role">Payment price card surface only</div>
+    </div>
+  </div>
+</div>
+
+<!-- BRAND / INTERACTIVE -->
+<p class="section-title">Brand &amp; Interactive</p>
+<div class="palette-grid">
+  <div class="swatch">
+    <div class="swatch-color" style="background:#C2847A;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#C2847A</div>
+      <div class="swatch-name">Clay</div>
+      <div class="swatch-role">Primary CTA, send circle, active tab underline, trial badge, search Go, scroll arrow</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#8A9B7A;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#8A9B7A</div>
+      <div class="swatch-name">Sage</div>
+      <div class="swatch-role">Completion states — timeline done dots, checklist done circles</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#c0392b;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#C0392B</div>
+      <div class="swatch-name">Red</div>
+      <div class="swatch-role">Error states, destructive actions only</div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY TONES -->
+<p class="section-title">Typography Tones</p>
+<div class="palette-grid">
+  <div class="swatch">
+    <div class="swatch-color" style="background:#5A5353;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#5A5353</div>
+      <div class="swatch-name">Warm dark grey</div>
+      <div class="swatch-role">Body copy — never black</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#A07178;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#A07178</div>
+      <div class="swatch-name">Muted rose</div>
+      <div class="swatch-role">Secondary labels, metadata, timestamps</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#C4B5B0;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#C4B5B0</div>
+      <div class="swatch-name">Light taupe</div>
+      <div class="swatch-role">Placeholder text, fine print</div>
+    </div>
+  </div>
+</div>
+
+<!-- CHIP / KEYLINE -->
+<p class="section-title">Chip &amp; Keyline</p>
+<div class="palette-grid">
+  <div class="swatch">
+    <div class="swatch-color" style="background:#F5EFE8;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#F5EFE8</div>
+      <div class="swatch-name">Taupe-light</div>
+      <div class="swatch-role">Chip fill</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#BAA898;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#BAA898</div>
+      <div class="swatch-name">Taupe</div>
+      <div class="swatch-role">Chip border</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#E8D8C8;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#E8D8C8</div>
+      <div class="swatch-name">Warm cream fill</div>
+      <div class="swatch-role">User message bubble fill</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-color" style="background:#D4C4BC;"></div>
+    <div class="swatch-info">
+      <div class="swatch-hex">#D4C4BC</div>
+      <div class="swatch-name">Rose-grey</div>
+      <div class="swatch-role">Input keylines only — not card borders</div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- TYPOGRAPHY SPECIMEN -->
+<p class="section-title" style="margin-top:36px;">Typography</p>
+<div class="specimen-block">
+  <div class="specimen-row">
+    <span class="specimen-label">ATJ message · Source Serif 4 400 · 16px · lh 1.65</span>
+    <span class="specimen-text-serif" style="font-size:16px; line-height:1.65; font-weight:400;">Your Form E is due on 1 August. This is the financial disclosure document — a full picture of your finances under a statement of truth.</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Heading · Source Serif 4 300 · 22px</span>
+    <span class="specimen-text-serif" style="font-size:22px; font-weight:300;">Good to have you back.</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Button · Inter 500 · 14px</span>
+    <span class="specimen-text-inter" style="font-size:14px; font-weight:500;">Get started — no card required</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Label · Inter 600 · 12px</span>
+    <span class="specimen-text-inter" style="font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.07em;">Documents</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Metadata · Inter 400 · 11px · muted rose</span>
+    <span class="specimen-text-inter" style="font-size:11px; font-weight:400; color:#A07178;">Today, 10:42 am</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Thinking · Inter 400 · 10px · light taupe</span>
+    <span class="specimen-text-inter" style="font-size:10px; font-weight:400; color:#C4B5B0;">Talia is thinking…</span>
+  </div>
+  <div class="specimen-row">
+    <span class="specimen-label">Card title · Inter 700 · 9px · rgba white 50%</span>
+    <span class="specimen-text-inter" style="font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#2E2825;">Your divorce — where things stand</span>
+  </div>
+</div>
+
+<div class="note">
+  <strong>Source Serif 4</strong> (Google Fonts, opsz 8..60, weights 300/400/600) — headings and all conversation text. Closest publicly available match to Anthropic Serif. Supersedes Libre Baskerville used in v1–v7.<br><br>
+  <strong>Inter</strong> (weights 300/400/500/600/700) — everything else: buttons, labels, inputs, chips, metadata, section titles, card content.
+</div>
+
+<div class="divider"></div>
+
+<!-- INTERACTIVE STATES -->
+<p class="section-title" style="margin-top:36px;">Interactive States</p>
+<div class="specimen-block">
+  <div class="states-row">
+    <button class="btn-demo btn-primary">Get started</button>
+    <button class="btn-demo btn-secondary">Learn more</button>
+    <button class="btn-demo btn-ghost">Cancel</button>
+    <button class="btn-demo btn-danger">Delete account</button>
+    <button class="btn-demo btn-disabled">Continue</button>
+  </div>
+  <div class="states-row" style="margin-top:16px;">
+    <span class="chip-demo">Financial remedy</span>
+    <span class="chip-demo">Child arrangements</span>
+    <span class="chip-demo">Divorce only</span>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- DARK CARD STATES -->
+<p class="section-title" style="margin-top:36px;">Dark Card — Stage States</p>
+<div class="dark-card">
+  <div class="dark-card-title">Your divorce — where things stand</div>
+
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot done"></div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-label done">Application filed</div>
+  </div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot done"></div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-label done">Acknowledgement of service</div>
+  </div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot current"></div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-label current">20-week cooling-off period</div>
+  </div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot upcoming"></div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-label upcoming">Conditional order</div>
+  </div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot upcoming"></div>
+      <div class="stage-line"></div>
+    </div>
+    <div class="stage-label upcoming">6-week wait</div>
+  </div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-dot upcoming"></div>
+    </div>
+    <div class="stage-label upcoming">Final order</div>
+  </div>
+</div>
+
+<p class="section-title" style="margin-top:24px;">Dark Card — Checklist States</p>
+<div class="dark-card">
+  <div class="dark-card-title">Before your FDR hearing</div>
+  <div class="check-row">
+    <div class="check-circle done"></div>
+    <div class="check-label done">Serve Form E on the other side</div>
+  </div>
+  <div class="check-row">
+    <div class="check-circle done"></div>
+    <div class="check-label done">File questionnaire responses</div>
+  </div>
+  <div class="check-row">
+    <div class="check-circle todo"></div>
+    <div class="check-label todo">Prepare open proposals document</div>
+  </div>
+  <div class="check-row">
+    <div class="check-circle todo"></div>
+    <div class="check-label todo">Bring original documents to court</div>
+  </div>
+  <div class="check-row">
+    <div class="check-circle todo"></div>
+    <div class="check-label todo">Note the hearing time and court room</div>
+  </div>
+</div>
+
+<div class="note" style="margin-top:24px;">
+  <strong>No shadows anywhere</strong> except the scroll arrow (0 2px 8px rgba(194,132,122,0.35) — justified as a floating element).<br>
+  <strong>No card borders anywhere.</strong><br>
+  <strong>Keylines on input fields and search bars only.</strong>
+</div>
+
+</body>
+</html>
