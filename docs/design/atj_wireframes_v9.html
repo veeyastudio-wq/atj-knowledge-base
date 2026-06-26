@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATJ — Wireframes v9</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Earthy hybrid palette ── */
+:root {
+  --cream:     #EEE0CB;
+  --surface:   #ffffff;
+  --card:      #2E2825;   /* Dark warm grey — timeline and checklist card surface */
+  --card-2:    #3D3430;   /* Slightly lighter for nested elements on dark card */
+  --clay:      #CC785C;
+  --clay-dk:   #A85A40;
+  --taupe:     #BAA898;
+  --taupe-lt:  #F5EFE8;
+  --copy:      #5A5353;
+  --muted:     #A07178;
+  --light:     #C4B5B0;
+  --border:    #D4C4BC;
+  --sage:      #8A9B7A;
+  --red:       #c0392b;
+  --serif:     'Source Serif 4', Georgia, serif;
+  --sans:      'Inter', -apple-system, sans-serif;
+  --r-pill:    999px;
+  --r-xl:      20px;
+  --r-md:      10px;
+  --r-sm:      6px;
+}
+
+body { font-family: var(--sans); background: #EEE0CB; color: var(--copy); min-height: 100vh; }
+
+/* Nav */
+.nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 16px; height: 48px; display: flex; align-items: center; gap: 5px; position: sticky; top: 0; z-index: 200; flex-wrap: wrap; }
+.nav-label { font-size: 10px; color: var(--light); margin-right: 4px; }
+.nav-btn { font-family: var(--sans); font-size: 11px; font-weight: 500; padding: 4px 11px; border: 1px solid var(--border); border-radius: var(--r-pill); background: transparent; color: var(--muted); cursor: pointer; white-space: nowrap; }
+.nav-btn:hover { background: var(--taupe-lt); }
+.nav-btn.on { background: var(--clay); border-color: var(--clay-dk); color: #fff; }
+
+/* Pages */
+.page { display: none; padding: 24px 16px 48px; max-width: 1280px; margin: 0 auto; }
+.page.on { display: block; }
+
+/* Page header */
+.ph { margin-bottom: 22px; }
+.ph-lbl { font-size: 10px; font-weight: 600; color: var(--light); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 5px; }
+.ph-title { font-family: var(--serif); font-size: 22px; color: var(--copy); margin-bottom: 4px; }
+.ph-desc { font-size: 12px; color: var(--muted); line-height: 1.6; max-width: 560px; }
+
+/* Two-col */
+.two-col { display: grid; grid-template-columns: 320px 1fr; gap: 24px; align-items: start; }
+
+/* Device */
+.device {
+  width: 320px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1.5px solid rgba(0,0,0,0.1);
+  background: var(--cream);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.dbar { height: 30px; background: var(--surface); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.notch { width: 80px; height: 16px; background: var(--copy); border-radius: 0 0 10px 10px; }
+.dstat { display: flex; justify-content: space-between; padding: 2px 14px 0; font-size: 9px; font-weight: 600; font-family: var(--sans); color: var(--copy); background: var(--surface); flex-shrink: 0; }
+
+/* App header */
+.ahdr { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px 8px; background: var(--surface); border-bottom: 1px solid rgba(186,168,152,0.25); flex-shrink: 0; }
+.alogo { font-family: var(--serif); font-size: 17px; color: var(--copy); }
+.ibtn { width: 30px; height: 30px; border-radius: 50%; background: var(--taupe-lt); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.ibtn .material-icons { font-size: 16px; color: var(--muted); }
+
+/* FIX 3: Lighter segmented strip — underline indicator, not filled pill container */
+.seg-wrap { background: var(--surface); padding: 0 16px; border-bottom: 1px solid rgba(186,168,152,0.2); flex-shrink: 0; display: flex; }
+.seg-tab { flex: 1; padding: 9px 0; text-align: center; font-family: var(--sans); font-size: 10px; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.12s; }
+.seg-tab.on { color: var(--clay); border-bottom: 2px solid var(--clay); font-weight: 600; }
+
+/* Scrollable conversation */
+.conv { flex: 1; overflow-y: auto; padding: 24px 24px; /* FIX 1: wider padding */ display: flex; flex-direction: column; gap: 24px; background: var(--cream); }
+
+/* FIX 2: No ATJ label on every message. Label only shown contextually where needed. */
+/* ATJ message — plain serif prose, no box */
+.atj-text { font-family: var(--serif); font-size: 12.5px; line-height: 1.65; color: var(--copy); }
+
+/* First message of session only gets a tiny label */
+.atj-first-label { font-family: var(--sans); font-size: 8px; font-weight: 700; color: var(--taupe); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 5px; }
+
+/* User message — warm cream fill, no border (Claude.ai aligned) */
+.turn-user { display: flex; justify-content: flex-end; }
+.user-msg {
+  background: #FDF4EF;
+  color: var(--copy);
+  font-family: var(--sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.55;
+  padding: 10px 14px;
+  border-radius: 16px 16px 3px 16px;
+  max-width: 80%;
+}
+
+/* FIX 4: Chips are inline, not full-width */
+.chips { display: flex; flex-direction: row; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chip { font-family: var(--sans); font-size: 10px; font-weight: 500; color: var(--copy); padding: 6px 12px; background: var(--taupe-lt); border: 1.5px solid var(--taupe); border-radius: var(--r-pill); cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.chip .material-icons { font-size: 11px; color: var(--muted); }
+
+/* FIX 7: Stronger session divider */
+.session-divider { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.session-divider-line { flex: 1; height: 1px; background: rgba(186,168,152,0.4); }
+.session-divider-badge { font-family: var(--sans); font-size: 8px; font-weight: 600; color: var(--muted); background: rgba(186,168,152,0.15); padding: 3px 8px; border-radius: var(--r-pill); white-space: nowrap; letter-spacing: 0.04em; }
+
+/* ── Input bar — Claude.ai style ── */
+.input-wrap {
+  background: var(--surface);
+  border-top: 1px solid rgba(186,168,152,0.25);
+  padding: 10px 14px 12px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Action tray — hidden by default, shown when .open on input-wrap */
+.action-tray {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: var(--surface);
+  border-top: 1px solid rgba(186,168,152,0.25);
+  padding: 6px 14px 8px;
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+}
+/* Show tray when input-wrap has .open class OR .show-tray class */
+.input-wrap.open .action-tray,
+.input-wrap.show-tray .action-tray { display: flex; }
+.action-tray-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px;
+  border-bottom: 1px solid rgba(186,168,152,0.15);
+  cursor: pointer;
+}
+.action-tray-item:last-child { border-bottom: none; }
+.action-tray-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--r-sm);
+  background: var(--taupe-lt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.action-tray-icon .material-icons { font-size: 20px; color: var(--copy); }
+.action-tray-label { font-family: var(--sans); font-size: 13px; font-weight: 500; color: var(--copy); }
+.action-tray-sub { font-family: var(--sans); font-size: 10px; color: var(--muted); margin-top: 1px; }
+
+/* Input row */
+.input-row { display: flex; gap: 8px; align-items: center; }
+
+/* Plus button — replaces camera */
+.plus-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.plus-btn .material-icons { font-size: 20px; color: var(--copy); }
+
+/* Message field — matches Claude.ai: pill-shaped, taller when multiline */
+.msg-input {
+  flex: 1;
+  padding: 9px 12px;
+  font-family: var(--sans);
+  font-size: 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--taupe-lt);
+  color: var(--light);
+  min-height: 38px;
+}
+
+/* Send — arrow when empty, tick when typing */
+.send-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--clay);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.send-circle .material-icons { font-size: 20px; color: #fff; }
+
+/* When user is typing — tick state */
+.send-circle.typing { background: var(--clay); }
+.send-circle.empty { background: rgba(194,132,122,0.35); cursor: default; }
+
+/* Form */
+.form-screen { flex: 1; overflow-y: auto; padding: 24px 20px 20px; background: var(--cream); }
+.fhead { font-family: var(--serif); font-size: 19px; line-height: 1.3; color: var(--copy); margin-bottom: 6px; }
+.fsub { font-family: var(--sans); font-size: 11px; color: var(--muted); line-height: 1.6; margin-bottom: 20px; }
+.field { margin-bottom: 13px; }
+.flbl { font-family: var(--sans); font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+.finp { width: 100%; padding: 10px 12px; font-family: var(--sans); font-size: 12px; border: 1.5px solid var(--border); border-radius: var(--r-md); background: var(--taupe-lt); color: var(--light); }
+.finp.ok { color: var(--copy); background: var(--surface); border-color: var(--taupe); }
+.btn-cta { width: 100%; padding: 14px; background: var(--clay); border: none; border-radius: var(--r-pill); font-family: var(--sans); font-size: 13px; font-weight: 700; color: #fff; cursor: pointer; text-align: center; margin-top: 6px; }
+.btn-txt { width: 100%; padding: 10px; background: transparent; border: none; font-family: var(--sans); font-size: 11px; font-weight: 500; color: var(--muted); cursor: pointer; text-align: center; margin-top: 4px; }
+.fprint { font-family: var(--sans); font-size: 9px; color: var(--light); line-height: 1.6; margin-top: 10px; text-align: center; }
+.fprint a { color: var(--muted); }
+
+/* Cards — dark surface */
+.card { background: var(--card); border-radius: var(--r-xl); padding: 15px 17px; margin-top: 10px; }
+.card-title { font-family: var(--sans); font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.9); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 13px; }
+
+/* Timeline — on dark card */
+.tl { display: flex; flex-direction: column; }
+.tl-row { display: flex; gap: 10px; }
+.tl-spine { display: flex; flex-direction: column; align-items: center; width: 14px; flex-shrink: 0; }
+.tl-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 3px; }
+.tl-dot.done { background: var(--sage); }
+.tl-dot.now { background: var(--clay); width: 12px; height: 12px; margin-top: 2px; box-shadow: 0 0 0 3px rgba(194,132,122,0.25); }
+.tl-dot.next { background: transparent; border: 2px solid rgba(255,255,255,0.2); }
+.tl-line { width: 1px; background: rgba(255,255,255,0.12); flex: 1; margin: 4px auto 0; }
+.tl-body { padding-bottom: 14px; flex: 1; }
+.tl-lbl { font-family: var(--sans); font-size: 10.5px; font-weight: 500; line-height: 1.3; }
+.tl-lbl.done { color: rgba(255,255,255,0.4); }
+.tl-lbl.now { color: #ffffff; font-weight: 700; }
+.tl-lbl.next { color: rgba(255,255,255,0.25); }
+.tl-meta { font-family: var(--sans); font-size: 9px; color: rgba(255,255,255,0.3); margin-top: 2px; }
+
+/* Checklist — on dark card */
+.cl { display: flex; flex-direction: column; gap: 10px; }
+.cl-row { display: flex; gap: 9px; align-items: flex-start; }
+.cl-box { width: 15px; height: 15px; border-radius: 50%; flex-shrink: 0; margin-top: 1px; display: flex; align-items: center; justify-content: center; }
+.cl-box.done { background: var(--sage); }
+.cl-box.done .material-icons { font-size: 11px; color: #fff; }
+.cl-box.todo { border: 2px solid rgba(255,255,255,0.2); background: transparent; }
+.cl-lbl { font-family: var(--sans); font-size: 10.5px; font-weight: 500; color: #fff; line-height: 1.35; }
+.cl-lbl.done { color: rgba(255,255,255,0.35); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); font-weight: 400; }
+.cl-desc { font-family: var(--sans); font-size: 9px; color: rgba(255,255,255,0.3); margin-top: 2px; line-height: 1.4; }
+
+/* Source line — on dark card */
+.src { font-family: var(--sans); font-size: 9px; color: rgba(255,255,255,0.25); margin-top: 7px; }
+
+/* Upload preview */
+.up-prev { display: flex; align-items: center; gap: 9px; padding: 9px 14px; background: rgba(194,132,122,0.1); border-top: 1px solid rgba(186,168,152,0.25); flex-shrink: 0; }
+.up-thumb { width: 38px; height: 38px; background: rgba(90,83,83,0.07); border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.up-thumb .material-icons { font-size: 19px; color: var(--muted); }
+.up-name { font-family: var(--sans); font-size: 10.5px; font-weight: 500; color: var(--copy); }
+.up-meta { font-family: var(--sans); font-size: 9px; color: var(--muted); }
+.up-clear { margin-left: auto; cursor: pointer; }
+.up-clear .material-icons { font-size: 15px; color: var(--muted); }
+
+/* Case file */
+.panel-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
+.p-sec { background: var(--surface); margin-bottom: 6px; }
+.p-title { font-family: var(--sans); font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; padding: 11px 16px 6px; }
+.p-row { padding: 9px 16px; border-bottom: 1px solid rgba(186,168,152,0.18); }
+.p-row:last-child { border-bottom: none; }
+.p-main { font-family: var(--sans); font-size: 11.5px; font-weight: 500; color: var(--copy); }
+.p-meta { font-family: var(--sans); font-size: 9px; color: var(--light); margin-top: 2px; }
+.search-row { display: flex; gap: 6px; padding: 0 16px 10px; }
+.search-inp { flex: 1; padding: 8px 11px; font-family: var(--sans); font-size: 11px; border: 1.5px solid var(--border); border-radius: var(--r-pill); background: var(--taupe-lt); color: var(--muted); }
+.search-go { width: 34px; height: 34px; background: var(--clay); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
+.search-go .material-icons { font-size: 16px; color: #fff; }
+
+/* Settings */
+.settings-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
+.ss-lbl { font-family: var(--sans); font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; padding: 12px 16px 4px; background: var(--cream); }
+.ss-sec { background: var(--surface); margin-bottom: 2px; }
+.ss-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1px solid rgba(186,168,152,0.15); }
+.ss-row:last-child { border-bottom: none; }
+.ss-key { font-family: var(--sans); font-size: 12px; color: var(--copy); }
+.ss-val { font-family: var(--sans); font-size: 11px; color: var(--muted); }
+.trial-badge { background: var(--clay); color: #fff; font-family: var(--sans); font-size: 9px; font-weight: 700; padding: 3px 10px; border-radius: var(--r-pill); }
+
+/* FIX 8: Trial end — tighter, more deliberate spacing */
+.trial-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+  background: var(--surface);
+  gap: 0; /* controlled by margin on children */
+}
+.trial-circle { width: 56px; height: 56px; border-radius: 50%; background: var(--clay); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.trial-circle .material-icons { font-size: 24px; color: #fff; }
+.trial-head { font-family: var(--serif); font-size: 16px; line-height: 1.35; color: var(--copy); margin-bottom: 12px; max-width: 240px; }
+.trial-body { font-family: var(--sans); font-size: 11px; color: var(--muted); line-height: 1.75; margin-bottom: 20px; max-width: 240px; }
+.trial-price { font-family: var(--serif); font-size: 28px; color: var(--copy); margin-bottom: 20px; }
+.trial-price span { font-family: var(--sans); font-size: 13px; color: var(--muted); }
+.trial-actions { width: 100%; }
+.trial-fine { font-family: var(--sans); font-size: 9px; color: var(--light); margin-top: 12px; line-height: 1.6; }
+
+/* Payment price card — warm taupe (not dark, this is a positive surface) */
+.price-card { background: #ffffff; border-radius: var(--r-xl); padding: 15px 17px; margin-bottom: 18px; border: 1.5px solid var(--border); }
+.price-lbl { font-family: var(--sans); font-size: 9px; color: rgba(90,83,83,0.55); margin-bottom: 3px; }
+.price-amt { font-family: var(--serif); font-size: 24px; color: var(--copy); }
+.price-unit { font-family: var(--sans); font-size: 12px; color: var(--muted); }
+.price-note { font-family: var(--sans); font-size: 9px; color: var(--light); margin-top: 4px; }
+.sec-note { font-family: var(--sans); font-size: 9px; color: var(--light); text-align: center; margin-top: 11px; display: flex; align-items: center; justify-content: center; gap: 4px; }
+.sec-note .material-icons { font-size: 12px; }
+
+/* Back bar */
+.back-bar { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px 8px; background: var(--surface); border-bottom: 1px solid rgba(186,168,152,0.2); flex-shrink: 0; }
+.back-btn { font-family: var(--sans); font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 2px; cursor: pointer; }
+.back-btn .material-icons { font-size: 15px; }
+.back-title { font-family: var(--sans); font-size: 12px; font-weight: 600; color: var(--copy); }
+
+/* Annotation */
+.ann { }
+.a-title { font-family: var(--sans); font-size: 11px; font-weight: 700; color: var(--copy); margin-bottom: 11px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.a-spec { background: var(--surface); border-radius: var(--r-sm); padding: 12px 14px; margin-bottom: 9px; border: 1px solid var(--border); }
+.a-lbl { font-family: var(--sans); font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+.a-row { display: flex; justify-content: space-between; align-items: baseline; padding: 3px 0; border-bottom: 1px solid rgba(186,168,152,0.15); font-size: 10.5px; gap: 8px; }
+.a-row:last-child { border-bottom: none; }
+.ak { color: var(--muted); flex-shrink: 0; }
+.av { font-family: monospace; color: var(--copy); font-size: 10px; text-align: right; }
+.a-note { background: #fdf8f0; border: 1px solid var(--card); border-radius: var(--r-sm); padding: 10px 13px; font-family: var(--sans); font-size: 10.5px; color: #7a5a40; line-height: 1.65; margin-top: 9px; }
+.a-note strong { font-weight: 600; }
+
+/* Fix badge */
+.fix-badge { display: inline-block; background: var(--clay); color: #fff; font-family: var(--sans); font-size: 8px; font-weight: 700; padding: 2px 6px; border-radius: 4px; margin-left: 5px; vertical-align: middle; letter-spacing: 0.04em; }
+
+/* ── Thinking indicator — single breathing dot ── */
+.thinking {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+}
+.thinking-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--clay);
+  animation: breathe 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.thinking-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  color: var(--light);
+  letter-spacing: 0.02em;
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.25; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+/* ── Scroll to bottom arrow ── */
+.scroll-arrow {
+  position: absolute;
+  bottom: 76px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(194,132,122,0.35);
+  z-index: 20;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.scroll-arrow .material-icons { font-size: 17px; color: #fff; }
+.scroll-arrow.hidden { opacity: 0; pointer-events: none; transform: translateY(4px); }
+</style>
+
+<style>
+/* ── ANIMATIONS AND INTERACTION STATES ── */
+
+/* CTA buttons */
+.btn-cta { transition: background 0.15s ease, transform 0.08s ease; cursor: pointer; }
+.btn-cta:hover { background: var(--clay-dk); }
+.btn-cta:active { transform: scale(0.97); }
+
+/* Text buttons */
+.btn-txt { transition: color 0.12s ease; cursor: pointer; }
+.btn-txt:hover { color: var(--copy); }
+
+/* Chips — hover, active, selected */
+.chip { transition: background 0.1s ease, border-color 0.1s ease, transform 0.08s ease; }
+.chip:hover { background: #D4C8BC; border-color: #A89888; }
+.chip:active { transform: scale(0.96); }
+.chip.selected { opacity: 0.5; pointer-events: none; }
+
+/* Chip staggered entrance */
+@keyframes chipIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.chip-enter { animation: chipIn 0.15s ease-out both; }
+.chip-enter:nth-child(1) { animation-delay: 0ms; }
+.chip-enter:nth-child(2) { animation-delay: 60ms; }
+.chip-enter:nth-child(3) { animation-delay: 120ms; }
+.chip-enter:nth-child(4) { animation-delay: 180ms; }
+
+/* Talia message fade-in */
+@keyframes msgIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.msg-enter { animation: msgIn 0.2s ease-out both; }
+
+/* Timeline and checklist card entrance */
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.card-enter { animation: cardIn 0.2s ease-out both; }
+
+/* Session divider entrance */
+@keyframes dividerIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes badgeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.session-divider-enter { animation: dividerIn 0.3s ease-out 0.2s both; }
+.session-divider-enter .session-divider-badge { animation: badgeIn 0.3s ease-out 0.2s both; }
+
+/* Send button */
+.send-circle { transition: background 0.15s ease, transform 0.08s ease; }
+.send-circle:not(.empty) { cursor: pointer; }
+.send-circle:not(.empty):hover { background: var(--clay-dk); }
+.send-circle:not(.empty):active { transform: scale(0.93); }
+
+/* Desktop send button */
+.dt-send { transition: background 0.15s ease, transform 0.08s ease; }
+.dt-send:not(.empty) { cursor: pointer; }
+.dt-send:not(.empty):hover { background: var(--clay-dk); }
+.dt-send:not(.empty):active { transform: scale(0.93); }
+
+/* Plus button */
+.plus-btn { transition: background 0.12s ease; }
+.plus-btn:hover { background: var(--taupe-lt); }
+.dt-plus-btn { transition: background 0.12s ease; }
+.dt-plus-btn:hover { background: var(--taupe-lt); }
+
+/* Action tray slide up */
+.action-tray {
+  transform: translateY(8px);
+  opacity: 0;
+  transition: transform 0.18s ease-out, opacity 0.15s ease-out;
+  display: flex !important;
+  pointer-events: none;
+}
+.input-wrap.open .action-tray,
+.input-wrap.show-tray .action-tray {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+.action-tray-item { transition: background 0.1s ease; border-radius: var(--r-sm); }
+.action-tray-item:hover { background: var(--taupe-lt); cursor: pointer; }
+
+/* Segmented nav tabs */
+.seg-tab { transition: color 0.15s ease, border-color 0.15s ease; }
+
+/* Icon buttons (gear, folder) */
+.ibtn { transition: background 0.12s ease, transform 0.08s ease; cursor: pointer; }
+.ibtn:hover { background: var(--border); }
+.ibtn:active { transform: scale(0.93); }
+
+/* Settings rows */
+.ss-row { transition: background 0.1s ease; cursor: pointer; }
+.ss-row:hover { background: var(--taupe-lt); }
+
+/* Form inputs focus */
+.finp { transition: border-color 0.12s ease, background 0.12s ease; }
+.finp:focus { border-color: var(--clay); background: var(--surface); outline: none; }
+
+/* Case file panel rows */
+.p-row { transition: background 0.1s ease; cursor: pointer; }
+.p-row:hover { background: rgba(186,168,152,0.12); }
+.p-row.active { border-left: 2px solid var(--clay); }
+
+/* Desktop sidebar items */
+.dt-sidebar-item:active { transform: scale(0.98); }
+
+/* Desktop folder button subtle pulse on first load */
+@keyframes subtlePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(204,120,92,0); }
+  50%       { box-shadow: 0 0 0 4px rgba(204,120,92,0.2); }
+}
+.dt-folder-pulse { animation: subtlePulse 2s ease-in-out 1s 2; }
+
+/* Back button */
+.back-btn { transition: color 0.12s ease; cursor: pointer; }
+.back-btn:hover { color: var(--copy); }
+
+/* Desktop panel close button */
+.dt-panel-close { transition: background 0.1s ease; cursor: pointer; }
+.dt-panel-close:hover { background: rgba(186,168,152,0.35); }
+
+/* iOS momentum scrolling */
+.conv, .dt-conv, .panel-scroll, .dt-panel-body, .settings-scroll, .form-screen {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Settings sheet slide up (mobile) */
+@keyframes sheetUp {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+.settings-enter { animation: sheetUp 0.28s cubic-bezier(0.32, 0.72, 0, 1) both; }
+
+/* Screen push navigation */
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+@keyframes slideOutRight {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
+}
+.screen-enter { animation: slideInRight 0.22s ease-out both; }
+.screen-exit  { animation: slideOutRight 0.22s ease-in both; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <span class="nav-label">Mobile:</span>
+  <button class="nav-btn on" onclick="go('s1')">1. Sign up</button>
+  <button class="nav-btn" onclick="go('s2')">2. First login</button>
+  <button class="nav-btn" onclick="go('s3')">3. Returning</button>
+  <button class="nav-btn" onclick="go('s4')">4. Timeline</button>
+  <button class="nav-btn" onclick="go('s5')">5. Checklist</button>
+  <button class="nav-btn" onclick="go('s6')">6. Doc upload</button>
+  <button class="nav-btn" onclick="go('s7')">7. Writing</button>
+  <button class="nav-btn" onclick="go('s8')">8. Case file</button>
+  <button class="nav-btn" onclick="go('s9')">9. Settings</button>
+  <button class="nav-btn" onclick="go('s10')">10. Trial end</button>
+  <button class="nav-btn" onclick="go('s11')">11. Payment</button>
+  <span class="nav-label" style="margin-left:12px;">Desktop:</span>
+  <button class="nav-btn" onclick="go('d1')">D1. Chat</button>
+  <button class="nav-btn" onclick="go('d2')">D2. Timeline</button>
+  <button class="nav-btn" onclick="go('d3')">D3. Case file</button>
+</div>
+
+<!-- S1: SIGN UP -->
+<div class="page on" id="s1">
+  <div class="ph"><p class="ph-lbl">Screen 1</p><h1 class="ph-title">Sign up</h1><p class="ph-desc">No card required. Warm cream. Libre Baskerville headline. Clay CTA. All fixes from v4 carry forward — this screen had no issues.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="form-screen">
+        <div style="text-align:center;padding:20px 0 18px;border-bottom:1px solid rgba(186,168,152,0.2);margin-bottom:22px;">
+          <div style="font-family:var(--serif);font-size:22px;color:var(--copy);">Talia</div>
+        </div>
+        <div style="margin-bottom:22px;">
+          <div class="fhead">Find your way through family court.</div>
+          <div class="fsub">Your free 15-day trial starts the moment you sign up. No card required.</div>
+        </div>
+        <div class="field"><div class="flbl">Full name</div><div class="finp ok">Sarah Mitchell</div></div>
+        <div class="field"><div class="flbl">Email address</div><div class="finp ok">sarah@example.com</div></div>
+        <div class="field"><div class="flbl">Password</div><div class="finp">••••••••</div></div>
+        <div class="btn-cta">Start my free trial</div>
+        <div class="btn-txt">Sign in instead</div>
+        <div class="fprint">By continuing you agree to our <a href="#">privacy notice</a>. We never share your data.</div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — sign up</div>
+      <div class="a-spec">
+        <div class="a-lbl">Tokens</div>
+        <div class="a-row"><span class="ak">Background</span><span class="av">#EEE0CB</span></div>
+        <div class="a-row"><span class="ak">Headline</span><span class="av">Libre Baskerville 400 / 19px / #5A5353 / lh 1.3</span></div>
+        <div class="a-row"><span class="ak">Subtitle</span><span class="av">Inter 400 / 11px / #A07178 / lh 1.6</span></div>
+        <div class="a-row"><span class="ak">Field label</span><span class="av">Inter 700 / 9px / #A07178 / uppercase</span></div>
+        <div class="a-row"><span class="ak">Input empty</span><span class="av">bg #F5EFE8 / border 1.5px #D4C4BC / radius 10px</span></div>
+        <div class="a-row"><span class="ak">Input filled</span><span class="av">bg #fff / border #BAA898 / text #5A5353</span></div>
+        <div class="a-row"><span class="ak">CTA</span><span class="av">bg #C2847A / pill / Inter 700 / 13px / white / h ~44px</span></div>
+        <div class="a-row"><span class="ak">Text button</span><span class="av">no bg / no border / Inter 500 / 11px / #A07178</span></div>
+        <div class="a-row"><span class="ak">Fine print</span><span class="av">Inter 400 / 9px / #C4B5B0</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S2: FIRST LOGIN -->
+<div class="page" id="s2">
+  <div class="ph"><p class="ph-lbl">Screen 2</p><h1 class="ph-title">First login</h1><p class="ph-desc">All eight fixes visible here. No ATJ label. Underline segment strip. Inline chips. Wider conversation padding. 44px send circle. Placeholder copy: "What's on your mind?"</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <!-- FIX 3: underline tabs -->
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <!-- FIX 2: No label on every message. Plain prose only. -->
+        <div>
+          <div class="atj-text"><span style="font-size:22px;line-height:1.2;display:block;margin-bottom:6px;">Welcome.</span>I'm here to help you find your way through the family court process, whatever stage you're at. It can feel like an overwhelming system to navigate alone. Where would you like to start?</div>
+          <!-- FIX 4: chips are inline, wrap at content width -->
+          <div class="chips">
+            <div class="chip"><span class="material-icons">child_care</span>Children and arrangements</div>
+            <div class="chip"><span class="material-icons">balance</span>Finances and divorce</div>
+            <div class="chip"><span class="material-icons">all_inclusive</span>All of these</div>
+          </div>
+        </div>
+        <!-- THINKING INDICATOR — appears while AI is generating -->
+        <div class="thinking">
+          <div class="thinking-dot"></div>
+          <span class="thinking-label">Talia is thinking...</span>
+        </div>
+      </div>
+      <!-- Scroll to bottom arrow — appears when user scrolls up -->
+      <div class="scroll-arrow">
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+      <!-- Claude.ai input bar: plus opens action tray, send dims when empty -->
+      <div class="input-wrap">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn"><span class="material-icons">add</span></div>
+          <div class="msg-input" style="color:var(--light);">What's on your mind?</div>
+          <div class="send-circle empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">v8 changes — Claude.ai alignment</div>
+      <div class="a-spec">
+        <div class="a-lbl">1 — Font: Source Serif 4</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">Libre Baskerville — heavier, more traditional</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">Source Serif 4 — Adobe open-source, closest public match to Anthropic Serif in weight and optical rhythm</span></div>
+        <div class="a-row"><span class="ak">Sans-serif</span><span class="av">Inter stays — already what Claude.ai falls back to</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">2 — User bubble</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">White #fff + 1px taupe border</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">#E8D8C8 warm cream fill, no border — matches Claude.ai bg-[#E5E0D6]</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">3 — ATJ message line height</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">lh 1.8</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">lh 1.65 — matches Claude.ai leading-[1.65rem]</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">4 — Input field</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">bg #F5EFE8 (taupe-lt fill)</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">bg transparent — borderless on surface, keyline only. Claude.ai aligned.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">5 — Thinking indicator</div>
+        <div class="a-row"><span class="ak">What</span><span class="av">Single clay dot, breathing animation — 1.5s ease-in-out infinite</span></div>
+        <div class="a-row"><span class="ak">Why single dot</span><span class="av">Not three bouncing dots. One slow pulse reads as considered, not mechanical.</span></div>
+        <div class="a-row"><span class="ak">Label</span><span class="av">"Talia is thinking..." — Inter 400 / 10px / #C4B5B0</span></div>
+        <div class="a-row"><span class="ak">Placement</span><span class="av">In the conversation, where the response will appear. Disappears when text starts streaming.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">6 — Scroll to bottom arrow</div>
+        <div class="a-row"><span class="ak">What</span><span class="av">32px clay circle / keyboard_arrow_down icon / fixed bottom-right of conv area</span></div>
+        <div class="a-row"><span class="ak">Behaviour</span><span class="av">Hidden when at bottom. Appears when scrolled up more than 40px from bottom. Tapping scrolls smoothly to latest message.</span></div>
+        <div class="a-row"><span class="ak">Shadow</span><span class="av">0 2px 8px rgba(194,132,122,0.35) — only shadow in the product, justified by floating element</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fix 2 — no ATJ label</div>
+        <div class="a-row"><span class="ak">Label removed</span><span class="av">No "Talia" above every message. The serif prose on cream identifies itself. Label only appears contextually on first message of a new session.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fix 3 — lighter navigation</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">Filled pill container with clay active background.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">Underline indicator only. Clay 2px bottom-border on active tab. Muted text inactive.</span></div>
+        <div class="a-row"><span class="ak">Strip height</span><span class="av">~36px vs ~44px before. Saves vertical space.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fix 4 — inline chips</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">flex-direction: column / full width. Looked like buttons.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">flex-direction: row / flex-wrap. Width = content. Clearly chips, not CTAs.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fix 6 — send circle size</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">32px — below Material 44px minimum touch target.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">44px — meets Material minimum. Easier to tap on phone.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fix 8 — placeholder copy</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">"Or type your own message..." — generic chatbot copy.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">"What's on your mind?" — human, direct, appropriate for this product.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S3: RETURNING USER -->
+<div class="page" id="s3">
+  <div class="ph"><p class="ph-lbl">Screen 3</p><h1 class="ph-title">Returning user</h1><p class="ph-desc">Fix 7 applied: stronger session divider. Previous session recedes with opacity. Date badge replaces the hairline-only divider. New session label only on first ATJ message of the session.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <!-- Previous session — receded -->
+        <div style="opacity:0.4;">
+          <div class="atj-text">A MIAM is a Mediation Information and Assessment Meeting. Before you can apply to the family court for a child arrangements order, you'll usually need to attend one first — it's a legal requirement in most cases...</div>
+        </div>
+        <!-- FIX 7: stronger session divider with badge -->
+        <div class="session-divider">
+          <div class="session-divider-line"></div>
+          <div class="session-divider-badge">Today — Session 5</div>
+          <div class="session-divider-line"></div>
+        </div>
+        <!-- New session — label only on first message -->
+        <div>
+          <div class="atj-first-label">Talia</div>
+          <div class="atj-text">Good to have you back. Your Form E deadline is coming up on 1 August — that's just over three weeks away. Do you want to work on that today, or is there something else on your mind?</div>
+          <div class="chips">
+            <div class="chip"><span class="material-icons">edit_document</span>Work on Form E</div>
+            <div class="chip"><span class="material-icons">chat</span>Something else</div>
+          </div>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn"><span class="material-icons">add</span></div>
+          <div class="msg-input" style="color:var(--light);">What's on your mind?</div>
+          <div class="send-circle empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Fix 7 — session divider <span class="fix-badge">FIXED</span></div>
+      <div class="a-spec">
+        <div class="a-lbl">Divider treatment</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">1px line + "Today" text label. Too subtle, disappeared visually.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">1px line + pill badge "Today — Session 5". Badge has light bg, muted text. Clearly marks the boundary.</span></div>
+        <div class="a-row"><span class="ak">Badge bg</span><span class="av">rgba(186,168,152,0.15)</span></div>
+        <div class="a-row"><span class="ak">Badge text</span><span class="av">Inter 600 / 8px / #A07178</span></div>
+        <div class="a-row"><span class="ak">Line</span><span class="av">1px rgba(186,168,152,0.4) — slightly heavier than before</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Label rule</div>
+        <div class="a-row"><span class="ak">First message of session</span><span class="av">Small "Talia" label shown above — tiny, 8px, taupe. Anchors the new session.</span></div>
+        <div class="a-row"><span class="ak">All subsequent messages</span><span class="av">No label. The serif prose identifies itself.</span></div>
+        <div class="a-row"><span class="ak">Previous session</span><span class="av">opacity 0.4 — visible but clearly receded.</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S4: TIMELINE -->
+<div class="page" id="s4">
+  <div class="ph"><p class="ph-lbl">Screen 4</p><h1 class="ph-title">Timeline card</h1><p class="ph-desc">Fix 5 applied: card surface is now #D8B8A8 — clearly distinct from the #EEE0CB page. The card lifts off the page without needing a border.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <div class="turn-user"><div class="user-msg">Can you show me where I am in the divorce process?</div></div>
+        <div>
+          <div class="atj-text">Of course. Based on what you've told me, here's where things stand on your divorce track.</div>
+          <!-- FIX 5: card is now #D8B8A8, clearly off the cream page -->
+          <div class="card">
+            <div class="card-title">Your divorce — where things stand</div>
+            <div class="tl">
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Application filed</div><div class="tl-meta">Completed 3 March 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Acknowledgement received</div><div class="tl-meta">Completed 18 March 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot now"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl now">20-week cooling-off period</div><div class="tl-meta">Ends approx. 3 August 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl next">Conditional order</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div></div><div class="tl-body" style="padding-bottom:0;"><div class="tl-lbl next">Final order</div></div></div>
+            </div>
+          </div>
+          <div class="src">Based on: divorce-procedure-guide, hmcts-form-d8</div>
+        </div>
+      </div>
+      <!-- Scroll arrow visible — user has scrolled up to read timeline -->
+      <div class="scroll-arrow">
+        <span class="material-icons">keyboard_arrow_down</span>
+      </div>
+      <div class="input-wrap">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn"><span class="material-icons">add</span></div>
+          <div class="msg-input" style="color:var(--light);">What's on your mind?</div>
+          <div class="send-circle empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Fix 5 — card surface <span class="fix-badge">FIXED</span></div>
+      <div class="a-spec">
+        <div class="a-lbl">Card contrast</div>
+        <div class="a-row"><span class="ak">Old card</span><span class="av">#E6CCBE — too close to page #EEE0CB. Hard to distinguish.</span></div>
+        <div class="a-row"><span class="ak">New card</span><span class="av">#D8B8A8 — noticeably warmer and darker. Lifts off page clearly.</span></div>
+        <div class="a-row"><span class="ak">Contrast ratio</span><span class="av">Page to card: ~1.15:1 before → ~1.35:1 now. Visible without a border.</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Timeline dots</div>
+        <div class="a-row"><span class="ak">Completed</span><span class="av">#8A9B7A (sage) — done feels positive</span></div>
+        <div class="a-row"><span class="ak">Current</span><span class="av">#C2847A (clay) — where you are now</span></div>
+        <div class="a-row"><span class="ak">Upcoming</span><span class="av">transparent / border 2px rgba(90,83,83,0.2)</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S5: CHECKLIST -->
+<div class="page" id="s5">
+  <div class="ph"><p class="ph-lbl">Screen 5</p><h1 class="ph-title">Checklist card</h1><p class="ph-desc">Same darker card surface as timeline. Sage completed checkboxes. Plain serif prose above sets context — the UI component follows the human response, not the other way around.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <div class="turn-user"><div class="user-msg">What do I need to do before my First Appointment?</div></div>
+        <div>
+          <div class="atj-text">Here's what the court will expect you to have ready. You've already made a good start — two of the five things are done.</div>
+          <div class="card">
+            <div class="card-title">Before your First Appointment</div>
+            <div class="cl">
+              <div class="cl-row"><div class="cl-box done"><span class="material-icons">check</span></div><div><div class="cl-lbl done">File Form E (financial statement)</div><div class="cl-desc">Submitted 12 June 2025</div></div></div>
+              <div class="cl-row"><div class="cl-box done"><span class="material-icons">check</span></div><div><div class="cl-lbl done">Exchange Form E with other party</div><div class="cl-desc">Completed 18 June 2025</div></div></div>
+              <div class="cl-row"><div class="cl-box todo"></div><div><div class="cl-lbl">Prepare a questionnaire</div><div class="cl-desc">Questions about information in their Form E</div></div></div>
+              <div class="cl-row"><div class="cl-box todo"></div><div><div class="cl-lbl">Draft a schedule of assets and income</div><div class="cl-desc">One page summary for the judge</div></div></div>
+              <div class="cl-row"><div class="cl-box todo"></div><div><div class="cl-lbl">File all documents with the court</div><div class="cl-desc">At least 14 days before the hearing</div></div></div>
+            </div>
+          </div>
+          <div class="src">Based on: fpr-rule-9.14, first-appointment-guide</div>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn"><span class="material-icons">add</span></div>
+          <div class="msg-input" style="color:var(--light);">What's on your mind?</div>
+          <div class="send-circle empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — checklist</div>
+      <div class="a-spec">
+        <div class="a-lbl">Checklist states</div>
+        <div class="a-row"><span class="ak">Done box</span><span class="av">15px sq / #8A9B7A (sage) / radius 3px / white check 11px</span></div>
+        <div class="a-row"><span class="ak">Todo box</span><span class="av">15px sq / border 2px rgba(90,83,83,0.2)</span></div>
+        <div class="a-row"><span class="ak">Done label</span><span class="av">Inter 400 / 10.5px / #A07178 / strikethrough</span></div>
+        <div class="a-row"><span class="ak">Todo label</span><span class="av">Inter 500 / 10.5px / #5A5353</span></div>
+        <div class="a-row"><span class="ak">Description</span><span class="av">Inter 400 / 9px / #A07178</span></div>
+        <div class="a-row"><span class="ak">Card bg</span><span class="av">#D8B8A8 (same as timeline — consistent card system)</span></div>
+      </div>
+      <div class="a-note"><strong>The prose comes first.</strong> "You've already made a good start — two of the five things are done." The product acknowledges progress before presenting what's left. Small thing, significant emotional difference.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S6: DOC UPLOAD -->
+<div class="page" id="s6">
+  <div class="ph"><p class="ph-lbl">Screen 6</p><h1 class="ph-title">Document upload</h1><p class="ph-desc">Camera icon opens device picker. Upload preview appears above input. Plain prose response, then inline chips. No-storage disclosure woven into the conversation.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <div>
+          <div class="atj-text">Of course. Take a photo of the letter and send it to me — I'll tell you what it means and what you need to do.</div>
+        </div>
+        <div class="turn-user">
+          <div class="user-msg" style="display:flex;align-items:center;gap:6px;"><span class="material-icons" style="font-size:13px;">photo_camera</span>Court letter — 14 July.jpg</div>
+        </div>
+        <div>
+          <div class="atj-text">I can see what looks like a directions order from the Family Court. I've noted the key details but haven't stored the image — only my understanding of it stays in your case file. What would you like me to help you with?</div>
+          <div class="chips">
+            <div class="chip"><span class="material-icons">info</span>Explain what it means</div>
+            <div class="chip"><span class="material-icons">checklist</span>What do I need to do?</div>
+            <div class="chip"><span class="material-icons">edit_note</span>Help draft a response</div>
+          </div>
+        </div>
+      </div>
+      <div class="up-prev">
+        <div class="up-thumb"><span class="material-icons">description</span></div>
+        <div><div class="up-name">Court letter — 14 July.jpg</div><div class="up-meta">Ready to send</div></div>
+        <div class="up-clear"><span class="material-icons">close</span></div>
+      </div>
+      <div class="input-wrap show-tray">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn" style="background:var(--copy);"><span class="material-icons" style="color:#fff;">add</span></div>
+          <div class="msg-input" style="color:var(--light);">Add a message (optional)</div>
+          <div class="send-circle typing"><span class="material-icons">check</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — doc upload</div>
+      <div class="a-spec">
+        <div class="a-lbl">Upload preview</div>
+        <div class="a-row"><span class="ak">Preview bg</span><span class="av">rgba(194,132,122,0.1) — clay tint, warm</span></div>
+        <div class="a-row"><span class="ak">Thumb</span><span class="av">38px sq / rgba(90,83,83,0.07) / radius 6px</span></div>
+        <div class="a-row"><span class="ak">Filename</span><span class="av">Inter 500 / 10.5px / #5A5353</span></div>
+        <div class="a-row"><span class="ak">Remove</span><span class="av">close icon / 15px / #A07178 / right-aligned</span></div>
+      </div>
+      <div class="a-note"><strong>Chips here are still inline</strong> — Fix 4 applies to every screen with chips, not just first login. Three chips on one row, wrapping if the screen is narrow.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S7: WRITING SUPPORT -->
+<div class="page" id="s7">
+  <div class="ph"><p class="ph-lbl">Screen 7</p><h1 class="ph-title">Writing support</h1><p class="ph-desc">Inline chips throughout. User selections as clay pills. ATJ guidance as plain prose. No new screen — everything in the conversation.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab on">Chat</div><div class="seg-tab">Case file</div></div>
+      <div class="conv">
+        <div class="turn-user"><div class="user-msg">I need help writing a position statement for my hearing next week</div></div>
+        <div>
+          <div class="atj-text">I can help with that. A position statement sets out your case clearly for the judge before the hearing — it's one of the most important things you'll submit. Let's work through it together. What are you writing about?</div>
+          <div class="chips">
+            <div class="chip"><span class="material-icons">child_care</span>Child arrangements</div>
+            <div class="chip"><span class="material-icons">account_balance</span>Financial matters</div>
+            <div class="chip"><span class="material-icons">all_inclusive</span>Both</div>
+            <div class="chip"><span class="material-icons">more_horiz</span>Something else</div>
+          </div>
+        </div>
+        <div class="turn-user"><div class="user-msg">Child arrangements</div></div>
+        <div>
+          <div class="atj-text">And where are you with it at the moment?</div>
+          <div class="chips">
+            <div class="chip"><span class="material-icons">edit_off</span>Haven't started</div>
+            <div class="chip"><span class="material-icons">notes</span>Have some thoughts</div>
+            <div class="chip"><span class="material-icons">edit_document</span>Have a draft</div>
+          </div>
+        </div>
+      </div>
+      <div class="input-wrap">
+        <div class="action-tray">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats from your device</div></div>
+          </div>
+        </div>
+        <div class="input-row">
+          <div class="plus-btn"><span class="material-icons">add</span></div>
+          <div class="msg-input" style="color:var(--light);">What's on your mind?</div>
+          <div class="send-circle empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — writing support</div>
+      <div class="a-spec">
+        <div class="a-lbl">Chip label trim</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">"Haven't started yet" — 3 chips forced second row awkwardly</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">"Haven't started" — tighter label, 3 chips fit more naturally</span></div>
+        <div class="a-row"><span class="ak">Rule</span><span class="av">Chip labels trimmed to shortest clear form. Icons carry additional meaning.</span></div>
+      </div>
+      <div class="a-note"><strong>Compliance.</strong> Every draft framed as: "Here's a first draft based on what you've told me — please review before submitting." Claude never generates content the user hasn't supplied the substance of.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S8: CASE FILE -->
+<div class="page" id="s8">
+  <div class="ph"><p class="ph-lbl">Screen 8</p><h1 class="ph-title">Case file panel</h1><p class="ph-desc">Case file tab active — underline strip shows it. Three sections on cream. White surfaces, no borders, no shadows. Single search across conversations and documents.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+      <div class="seg-wrap"><div class="seg-tab">Chat</div><div class="seg-tab on">Case file</div></div>
+      <div class="panel-scroll">
+        <div class="p-sec">
+          <div class="p-title">Your journey</div>
+          <div class="p-row"><div class="p-main">Your divorce — where things stand</div><div class="p-meta">Timeline · 25 Jun 2025</div></div>
+          <div class="p-row"><div class="p-main">Before your First Appointment</div><div class="p-meta">Checklist · 20 Jun 2025</div></div>
+          <div class="p-row"><div class="p-main">Child arrangements track</div><div class="p-meta">Timeline · 14 Jun 2025</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:6px;">
+          <div class="p-title">Documents</div>
+          <div class="p-row"><div class="p-main">Directions order — Family Court</div><div class="p-meta">Court letter · 25 Jun 2025</div></div>
+          <div class="p-row"><div class="p-main">Form C100 (draft)</div><div class="p-meta">Court form · 18 Jun 2025</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:6px;">
+          <div class="p-title">Conversation history</div>
+          <div class="search-row">
+            <div class="search-inp">Search conversations and documents...</div>
+            <div class="search-go"><span class="material-icons">search</span></div>
+          </div>
+          <div class="p-row"><div class="p-main" style="font-size:10.5px;font-weight:400;color:var(--muted);">You: Can you explain what a MIAM is?</div><div class="p-meta">24 Jun · Session 4</div></div>
+          <div class="p-row"><div class="p-main" style="font-size:10.5px;font-weight:400;color:var(--muted);">Talia: A MIAM is a Mediation Information and Assessment Meeting...</div><div class="p-meta">24 Jun · Session 4</div></div>
+          <div class="p-row"><div class="p-main" style="font-size:10.5px;font-weight:400;color:var(--muted);">You: What do I need to bring to a First Appointment?</div><div class="p-meta">20 Jun · Session 3</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — case file</div>
+      <div class="a-spec">
+        <div class="a-lbl">Panel</div>
+        <div class="a-row"><span class="ak">Panel bg</span><span class="av">#EEE0CB</span></div>
+        <div class="a-row"><span class="ak">Section bg</span><span class="av">#ffffff / no border / no shadow</span></div>
+        <div class="a-row"><span class="ak">Section gap</span><span class="av">6px</span></div>
+        <div class="a-row"><span class="ak">Section title</span><span class="av">Inter 700 / 9px / #A07178 / uppercase</span></div>
+        <div class="a-row"><span class="ak">Row title</span><span class="av">Inter 500 / 11.5px / #5A5353</span></div>
+        <div class="a-row"><span class="ak">Row meta</span><span class="av">Inter 400 / 9px / #C4B5B0</span></div>
+        <div class="a-row"><span class="ak">Search input</span><span class="av">border 1.5px #D4C4BC / pill / #F5EFE8 bg</span></div>
+        <div class="a-row"><span class="ak">Go button</span><span class="av">bg #C2847A / pill / white / Inter 700 / 10px</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S9: SETTINGS -->
+<div class="page" id="s9">
+  <div class="ph"><p class="ph-lbl">Screen 9</p><h1 class="ph-title">Settings</h1><p class="ph-desc">Accessed via gear icon. Cream background, white section surfaces. No shadows, no card borders. Trial badge in clay. Sign out in muted red.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="back-bar">
+        <div style="width:40px;"></div>
+        <div class="back-title">Account</div>
+        <div style="font-family:var(--sans);font-size:11px;color:var(--muted);cursor:pointer;">Done</div>
+      </div>
+      <div class="settings-scroll">
+        <div class="ss-lbl">Your account</div>
+        <div class="ss-sec">
+          <div class="ss-row"><span class="ss-key">Name</span><span class="ss-val">Sarah Mitchell</span></div>
+          <div class="ss-row"><span class="ss-key">Email</span><span class="ss-val">sarah@example.com</span></div>
+          <div class="ss-row"><span class="ss-key">Change password</span><span class="ss-val">Update ›</span></div>
+        </div>
+        <div class="ss-lbl">Subscription</div>
+        <div class="ss-sec">
+          <div class="ss-row"><span class="ss-key">Status</span><span class="trial-badge">Free trial — 9 days left</span></div>
+          <div class="ss-row"><span class="ss-key">Subscribe</span><span class="ss-val">£35/month ›</span></div>
+        </div>
+        <div class="ss-lbl">Your data</div>
+        <div class="ss-sec">
+          <div class="ss-row"><span class="ss-key">Request data deletion</span><span class="ss-val">Request ›</span></div>
+        </div>
+        <div class="ss-sec" style="margin-top:8px;">
+          <div class="ss-row" style="justify-content:center;"><span style="font-family:var(--sans);font-size:12px;color:var(--red);cursor:pointer;">Sign out</span></div>
+        </div>
+        <div style="padding:12px 16px;font-family:var(--sans);font-size:9px;color:var(--light);text-align:center;line-height:1.6;">Talia · Pilot v1.0</div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — settings</div>
+      <div class="a-spec">
+        <div class="a-lbl">Tokens</div>
+        <div class="a-row"><span class="ak">Page bg</span><span class="av">#EEE0CB</span></div>
+        <div class="a-row"><span class="ak">Section bg</span><span class="av">#ffffff</span></div>
+        <div class="a-row"><span class="ak">Section label</span><span class="av">Inter 700 / 9px / #A07178 / uppercase</span></div>
+        <div class="a-row"><span class="ak">Row key</span><span class="av">Inter 400 / 12px / #5A5353</span></div>
+        <div class="a-row"><span class="ak">Row value</span><span class="av">Inter 400 / 11px / #A07178</span></div>
+        <div class="a-row"><span class="ak">Row height</span><span class="av">~44px</span></div>
+        <div class="a-row"><span class="ak">Trial badge</span><span class="av">bg #C2847A / white / Inter 700 / 9px / pill</span></div>
+        <div class="a-row"><span class="ak">Sign out</span><span class="av">Inter 400 / 12px / #c0392b / centred</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- S10: TRIAL END -->
+<div class="page" id="s10">
+  <div class="ph"><p class="ph-lbl">Screen 10</p><h1 class="ph-title">Trial end</h1><p class="ph-desc">Fix 8 applied: content is a tight deliberate unit, not justify-content:center distributing things unevenly. White screen — intentional break from cream. No urgency.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="ahdr"><div class="alogo">Talia</div><div></div></div>
+      <!-- FIX 8: tighter deliberate spacing, not justify-center -->
+      <div class="trial-screen">
+        <div class="trial-circle" style="width:64px;height:64px;background:var(--clay);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:20px;"><span style="font-family:var(--serif);font-size:18px;color:#fff;letter-spacing:0.01em;">T</span></div>
+        <div class="trial-head">Your 15-day free trial has come to an end.</div>
+        <div class="trial-body">I hope it has been useful. Navigating the family court system is hard and you shouldn't have to do it alone. To keep going, it's £35 a month. You can cancel any time.</div>
+        <div class="trial-price">£35 <span>/ month</span></div>
+        <div class="trial-actions">
+          <div class="btn-cta">Continue — £35/month</div>
+          <div class="btn-txt">Not right now</div>
+        </div>
+        <div class="trial-fine">Cancel any time. Your case file is kept for 30 days after cancellation.</div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Fix 8 — trial end spacing <span class="fix-badge">FIXED</span></div>
+      <div class="a-spec">
+        <div class="a-lbl">Spacing approach</div>
+        <div class="a-row"><span class="ak">Old</span><span class="av">justify-content:center with gap:0. Content floated with uneven gaps between elements.</span></div>
+        <div class="a-row"><span class="ak">New</span><span class="av">flex-direction:column with deliberate margin on each child. Each element has its own breathing room.</span></div>
+        <div class="a-row"><span class="ak">Circle margin-bottom</span><span class="av">20px</span></div>
+        <div class="a-row"><span class="ak">Headline margin-bottom</span><span class="av">12px</span></div>
+        <div class="a-row"><span class="ak">Body margin-bottom</span><span class="av">20px</span></div>
+        <div class="a-row"><span class="ak">Price margin-bottom</span><span class="av">20px</span></div>
+        <div class="a-row"><span class="ak">Text max-width</span><span class="av">240px — constrains line length for better readability</span></div>
+      </div>
+      <div class="a-note"><strong>White background is intentional.</strong> The rest of the product lives on cream. A white surface here creates a moment of pause — calm, not alarming — that signals something meaningful has happened.</div>
+    </div>
+  </div>
+</div>
+
+<!-- S11: PAYMENT -->
+<div class="page" id="s11">
+  <div class="ph"><p class="ph-lbl">Screen 11</p><h1 class="ph-title">Payment</h1><p class="ph-desc">Warm card for price block — now clearly distinct from page bg. Same input keylines as sign-up. Clay CTA. Security note. Stripe Elements handles actual card fields.</p></div>
+  <div class="two-col">
+    <div class="device">
+      <div class="dbar"><div class="notch"></div></div>
+      <div class="dstat"><span>9:41</span><span>●●●</span></div>
+      <div class="back-bar">
+        <div class="back-btn"><span class="material-icons">arrow_back</span>Back</div>
+        <div class="back-title">Subscribe</div>
+        <div style="width:40px;"></div>
+      </div>
+      <div class="form-screen">
+        <div class="price-card">
+          <div class="price-lbl">Talia — monthly subscription</div>
+          <div><span class="price-amt">£35</span> <span class="price-unit">/ month</span></div>
+          <div class="price-note">Cancel any time. No minimum commitment.</div>
+        </div>
+        <div class="field"><div class="flbl">Name on card</div><div class="finp ok">Sarah Mitchell</div></div>
+        <div class="field"><div class="flbl">Card number</div><div class="finp">1234 5678 9012 3456</div></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:13px;">
+          <div><div class="flbl">Expiry</div><div class="finp">MM / YY</div></div>
+          <div><div class="flbl">CVC</div><div class="finp">•••</div></div>
+        </div>
+        <div class="btn-cta">Start subscription — £35/month</div>
+        <div class="sec-note"><span class="material-icons">lock</span>Payments processed securely by Stripe. We never store your card details.</div>
+      </div>
+    </div>
+    <div class="ann">
+      <div class="a-title">Annotation — payment</div>
+      <div class="a-spec">
+        <div class="a-lbl">Price card</div>
+        <div class="a-row"><span class="ak">Card bg</span><span class="av">#D8B8A8 (same darker card as timeline / checklist — consistent)</span></div>
+        <div class="a-row"><span class="ak">Card radius</span><span class="av">20px</span></div>
+        <div class="a-row"><span class="ak">Label</span><span class="av">Inter 400 / 9px / rgba(90,83,83,0.5)</span></div>
+        <div class="a-row"><span class="ak">Amount</span><span class="av">Libre Baskerville 400 / 24px / #5A5353</span></div>
+        <div class="a-row"><span class="ak">Unit</span><span class="av">Inter 400 / 12px / #A07178</span></div>
+      </div>
+      <div class="a-spec">
+        <div class="a-lbl">Fields and button</div>
+        <div class="a-row"><span class="ak">Fields</span><span class="av">1.5px #D4C4BC / radius 10px / same as sign-up</span></div>
+        <div class="a-row"><span class="ak">CTA</span><span class="av">bg #C2847A / pill / white / Inter 700 / 13px</span></div>
+        <div class="a-row"><span class="ak">Security note</span><span class="av">Inter 400 / 9px / #C4B5B0 / lock icon</span></div>
+        <div class="a-row"><span class="ak">On success</span><span class="av">Return to chat. Talia: "You're all set. Let's pick up where we left off."</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- D1: DESKTOP — CHAT (first login) -->
+<div class="page" id="d1">
+  <div class="ph"><p class="ph-lbl">Desktop — Screen 1</p><h1 class="ph-title">Chat — first login</h1><p class="ph-desc">Claude.ai-aligned desktop layout. Left sidebar for conversation history (collapsible). Centre column is the conversation, max-width 680px. Right panel is the case file, persistent. No tabs on desktop — case file is always visible.</p></div>
+
+  <div class="dt-outer">
+    <div class="dt-header">
+      <div class="dt-header-logo">Talia</div>
+      <div class="dt-header-right">
+        <div class="ibtn" style="margin-right:6px;background:rgba(204,120,92,0.12);" onclick="togglePanel(this)"><span class="material-icons" style="color:var(--clay);font-size:14px;">folder_open</span></div>
+        <div class="ibtn"><span class="material-icons">settings</span></div>
+      </div>
+    </div>
+    <div class="dt-shell panel-open">
+    <!-- Left sidebar -->
+    <div class="dt-sidebar">
+      <div class="dt-sidebar-new"><span class="material-icons">edit</span> New conversation</div>
+      <div class="dt-sidebar-lbl">Recent</div>
+      <div class="dt-sidebar-item active">Form E deadline — what next?</div>
+      <div class="dt-sidebar-item">What is a MIAM?</div>
+      <div class="dt-sidebar-item">First Appointment checklist</div>
+      <div class="dt-sidebar-item">Child arrangements track</div>
+      <div class="dt-sidebar-lbl" style="margin-top:12px;">Earlier</div>
+      <div class="dt-sidebar-item">Divorce process explained</div>
+      <div class="dt-sidebar-item">C100 form help</div>
+    </div>
+
+    <!-- Centre conversation -->
+    <div class="dt-main">
+      <div class="dt-conv" id="dt-conv-d1">
+        <div class="dt-atj-wrap">
+          <div class="dt-atj-text"><span style="font-size:28px;line-height:1.15;display:block;margin-bottom:8px;font-family:var(--serif);color:var(--copy);">Welcome.</span>I'm here to help you find your way through the family court process, whatever stage you're at. It can feel like an overwhelming system to navigate alone. Where would you like to start?</div>
+          <div class="chips" style="margin-top:14px;">
+            <div class="chip"><span class="material-icons">child_care</span>Children and arrangements</div>
+            <div class="chip"><span class="material-icons">balance</span>Finances and divorce</div>
+            <div class="chip"><span class="material-icons">all_inclusive</span>All of these</div>
+          </div>
+        </div>
+        <div class="thinking" style="padding:4px 0;">
+          <div class="thinking-dot"></div>
+          <span class="thinking-label">Talia is thinking...</span>
+        </div>
+      </div>
+      <!-- Input -->
+      <div class="dt-input-wrap">
+        <div class="dt-action-tray" id="dt-tray-d1">
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">photo_camera</span></div>
+            <div><div class="action-tray-label">Take a photo</div><div class="action-tray-sub">Photograph a document or letter</div></div>
+          </div>
+          <div class="action-tray-item">
+            <div class="action-tray-icon"><span class="material-icons">folder_open</span></div>
+            <div><div class="action-tray-label">Choose file</div><div class="action-tray-sub">PDF, JPEG, PNG and other formats</div></div>
+          </div>
+        </div>
+        <div class="dt-input-row">
+          <div class="dt-plus-btn" onclick="toggleDtTray('dt-tray-d1',this)"><span class="material-icons">add</span></div>
+          <div class="dt-msg-input">What's on your mind?</div>
+          <div class="dt-send empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right case file panel -->
+    <div class="dt-panel">
+      <div class="dt-panel-hdr">Case file<div class="dt-panel-close" onclick="togglePanel(this)"><span class="material-icons">close</span></div></div>
+      <div class="dt-panel-body">
+        <div class="p-sec">
+          <div class="p-title">Your journey</div>
+          <div class="p-row"><div class="p-main">Your divorce — where things stand</div><div class="p-meta">Timeline · 25 Jun</div></div>
+          <div class="p-row"><div class="p-main">Before your First Appointment</div><div class="p-meta">Checklist · 20 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Documents</div>
+          <div class="p-row"><div class="p-main">Directions order — Family Court</div><div class="p-meta">Court letter · 25 Jun</div></div>
+          <div class="p-row"><div class="p-main">Form C100 (draft)</div><div class="p-meta">Court form · 18 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Search</div>
+          <div class="search-row">
+            <div class="search-inp">Search conversations...</div>
+            <div class="search-go"><span class="material-icons">search</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- D2: DESKTOP — TIMELINE -->
+<div class="page" id="d2">
+  <div class="ph"><p class="ph-lbl">Desktop — Screen 2</p><h1 class="ph-title">Chat — timeline card</h1><p class="ph-desc">Timeline card rendered in the centre conversation column. Source grounding below card. Case file panel persistent on the right throughout.</p></div>
+
+  <div class="dt-outer">
+    <div class="dt-header">
+      <div class="dt-header-logo">Talia</div>
+      <div class="dt-header-right"><div class="ibtn" style="margin-right:6px;background:rgba(204,120,92,0.12);" onclick="togglePanel(this)"><span class="material-icons" style="color:var(--clay);font-size:14px;">folder_open</span></div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+    </div>
+    <div class="dt-shell panel-open">
+    <div class="dt-sidebar">
+      <div class="dt-sidebar-new"><span class="material-icons">edit</span> New conversation</div>
+      <div class="dt-sidebar-lbl">Recent</div>
+      <div class="dt-sidebar-item active">Divorce process — where am I?</div>
+      <div class="dt-sidebar-item">Form E deadline — what next?</div>
+      <div class="dt-sidebar-item">What is a MIAM?</div>
+      <div class="dt-sidebar-item">First Appointment checklist</div>
+    </div>
+
+    <div class="dt-main">
+      <div class="dt-conv">
+        <div class="dt-user-wrap"><div class="dt-user-msg">Can you show me where I am in the divorce process?</div></div>
+        <div class="dt-atj-wrap">
+          <div class="dt-atj-text">Of course. Based on what you've told me, here's where things stand on your divorce track.</div>
+          <div class="card" style="margin-top:14px;max-width:520px;">
+            <div class="card-title">Your divorce — where things stand</div>
+            <div class="tl">
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Application filed</div><div class="tl-meta">Completed 3 March 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Acknowledgement received</div><div class="tl-meta">Completed 18 March 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot now"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl now">20-week cooling-off period</div><div class="tl-meta">Ends approx. 3 August 2025</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl next">Conditional order</div></div></div>
+              <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div></div><div class="tl-body" style="padding-bottom:0;"><div class="tl-lbl next">Final order</div></div></div>
+            </div>
+          </div>
+          <div class="src" style="color:var(--light);margin-top:10px;">Based on: divorce-procedure-guide, hmcts-form-d8</div>
+        </div>
+      </div>
+      <div class="dt-input-wrap">
+        <div class="dt-input-row">
+          <div class="dt-plus-btn"><span class="material-icons">add</span></div>
+          <div class="dt-msg-input">What's on your mind?</div>
+          <div class="dt-send empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dt-panel">
+      <div class="dt-panel-hdr">Case file<div class="dt-panel-close" onclick="togglePanel(this)"><span class="material-icons">close</span></div></div>
+      <div class="dt-panel-body">
+        <div class="p-sec">
+          <div class="p-title">Your journey</div>
+          <div class="p-row" style="background:rgba(180,119,110,0.06);"><div class="p-main">Your divorce — where things stand</div><div class="p-meta">Timeline · Just now</div></div>
+          <div class="p-row"><div class="p-main">Before your First Appointment</div><div class="p-meta">Checklist · 20 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Documents</div>
+          <div class="p-row"><div class="p-main">Directions order — Family Court</div><div class="p-meta">Court letter · 25 Jun</div></div>
+          <div class="p-row"><div class="p-main">Form C100 (draft)</div><div class="p-meta">Court form · 18 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Search</div>
+          <div class="search-row">
+            <div class="search-inp">Search conversations...</div>
+            <div class="search-go"><span class="material-icons">search</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- D3: DESKTOP — CASE FILE EXPANDED -->
+<div class="page" id="d3">
+  <div class="ph"><p class="ph-lbl">Desktop — Screen 3</p><h1 class="ph-title">Case file — expanded</h1><p class="ph-desc">Clicking a row in the case file panel expands the detail into the centre column. The conversation thread persists in the sidebar. The case file panel shows the active item highlighted.</p></div>
+
+  <div class="dt-outer">
+    <div class="dt-header">
+      <div class="dt-header-logo">Talia</div>
+      <div class="dt-header-right"><div class="ibtn" style="margin-right:6px;background:rgba(204,120,92,0.12);" onclick="togglePanel(this)"><span class="material-icons" style="color:var(--clay);font-size:14px;">folder_open</span></div><div class="ibtn"><span class="material-icons">settings</span></div></div>
+    </div>
+    <div class="dt-shell panel-open">
+    <div class="dt-sidebar">
+      <div class="dt-sidebar-new"><span class="material-icons">edit</span> New conversation</div>
+      <div class="dt-sidebar-lbl">Recent</div>
+      <div class="dt-sidebar-item">Divorce process — where am I?</div>
+      <div class="dt-sidebar-item active">Form E deadline — what next?</div>
+      <div class="dt-sidebar-item">What is a MIAM?</div>
+      <div class="dt-sidebar-item">First Appointment checklist</div>
+    </div>
+
+    <div class="dt-main" style="background:var(--cream);">
+      <!-- Centre shows the expanded case file detail -->
+      <div class="dt-conv" style="padding:40px 48px;">
+        <div style="font-family:var(--sans);font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Timeline</div>
+        <div style="font-family:var(--serif);font-size:22px;color:var(--copy);margin-bottom:20px;">Your divorce — where things stand</div>
+        <div class="card" style="max-width:560px;">
+          <div class="card-title">Your divorce — where things stand</div>
+          <div class="tl">
+            <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Application filed</div><div class="tl-meta">Completed 3 March 2025</div></div></div>
+            <div class="tl-row"><div class="tl-spine"><div class="tl-dot done"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl done">Acknowledgement received</div><div class="tl-meta">Completed 18 March 2025</div></div></div>
+            <div class="tl-row"><div class="tl-spine"><div class="tl-dot now"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl now">20-week cooling-off period</div><div class="tl-meta">Ends approx. 3 August 2025</div></div></div>
+            <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div><div class="tl-line"></div></div><div class="tl-body"><div class="tl-lbl next">Conditional order</div></div></div>
+            <div class="tl-row"><div class="tl-spine"><div class="tl-dot next"></div></div><div class="tl-body" style="padding-bottom:0;"><div class="tl-lbl next">Final order</div></div></div>
+          </div>
+        </div>
+        <div style="font-family:var(--sans);font-size:10px;color:var(--light);margin-top:12px;">Saved 25 June 2025 · Based on: divorce-procedure-guide</div>
+        <div style="margin-top:24px;">
+          <div class="btn-cta" style="max-width:200px;font-size:12px;">Discuss this with Talia</div>
+        </div>
+      </div>
+      <div class="dt-input-wrap">
+        <div class="dt-input-row">
+          <div class="dt-plus-btn"><span class="material-icons">add</span></div>
+          <div class="dt-msg-input">Ask about this timeline...</div>
+          <div class="dt-send empty"><span class="material-icons">arrow_upward</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dt-panel">
+      <div class="dt-panel-hdr">Case file<div class="dt-panel-close" onclick="togglePanel(this)"><span class="material-icons">close</span></div></div>
+      <div class="dt-panel-body">
+        <div class="p-sec">
+          <div class="p-title">Your journey</div>
+          <div class="p-row" style="background:rgba(180,119,110,0.06);border-left:2px solid var(--clay);"><div class="p-main">Your divorce — where things stand</div><div class="p-meta">Timeline · 25 Jun</div></div>
+          <div class="p-row"><div class="p-main">Before your First Appointment</div><div class="p-meta">Checklist · 20 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Documents</div>
+          <div class="p-row"><div class="p-main">Directions order — Family Court</div><div class="p-meta">Court letter · 25 Jun</div></div>
+          <div class="p-row"><div class="p-main">Form C100 (draft)</div><div class="p-meta">Court form · 18 Jun</div></div>
+        </div>
+        <div class="p-sec" style="margin-top:12px;">
+          <div class="p-title">Search</div>
+          <div class="search-row">
+            <div class="search-inp">Search conversations...</div>
+            <div class="search-go"><span class="material-icons">search</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<style>
+/* ── Desktop shell ── */
+.dt-outer {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+.dt-header {
+  background: var(--surface);
+  border-bottom: 1px solid rgba(186,168,152,0.25);
+  padding: 0 20px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.dt-header-logo {
+  font-family: var(--serif);
+  font-size: 17px;
+  color: var(--copy);
+}
+.dt-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dt-shell {
+  display: flex;
+  height: 596px;
+  background: var(--cream);
+  overflow: hidden;
+  position: relative;
+}
+.dt-sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  background: #F7F2EC;
+  border-right: 1px solid rgba(186,168,152,0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
+  overflow-y: auto;
+}
+.dt-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+  transition: margin-right 0.25s ease;
+}
+.dt-shell.panel-open .dt-main {
+  margin-right: 280px;
+}
+
+/* Left sidebar */
+.dt-sidebar {
+  background: #F7F2EC;
+  border-right: 1px solid rgba(186,168,152,0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0;
+  overflow-y: auto;
+}
+.dt-sidebar-new {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0 8px 8px;
+}
+.dt-sidebar-new:hover { background: rgba(186,168,152,0.15); }
+.dt-sidebar-new .material-icons { font-size: 14px; }
+.dt-sidebar-lbl {
+  font-family: var(--sans);
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 16px;
+  margin-top: 4px;
+}
+.dt-sidebar-item {
+  font-family: var(--sans);
+  font-size: 11px;
+  color: var(--muted);
+  padding: 7px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 1px 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.1s;
+}
+.dt-sidebar-item:hover { background: rgba(186,168,152,0.15); }
+.dt-sidebar-item.active { background: rgba(180,119,110,0.1); color: var(--copy); font-weight: 500; }
+
+/* Centre column */
+.dt-main {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  position: relative;
+  overflow: hidden;
+}
+.dt-conv {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px 48px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.dt-atj-wrap { max-width: 640px; }
+.dt-atj-text {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--copy);
+}
+.dt-user-wrap { display: flex; justify-content: flex-end; }
+.dt-user-msg {
+  background: #FDF4EF;
+  color: var(--copy);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.55;
+  padding: 11px 16px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 72%;
+}
+
+/* Desktop input — slimmer */
+.dt-input-wrap {
+  background: transparent;
+  border-top: 1px solid rgba(186,168,152,0.2);
+  padding: 8px 48px 10px;
+  flex-shrink: 0;
+  position: relative;
+}
+.dt-action-tray {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  position: absolute;
+  bottom: 100%;
+  left: 48px;
+  right: 48px;
+  background: var(--surface);
+  border: 1px solid rgba(186,168,152,0.3);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
+  padding: 6px 0 8px;
+}
+.dt-action-tray.open { display: flex; }
+.dt-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--taupe-lt);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 7px 10px;
+}
+.dt-plus-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.dt-plus-btn .material-icons { font-size: 16px; color: var(--copy); }
+.dt-msg-input {
+  flex: 1;
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--light);
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.dt-send {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--clay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.dt-send .material-icons { font-size: 16px; color: #fff; }
+.dt-send.empty { background: rgba(180,119,110,0.3); cursor: default; }
+
+/* Right panel — floating */
+.dt-panel {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 256px;
+  max-height: calc(100% - 32px);
+  background: #F0E8DE;
+  border-radius: 14px;
+  border: 1px solid rgba(186,168,152,0.4);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12), 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10;
+  transition: opacity 0.2s ease, transform 0.25s ease;
+}
+.dt-panel.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(16px);
+}
+.dt-panel-hdr {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid rgba(186,168,152,0.25);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dt-panel-close {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(186,168,152,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.dt-panel-close .material-icons { font-size: 13px; color: var(--muted); }
+.dt-panel-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 0 14px;
+}
+</style>
+
+<script>
+function go(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('on'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  const ids = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','d1','d2','d3'];
+  const idx = ids.indexOf(id);
+  if (idx >= 0) document.querySelectorAll('.nav-btn')[idx].classList.add('on');
+  window.scrollTo(0,0);
+}
+
+function toggleDtTray(trayId, btn) {
+  const tray = document.getElementById(trayId);
+  if (!tray) return;
+  tray.classList.toggle('open');
+}
+
+function togglePanel(btn) {
+  const shell = btn.closest('.dt-shell');
+  const panel = shell ? shell.querySelector('.dt-panel') : null;
+  if (!shell || !panel) return;
+  const isOpen = shell.classList.contains('panel-open');
+  if (isOpen) {
+    shell.classList.remove('panel-open');
+    panel.classList.add('hidden');
+  } else {
+    shell.classList.add('panel-open');
+    panel.classList.remove('hidden');
+  }
+}
+
+// Scroll arrow — show when conv scrolled up, hide at bottom
+document.querySelectorAll('.conv').forEach(function(conv) {
+  var arrow = conv.parentElement.querySelector('.scroll-arrow');
+  if (!arrow) return;
+  conv.addEventListener('scroll', function() {
+    var atBottom = conv.scrollHeight - conv.scrollTop - conv.clientHeight < 40;
+    if (atBottom) {
+      arrow.classList.add('hidden');
+    } else {
+      arrow.classList.remove('hidden');
+    }
+  });
+  arrow.addEventListener('click', function() {
+    conv.scrollTo({ top: conv.scrollHeight, behavior: 'smooth' });
+  });
+  // Start hidden if already at bottom
+  arrow.classList.add('hidden');
+});
+
+// Make plus buttons interactive — toggle the action tray
+document.addEventListener('click', function(e) {
+  const plusBtn = e.target.closest('.plus-btn');
+  if (plusBtn) {
+    const wrap = plusBtn.closest('.input-wrap');
+    if (wrap && !wrap.classList.contains('show-tray')) {
+      wrap.classList.toggle('open');
+      // Toggle plus button fill to show active state
+      if (wrap.classList.contains('open')) {
+        plusBtn.style.background = 'var(--copy)';
+        plusBtn.querySelector('.material-icons').style.color = '#fff';
+      } else {
+        plusBtn.style.background = '';
+        plusBtn.querySelector('.material-icons').style.color = '';
+      }
+    }
+    e.stopPropagation();
+    return;
+  }
+  // Click outside closes any open tray
+  document.querySelectorAll('.input-wrap.open').forEach(wrap => {
+    wrap.classList.remove('open');
+    const btn = wrap.querySelector('.plus-btn');
+    if (btn) {
+      btn.style.background = '';
+      btn.querySelector('.material-icons').style.color = '';
+    }
+  });
+});
+</script>
+</body>
+</html>

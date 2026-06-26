@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: 70c87e3 (design — visual design v8 complete, design system locked)
+Last verified commit: (pending — visual design v9 committed, step 8 complete)
 
 Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
 
@@ -666,8 +666,11 @@ fully signed off. Step 12 is closed.
 
 ## Visual design — step 8 — COMPLETE
 
-Full UX and visual design pass completed and signed off. Supporting
-files: docs/design/atj_timeline_options.html, docs/design/atj_palette_options.html.
+Full UX and visual design pass completed and signed off. Canonical
+design reference: docs/design/atj_wireframes_v9.html (11 mobile screens
++ 3 desktop screens, all design system tokens, interaction states, and
+annotations). Supporting exploration files: docs/design/atj_timeline_options.html,
+docs/design/atj_palette_options.html.
 
 Design system locked. Do not change any of the following without a
 formal design decision in a new thread.
