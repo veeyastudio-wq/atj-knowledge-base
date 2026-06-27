@@ -76,11 +76,11 @@ _session_store: dict[str, list[dict]] = {}
 STATIC_DIR = Path(__file__).parent.parent / "static"
 
 _DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "atj",
-    "user": "postgres",
-    "password": "postgres",
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "dbname": os.getenv("DB_NAME", "atj"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "postgres"),
 }
 
 from dotenv import load_dotenv
