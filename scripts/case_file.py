@@ -17,14 +17,16 @@ get_documents(user_id, limit=50)
     implemented) when the full text is needed.
 """
 
+import os
+
 import psycopg2
 
 _DB_CONFIG = {
-    "host": "localhost",
-    "port": 5432,
-    "dbname": "atj",
-    "user": "postgres",
-    "password": "postgres",
+    "host": os.getenv("DB_HOST", "localhost"),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "dbname": os.getenv("DB_NAME", "atj"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", "postgres"),
 }
 
 
