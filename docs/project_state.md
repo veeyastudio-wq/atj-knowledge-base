@@ -8,7 +8,7 @@
 
 ## Session pointer
 
-Last verified commit: TBD (frontend — Talia v9 design implemented, static/index.html replaced)
+Last verified commit: 740eaad (frontend — Talia v9 design implemented, static/index.html replaced)
 
 Next: deploy to DigitalOcean staging environment.
 
