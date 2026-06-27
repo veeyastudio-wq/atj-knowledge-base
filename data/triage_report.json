@@ -1,11 +1,74 @@
 {
   "summary": {
-    "total_triaged": 0,
+    "total_triaged": 5,
     "safe": 0,
-    "hold": 0,
+    "hold": 5,
     "deleted": 0
   },
   "safe_files": [],
-  "hold_files": [],
+  "hold_files": [
+    {
+      "classification": "HOLD",
+      "summary": "Could not parse triage response \u2014 holding for manual review.",
+      "reason": "Triage script failed to parse Claude response. Review manually.",
+      "risk_areas": [
+        "parse error"
+      ],
+      "raw_response": "```json\n{\n  \"classification\": \"HOLD\",\n  \"summary\": \"A new detailed guidance document has been added explaining how to apply for a non-molestation order, covering the FL401 form, without-notice applications, legal aid eligibility, breach consequences, and what supporting evidence is needed.\",\n  \"reason\": \"This document contains substantive legal instructions that an unrepresented litigant would directly act on: it describes specific form requirements (FL401), the legal threshold for without-notice applications, legal aid eligibility criteria and evidence requirements, the criminal consequences of breach (up to five years' imprisonment under s.42A Family Law Act 1996), and guidance on how to draft a supporting statement. Any inaccuracy or ambiguity in these areas could cause a litigant to file incorrectly, miss legal aid entitlement, misunderstand when a without-notice application is appropriate, or fail to obtain protection they urgently need. The content must be verified by a qualified legal reviewer before going live.\",\n  \"risk_areas\": [\n    \"form requirements\",\n    \"legal aid eligibility\",\n    \"without-notice application threshold\",\n    \"filing procedure\",\n    \"legal rights\",\n    \"criminal liability for breach\",\n    \"evidence requirements\"\n  ]\n}\n```",
+      "path": "raw/layer2/document_explanations/document_explanation__non_molestation_order__cross_cutting.md"
+    },
+    {
+      "classification": "HOLD",
+      "summary": "Could not parse triage response \u2014 holding for manual review.",
+      "reason": "Triage script failed to parse Claude response. Review manually.",
+      "risk_areas": [
+        "parse error"
+      ],
+      "raw_response": "```json\n{\n  \"classification\": \"HOLD\",\n  \"summary\": \"This file adds the full Easy Read content of Form FL401, the domestic abuse protection order application form, including procedural instructions, references to without-notice orders, service of documents, and the D89 form.\",\n  \"reason\": \"This file contains step-by-step instructions that a litigant in person would follow when applying for a non-molestation or occupation order. It references specific legal procedures (without-notice orders, service via D89 form, keeping contact details confidential using a C8 form), and describes rights and processes that directly affect how a vulnerable person navigates the family court. Any inaccuracy or outdated information here could cause a litigant to file incorrectly, miss a procedural step, or fail to protect their safety. The content and all procedural details must be verified against the current official FL401 form and court rules before going live.\",\n  \"risk_areas\": [\n    \"form requirements\",\n    \"court procedures\",\n    \"filing deadlines\",\n    \"legal rights\",\n    \"without-notice orders\",\n    \"service of documents\",\n    \"safety and confidentiality protections\"\n  ]\n}\n```",
+      "path": "raw/court_forms/FL401.md"
+    },
+    {
+      "classification": "HOLD",
+      "summary": "This file introduces detailed procedural guidance on Form FP2, covering when and how to file it, hearing types, without-notice applications, fee requirements, service rules, and differences between FP2 and C2.",
+      "reason": "This document contains specific instructions that a litigant in person would directly follow, including how to complete each part of the form, when to apply without notice or without a hearing, the requirement to pay a court fee, how to protect a home address using Form A65, and guidance on when permission is needed before applying. It also distinguishes FP2 from C2 and other forms in a way that could cause a litigant to use the wrong form if the explanation is inaccurate. Any error or omission in these instructions could lead someone to file incorrectly, miss a procedural step, expose their address, or fail to obtain an urgent order properly. The file also appears to be cut off mid-sentence at the end, meaning the content is incomplete and should not go live until it has been reviewed and finished.",
+      "risk_areas": [
+        "form requirements",
+        "filing deadlines",
+        "court procedures",
+        "hearing types",
+        "without-notice applications",
+        "fee requirements",
+        "address disclosure and privacy",
+        "permission to apply",
+        "incomplete content"
+      ],
+      "path": "raw/layer2/document_explanations/document_explanation__fp2_application_notice__cross_cutting.md"
+    },
+    {
+      "classification": "HOLD",
+      "summary": "Could not parse triage response \u2014 holding for manual review.",
+      "reason": "Triage script failed to parse Claude response. Review manually.",
+      "risk_areas": [
+        "parse error"
+      ],
+      "raw_response": "```json\n{\n  \"classification\": \"HOLD\",\n  \"summary\": \"This file explains in detail how to serve court documents in England and Wales family proceedings, covering deadlines, methods, deemed service dates, certificates of service, and special rules for refuges and online applications.\",\n  \"reason\": \"This content directly instructs litigants in person on legally consequential procedural steps: the 28-day service deadline under FPR rule 6.6A, permitted methods of service, who may and may not serve, deemed service dates that affect response deadline calculations, the certificate of service filing requirement, rules on failed or dispensed service, and the refuge service procedure under rule 6.23A and PD 6D. It also references the PD 36G online pilot and its expiry date of 31 March 2027, and states that legally represented applicants must use a different system from 24 November 2025. Any inaccuracy in any of these areas could cause a litigant to miss a deadline, serve incorrectly, file the wrong form, or inadvertently disclose a refuge location. The file also appears to be truncated \u2014 the final sentence under 'What to know if you're unrepresented' is cut off mid-paragraph, meaning a litigant may receive incomplete instructions. All of these factors require human legal review before publication.\",\n  \"risk_areas\": [\n    \"filing deadlines\",\n    \"form requirements\",\n    \"court procedures\",\n    \"legal rights\",\n    \"welfare thresholds\",\n    \"service rules\"\n  ]\n}\n```",
+      "path": "raw/layer2/process_explanations/process_explanation__serving_applications__cross_cutting.md"
+    },
+    {
+      "classification": "HOLD",
+      "summary": "This file defines the role and powers of the Tipstaff, including instructions about compliance with High Court enforcement orders, forced entry powers, arrest warrants, passport seizure, port alert orders, and contempt of court risk.",
+      "reason": "This content directly instructs litigants in person on how to respond to High Court enforcement orders \u2014 including telling them they must comply with a Tipstaff order even before seeking legal advice, and that obstruction risks contempt of court. It also describes the legal powers of the Tipstaff (forced entry, arrest, passport seizure) and distinguishes between Tipstaff-directed and freestanding port alert orders. Any inaccuracy or ambiguity in this content could cause a litigant to misunderstand their legal rights during an enforcement action, or to act in a way that exposes them to contempt liability. The scope of the right to legal advice on arrest, the precise conditions for forced entry, and the distinction between order types all require verification by someone with legal expertise before this goes live.",
+      "risk_areas": [
+        "legal rights on arrest",
+        "contempt of court",
+        "enforcement procedures",
+        "forced entry powers",
+        "court orders and compliance obligations",
+        "passport and travel document seizure",
+        "port alert orders"
+      ],
+      "path": "raw/layer2/terminology/terminology__tipstaff__cross_cutting.md"
+    }
+  ],
   "deleted_files": []
 }
