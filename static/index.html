@@ -36,10 +36,7 @@
   margin: 0; padding: 0;
   -webkit-tap-highlight-color: transparent;
 }
-html, body {
-  height: 100dvh;
-  overflow: hidden;
-}
+html, body { height: 100dvh; overflow: hidden; }
 body {
   font-family: 'Inter', sans-serif;
   background: var(--cream);
@@ -60,27 +57,26 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   border-bottom: 1px solid rgba(186,168,152,0.25);
   flex-shrink: 0;
 }
+/* CHANGE 3 — wordmark 20% larger, padding */
 #talia-wordmark {
   font-family: 'Source Serif 4', serif;
-  font-size: 17px; font-weight: 400; color: var(--copy);
+  font-size: 20px; font-weight: 400; color: var(--copy);
+  padding: 0 8px;
 }
 #header-right { display: flex; align-items: center; gap: 8px; }
 
+/* CHANGE 10 — settings icon 22px, circle 36px */
 .icon-btn {
-  width: 30px; height: 30px; border-radius: 50%;
+  width: 36px; height: 36px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   background: var(--taupe-lt); border: none; cursor: pointer;
   transition: background 120ms;
 }
 .icon-btn:hover  { background: var(--border); }
 .icon-btn:active { transform: scale(0.93); }
-.icon-btn .material-icons { font-size: 18px; color: var(--taupe); }
+.icon-btn .material-icons { font-size: 22px; color: var(--taupe); }
 
-#panel-toggle-btn { display: none; background: rgba(204,120,92,0.1); }
-#panel-toggle-btn .material-icons { color: var(--clay); }
-#panel-toggle-btn:hover { background: rgba(204,120,92,0.15) !important; }
-
-/* ── Segment strip (mobile) ── */
+/* ── Segment strip (mobile only) ── */
 #segment-strip {
   position: sticky; z-index: 99;
   display: flex;
@@ -109,7 +105,16 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 /* ── Chat view ── */
 #chat-view {
   display: flex; flex-direction: column;
-  flex: 1; min-width: 0; overflow: hidden; position: relative;
+  flex: 1; min-width: 0; overflow: hidden;
+  background: var(--cream);
+}
+
+/* CHANGE 1 — centre column wrapper */
+#centre-col {
+  display: flex; flex-direction: column;
+  flex: 1; min-height: 0;
+  position: relative;
+  width: 100%;
 }
 
 /* ── Conversation ── */
@@ -119,7 +124,6 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   padding: 24px 24px 16px;
   display: flex; flex-direction: column; gap: 24px;
   -webkit-overflow-scrolling: touch;
-  position: relative;
 }
 
 /* ── ATJ turns ── */
@@ -132,6 +136,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   letter-spacing: 1px; color: var(--taupe);
   text-transform: uppercase; margin-bottom: 6px;
 }
+/* CHANGE 2 — ATJ text colour confirmed var(--copy) */
 .atj-text {
   font-family: 'Source Serif 4', serif;
   font-size: 14px; line-height: 1.65; color: var(--copy);
@@ -139,14 +144,14 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 }
 .fallback-note { font-size: 10px; color: var(--red); margin-top: 4px; }
 
-/* ── User turns ── */
+/* ── User turns — CHANGE 2 + CHANGE 8 ── */
 .user-turn { display: flex; justify-content: flex-end; }
 .user-bubble {
   background: var(--user-bubble);
   border-radius: 16px 16px 3px 16px;
   padding: 10px 14px; max-width: 80%;
   font-family: 'Inter', sans-serif;
-  font-size: 11.5px; font-weight: 500; color: var(--copy);
+  font-size: 12px; font-weight: 500; color: var(--copy);
   line-height: 1.5; white-space: pre-wrap;
 }
 
@@ -171,10 +176,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   opacity: 0;
   animation: dividerFadeIn 300ms ease-out 200ms forwards;
 }
-@keyframes dividerFadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
+@keyframes dividerFadeIn { from { opacity: 0; } to { opacity: 1; } }
 .divider-line { flex: 1; height: 1px; background: rgba(186,168,152,0.4); }
 .divider-badge {
   background: rgba(186,168,152,0.15); border-radius: 999px;
@@ -185,10 +187,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   animation: badgeScale 300ms ease-out 200ms both;
   transform-origin: center;
 }
-@keyframes badgeScale {
-  from { transform: scale(0.9); }
-  to   { transform: scale(1);   }
-}
+@keyframes badgeScale { from { transform: scale(0.9); } to { transform: scale(1); } }
 
 /* ── Chips ── */
 .chips-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -205,10 +204,10 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .chip:active { transform: scale(0.96); }
 .chip.used   { opacity: 0.5; pointer-events: none; }
 
-/* ── Sources line ── */
+/* ── Sources ── */
 .sources-line { font-size: 9px; color: var(--light); margin-top: 8px; line-height: 1.5; }
 
-/* ── Dark cards (timeline / checklist) ── */
+/* ── Dark cards ── */
 .dark-card {
   background: var(--card); border-radius: 20px; padding: 15px 17px;
   margin-top: 10px; animation: card-in 200ms ease-out both;
@@ -222,15 +221,15 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 /* Timeline */
 .tl-stages { display: flex; flex-direction: column; }
-.tl-row { display: flex; gap: 10px; }
-.tl-spine { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 14px; }
-.tl-dot { border-radius: 50%; flex-shrink: 0; }
+.tl-row    { display: flex; gap: 10px; }
+.tl-spine  { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 14px; }
+.tl-dot    { border-radius: 50%; flex-shrink: 0; }
 .tl-dot.complete { width: 10px; height: 10px; background: var(--sage); margin-top: 3px; }
 .tl-dot.current  { width: 12px; height: 12px; background: var(--clay); box-shadow: 0 0 0 3px rgba(204,120,92,0.25); margin-top: 2px; }
 .tl-dot.upcoming { width: 10px; height: 10px; background: transparent; border: 2px solid rgba(255,255,255,0.2); margin-top: 3px; }
-.tl-line { width: 1.5px; background: rgba(255,255,255,0.12); flex: 1; margin: 2px auto 0; min-height: 12px; }
+.tl-line   { width: 1.5px; background: rgba(255,255,255,0.12); flex: 1; margin: 2px auto 0; min-height: 12px; }
 .tl-content { flex: 1; padding-bottom: 14px; }
-.tl-stage { font-family: 'Inter', sans-serif; font-size: 11px; line-height: 1.4; }
+.tl-stage   { font-family: 'Inter', sans-serif; font-size: 11px; line-height: 1.4; }
 .tl-stage.complete { color: rgba(255,255,255,0.4); font-weight: 400; }
 .tl-stage.current  { color: #fff; font-weight: 700; }
 .tl-stage.upcoming { color: rgba(255,255,255,0.25); font-weight: 400; }
@@ -238,7 +237,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 /* Checklist */
 .cl-items { display: flex; flex-direction: column; }
-.cl-row { display: flex; align-items: flex-start; gap: 10px; padding: 5px 0; }
+.cl-row   { display: flex; align-items: flex-start; gap: 10px; padding: 5px 0; }
 .cl-circle {
   width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; margin-top: 1px;
   display: flex; align-items: center; justify-content: center;
@@ -249,7 +248,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .cl-label { font-family: 'Inter', sans-serif; font-size: 11px; line-height: 1.4; }
 .cl-label.done { color: rgba(255,255,255,0.4); text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.2); font-weight: 400; }
 .cl-label.todo { color: #fff; font-weight: 500; }
-.cl-desc { font-family: 'Inter', sans-serif; font-size: 9px; color: rgba(255,255,255,0.35); margin-top: 2px; }
+.cl-desc  { font-family: 'Inter', sans-serif; font-size: 9px; color: rgba(255,255,255,0.35); margin-top: 2px; }
 
 /* Choices */
 .choices-wrap { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
@@ -270,9 +269,9 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .choice-chip:active { transform: scale(0.97); }
 .choice-chip.used   { opacity: 0.5; pointer-events: none; }
 
-/* ── Scroll arrow ── */
+/* ── Scroll arrow — CHANGE 1: inside #centre-col ── */
 #scroll-arrow {
-  position: absolute; bottom: 16px; right: 16px;
+  position: absolute; bottom: 80px; right: 16px;
   width: 32px; height: 32px; border-radius: 50%;
   background: var(--clay); border: none;
   display: flex; align-items: center; justify-content: center;
@@ -286,11 +285,10 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 /* ── Input bar ── */
 #input-bar {
-  position: sticky; bottom: 0; z-index: 100;
   flex-shrink: 0; background: var(--surface);
   border-top: 1px solid rgba(186,168,152,0.25);
   padding: 10px 14px 12px;
-  position: relative;
+  position: relative; z-index: 100;
 }
 #img-preview-row { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
 #img-preview-row[hidden] { display: none; }
@@ -300,15 +298,16 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 #input-row { display: flex; align-items: center; gap: 8px; }
 
+/* CHANGE 9 — plus button border clearly visible */
 #plus-btn {
   width: 34px; height: 34px; border-radius: 50%;
-  border: 1.5px solid var(--border); background: var(--surface);
+  border: 2px solid var(--taupe); background: var(--surface);
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   transition: background 120ms; cursor: pointer;
 }
 #plus-btn:hover  { background: var(--taupe-lt); }
 #plus-btn:active { transform: scale(0.93); }
-#plus-btn .material-icons { font-size: 18px; color: var(--taupe); }
+#plus-btn .material-icons { font-size: 18px; color: var(--copy); }
 
 #msg-input {
   flex: 1; min-width: 0; background: var(--taupe-lt);
@@ -340,9 +339,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   transform: translateY(8px); opacity: 0; pointer-events: none;
   transition: transform 180ms ease-out, opacity 180ms ease-out;
 }
-#action-tray.open {
-  transform: translateY(0); opacity: 1; pointer-events: auto;
-}
+#action-tray.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
 .tray-item {
   display: flex; align-items: center; gap: 10px;
   padding: 10px 8px; border-radius: 8px; cursor: pointer; transition: background 100ms;
@@ -355,7 +352,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .tray-icon .material-icons { font-size: 18px; color: var(--taupe); }
 .tray-label { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: var(--copy); }
 
-/* ── Case view (mobile tab) ── */
+/* ── Mobile case view ── */
 #case-view {
   flex: 1; overflow-y: auto; background: var(--cream);
   padding: 16px; display: none; flex-direction: column; gap: 6px;
@@ -386,16 +383,15 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .panel-row {
   display: flex; align-items: flex-start; justify-content: space-between;
   padding: 10px 0; border-top: 1px solid rgba(186,168,152,0.15);
-  border-radius: 8px; cursor: default; transition: background 100ms;
+  cursor: default; transition: background 100ms;
 }
 .panel-row:first-of-type { border-top: none; }
 .panel-row:hover { background: rgba(186,168,152,0.12); }
-.panel-row.active { border-left: 2px solid var(--clay); padding-left: 6px; }
 .panel-row-title { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 500; color: var(--copy); }
 .panel-row-meta  { font-family: 'Inter', sans-serif; font-size: 9px; font-weight: 400; color: var(--light); margin-top: 2px; }
 .panel-empty { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400; color: var(--muted); padding: 8px 0; }
 
-/* ── Settings overlay ── */
+/* ── Settings overlay — base: bottom sheet ── */
 #settings-overlay {
   position: fixed; inset: 0; z-index: 200; background: rgba(0,0,0,0.3);
 }
@@ -407,9 +403,10 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   padding: 0 0 32px;
   animation: sheet-up 280ms cubic-bezier(0.32, 0.72, 0, 1) both;
 }
-@keyframes sheet-up {
-  from { transform: translateY(100%); }
-  to   { transform: translateY(0); }
+@keyframes sheet-up { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes modal-in {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 10px)); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
 }
 .sheet-handle {
   width: 36px; height: 4px; background: rgba(186,168,152,0.4); border-radius: 2px;
@@ -417,7 +414,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 }
 .sheet-section {
   background: var(--surface); border-radius: 12px;
-  padding: 4px 16px; margin: 0 0 6px;
+  padding: 4px 16px; margin: 0 16px 6px;
 }
 .sheet-section-label {
   font-family: 'Inter', sans-serif;
@@ -431,8 +428,9 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 }
 .sheet-row:first-of-type { border-top: none; }
 .sheet-row:hover { background: var(--taupe-lt); }
-.sheet-row-key  { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400; color: var(--copy); }
-.sheet-row-val  { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400; color: var(--muted); }
+/* CHANGE 8 — settings font sizes */
+.sheet-row-key  { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; color: var(--copy); }
+.sheet-row-val  { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 400; color: var(--muted); }
 .trial-badge {
   display: inline-block; background: var(--clay); color: #fff;
   font-family: 'Inter', sans-serif; font-weight: 700; font-size: 9px;
@@ -443,28 +441,24 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   text-align: center; width: 100%; padding: 12px 16px; display: block; cursor: pointer;
 }
 
-/* ── Desktop floating panel (hidden on mobile) ── */
-#case-panel-float { display: none; }
-
-/* ── Keyframe library ── */
+/* ── Keyframes ── */
 @keyframes msg-in   { from { opacity: 0; } to { opacity: 1; } }
 @keyframes card-in  { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes chip-in  { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
-@keyframes panel-in { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: translateX(0); } }
-@keyframes folder-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(204,120,92,0); }
-  50%       { box-shadow: 0 0 0 6px rgba(204,120,92,0.25); }
-}
 
 /* ── Desktop (768px+) ── */
 @media (min-width: 768px) {
   #segment-strip { display: none; }
   #case-view     { display: none !important; }
-  #panel-toggle-btn { display: flex; }
+  #app-header    { height: 44px; }
 
-  #app-header { height: 44px; }
+  /* CHANGE 1 — centre column fixed 720px */
+  #centre-col {
+    max-width: 720px;
+    margin: 0 auto;
+  }
 
-  /* Sidebar */
+  /* CHANGE 4 — sidebar with 3 sections */
   #sidebar {
     display: flex; flex-direction: column;
     width: 220px; flex-shrink: 0; background: var(--sidebar-bg);
@@ -474,19 +468,21 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   }
   #new-conv-row {
     display: flex; align-items: center; gap: 8px;
-    padding: 8px 16px; cursor: pointer; transition: background 100ms;
+    padding: 10px 16px; cursor: pointer; transition: background 100ms;
     font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: var(--muted);
   }
   #new-conv-row:hover { background: rgba(186,168,152,0.12); }
   #new-conv-row .material-icons { font-size: 16px; color: var(--taupe); }
+
   .sidebar-section-label {
     font-family: 'Inter', sans-serif;
     font-size: 9px; font-weight: 700; text-transform: uppercase;
     letter-spacing: 0.07em; color: var(--light); padding: 12px 16px 4px;
   }
+  /* CHANGE 8 — sidebar items 13px */
   .conv-item {
     padding: 8px 16px; margin: 1px 8px;
-    font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400; color: var(--muted);
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; color: var(--muted);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     cursor: pointer; border-radius: 6px; transition: background 100ms;
   }
@@ -494,101 +490,85 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   .conv-item.active { background: rgba(204,120,92,0.1); font-weight: 500; color: var(--copy); }
   .conv-item:active { transform: scale(0.98); }
 
-  /* Chat view push */
-  #chat-view { transition: margin-right 250ms ease; }
-  #chat-view.panel-open { margin-right: 272px; }
+  /* CHANGE 4 — sidebar case file section */
+  .sidebar-search {
+    display: block;
+    width: calc(100% - 32px); margin: 0 16px 4px;
+    background: var(--taupe-lt); border: 1.5px solid var(--border);
+    border-radius: 999px; padding: 6px 12px;
+    font-family: 'Inter', sans-serif; font-size: 11px; color: var(--copy);
+    transition: border-color 120ms;
+  }
+  .sidebar-search::placeholder { color: var(--light); }
+  .sidebar-search:focus { border-color: var(--clay); outline: none; }
+  /* CHANGE 8 — case file rows in sidebar */
+  .sidebar-doc-row {
+    padding: 6px 16px; margin: 1px 8px; border-radius: 6px;
+    cursor: default; transition: background 100ms;
+  }
+  .sidebar-doc-row:hover { background: rgba(186,168,152,0.12); }
+  .sidebar-doc-title {
+    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: var(--copy);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .sidebar-doc-meta {
+    font-family: 'Inter', sans-serif; font-size: 10px; color: var(--light); margin-top: 1px;
+  }
+  .sidebar-empty {
+    font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400;
+    color: var(--muted); padding: 4px 16px 8px;
+  }
 
-  /* Conversation */
-  #conversation { padding: 40px 48px; }
+  /* CHANGE 1 — conversation padding (column handles width) */
+  #conversation { padding: 40px 0 16px; }
+
+  /* CHANGE 8 — ATJ text 15px on desktop */
   .atj-text { font-size: 15px; }
+  /* CHANGE 8 — user bubble 13px on desktop */
+  .user-bubble { font-size: 13px; }
 
-  /* Input bar */
-  #input-bar { background: transparent; border-top: 1px solid rgba(186,168,152,0.2); padding: 8px 48px 10px; }
+  /* CHANGE 11 — input bar desktop */
+  #input-bar {
+    background: var(--surface);
+    border-top: 1px solid rgba(186,168,152,0.25);
+    padding: 12px 0 16px;
+  }
   #input-row {
     background: var(--taupe-lt); border: 1.5px solid var(--border);
-    border-radius: 10px; padding: 7px 10px; gap: 6px;
+    border-radius: 12px; padding: 10px 14px; gap: 6px;
+    align-items: center;
   }
-  #plus-btn { width: 26px; height: 26px; border: none; background: transparent; }
-  #plus-btn:hover { background: rgba(186,168,152,0.3); }
+  /* CHANGE 9 — plus button in input row on desktop: keep border but adjust size */
+  #plus-btn { width: 28px; height: 28px; border-width: 1.5px; }
   #plus-btn .material-icons { font-size: 15px; }
   #msg-input {
     background: transparent; border: none; border-radius: 0;
-    padding: 4px 6px; font-size: 12px; resize: none;
+    padding: 2px 6px; font-size: 15px; resize: none;
     min-height: auto; max-height: 80px;
   }
   #msg-input:focus { border-color: transparent; }
-  #send-btn { width: 28px; height: 28px; }
-  #send-btn .material-icons { font-size: 15px; }
-  #scroll-arrow { bottom: 80px; }
+  #send-btn { width: 30px; height: 30px; }
+  #send-btn .material-icons { font-size: 16px; }
 
-  /* Action tray desktop adjustments */
+  /* Action tray — constrained to centre col naturally */
   #action-tray {
-    left: 48px; right: 48px;
     border: 1px solid rgba(186,168,152,0.3); border-bottom: none;
     border-radius: 10px 10px 0 0;
     box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
   }
 
-  /* Floating case file panel */
-  #case-panel-float {
-    display: flex; flex-direction: column;
-    position: absolute; top: 16px; right: 16px;
-    width: 256px; max-height: calc(100% - 32px);
-    background: var(--panel-bg);
-    border: 1px solid rgba(186,168,152,0.4); border-radius: 14px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-    overflow: hidden; z-index: 20;
-    animation: panel-in 250ms ease-out both;
-    transition: opacity 200ms ease-in, transform 200ms ease-in;
+  /* CHANGE 7 — settings: centred modal on desktop */
+  .sheet-handle { display: none; }
+  #settings-sheet {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px; max-width: 90vw;
+    border-radius: 20px;
+    bottom: auto;
+    animation: modal-in 220ms ease-out both;
+    max-height: 80dvh;
   }
-  #case-panel-float.hidden { opacity: 0; transform: translateX(16px); pointer-events: none; }
-
-  .float-panel-header {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 14px 16px 10px; border-bottom: 1px solid rgba(186,168,152,0.2); flex-shrink: 0;
-    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 10px;
-    text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted);
-  }
-  .float-panel-close {
-    width: 20px; height: 20px; border-radius: 50%; border: none;
-    display: flex; align-items: center; justify-content: center;
-    background: transparent; cursor: pointer; transition: background 120ms;
-  }
-  .float-panel-close:hover { background: rgba(186,168,152,0.15); }
-  .float-panel-close .material-icons { font-size: 14px; color: var(--light); }
-
-  .float-panel-body {
-    overflow-y: auto; flex: 1; -webkit-overflow-scrolling: touch;
-    padding: 12px; display: flex; flex-direction: column; gap: 6px;
-  }
-  .float-section { background: var(--surface); border-radius: 10px; padding: 10px 12px; }
-  .float-section-label {
-    font-family: 'Inter', sans-serif;
-    font-size: 9px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: var(--muted); margin-bottom: 6px;
-  }
-  .float-search-row { display: flex; gap: 5px; margin-bottom: 8px; }
-  .float-search-input {
-    flex: 1; min-width: 0; background: var(--taupe-lt); border: 1.5px solid var(--border);
-    border-radius: 20px; padding: 5px 10px; font-size: 11px; color: var(--copy);
-    transition: border-color 120ms;
-  }
-  .float-search-input:focus { border-color: var(--clay); }
-  .float-search-input::placeholder { color: var(--light); }
-  .float-search-btn {
-    width: 28px; height: 28px; border-radius: 50%; background: var(--clay); border: none;
-    display: flex; align-items: center; justify-content: center; flex-shrink: 0; cursor: pointer;
-  }
-  .float-search-btn .material-icons { font-size: 14px; color: #fff; }
-  .float-search-btn:active { transform: scale(0.93); }
-  .float-row { padding: 6px; border-radius: 6px; cursor: default; transition: background 100ms; }
-  .float-row:hover { background: rgba(186,168,152,0.12); }
-  .float-row.active { border-left: 2px solid var(--clay); padding-left: 4px; }
-  .float-row-title { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: var(--copy); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .float-row-meta  { font-family: 'Inter', sans-serif; font-size: 9px; color: var(--light); margin-top: 1px; }
-  .float-empty { font-family: 'Inter', sans-serif; font-size: 11px; color: var(--light); padding: 6px; }
-
-  #panel-toggle-btn.pulse { animation: folder-pulse 1s ease-in-out 2; }
 }
 </style>
 </head>
@@ -596,13 +576,10 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 <div id="app">
 
-  <!-- Header -->
+  <!-- Header — CHANGE 4: folder button removed, settings only -->
   <header id="app-header">
     <span id="talia-wordmark">Talia</span>
     <div id="header-right">
-      <button id="panel-toggle-btn" class="icon-btn" title="Case file">
-        <span class="material-icons">folder_open</span>
-      </button>
       <button id="settings-btn" class="icon-btn" title="Settings">
         <span class="material-icons">settings</span>
       </button>
@@ -618,49 +595,56 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   <!-- Main body -->
   <div id="main-body">
 
-    <!-- Desktop sidebar -->
+    <!-- CHANGE 4 — desktop sidebar: 3 sections -->
     <aside id="sidebar">
       <div id="new-conv-row">
         <span class="material-icons">edit</span>
         <span>New conversation</span>
       </div>
-      <div class="sidebar-section-label">Recent</div>
+      <div class="sidebar-section-label">RECENT</div>
       <div id="conv-list"></div>
+      <div class="sidebar-section-label">CASE FILE</div>
+      <input type="search" id="sidebar-search-input" class="sidebar-search" placeholder="Search...">
+      <div id="sidebar-docs-list"></div>
     </aside>
 
     <!-- Chat view -->
-    <div id="chat-view" class="panel-open">
-      <div id="conversation"></div>
-      <button id="scroll-arrow" aria-label="Scroll to bottom">
-        <span class="material-icons">keyboard_arrow_down</span>
-      </button>
-      <div id="input-bar">
-        <!-- Action tray -->
-        <div id="action-tray">
-          <div class="tray-item" id="tray-photo">
-            <div class="tray-icon"><span class="material-icons">photo_camera</span></div>
-            <span class="tray-label">Take a photo</span>
+    <div id="chat-view">
+      <!-- CHANGE 1 — centre column wrapper -->
+      <div id="centre-col">
+        <div id="conversation"></div>
+        <!-- scroll arrow inside centre-col so it aligns with column on desktop -->
+        <button id="scroll-arrow" aria-label="Scroll to bottom">
+          <span class="material-icons">keyboard_arrow_down</span>
+        </button>
+        <div id="input-bar">
+          <!-- Action tray -->
+          <div id="action-tray">
+            <div class="tray-item" id="tray-photo">
+              <div class="tray-icon"><span class="material-icons">photo_camera</span></div>
+              <span class="tray-label">Take a photo</span>
+            </div>
+            <div class="tray-item" id="tray-file">
+              <div class="tray-icon"><span class="material-icons">folder_open</span></div>
+              <span class="tray-label">Choose file</span>
+            </div>
           </div>
-          <div class="tray-item" id="tray-file">
-            <div class="tray-icon"><span class="material-icons">folder_open</span></div>
-            <span class="tray-label">Choose file</span>
+          <!-- Image preview -->
+          <div id="img-preview-row" hidden>
+            <img id="img-preview" alt="Attachment">
+            <button id="img-clear-btn" type="button">&#x2715; Remove</button>
           </div>
-        </div>
-        <!-- Image preview -->
-        <div id="img-preview-row" hidden>
-          <img id="img-preview" alt="Attachment">
-          <button id="img-clear-btn" type="button">&#x2715; Remove</button>
-        </div>
-        <!-- Input row -->
-        <div id="input-row">
-          <button id="plus-btn" type="button" aria-label="Attach">
-            <span class="material-icons">add</span>
-          </button>
-          <textarea id="msg-input" placeholder="What's on your mind?"
-            rows="1" autocomplete="off" autocorrect="on" autocapitalize="sentences"></textarea>
-          <button id="send-btn" type="button" aria-label="Send">
-            <span class="material-icons">arrow_upward</span>
-          </button>
+          <!-- Input row -->
+          <div id="input-row">
+            <button id="plus-btn" type="button" aria-label="Attach">
+              <span class="material-icons">add</span>
+            </button>
+            <textarea id="msg-input" placeholder="What's on your mind?"
+              rows="1" autocomplete="off" autocorrect="on" autocapitalize="sentences"></textarea>
+            <button id="send-btn" type="button" aria-label="Send">
+              <span class="material-icons">arrow_upward</span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -683,37 +667,11 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
       </div>
     </div>
 
-    <!-- Desktop floating case file panel -->
-    <div id="case-panel-float">
-      <div class="float-panel-header">
-        <span>Case file</span>
-        <button class="float-panel-close" id="panel-close-btn">
-          <span class="material-icons">close</span>
-        </button>
-      </div>
-      <div class="float-panel-body">
-        <div class="float-section">
-          <div class="float-section-label">Conversations</div>
-          <div class="float-search-row">
-            <input class="float-search-input" id="float-search-input" type="search" placeholder="Search…">
-            <button class="float-search-btn" id="float-search-btn">
-              <span class="material-icons">search</span>
-            </button>
-          </div>
-          <div id="float-history-list"></div>
-        </div>
-        <div class="float-section">
-          <div class="float-section-label">Documents</div>
-          <div id="float-docs-list"></div>
-        </div>
-      </div>
-    </div>
-
   </div><!-- /#main-body -->
 
 </div><!-- /#app -->
 
-<!-- Settings overlay -->
+<!-- Settings overlay — CHANGE 7 -->
 <div id="settings-overlay" hidden>
   <div id="settings-sheet">
     <div class="sheet-handle"></div>
@@ -743,7 +701,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 <!-- Hidden file inputs -->
 <input type="file" id="img-input"  accept="image/*" capture="environment" style="position:absolute;visibility:hidden;width:0;height:0;">
-<input type="file" id="file-input" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg"    style="position:absolute;visibility:hidden;width:0;height:0;">
+<input type="file" id="file-input" accept=".pdf,.doc,.docx,.txt,.png,.jpg,.jpeg" style="position:absolute;visibility:hidden;width:0;height:0;">
 <button id="stop-btn" hidden></button>
 
 <script>
@@ -752,11 +710,11 @@ const USER_ID = "test_user_001";
 let sessionId   = null;
 let firstAtjMsg = true;
 let _trayOpen   = false;
-let _panelOpen  = true;
 let _pendingImageData      = null;
 let _pendingImageMediaType = null;
 let _revealTimer = null;
 let _revealSkip  = null;
+let _caseFileCache = null; // last fetched {history, documents}
 
 // ── Element refs ───────────────────────────────────────────
 const convEl          = document.getElementById("conversation");
@@ -773,11 +731,8 @@ const imgClearBtn     = document.getElementById("img-clear-btn");
 const scrollArrow     = document.getElementById("scroll-arrow");
 const settingsBtn     = document.getElementById("settings-btn");
 const settingsOverlay = document.getElementById("settings-overlay");
-const panelToggleBtn  = document.getElementById("panel-toggle-btn");
-const casePanelFloat  = document.getElementById("case-panel-float");
 const chatView        = document.getElementById("chat-view");
 const caseView        = document.getElementById("case-view");
-const panelCloseBtn   = document.getElementById("panel-close-btn");
 const tabChat         = document.getElementById("tab-chat");
 const tabCase         = document.getElementById("tab-case");
 
@@ -788,7 +743,7 @@ inputEl.addEventListener("input", function() {
   syncSendBtn();
 });
 
-// ── Send button active state ───────────────────────────────
+// ── Send button sync ───────────────────────────────────────
 function syncSendBtn() {
   const active = inputEl.value.trim().length > 0 || !!_pendingImageData;
   sendBtn.classList.toggle("active", active);
@@ -870,23 +825,6 @@ document.getElementById("sign-out-btn").addEventListener("click", function() {
   settingsOverlay.hidden = true;
 });
 
-// ── Desktop panel toggle ───────────────────────────────────
-panelToggleBtn.addEventListener("click", function() {
-  _panelOpen = !_panelOpen;
-  casePanelFloat.classList.toggle("hidden", !_panelOpen);
-  chatView.classList.toggle("panel-open", _panelOpen);
-});
-panelCloseBtn.addEventListener("click", function() {
-  _panelOpen = false;
-  casePanelFloat.classList.add("hidden");
-  chatView.classList.remove("panel-open");
-});
-// Pulse folder button on first load (desktop only, 2 cycles)
-setTimeout(function() {
-  panelToggleBtn.classList.add("pulse");
-  setTimeout(function() { panelToggleBtn.classList.remove("pulse"); }, 2100);
-}, 700);
-
 // ── Mobile tabs ────────────────────────────────────────────
 tabChat.addEventListener("click", function() {
   tabChat.classList.add("active"); tabCase.classList.remove("active");
@@ -897,6 +835,53 @@ tabCase.addEventListener("click", function() {
   chatView.style.display = "none"; caseView.classList.add("visible");
   loadCaseFile();
 });
+
+// ── CHANGE 6 — New conversation ────────────────────────────
+document.getElementById("new-conv-row").addEventListener("click", function() {
+  sessionId = (window.crypto && crypto.randomUUID)
+    ? crypto.randomUUID()
+    : "sess-" + Date.now();
+  firstAtjMsg = true;
+  convEl.innerHTML = "";
+  inputEl.value = ""; inputEl.style.height = ""; syncSendBtn();
+  document.querySelectorAll(".conv-item").forEach(function(el) {
+    el.classList.remove("active");
+  });
+  inputEl.focus();
+});
+
+// ── CHANGE 5 — Load conversation from history ──────────────
+function loadConversation(sid, history) {
+  sessionId   = sid;
+  firstAtjMsg = true;
+  convEl.innerHTML = "";
+  document.querySelectorAll(".conv-item").forEach(function(el) {
+    el.classList.toggle("active", el.dataset.sid === sid);
+  });
+  const turns = history.filter(function(t) { return t.session_id === sid; });
+  if (!turns.length) {
+    const e = document.createElement("div");
+    e.style.cssText = "text-align:center;color:var(--muted);font-size:12px;padding:32px 0;font-family:'Inter',sans-serif;";
+    e.textContent = "No messages found."; convEl.appendChild(e); return;
+  }
+  turns.forEach(function(t) {
+    if (t.role === "user") {
+      const uT = document.createElement("div"); uT.className = "user-turn";
+      const b  = document.createElement("div"); b.className  = "user-bubble";
+      b.textContent = t.content; uT.appendChild(b); convEl.appendChild(uT);
+    } else {
+      const aT = document.createElement("div"); aT.className = "atj-turn";
+      if (firstAtjMsg) {
+        firstAtjMsg = false;
+        const lbl = document.createElement("div"); lbl.className = "talia-label"; lbl.textContent = "TALIA";
+        aT.appendChild(lbl);
+      }
+      const tb = document.createElement("div"); tb.className = "atj-text"; tb.textContent = t.content;
+      aT.appendChild(tb); convEl.appendChild(aT);
+    }
+  });
+  convEl.scrollTop = convEl.scrollHeight;
+}
 
 // ── Thinking indicator ─────────────────────────────────────
 function makeThinkingEl() {
@@ -945,9 +930,7 @@ function renderTimeline(fixture, container) {
     row.appendChild(body); stages.appendChild(row);
   });
   card.appendChild(stages);
-  if (fixture._source) {
-    const src = document.createElement("div"); src.className = "card-source"; src.textContent = "Based on: " + fixture._source; card.appendChild(src);
-  }
+  if (fixture._source) { const src = document.createElement("div"); src.className = "card-source"; src.textContent = "Based on: " + fixture._source; card.appendChild(src); }
   container.appendChild(card);
 }
 
@@ -960,9 +943,7 @@ function renderChecklist(fixture, container) {
   (fixture.items || []).forEach(function(item) {
     const row    = document.createElement("div"); row.className = "cl-row";
     const circle = document.createElement("div"); circle.className = "cl-circle " + (item.done ? "done" : "todo");
-    if (item.done) {
-      const ic = document.createElement("span"); ic.className = "material-icons"; ic.textContent = "check"; circle.appendChild(ic);
-    }
+    if (item.done) { const ic = document.createElement("span"); ic.className = "material-icons"; ic.textContent = "check"; circle.appendChild(ic); }
     row.appendChild(circle);
     const wrap = document.createElement("div");
     const lbl  = document.createElement("div"); lbl.className = "cl-label " + (item.done ? "done" : "todo"); lbl.textContent = item.label; wrap.appendChild(lbl);
@@ -970,9 +951,7 @@ function renderChecklist(fixture, container) {
     row.appendChild(wrap); list.appendChild(row);
   });
   card.appendChild(list);
-  if (fixture._source) {
-    const src = document.createElement("div"); src.className = "card-source"; src.textContent = "Based on: " + fixture._source; card.appendChild(src);
-  }
+  if (fixture._source) { const src = document.createElement("div"); src.className = "card-source"; src.textContent = "Based on: " + fixture._source; card.appendChild(src); }
   container.appendChild(card);
 }
 
@@ -1001,9 +980,7 @@ function renderChips(chips, container) {
   chips.forEach(function(chip, i) {
     const el = document.createElement("button"); el.className = "chip";
     el.style.animationDelay = (i * 60) + "ms";
-    if (chip.icon) {
-      const ic = document.createElement("span"); ic.className = "material-icons"; ic.textContent = chip.icon; el.appendChild(ic);
-    }
+    if (chip.icon) { const ic = document.createElement("span"); ic.className = "material-icons"; ic.textContent = chip.icon; el.appendChild(ic); }
     el.appendChild(document.createTextNode(chip.label || chip));
     el.addEventListener("click", function() {
       row.querySelectorAll(".chip").forEach(function(c) { c.classList.add("used"); c.disabled = true; });
@@ -1028,7 +1005,7 @@ function insertSessionDivider() {
   convEl.appendChild(div);
 }
 
-// ── Case file ──────────────────────────────────────────────
+// ── Helpers ────────────────────────────────────────────────
 function fmtDate(iso) {
   const d = new Date(iso);
   const M = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -1055,81 +1032,157 @@ function buildPanelRows(turns, emptyText) {
   return frag;
 }
 
-function buildFloatRows(turns) {
-  const frag = document.createDocumentFragment();
-  const items = turns.slice(-15);
-  if (!items.length) {
-    const e = document.createElement("div"); e.className = "float-empty";
-    e.textContent = "No conversations yet."; frag.appendChild(e); return frag;
-  }
-  items.forEach(function(t) {
-    const row   = document.createElement("div"); row.className = "float-row";
-    const title = document.createElement("div"); title.className = "float-row-title";
-    title.textContent = (t.role === "user" ? "You: " : "Talia: ") + t.content;
-    row.appendChild(title); frag.appendChild(row);
-  });
-  return frag;
-}
-
-function buildDocRows(docs, floatStyle) {
+function buildDocRows(docs) {
   const frag = document.createDocumentFragment();
   if (!docs.length) {
-    const e = document.createElement("div"); e.className = floatStyle ? "float-empty" : "panel-empty";
+    const e = document.createElement("div"); e.className = "panel-empty";
     e.textContent = "No documents uploaded yet."; frag.appendChild(e); return frag;
   }
   docs.forEach(function(doc) {
-    const row   = document.createElement("div"); row.className = floatStyle ? "float-row" : "panel-row";
-    const title = document.createElement("div"); title.className = floatStyle ? "float-row-title" : "panel-row-title";
+    const row   = document.createElement("div"); row.className = "panel-row";
+    const title = document.createElement("div"); title.className = "panel-row-title";
     title.textContent = doc.document_label || "Untitled document"; row.appendChild(title);
-    const meta  = document.createElement("div"); meta.className  = floatStyle ? "float-row-meta"  : "panel-row-meta";
+    const meta  = document.createElement("div"); meta.className  = "panel-row-meta";
     meta.textContent = fmtDate(doc.created_at); row.appendChild(meta);
     frag.appendChild(row);
   });
   return frag;
 }
 
+// CHANGE 4 — sidebar docs
+function buildSidebarDocRows(docs) {
+  const frag = document.createDocumentFragment();
+  if (!docs || !docs.length) {
+    const e = document.createElement("div"); e.className = "sidebar-empty";
+    e.textContent = "No documents yet."; frag.appendChild(e); return frag;
+  }
+  docs.forEach(function(doc) {
+    const row   = document.createElement("div"); row.className = "sidebar-doc-row";
+    const title = document.createElement("div"); title.className = "sidebar-doc-title";
+    title.textContent = doc.document_label || "Untitled document"; row.appendChild(title);
+    const meta  = document.createElement("div"); meta.className  = "sidebar-doc-meta";
+    meta.textContent = fmtDate(doc.created_at); row.appendChild(meta);
+    frag.appendChild(row);
+  });
+  return frag;
+}
+
+// CHANGE 4 — populate sidebar conv list (grouped by session)
+function updateSidebarConvList(history) {
+  const cL = document.getElementById("conv-list");
+  if (!cL) return;
+  cL.innerHTML = "";
+
+  const sessions = new Map();
+  const order    = [];
+  history.forEach(function(t) {
+    if (!sessions.has(t.session_id)) {
+      sessions.set(t.session_id, { firstUser: null, lastAt: t.created_at });
+      order.push(t.session_id);
+    }
+    const s = sessions.get(t.session_id);
+    if (!s.firstUser && t.role === "user") s.firstUser = t.content;
+    if (t.created_at > s.lastAt) s.lastAt = t.created_at;
+  });
+
+  order.sort(function(a, b) {
+    return sessions.get(b).lastAt.localeCompare(sessions.get(a).lastAt);
+  });
+
+  if (!order.length) {
+    const e = document.createElement("div"); e.className = "conv-item";
+    e.style.cssText = "color:var(--light);cursor:default;pointer-events:none;";
+    e.textContent = "No conversations yet."; cL.appendChild(e); return;
+  }
+
+  order.forEach(function(sid) {
+    const s    = sessions.get(sid);
+    const raw  = s.firstUser || "Untitled";
+    const text = raw.length > 32 ? raw.slice(0, 32) + "…" : raw;
+    const item = document.createElement("div");
+    item.className = "conv-item" + (sid === sessionId ? " active" : "");
+    item.textContent = text;
+    item.dataset.sid = sid;
+    item.addEventListener("click", function() {
+      loadConversation(sid, history);
+    });
+    cL.appendChild(item);
+  });
+}
+
+// ── Case file (fetches once, updates mobile + sidebar) ─────
 async function loadCaseFile(isInit) {
   try {
     const res  = await fetch("/case-file?user_id=" + encodeURIComponent(USER_ID));
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
+    _caseFileCache = data;
 
-    // On initial page load with existing history, insert a session divider
     if (isInit && data.history && data.history.length > 0) {
       insertSessionDivider();
     }
 
+    // Mobile panel
     const mH = document.getElementById("mobile-history-list");
     const mD = document.getElementById("mobile-docs-list");
     if (mH) { mH.innerHTML = ""; mH.appendChild(buildPanelRows(data.history, "No conversations yet.")); }
-    if (mD) { mD.innerHTML = ""; mD.appendChild(buildDocRows(data.documents, false)); }
+    if (mD) { mD.innerHTML = ""; mD.appendChild(buildDocRows(data.documents)); }
 
-    const fH = document.getElementById("float-history-list");
-    const fD = document.getElementById("float-docs-list");
-    if (fH) { fH.innerHTML = ""; fH.appendChild(buildFloatRows(data.history)); }
-    if (fD) { fD.innerHTML = ""; fD.appendChild(buildDocRows(data.documents, true)); }
+    // Sidebar (desktop)
+    updateSidebarConvList(data.history);
+    const dL = document.getElementById("sidebar-docs-list");
+    if (dL) { dL.innerHTML = ""; dL.appendChild(buildSidebarDocRows(data.documents)); }
 
-    const cL = document.getElementById("conv-list");
-    if (cL) {
-      cL.innerHTML = "";
-      data.history.filter(function(t) { return t.role === "user"; }).slice(-8).reverse().forEach(function(t, i) {
-        const item = document.createElement("div"); item.className = "conv-item" + (i === 0 ? " active" : "");
-        item.textContent = t.content; cL.appendChild(item);
-      });
-    }
   } catch(e) { console.error("CASE FILE:", e); }
 }
 
+// ── Sidebar search ─────────────────────────────────────────
+async function doSidebarSearch(query) {
+  if (!query) { loadCaseFile(false); return; }
+  try {
+    const res  = await fetch("/case-file/search?user_id=" + encodeURIComponent(USER_ID) + "&q=" + encodeURIComponent(query));
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    const cL   = document.getElementById("conv-list");
+    if (cL) {
+      cL.innerHTML = "";
+      if (!data.results.length) {
+        const e = document.createElement("div"); e.className = "sidebar-empty";
+        e.textContent = "No results."; cL.appendChild(e);
+      } else {
+        data.results.forEach(function(r) {
+          const item = document.createElement("div"); item.className = "conv-item";
+          const text = r.content.length > 32 ? r.content.slice(0, 32) + "…" : r.content;
+          item.textContent = text; item.dataset.sid = r.session_id;
+          item.addEventListener("click", function() {
+            if (_caseFileCache) loadConversation(r.session_id, _caseFileCache.history);
+          });
+          cL.appendChild(item);
+        });
+      }
+    }
+  } catch(e) { console.error("SIDEBAR SEARCH:", e); }
+}
+
+const sidebarSearch = document.getElementById("sidebar-search-input");
+if (sidebarSearch) {
+  sidebarSearch.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") doSidebarSearch(e.target.value.trim());
+  });
+  sidebarSearch.addEventListener("input", function() {
+    if (!this.value.trim()) loadCaseFile(false);
+  });
+}
+
+// ── Mobile search ──────────────────────────────────────────
 async function doSearch(query) {
   if (!query) { loadCaseFile(); return; }
   try {
     const res  = await fetch("/case-file/search?user_id=" + encodeURIComponent(USER_ID) + "&q=" + encodeURIComponent(query));
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
-    const mH = document.getElementById("mobile-history-list");
+    const mH   = document.getElementById("mobile-history-list");
     if (mH) { mH.innerHTML = ""; mH.appendChild(buildPanelRows(data.results, "No results.")); }
-    const fH = document.getElementById("float-history-list");
-    if (fH) { fH.innerHTML = ""; fH.appendChild(buildFloatRows(data.results)); }
   } catch(e) { console.error("SEARCH:", e); }
 }
 
@@ -1137,12 +1190,6 @@ document.getElementById("mobile-search-btn").addEventListener("click", function(
   doSearch(document.getElementById("mobile-search-input").value.trim());
 });
 document.getElementById("mobile-search-input").addEventListener("keydown", function(e) {
-  if (e.key === "Enter") doSearch(e.target.value.trim());
-});
-document.getElementById("float-search-btn").addEventListener("click", function() {
-  doSearch(document.getElementById("float-search-input").value.trim());
-});
-document.getElementById("float-search-input").addEventListener("keydown", function(e) {
   if (e.key === "Enter") doSearch(e.target.value.trim());
 });
 
@@ -1153,13 +1200,11 @@ async function send() {
 
   inputEl.value = ""; inputEl.style.height = ""; syncSendBtn(); sendBtn.disabled = true;
 
-  // User bubble
   const uTurn  = document.createElement("div"); uTurn.className  = "user-turn";
   const bubble = document.createElement("div"); bubble.className = "user-bubble";
   bubble.textContent = message || "(image)";
   uTurn.appendChild(bubble); convEl.appendChild(uTurn); convEl.scrollTop = convEl.scrollHeight;
 
-  // Thinking indicator
   const thinking = makeThinkingEl(); convEl.appendChild(thinking); convEl.scrollTop = convEl.scrollHeight;
 
   const payload = { user_id: USER_ID, message };
@@ -1173,7 +1218,7 @@ async function send() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
     });
-    thinking.remove(); // instant removal — no fade
+    thinking.remove();
 
     if (!res.ok) {
       appendError("[HTTP " + res.status + "]"); sendBtn.disabled = false; inputEl.focus(); return;
@@ -1181,7 +1226,6 @@ async function send() {
     const data = await res.json();
     sessionId = data.session_id;
 
-    // ATJ turn container
     const aTurn = document.createElement("div"); aTurn.className = "atj-turn";
     if (firstAtjMsg) {
       firstAtjMsg = false;
@@ -1194,22 +1238,21 @@ async function send() {
 
     function afterReveal() {
       stopBtn.hidden = true;
-      // Render tool blocks (timeline, checklist, choices)
       (data.tool_blocks || []).forEach(function(block) {
         if (!block.compliant) return;
         if      (block.tool_name === "render_timeline")  renderTimeline(block.tool_input, aTurn);
         else if (block.tool_name === "render_checklist") renderChecklist(block.tool_input, aTurn);
         else if (block.tool_name === "render_choices")   renderChoices(block.tool_input, aTurn);
       });
-      // Suggestion chips (staggered, arrive after text)
       if (data.chips && data.chips.length) renderChips(data.chips, aTurn);
-      // Source grounding
       if (data.sources && data.sources.length) {
         const s = document.createElement("div"); s.className = "sources-line";
         s.textContent = "Based on: " + data.sources.join(", "); aTurn.appendChild(s);
       }
       convEl.scrollTop = convEl.scrollHeight;
-      sendBtn.disabled = false; inputEl.focus(); loadCaseFile();
+      sendBtn.disabled = false; inputEl.focus();
+      // Refresh sidebar after reply lands so new session appears
+      loadCaseFile(false);
     }
 
     if (data.response) {
@@ -1233,7 +1276,7 @@ function appendError(msg) {
   t.appendChild(el); convEl.appendChild(t); convEl.scrollTop = convEl.scrollHeight;
 }
 
-// ── Wire up send ───────────────────────────────────────────
+// ── Wire send ──────────────────────────────────────────────
 sendBtn.addEventListener("click", send);
 inputEl.addEventListener("keydown", function(e) {
   if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
