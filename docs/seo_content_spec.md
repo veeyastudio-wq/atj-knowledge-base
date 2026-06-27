@@ -286,4 +286,5 @@ This spec cannot execute in isolation.
 - Content scaffolding created: docs/content/ folder structure, three pillar page drafts, docs/content/CONTENT_SPEC.md
 - Author biography written and committed: docs/content/author.md
 - All 29 cluster article scaffolds created across three clusters
-- Next action: draft child arrangements pillar page (docs/content/child-arrangements/index.md) — blocked until solicitor reviewer is engaged and named
+- Child arrangements pillar page drafted and solicitor-reviewed: docs/content/child-arrangements/index.md — reviewed by George Calia (SRA 436857), 2026-06-27. published_date blank until go-live. Timeline stats (43-week average) to be checked annually against MoJ family court statistics.
+- Next action: draft financial remedy pillar page (docs/content/financial-remedy/index.md)
