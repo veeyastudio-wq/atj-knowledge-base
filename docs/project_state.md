@@ -8,9 +8,9 @@
 
 ## Session pointer
 
-Last verified commit: f9b74f5 (date awareness injection into system prompt at call time in run_turn())
+Last verified commit: TBD (frontend — Talia v9 design implemented, static/index.html replaced)
 
-Next: write Claude Code prompt for deployment to DigitalOcean staging environment and user authentication implementation. Do not reopen design decisions without a new thread.
+Next: deploy to DigitalOcean staging environment.
 
 ---
 
@@ -251,7 +251,14 @@ parallel and discovering integration problems at the end.
    switching to JSON+base64 before any commit landed.
 8. Visual design pass (complete, 26 June 2026) — full UX and visual
    design pass completed and signed off. Design system locked. See
-   Visual design — step 8 section below for full spec.
+   Visual design — step 8 section below for full spec. Frontend build
+   complete. static/index.html replaced with full Talia v9 interface:
+   Source Serif 4 and Inter typography, earthy palette, mobile-first
+   layout with desktop sidebar and floating case file panel, all
+   animations and hover states, thinking indicator, chips, dark timeline
+   and checklist cards, action tray, settings sheet, and all existing
+   API wiring preserved. Verified clean at 375px and 1280px with zero
+   JS errors.
 9. Case file panel — living record fed by real memory and document
    storage, not mocked. Built after document handling and the visual
    design pass so it has real content to display and an established
