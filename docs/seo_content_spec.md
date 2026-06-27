@@ -2,6 +2,8 @@
 
 **Status:** Pre-launch. No live users. Spec covers what must be built before launch and what must begin before launch to be effective at launch.
 
+**Scaffolding:** Content folder structure and pillar page drafts created at `docs/content/` (commit 056d9d0, 2026-06-27). Frontmatter spec at `docs/content/CONTENT_SPEC.md`. Three pillar pages stubbed at `docs/content/child-arrangements/index.md`, `docs/content/financial-remedy/index.md`, `docs/content/divorce/index.md`.
+
 **Author:** This spec is written from the perspective of ATJ's brand and product strategy. It is not a technical SEO guide. It is a decision document: what we do, why we do it that way, in what order, and what we must never do.
 
 ---
