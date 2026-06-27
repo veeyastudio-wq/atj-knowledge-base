@@ -837,6 +837,10 @@ Combined-track terse phrasing eval — run and closed (combined_track_terse_phra
 
 The gap is phrasing-specific, not a general terseness problem. Four of five phrasings hit 19–20/20 dual-block, including the one originally observed to fail manually during Phase 3 verification. The outlier is the "money stuff / kids stuff" phrasing, which avoids both "financial remedy" and "child arrangements" entirely and yields a 35% single-block rate. The routing instruction in _TOOL_SYSTEM_ADDITION is reliable for any phrasing that uses recognisable variants of those terms; it does not reliably fire when neither term nor any close variant appears. No content compliance failures across all 100 calls. No system prompt change needed: the failure mode (one missing card) is bounded and phrasing-specific, the routing instruction is working for the realistic phrasing range, and improving coverage of highly colloquial avoidance of the legal terms is a diminishing return at this stage.
 
+## Content programme
+
+Child arrangements pillar page (docs/content/child-arrangements/index.md) drafted, reviewed by George Calia (SRA 436857, reviewed_date 2026-06-27), and committed at c7769f8. published_date intentionally blank until go-live. Timeline statistics flagged for annual update against MoJ family court figures. Next: financial remedy pillar page.
+
 ## Pilot scope reviewed, functionality by functionality (21 June 2026)
 
 Full pilot scope brief reviewed one functionality at a time with Claude,
