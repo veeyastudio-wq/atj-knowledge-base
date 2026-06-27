@@ -277,3 +277,13 @@ This spec cannot execute in isolation.
 **The TikTok content programme must continue in parallel** — it is the research and audience pipeline for the SEO content programme. Pausing TikTok pauses the input signal for which topics to prioritise.
 
 **Discovery conversations must continue** — they are the primary source of what questions real users are actually asking in plain language. The content programme degrades if discovery stops.
+
+---
+
+## Status log
+
+- SEO and content marketing spec written and committed: docs/seo_content_spec.md
+- Content scaffolding created: docs/content/ folder structure, three pillar page drafts, docs/content/CONTENT_SPEC.md
+- Author biography written and committed: docs/content/author.md
+- All 29 cluster article scaffolds created across three clusters
+- Next action: draft child arrangements pillar page (docs/content/child-arrangements/index.md) — blocked until solicitor reviewer is engaged and named
