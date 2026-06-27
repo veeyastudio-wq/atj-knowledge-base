@@ -4,6 +4,10 @@
 
 **Scaffolding:** Content folder structure and pillar page drafts created at `docs/content/` (commit 056d9d0, 2026-06-27). Frontmatter spec at `docs/content/CONTENT_SPEC.md`. Three pillar pages stubbed at `docs/content/child-arrangements/index.md`, `docs/content/financial-remedy/index.md`, `docs/content/divorce/index.md`.
 
+**Author biography:** Committed at `docs/content/author.md` (commit 3aaf301, 2026-06-27).
+
+**Cluster article scaffolds:** All 29 cluster article stubs committed (commit 3aaf301, 2026-06-27). 10 articles under `docs/content/child-arrangements/`, 10 under `docs/content/financial-remedy/`, 9 under `docs/content/divorce/`. All carry frontmatter; body copy and solicitor review pending.
+
 **Author:** This spec is written from the perspective of ATJ's brand and product strategy. It is not a technical SEO guide. It is a decision document: what we do, why we do it that way, in what order, and what we must never do.
 
 ---
