@@ -74,7 +74,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 }
 .icon-btn:hover  { background: var(--border); }
 .icon-btn:active { transform: scale(0.93); }
-.icon-btn .material-icons { font-size: 22px; color: var(--taupe); }
+.icon-btn .material-icons { font-size: 22px; color: var(--copy); }
 
 /* ── Segment strip (mobile only) ── */
 #segment-strip {
@@ -126,16 +126,17 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   -webkit-overflow-scrolling: touch;
 }
 
+/* ── Empty state ── */
+#conversation.empty { align-items: center; justify-content: center; }
+#empty-state {
+  font-family: 'Source Serif 4', serif;
+  font-size: 15px; color: var(--copy); opacity: 0.6;
+  text-align: center; pointer-events: none;
+}
+
 /* ── ATJ turns ── */
 .atj-turn { display: flex; flex-direction: column; animation: msg-in 200ms ease-out both; }
 
-.talia-label {
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700; font-size: 8px;
-  letter-spacing: 1px; color: var(--taupe);
-  text-transform: uppercase; margin-bottom: 6px;
-}
 /* CHANGE 2 — ATJ text colour confirmed var(--copy) */
 .atj-text {
   font-family: 'Source Serif 4', serif;
@@ -158,7 +159,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 /* ── Thinking indicator ── */
 .thinking-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
 .thinking-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--clay);
+  width: 16px; height: 16px; border-radius: 50%; background: var(--clay);
   animation: breathe 1.5s ease-in-out infinite; flex-shrink: 0;
 }
 .thinking-label {
@@ -269,18 +270,19 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .choice-chip:active { transform: scale(0.97); }
 .choice-chip.used   { opacity: 0.5; pointer-events: none; }
 
-/* ── Scroll arrow — CHANGE 1: inside #centre-col ── */
+/* ── Scroll arrow — centred bottom ── */
 #scroll-arrow {
-  position: absolute; bottom: 80px; right: 16px;
+  position: absolute; bottom: 80px; left: 50%;
+  transform: translateX(-50%) translateY(8px);
   width: 32px; height: 32px; border-radius: 50%;
   background: var(--clay); border: none;
   display: flex; align-items: center; justify-content: center;
   box-shadow: 0 2px 8px rgba(204,120,92,0.35); z-index: 5;
-  opacity: 0; transform: translateY(8px); pointer-events: none;
+  opacity: 0; pointer-events: none;
   transition: opacity 200ms, transform 200ms;
   cursor: pointer;
 }
-#scroll-arrow.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+#scroll-arrow.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
 #scroll-arrow .material-icons { font-size: 20px; color: #fff; }
 
 /* ── Input bar ── */
@@ -469,20 +471,19 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   #new-conv-row {
     display: flex; align-items: center; gap: 8px;
     padding: 10px 16px; cursor: pointer; transition: background 100ms;
-    font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 500; color: var(--muted);
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; color: var(--copy);
   }
   #new-conv-row:hover { background: rgba(186,168,152,0.12); }
-  #new-conv-row .material-icons { font-size: 16px; color: var(--taupe); }
+  #new-conv-row .material-icons { font-size: 16px; color: var(--copy); }
 
   .sidebar-section-label {
     font-family: 'Inter', sans-serif;
-    font-size: 9px; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.07em; color: var(--light); padding: 12px 16px 4px;
+    font-size: 13px; font-weight: 400;
+    color: var(--copy); padding: 12px 16px 4px;
   }
-  /* CHANGE 8 — sidebar items 13px */
   .conv-item {
     padding: 8px 16px; margin: 1px 8px;
-    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; color: var(--muted);
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; color: var(--copy);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     cursor: pointer; border-radius: 6px; transition: background 100ms;
   }
@@ -508,15 +509,15 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   }
   .sidebar-doc-row:hover { background: rgba(186,168,152,0.12); }
   .sidebar-doc-title {
-    font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 500; color: var(--copy);
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; color: var(--copy);
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
   .sidebar-doc-meta {
-    font-family: 'Inter', sans-serif; font-size: 10px; color: var(--light); margin-top: 1px;
+    font-family: 'Inter', sans-serif; font-size: 13px; color: var(--copy);
   }
   .sidebar-empty {
-    font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 400;
-    color: var(--muted); padding: 4px 16px 8px;
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400;
+    color: var(--copy); padding: 4px 16px 8px;
   }
 
   /* CHANGE 1 — conversation padding (column handles width) */
@@ -527,10 +528,10 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   /* CHANGE 8 — user bubble 13px on desktop */
   .user-bubble { font-size: 13px; }
 
-  /* CHANGE 11 — input bar desktop */
+  /* CHANGE 3 — input bar desktop: transparent, no divider line */
   #input-bar {
-    background: var(--surface);
-    border-top: 1px solid rgba(186,168,152,0.25);
+    background: transparent;
+    border-top: none;
     padding: 12px 0 16px;
   }
   #input-row {
@@ -557,7 +558,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     box-shadow: 0 -4px 16px rgba(0,0,0,0.06);
   }
 
-  /* CHANGE 7 — settings: centred modal on desktop */
+  /* settings: centred modal on desktop with equal padding */
   .sheet-handle { display: none; }
   #settings-sheet {
     position: fixed;
@@ -565,7 +566,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     transform: translate(-50%, -50%);
     width: 480px; max-width: 90vw;
     border-radius: 20px;
-    bottom: auto;
+    bottom: auto; padding: 24px;
     animation: modal-in 220ms ease-out both;
     max-height: 80dvh;
   }
@@ -601,9 +602,9 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
         <span class="material-icons">edit</span>
         <span>New conversation</span>
       </div>
-      <div class="sidebar-section-label">RECENT</div>
+      <div class="sidebar-section-label">Recent</div>
       <div id="conv-list"></div>
-      <div class="sidebar-section-label">CASE FILE</div>
+      <div class="sidebar-section-label">Case file</div>
       <input type="search" id="sidebar-search-input" class="sidebar-search" placeholder="Search...">
       <div id="sidebar-docs-list"></div>
     </aside>
@@ -612,7 +613,9 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     <div id="chat-view">
       <!-- CHANGE 1 — centre column wrapper -->
       <div id="centre-col">
-        <div id="conversation"></div>
+        <div id="conversation" class="empty">
+          <div id="empty-state">I'm ready when you are.</div>
+        </div>
         <!-- scroll arrow inside centre-col so it aligns with column on desktop -->
         <button id="scroll-arrow" aria-label="Scroll to bottom">
           <span class="material-icons">keyboard_arrow_down</span>
@@ -708,7 +711,6 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 // ── State ──────────────────────────────────────────────────
 const USER_ID = "test_user_001";
 let sessionId   = null;
-let firstAtjMsg = true;
 let _trayOpen   = false;
 let _pendingImageData      = null;
 let _pendingImageMediaType = null;
@@ -836,13 +838,26 @@ tabCase.addEventListener("click", function() {
   loadCaseFile();
 });
 
-// ── CHANGE 6 — New conversation ────────────────────────────
+// ── Empty state ────────────────────────────────────────────
+function showEmptyState() {
+  convEl.innerHTML = "";
+  const es = document.createElement("div"); es.id = "empty-state";
+  es.textContent = "I'm ready when you are.";
+  convEl.appendChild(es);
+  convEl.classList.add("empty");
+}
+function hideEmptyState() {
+  convEl.classList.remove("empty");
+  const es = document.getElementById("empty-state");
+  if (es) es.remove();
+}
+
+// ── New conversation ───────────────────────────────────────
 document.getElementById("new-conv-row").addEventListener("click", function() {
   sessionId = (window.crypto && crypto.randomUUID)
     ? crypto.randomUUID()
     : "sess-" + Date.now();
-  firstAtjMsg = true;
-  convEl.innerHTML = "";
+  showEmptyState();
   inputEl.value = ""; inputEl.style.height = ""; syncSendBtn();
   document.querySelectorAll(".conv-item").forEach(function(el) {
     el.classList.remove("active");
@@ -850,10 +865,10 @@ document.getElementById("new-conv-row").addEventListener("click", function() {
   inputEl.focus();
 });
 
-// ── CHANGE 5 — Load conversation from history ──────────────
+// ── Load conversation from history ─────────────────────────
 function loadConversation(sid, history) {
-  sessionId   = sid;
-  firstAtjMsg = true;
+  hideEmptyState();
+  sessionId = sid;
   convEl.innerHTML = "";
   document.querySelectorAll(".conv-item").forEach(function(el) {
     el.classList.toggle("active", el.dataset.sid === sid);
@@ -871,11 +886,6 @@ function loadConversation(sid, history) {
       b.textContent = t.content; uT.appendChild(b); convEl.appendChild(uT);
     } else {
       const aT = document.createElement("div"); aT.className = "atj-turn";
-      if (firstAtjMsg) {
-        firstAtjMsg = false;
-        const lbl = document.createElement("div"); lbl.className = "talia-label"; lbl.textContent = "TALIA";
-        aT.appendChild(lbl);
-      }
       const tb = document.createElement("div"); tb.className = "atj-text"; tb.textContent = t.content;
       aT.appendChild(tb); convEl.appendChild(aT);
     }
@@ -1091,7 +1101,7 @@ function updateSidebarConvList(history) {
 
   if (!order.length) {
     const e = document.createElement("div"); e.className = "conv-item";
-    e.style.cssText = "color:var(--light);cursor:default;pointer-events:none;";
+    e.style.cssText = "cursor:default;pointer-events:none;";
     e.textContent = "No conversations yet."; cL.appendChild(e); return;
   }
 
@@ -1117,10 +1127,6 @@ async function loadCaseFile(isInit) {
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     _caseFileCache = data;
-
-    if (isInit && data.history && data.history.length > 0) {
-      insertSessionDivider();
-    }
 
     // Mobile panel
     const mH = document.getElementById("mobile-history-list");
@@ -1195,6 +1201,7 @@ document.getElementById("mobile-search-input").addEventListener("keydown", funct
 
 // ── Send ───────────────────────────────────────────────────
 async function send() {
+  hideEmptyState();
   const message = inputEl.value.trim();
   if (!message && !_pendingImageData) return;
 
@@ -1227,10 +1234,6 @@ async function send() {
     sessionId = data.session_id;
 
     const aTurn = document.createElement("div"); aTurn.className = "atj-turn";
-    if (firstAtjMsg) {
-      firstAtjMsg = false;
-      const lbl = document.createElement("div"); lbl.className = "talia-label"; lbl.textContent = "TALIA"; aTurn.appendChild(lbl);
-    }
     if (data.fallback_triggered) {
       const fn = document.createElement("div"); fn.className = "fallback-note"; fn.textContent = "[compliance fallback]"; aTurn.appendChild(fn);
     }
