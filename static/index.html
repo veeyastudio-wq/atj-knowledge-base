@@ -46,7 +46,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 input, textarea { font-family: inherit; outline: none; border: none; background: none; }
 
 /* ── App shell ── */
-#app { display: flex; flex-direction: column; height: 100dvh; }
+#app { display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
 
 /* ── App header (mobile) ── */
 #app-header {
@@ -261,24 +261,23 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .choice-chip:hover  { background: var(--sidebar-hover); }
 .choice-chip:active { transform: scale(0.97); }
 .choice-chip.used   { opacity: 0.5; pointer-events: none; }
-.choice-chip:last-child { background: var(--sidebar-active); border: none; }
 
-#sidebar-logo { display: none; }
-
-/* ── Scroll arrow — centred, outline ── */
+/* ── Scroll arrow — muted default, accent hover ── */
 #scroll-arrow {
   position: absolute; bottom: 80px; left: 50%;
   transform: translateX(-50%) translateY(8px);
   width: 32px; height: 32px; border-radius: 50%;
-  background: transparent; border: 2px solid var(--accent);
+  background: var(--sidebar-active); border: none;
   display: flex; align-items: center; justify-content: center;
   z-index: 5;
   opacity: 0; pointer-events: none;
-  transition: opacity 200ms, transform 200ms;
+  transition: opacity 200ms, transform 200ms, background 150ms;
   cursor: pointer;
 }
+#scroll-arrow:hover { background: var(--accent); }
+#scroll-arrow:hover .material-icons { color: #fff; }
 #scroll-arrow.visible { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
-#scroll-arrow .material-icons { font-size: 18px; color: var(--accent); }
+#scroll-arrow .material-icons { font-size: 18px; color: var(--copy-secondary); }
 
 /* ── Input bar ── */
 #input-bar {
@@ -300,14 +299,15 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 }
 
 #plus-btn {
-  width: 34px; height: 34px; border-radius: 50%;
-  border: none; background: transparent;
+  width: 34px; height: 34px; border-radius: 10px;
+  border: none; background: var(--sidebar-hover);
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   transition: background 120ms; cursor: pointer;
 }
-#plus-btn:hover  { background: var(--sidebar-hover); }
+#plus-btn:hover  { background: var(--accent); }
+#plus-btn:hover .material-icons { color: #fff; }
 #plus-btn:active { transform: scale(0.93); }
-#plus-btn .material-icons { font-size: 20px; color: var(--copy-secondary); }
+#plus-btn .material-icons { font-size: 20px; color: var(--accent); }
 
 #msg-input {
   flex: 1; min-width: 0; background: transparent;
@@ -321,14 +321,16 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 #send-btn {
   width: 36px; height: 36px; border-radius: 50%; border: none;
-  background: var(--accent);
+  background: var(--sidebar-active);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; transition: background 150ms; cursor: pointer;
 }
-#send-btn:hover  { background: var(--accent-hover); }
+#send-btn:hover  { background: var(--sidebar-hover); }
 #send-btn.active { background: var(--accent); }
+#send-btn.active:hover { background: var(--accent-hover); }
 #send-btn:active { transform: scale(0.93); }
-#send-btn .material-icons { font-size: 18px; color: #fff; }
+#send-btn .material-icons { font-size: 18px; color: var(--copy-secondary); }
+#send-btn.active .material-icons { color: #fff; }
 
 /* ── Action tray ── */
 #action-tray {
@@ -345,13 +347,17 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   display: flex; align-items: center; gap: 10px;
   padding: 10px 8px; border-radius: 8px; cursor: pointer; transition: background 100ms;
 }
-.tray-item:hover { background: var(--sidebar-hover); }
+.tray-item:hover { background: var(--accent); }
+.tray-item:hover .tray-label { color: #fff; }
+.tray-item:hover .tray-icon { background: #fff; }
+.tray-item:hover .tray-icon .material-icons { color: var(--accent); }
 .tray-icon {
   width: 38px; height: 38px; border-radius: 10px; background: var(--sidebar-hover);
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  transition: background 100ms;
 }
-.tray-icon .material-icons { font-size: 18px; color: var(--copy-secondary); }
-.tray-label { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; color: var(--copy); }
+.tray-icon .material-icons { font-size: 18px; color: var(--copy-secondary); transition: color 100ms; }
+.tray-label { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400; color: var(--copy); transition: color 100ms; }
 
 /* ── Mobile case view ── */
 #case-view {
@@ -468,7 +474,6 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     justify-content: flex-end;
   }
   #header-right { width: 100%; padding: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 0; }
-  #sidebar-logo { display: block; width: 48px; height: auto; opacity: 0.5; padding-left: 8px; margin-bottom: 16px; }
   #settings-btn {
     width: 100%; height: 36px; border-radius: 6px;
     background: none; display: flex; align-items: center;
@@ -481,8 +486,8 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   #settings-btn .material-icons { font-size: 18px; color: var(--copy); flex-shrink: 0; }
   #settings-btn::after { content: "Settings"; }
 
-  /* Centre column fixed 720px */
-  #centre-col { max-width: 720px; margin: 0 auto; }
+  /* Centre column — full width; conversation padding centres content */
+  #centre-col { max-width: none; }
 
   /* Sidebar */
   #sidebar { display: flex; flex-direction: column; width: 220px; flex-shrink: 0; background: var(--sidebar-bg); border-right: none; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 12px 0 96px; height: 100dvh; }
@@ -537,22 +542,22 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     color: var(--copy-secondary); padding: 4px 16px 8px;
   }
 
-  /* Conversation */
-  #conversation { padding: 40px 0 16px; }
+  /* Conversation — centred at 720px, scrollbar at viewport right edge */
+  #conversation { padding: 40px max(24px, calc(50% - 360px)) 16px; }
   .atj-text { font-size: 16px; }
   .user-bubble { font-size: 15px; }
 
-  /* Input bar: transparent, no container — sits on page bg */
-  #input-bar { background: transparent; border-top: none; padding: 12px 0 16px; }
+  /* Input bar: centred at 720px, white box with keyline */
+  #input-bar { background: transparent; border-top: none; padding: 12px 20px 28px; max-width: 720px; margin: 0 auto; width: 100%; }
   #input-row {
-    background: transparent; border: none;
-    border-radius: 0; padding: 4px 0; gap: 6px; align-items: center;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 8px 8px 8px 12px; gap: 8px; align-items: center;
   }
-  #plus-btn { width: 28px; height: 28px; }
+  #plus-btn { width: 28px; height: 28px; border-radius: 8px; }
   #plus-btn .material-icons { font-size: 16px; }
   #msg-input {
     background: transparent; border: none;
-    padding: 2px 6px; font-size: 15px; resize: none;
+    padding: 6px 6px; font-size: 15px; resize: none;
     min-height: auto; max-height: 80px;
   }
   #msg-input:focus { outline: none; }
@@ -587,7 +592,6 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   <!-- Header -->
   <header id="app-header">
     <div id="header-right">
-      <img src="/hiro-wordmark.png" alt="Hiro" id="sidebar-logo">
       <button id="settings-btn" class="icon-btn" title="Settings">
         <span class="material-icons">settings</span>
       </button>
