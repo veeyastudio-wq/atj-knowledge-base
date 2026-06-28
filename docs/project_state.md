@@ -841,6 +841,8 @@ The gap is phrasing-specific, not a general terseness problem. Four of five phra
 
 Child arrangements pillar page (docs/content/child-arrangements/index.md) drafted, reviewed by George Calia (SRA 436857, reviewed_date 2026-06-27), and committed at c7769f8. published_date intentionally blank until go-live. Timeline statistics flagged for annual update against MoJ family court figures. Next: financial remedy pillar page.
 
+Financial remedy pillar page (docs/content/financial-remedy/index.md) drafted, reviewed by George Calia (SRA 436857), and committed at a10008f. published_date intentionally blank until go-live. Next: divorce cluster pillar page.
+
 ## Pilot scope reviewed, functionality by functionality (21 June 2026)
 
 Full pilot scope brief reviewed one functionality at a time with Claude,
