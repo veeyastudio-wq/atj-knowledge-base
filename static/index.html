@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#F0F1F7">
-<title>Talia</title>
+<title>Hiro</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400;1,8..60,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
 }
-#talia-wordmark {
+#hiro-wordmark {
   font-family: 'Source Serif 4', serif;
   font-size: 20px; font-weight: 400; color: var(--copy);
   padding: 0 8px;
@@ -223,7 +223,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .tl-spine  { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; width: 14px; }
 .tl-dot    { border-radius: 50%; flex-shrink: 0; }
 .tl-dot.complete { width: 10px; height: 10px; background: var(--sage); margin-top: 3px; }
-.tl-dot.current  { width: 12px; height: 12px; background: var(--clay); box-shadow: 0 0 0 3px rgba(204,120,92,0.25); margin-top: 2px; }
+.tl-dot.current  { width: 12px; height: 12px; background: var(--accent); box-shadow: 0 0 0 3px rgba(79,70,229,0.25); margin-top: 2px; }
 .tl-dot.upcoming { width: 10px; height: 10px; background: transparent; border: 2px solid rgba(255,255,255,0.2); margin-top: 3px; }
 .tl-line   { width: 1.5px; background: rgba(255,255,255,0.12); flex: 1; margin: 2px auto 0; min-height: 12px; }
 .tl-content { flex: 1; padding-bottom: 14px; }
@@ -266,6 +266,9 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 .choice-chip:hover  { background: var(--sidebar-hover); }
 .choice-chip:active { transform: scale(0.97); }
 .choice-chip.used   { opacity: 0.5; pointer-events: none; }
+.choice-chip:last-child { background: var(--sidebar-active); border: none; }
+
+#sidebar-logo { display: none; }
 
 /* ── Scroll arrow — centred, outline ── */
 #scroll-arrow {
@@ -284,8 +287,8 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 /* ── Input bar ── */
 #input-bar {
-  flex-shrink: 0; background: var(--surface);
-  border-top: 1px solid var(--border);
+  flex-shrink: 0; background: var(--bg);
+  border-top: none;
   padding: 10px 14px 12px;
   position: relative; z-index: 100;
 }
@@ -295,7 +298,11 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 #img-clear-btn { font-size: 11px; color: var(--copy-muted); padding: 4px 6px; cursor: pointer; }
 #img-clear-btn:hover { color: var(--copy); }
 
-#input-row { display: flex; align-items: center; gap: 8px; }
+#input-row {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+  padding: 6px 6px 6px 8px;
+}
 
 #plus-btn {
   width: 34px; height: 34px; border-radius: 50%;
@@ -453,18 +460,21 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   #segment-strip { display: none; }
   #case-view     { display: none !important; }
 
-  /* Header becomes a settings row fixed at bottom of sidebar */
+  /* Header: wordmark + settings row, fixed at bottom of sidebar */
   #app-header {
     position: fixed; bottom: 0; left: 0;
-    width: 220px; height: 44px;
+    width: 220px; height: auto;
     background: var(--sidebar-bg);
     border: none;
-    padding: 0 8px;
+    padding: 8px;
     z-index: 150;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
-  #talia-wordmark { display: none; }
-  #header-right { width: 100%; padding: 0; }
+  #hiro-wordmark { display: none; }
+  #header-right { width: 100%; padding: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 0; }
+  #sidebar-logo { display: block; width: 48px; height: auto; opacity: 0.5; padding-left: 8px; margin-bottom: 16px; }
   #settings-btn {
     width: 100%; height: 36px; border-radius: 6px;
     background: none; display: flex; align-items: center;
@@ -486,7 +496,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
     width: 220px; flex-shrink: 0; background: var(--sidebar-bg);
     border-right: none;
     overflow-y: auto; -webkit-overflow-scrolling: touch;
-    padding: 12px 0 44px;
+    padding: 12px 0 96px;
   }
   #new-conv-row {
     display: flex; align-items: center; gap: 10px;
@@ -544,11 +554,11 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
   .atj-text { font-size: 16px; }
   .user-bubble { font-size: 15px; }
 
-  /* Input bar: transparent outer, white inner row */
+  /* Input bar: transparent, no container — sits on page bg */
   #input-bar { background: transparent; border-top: none; padding: 12px 0 16px; }
   #input-row {
-    background: var(--surface); border: 1px solid var(--border);
-    border-radius: 10px; padding: 8px 12px; gap: 6px; align-items: center;
+    background: transparent; border: none;
+    border-radius: 0; padding: 4px 0; gap: 6px; align-items: center;
   }
   #plus-btn { width: 28px; height: 28px; }
   #plus-btn .material-icons { font-size: 16px; }
@@ -586,10 +596,11 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
 
 <div id="app">
 
-  <!-- Header — CHANGE 4: folder button removed, settings only -->
+  <!-- Header -->
   <header id="app-header">
-    <span id="talia-wordmark">Talia</span>
+    <span id="hiro-wordmark">Hiro</span>
     <div id="header-right">
+      <img src="/static/hiro-wordmark.png" alt="Hiro" id="sidebar-logo">
       <button id="settings-btn" class="icon-btn" title="Settings">
         <span class="material-icons">settings</span>
       </button>
@@ -908,7 +919,7 @@ function makeThinkingEl() {
   const row  = document.createElement("div"); row.className  = "thinking-row";
   const dot  = document.createElement("div"); dot.className  = "thinking-dot";
   const lbl  = document.createElement("span"); lbl.className = "thinking-label";
-  lbl.textContent = "Talia is thinking…";
+  lbl.textContent = "Hiro is thinking…";
   row.append(dot, lbl); wrap.append(row); return wrap;
 }
 
@@ -1037,14 +1048,14 @@ function buildPanelRows(turns, emptyText) {
   const items = turns.slice(-20);
   if (!items.length) {
     const e = document.createElement("div"); e.className = "panel-empty";
-    e.textContent = emptyText || "Your case file will build as you talk to Talia.";
+    e.textContent = emptyText || "Your case file will build as you talk to Hiro.";
     frag.appendChild(e); return frag;
   }
   items.forEach(function(t) {
     const row   = document.createElement("div"); row.className = "panel-row";
     const left  = document.createElement("div");
     const title = document.createElement("div"); title.className = "panel-row-title";
-    title.textContent = (t.role === "user" ? "You: " : "Talia: ") + t.content;
+    title.textContent = (t.role === "user" ? "You: " : "Hiro: ") + t.content;
     left.appendChild(title); row.appendChild(left);
     frag.appendChild(row);
   });
