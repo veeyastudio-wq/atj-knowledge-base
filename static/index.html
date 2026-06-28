@@ -662,7 +662,7 @@ input, textarea { font-family: inherit; outline: none; border: none; background:
             <button id="plus-btn" type="button" aria-label="Attach">
               <span class="material-icons">add</span>
             </button>
-            <textarea id="msg-input" placeholder="What's on your mind?"
+            <textarea id="msg-input" placeholder="Write a message..."
               rows="1" autocomplete="off" autocorrect="on" autocapitalize="sentences"></textarea>
             <button id="send-btn" type="button" aria-label="Send">
               <span class="material-icons">arrow_upward</span>
@@ -820,7 +820,7 @@ function clearImage() {
   _pendingImageData = null; _pendingImageMediaType = null;
   imgInput.value = ""; fileInput.value = "";
   imgPreview.src = ""; imgPreviewRow.hidden = true;
-  inputEl.placeholder = "What's on your mind?";
+  inputEl.placeholder = "Write a message...";
   syncSendBtn();
 }
 
